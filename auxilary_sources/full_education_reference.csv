@@ -1,0 +1,187 @@
+degree_canonical,field_canonical,degree_alias_count,field_alias_count,example_resume_strings
+Bachelor of Technology,Computer Science and Engineering,42,15,4-Year B.Tech in CSE | B E in C.S.E
+Bachelor of Technology,Information Technology,42,10,4-Year B.Tech in IT | B E in I.T
+Bachelor of Technology,Electronics and Communication Engineering,42,8,4-Year B.Tech in ECE | B E in E.C.E
+Bachelor of Technology,Electrical Engineering,42,9,4-Year B.Tech in EE | B E in E.E
+Bachelor of Technology,Mechanical Engineering,42,8,4-Year B.Tech in ME | B E in M.E
+Bachelor of Technology,Civil Engineering,42,6,4-Year B.Tech in CE | B E in C.E
+Bachelor of Technology,Chemical Engineering,42,5,4-Year B.Tech in Chem Engg | B E in Chemical Engg
+Bachelor of Technology,Aerospace Engineering,42,6,4-Year B.Tech in Aero | B E in Aerospace
+Bachelor of Technology,Biotechnology Engineering,42,6,4-Year B.Tech in Biotech | B E in Biotechnology
+Bachelor of Technology,Artificial Intelligence and Machine Learning,42,9,4-Year B.Tech in AI | B E in ML
+Bachelor of Technology,Data Science,42,6,4-Year B.Tech in Data Science | B E in DS
+Bachelor of Technology,Cybersecurity,42,5,4-Year B.Tech in Cybersecurity | B E in Cyber Security
+Bachelor of Technology,Software Engineering,42,6,4-Year B.Tech in Software Engg | B E in Software Engineering
+Bachelor of Technology,Instrumentation Engineering,42,5,4-Year B.Tech in Instrumentation | B E in Instrumentation Engg
+Bachelor of Technology,Production Engineering,42,6,4-Year B.Tech in Production | B E in Production Engg
+Bachelor of Technology,Metallurgical Engineering,42,5,4-Year B.Tech in Metallurgy | B E in Metallurgical Engg
+Bachelor of Technology,Environmental Engineering,42,4,4-Year B.Tech in Environmental Engg | B E in Environmental Engineering
+Bachelor of Technology,Textile Engineering,42,4,4-Year B.Tech in Textile | B E in Textile Engg
+Bachelor of Technology,Food Technology,42,4,4-Year B.Tech in Food Tech | B E in Food Technology
+Bachelor of Engineering,Computer Science and Engineering,44,15,B E in CSE | B. E in C.S.E
+Bachelor of Engineering,Information Technology,44,10,B E in IT | B. E in I.T
+Bachelor of Engineering,Electronics and Communication Engineering,44,8,B E in ECE | B. E in E.C.E
+Bachelor of Engineering,Electrical Engineering,44,9,B E in EE | B. E in E.E
+Bachelor of Engineering,Mechanical Engineering,44,8,B E in ME | B. E in M.E
+Bachelor of Engineering,Civil Engineering,44,6,B E in CE | B. E in C.E
+Bachelor of Engineering,Chemical Engineering,44,5,B E in Chem Engg | B. E in Chemical Engg
+Bachelor of Engineering,Aerospace Engineering,44,6,B E in Aero | B. E in Aerospace
+Bachelor of Engineering,Biotechnology Engineering,44,6,B E in Biotech | B. E in Biotechnology
+Bachelor of Engineering,Instrumentation Engineering,44,5,B E in Instrumentation | B. E in Instrumentation Engg
+Bachelor of Engineering,Production Engineering,44,6,B E in Production | B. E in Production Engg
+Bachelor of Science,Physics,33,4,B SC in Physics | B Sc in Phy
+Bachelor of Science,Chemistry,33,4,B SC in Chemistry | B Sc in Chem
+Bachelor of Science,Mathematics,33,6,B SC in Mathematics | B Sc in Maths
+Bachelor of Science,Statistics,33,4,B SC in Statistics | B Sc in Stats
+Bachelor of Science,Biology,33,4,B SC in Biology | B Sc in Bio
+Bachelor of Science,Microbiology,33,3,B SC in Microbiology | B Sc in Micro Bio
+Bachelor of Science,Biochemistry,33,3,B SC in Biochemistry | B Sc in Bio Chemistry
+Bachelor of Science,Bioinformatics,33,3,B SC in Bioinformatics | B Sc in Bio Informatics
+Bachelor of Science,Zoology,33,2,B SC in Zoology | B Sc in Zoo
+Bachelor of Science,Botany,33,2,B SC in Botany | B Sc in Plant Science
+Bachelor of Science,Geology,33,2,B SC in Geology | B Sc in Earth Science
+Bachelor of Science,Environmental Science,33,3,B SC in Environmental Science | B Sc in Env Science
+Bachelor of Science,Computer Science and Engineering,33,15,B SC in CSE | B Sc in C.S.E
+Bachelor of Science,Information Technology,33,10,B SC in IT | B Sc in I.T
+Bachelor of Science,Nursing,33,2,B SC in Nursing | B Sc in BSc Nursing
+Bachelor of Science,Agriculture,33,4,B SC in Agriculture | B Sc in Agricultural Science
+Bachelor of Computer Applications,Computer Applications,23,4,B C A in Computer Applications | B. C. A in Comp Applications
+Bachelor of Commerce,Commerce,27,2,B COM in Commerce | B Com in Business Studies
+Bachelor of Commerce,Accounting,27,5,B COM in Accounting | B Com in Accountancy
+Bachelor of Commerce,Finance,27,4,B COM in Finance | B Com in Financial Management
+Bachelor of Commerce,Banking and Finance,27,4,B COM in Banking & Finance | B Com in Banking and Finance
+Bachelor of Business Administration,Business Administration,24,5,B B A in Business Administration | B. B. A in Business Admin
+Bachelor of Business Administration,Finance,24,4,B B A in Finance | B. B. A in Financial Management
+Bachelor of Business Administration,Marketing,24,4,B B A in Marketing | B. B. A in Marketing Management
+Bachelor of Business Administration,Human Resources Management,24,6,B B A in Human Resources | B. B. A in HR
+Bachelor of Business Administration,International Business,24,4,B B A in International Business | B. B. A in IB
+Bachelor of Business Administration,Entrepreneurship,24,3,B B A in Entrepreneurship | B. B. A in Startup Management
+Bachelor of Arts,Economics,23,4,B A in Economics | B. A in Eco
+Bachelor of Arts,Psychology,23,5,B A in Psychology | B. A in Psych
+Bachelor of Arts,Sociology,23,2,B A in Sociology | B. A in Social Work
+Bachelor of Arts,Political Science,23,3,B A in Political Science | B. A in Pol Science
+Bachelor of Arts,History,23,1,B A in History | B. A in History
+Bachelor of Arts,Geography,23,2,B A in Geography | B. A in Geo
+Bachelor of Arts,English,23,4,B A in English | B. A in English Literature
+Bachelor of Arts,Hindi,23,2,B A in Hindi | B. A in Hindi Literature
+Bachelor of Arts,Philosophy,23,2,B A in Philosophy | B. A in Phil
+Bachelor of Arts,Public Administration,23,3,B A in Public Administration | B. A in Public Admin
+Bachelor of Arts,Mass Communication,23,7,B A in Mass Communication | B. A in Mass Comm
+Master of Technology,Computer Science and Engineering,33,15,M TECH in CSE | M Tech in C.S.E
+Master of Technology,Information Technology,33,10,M TECH in IT | M Tech in I.T
+Master of Technology,Electronics and Communication Engineering,33,8,M TECH in ECE | M Tech in E.C.E
+Master of Technology,Electrical Engineering,33,9,M TECH in EE | M Tech in E.E
+Master of Technology,Mechanical Engineering,33,8,M TECH in ME | M Tech in M.E
+Master of Technology,Civil Engineering,33,6,M TECH in CE | M Tech in C.E
+Master of Technology,Data Science,33,6,M TECH in Data Science | M Tech in DS
+Master of Technology,Artificial Intelligence and Machine Learning,33,9,M TECH in AI | M Tech in ML
+Master of Technology,Cybersecurity,33,5,M TECH in Cybersecurity | M Tech in Cyber Security
+Master of Technology,Software Engineering,33,6,M TECH in Software Engg | M Tech in Software Engineering
+Master of Technology,Biotechnology Engineering,33,6,M TECH in Biotech | M Tech in Biotechnology
+Master of Engineering,Computer Science and Engineering,30,15,M E in CSE | M. E in C.S.E
+Master of Engineering,Electronics and Communication Engineering,30,8,M E in ECE | M. E in E.C.E
+Master of Engineering,Electrical Engineering,30,9,M E in EE | M. E in E.E
+Master of Engineering,Mechanical Engineering,30,8,M E in ME | M. E in M.E
+Master of Engineering,Civil Engineering,30,6,M E in CE | M. E in C.E
+Master of Science,Physics,31,4,M SC in Physics | M Sc in Phy
+Master of Science,Chemistry,31,4,M SC in Chemistry | M Sc in Chem
+Master of Science,Mathematics,31,6,M SC in Mathematics | M Sc in Maths
+Master of Science,Statistics,31,4,M SC in Statistics | M Sc in Stats
+Master of Science,Biology,31,4,M SC in Biology | M Sc in Bio
+Master of Science,Microbiology,31,3,M SC in Microbiology | M Sc in Micro Bio
+Master of Science,Biochemistry,31,3,M SC in Biochemistry | M Sc in Bio Chemistry
+Master of Science,Bioinformatics,31,3,M SC in Bioinformatics | M Sc in Bio Informatics
+Master of Science,Computer Science and Engineering,31,15,M SC in CSE | M Sc in C.S.E
+Master of Science,Data Science,31,6,M SC in Data Science | M Sc in DS
+Master of Science,Environmental Science,31,3,M SC in Environmental Science | M Sc in Env Science
+Master of Computer Applications,Computer Applications,21,4,M C A in Computer Applications | M. C. A in Comp Applications
+Master of Business Administration,Business Administration,36,5,EMBA in Business Administration | Executive MBA in Business Admin
+Master of Business Administration,Finance,36,4,EMBA in Finance | Executive MBA in Financial Management
+Master of Business Administration,Marketing,36,4,EMBA in Marketing | Executive MBA in Marketing Management
+Master of Business Administration,Human Resources Management,36,6,EMBA in Human Resources | Executive MBA in HR
+Master of Business Administration,Operations Management,36,5,EMBA in Operations | Executive MBA in Operations Management
+Master of Business Administration,International Business,36,4,EMBA in International Business | Executive MBA in IB
+Master of Business Administration,Entrepreneurship,36,3,EMBA in Entrepreneurship | Executive MBA in Startup Management
+Master of Business Administration,Banking and Finance,36,4,EMBA in Banking & Finance | Executive MBA in Banking and Finance
+Master of Commerce,Commerce,24,2,M COM in Commerce | M Com in Business Studies
+Master of Commerce,Accounting,24,5,M COM in Accounting | M Com in Accountancy
+Master of Commerce,Finance,24,4,M COM in Finance | M Com in Financial Management
+Master of Commerce,Banking and Finance,24,4,M COM in Banking & Finance | M Com in Banking and Finance
+Master of Arts,Economics,19,4,M A in Economics | M. A in Eco
+Master of Arts,Psychology,19,5,M A in Psychology | M. A in Psych
+Master of Arts,Sociology,19,2,M A in Sociology | M. A in Social Work
+Master of Arts,Political Science,19,3,M A in Political Science | M. A in Pol Science
+Master of Arts,History,19,1,M A in History | M. A in History
+Master of Arts,Geography,19,2,M A in Geography | M. A in Geo
+Master of Arts,English,19,4,M A in English | M. A in English Literature
+Master of Arts,Hindi,19,2,M A in Hindi | M. A in Hindi Literature
+Master of Arts,Mass Communication,19,7,M A in Mass Communication | M. A in Mass Comm
+Master of Arts,Public Administration,19,3,M A in Public Administration | M. A in Public Admin
+Doctor of Philosophy,Computer Science and Engineering,34,15,D.Phil in CSE | DOCTOR OF PHILOSOPHY in C.S.E
+Doctor of Philosophy,Information Technology,34,10,D.Phil in IT | DOCTOR OF PHILOSOPHY in I.T
+Doctor of Philosophy,Electronics and Communication Engineering,34,8,D.Phil in ECE | DOCTOR OF PHILOSOPHY in E.C.E
+Doctor of Philosophy,Electrical Engineering,34,9,D.Phil in EE | DOCTOR OF PHILOSOPHY in E.E
+Doctor of Philosophy,Mechanical Engineering,34,8,D.Phil in ME | DOCTOR OF PHILOSOPHY in M.E
+Doctor of Philosophy,Civil Engineering,34,6,D.Phil in CE | DOCTOR OF PHILOSOPHY in C.E
+Doctor of Philosophy,Chemical Engineering,34,5,D.Phil in Chem Engg | DOCTOR OF PHILOSOPHY in Chemical Engg
+Doctor of Philosophy,Aerospace Engineering,34,6,D.Phil in Aero | DOCTOR OF PHILOSOPHY in Aerospace
+Doctor of Philosophy,Biotechnology Engineering,34,6,D.Phil in Biotech | DOCTOR OF PHILOSOPHY in Biotechnology
+Doctor of Philosophy,Artificial Intelligence and Machine Learning,34,9,D.Phil in AI | DOCTOR OF PHILOSOPHY in ML
+Doctor of Philosophy,Data Science,34,6,D.Phil in Data Science | DOCTOR OF PHILOSOPHY in DS
+Doctor of Philosophy,Cybersecurity,34,5,D.Phil in Cybersecurity | DOCTOR OF PHILOSOPHY in Cyber Security
+Doctor of Philosophy,Software Engineering,34,6,D.Phil in Software Engg | DOCTOR OF PHILOSOPHY in Software Engineering
+Doctor of Philosophy,Instrumentation Engineering,34,5,D.Phil in Instrumentation | DOCTOR OF PHILOSOPHY in Instrumentation Engg
+Doctor of Philosophy,Production Engineering,34,6,D.Phil in Production | DOCTOR OF PHILOSOPHY in Production Engg
+Doctor of Philosophy,Mining Engineering,34,3,D.Phil in Mining | DOCTOR OF PHILOSOPHY in Mining Engg
+Doctor of Philosophy,Metallurgical Engineering,34,5,D.Phil in Metallurgy | DOCTOR OF PHILOSOPHY in Metallurgical Engg
+Doctor of Philosophy,Environmental Engineering,34,4,D.Phil in Environmental Engg | DOCTOR OF PHILOSOPHY in Environmental Engineering
+Doctor of Philosophy,Textile Engineering,34,4,D.Phil in Textile | DOCTOR OF PHILOSOPHY in Textile Engg
+Doctor of Philosophy,Food Technology,34,4,D.Phil in Food Tech | DOCTOR OF PHILOSOPHY in Food Technology
+Doctor of Philosophy,Physics,34,4,D.Phil in Physics | DOCTOR OF PHILOSOPHY in Phy
+Doctor of Philosophy,Chemistry,34,4,D.Phil in Chemistry | DOCTOR OF PHILOSOPHY in Chem
+Doctor of Philosophy,Mathematics,34,6,D.Phil in Mathematics | DOCTOR OF PHILOSOPHY in Maths
+Doctor of Philosophy,Statistics,34,4,D.Phil in Statistics | DOCTOR OF PHILOSOPHY in Stats
+Doctor of Philosophy,Biology,34,4,D.Phil in Biology | DOCTOR OF PHILOSOPHY in Bio
+Doctor of Philosophy,Microbiology,34,3,D.Phil in Microbiology | DOCTOR OF PHILOSOPHY in Micro Bio
+Doctor of Philosophy,Biochemistry,34,3,D.Phil in Biochemistry | DOCTOR OF PHILOSOPHY in Bio Chemistry
+Doctor of Philosophy,Bioinformatics,34,3,D.Phil in Bioinformatics | DOCTOR OF PHILOSOPHY in Bio Informatics
+Doctor of Philosophy,Zoology,34,2,D.Phil in Zoology | DOCTOR OF PHILOSOPHY in Zoo
+Doctor of Philosophy,Botany,34,2,D.Phil in Botany | DOCTOR OF PHILOSOPHY in Plant Science
+Doctor of Philosophy,Geology,34,2,D.Phil in Geology | DOCTOR OF PHILOSOPHY in Earth Science
+Doctor of Philosophy,Environmental Science,34,3,D.Phil in Environmental Science | DOCTOR OF PHILOSOPHY in Env Science
+Doctor of Philosophy,Computer Applications,34,4,D.Phil in Computer Applications | DOCTOR OF PHILOSOPHY in Comp Applications
+Doctor of Philosophy,Computer Science (Applications),34,3,D.Phil in Computer Science (Applications) | DOCTOR OF PHILOSOPHY in CS Applications
+Doctor of Philosophy,Business Administration,34,5,D.Phil in Business Administration | DOCTOR OF PHILOSOPHY in Business Admin
+Doctor of Philosophy,Finance,34,4,D.Phil in Finance | DOCTOR OF PHILOSOPHY in Financial Management
+Doctor of Philosophy,Marketing,34,4,D.Phil in Marketing | DOCTOR OF PHILOSOPHY in Marketing Management
+Doctor of Philosophy,Human Resources Management,34,6,D.Phil in Human Resources | DOCTOR OF PHILOSOPHY in HR
+Doctor of Philosophy,Operations Management,34,5,D.Phil in Operations | DOCTOR OF PHILOSOPHY in Operations Management
+Doctor of Philosophy,International Business,34,4,D.Phil in International Business | DOCTOR OF PHILOSOPHY in IB
+Doctor of Philosophy,Entrepreneurship,34,3,D.Phil in Entrepreneurship | DOCTOR OF PHILOSOPHY in Startup Management
+Doctor of Philosophy,Commerce,34,2,D.Phil in Commerce | DOCTOR OF PHILOSOPHY in Business Studies
+Doctor of Philosophy,Accounting,34,5,D.Phil in Accounting | DOCTOR OF PHILOSOPHY in Accountancy
+Doctor of Philosophy,Banking and Finance,34,4,D.Phil in Banking & Finance | DOCTOR OF PHILOSOPHY in Banking and Finance
+Doctor of Philosophy,Economics,34,4,D.Phil in Economics | DOCTOR OF PHILOSOPHY in Eco
+Doctor of Philosophy,Psychology,34,5,D.Phil in Psychology | DOCTOR OF PHILOSOPHY in Psych
+Doctor of Philosophy,Sociology,34,2,D.Phil in Sociology | DOCTOR OF PHILOSOPHY in Social Work
+Doctor of Philosophy,Political Science,34,3,D.Phil in Political Science | DOCTOR OF PHILOSOPHY in Pol Science
+Doctor of Philosophy,History,34,1,D.Phil in History | DOCTOR OF PHILOSOPHY in History
+Doctor of Philosophy,Geography,34,2,D.Phil in Geography | DOCTOR OF PHILOSOPHY in Geo
+Doctor of Philosophy,English,34,4,D.Phil in English | DOCTOR OF PHILOSOPHY in English Literature
+Doctor of Philosophy,Hindi,34,2,D.Phil in Hindi | DOCTOR OF PHILOSOPHY in Hindi Literature
+Doctor of Philosophy,Philosophy,34,2,D.Phil in Philosophy | DOCTOR OF PHILOSOPHY in Phil
+Doctor of Philosophy,Public Administration,34,3,D.Phil in Public Administration | DOCTOR OF PHILOSOPHY in Public Admin
+Doctor of Philosophy,Mass Communication,34,7,D.Phil in Mass Communication | DOCTOR OF PHILOSOPHY in Mass Comm
+Doctor of Philosophy,Law,34,6,D.Phil in Law | DOCTOR OF PHILOSOPHY in LLB
+Doctor of Philosophy,Medicine,34,3,D.Phil in MBBS | DOCTOR OF PHILOSOPHY in Medicine
+Doctor of Philosophy,Nursing,34,2,D.Phil in Nursing | DOCTOR OF PHILOSOPHY in BSc Nursing
+Doctor of Philosophy,Pharmacy,34,3,D.Phil in Pharmacy | DOCTOR OF PHILOSOPHY in Pharmaceutical Sciences
+Doctor of Philosophy,Physiotherapy,34,3,D.Phil in Physiotherapy | DOCTOR OF PHILOSOPHY in Physical Therapy
+Doctor of Philosophy,Dentistry,34,3,D.Phil in Dentistry | DOCTOR OF PHILOSOPHY in BDS
+Doctor of Philosophy,Ayurveda,34,3,D.Phil in Ayurveda | DOCTOR OF PHILOSOPHY in BAMS
+Doctor of Philosophy,Architecture,34,4,D.Phil in Architecture | DOCTOR OF PHILOSOPHY in Arch
+Doctor of Philosophy,Design,34,8,D.Phil in Design | DOCTOR OF PHILOSOPHY in Industrial Design
+Doctor of Philosophy,Education,34,4,D.Phil in Education | DOCTOR OF PHILOSOPHY in B.Ed
+Doctor of Philosophy,Hotel Management,34,5,D.Phil in Hotel Management | DOCTOR OF PHILOSOPHY in Hospitality
+Doctor of Philosophy,Agriculture,34,4,D.Phil in Agriculture | DOCTOR OF PHILOSOPHY in Agricultural Science
+Doctor of Philosophy,General,34,6,D.Phil in General | DOCTOR OF PHILOSOPHY in Not Specified

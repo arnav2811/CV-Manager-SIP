@@ -1,0 +1,309 @@
+canonical_field,alias,normalized
+Computer Science and Engineering,CSE,cse
+Computer Science and Engineering,C.S.E,cse
+Computer Science and Engineering,C.S.E.,cse
+Computer Science and Engineering,CS,cs
+Computer Science and Engineering,Computer Science,computerscience
+Computer Science and Engineering,Comp Science,compscience
+Computer Science and Engineering,Computer Sc,computersc
+Computer Science and Engineering,Computer Sc.,computersc
+Computer Science and Engineering,Computer Sc. & Engg,computerscandengg
+Computer Science and Engineering,CS&E,csande
+Computer Science and Engineering,Computer Science & Engineering,computerscienceandengineering
+Computer Science and Engineering,Computers,computers
+Computer Science and Engineering,CompSci,compsci
+Computer Science and Engineering,Information Technology,informationtechnology
+Computer Science and Engineering,IT,it
+Information Technology,IT,it
+Information Technology,I.T,it
+Information Technology,I.T.,it
+Information Technology,Info Tech,infotech
+Information Technology,Infotech,infotech
+Information Technology,Information Tech,informationtech
+Information Technology,Information Technology,informationtechnology
+Information Technology,Information Science,informationscience
+Information Technology,IS,is
+Information Technology,I.S.,is
+Electronics and Communication Engineering,ECE,ece
+Electronics and Communication Engineering,E.C.E,ece
+Electronics and Communication Engineering,Electronics & Communication,electronicsandcommunication
+Electronics and Communication Engineering,Electronics and Communication,electronicsandcommunication
+Electronics and Communication Engineering,E&C,eandc
+Electronics and Communication Engineering,EC,ec
+Electronics and Communication Engineering,Electronics Communication,electronicscommunication
+Electronics and Communication Engineering,Elec & Comm,elecandcomm
+Electrical Engineering,EE,ee
+Electrical Engineering,E.E,ee
+Electrical Engineering,Electrical,electrical
+Electrical Engineering,Elect Engg,electengg
+Electrical Engineering,Electrical & Electronics,electricalandelectronics
+Electrical Engineering,EEE,eee
+Electrical Engineering,E.E.E,eee
+Electrical Engineering,Electrical Electronics,electricalelectronics
+Electrical Engineering,Electrical Engg,electricalengg
+Mechanical Engineering,ME,me
+Mechanical Engineering,M.E,me
+Mechanical Engineering,Mechanical,mechanical
+Mechanical Engineering,Mech,mech
+Mechanical Engineering,Mech Engg,mechengg
+Mechanical Engineering,Mechanical Engg,mechanicalengg
+Mechanical Engineering,Mech. Engg,mechengg
+Mechanical Engineering,Mechanical Engineering,mechanicalengineering
+Civil Engineering,CE,ce
+Civil Engineering,C.E,ce
+Civil Engineering,Civil,civil
+Civil Engineering,Civil Engg,civilengg
+Civil Engineering,Civil Engg.,civilengg
+Civil Engineering,Civil Engineering,civilengineering
+Chemical Engineering,Chem Engg,chemengg
+Chemical Engineering,Chemical Engg,chemicalengg
+Chemical Engineering,Chemical,chemical
+Chemical Engineering,ChE,che
+Chemical Engineering,Chemical Engineering,chemicalengineering
+Aerospace Engineering,Aero,aero
+Aerospace Engineering,Aerospace,aerospace
+Aerospace Engineering,Aeronautical,aeronautical
+Aerospace Engineering,Aero Engg,aeroengg
+Aerospace Engineering,Aeronautical Engineering,aeronauticalengineering
+Aerospace Engineering,Aerospace Engg,aerospaceengg
+Biotechnology Engineering,Biotech,biotech
+Biotechnology Engineering,Biotechnology,biotechnology
+Biotechnology Engineering,Bio Tech,biotech
+Biotechnology Engineering,Bio Technology,biotechnology
+Biotechnology Engineering,Biotechnology Engg,biotechnologyengg
+Biotechnology Engineering,Biotech Engg,biotechengg
+Artificial Intelligence and Machine Learning,AI,ai
+Artificial Intelligence and Machine Learning,ML,ml
+Artificial Intelligence and Machine Learning,AI & ML,aiandml
+Artificial Intelligence and Machine Learning,AI/ML,ai/ml
+Artificial Intelligence and Machine Learning,Artificial Intelligence,artificialintelligence
+Artificial Intelligence and Machine Learning,Machine Learning,machinelearning
+Artificial Intelligence and Machine Learning,AI and ML,aiandml
+Artificial Intelligence and Machine Learning,AIML,aiml
+Artificial Intelligence and Machine Learning,Artificial Intelligence & Machine Learning,artificialintelligenceandmachinelearning
+Data Science,Data Science,datascience
+Data Science,DS,ds
+Data Science,Data Analytics,dataanalytics
+Data Science,Big Data,bigdata
+Data Science,Data Science & Analytics,datascienceandanalytics
+Data Science,Data Sc,datasc
+Cybersecurity,Cybersecurity,cybersecurity
+Cybersecurity,Cyber Security,cybersecurity
+Cybersecurity,Information Security,informationsecurity
+Cybersecurity,Network Security,networksecurity
+Cybersecurity,InfoSec,infosec
+Software Engineering,Software Engg,softwareengg
+Software Engineering,Software Engineering,softwareengineering
+Software Engineering,SE,se
+Software Engineering,S.E,se
+Software Engineering,Software,software
+Software Engineering,SWE,swe
+Instrumentation Engineering,Instrumentation,instrumentation
+Instrumentation Engineering,Instrumentation Engg,instrumentationengg
+Instrumentation Engineering,IE,ie
+Instrumentation Engineering,I&C,iandc
+Instrumentation Engineering,Instrumentation and Control,instrumentationandcontrol
+Production Engineering,Production,production
+Production Engineering,Production Engg,productionengg
+Production Engineering,Manufacturing,manufacturing
+Production Engineering,Manufacturing Engg,manufacturingengg
+Production Engineering,Industrial Engineering,industrialengineering
+Production Engineering,IE,ie
+Mining Engineering,Mining,mining
+Mining Engineering,Mining Engg,miningengg
+Mining Engineering,Mining Engineering,miningengineering
+Metallurgical Engineering,Metallurgy,metallurgy
+Metallurgical Engineering,Metallurgical Engg,metallurgicalengg
+Metallurgical Engineering,Materials Science,materialsscience
+Metallurgical Engineering,Materials Engg,materialsengg
+Metallurgical Engineering,Metallurgy & Material Science,metallurgyandmaterialscience
+Environmental Engineering,Environmental Engg,environmentalengg
+Environmental Engineering,Environmental Engineering,environmentalengineering
+Environmental Engineering,Environment Engineering,environmentengineering
+Environmental Engineering,Env Engg,envengg
+Textile Engineering,Textile,textile
+Textile Engineering,Textile Engg,textileengg
+Textile Engineering,Textiles,textiles
+Textile Engineering,Textile Technology,textiletechnology
+Food Technology,Food Tech,foodtech
+Food Technology,Food Technology,foodtechnology
+Food Technology,Food Science,foodscience
+Food Technology,Food Science & Technology,foodscienceandtechnology
+Physics,Physics,physics
+Physics,Phy,phy
+Physics,Applied Physics,appliedphysics
+Physics,Engineering Physics,engineeringphysics
+Chemistry,Chemistry,chemistry
+Chemistry,Chem,chem
+Chemistry,Applied Chemistry,appliedchemistry
+Chemistry,Industrial Chemistry,industrialchemistry
+Mathematics,Mathematics,mathematics
+Mathematics,Maths,maths
+Mathematics,Math,math
+Mathematics,Applied Mathematics,appliedmathematics
+Mathematics,Pure Mathematics,puremathematics
+Mathematics,Stats & Maths,statsandmaths
+Statistics,Statistics,statistics
+Statistics,Stats,stats
+Statistics,Applied Statistics,appliedstatistics
+Statistics,Statistics & Data Science,statisticsanddatascience
+Biology,Biology,biology
+Biology,Bio,bio
+Biology,Life Sciences,lifesciences
+Biology,Biological Sciences,biologicalsciences
+Microbiology,Microbiology,microbiology
+Microbiology,Micro Bio,microbio
+Microbiology,Micro Biology,microbiology
+Biochemistry,Biochemistry,biochemistry
+Biochemistry,Bio Chemistry,biochemistry
+Biochemistry,Biochem,biochem
+Bioinformatics,Bioinformatics,bioinformatics
+Bioinformatics,Bio Informatics,bioinformatics
+Bioinformatics,Computational Biology,computationalbiology
+Zoology,Zoology,zoology
+Zoology,Zoo,zoo
+Botany,Botany,botany
+Botany,Plant Science,plantscience
+Geology,Geology,geology
+Geology,Earth Science,earthscience
+Environmental Science,Environmental Science,environmentalscience
+Environmental Science,Env Science,envscience
+Environmental Science,Environmental Studies,environmentalstudies
+Computer Applications,Computer Applications,computerapplications
+Computer Applications,Comp Applications,compapplications
+Computer Applications,CA,ca
+Computer Applications,Computer Application,computerapplication
+Computer Science (Applications),Computer Science (Applications),computerscience(applications)
+Computer Science (Applications),CS Applications,csapplications
+Computer Science (Applications),Computer Science Applications,computerscienceapplications
+Business Administration,Business Administration,businessadministration
+Business Administration,Business Admin,businessadmin
+Business Administration,Business Mgmt,businessmgmt
+Business Administration,Business Management,businessmanagement
+Business Administration,Management,management
+Finance,Finance,finance
+Finance,Financial Management,financialmanagement
+Finance,Finance & Accounts,financeandaccounts
+Finance,Corporate Finance,corporatefinance
+Marketing,Marketing,marketing
+Marketing,Marketing Management,marketingmanagement
+Marketing,Sales & Marketing,salesandmarketing
+Marketing,Digital Marketing,digitalmarketing
+Human Resources Management,Human Resources,humanresources
+Human Resources Management,HR,hr
+Human Resources Management,HRM,hrm
+Human Resources Management,Human Resource Management,humanresourcemanagement
+Human Resources Management,People Management,peoplemanagement
+Human Resources Management,HR & OB,hrandob
+Operations Management,Operations,operations
+Operations Management,Operations Management,operationsmanagement
+Operations Management,Supply Chain,supplychain
+Operations Management,Supply Chain Management,supplychainmanagement
+Operations Management,Logistics,logistics
+International Business,International Business,internationalbusiness
+International Business,IB,ib
+International Business,International Trade,internationaltrade
+International Business,Global Business,globalbusiness
+Entrepreneurship,Entrepreneurship,entrepreneurship
+Entrepreneurship,Startup Management,startupmanagement
+Entrepreneurship,Entrepreneurship & Innovation,entrepreneurshipandinnovation
+Commerce,Commerce,commerce
+Commerce,Business Studies,businessstudies
+Accounting,Accounting,accounting
+Accounting,Accountancy,accountancy
+Accounting,Accounts,accounts
+Accounting,Financial Accounting,financialaccounting
+Accounting,Cost Accounting,costaccounting
+Banking and Finance,Banking & Finance,bankingandfinance
+Banking and Finance,Banking and Finance,bankingandfinance
+Banking and Finance,Banking,banking
+Banking and Finance,Finance & Banking,financeandbanking
+Economics,Economics,economics
+Economics,Eco,eco
+Economics,Applied Economics,appliedeconomics
+Economics,Business Economics,businesseconomics
+Psychology,Psychology,psychology
+Psychology,Psych,psych
+Psychology,Applied Psychology,appliedpsychology
+Psychology,Industrial Psychology,industrialpsychology
+Psychology,Organizational Behaviour,organizationalbehaviour
+Sociology,Sociology,sociology
+Sociology,Social Work,socialwork
+Political Science,Political Science,politicalscience
+Political Science,Pol Science,polscience
+Political Science,Politics,politics
+History,History,history
+Geography,Geography,geography
+Geography,Geo,geo
+English,English,english
+English,English Literature,englishliterature
+English,English Lang & Lit,englishlangandlit
+English,English Language,englishlanguage
+Hindi,Hindi,hindi
+Hindi,Hindi Literature,hindiliterature
+Philosophy,Philosophy,philosophy
+Philosophy,Phil,phil
+Public Administration,Public Administration,publicadministration
+Public Administration,Public Admin,publicadmin
+Public Administration,Pub Admin,pubadmin
+Mass Communication,Mass Communication,masscommunication
+Mass Communication,Mass Comm,masscomm
+Mass Communication,Journalism,journalism
+Mass Communication,Journalism & Mass Communication,journalismandmasscommunication
+Mass Communication,JMC,jmc
+Mass Communication,Media Studies,mediastudies
+Mass Communication,Media & Communication,mediaandcommunication
+Law,Law,law
+Law,LLB,llb
+Law,Legal Studies,legalstudies
+Law,Jurisprudence,jurisprudence
+Law,Corporate Law,corporatelaw
+Law,Criminal Law,criminallaw
+Medicine,MBBS,mbbs
+Medicine,Medicine,medicine
+Medicine,Medical,medical
+Nursing,Nursing,nursing
+Nursing,BSc Nursing,bscnursing
+Pharmacy,Pharmacy,pharmacy
+Pharmacy,Pharmaceutical Sciences,pharmaceuticalsciences
+Pharmacy,Pharma,pharma
+Physiotherapy,Physiotherapy,physiotherapy
+Physiotherapy,Physical Therapy,physicaltherapy
+Physiotherapy,BPT,bpt
+Dentistry,Dentistry,dentistry
+Dentistry,BDS,bds
+Dentistry,Dental,dental
+Ayurveda,Ayurveda,ayurveda
+Ayurveda,BAMS,bams
+Ayurveda,Ayurvedic Medicine,ayurvedicmedicine
+Architecture,Architecture,architecture
+Architecture,Arch,arch
+Architecture,B.Arch,barch
+Architecture,Urban Design,urbandesign
+Design,Design,design
+Design,Industrial Design,industrialdesign
+Design,Product Design,productdesign
+Design,Fashion Design,fashiondesign
+Design,Interior Design,interiordesign
+Design,Graphic Design,graphicdesign
+Design,UX Design,uxdesign
+Design,UI/UX,ui/ux
+Education,Education,education
+Education,B.Ed,bed
+Education,Teaching,teaching
+Education,Teacher Education,teachereducation
+Hotel Management,Hotel Management,hotelmanagement
+Hotel Management,Hospitality,hospitality
+Hotel Management,Hospitality Management,hospitalitymanagement
+Hotel Management,Tourism & Hospitality,tourismandhospitality
+Hotel Management,BHMCT,bhmct
+Agriculture,Agriculture,agriculture
+Agriculture,Agricultural Science,agriculturalscience
+Agriculture,Agri,agri
+Agriculture,Horticulture,horticulture
+General,General,general
+General,Not Specified,notspecified
+General,NA,na
+General,N/A,n/a
+General,-,-
+General,,

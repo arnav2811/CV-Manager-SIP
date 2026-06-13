@@ -1,0 +1,5633 @@
+{
+    "candidates": [
+        {
+            "candidate_id": 1,
+            "raw_degree": "B.Tech",
+            "raw_field": "CSE",
+            "canonical_degree": "Bachelor of Technology",
+            "canonical_field": "Computer Science and Engineering",
+            "institution": "IIT Delhi",
+            "graduation_year": 2022,
+            "cgpa": 8.5
+        },
+        {
+            "candidate_id": 2,
+            "raw_degree": "Bacheler of Technology",
+            "raw_field": "Mech",
+            "canonical_degree": "Bachelor of Technology",
+            "canonical_field": "Mechanical Engineering",
+            "institution": "VIT",
+            "graduation_year": 2021,
+            "cgpa": 8.0
+        },
+        {
+            "candidate_id": 3,
+            "raw_degree": "Kuch bhi",
+            "raw_field": "idk",
+            "canonical_degree": null,
+            "canonical_field": null,
+            "institution": "Unknown",
+            "graduation_year": 2020,
+            "cgpa": 7.0
+        }
+    ],
+    "degree_aliases": [
+        {
+            "raw_string": "B.Tech/BE",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Tech Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Tech/BE",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech.",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelerofTechnology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheleroftechnology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.tech.",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheler of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTech Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.TECH (HONS)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-Year B.Tech (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech (Hons) Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-Year BTech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Technology Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTECH (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech(Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech(hons)",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech. Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.tech (hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Tech (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.tech/be",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech/BE Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTech/BE",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bacheler of technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheler of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech/BE (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-YearB.Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-yearbtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b. tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTECH",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.TECH.",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-Year B Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Technology (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheler of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELER OF TECHNOLOGY",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheler of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. TECH",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Technology (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF TECHNOLOGY",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.TECH/BE",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech/be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "btech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B  Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b  tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech. (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-year b.tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Tech (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofTechnology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheloroftechnology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Technology Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bacheler of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.TECH",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-Year B.Tech Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTECH Hons",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-YEAR B.TECH",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Tech ",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "b tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Tech (Hons) (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "4-Year B.Tech",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "4-year btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BTech (Hons)",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "btech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bacheler of engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bacheler of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Eng Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Eng (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B E ",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "be hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bacheler of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BE (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.E. (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.E. Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.E.",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BEng",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.ENG",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Eng",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BEng Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BE Hons Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELER OF ENGINEERING",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bacheler of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Engineering (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bacheler of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BE Hons (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Eng",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b eng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BEng (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. E. (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofEngineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelorofengineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelerofEngineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelerofengineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "beng",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Engineering Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bacheler of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "be",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. E. Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b. e.",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BENG",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B  E ",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b  e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BE",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Engineering Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BEHons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "behons",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Engineering (Hons)",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BE HONS",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. E.",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.eng",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "beng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BE Hons",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B E",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "b e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF ENGINEERING",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.e.",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "be",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Science Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSC (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Sc (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BScHons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bschons",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSc Hons Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSc Hons (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF SCIENCE",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Sc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Science (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Sc.",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Sc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Sc. Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.SC",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.SC.",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSc Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Sc (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B  Sc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b  sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bsc hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Sc. (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b. sc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSC Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.sc.",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Sc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSC",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Sc ",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Sc Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Sc Hons",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bsc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. SC",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "b sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofScience",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelorofscience",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.sc",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSc (Hons)",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BSC HONS",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B C A ",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "b c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.C.A.",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B C A (Hons)",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "b c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofComputerApplications",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bachelorofcomputerapplications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.c.a.",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.C.A. (Hons)",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCA Hons",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b c a",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "b c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bca",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Computer Applications Hons",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bachelor of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCA (Hons)",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of computer applications",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bachelor of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B C A Hons",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "b c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B C A",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "b c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCA",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.C.A. Hons",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF COMPUTER APPLICATIONS",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bachelor of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Computer Applications",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bachelor of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Computer Applications (Hons)",
+            "canonical_name": "Bachelor of Computer Applications",
+            "normalized": "bachelor of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCOM",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofCommerce",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bachelorofcommerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF COMMERCE",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bachelor of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCom",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.com (hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B  Com",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b  com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCom (Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Commerce Hons",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bachelor of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Com Hons",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Com (Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Com",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.com",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Com Hons",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Com (Hons) (Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. COM",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bcom",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Com (Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of commerce",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bachelor of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B Com",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. Com (Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Com",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Com(Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom(hons)",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.COM",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BCom Hons",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Commerce",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bachelor of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.COM (HONS)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b. com",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "b com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Commerce (Hons)",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bachelor of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.Com (Hons) Hons",
+            "canonical_name": "Bachelor of Commerce",
+            "normalized": "bcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BBA (Hons)",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B B A ",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "b b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BBA Hons",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.b.a.",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.B.A.",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.B.A. (Hons)",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Business Administration Hons",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bachelor of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Business Administration",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bachelor of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF BUSINESS ADMINISTRATION",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bachelor of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b b a",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "b b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.B.A. Hons",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Business Administration (Hons)",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bachelor of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B B A (Hons)",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "b b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BBA",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B B A Hons",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "b b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B B A",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "b b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of business administration",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bachelor of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bba",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofBusinessAdministration",
+            "canonical_name": "Bachelor of Business Administration",
+            "normalized": "bachelorofbusinessadministration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BAHons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bahons",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. A. (Hons)",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BA Hons (Hons)",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.A.",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BachelorofArts",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bachelorofarts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ba",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.A. Hons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B A",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. A.",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BA Hons Hons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BACHELOR OF ARTS",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bachelor of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BA Hons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Arts (Hons)",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bachelor of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B. A. Hons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b. a.",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ba hons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "bachelor of arts",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bachelor of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Arts Hons",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bachelor of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BA",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "b.a.",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B  A ",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b  a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachelor of Arts",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "bachelor of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BA (Hons)",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B.A. (Hons)",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "BA HONS",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "ba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "B A ",
+            "canonical_name": "Bachelor of Arts",
+            "normalized": "b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.tech",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Tech (Hons)",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Technology (Hons)",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofTechnology",
+            "canonical_name": "Master of Technology",
+            "normalized": "masteroftechnology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Tech",
+            "canonical_name": "Master of Technology",
+            "normalized": "m tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Tech Hons",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Tech",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MTECH (Hons)",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "mtech",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.TECH",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Tech (Hons)",
+            "canonical_name": "Master of Technology",
+            "normalized": "m tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M  Tech",
+            "canonical_name": "Master of Technology",
+            "normalized": "m  tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF TECHNOLOGY",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MTech (Hons)",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Technology Hons",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M Tech",
+            "canonical_name": "Master of Technology",
+            "normalized": "m tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. TECH",
+            "canonical_name": "Master of Technology",
+            "normalized": "m tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of technology",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MTECH Hons",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MTECH",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MTech Hons",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Technology",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m. tech",
+            "canonical_name": "Master of Technology",
+            "normalized": "m tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MTech",
+            "canonical_name": "Master of Technology",
+            "normalized": "mtech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Tech Hons",
+            "canonical_name": "Master of Technology",
+            "normalized": "m tech",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Eng",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "me",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Eng (Hons)",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.eng",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofEngineering",
+            "canonical_name": "Master of Engineering",
+            "normalized": "masterofengineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "meng",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF ENGINEERING",
+            "canonical_name": "Master of Engineering",
+            "normalized": "master of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MEng (Hons)",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M E ",
+            "canonical_name": "Master of Engineering",
+            "normalized": "m e",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of engineering",
+            "canonical_name": "Master of Engineering",
+            "normalized": "master of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.E. Hons",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ME (Hons)",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Engineering (Hons)",
+            "canonical_name": "Master of Engineering",
+            "normalized": "master of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Engineering Hons",
+            "canonical_name": "Master of Engineering",
+            "normalized": "master of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Eng Hons",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MENG",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M Eng",
+            "canonical_name": "Master of Engineering",
+            "normalized": "m eng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.E.",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MEng",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ME",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ME Hons",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MEng Hons",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.e.",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Engineering",
+            "canonical_name": "Master of Engineering",
+            "normalized": "master of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.E. (Hons)",
+            "canonical_name": "Master of Engineering",
+            "normalized": "me",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.ENG",
+            "canonical_name": "Master of Engineering",
+            "normalized": "meng",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MS Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MSc Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M Sc",
+            "canonical_name": "Master of Science",
+            "normalized": "m sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Sc",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Sc",
+            "canonical_name": "Master of Science",
+            "normalized": "m sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MSC (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. SC",
+            "canonical_name": "Master of Science",
+            "normalized": "m sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.S.",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Sc (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "m sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MSC Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Science",
+            "canonical_name": "Master of Science",
+            "normalized": "master of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Sc (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Sc Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "m sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Science Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "master of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF SCIENCE",
+            "canonical_name": "Master of Science",
+            "normalized": "master of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MS (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "msc",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.S. Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M  Sc",
+            "canonical_name": "Master of Science",
+            "normalized": "m  sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M S ",
+            "canonical_name": "Master of Science",
+            "normalized": "m s",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of science",
+            "canonical_name": "Master of Science",
+            "normalized": "master of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MSc (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MSc",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Sc Hons",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.SC",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ms",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m. sc",
+            "canonical_name": "Master of Science",
+            "normalized": "m sc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.s.",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofScience",
+            "canonical_name": "Master of Science",
+            "normalized": "masterofscience",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.S. (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MS",
+            "canonical_name": "Master of Science",
+            "normalized": "ms",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.sc",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Science (Hons)",
+            "canonical_name": "Master of Science",
+            "normalized": "master of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MSC",
+            "canonical_name": "Master of Science",
+            "normalized": "msc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m c a",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "m c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Computer Applications Hons",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "master of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF COMPUTER APPLICATIONS",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "master of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "mca",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.C.A. Hons",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M C A Hons",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "m c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M C A (Hons)",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "m c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M C A ",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "m c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.C.A.",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCA Hons",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.c.a.",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCA",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M C A",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "m c a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCA (Hons)",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of computer applications",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "master of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofComputerApplications",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "masterofcomputerapplications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Computer Applications (Hons)",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "master of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.C.A. (Hons)",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "mca",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Computer Applications",
+            "canonical_name": "Master of Computer Applications",
+            "normalized": "master of computer applications",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "mba",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDM Hons",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofBusinessAdministration",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "masterofbusinessadministration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.B.A. Hons",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MBA (Hons)",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M B A ",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "m b a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Business Administration (Hons)",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "master of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.B.A.",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDM",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.B.A. (Hons)",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Business Administration Hons",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "master of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pgdm",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of business administration",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "master of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Business Administration",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "master of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "EMBA (Hons)",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "emba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDM (Hons)",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.b.a.",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "EMBA",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "emba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MBA Hons",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MBA",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "mba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "emba",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "emba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF BUSINESS ADMINISTRATION",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "master of business administration",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "EMBA Hons",
+            "canonical_name": "Master of Business Administration",
+            "normalized": "emba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. COM",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Com",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Commerce Hons",
+            "canonical_name": "Master of Commerce",
+            "normalized": "master of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Com Hons",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Commerce (Hons)",
+            "canonical_name": "Master of Commerce",
+            "normalized": "master of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of commerce",
+            "canonical_name": "Master of Commerce",
+            "normalized": "master of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCom Hons",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.COM",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Com Hons",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofCommerce",
+            "canonical_name": "Master of Commerce",
+            "normalized": "masterofcommerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m. com",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCom",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Com (Hons)",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF COMMERCE",
+            "canonical_name": "Master of Commerce",
+            "normalized": "master of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.com",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M Com",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCOM",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M  Com",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m  com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "mcom",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MCom (Hons)",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. Com",
+            "canonical_name": "Master of Commerce",
+            "normalized": "m com",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.Com (Hons)",
+            "canonical_name": "Master of Commerce",
+            "normalized": "mcom",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Commerce",
+            "canonical_name": "Master of Commerce",
+            "normalized": "master of commerce",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Arts (Hons)",
+            "canonical_name": "Master of Arts",
+            "normalized": "master of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. A. (Hons)",
+            "canonical_name": "Master of Arts",
+            "normalized": "m a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.A. (Hons)",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MASTER OF ARTS",
+            "canonical_name": "Master of Arts",
+            "normalized": "master of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.A.",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ma",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MasterofArts",
+            "canonical_name": "Master of Arts",
+            "normalized": "masterofarts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Arts",
+            "canonical_name": "Master of Arts",
+            "normalized": "master of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M A",
+            "canonical_name": "Master of Arts",
+            "normalized": "m a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m.a.",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "master of arts",
+            "canonical_name": "Master of Arts",
+            "normalized": "master of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. A. Hons",
+            "canonical_name": "Master of Arts",
+            "normalized": "m a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M A ",
+            "canonical_name": "Master of Arts",
+            "normalized": "m a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M  A ",
+            "canonical_name": "Master of Arts",
+            "normalized": "m  a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M. A.",
+            "canonical_name": "Master of Arts",
+            "normalized": "m a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "m. a.",
+            "canonical_name": "Master of Arts",
+            "normalized": "m a",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "M.A. Hons",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MA Hons",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MA (Hons)",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master of Arts Hons",
+            "canonical_name": "Master of Arts",
+            "normalized": "master of arts",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MA",
+            "canonical_name": "Master of Arts",
+            "normalized": "ma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PhD (Hons)",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph. D. (Hons)",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DOCTOR OF PHILOSOPHY",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "doctor of philosophy",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph D",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DPHIL",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "dphil",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PHD",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph.D",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "doctor of philosophy",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "doctor of philosophy",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ph. d.",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph.D (Hons)",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PH.D",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DPhil (Hons)",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "dphil",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Doctor of Philosophy (Hons)",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "doctor of philosophy",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DPhil Hons",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "dphil",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DoctorofPhilosophy",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "doctorofphilosophy",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ph.d",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph.D.",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Doctor of Philosophy",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "doctor of philosophy",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PHD Hons",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph. D. Hons",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PhD Hons",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PhD",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PH. D.",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Doctor of Philosophy Hons",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "doctor of philosophy",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "dphil",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "dphil",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PHD (Hons)",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph. D.",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "phd",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DPhil",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "dphil",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph.D Hons",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "phd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Ph  D ",
+            "canonical_name": "Doctor of Philosophy",
+            "normalized": "ph  d",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "3 year diploma",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "3 year diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "diploma in engineering",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "diploma in engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "3 YEAR DIPLOMA",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "3 year diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Dip.Engg",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dipengg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DIPLOMA IN ENGINEERING",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "diploma in engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Dip. Engg (Hons)",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "3 Year Diploma",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "3 year diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "3YearDiploma",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "3yeardiploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Diploma in Engineering",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "diploma in engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "3 Year Diploma Hons",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "3 year diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Diploma in Engineering Hons",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "diploma in engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DiplomainEngineering",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "diplomainengineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "DIP. ENGG",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Dip. Engg Hons",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "3 Year Diploma (Hons)",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "3 year diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Dip. Engg",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Polytechnic (Hons)",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "polytechnic",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Dip  Engg",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip  engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "polytechnic",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "polytechnic",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Dip Engg",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "dip. engg",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "dip engg",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Polytechnic Hons",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "polytechnic",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Diploma in Engineering (Hons)",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "diploma in engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "POLYTECHNIC",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "polytechnic",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Polytechnic",
+            "canonical_name": "Diploma in Engineering",
+            "normalized": "polytechnic",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDBA",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGD",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDBM Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdbm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDip",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdip",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG Dip (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg dip",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PostGraduateDiplomainManagement",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "postgraduatediplomainmanagement",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDBA Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma in Management Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDM Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma in Business Management",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in business management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG DIPLOMA",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pg dip",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg dip",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG Diploma (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "POST GRADUATE DIPLOMA IN MANAGEMENT",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "POST GRADUATE DIPLOMA",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDiploma",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdiploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDM",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pgd",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG Dip Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg dip",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pgdm",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma in Business Management (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in business management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGD (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pg diploma",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDBM (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdbm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDM (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PostGraduateDiplomainBusinessManagement",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "postgraduatediplomainbusinessmanagement",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "POST GRADUATE DIPLOMA IN BUSINESS MANAGEMENT",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in business management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG Dip",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg dip",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG Diploma Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDBM",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdbm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "post graduate diploma in management",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG Diploma",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGD Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgd",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma in Business Management Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in business management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "post graduate diploma",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PostGraduateDiploma",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "postgraduatediploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pgdba",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PG DIP",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pg dip",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma in Management",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma Hons",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Post Graduate Diploma in Management (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PGDBA (Hons)",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdba",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "post graduate diploma in business management",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "post graduate diploma in business management",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "pgdbm",
+            "canonical_name": "Post Graduate Diploma",
+            "normalized": "pgdbm",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10+2 Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "10+2",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 12th",
+            "canonical_name": "12th Standard",
+            "normalized": "cbse 12th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "hsc",
+            "canonical_name": "12th Standard",
+            "normalized": "hsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "cbse 12th",
+            "canonical_name": "12th Standard",
+            "normalized": "cbse 12th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "12th Standard",
+            "canonical_name": "12th Standard",
+            "normalized": "12th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10+2",
+            "canonical_name": "12th Standard",
+            "normalized": "10+2",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "xii",
+            "canonical_name": "12th Standard",
+            "normalized": "xii",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "HSC Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "hsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "HSC (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "hsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "12th Standard (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "12th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "12thStandard",
+            "canonical_name": "12th Standard",
+            "normalized": "12thstandard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 12th Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "cbse 12th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ISC Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "isc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "12TH STANDARD",
+            "canonical_name": "12th Standard",
+            "normalized": "12th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "XII Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "xii",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "isc",
+            "canonical_name": "12th Standard",
+            "normalized": "isc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "plus two",
+            "canonical_name": "12th Standard",
+            "normalized": "plus two",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10+2 (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "10+2",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 12th (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "cbse 12th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "XII",
+            "canonical_name": "12th Standard",
+            "normalized": "xii",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Plus Two",
+            "canonical_name": "12th Standard",
+            "normalized": "plus two",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "+2 Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "+2",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "XII (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "xii",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 12TH",
+            "canonical_name": "12th Standard",
+            "normalized": "cbse 12th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "12th Standard Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "12th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Plus Two (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "plus two",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "+2 (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "+2",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ISC (Hons)",
+            "canonical_name": "12th Standard",
+            "normalized": "isc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE12th",
+            "canonical_name": "12th Standard",
+            "normalized": "cbse12th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "12th standard",
+            "canonical_name": "12th Standard",
+            "normalized": "12th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "HSC",
+            "canonical_name": "12th Standard",
+            "normalized": "hsc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ISC",
+            "canonical_name": "12th Standard",
+            "normalized": "isc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Plus Two Hons",
+            "canonical_name": "12th Standard",
+            "normalized": "plus two",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "+2",
+            "canonical_name": "12th Standard",
+            "normalized": "+2",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PLUS TWO",
+            "canonical_name": "12th Standard",
+            "normalized": "plus two",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "PlusTwo",
+            "canonical_name": "12th Standard",
+            "normalized": "plustwo",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10TH STANDARD",
+            "canonical_name": "10th Standard",
+            "normalized": "10th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Matriculation",
+            "canonical_name": "10th Standard",
+            "normalized": "matriculation",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "SSC Hons",
+            "canonical_name": "10th Standard",
+            "normalized": "ssc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "X",
+            "canonical_name": "10th Standard",
+            "normalized": "x",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Matric",
+            "canonical_name": "10th Standard",
+            "normalized": "matric",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "ssc",
+            "canonical_name": "10th Standard",
+            "normalized": "ssc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10th Standard (Hons)",
+            "canonical_name": "10th Standard",
+            "normalized": "10th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "matriculation",
+            "canonical_name": "10th Standard",
+            "normalized": "matriculation",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "SSC",
+            "canonical_name": "10th Standard",
+            "normalized": "ssc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "SSC (Hons)",
+            "canonical_name": "10th Standard",
+            "normalized": "ssc",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MATRICULATION",
+            "canonical_name": "10th Standard",
+            "normalized": "matriculation",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10th standard",
+            "canonical_name": "10th Standard",
+            "normalized": "10th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Matriculation Hons",
+            "canonical_name": "10th Standard",
+            "normalized": "matriculation",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10thStandard",
+            "canonical_name": "10th Standard",
+            "normalized": "10thstandard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "matric",
+            "canonical_name": "10th Standard",
+            "normalized": "matric",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 10TH",
+            "canonical_name": "10th Standard",
+            "normalized": "cbse 10th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 10th",
+            "canonical_name": "10th Standard",
+            "normalized": "cbse 10th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "cbse 10th",
+            "canonical_name": "10th Standard",
+            "normalized": "cbse 10th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Matriculation (Hons)",
+            "canonical_name": "10th Standard",
+            "normalized": "matriculation",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "x",
+            "canonical_name": "10th Standard",
+            "normalized": "x",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10th Standard",
+            "canonical_name": "10th Standard",
+            "normalized": "10th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Matric (Hons)",
+            "canonical_name": "10th Standard",
+            "normalized": "matric",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "X (Hons)",
+            "canonical_name": "10th Standard",
+            "normalized": "x",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 10th (Hons)",
+            "canonical_name": "10th Standard",
+            "normalized": "cbse 10th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE10th",
+            "canonical_name": "10th Standard",
+            "normalized": "cbse10th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "CBSE 10th Hons",
+            "canonical_name": "10th Standard",
+            "normalized": "cbse 10th",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "X Hons",
+            "canonical_name": "10th Standard",
+            "normalized": "x",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "10th Standard Hons",
+            "canonical_name": "10th Standard",
+            "normalized": "10th standard",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Matric Hons",
+            "canonical_name": "10th Standard",
+            "normalized": "matric",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "MATRIC",
+            "canonical_name": "10th Standard",
+            "normalized": "matric",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master Bacheler",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bacheler in Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachellor of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachellor of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master Bachellor",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Bachellor in Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Tecnology of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Tecnology of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master Tecnology",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Tecnology in Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Tecnolgy of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Tecnolgy of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master Tecnolgy",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Tecnolgy in Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Engg of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Engg of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master Engg",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Engg in Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Enginering of Technology",
+            "canonical_name": "Bachelor of Technology",
+            "normalized": "bachelor of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Enginering of Engineering",
+            "canonical_name": "Bachelor of Engineering",
+            "normalized": "bachelor of engineering",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Master Enginering",
+            "canonical_name": "Master of Technology",
+            "normalized": "master of technology",
+            "source": "manual",
+            "confidence": 1.0
+        },
+        {
+            "raw_string": "Enginering in Science",
+            "canonical_name": "Bachelor of Science",
+            "normalized": "bachelor of science",
+            "source": "manual",
+            "confidence": 1.0
+        }
+    ],
+    "field_aliases": [
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "Computer Science and Engineering"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "Computer Science and Engg"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "cse"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "COMPUTER SCIENCE AND ENGINEERING"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "CSE"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "Computer Sci and Engineering"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "Computer Science and Eng"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "computer science and engineering"
+        },
+        {
+            "canonical_field": "Information Technology",
+            "alias": "it"
+        },
+        {
+            "canonical_field": "Information Technology",
+            "alias": "IT"
+        },
+        {
+            "canonical_field": "Information Technology",
+            "alias": "Information Technology"
+        },
+        {
+            "canonical_field": "Information Technology",
+            "alias": "INFORMATION TECHNOLOGY"
+        },
+        {
+            "canonical_field": "Information Technology",
+            "alias": "information technology"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "electronics and communication engineering"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "Electronics and Communication Engineering"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "ece"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "Electronics and Communication Engg"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "ECE"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "ELECTRONICS AND COMMUNICATION ENGINEERING"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "Electronics and Communication Eng"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "ELECTRICAL ENGINEERING"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "Electrical Engg"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "electrical engineering"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "ee"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "Electrical Engineering"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "EE"
+        },
+        {
+            "canonical_field": "Electrical Engineering",
+            "alias": "Electrical Eng"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "mechanical engineering"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "ME"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "Mechanical Engineering"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "me"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "Mechanical Eng"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "MECHANICAL ENGINEERING"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "Mechanical Engg"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "Civil Eng"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "Civil Engineering"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "CIVIL ENGINEERING"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "Civil Engg"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "civil engineering"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "ce"
+        },
+        {
+            "canonical_field": "Civil Engineering",
+            "alias": "CE"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "Chemical Engg"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "CHEMICAL ENGINEERING"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "Chemical Eng"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "Chemical Engineering"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "chemical engineering"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "ce"
+        },
+        {
+            "canonical_field": "Chemical Engineering",
+            "alias": "CE"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "aerospace engineering"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "AEROSPACE ENGINEERING"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "Aerospace Engineering"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "Aerospace Engg"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "ae"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "AE"
+        },
+        {
+            "canonical_field": "Aerospace Engineering",
+            "alias": "Aerospace Eng"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "BE"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "BIOTECHNOLOGY ENGINEERING"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "Biotechnology Engg"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "Biotechnology Eng"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "be"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "Biotechnology Engineering"
+        },
+        {
+            "canonical_field": "Biotechnology Engineering",
+            "alias": "biotechnology engineering"
+        },
+        {
+            "canonical_field": "Artificial Intelligence and Machine Learning",
+            "alias": "artificial intelligence and machine learning"
+        },
+        {
+            "canonical_field": "Artificial Intelligence and Machine Learning",
+            "alias": "Artificial Intelligence and Machine Learning"
+        },
+        {
+            "canonical_field": "Artificial Intelligence and Machine Learning",
+            "alias": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING"
+        },
+        {
+            "canonical_field": "Artificial Intelligence and Machine Learning",
+            "alias": "aiml"
+        },
+        {
+            "canonical_field": "Artificial Intelligence and Machine Learning",
+            "alias": "AIML"
+        },
+        {
+            "canonical_field": "Data Science",
+            "alias": "Data Science"
+        },
+        {
+            "canonical_field": "Data Science",
+            "alias": "Data Sci"
+        },
+        {
+            "canonical_field": "Data Science",
+            "alias": "data science"
+        },
+        {
+            "canonical_field": "Data Science",
+            "alias": "ds"
+        },
+        {
+            "canonical_field": "Data Science",
+            "alias": "DS"
+        },
+        {
+            "canonical_field": "Data Science",
+            "alias": "DATA SCIENCE"
+        },
+        {
+            "canonical_field": "Cybersecurity",
+            "alias": "Cybersecurity"
+        },
+        {
+            "canonical_field": "Cybersecurity",
+            "alias": "CYBERSECURITY"
+        },
+        {
+            "canonical_field": "Cybersecurity",
+            "alias": "C"
+        },
+        {
+            "canonical_field": "Cybersecurity",
+            "alias": "c"
+        },
+        {
+            "canonical_field": "Cybersecurity",
+            "alias": "cybersecurity"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "se"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "SE"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "Software Engg"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "Software Eng"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "software engineering"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "Software Engineering"
+        },
+        {
+            "canonical_field": "Software Engineering",
+            "alias": "SOFTWARE ENGINEERING"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "Instrumentation Engg"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "IE"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "ie"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "Instrumentation Engineering"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "INSTRUMENTATION ENGINEERING"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "instrumentation engineering"
+        },
+        {
+            "canonical_field": "Instrumentation Engineering",
+            "alias": "Instrumentation Eng"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "PRODUCTION ENGINEERING"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "pe"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "Production Eng"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "PE"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "Production Engineering"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "production engineering"
+        },
+        {
+            "canonical_field": "Production Engineering",
+            "alias": "Production Engg"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "MINING ENGINEERING"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "ME"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "Mining Engg"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "me"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "mining engineering"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "Mining Engineering"
+        },
+        {
+            "canonical_field": "Mining Engineering",
+            "alias": "Mining Eng"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "ME"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "METALLURGICAL ENGINEERING"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "metallurgical engineering"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "me"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "Metallurgical Engg"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "Metallurgical Eng"
+        },
+        {
+            "canonical_field": "Metallurgical Engineering",
+            "alias": "Metallurgical Engineering"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "Environmental Engg"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "Environmental Eng"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "Environmental Engineering"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "ee"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "EE"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "environmental engineering"
+        },
+        {
+            "canonical_field": "Environmental Engineering",
+            "alias": "ENVIRONMENTAL ENGINEERING"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "Textile Engg"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "TE"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "Textile Engineering"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "textile engineering"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "Textile Eng"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "te"
+        },
+        {
+            "canonical_field": "Textile Engineering",
+            "alias": "TEXTILE ENGINEERING"
+        },
+        {
+            "canonical_field": "Food Technology",
+            "alias": "Food Technology"
+        },
+        {
+            "canonical_field": "Food Technology",
+            "alias": "ft"
+        },
+        {
+            "canonical_field": "Food Technology",
+            "alias": "food technology"
+        },
+        {
+            "canonical_field": "Food Technology",
+            "alias": "FOOD TECHNOLOGY"
+        },
+        {
+            "canonical_field": "Food Technology",
+            "alias": "FT"
+        },
+        {
+            "canonical_field": "Physics",
+            "alias": "P"
+        },
+        {
+            "canonical_field": "Physics",
+            "alias": "PHYSICS"
+        },
+        {
+            "canonical_field": "Physics",
+            "alias": "physics"
+        },
+        {
+            "canonical_field": "Physics",
+            "alias": "p"
+        },
+        {
+            "canonical_field": "Physics",
+            "alias": "Physics"
+        },
+        {
+            "canonical_field": "Chemistry",
+            "alias": "CHEMISTRY"
+        },
+        {
+            "canonical_field": "Chemistry",
+            "alias": "chemistry"
+        },
+        {
+            "canonical_field": "Chemistry",
+            "alias": "c"
+        },
+        {
+            "canonical_field": "Chemistry",
+            "alias": "C"
+        },
+        {
+            "canonical_field": "Chemistry",
+            "alias": "Chemistry"
+        },
+        {
+            "canonical_field": "Mathematics",
+            "alias": "MATHEMATICS"
+        },
+        {
+            "canonical_field": "Mathematics",
+            "alias": "M"
+        },
+        {
+            "canonical_field": "Mathematics",
+            "alias": "m"
+        },
+        {
+            "canonical_field": "Mathematics",
+            "alias": "Mathematics"
+        },
+        {
+            "canonical_field": "Mathematics",
+            "alias": "mathematics"
+        },
+        {
+            "canonical_field": "Statistics",
+            "alias": "statistics"
+        },
+        {
+            "canonical_field": "Statistics",
+            "alias": "S"
+        },
+        {
+            "canonical_field": "Statistics",
+            "alias": "STATISTICS"
+        },
+        {
+            "canonical_field": "Statistics",
+            "alias": "Statistics"
+        },
+        {
+            "canonical_field": "Statistics",
+            "alias": "s"
+        },
+        {
+            "canonical_field": "Biology",
+            "alias": "B"
+        },
+        {
+            "canonical_field": "Biology",
+            "alias": "biology"
+        },
+        {
+            "canonical_field": "Biology",
+            "alias": "Biology"
+        },
+        {
+            "canonical_field": "Biology",
+            "alias": "BIOLOGY"
+        },
+        {
+            "canonical_field": "Biology",
+            "alias": "b"
+        },
+        {
+            "canonical_field": "Microbiology",
+            "alias": "MICROBIOLOGY"
+        },
+        {
+            "canonical_field": "Microbiology",
+            "alias": "M"
+        },
+        {
+            "canonical_field": "Microbiology",
+            "alias": "m"
+        },
+        {
+            "canonical_field": "Microbiology",
+            "alias": "microbiology"
+        },
+        {
+            "canonical_field": "Microbiology",
+            "alias": "Microbiology"
+        },
+        {
+            "canonical_field": "Biochemistry",
+            "alias": "B"
+        },
+        {
+            "canonical_field": "Biochemistry",
+            "alias": "BIOCHEMISTRY"
+        },
+        {
+            "canonical_field": "Biochemistry",
+            "alias": "Biochemistry"
+        },
+        {
+            "canonical_field": "Biochemistry",
+            "alias": "b"
+        },
+        {
+            "canonical_field": "Biochemistry",
+            "alias": "biochemistry"
+        },
+        {
+            "canonical_field": "Bioinformatics",
+            "alias": "B"
+        },
+        {
+            "canonical_field": "Bioinformatics",
+            "alias": "Bioinformatics"
+        },
+        {
+            "canonical_field": "Bioinformatics",
+            "alias": "b"
+        },
+        {
+            "canonical_field": "Bioinformatics",
+            "alias": "bioinformatics"
+        },
+        {
+            "canonical_field": "Bioinformatics",
+            "alias": "BIOINFORMATICS"
+        },
+        {
+            "canonical_field": "Zoology",
+            "alias": "Zoology"
+        },
+        {
+            "canonical_field": "Zoology",
+            "alias": "z"
+        },
+        {
+            "canonical_field": "Zoology",
+            "alias": "Z"
+        },
+        {
+            "canonical_field": "Zoology",
+            "alias": "zoology"
+        },
+        {
+            "canonical_field": "Zoology",
+            "alias": "ZOOLOGY"
+        },
+        {
+            "canonical_field": "Botany",
+            "alias": "Botany"
+        },
+        {
+            "canonical_field": "Botany",
+            "alias": "B"
+        },
+        {
+            "canonical_field": "Botany",
+            "alias": "botany"
+        },
+        {
+            "canonical_field": "Botany",
+            "alias": "BOTANY"
+        },
+        {
+            "canonical_field": "Botany",
+            "alias": "b"
+        },
+        {
+            "canonical_field": "Geology",
+            "alias": "GEOLOGY"
+        },
+        {
+            "canonical_field": "Geology",
+            "alias": "g"
+        },
+        {
+            "canonical_field": "Geology",
+            "alias": "G"
+        },
+        {
+            "canonical_field": "Geology",
+            "alias": "geology"
+        },
+        {
+            "canonical_field": "Geology",
+            "alias": "Geology"
+        },
+        {
+            "canonical_field": "Computer Applications",
+            "alias": "CA"
+        },
+        {
+            "canonical_field": "Computer Applications",
+            "alias": "computer applications"
+        },
+        {
+            "canonical_field": "Computer Applications",
+            "alias": "Computer Applications"
+        },
+        {
+            "canonical_field": "Computer Applications",
+            "alias": "COMPUTER APPLICATIONS"
+        },
+        {
+            "canonical_field": "Computer Applications",
+            "alias": "ca"
+        },
+        {
+            "canonical_field": "Computer Science (Applications)",
+            "alias": "CS("
+        },
+        {
+            "canonical_field": "Computer Science (Applications)",
+            "alias": "cs("
+        },
+        {
+            "canonical_field": "Computer Science (Applications)",
+            "alias": "COMPUTER SCIENCE (APPLICATIONS)"
+        },
+        {
+            "canonical_field": "Computer Science (Applications)",
+            "alias": "Computer Science (Applications)"
+        },
+        {
+            "canonical_field": "Computer Science (Applications)",
+            "alias": "Computer Sci (Applications)"
+        },
+        {
+            "canonical_field": "Computer Science (Applications)",
+            "alias": "computer science (applications)"
+        },
+        {
+            "canonical_field": "Business Administration",
+            "alias": "ba"
+        },
+        {
+            "canonical_field": "Business Administration",
+            "alias": "business administration"
+        },
+        {
+            "canonical_field": "Business Administration",
+            "alias": "BA"
+        },
+        {
+            "canonical_field": "Business Administration",
+            "alias": "Business Administration"
+        },
+        {
+            "canonical_field": "Business Administration",
+            "alias": "BUSINESS ADMINISTRATION"
+        },
+        {
+            "canonical_field": "Finance",
+            "alias": "Finance"
+        },
+        {
+            "canonical_field": "Finance",
+            "alias": "F"
+        },
+        {
+            "canonical_field": "Finance",
+            "alias": "finance"
+        },
+        {
+            "canonical_field": "Finance",
+            "alias": "FINANCE"
+        },
+        {
+            "canonical_field": "Finance",
+            "alias": "f"
+        },
+        {
+            "canonical_field": "Marketing",
+            "alias": "M"
+        },
+        {
+            "canonical_field": "Marketing",
+            "alias": "marketing"
+        },
+        {
+            "canonical_field": "Marketing",
+            "alias": "MARKETING"
+        },
+        {
+            "canonical_field": "Marketing",
+            "alias": "m"
+        },
+        {
+            "canonical_field": "Marketing",
+            "alias": "Marketing"
+        },
+        {
+            "canonical_field": "Human Resources Management",
+            "alias": "hrm"
+        },
+        {
+            "canonical_field": "Human Resources Management",
+            "alias": "HRM"
+        },
+        {
+            "canonical_field": "Human Resources Management",
+            "alias": "HUMAN RESOURCES MANAGEMENT"
+        },
+        {
+            "canonical_field": "Human Resources Management",
+            "alias": "human resources management"
+        },
+        {
+            "canonical_field": "Human Resources Management",
+            "alias": "Human Resources Management"
+        },
+        {
+            "canonical_field": "Operations Management",
+            "alias": "OM"
+        },
+        {
+            "canonical_field": "Operations Management",
+            "alias": "Operations Management"
+        },
+        {
+            "canonical_field": "Operations Management",
+            "alias": "om"
+        },
+        {
+            "canonical_field": "Operations Management",
+            "alias": "operations management"
+        },
+        {
+            "canonical_field": "Operations Management",
+            "alias": "OPERATIONS MANAGEMENT"
+        },
+        {
+            "canonical_field": "International Business",
+            "alias": "ib"
+        },
+        {
+            "canonical_field": "International Business",
+            "alias": "IB"
+        },
+        {
+            "canonical_field": "International Business",
+            "alias": "INTERNATIONAL BUSINESS"
+        },
+        {
+            "canonical_field": "International Business",
+            "alias": "International Business"
+        },
+        {
+            "canonical_field": "International Business",
+            "alias": "international business"
+        },
+        {
+            "canonical_field": "Entrepreneurship",
+            "alias": "e"
+        },
+        {
+            "canonical_field": "Entrepreneurship",
+            "alias": "ENTREPRENEURSHIP"
+        },
+        {
+            "canonical_field": "Entrepreneurship",
+            "alias": "entrepreneurship"
+        },
+        {
+            "canonical_field": "Entrepreneurship",
+            "alias": "Entrepreneurship"
+        },
+        {
+            "canonical_field": "Entrepreneurship",
+            "alias": "E"
+        },
+        {
+            "canonical_field": "Commerce",
+            "alias": "Commerce"
+        },
+        {
+            "canonical_field": "Commerce",
+            "alias": "COMMERCE"
+        },
+        {
+            "canonical_field": "Commerce",
+            "alias": "c"
+        },
+        {
+            "canonical_field": "Commerce",
+            "alias": "commerce"
+        },
+        {
+            "canonical_field": "Commerce",
+            "alias": "C"
+        },
+        {
+            "canonical_field": "Accounting",
+            "alias": "Accounting"
+        },
+        {
+            "canonical_field": "Accounting",
+            "alias": "A"
+        },
+        {
+            "canonical_field": "Accounting",
+            "alias": "accounting"
+        },
+        {
+            "canonical_field": "Accounting",
+            "alias": "a"
+        },
+        {
+            "canonical_field": "Accounting",
+            "alias": "ACCOUNTING"
+        },
+        {
+            "canonical_field": "Banking and Finance",
+            "alias": "BANKING AND FINANCE"
+        },
+        {
+            "canonical_field": "Banking and Finance",
+            "alias": "BF"
+        },
+        {
+            "canonical_field": "Banking and Finance",
+            "alias": "bf"
+        },
+        {
+            "canonical_field": "Banking and Finance",
+            "alias": "banking and finance"
+        },
+        {
+            "canonical_field": "Banking and Finance",
+            "alias": "Banking and Finance"
+        },
+        {
+            "canonical_field": "Economics",
+            "alias": "economics"
+        },
+        {
+            "canonical_field": "Economics",
+            "alias": "e"
+        },
+        {
+            "canonical_field": "Economics",
+            "alias": "Economics"
+        },
+        {
+            "canonical_field": "Economics",
+            "alias": "ECONOMICS"
+        },
+        {
+            "canonical_field": "Economics",
+            "alias": "E"
+        },
+        {
+            "canonical_field": "Psychology",
+            "alias": "P"
+        },
+        {
+            "canonical_field": "Psychology",
+            "alias": "psychology"
+        },
+        {
+            "canonical_field": "Psychology",
+            "alias": "PSYCHOLOGY"
+        },
+        {
+            "canonical_field": "Psychology",
+            "alias": "p"
+        },
+        {
+            "canonical_field": "Psychology",
+            "alias": "Psychology"
+        },
+        {
+            "canonical_field": "Sociology",
+            "alias": "sociology"
+        },
+        {
+            "canonical_field": "Sociology",
+            "alias": "S"
+        },
+        {
+            "canonical_field": "Sociology",
+            "alias": "s"
+        },
+        {
+            "canonical_field": "Sociology",
+            "alias": "Sociology"
+        },
+        {
+            "canonical_field": "Sociology",
+            "alias": "SOCIOLOGY"
+        },
+        {
+            "canonical_field": "Political Science",
+            "alias": "Political Science"
+        },
+        {
+            "canonical_field": "Political Science",
+            "alias": "political science"
+        },
+        {
+            "canonical_field": "Political Science",
+            "alias": "POLITICAL SCIENCE"
+        },
+        {
+            "canonical_field": "Political Science",
+            "alias": "PS"
+        },
+        {
+            "canonical_field": "Political Science",
+            "alias": "Political Sci"
+        },
+        {
+            "canonical_field": "Political Science",
+            "alias": "ps"
+        },
+        {
+            "canonical_field": "History",
+            "alias": "history"
+        },
+        {
+            "canonical_field": "History",
+            "alias": "h"
+        },
+        {
+            "canonical_field": "History",
+            "alias": "H"
+        },
+        {
+            "canonical_field": "History",
+            "alias": "HISTORY"
+        },
+        {
+            "canonical_field": "History",
+            "alias": "History"
+        },
+        {
+            "canonical_field": "Geography",
+            "alias": "g"
+        },
+        {
+            "canonical_field": "Geography",
+            "alias": "Geography"
+        },
+        {
+            "canonical_field": "Geography",
+            "alias": "G"
+        },
+        {
+            "canonical_field": "Geography",
+            "alias": "geography"
+        },
+        {
+            "canonical_field": "Geography",
+            "alias": "GEOGRAPHY"
+        },
+        {
+            "canonical_field": "English",
+            "alias": "english"
+        },
+        {
+            "canonical_field": "English",
+            "alias": "e"
+        },
+        {
+            "canonical_field": "English",
+            "alias": "English"
+        },
+        {
+            "canonical_field": "English",
+            "alias": "ENGLISH"
+        },
+        {
+            "canonical_field": "English",
+            "alias": "E"
+        },
+        {
+            "canonical_field": "Mass Communication",
+            "alias": "MASS COMMUNICATION"
+        },
+        {
+            "canonical_field": "Mass Communication",
+            "alias": "Mass Communication"
+        },
+        {
+            "canonical_field": "Mass Communication",
+            "alias": "MC"
+        },
+        {
+            "canonical_field": "Mass Communication",
+            "alias": "mc"
+        },
+        {
+            "canonical_field": "Mass Communication",
+            "alias": "mass communication"
+        },
+        {
+            "canonical_field": "Public Administration",
+            "alias": "Public Administration"
+        },
+        {
+            "canonical_field": "Public Administration",
+            "alias": "PUBLIC ADMINISTRATION"
+        },
+        {
+            "canonical_field": "Public Administration",
+            "alias": "public administration"
+        },
+        {
+            "canonical_field": "Public Administration",
+            "alias": "pa"
+        },
+        {
+            "canonical_field": "Public Administration",
+            "alias": "PA"
+        },
+        {
+            "canonical_field": "Law",
+            "alias": "l"
+        },
+        {
+            "canonical_field": "Law",
+            "alias": "Law"
+        },
+        {
+            "canonical_field": "Law",
+            "alias": "law"
+        },
+        {
+            "canonical_field": "Law",
+            "alias": "L"
+        },
+        {
+            "canonical_field": "Law",
+            "alias": "LAW"
+        },
+        {
+            "canonical_field": "Medicine",
+            "alias": "MEDICINE"
+        },
+        {
+            "canonical_field": "Medicine",
+            "alias": "M"
+        },
+        {
+            "canonical_field": "Medicine",
+            "alias": "medicine"
+        },
+        {
+            "canonical_field": "Medicine",
+            "alias": "m"
+        },
+        {
+            "canonical_field": "Medicine",
+            "alias": "Medicine"
+        },
+        {
+            "canonical_field": "Nursing",
+            "alias": "nursing"
+        },
+        {
+            "canonical_field": "Nursing",
+            "alias": "NURSING"
+        },
+        {
+            "canonical_field": "Nursing",
+            "alias": "N"
+        },
+        {
+            "canonical_field": "Nursing",
+            "alias": "n"
+        },
+        {
+            "canonical_field": "Nursing",
+            "alias": "Nursing"
+        },
+        {
+            "canonical_field": "Pharmacy",
+            "alias": "P"
+        },
+        {
+            "canonical_field": "Pharmacy",
+            "alias": "Pharmacy"
+        },
+        {
+            "canonical_field": "Pharmacy",
+            "alias": "p"
+        },
+        {
+            "canonical_field": "Pharmacy",
+            "alias": "PHARMACY"
+        },
+        {
+            "canonical_field": "Pharmacy",
+            "alias": "pharmacy"
+        },
+        {
+            "canonical_field": "Physiotherapy",
+            "alias": "P"
+        },
+        {
+            "canonical_field": "Physiotherapy",
+            "alias": "Physiotherapy"
+        },
+        {
+            "canonical_field": "Physiotherapy",
+            "alias": "p"
+        },
+        {
+            "canonical_field": "Physiotherapy",
+            "alias": "PHYSIOTHERAPY"
+        },
+        {
+            "canonical_field": "Physiotherapy",
+            "alias": "physiotherapy"
+        },
+        {
+            "canonical_field": "Dentistry",
+            "alias": "d"
+        },
+        {
+            "canonical_field": "Dentistry",
+            "alias": "D"
+        },
+        {
+            "canonical_field": "Dentistry",
+            "alias": "DENTISTRY"
+        },
+        {
+            "canonical_field": "Dentistry",
+            "alias": "dentistry"
+        },
+        {
+            "canonical_field": "Dentistry",
+            "alias": "Dentistry"
+        },
+        {
+            "canonical_field": "Ayurveda",
+            "alias": "Ayurveda"
+        },
+        {
+            "canonical_field": "Ayurveda",
+            "alias": "A"
+        },
+        {
+            "canonical_field": "Ayurveda",
+            "alias": "ayurveda"
+        },
+        {
+            "canonical_field": "Ayurveda",
+            "alias": "a"
+        },
+        {
+            "canonical_field": "Ayurveda",
+            "alias": "AYURVEDA"
+        },
+        {
+            "canonical_field": "Architecture",
+            "alias": "ARCHITECTURE"
+        },
+        {
+            "canonical_field": "Architecture",
+            "alias": "A"
+        },
+        {
+            "canonical_field": "Architecture",
+            "alias": "Architecture"
+        },
+        {
+            "canonical_field": "Architecture",
+            "alias": "a"
+        },
+        {
+            "canonical_field": "Architecture",
+            "alias": "architecture"
+        },
+        {
+            "canonical_field": "Design",
+            "alias": "d"
+        },
+        {
+            "canonical_field": "Design",
+            "alias": "D"
+        },
+        {
+            "canonical_field": "Design",
+            "alias": "Design"
+        },
+        {
+            "canonical_field": "Design",
+            "alias": "DESIGN"
+        },
+        {
+            "canonical_field": "Design",
+            "alias": "design"
+        },
+        {
+            "canonical_field": "Education",
+            "alias": "EDUCATION"
+        },
+        {
+            "canonical_field": "Education",
+            "alias": "e"
+        },
+        {
+            "canonical_field": "Education",
+            "alias": "education"
+        },
+        {
+            "canonical_field": "Education",
+            "alias": "Education"
+        },
+        {
+            "canonical_field": "Education",
+            "alias": "E"
+        },
+        {
+            "canonical_field": "Hotel Management",
+            "alias": "HM"
+        },
+        {
+            "canonical_field": "Hotel Management",
+            "alias": "hotel management"
+        },
+        {
+            "canonical_field": "Hotel Management",
+            "alias": "HOTEL MANAGEMENT"
+        },
+        {
+            "canonical_field": "Hotel Management",
+            "alias": "Hotel Management"
+        },
+        {
+            "canonical_field": "Hotel Management",
+            "alias": "hm"
+        },
+        {
+            "canonical_field": "Agriculture",
+            "alias": "agriculture"
+        },
+        {
+            "canonical_field": "Agriculture",
+            "alias": "Agriculture"
+        },
+        {
+            "canonical_field": "Agriculture",
+            "alias": "A"
+        },
+        {
+            "canonical_field": "Agriculture",
+            "alias": "AGRICULTURE"
+        },
+        {
+            "canonical_field": "Agriculture",
+            "alias": "a"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "CSE"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "C.S.E"
+        },
+        {
+            "canonical_field": "Computer Science and Engineering",
+            "alias": "Computers"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "ECE"
+        },
+        {
+            "canonical_field": "Electronics and Communication Engineering",
+            "alias": "E&C"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "Mech"
+        },
+        {
+            "canonical_field": "Mechanical Engineering",
+            "alias": "ME"
+        }
+    ]
+}
