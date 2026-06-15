@@ -1,4 +1,5 @@
 import csv
+import json
 import re
 import os
 import time
@@ -15,17 +16,28 @@ class Normalizer:
         
     def load_aliases(self):
         degree_csv = os.path.join(self.data_dir, 'degree_aliases.csv')
+        degree_json = os.path.join(self.data_dir, 'degree_dictionary.json')
         field_csv = os.path.join(self.data_dir, 'field_of_study_aliases.csv')
         
         if not os.path.exists(degree_csv) or not os.path.exists(field_csv):
-            print("Error: Alias CSVs not found. Run generate_data.py first.")
+            print("Error: Alias files not found. Run generate_data.py first.")
             return
 
-        with open(degree_csv, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                self.degree_aliases[row['normalized']] = row['canonical_name']
-                self.canonical_degrees.add(row['canonical_name'])
+        # Load from JSON if present (more robust), else fallback to CSV
+        if os.path.exists(degree_json):
+            with open(degree_json, 'r', encoding='utf-8') as f:
+                deg_dict = json.load(f)
+                for canon, data in deg_dict.items():
+                    self.canonical_degrees.add(canon)
+                    for alias in data['aliases']:
+                        norm = self.clean_alias_string(alias)
+                        self.degree_aliases[norm] = canon
+        else:
+            with open(degree_csv, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    self.degree_aliases[row['normalized']] = row['canonical_name']
+                    self.canonical_degrees.add(row['canonical_name'])
                 
         with open(field_csv, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
@@ -37,24 +49,36 @@ class Normalizer:
         print(f"Loading alias dictionary... {len(self.degree_aliases)} entries loaded.")
         print(f"Loading field dictionary... {len(self.field_aliases)} entries loaded.")
 
+    def clean_alias_string(self, raw):
+        """ Helper to clean reference strings so they match input exactly """
+        norm = raw.lower().replace('.', '').replace(' (hons)', '').replace(' hons', '').replace('-', '').replace('/', '').replace(',', '').replace('(', '').replace(')', '').strip()
+        return " ".join([w for w in norm.split() if w != 'in'])
+
     def clean(self, raw_string):
-        """ Lowercases, removes dots, strips spaces, extracts field if in parens """
+        """ Robust normalizer: handles separators, extra spaces, removes punctuation, extracts field """
         raw_string = str(raw_string).strip()
         field_extracted = None
         
-        # Check for parentheses e.g., B.Tech (Computer Science)
-        match = re.search(r'\((.*?)\)', raw_string)
-        if match:
-            field_extracted = match.group(1).strip()
-            raw_string = re.sub(r'\(.*?\)', '', raw_string).strip()
+        # 1. Regex to check for common explicit connectors: " - ", " / ", " in "
+        # e.g., B.Tech - Computer Science
+        match_conn = re.split(r'\s+-\s+|\s+/\s+|\bin\b', raw_string, maxsplit=1, flags=re.IGNORECASE)
+        if len(match_conn) == 2:
+            raw_string = match_conn[0].strip()
+            field_extracted = match_conn[1].strip()
+        else:
+            # 2. Check for parentheses e.g., B.Tech (Computer Science)
+            match = re.search(r'\((.*?)\)', raw_string)
+            if match:
+                field_extracted = match.group(1).strip()
+                raw_string = re.sub(r'\(.*?\)', '', raw_string).strip()
+            else:
+                # 3. Check comma separator
+                match_comma = re.split(r',', raw_string, maxsplit=1)
+                if len(match_comma) == 2:
+                    raw_string = match_comma[0].strip()
+                    field_extracted = match_comma[1].strip()
             
-        # Check for "in" e.g., B. Tech in CSE
-        match_in = re.search(r'\bin\b(.*)', raw_string, re.IGNORECASE)
-        if match_in and not field_extracted:
-            field_extracted = match_in.group(1).strip()
-            raw_string = raw_string[:match_in.start()].strip()
-            
-        cleaned = raw_string.lower().replace('.', '').replace(' (hons)', '').replace(' hons', '').strip()
+        cleaned = self.clean_alias_string(raw_string)
         
         return cleaned, field_extracted
 
@@ -74,26 +98,34 @@ class Normalizer:
             }
         return None
 
-    def layer2_fuzzy(self, cleaned, threshold_auto=90, threshold_flag=75):
-        """ RapidFuzz against all canonical names """
-        choices = list(self.canonical_degrees)
+    def layer2_fuzzy(self, cleaned, threshold_auto=88, threshold_flag=70):
+        """ RapidFuzz against all known aliases instead of just canonicals for higher typo resilience """
+        choices = list(self.degree_aliases.keys())
         if not choices:
             return None
         
-        result = process.extractOne(cleaned, choices, scorer=fuzz.ratio)
+        # token_set_ratio handles partial string coverage much better than WRatio's subset bias
+        result = process.extractOne(cleaned, choices, scorer=fuzz.token_set_ratio)
         if result:
-            best_match, score, index = result
-            # Try partial ratio and token sort ratio
-            pr = fuzz.partial_ratio(cleaned, best_match)
-            tsr = fuzz.token_sort_ratio(cleaned, best_match)
-            score = max(score, pr, tsr)
+            best_alias_match, score, index = result
+            best_canonical = self.degree_aliases[best_alias_match]
             
-            alternatives = process.extract(cleaned, choices, scorer=fuzz.ratio, limit=3)
-            alt_list = [(alt[0], alt[1]) for alt in alternatives]
+            alternatives = process.extract(cleaned, choices, scorer=fuzz.token_set_ratio, limit=5)
+            
+            # De-duplicate alternative canonical degrees
+            seen = {best_canonical}
+            alt_list = []
+            for alt_alias, alt_score, _ in alternatives:
+                canon = self.degree_aliases[alt_alias]
+                if canon not in seen:
+                    seen.add(canon)
+                    alt_list.append((canon, alt_score))
+                if len(alt_list) >= 3:
+                    break
 
             if score >= threshold_auto:
                 return {
-                    'canonical_degree': best_match,
+                    'canonical_degree': best_canonical,
                     'confidence': score / 100.0,
                     'status': 'fuzzy_matched',
                     'layer_used': 'L2',
@@ -102,7 +134,7 @@ class Normalizer:
                 }
             elif score >= threshold_flag:
                 return {
-                    'canonical_degree': best_match,
+                    'canonical_degree': best_canonical,
                     'confidence': score / 100.0,
                     'status': 'review_needed',
                     'layer_used': 'L2',

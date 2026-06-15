@@ -5,12 +5,17 @@ This repository contains the deliverables for the Growth Grids Summer Internship
 ## Directory Structure
 
 - `data/`: Contains the generated dictionaries and seed files.
-  - `degree_aliases.csv`: Core alias mapping for degrees.
-  - `field_of_study_aliases.csv`: Core alias mapping for fields of study.
-  - `degree_field_map.csv`: Valid pairings of degrees and fields.
+  - `degree_aliases.csv`: Core alias mapping for degrees (~7,000 entries including permutations).
+  - `degree_dictionary.json`: Structured canonical degree dictionary with levels and short codes.
+  - `field_of_study_aliases.csv`: Core alias mapping for fields of study (308 aliases across 68 fields).
+  - `degree_field_map.csv`: Valid pairings of degrees and fields (186 UGC-compliant pairs).
+  - `full_education_reference.csv`: Combined degree × field reference with alias counts and example strings.
+  - `education_reference_seed.sql`: SQL schema + INSERT statements for field aliases and degree-field mappings.
   - `education_seed.sql`: SQL definitions and seed data for the 5-table schema.
   - `education_seed.json`: JSON representation of aliases and candidate examples.
   - `education_schema_seed.csv`: CSV representation of sample candidate data.
+- `auxilary_sources/`: Curated source scripts and reference data used to generate the final datasets.
+  - `field_of_study.py`: Generator script for field aliases and degree-field mappings.
 - `poc/`: Proof of concept python scripts.
   - `normalizer.py`: The 3-layer standalone normalization engine.
 - `report/`:
