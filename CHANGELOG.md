@@ -6,6 +6,43 @@
 
 ---
 
+## Version 2.2.0 — 16 June 2026
+
+### What's New
+
+Restructured project documentation to present the normalisation pipeline as **three distinct, named deployment versions** (Version A / B / C) per Roadmap V2 requirements, enabling Growth Grids to evaluate and select a specific option.
+
+---
+
+### 1. Pipeline Options Decision Brief (`explainme.md` — Rewritten)
+- Replaced the previous Layer 2 framework explainer with a comprehensive **Growth Grids Decision Brief**.
+- Each version (A: Lookup Only, B: Lookup + Fuzzy, C: Full 3-Layer) now has its own section with:
+  - Active layers table
+  - Technical profile (latency, dependencies, infrastructure cost)
+  - "When To Pick This" guidance and limitations
+- Version B includes three interchangeable **Layer 2 engine sub-options** (B-1: RapidFuzz, B-2: TF-IDF, B-3: Embeddings) with per-engine specs.
+- Added a **Decision Matrix** table for side-by-side comparison across all criteria.
+- Added a formal **Recommendation** section (Version B with RapidFuzz as default).
+- Original Layer 2 comparison table preserved in the Appendix.
+
+---
+
+### 2. README Deployment Section (Enhanced)
+- Replaced the prose-based "Implementation Notes" section with a compact **decision matrix table**.
+- Added a cross-reference link to the full decision brief in `explainme.md`.
+
+---
+
+### Files Changed in v2.2.0
+
+| File | Change |
+|---|---|
+| `explainme.md` | Rewritten — now serves as the Growth Grids Pipeline Options Decision Brief |
+| `README.md` | Deployment Options section replaced with decision matrix + cross-reference |
+| `CHANGELOG.md` | Added v2.2.0 entry |
+
+---
+
 ## Version 2.1.0 — 16 June 2026
 
 ### What's New
@@ -59,6 +96,14 @@ Exposed alternative fuzzy entity-resolution models to evaluate performance trade
 │   FastAPI enables language-agnostic integrations.    ││   cause false positives in semantic models.           │
 └───────────────────────────────────────────────────────┘└───────────────────────────────────────────────────────┘
 ```
+
+---
+
+### 5. Roadmap V2: Distinct Deployment Options
+As per the Roadmap V2 specifications, the normalization pipeline has been packaged and documented as three distinct alternatives for Growth Grids to select based on their infrastructure and accuracy needs:
+*   **Option A (Lookup Only)**: Strictly uses Layer 1. Maximum speed, lowest infrastructure cost, zero typo-tolerance.
+*   **Option B (Lookup + Fuzzy)**: Uses Layer 1 and Layer 2. Balances speed and accuracy. Catches typos and aliases. (Recommended).
+*   **Option C (Full 3-Layer)**: Uses Layer 1, Layer 2, and Layer 3 (NLP). Highest accuracy, capable of parsing conversational text, but requires heavy ML infrastructure.
 
 ---
 

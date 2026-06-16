@@ -61,8 +61,24 @@ python app.py
 *   **API Docs**: Visually explore endpoints at `http://127.0.0.1:8000/docs`.
 *   **Interactive Normalization Endpoint**: Send requests to `POST /api/v1/normalize`.
 
-## Implementation Notes
+## Deployment Options (Roadmap V2)
 
-- **Layer 1 & 2 Focus**: The majority of the normalization robustness comes from exact dict lookups (Layer 1) and similarity scoring (Layer 2). These are heavily implemented in the PoCs.
-- **Layer 3 (NLP)**: Layer 3 relies heavily on a stable base from Layers 1 & 2. A simple regex-based stub is provided in the code, but its true implementation via spaCy NER models is left as a future scope (detailed extensively in the report).
-- **Data Extensibility**: We have included `JSON` and `CSV/Excel` formats for the candidate seeds and aliases alongside the required `SQL` file to ensure the data is easily consumable across various systems.
+The normalisation pipeline is packaged as **three distinct named versions** so Growth Grids can select the option that best fits their infrastructure and accuracy needs.
+
+> **📄 Full Decision Brief**: See [`explainme.md`](explainme.md) for detailed per-version technical profiles, Layer 2 engine sub-options, and the complete recommendation rationale.
+
+| Criterion | **Version A** — Lookup Only | **Version B** — Lookup + Fuzzy ⭐ | **Version C** — Full 3-Layer |
+|-----------|-----------|-------------|-----------|
+| **Layers** | L1 only | L1 + L2 | L1 + L2 + L3 |
+| **Latency** | ~0 ms | 1–100 ms | Variable |
+| **Typo Handling** | ❌ None | ✅ High | ✅ High |
+| **Synonym Resolution** | ❌ None | ⚠️ Engine-dependent | ✅ Yes |
+| **Unstructured Text** | ❌ No | ❌ No | ✅ Yes |
+| **Dependencies** | stdlib only | +1 package | Full ML stack |
+| **Infra Cost** | Lowest | Low–Medium | High |
+| **Best For** | Structured / dropdown data | Mixed-quality text fields | Raw resumes / free-text |
+
+> **Recommendation**: Start with **Version B** (RapidFuzz engine) for production. Upgrade to Version C only when unstructured resume parsing becomes a requirement.
+
+### Data Extensibility
+We have included `JSON` and `CSV/Excel` formats for the candidate seeds and aliases alongside the required `SQL` file to ensure the data is easily consumable across various systems.
