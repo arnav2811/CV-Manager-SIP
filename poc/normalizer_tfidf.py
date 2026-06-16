@@ -1,0 +1,190 @@
+import csv
+import json
+import re
+import os
+import sys
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+
+# Ensure parent directory is in path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+class NormalizerTFIDF:
+    def __init__(self, data_dir='../data'):
+        self.data_dir = data_dir
+        self.degree_aliases = {}  # normalized -> canonical
+        self.field_aliases = {}   # normalized -> canonical
+        self.canonical_degrees = set()
+        
+        self.vectorizer = None
+        self.ref_matrix = None
+        self.ref_choices = []
+        
+        self.load_aliases()
+        self.build_tfidf_index()
+        
+    def load_aliases(self):
+        degree_csv = os.path.join(self.data_dir, 'degree_aliases.csv')
+        degree_json = os.path.join(self.data_dir, 'degree_dictionary.json')
+        field_csv = os.path.join(self.data_dir, 'field_of_study_aliases.csv')
+        
+        if not os.path.exists(degree_csv) or not os.path.exists(field_csv):
+            print("Error: Alias files not found.")
+            return
+
+        if os.path.exists(degree_json):
+            with open(degree_json, 'r', encoding='utf-8') as f:
+                deg_dict = json.load(f)
+                for canon, data in deg_dict.items():
+                    self.canonical_degrees.add(canon)
+                    for alias in data['aliases']:
+                        norm = self.clean_alias_string(alias)
+                        self.degree_aliases[norm] = canon
+        else:
+            with open(degree_csv, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    self.degree_aliases[row['normalized']] = row['canonical_name']
+                    self.canonical_degrees.add(row['canonical_name'])
+                
+        with open(field_csv, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                norm_field = row['alias'].strip().lower().replace('.', '')
+                self.field_aliases[norm_field] = row['canonical_field']
+
+        print(f"[TF-IDF] Loading alias dictionary... {len(self.degree_aliases)} entries loaded.")
+
+    def build_tfidf_index(self):
+        self.ref_choices = list(self.degree_aliases.keys())
+        if not self.ref_choices:
+            return
+        
+        # Fit character n-grams (3-5 chars) to capture sub-word spelling matches & typos
+        self.vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(3, 5))
+        self.ref_matrix = self.vectorizer.fit_transform(self.ref_choices)
+
+    def clean_alias_string(self, raw):
+        norm = raw.lower().replace('.', '').replace(' (hons)', '').replace(' hons', '').replace('-', '').replace('/', '').replace(',', '').replace('(', '').replace(')', '').strip()
+        return " ".join([w for w in norm.split() if w != 'in'])
+
+    def clean(self, raw_string):
+        raw_string = str(raw_string).strip()
+        field_extracted = None
+        match_conn = re.split(r'\s+-\s+|\s+/\s+|\bin\b', raw_string, maxsplit=1, flags=re.IGNORECASE)
+        if len(match_conn) == 2:
+            raw_string = match_conn[0].strip()
+            field_extracted = match_conn[1].strip()
+        else:
+            match = re.search(r'\((.*?)\)', raw_string)
+            if match:
+                field_extracted = match.group(1).strip()
+                raw_string = re.sub(r'\(.*?\)', '', raw_string).strip()
+            else:
+                match_comma = re.split(r',', raw_string, maxsplit=1)
+                if len(match_comma) == 2:
+                    raw_string = match_comma[0].strip()
+                    field_extracted = match_comma[1].strip()
+        return self.clean_alias_string(raw_string), field_extracted
+
+    def normalize_field(self, field_str):
+        if not field_str: return None
+        norm_field = field_str.strip().lower().replace('.', '')
+        return self.field_aliases.get(norm_field, None)
+
+    def layer1_lookup(self, cleaned):
+        if cleaned in self.degree_aliases:
+            return {
+                'canonical_degree': self.degree_aliases[cleaned],
+                'confidence': 1.0,
+                'status': 'resolved',
+                'layer_used': 'L1'
+            }
+        return None
+
+    def layer2_fuzzy(self, cleaned, threshold_auto=0.80, threshold_flag=0.60):
+        if not self.ref_choices or self.vectorizer is None:
+            return None
+        
+        query_vec = self.vectorizer.transform([cleaned])
+        similarities = cosine_similarity(query_vec, self.ref_matrix).flatten()
+        
+        # Get top indices sorted by similarity descending
+        top_indices = np.argsort(similarities)[::-1][:5]
+        
+        if len(top_indices) == 0:
+            return None
+            
+        best_idx = top_indices[0]
+        score = float(similarities[best_idx])
+        best_alias_match = self.ref_choices[best_idx]
+        best_canonical = self.degree_aliases[best_alias_match]
+        
+        # Build alternatives
+        seen = {best_canonical}
+        alt_list = []
+        for idx in top_indices:
+            alt_alias = self.ref_choices[idx]
+            alt_score = float(similarities[idx])
+            canon = self.degree_aliases[alt_alias]
+            if canon not in seen:
+                seen.add(canon)
+                alt_list.append((canon, round(alt_score, 2)))
+            if len(alt_list) >= 3:
+                break
+                
+        if score >= threshold_auto:
+            return {
+                'canonical_degree': best_canonical,
+                'confidence': round(score, 2),
+                'status': 'fuzzy_matched',
+                'layer_used': 'L2_TFIDF',
+                'fuzzy_score': round(score * 100, 1),
+                'alternatives': alt_list
+            }
+        elif score >= threshold_flag:
+            return {
+                'canonical_degree': best_canonical,
+                'confidence': round(score, 2),
+                'status': 'review_needed',
+                'layer_used': 'L2_TFIDF',
+                'fuzzy_score': round(score * 100, 1),
+                'alternatives': alt_list
+            }
+        return None
+
+    def normalize(self, raw_string):
+        cleaned, extracted_field = self.clean(raw_string)
+        canonical_field = self.normalize_field(extracted_field)
+        
+        result = {
+            'input': raw_string,
+            'layer_used': 'unresolved',
+            'canonical_degree': '-',
+            'canonical_field': canonical_field,
+            'confidence': 0.0,
+            'status': 'unresolved',
+            'fuzzy_score': 0,
+            'alternatives': []
+        }
+        
+        l1_res = self.layer1_lookup(cleaned)
+        if l1_res:
+            result.update(l1_res)
+            return result
+            
+        l2_res = self.layer2_fuzzy(cleaned)
+        if l2_res:
+            result.update(l2_res)
+            
+        return result
+
+    def batch_normalize(self, list_of_strings):
+        return [self.normalize(s) for s in list_of_strings]
+
+if __name__ == "__main__":
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(base_dir, '..', 'data')
+    n = NormalizerTFIDF(data_dir)
+    print(n.normalize("Btech in Computer Science"))

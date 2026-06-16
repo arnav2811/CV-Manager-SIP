@@ -6,6 +6,62 @@
 
 ---
 
+## Version 2.1.0 — 16 June 2026
+
+### What's New
+
+This version introduces a production-ready headless REST API wrapper and implements alternative algorithmic frameworks for **Layer 2 Fuzzy Matching**. 
+
+---
+
+### 1. Headless REST API Integration (`app.py`)
+- Created [app.py](file:///c:/Users/arnav/Downloads/CV_SIP/cv_manager_sip/poc/app.py) to wrap the normalization logic using **FastAPI** and **Uvicorn**.
+- Migrated code schema validation structures to **Pydantic V2** (`model_config` and `json_schema_extra` syntax).
+- Created a single-string normalization endpoint (`POST /api/v1/normalize`) and a batch processing endpoint (`POST /api/v1/normalize/batch`).
+
+---
+
+### 2. Alternative Layer 2 Fuzzy Match PoCs
+Exposed alternative fuzzy entity-resolution models to evaluate performance tradeoffs relative to the original RapidFuzz implementation:
+- **Character N-Gram Cosine Similarity PoC** ([normalizer_tfidf.py](file:///c:/Users/arnav/Downloads/CV_SIP/cv_manager_sip/poc/normalizer_tfidf.py)): Uses `TfidfVectorizer(analyzer='char', ngram_range=(3, 5))` to index choices and resolve inputs via cosine similarity.
+- **Dense Vector Semantic Embeddings PoC** ([normalizer_embeddings.py](file:///c:/Users/arnav/Downloads/CV_SIP/cv_manager_sip/poc/normalizer_embeddings.py)): Employs Sentence-Transformers (`all-MiniLM-L6-v2`) to represent degree meanings and matches them via dot products.
+- Renamed the core Levenshtein distance module from `normalizer.py` to `normalizer_rapidfuzz.py`.
+
+---
+
+### 3. Layer 2 Match Framework Comparison
+
+| Metric | RapidFuzz (Levenshtein) | TF-IDF (Char N-Gram) | Sentence-Transformers (Dense Embeddings) |
+|---|---|---|---|
+| **Mechanism** | String token set / edit distance | Sparse frequency cosine similarity | Dense vector transformer embeddings |
+| **Execution Speed** | Fast (~1-5ms / query) | Extremely Fast (<1ms / query) | Slow (~50-100ms / query on CPU) |
+| **Typo Resilience** | High (handles letters swaps/omissions) | High (n-gram subword matching) | Moderate (typos warp semantic embeddings) |
+| **Semantic Matching** | Low (struggles with "B.S." vs "B.Sc.") | Low (depends on string characters) | Extremely High (interprets conceptual meaning) |
+| **Infrastructure Needs**| Minimal (pure C/Python package) | Minimal (scikit-learn dependency) | High (requires PyTorch + Sentence-Transformers) |
+
+---
+
+### 4. SWOT / Strategic Analysis of Layer 2 Frameworks
+
+```
+                       STRENGTHS                                               WEAKNESSES
+┌───────────────────────────────────────────────────────┐┌───────────────────────────────────────────────────────┐
+│ • TF-IDF: Sub-millisecond latency; highly scalable.   ││ • TF-IDF/RapidFuzz: Completely blind to semantic      │
+│ • RapidFuzz: Typos / letter transpositions handled.   ││   meanings ("B.S." and "Bachelor of Science" score    │
+│ • Embeddings: Resolves conceptual aliases natively.   ││   poorly without explicit maps).                      │
+│                                                       ││ • Embeddings: Requires large PyTorch CPU/GPU memory. │
+└───────────────────────────────────────────────────────┘└───────────────────────────────────────────────────────┘
+                       OPPORTUNITIES                                            THREATS
+┌───────────────────────────────────────────────────────┐┌───────────────────────────────────────────────────────┐
+│ • Hybrid Scoring: Combined TF-IDF character matching  ││ • Latency SLA: Dense Embeddings model might block     │
+│   with Vector Embeddings for perfect precision.       ││   high-throughput batch uploads if CPU bound.         │
+│ • API Scaling: Exposing headless microservices via    ││ • Out-of-Vocabulary: Completely novel slang words may │
+│   FastAPI enables language-agnostic integrations.    ││   cause false positives in semantic models.           │
+└───────────────────────────────────────────────────────┘└───────────────────────────────────────────────────────┘
+```
+
+---
+
 ## Version 2.0 — 15 June 2026
 
 ### What's New

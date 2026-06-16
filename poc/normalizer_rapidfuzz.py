@@ -218,7 +218,7 @@ if __name__ == "__main__":
     
     while True:
         print("\n" + "="*50)
-        print("CV MANAGER NORMALIZATION CLI")
+        print("CV MANAGER NORMALIZATION CLI (RapidFuzz Method)")
         print("="*50)
         print("1. Run default test cases")
         print("2. Enter custom degree string to normalize")
