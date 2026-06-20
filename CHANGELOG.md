@@ -6,6 +6,82 @@
 
 ---
 
+## Version 2.3.0 — 20 June 2026
+
+### What's New
+
+Comprehensive project audit and polish pass — 10 files modified/created across code, data, documentation, and project structure. Fixes 4 critical issues, 5 high-priority items, and 3 polish improvements.
+
+---
+
+### 1. SQL Seed File — Complete Rewrite (`education_seed.sql`)
+- **Previously**: Only created tables and seeded `qualification_levels` (7 rows). The `qualification_canonical`, `qualification_aliases`, `field_of_study`, and `candidate_education` tables were **empty** — unusable as a handoff artifact.
+- **Now**: Full seed file with:
+  - 19 canonical degree INSERTs with foreign key references to levels
+  - 68 field of study INSERTs with category and JSON alias arrays
+  - 27 representative alias INSERTs (sample subset; full 6,980+ set in CSV)
+  - 3 sample candidate education records demonstrating resolved, fuzzy_matched, and unresolved statuses
+  - Proper `FOREIGN KEY` constraints, `INDEX` definitions, and `ENUM` types
+  - Header/footer comments with bulk-import guidance
+
+---
+
+### 2. PGDM Mapping Collision Fixed (`generate_data.py`)
+- **Bug**: `PGDM` was mapped to **both** `Master of Business Administration` and `Post Graduate Diploma` in the degree alias generator. Whichever appeared last in the CSV would win silently.
+- **Fix**: Removed `PGDM` from MBA aliases. PGDM now exclusively maps to `Post Graduate Diploma` (which is the correct classification — PGDM is a diploma, not an MBA).
+- Also replaced 24 nonsensical typo aliases (`"Tecnology of Technology"`, `"Master Bacheler"`, etc.) with **25 realistic Indian resume misspellings** (`"Bacheler of Technology"`, `"Batchelor of Technology"`, `"Master of Sciance"`, etc.).
+
+---
+
+### 3. API Improvements (`app.py`)
+- **HTTP 404 → 422**: Unresolved normalization requests now return `422 Unprocessable Entity` instead of `404 Not Found` (semantically correct).
+- **CORS middleware**: Added `CORSMiddleware` with open origins for development use.
+- **Health endpoint**: New `GET /health` returns service status + loaded dictionary sizes.
+- **Version bump**: API version string updated from `2.0.0` → `2.2.0` to match CHANGELOG.
+- Added module-level docstring.
+
+---
+
+### 4. Interactive CLIs for All Normalizers
+- `normalizer_tfidf.py` and `normalizer_embeddings.py` previously had a single hardcoded test line in their `__main__` blocks. Both now have **full interactive menus** matching the RapidFuzz normalizer's 3-option CLI (run default test suite / enter custom string / exit).
+- Module-level docstrings added to all four PoC files (`normalizer_rapidfuzz.py`, `normalizer_tfidf.py`, `normalizer_embeddings.py`, `app.py`).
+- Removed unused `import time` and duplicate `import os` from `normalizer_rapidfuzz.py`.
+
+---
+
+### 5. Documentation Fixes
+- **README.md**: Fixed phantom directory references (`report/` → `reports/`, removed deleted `presentation/` dir), updated file descriptions to match actual contents, added `requirements.txt` reference, added project metadata header.
+- **CHANGELOG.md**: Normalized version format to consistent 3-segment semver (`v2.0` → `v2.0.0`, `v1.0` → `v1.0.0`). Fixed stale `poc/normalizer.py` reference → `poc/normalizer_rapidfuzz.py`.
+- **explainme.md**: Added closing separator and cross-reference links to README and CHANGELOG.
+
+---
+
+### 6. New Files
+- **`requirements.txt`**: Python dependency manifest with version pins and per-script annotations. Supports lightweight install (RapidFuzz only) and full install (all engines).
+- **`ppt_generation_prompt.md`**: Comprehensive 22-slide presentation generation brief with slide-by-slide content, layout specs, design guidelines, data tables, diagrams, and presenter notes.
+
+---
+
+### Files Changed in v2.3.0
+
+| File | Change |
+|---|---|
+| `data/education_seed.sql` | Complete rewrite — now a functional seed file |
+| `poc/app.py` | HTTP 422, CORS, /health, docstring, version bump |
+| `poc/normalizer_rapidfuzz.py` | Docstring, removed unused imports |
+| `poc/normalizer_tfidf.py` | Docstring + full interactive CLI |
+| `poc/normalizer_embeddings.py` | Docstring + full interactive CLI |
+| `README.md` | Fixed directory refs, added requirements.txt, metadata header |
+| `CHANGELOG.md` | Semver normalization, stale reference fix, v2.3.0 entry |
+| `explainme.md` | Cross-reference links, trailing separator |
+| `requirements.txt` | **New** — Python dependency manifest |
+| `ppt_generation_prompt.md` | **New** — 22-slide PPT generation brief |
+
+*Also changed (outside repo):*
+| `../generate_data.py` | PGDM collision fix, realistic typo aliases |
+
+---
+
 ## Version 2.2.0 — 16 June 2026
 
 ### What's New
@@ -107,7 +183,7 @@ As per the Roadmap V2 specifications, the normalization pipeline has been packag
 
 ---
 
-## Version 2.0 — 15 June 2026
+## Version 2.0.0 — 15 June 2026
 
 ### What's New
 
@@ -227,7 +303,7 @@ much more comprehensive and curated data source than the auto-generated mock dat
 
 | File | Change |
 |---|---|
-| `poc/normalizer.py` | Layer 1 regex overhaul + Layer 2 scorer swap + JSON dict loading |
+| `poc/normalizer_rapidfuzz.py` | Layer 1 regex overhaul + Layer 2 scorer swap + JSON dict loading |
 | `data/degree_aliases.csv` | Expanded from ~600 → 6,983 entries |
 | `data/degree_dictionary.json` | **New** — Structured canonical degree dictionary |
 | `data/education_seed.json` | Updated to reflect new permutation data |
@@ -238,7 +314,7 @@ much more comprehensive and curated data source than the auto-generated mock dat
 
 ---
 
-## Version 1.0 — 13 June 2026
+## Version 1.0.0 — 13 June 2026
 
 ### Initial Deliverables
 

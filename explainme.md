@@ -169,3 +169,7 @@ The **complete stack**. Inputs flow through all three layers sequentially:
 | **Synonym Matching** | Poor | Poor | Excellent |
 | **Typo Resilience** | High | High | Moderate |
 | **Infrastructure** | Light (Pure C extension) | Light (scikit-learn) | Heavy (PyTorch + SentenceTransformers) |
+
+---
+
+*This document is part of the SIP deliverables. See [README.md](README.md) for project overview and [CHANGELOG.md](CHANGELOG.md) for version history.*

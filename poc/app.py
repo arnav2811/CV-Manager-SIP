@@ -1,4 +1,15 @@
+"""
+Headless CV Normalization Engine — FastAPI REST Wrapper
+======================================================
+Exposes the RapidFuzz-based normalizer as a production-ready REST
+service with single and batch normalization endpoints.
+
+Run:  python app.py
+Docs: http://127.0.0.1:8000/docs
+"""
+
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Optional, Tuple
 import os
@@ -11,7 +22,16 @@ from poc.normalizer_rapidfuzz import Normalizer
 app = FastAPI(
     title="Headless CV Normalization Engine API",
     description="Production-grade REST API utilizing 3-layer algorithmic normalization for resume education credentials.",
-    version="2.0.0"
+    version="2.2.0"
+)
+
+# CORS middleware — allow all origins in development
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Initialize the production normalizer
@@ -48,6 +68,15 @@ class BatchNormalizationRequest(BaseModel):
 class BatchNormalizationResponse(BaseModel):
     results: List[NormalizationResponse]
 
+@app.get("/health", summary="Health check", tags=["System"])
+def health_check():
+    """Returns service status and loaded dictionary size."""
+    return {
+        "status": "healthy",
+        "degree_aliases_loaded": len(normalizer.degree_aliases),
+        "field_aliases_loaded": len(normalizer.field_aliases),
+    }
+
 @app.post("/api/v1/normalize", response_model=NormalizationResponse, summary="Normalize a single education text string")
 def normalize_education_text(payload: NormalizationRequest):
     """
@@ -64,7 +93,7 @@ def normalize_education_text(payload: NormalizationRequest):
     
     if result['status'] == 'unresolved':
         raise HTTPException(
-            status_code=404,
+            status_code=422,
             detail=f"Could not reliably normalize '{payload.raw_text}'. No matches met confidence thresholds."
         )
     

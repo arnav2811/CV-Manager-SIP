@@ -1,6 +1,9 @@
-# CV Manager - Qualification Standardization (SIP)
+# CV Manager — Qualification Standardization (SIP)
 
 This repository contains the deliverables for the Growth Grids Summer Internship Project (SIP) regarding the standardization of candidate qualifications in CV Manager.
+
+> **Project:** Growth Grids × University of Southampton Delhi  
+> **Deadline:** 3 July 2026
 
 ## Directory Structure
 
@@ -16,23 +19,24 @@ This repository contains the deliverables for the Growth Grids Summer Internship
   - `education_schema_seed.csv`: CSV representation of sample candidate data.
 - `auxilary_sources/`: Curated source scripts and reference data used to generate the final datasets.
   - `field_of_study.py`: Generator script for field aliases and degree-field mappings.
-- `poc/`: Proof of concept python scripts.
+- `poc/`: Proof-of-concept Python scripts.
   - `normalizer_rapidfuzz.py`: Standalone normalizer utilizing RapidFuzz edit distance matching (Layer 2).
   - `normalizer_tfidf.py`: Standalone normalizer utilizing Scikit-learn character N-Gram TF-IDF cosine similarity.
   - `normalizer_embeddings.py`: Standalone normalizer utilizing Sentence-Transformer embeddings for semantic similarity.
   - `app.py`: FastAPI server wrapper exposing the `normalizer_rapidfuzz` engine as REST endpoints.
-- `report/`:
-  - `final_report.docx`: The fully detailed written report outlining the findings, implementation, and future scope.
-- `presentation/`:
-  - `presentation.pptx`: The slide deck for the project presentation.
+- `reports/`: Supporting documents and reference materials.
+  - `Qualification_Normalisation_Frameworks.docx`: Research frameworks for qualification normalisation.
+  - `SIP.pdf`: Summer Internship Project report.
+- `requirements.txt`: Python dependency manifest (install with `pip install -r requirements.txt`).
 
 ## Running the PoC Engines & API
 
 ### 1. Installation of Dependencies
 Ensure all packages are installed:
 ```bash
-pip install fastapi uvicorn rapidfuzz pydantic scikit-learn sentence-transformers
+pip install -r requirements.txt
 ```
+> **Lightweight install** (RapidFuzz engine only): `pip install rapidfuzz`
 
 ### 2. Standalone Normalization CLIs
 Navigate to the `poc` directory:

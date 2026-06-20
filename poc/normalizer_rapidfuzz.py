@@ -1,8 +1,18 @@
+"""
+CV Manager Normalizer — RapidFuzz Levenshtein Engine (Layer 2, Engine B-1)
+==========================================================================
+Three-layer qualification normalization pipeline:
+  L1: Exact dictionary lookup against 6,980+ pre-computed aliases
+  L2: RapidFuzz token_set_ratio fuzzy matching with configurable thresholds
+  L3: Regex-based stub for unstructured text (placeholder for spaCy NER)
+
+Run:  python normalizer_rapidfuzz.py
+"""
+
 import csv
 import json
 import re
 import os
-import time
 from rapidfuzz import process, fuzz
 
 class Normalizer:
@@ -208,7 +218,6 @@ class Normalizer:
         return results
 
 if __name__ == "__main__":
-    import os
     
     # Needs to be run from the poc directory or adjust path
     base_dir = os.path.dirname(os.path.abspath(__file__))

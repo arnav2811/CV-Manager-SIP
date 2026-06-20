@@ -1,0 +1,21 @@
+# CV Manager SIP — Python Dependencies
+# =====================================
+# Install with: pip install -r requirements.txt
+
+# Core PoC (normalizer_rapidfuzz.py)
+rapidfuzz>=3.0.0
+
+# FastAPI REST wrapper (app.py)
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0
+
+# TF-IDF normalizer (normalizer_tfidf.py)
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Embeddings normalizer (normalizer_embeddings.py)
+# NOTE: These are heavy dependencies (~500MB+). Only install
+# if you need the semantic similarity engine (Engine B-3).
+sentence-transformers>=2.2.0
+torch>=2.0.0

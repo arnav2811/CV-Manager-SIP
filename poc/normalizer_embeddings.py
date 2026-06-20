@@ -1,3 +1,14 @@
+"""
+CV Manager Normalizer — Sentence-Transformer Embeddings Engine (Layer 2, Engine B-3)
+====================================================================================
+Uses the all-MiniLM-L6-v2 model to encode degree strings into 384-dim
+dense vectors. Matches input against pre-encoded reference aliases via
+normalized dot product (cosine similarity).
+
+Run:  python normalizer_embeddings.py
+Note: Requires ~90 MB model download on first run.
+"""
+
 import csv
 import json
 import re
@@ -191,4 +202,89 @@ if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(base_dir, '..', 'data')
     n = NormalizerEmbeddings(data_dir)
-    print(n.normalize("Btech in Computer Science"))
+
+    while True:
+        print("\n" + "="*50)
+        print("CV MANAGER NORMALIZATION CLI (Embeddings Method)")
+        print("="*50)
+        print("1. Run default test cases")
+        print("2. Enter custom degree string to normalize")
+        print("3. Exit")
+
+        choice = input("\nEnter your choice (1/2/3): ").strip()
+
+        if choice == '1':
+            test_cases = [
+                "B.Tech",
+                "BTech",
+                "Bachelor of Technology",
+                "Bacheler of Technology",
+                "B. Tech in CSE",
+                "M.Tech (Computer Science)",
+                "MBA",
+                "Bachellor of Technolgy in CSE",
+                "BE Hons",
+                "12th",
+                "B.Pharma",
+                "Kuchh bhi degree",
+            ]
+
+            print(f"\nRunning normalization pipeline on {len(test_cases)} test cases...\n")
+            results = n.batch_normalize(test_cases)
+
+            print("-" * 70)
+            print(f"{'INPUT':<30} {'CANONICAL':<25} {'LAYER':<12} {'CONF':<6} {'STATUS'}")
+            print("-" * 70)
+
+            stats = {'resolved_L1': 0, 'fuzzy_L2': 0, 'review': 0, 'unresolved': 0}
+
+            for r in results:
+                inp = r['input']
+                canon = r['canonical_degree'] if r['canonical_degree'] else "-"
+                layer = r['layer_used']
+                conf = f"{r['confidence']:.2f}" if r['confidence'] else "-"
+                status = r['status']
+
+                print(f"{inp[:28]:<30} {canon[:23]:<25} {layer:<12} {conf:<6} {status}")
+                if r['canonical_field']:
+                    print(f"  -> field: {r['canonical_field']:<25}")
+
+                if status == 'resolved' and layer == 'L1': stats['resolved_L1'] += 1
+                elif 'L2' in layer: stats['fuzzy_L2'] += 1
+                elif status == 'review_needed': stats['review'] += 1
+                elif status == 'unresolved': stats['unresolved'] += 1
+
+            print("-" * 70 + "\n")
+            total = len(test_cases)
+            print("SUMMARY")
+            print(f"  Total inputs      : {total}")
+            print(f"  Resolved (L1)     : {stats['resolved_L1']}   ({(stats['resolved_L1']/total)*100:.1f}%)")
+            print(f"  Fuzzy matched (L2): {stats['fuzzy_L2']}   ({(stats['fuzzy_L2']/total)*100:.1f}%)")
+            print(f"  Review needed     : {stats['review']}   ({(stats['review']/total)*100:.1f}%)")
+            print(f"  Unresolved        : {stats['unresolved']}   ({(stats['unresolved']/total)*100:.1f}%)")
+
+        elif choice == '2':
+            user_input = input("\nEnter degree string (e.g., 'B.Tech (CSE)'): ").strip()
+            if not user_input:
+                continue
+            r = n.normalize(user_input)
+            print("\n" + "-" * 50)
+            print("NORMALIZATION RESULT")
+            print("-" * 50)
+            print(f"Input            : {r['input']}")
+            print(f"Canonical Degree : {r['canonical_degree'] if r['canonical_degree'] else 'None'}")
+            print(f"Canonical Field  : {r['canonical_field'] if r['canonical_field'] else 'None'}")
+            print(f"Layer Used       : {r['layer_used']}")
+            print(f"Confidence       : {r['confidence']:.2f}")
+            print(f"Status           : {r['status']}")
+            if r['alternatives']:
+                print("\nFuzzy Matching Alternatives:")
+                for alt, score in r['alternatives']:
+                    print(f"  - {alt} (Score: {score})")
+            print("-" * 50)
+
+        elif choice == '3':
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please try again.")
