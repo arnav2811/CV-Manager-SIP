@@ -1,117 +1,374 @@
 """
-Headless CV Normalization Engine — FastAPI REST Wrapper
-======================================================
-Exposes the RapidFuzz-based normalizer as a production-ready REST
-service with single and batch normalization endpoints.
+CV Manager — Unified POC Application
+=====================================
+Single entry-point CLI that provides access to every engine in the
+qualification-normalisation pipeline without requiring any server.
+
+Engine roster
+  [A]  Layer 1 only          — dictionary exact-match, zero latency
+  [B1] RapidFuzz             — L1 + Levenshtein fuzzy (standalone)
+  [B2] TF-IDF                — L1 + character n-gram cosine (standalone)
+  [B3] Embeddings            — L1 + semantic vectors (needs torch)
+  [C]  L2 Combined           — consensus vote across B1+B2+B3
+  [D]  Full Orchestrator     — L1 + L2 Combined + L3 heuristic (max recall)
+
+Menu structure
+  Main menu → choose engine → sub-menu:
+    1. Run standard test suite
+    2. Normalise a custom input
+    3. Batch process from file
+    4. Compare all engines on one input
+    5. Back to main menu
 
 Run:  python app.py
-Docs: http://127.0.0.1:8000/docs
 """
 
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
-from typing import List, Optional, Tuple
+from __future__ import annotations
+
+import csv
 import os
 import sys
+import time
+from typing import Optional
 
-# Add parent directory to path so we can import normalizer correctly if run directly from here
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from poc.normalizer_rapidfuzz import Normalizer
+# ── path bootstrap ─────────────────────────────────────────────────────────
+_HERE     = os.path.dirname(os.path.abspath(__file__))
+_ROOT     = os.path.dirname(_HERE)
+_DATA_DIR = os.path.join(_ROOT, "data")
+sys.path.insert(0, _HERE)
+sys.path.insert(0, _ROOT)
 
-app = FastAPI(
-    title="Headless CV Normalization Engine API",
-    description="Production-grade REST API utilizing 3-layer algorithmic normalization for resume education credentials.",
-    version="2.2.0"
-)
+# ── version ────────────────────────────────────────────────────────────────
+APP_VERSION = "3.0.0"
 
-# CORS middleware — allow all origins in development
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# ── shared test suite ─────────────────────────────────────────────────────
+STANDARD_TESTS: list[str] = [
+    # Clean abbreviations
+    "B.Tech",
+    "BTech",
+    "MBA",
+    "BBA",
+    "BSc",
+    "12th",
+    # Typo-laced
+    "Bacheler of Technology",
+    "Bachellor of Technolgy",
+    "Bachelar of Sci",
+    # With field separators
+    "B. Tech in CSE",
+    "M.Tech (Computer Science)",
+    "B.Tech - Mechanical Engineering",
+    "BE, Electronics",
+    # Long canonical names
+    "Bachelor of Technology",
+    "Bachelor of Business Administration",
+    # Abbreviated long name (the "BBA bug" case)
+    "Bachelor of Business Admin",
+    # Hons / variant markers
+    "BE Hons",
+    "B.Pharma",
+    # Unrecognised
+    "Kuchh bhi degree",
+    # Conversational (L3 territory)
+    "I completed my Masters in Data Science from IIT Delhi",
+    "She holds a diploma in Electrical Engineering",
+]
 
-# Initialize the production normalizer
-# Assuming normalizer runs from poc/ or project root
-base_dir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(base_dir, '..', 'data')
-normalizer = Normalizer(data_dir=data_dir)
 
-# Define schemas
-class NormalizationRequest(BaseModel):
-    raw_text: str = Field(..., description="The raw education string to normalize", json_schema_extra={"example": "B.Tech (Computer Science)"})
+# ══════════════════════════════════════════════════════════════════════════
+# Display helpers
+# ══════════════════════════════════════════════════════════════════════════
 
-class AlternativeMatch(BaseModel):
-    degree: str
-    score: float
+def _banner() -> None:
+    print("\n" + "╔" + "═" * 66 + "╗")
+    print("║" + " " * 15 + "CV MANAGER — NORMALISATION POC" + " " * 21 + "║")
+    print("║" + f"  Version {APP_VERSION}  ·  Growth Grids × University of Southampton".center(66) + "║")
+    print("╚" + "═" * 66 + "╝")
 
-class NormalizationResponse(BaseModel):
-    model_config = {
-        "populate_by_name": True
-    }
-    
-    input_text: str = Field(..., alias="input")
-    layer_used: str
-    canonical_degree: Optional[str]
-    canonical_field: Optional[str]
-    confidence: float
-    status: str
-    fuzzy_score: float
-    alternatives: List[Tuple[str, float]]
 
-class BatchNormalizationRequest(BaseModel):
-    inputs: List[str] = Field(..., description="List of raw education strings to normalize")
+def _section(title: str) -> None:
+    print(f"\n  ┌{'─' * (len(title) + 4)}┐")
+    print(f"  │  {title}  │")
+    print(f"  └{'─' * (len(title) + 4)}┘")
 
-class BatchNormalizationResponse(BaseModel):
-    results: List[NormalizationResponse]
 
-@app.get("/health", summary="Health check", tags=["System"])
-def health_check():
-    """Returns service status and loaded dictionary size."""
-    return {
-        "status": "healthy",
-        "degree_aliases_loaded": len(normalizer.degree_aliases),
-        "field_aliases_loaded": len(normalizer.field_aliases),
-    }
+def _print_result_table(results: list[dict], label: str = "") -> None:
+    total = len(results)
+    if label:
+        print(f"\n  {label}  ({total} inputs)\n")
+    print(f"  {'INPUT':<35} {'CANONICAL':<30} {'LAYER':<14} {'CONF':<6} STATUS")
+    print("  " + "─" * 100)
+    stats: dict[str, int] = {}
+    for r in results:
+        inp    = (str(r.get("input") or ""))[:33]
+        canon  = (str(r.get("canonical_degree") or "—"))[:28]
+        layer  = str(r.get("layer_used") or "—")
+        conf   = f"{r.get('confidence', 0):.2f}"
+        status = str(r.get("status") or "—")
+        print(f"  {inp:<35} {canon:<30} {layer:<14} {conf:<6} {status}")
+        if r.get("canonical_field"):
+            print(f"  {'':>35} ↳ field: {r['canonical_field']}")
+        stats[status] = stats.get(status, 0) + 1
+    print("  " + "─" * 100)
+    print(f"\n  SUMMARY  (n={total})")
+    for s, c in sorted(stats.items()):
+        print(f"    {s:<18}: {c:>3}  ({c / total * 100:.0f}%)")
 
-@app.post("/api/v1/normalize", response_model=NormalizationResponse, summary="Normalize a single education text string")
-def normalize_education_text(payload: NormalizationRequest):
-    """
-    Passes an unnormalized string to the 3-layer normalization pipeline:
-    - **Layer 1**: Direct dictionary lookup.
-    - **Layer 2**: Typo-resilient fuzzy similarity matching.
-    - **Layer 3**: Basic rule/regex-based heuristic extraction.
-    """
-    raw_text = payload.raw_text.strip()
-    if not raw_text:
-        raise HTTPException(status_code=400, detail="Input text cannot be empty.")
-    
-    result = normalizer.normalize(raw_text)
-    
-    if result['status'] == 'unresolved':
-        raise HTTPException(
-            status_code=422,
-            detail=f"Could not reliably normalize '{payload.raw_text}'. No matches met confidence thresholds."
-        )
-    
-    # Map key 'input' to schema alias
-    return result
 
-@app.post("/api/v1/normalize/batch", response_model=BatchNormalizationResponse, summary="Normalize a batch of education strings")
-def batch_normalize_education_text(payload: BatchNormalizationRequest):
-    """
-    Processes a list of raw education strings in batch using the normalization engine.
-    """
-    if not payload.inputs:
-        raise HTTPException(status_code=400, detail="Input list cannot be empty.")
-        
-    raw_results = normalizer.batch_normalize(payload.inputs)
-    return {"results": raw_results}
+def _print_single_result(r: dict) -> None:
+    print("\n  " + "─" * 60)
+    print("  NORMALISATION RESULT")
+    print("  " + "─" * 60)
+    print(f"  Input            : {r.get('input','')}")
+    print(f"  Canonical Degree : {r.get('canonical_degree') or 'None'}")
+    print(f"  Canonical Field  : {r.get('canonical_field')  or 'None'}")
+    print(f"  Layer Used       : {r.get('layer_used','—')}")
+    print(f"  Confidence       : {r.get('confidence', 0):.4f}")
+    print(f"  Fuzzy Score      : {r.get('fuzzy_score', 0)}")
+    print(f"  Status           : {r.get('status','—')}")
+    if r.get("alternatives"):
+        print("\n  Alternatives:")
+        for alt, sc in r["alternatives"]:
+            print(f"    • {alt:<38}  {sc:.4f}")
+    # Orchestrator-specific extras
+    if r.get("audit"):
+        print("\n  Audit Trail:")
+        for layer, info in r["audit"].items():
+            if isinstance(info, dict):
+                print(f"    [{layer}]  hit={info.get('hit', '—')}  "
+                      f"latency={info.get('latency_ms', info.get('ms', '—'))}ms")
+                if "engines" in info:
+                    for ed in info["engines"]:
+                        print(f"      ↳ {ed.get('engine','?'):<12}  "
+                              f"{(ed.get('result') or '—'):<28}  "
+                              f"conf={ed.get('conf',0):.3f}  {ed.get('ms',0):.1f}ms")
+    if r.get("l3_strategy"):
+        print(f"\n  L3 Strategy      : {r['l3_strategy']}")
+        print(f"  Extracted Text   : {r.get('extracted_mention') or '—'}")
+    print("  " + "─" * 60)
+
+
+def _compare_all_engines(raw: str, engine_map: dict) -> None:
+    print(f"\n  ENGINE COMPARISON  —  \"{raw}\"\n")
+    print(f"  {'ENGINE':<18} {'CANONICAL':<32} {'CONF':<6} {'LAYER':<14} STATUS")
+    print("  " + "─" * 88)
+    for label, eng in engine_map.items():
+        if eng is None:
+            print(f"  {label:<18} (not loaded — missing dependency)")
+            continue
+        try:
+            t0 = time.perf_counter()
+            r  = eng.normalize(raw)
+            ms = (time.perf_counter() - t0) * 1000
+            canon  = (str(r.get("canonical_degree") or "—"))[:30]
+            conf   = f"{r.get('confidence', 0):.3f}"
+            layer  = str(r.get("layer_used") or "—")
+            status = str(r.get("status") or "—")
+            print(f"  {label:<18} {canon:<32} {conf:<6} {layer:<14} {status}  ({ms:.1f}ms)")
+        except Exception as exc:
+            print(f"  {label:<18} ERROR: {exc}")
+    print("  " + "─" * 88)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# Engine loading
+# ══════════════════════════════════════════════════════════════════════════
+
+def _load_engines(data_dir: str) -> dict:
+    """Load all engines. Returns dict; unavailable engines map to None."""
+    engines: dict[str, object | None] = {}
+
+    print("\n  Loading engines (this may take a moment on first run) …\n")
+
+    from normalizer_rapidfuzz import Normalizer as RF
+    from normalizer_tfidf      import NormalizerTFIDF as TFIDF
+
+    engines["[A] L1-Only / RapidFuzz"] = RF(data_dir)
+    engines["[B1] RapidFuzz"]          = engines["[A] L1-Only / RapidFuzz"]
+
+    try:
+        engines["[B2] TF-IDF"] = TFIDF(data_dir)
+    except Exception as exc:
+        print(f"  [B2] TF-IDF unavailable: {exc}")
+        engines["[B2] TF-IDF"] = None
+
+    try:
+        from normalizer_embeddings import NormalizerEmbeddings as EMB
+        emb = EMB(data_dir)
+        engines["[B3] Embeddings"] = emb if emb.model else None
+        if not emb.model:
+            print("  [B3] Embeddings: model not loaded (install sentence-transformers torch)")
+    except Exception as exc:
+        print(f"  [B3] Embeddings unavailable: {exc}")
+        engines["[B3] Embeddings"] = None
+
+    try:
+        from engine_l2_combined import L2CombinedEngine
+        engines["[C] L2-Combined"] = L2CombinedEngine(data_dir)
+    except Exception as exc:
+        print(f"  [C] L2-Combined unavailable: {exc}")
+        engines["[C] L2-Combined"] = None
+
+    try:
+        from engine_orchestrator import CVNormalizationOrchestrator
+        mode = "full" if engines.get("[B3] Embeddings") else "standard"
+        engines["[D] Orchestrator"] = CVNormalizationOrchestrator(data_dir, mode=mode)
+    except Exception as exc:
+        print(f"  [D] Orchestrator unavailable: {exc}")
+        engines["[D] Orchestrator"] = None
+
+    available = [k for k, v in engines.items() if v is not None]
+    print(f"\n  Loaded: {len(available)}/{len(engines)} engines")
+    return engines
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# Sub-menus
+# ══════════════════════════════════════════════════════════════════════════
+
+def _sub_menu(label: str, engine: object, all_engines: dict) -> None:
+    while True:
+        print(f"\n  ── {label} ──")
+        print("    1. Run standard test suite")
+        print("    2. Normalise a custom input")
+        print("    3. Batch process from CSV file")
+        print("    4. Compare all engines on one input")
+        print("    5. ← Back to main menu")
+
+        sub = input("\n    Sub-choice [1-5]: ").strip()
+
+        if sub == "1":
+            t0      = time.perf_counter()
+            results = engine.batch_normalize(STANDARD_TESTS)  # type: ignore[attr-defined]
+            elapsed = (time.perf_counter() - t0) * 1000
+            _print_result_table(
+                results,
+                f"{label}  ·  {elapsed:.1f}ms total  ·  {elapsed/len(results):.1f}ms avg",
+            )
+
+        elif sub == "2":
+            raw = input("\n    Degree string: ").strip()
+            if raw:
+                r = engine.normalize(raw)  # type: ignore[attr-defined]
+                _print_single_result(r)
+
+        elif sub == "3":
+            path = input("\n    CSV/TXT file path (one string per line, or column 'raw_text'): ").strip()
+            if not os.path.isfile(path):
+                print("    File not found.")
+                continue
+            inputs: list[str] = []
+            try:
+                with open(path, "r", encoding="utf-8") as fh:
+                    if path.endswith(".csv"):
+                        reader = csv.DictReader(fh)
+                        col    = "raw_text" if "raw_text" in (reader.fieldnames or []) else None
+                        for row in reader:
+                            val = row.get(col, "") if col else next(iter(row.values()), "")
+                            if val.strip():
+                                inputs.append(val.strip())
+                    else:
+                        inputs = [ln.strip() for ln in fh if ln.strip()]
+            except Exception as exc:
+                print(f"    Error reading file: {exc}")
+                continue
+
+            if not inputs:
+                print("    No inputs found in file.")
+                continue
+
+            t0      = time.perf_counter()
+            results = engine.batch_normalize(inputs)  # type: ignore[attr-defined]
+            elapsed = (time.perf_counter() - t0) * 1000
+            _print_result_table(results, f"Batch from {os.path.basename(path)}")
+
+            save = input("\n    Save results to CSV? [y/N]: ").strip().lower()
+            if save == "y":
+                out_path = path.replace(".csv", "_normalized.csv").replace(".txt", "_normalized.csv")
+                if not out_path.endswith("_normalized.csv"):
+                    out_path += "_normalized.csv"
+                with open(out_path, "w", newline="", encoding="utf-8") as fh:
+                    fieldnames = ["input", "canonical_degree", "canonical_field",
+                                  "confidence", "status", "layer_used", "fuzzy_score"]
+                    w = csv.DictWriter(fh, fieldnames=fieldnames, extrasaction="ignore")
+                    w.writeheader()
+                    w.writerows(results)
+                print(f"    Saved → {out_path}")
+
+        elif sub == "4":
+            raw = input("\n    Degree string to compare across all engines: ").strip()
+            if raw:
+                _compare_all_engines(raw, all_engines)
+
+        elif sub == "5":
+            break
+        else:
+            print("    Invalid choice.")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# Main menu
+# ══════════════════════════════════════════════════════════════════════════
+
+def main() -> None:
+    _banner()
+
+    engines = _load_engines(_DATA_DIR)
+
+    # Quick-select labels in menu order
+    menu_order = [
+        "[A] L1-Only / RapidFuzz",
+        "[B1] RapidFuzz",
+        "[B2] TF-IDF",
+        "[B3] Embeddings",
+        "[C] L2-Combined",
+        "[D] Orchestrator",
+    ]
+    # Deduplicate [A] and [B1] in display (they share the same object)
+    display_labels = [
+        ("[A+B1] RapidFuzz (L1+L2)",   "[B1] RapidFuzz"),
+        ("[B2]   TF-IDF (L1+L2)",      "[B2] TF-IDF"),
+        ("[B3]   Embeddings (L1+L2)",   "[B3] Embeddings"),
+        ("[C]    L2 Combined (voting)", "[C] L2-Combined"),
+        ("[D]    Orchestrator (full)",  "[D] Orchestrator"),
+    ]
+
+    while True:
+        print("\n\n" + "═" * 70)
+        print("  MAIN MENU — Select an engine")
+        print("═" * 70)
+        for idx, (display, key) in enumerate(display_labels, 1):
+            status = "✓" if engines.get(key) else "✗ (unavailable)"
+            print(f"    {idx}.  {display:<36}  {status}")
+        print(f"    {len(display_labels)+1}.  Compare all engines on custom input")
+        print(f"    {len(display_labels)+2}.  Exit")
+
+        choice = input(f"\n  Choice [1-{len(display_labels)+2}]: ").strip()
+
+        if choice.isdigit():
+            c = int(choice)
+            if 1 <= c <= len(display_labels):
+                display, key = display_labels[c - 1]
+                eng = engines.get(key)
+                if eng is None:
+                    print(f"\n  {display} is not available. Install missing dependencies.")
+                else:
+                    _sub_menu(display, eng, engines)
+
+            elif c == len(display_labels) + 1:
+                raw = input("\n  Degree string to compare across all engines: ").strip()
+                if raw:
+                    _compare_all_engines(raw, {k: v for k, v in engines.items()
+                                               if k not in ("[A] L1-Only / RapidFuzz",)})
+
+            elif c == len(display_labels) + 2:
+                print("\n  Goodbye.\n")
+                sys.exit(0)
+            else:
+                print("  Invalid choice.")
+        else:
+            print("  Please enter a number.")
+
 
 if __name__ == "__main__":
-    import uvicorn
-    # Start the API server locally on port 8000
-    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
+    main()

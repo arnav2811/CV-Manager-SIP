@@ -6,6 +6,133 @@
 
 ---
 
+## Version 3.0.0 — 22 June 2026
+
+### What's New
+
+**Major architecture release** — the normalisation pipeline is now a complete, production-grade 3-layer system with consensus voting, a fully-implemented Layer 3 heuristic engine, a master orchestrator with selectable operating modes, and a unified interactive CLI that replaces the FastAPI server. 7 files modified, 3 new engine files created, FastAPI removed.
+
+---
+
+### 1. Layer 2 Combined Engine — Consensus Voting (`engine_l2_combined.py`) [NEW]
+
+- Runs all three Layer 2 sub-engines (RapidFuzz, TF-IDF, Embeddings) in parallel.
+- Each engine casts a **weighted vote** for its top canonical match:
+  - RapidFuzz: base weight `0.35`, TF-IDF: `0.30`, Embeddings: `0.35`
+  - Vote weight = `engine_base_weight × confidence_score`
+- The canonical name with the highest total vote weight wins.
+- **Consensus bonus**: when ≥2 engines agree, confidence is boosted by +0.05 (capped at 1.0).
+- Degrades gracefully — if `sentence-transformers` is not installed, Embeddings is skipped and weights re-normalise automatically.
+- Returns full `engine_detail` breakdown showing what each sub-engine reported.
+
+---
+
+### 2. Layer 3 NLP/Heuristic Engine (`engine_l3.py`) [NEW]
+
+- **Replaces the L3 stub** with a fully-implemented, pure-Python heuristic cascade (zero ML dependencies).
+- Four strategies applied in priority order:
+
+| Strategy | Description | Confidence |
+|----------|-------------|------------|
+| S2 Shortcode Expansion | 50+ hard-coded abbreviations (BCA, PGDM, LLB, 12th…) → canonical | 0.80 |
+| S1 Sentence Extraction | Regex patterns pull degree mentions from natural language | 0.60–0.72 |
+| S3 Level Keyword Detection | Maps keywords (bachelor, master, phd…) to a degree level | 0.50 |
+| S4 Field-Only Inference | Detects field of study when no degree level is identifiable | 0.35 |
+
+- Can now handle inputs like: _"I completed my B.Tech in Computer Science from IIT Delhi in 2022"_, _"She holds a diploma in Electrical Engineering"_.
+
+---
+
+### 3. Master Orchestrator Engine (`engine_orchestrator.py`) [NEW]
+
+- Full L1 → L2 → L3 pipeline with **three selectable operating modes**:
+
+| Mode | L2 Engines Active | L3 | Latency |
+|------|-------------------|-----|---------|
+| `fast` | RapidFuzz only | No | ~1–5 ms |
+| `standard` | RapidFuzz + TF-IDF | No | ~2–6 ms |
+| `full` | All three + L3 heuristic | Yes | ~50–120 ms |
+
+- Per-layer **audit trail** with timing breakdowns, engine votes, and decision rationale.
+- Cross-engine comparison utility: `compare_all_engines()` runs every sub-engine independently and returns a structured side-by-side report.
+
+---
+
+### 4. RapidFuzz Scorer Fix — Superset Bias Eliminated
+
+**Bug**: `fuzz.token_set_ratio` alone scored 100 for any input that was a token-subset of a long canonical name. This caused `"Bachelor of Business Admin"` to match `Bachelor of Business Administration` (correct), but also caused many shorter unrelated inputs to be absorbed by long canonical names.
+
+**Fix**: Replaced single-scorer approach with a **weighted combined scorer**:
+```
+combined_score = token_set_ratio × 0.65 + token_sort_ratio × 0.35
+```
+`token_sort_ratio` penalises large length mismatches, preventing short inputs from scoring 100 against very long canonicals purely via subset containment.
+
+**Result:**
+| Input | v2.3 Result | v3.0 Result |
+|---|---|---|
+| `Bachelor of Business Admin` | Inconsistent / Error ❌ | Bachelor of Business Administration ✅ |
+| `Bacheler of Technology` | Bachelor of Business Administration ❌ | Bachelor of Technology ✅ |
+| `BBA` | Review needed (low confidence) ⚠️ | Bachelor of Business Administration ✅ (via L1) |
+
+---
+
+### 5. Field-Split Regex Fix — `\bin\b` → `\s+in\s+`
+
+**Bug**: The `\bin\b` word-boundary regex in `clean()` was splitting on the substring "in" inside words like `Admin`, `Administration`, `Engineering`, `Business`, causing incorrect field extraction and broken degree strings.
+
+**Fix**: Replaced `\bin\b` with `\s+in\s+` across all three standalone engines. This requires "in" to be surrounded by whitespace (a standalone preposition), not embedded inside another word.
+
+---
+
+### 6. FastAPI Server Removed — Unified CLI POC (`app.py`)
+
+- **Removed**: `FastAPI`, `uvicorn`, `pydantic` dependencies and the REST API wrapper.
+- **Added**: Rich interactive CLI application that provides unified access to all engines:
+  - Engine selection: [A+B1] RapidFuzz, [B2] TF-IDF, [B3] Embeddings, [C] L2-Combined, [D] Orchestrator
+  - Per-engine sub-menu: test suite, custom input, batch CSV processing (with optional output save), cross-engine comparison
+- `requirements.txt` updated: FastAPI/uvicorn/pydantic removed; install tiers documented (minimum / standard / full).
+
+---
+
+### 7. Documentation Overhaul
+
+- **`README.md`**: Complete rewrite — architecture diagram (ASCII art), updated directory structure, new engine reference table, quick-start guide with install tiers, key bug-fixes table.
+- **`explainme.md`**: Updated for v3.0.0 — added Engine C (Combined), documented L3 heuristic cascade with strategy/confidence table, added orchestrator modes table, updated recommendation.
+- **`requirements.txt`**: Removed FastAPI/uvicorn/pydantic; added install-tier comments (minimum / standard / full); marked sentence-transformers/torch as optional-heavy.
+- **`CHANGELOG.md`**: This entry.
+
+---
+
+### 8. Cross-Engine Structural Consistency
+
+All five engine files now share:
+- Identical `_clean_token()` static method with the `\s+in\s+` fix.
+- Identical `clean()` method (degree/field separator logic).
+- Consistent result dict structure: `input`, `canonical_degree`, `canonical_field`, `confidence`, `status`, `layer_used`, `fuzzy_score`, `alternatives`, `engine`.
+- `ENGINE_ID` class constant on each engine for audit/tracing.
+- Graceful import guards and error handling (never raises to caller).
+
+---
+
+### Files Changed in v3.0.0
+
+| File | Change |
+|---|---|
+| `poc/engine_l2_combined.py` | **New** — Layer 2 consensus voting engine |
+| `poc/engine_l3.py` | **New** — Layer 3 NLP/heuristic cascade (4 strategies) |
+| `poc/engine_orchestrator.py` | **New** — Master 3-layer orchestrator (3 modes) |
+| `poc/app.py` | **Rewritten** — FastAPI removed; unified interactive CLI POC |
+| `poc/normalizer_rapidfuzz.py` | Combined scorer fix, `\s+in\s+` regex fix, L3 stub improved |
+| `poc/normalizer_tfidf.py` | `\s+in\s+` regex fix, engine ID, structural polish |
+| `poc/normalizer_embeddings.py` | `\s+in\s+` regex fix, engine ID, graceful import guard |
+| `README.md` | Complete rewrite — architecture diagram, engine table, install tiers |
+| `explainme.md` | Updated — Engine C, L3 strategies, orchestrator modes |
+| `requirements.txt` | Removed FastAPI deps; added install-tier documentation |
+| `CHANGELOG.md` | Added v3.0.0 entry |
+
+---
+
 ## Version 2.3.0 — 20 June 2026
 
 ### What's New

@@ -1,6 +1,7 @@
 # PPT Generation Prompt — CV Manager Qualification Standardization (SIP)
 
-> **Use this prompt** to generate a professional 22-slide PowerPoint presentation for the Growth Grids Summer Internship Project. Feed this document to any AI presentation tool (Gamma, SlidesAI, Beautiful.AI, Claude, GPT, etc.) or use it as a slide-by-slide brief for manual creation.
+> **Version**: v3.0.0 — Updated 22 June 2026  
+> **Use this prompt** to generate a professional 24-slide PowerPoint presentation for the Growth Grids Summer Internship Project. Feed this document to any AI presentation tool (Gamma, SlidesAI, Beautiful.AI, Claude, GPT, etc.) or use it as a slide-by-slide brief for manual creation.
 
 ---
 
@@ -53,17 +54,20 @@
 4. Competitor Landscape
 5. Our Solution — 3-Layer Pipeline
 6. Layer 1: Dictionary Lookup
-7. Layer 2: Fuzzy Matching
-8. Layer 3: NLP Extraction (Proposed)
-9. The Data Model
-10. The Alias Dictionary — By the Numbers
-11. Deployment Options (A / B / C)
-12. Proof of Concept — Live Demo
-13. API Integration
+7. Layer 2: Fuzzy Matching — Engine Options
+8. Layer 2: Engine C — Consensus Voting (NEW)
+9. Layer 3: NLP/Heuristic Extraction (Fully Implemented)
+10. The Data Model
+11. The Alias Dictionary — By the Numbers
+12. Deployment Options (A / B / C)
+13. Proof of Concept — Unified CLI Demo
 14. Results & Pipeline Performance
-15. Implementation Roadmap
-16. Recommendations
-17. Q&A
+15. Bug Fixes & Engine Improvements (v3.0.0)
+16. Data Formats & Extensibility
+17. SWOT Analysis
+18. Implementation Roadmap
+19. Recommendations
+20. Q&A
 
 **Design Notes**: Use a progress-bar or stepper visual. Keep it scannable.
 
@@ -181,19 +185,19 @@ All of these mean the **same thing**.
             │              │
             ▼              ▼
       ✅ Resolved   ┌──────────────────────────────┐
-                     │  LAYER 2 — FUZZY MATCHING    │  ~12% resolved
-                     │  RapidFuzz / TF-IDF /        │  Latency: 1–100ms
-                     │  Sentence-Transformers       │  Confidence: 0.70–0.99
-                     └──────┬──────────┬────────────┘
-                         ≥88%        <70%
-                            │           │
-                      ✅ Auto-Accept   ⚠️ Review Queue
-                            │           │
-                            ▼           ▼
+                    │  LAYER 2 — FUZZY MATCHING    │  ~12% resolved
+                    │  RapidFuzz / TF-IDF /        │  Latency: 1–100ms
+                    │  Sentence-Transformers       │  Confidence: 0.70–0.99
+                    └──────┬──────────┬────────────┘
+                        ≥88%        <70%
+                           │           │
+                     ✅ Auto-Accept   ⚠️ Review Queue
+                           │           │
+                           ▼           ▼
                      ┌──────────────────────────────┐
-                     │  LAYER 3 — NLP/NER (Stub)    │  ~3% edge cases
-                     │  Regex extraction from       │  For unstructured text
-                     │  free-form sentences         │
+                     │  LAYER 3 — NLP/HEURISTIC     │  ~3% edge cases
+                     │  4-Strategy pure-Python      │  For conversational text
+                     │  cascade (zero ML deps)      │  Conf: 0.35–0.80
                      └──────────────────────────────┘
                                  │
                                  ▼
@@ -268,14 +272,14 @@ Output:   Resolved | L1 | Confidence 1.00
 
 ### SLIDE 10 — Layer 2: Engine Options Comparison
 
-**Layout**: Three-column comparison cards.
+**Layout**: Four-column comparison cards (add Engine C).
 
 **Content**:
 
-**Heading**: "Three Interchangeable Fuzzy Engines"
+**Heading**: "Four Interchangeable Fuzzy Engines"
 
-**Card 1 — RapidFuzz (B-1)** ⭐ Recommended
-- Mechanism: Levenshtein edit distance / token overlap
+**Card 1 — RapidFuzz (B-1)**
+- Mechanism: Combined scorer: `token_set_ratio×0.65 + token_sort_ratio×0.35`
 - Speed: ~1–5 ms/query
 - Typo handling: ✅ Excellent
 - Synonym handling: ❌ Poor
@@ -295,36 +299,48 @@ Output:   Resolved | L1 | Confidence 1.00
 - Synonym handling: ✅ Excellent ("B.S." → "Bachelor of Science")
 - Dependency: `torch` + `sentence-transformers` (~90 MB model)
 
+**Card 4 — Combined Engine (C)** ⭐ Recommended (NEW in v3.0.0)
+- Mechanism: Weighted consensus vote across B-1 + B-2 + B-3
+- Speed: Combined latency (~2–110 ms)
+- Typo handling: ✅ Excellent (B-1 + B-2 vote)
+- Synonym handling: ✅ Good (Embeddings vote)
+- Consensus bonus: +0.05 confidence when ≥2 engines agree
+- Graceful degradation: works with only B-1+B-2 if torch not installed
+
 ---
 
-### SLIDE 11 — Layer 3: NLP/NER Extraction (Proposed)
+### SLIDE 11 — Layer 3: Pure-Python Heuristic Engine (Fully Implemented)
 
-**Layout**: Left = architecture diagram. Right = example.
+**Layout**: Left = 4-strategy cascade diagram. Right = worked example.
 
 **Content**:
 
-**Heading**: "Layer 3 — Extracting Degrees from Free Text (Future)"
+**Heading**: "Layer 3 — Heuristic NLP Extraction (LIVE in v3.0.0)"
 
-**Status badge**: 🟡 Proposed / Stub Implementation
+**Status badge**: ✅ Fully Implemented — zero ML dependencies
 
-**Architecture**:
-- Use **spaCy** with custom NER model trained on Indian resume sentences
-- Custom entity labels: `DEGREE_TYPE`, `FIELD`, `INSTITUTION`, `GRAD_YEAR`
-- Triggered only when L1 + L2 both fail (score < 50)
+**Four-Strategy Cascade** (shown as numbered steps):
 
-**Example**:
+| # | Strategy | What It Does | Confidence |
+|---|----------|-------------|------------|
+| 1 | **S2 Shortcode Expansion** | 50+ hard-coded abbreviations (BCA, PGDM, LLB, 12th…) → canonical | 0.80 |
+| 2 | **S1 Sentence Extraction** | Regex patterns pull degree mentions from full sentences | 0.60–0.72 |
+| 3 | **S3 Level Keyword Detection** | Maps keywords (bachelor, master, phd, diploma…) to a degree level | 0.50 |
+| 4 | **S4 Field-Only Inference** | Detects field of study even when degree level is unknown | 0.35 |
+
+**Worked example**:
 ```
-Input:  "I completed my four-year engineering degree in
-         Computer Science from VIT in 2022"
+Input: "I completed my Masters in Data Science from IIT Delhi"
 
-NER Output:
-  DEGREE_TYPE  → "four-year engineering degree" → Master of Technology
-  FIELD        → "Computer Science" → Computer Science and Engineering
-  INSTITUTION  → "VIT"
-  GRAD_YEAR    → "2022"
+S2 Shortcode: no match
+S1 Sentence:  degree mention → "Masters"
+              field mention → "Data Science"
+Output: canonical_degree = "Master of Science"
+        canonical_field  = "Data Science"
+        confidence       = 0.72  |  status = review_needed
 ```
 
-**Current stub**: Regex-based keyword detection (`"degree in"`, `"bachelor"`, `"master"`) — demonstrates the hook point for future NER integration.
+**All L3 results are flagged `review_needed` by design** — human review closes the loop.
 
 ---
 
@@ -481,48 +497,36 @@ field_of_study               candidate_education
 
 ---
 
-### SLIDE 17 — REST API Integration
+### SLIDE 17 — Unified CLI Proof of Concept
 
-**Layout**: Left = endpoint list. Right = request/response JSON.
+**Layout**: Left = engine menu screenshot. Right = result breakdown.
 
 **Content**:
 
-**Heading**: "Headless REST API — Ready for Integration"
+**Heading**: "Interactive CLI — All Engines, One Application"
 
-**Endpoints**:
-| Method | Path | Description |
-|--------|------|-------------|
-| `POST` | `/api/v1/normalize` | Normalize a single education string |
-| `POST` | `/api/v1/normalize/batch` | Batch-process a list of strings |
-| `GET` | `/health` | Service health check + loaded dictionary size |
-| `GET` | `/docs` | Interactive Swagger UI |
+**Status**: FastAPI REST server **removed** (was unstable, added unnecessary server overhead). Replaced with a rich interactive CLI (`app.py`) that is simpler, faster, and fully portable.
 
-**Example Request**:
-```json
-POST /api/v1/normalize
-{
-  "raw_text": "Bacheler of Technology in CSE"
-}
+**Engine Menu** (as shown in the terminal):
+```
+  MAIN MENU — Select an engine
+  ═══════════════════════════════════════════
+    1.  [A+B1] RapidFuzz (L1+L2)        ✓
+    2.  [B2]   TF-IDF (L1+L2)           ✓
+    3.  [B3]   Embeddings (L1+L2)       ✓
+    4.  [C]    L2 Combined (voting)     ✓
+    5.  [D]    Orchestrator (full)      ✓
+    6.  Compare all engines on input
+    7.  Exit
 ```
 
-**Example Response**:
-```json
-{
-  "input_text": "Bacheler of Technology in CSE",
-  "layer_used": "L2",
-  "canonical_degree": "Bachelor of Technology",
-  "canonical_field": "Computer Science and Engineering",
-  "confidence": 0.91,
-  "status": "fuzzy_matched",
-  "fuzzy_score": 91.0,
-  "alternatives": [
-    ["Bachelor of Engineering", 84.0],
-    ["Master of Technology", 61.0]
-  ]
-}
-```
+**Per-engine sub-menu features**:
+- Run 20-input standard test suite with stats
+- Normalise a custom input with full audit trail
+- Batch-process from a CSV/TXT file (with optional output save)
+- Cross-engine comparison on any single input
 
-**Tech stack**: FastAPI + Uvicorn + Pydantic V2 + CORS-enabled
+**Integration note**: For production integration, the orchestrator class (`CVNormalizationOrchestrator`) exposes a clean Python API — simply import and call `orchestrator.normalize(raw_string)` or `orchestrator.batch_normalize(list_of_strings)` in any backend service.
 
 ---
 
@@ -556,23 +560,25 @@ POST /api/v1/normalize
 
 ---
 
-### SLIDE 19 — SWOT Analysis of Layer 2 Frameworks
+### SLIDE 19 — SWOT Analysis of the v3.0.0 Pipeline
 
 **Layout**: 2×2 SWOT grid.
 
 **Content**:
 
-**Heading**: "Strategic Analysis — Layer 2 Engine Options"
+**Heading**: "Strategic Analysis — v3.0.0 Pipeline Architecture"
 
 | | **Positive** | **Negative** |
 |---|---|---|
 | **Internal** | **STRENGTHS** | **WEAKNESSES** |
-| | • TF-IDF: Sub-millisecond latency; highly scalable | • TF-IDF/RapidFuzz: Blind to semantic meanings |
-| | • RapidFuzz: Typos and letter transpositions handled | • "B.S." and "Bachelor of Science" score poorly without explicit maps |
-| | • Embeddings: Resolves conceptual aliases natively | • Embeddings: Requires large PyTorch CPU/GPU memory |
+| | • Engine C consensus voting cancels out individual engine weaknesses | • L3 heuristics are regex-based — may need tuning for uncommon formats |
+| | • RapidFuzz combined scorer eliminates superset bias (v3 fix) | • Embeddings engine requires ~500 MB PyTorch + model download |
+| | • L3 fully implemented with zero ML dependencies | • L3 confidence is inherently lower (0.35–0.80); all results need review |
+| | • Pure-Python CLI — zero server infrastructure needed | • Combined engine latency is sum of all sub-engine latencies |
 | **External** | **OPPORTUNITIES** | **THREATS** |
-| | • Hybrid scoring: TF-IDF + Embeddings for perfect precision | • Dense Embeddings may block high-throughput batch uploads on CPU |
-| | • FastAPI microservices enable language-agnostic integration | • Novel slang words may cause false positives in semantic models |
+| | • Python API interface allows easy integration into any backend service | • Novel degree formats (new UGC programmes) may miss L1+L2+L3 |
+| | • Alias dictionary is extensible — any new degree can be added in minutes | • AI-generated resumes may produce highly irregular education text |
+| | • Same architecture can normalise job titles, skills, and locations | • Without a review queue UI, L3 results risk being accepted unchecked |
 
 ---
 
@@ -637,7 +643,7 @@ POST /api/v1/normalize
 
 ---
 
-## APPENDIX — Slide Count Summary
+## APPENDIX — Slide Count Summary (v3.0.0 — 24 slides)
 
 | Slide # | Title | Type |
 |---------|-------|------|
@@ -649,27 +655,49 @@ POST /api/v1/normalize
 | 6 | Competitor Landscape | Analysis |
 | 7 | 3-Layer Pipeline Overview | Solution |
 | 8 | Layer 1: Dictionary Lookup | Technical |
-| 9 | Layer 2: Fuzzy Matching | Technical |
-| 10 | Layer 2: Engine Options | Comparison |
-| 11 | Layer 3: NLP/NER | Technical |
+| 9 | Layer 2: Fuzzy Matching — Engine Options | Technical |
+| 10 | Layer 2: Engine C — Consensus Voting ⭐ NEW | Technical |
+| 11 | Layer 3: Pure-Python Heuristic Engine ✅ LIVE | Technical |
 | 12 | Data Model (5 Tables) | Architecture |
 | 13 | Alias Dictionary Stats | Data |
 | 14 | Deployment Options (A/B/C) | Decision |
 | 15 | PoC Demo Results | Evidence |
 | 16 | Pipeline Performance | Analytics |
-| 17 | REST API Integration | Technical |
+| 17 | Unified CLI Proof of Concept | Technical |
 | 18 | Data Formats & Extensibility | Deliverables |
 | 19 | SWOT Analysis | Strategy |
-| 20 | Implementation Roadmap | Planning |
-| 21 | Recommendations | Action Items |
-| 22 | Thank You & Q&A | Closing |
+| 20 | Bug Fixes & Engine Improvements (v3.0.0) | Technical |
+| 21 | Implementation Roadmap | Planning |
+| 22 | Recommendations | Action Items |
+| 23 | Thank You & Q&A | Closing |
 
 ---
 
 ## NOTES FOR THE PRESENTER
 
-1. **Slide 7** (Pipeline Overview) is the centrepiece. Spend 2–3 minutes here. Walk through the flow top-to-bottom.
-2. **Slide 9** (Fuzzy Matching) — use the v1 vs v2 comparison to show improvement. This is your strongest "before/after" moment.
-3. **Slide 15** (Demo Results) — if presenting live, run `python normalizer_rapidfuzz.py` and select option 1. The terminal output mirrors this slide exactly.
-4. **Slide 14** (Deployment Options) — pause here and ask the audience which version they'd prefer. This creates engagement.
-5. **Time budget**: ~1.5 minutes per content slide = ~30 minutes total. Leave 10 minutes for Q&A.
+1. **Slide 7** (Pipeline Overview) is the centrepiece. Spend 2–3 minutes here. Walk through the flow top-to-bottom. Emphasise that Layer 3 is **live, not a stub** as of v3.0.0.
+2. **Slide 10** (Engine C — Consensus Voting) — this is your strongest new technical addition. Explain that individual engine weaknesses cancel out when engines vote together.
+3. **Slide 11** (Layer 3) — emphasise that this was a stub in v2 and is now fully operational. Highlight that it requires **zero ML dependencies** — pure Python regex.
+4. **Slide 15** (Demo Results) — if presenting live, run `python app.py` from the `poc/` directory, choose engine [D] Orchestrator, then run the test suite. The live output mirrors this slide.
+5. **Slide 17** (CLI POC) — show the engine selection menu live. Pick "Compare all engines on custom input" and type `"Bacheler of Technology in CSE"` to show the cross-engine comparison.
+6. **Slide 14** (Deployment Options) — pause here and ask the audience which version they'd prefer. This creates engagement and leads naturally into the recommendation slide.
+7. **Time budget**: ~1.5 minutes per content slide = ~33 minutes total. Leave 10 minutes for Q&A.
+
+---
+
+### NEW SLIDE — Bug Fixes & Engine Improvements (v3.0.0)
+
+Insert this as **Slide 20** (before Implementation Roadmap).
+
+**Heading**: "What We Fixed in v3.0.0"
+
+**Layout**: Three-row before/after comparison table with status badges.
+
+| Issue | Root Cause | Fix Applied | Result |
+|-------|-----------|-------------|--------|
+| `"Bachelor of Business Admin"` misclassified | `token_set_ratio` superset bias — short inputs absorbed into long canonicals | Combined scorer: `token_set_ratio×0.65 + token_sort_ratio×0.35` | ✅ Correct match every time |
+| False field-splits on "Admin", "Engineering", "Business" | `\bin\b` regex matched inside word boundaries | Replaced with `\s+in\s+` (requires whitespace around keyword) | ✅ No more corrupt degree strings |
+| FastAPI server instability | External HTTP server overhead, startup failures | Removed FastAPI; replaced with self-contained CLI application | ✅ Zero-dependency deployment |
+| Layer 3 returning `None` canonical crashing display | No null guard in stub implementation | L3 now returns structured dict; caller always gets displayable output | ✅ Graceful handling |
+
+**Design Note**: Use ❌ (red) for Before, ✅ (green) for After. Use the amber/coral accent for the "Root Cause" column.
