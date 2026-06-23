@@ -1,9 +1,11 @@
 # Pipeline Deployment Options — Growth Grids Decision Brief
-# (Updated for v3.0.0 — 22 June 2026)
+# (Updated for v3.5.0 — 23 June 2026)
 
 > **Purpose**: This document packages the CV Manager normalisation pipeline as **three distinct, named deployment versions** so that Growth Grids can evaluate and select the option that best fits their infrastructure, latency, and accuracy requirements.
 >
 > **v3.0.0 Update**: Layer 2 now offers a **Combined Engine (Engine C)** that runs all three sub-engines in consensus, and Layer 3 is now a **fully implemented heuristic engine** (no ML required) rather than a stub.
+>
+> **v3.5.0 Update**: A comprehensive suite of **internationally-scoped training datasets** (`datasets_updated/`) has been added, engineered by Jai Gupta. These datasets cover India, USA, UK, and a curated world catalog — enabling future model evaluation, threshold calibration, and production testing at global scale. Additionally, the dictionary now includes **medical degrees** (MBBS, BDS, BPharm), and a RapidFuzz scoring bug causing all L2 matches to silently return `0.000` has been fixed.
 
 ---
 
@@ -172,6 +174,24 @@ Layer 3 is no longer a stub. `engine_l3.py` implements a **four-strategy heurist
 | **Synonym Matching** | Low | Low | Excellent | Good |
 | **Infrastructure** | Light | Light | Heavy | Light (without B-3) |
 | **Single Engine Failure Tolerance** | — | — | — | ✅ Degrades gracefully |
+
+---
+
+## Training & Evaluation Datasets (v3.5.0)
+
+A purpose-built suite of **internationally-scoped** training datasets now accompanies the pipeline, enabling rigorous engine evaluation and future model development. Contributed by **Jai Gupta**, integrated by **Arnav**.
+
+| Dataset | Rows | Designed For |
+|---------|-----:|---------------|
+| `layer1_exact_lookup_training.csv` | 6,976 | L1 regression & dictionary validation |
+| `layer2_fuzzy_training.csv` | 15,233 | L2 threshold calibration (noise-typed, difficulty-rated) |
+| `layer3_unstructured_training.csv` | 1,124 | L3 regex/NER evaluation (character-span annotated) |
+| `indian_usa_degrees_training.csv` | 9,448 | International alias permutations — India + USA |
+| `indian_uk_degrees_training.csv` | 9,240 | International alias permutations — India + UK |
+| `indian_world_degrees_training.csv` | 17,913 | International alias permutations — India + world |
+| `degree_only_canonical_catalog.csv` | 141 | Multi-country canonical degree catalog |
+
+Expanded SQL seeds (USA: 18,312 · UK: 13,298 · WORLD: 62,292 degree-field combinations) are in `education_reference_expanded_sql_files/`, sourced from NCES CIP 2020, HESA HECoS, QAA/UCAS, and UNESCO ISCED-F 2013.
 
 ---
 

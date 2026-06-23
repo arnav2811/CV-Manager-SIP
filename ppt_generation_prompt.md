@@ -1,7 +1,7 @@
 # PPT Generation Prompt — CV Manager Qualification Standardization (SIP)
 
-> **Version**: v3.0.0 — Updated 22 June 2026  
-> **Use this prompt** to generate a professional 24-slide PowerPoint presentation for the Growth Grids Summer Internship Project. Feed this document to any AI presentation tool (Gamma, SlidesAI, Beautiful.AI, Claude, GPT, etc.) or use it as a slide-by-slide brief for manual creation.
+> **Version**: v3.5.0 — Updated 23 June 2026  
+> **Use this prompt** to generate a professional 25-slide PowerPoint presentation for the Growth Grids Summer Internship Project. Feed this document to any AI presentation tool (Gamma, SlidesAI, Beautiful.AI, Claude, GPT, etc.) or use it as a slide-by-slide brief for manual creation.
 
 ---
 
@@ -36,7 +36,7 @@
 - **Subtitle**: Summer Internship Project (SIP) — Final Presentation
 - **Organisation**: Growth Grids × University of Southampton Delhi
 - **Date**: July 2026
-- **Team**: Arnav [add surname]
+- **Team**: Arnav · Jai Gupta
 - **Mentor**: Dr. Rashi R. Sharma
 
 **Design Notes**: Large title, clean logo placement. No clutter.
@@ -59,15 +59,16 @@
 9. Layer 3: NLP/Heuristic Extraction (Fully Implemented)
 10. The Data Model
 11. The Alias Dictionary — By the Numbers
-12. Deployment Options (A / B / C)
-13. Proof of Concept — Unified CLI Demo
-14. Results & Pipeline Performance
-15. Bug Fixes & Engine Improvements (v3.0.0)
-16. Data Formats & Extensibility
-17. SWOT Analysis
-18. Implementation Roadmap
-19. Recommendations
-20. Q&A
+12. International Training Datasets (NEW v3.5.0)
+13. Deployment Options (A / B / C)
+14. Proof of Concept — Unified CLI Demo
+15. Results & Pipeline Performance
+16. Bug Fixes & Engine Improvements (v3.0.0 + v3.5.0)
+17. Data Formats & Extensibility
+18. SWOT Analysis
+19. Implementation Roadmap
+20. Recommendations
+21. Q&A
 
 **Design Notes**: Use a progress-bar or stepper visual. Keep it scannable.
 
@@ -403,9 +404,9 @@ field_of_study               candidate_education
 **Heading**: "The Alias Dictionary — Our Core Data Asset"
 
 **Stat Cards** (big numbers, colour-coded):
-- **19** Canonical Degree Types
+- **22** Canonical Degree Types (incl. MBBS, BDS, BPharm — added v3.5.0)
 - **68** Canonical Fields of Study (UGC/AICTE recognised)
-- **6,980+** Degree Name Aliases (incl. permutations)
+- **7,593** Degree Name Aliases (incl. permutations + medical degrees)
 - **308** Field of Study Aliases
 - **186** Valid Degree × Field Combinations
 
@@ -415,10 +416,46 @@ field_of_study               candidate_education
 |-------------------------------------|-------------------------------|-------|
 | B.Tech, BTech, B. Tech, BTECH, B.Tech (Hons) | Bachelor of Technology | UG Engineering |
 | MBA, M.B.A., EMBA | Master of Business Administration | PG Other |
-| PGDM, PGD, PGDBA, PG Diploma | Post Graduate Diploma | Diploma |
+| MBBS, M.B.B.S., MB ChB | Bachelor of Medicine and Bachelor of Surgery | UG Medicine |
 | HSC, 10+2, XII, Plus Two, ISC | 12th Standard | School |
 
 **Callout**: "Each alias was manually verified or programmatically generated via a permutation engine combining degree abbreviations × structural connectors (dash, slash, parentheses, comma, keyword 'in')."
+
+---
+
+### SLIDE 12 (NEW — v3.5.0) — International Training Datasets
+
+**Layout**: Header stat bar + two-column table.
+
+**Content**:
+
+**Heading**: "The Training Dataset — Built for the Real World"
+
+**Contributor badge**: 🏗️ **Data Engineering: Jai Gupta** · Integration: Arnav
+
+**Stat Bar** (3 big numbers across the top):
+- **59,949** total training rows across all datasets
+- **3** international degree systems covered (India · USA · UK · World)
+- **3** pipeline layers with dedicated evaluation data
+
+**Per-Layer Dataset Table**:
+
+| Dataset | Rows | Layer | Purpose |
+|---------|-----:|-------|----------|
+| `layer1_exact_lookup_training.csv` | 6,976 | L1 | Gold-standard dictionary regression tests |
+| `layer2_fuzzy_training.csv` | 15,233 | L2 | Noisy aliases with noise-type & difficulty labels for threshold tuning |
+| `layer3_unstructured_training.csv` | 1,124 | L3 | Conversational sentence examples with character-span annotations |
+| `indian_usa_degrees_training.csv` | 9,448 | Multi | India + USA degree alias permutations (49 canonical entries) |
+| `indian_uk_degrees_training.csv` | 9,240 | Multi | India + UK degree alias permutations (43 canonical entries) |
+| `indian_world_degrees_training.csv` | 17,913 | Multi | India + USA + UK + world alias permutations (141 canonical entries) |
+
+**Expanded SQL Seeds** (bottom callout):
+- USA scope: 218 canonical fields × 84 canonical degrees = **18,312 combinations**
+- UK scope: 218 canonical fields × 61 canonical degrees = **13,298 combinations**
+- World scope: 348 canonical fields × 179 canonical degrees = **62,292 combinations**
+- *Sources: NCES CIP 2020 · HESA HECoS · QAA/UCAS · UNESCO ISCED-F 2013*
+
+**Callout**: "This dataset transforms the pipeline from an India-only proof-of-concept into a globally-scalable normalization system — ready to handle CVs from any international market Growth Grids enters."
 
 ---
 
@@ -548,15 +585,17 @@ field_of_study               candidate_education
 - `education_seed.json`: Complete export for NoSQL/API consumption
 
 **Card 3 — CSV** 📊
-- `degree_aliases.csv`: 6,980+ aliases (ideal for bulk import via LOAD DATA INFILE)
+- `degree_aliases.csv`: 7,593 aliases including medical degrees — ideal for bulk import
 - `field_of_study_aliases.csv`: 308 field aliases
 - `degree_field_map.csv`: 186 valid degree-field pairs
 - `full_education_reference.csv`: Combined reference for UI dropdowns
+- `layer1_exact_lookup_training.csv` / `layer2_fuzzy_training.csv` / `layer3_unstructured_training.csv`: **Layer-specific training datasets** for evaluation & threshold calibration
+- `indian_usa/uk/world_degrees_training.csv`: **International alias sets** covering 17,913+ rows across three degree systems
 
 **Card 4 — Python PoC** 🐍
-- 4 standalone scripts: RapidFuzz, TF-IDF, Embeddings, FastAPI wrapper
-- Interactive CLI + REST API modes
-- Zero-config — loads from CSV/JSON, no database needed
+- 6 engine files: RapidFuzz, TF-IDF, Embeddings, L2 Combined, L3 Heuristic, Orchestrator
+- Unified interactive CLI (`app.py`) — zero-config, no database needed
+- Python API: import `CVNormalizationOrchestrator` and call `.normalize()` or `.batch_normalize()`
 
 ---
 
@@ -574,9 +613,9 @@ field_of_study               candidate_education
 | | • Engine C consensus voting cancels out individual engine weaknesses | • L3 heuristics are regex-based — may need tuning for uncommon formats |
 | | • RapidFuzz combined scorer eliminates superset bias (v3 fix) | • Embeddings engine requires ~500 MB PyTorch + model download |
 | | • L3 fully implemented with zero ML dependencies | • L3 confidence is inherently lower (0.35–0.80); all results need review |
-| | • Pure-Python CLI — zero server infrastructure needed | • Combined engine latency is sum of all sub-engine latencies |
+| | • 59,949-row internationally-scoped training dataset ready for evaluation | • Combined engine latency is sum of all sub-engine latencies |
 | **External** | **OPPORTUNITIES** | **THREATS** |
-| | • Python API interface allows easy integration into any backend service | • Novel degree formats (new UGC programmes) may miss L1+L2+L3 |
+| | • International datasets (USA/UK/World) enable cross-market expansion | • Novel degree formats (new UGC programmes) may miss L1+L2+L3 |
 | | • Alias dictionary is extensible — any new degree can be added in minutes | • AI-generated resumes may produce highly irregular education text |
 | | • Same architecture can normalise job titles, skills, and locations | • Without a review queue UI, L3 results risk being accepted unchecked |
 
@@ -685,19 +724,21 @@ field_of_study               candidate_education
 
 ---
 
-### NEW SLIDE — Bug Fixes & Engine Improvements (v3.0.0)
+### NEW SLIDE — Bug Fixes & Engine Improvements (v3.0.0 + v3.5.0)
 
-Insert this as **Slide 20** (before Implementation Roadmap).
+Insert this as **Slide 16** (before Data Formats).
 
-**Heading**: "What We Fixed in v3.0.0"
+**Heading**: "What We Fixed — v3.0.0 & v3.5.0"
 
-**Layout**: Three-row before/after comparison table with status badges.
+**Layout**: Five-row before/after comparison table with status badges.
 
-| Issue | Root Cause | Fix Applied | Result |
-|-------|-----------|-------------|--------|
-| `"Bachelor of Business Admin"` misclassified | `token_set_ratio` superset bias — short inputs absorbed into long canonicals | Combined scorer: `token_set_ratio×0.65 + token_sort_ratio×0.35` | ✅ Correct match every time |
-| False field-splits on "Admin", "Engineering", "Business" | `\bin\b` regex matched inside word boundaries | Replaced with `\s+in\s+` (requires whitespace around keyword) | ✅ No more corrupt degree strings |
-| FastAPI server instability | External HTTP server overhead, startup failures | Removed FastAPI; replaced with self-contained CLI application | ✅ Zero-dependency deployment |
-| Layer 3 returning `None` canonical crashing display | No null guard in stub implementation | L3 now returns structured dict; caller always gets displayable output | ✅ Graceful handling |
+| Issue | Root Cause | Fix Applied | Version | Result |
+|-------|-----------|-------------|---------|--------|
+| `"Bachelor of Business Admin"` misclassified | `token_set_ratio` superset bias — short inputs absorbed into long canonicals | Combined scorer: `token_set_ratio×0.65 + token_sort_ratio×0.35` | v3.0.0 | ✅ Correct match every time |
+| False field-splits on "Admin", "Engineering", "Business" | `\bin\b` regex matched inside word boundaries | Replaced with `\s+in\s+` (requires whitespace around keyword) | v3.0.0 | ✅ No more corrupt degree strings |
+| FastAPI server instability | External HTTP server overhead, startup failures | Removed FastAPI; replaced with self-contained CLI application | v3.0.0 | ✅ Zero-dependency deployment |
+| Layer 3 returning `None` canonical crashing display | No null guard in stub implementation | L3 now returns structured dict; caller always gets displayable output | v3.0.0 | ✅ Graceful handling |
+| `MBBS` and all L2 inputs scoring 0.000 | `_combined_score()` missing `**kwargs` — `score_cutoff` kwarg crash silently swallowed | Added `**kwargs` to scorer signature; forwarded to sub-scorers | v3.5.0 | ✅ L2 fully operational |
+| Medical degrees (MBBS, BDS, BPharm) not resolvable | Absent from training dictionary | Added `UG MEDICINE` category; dictionary regenerated (7,593 entries) | v3.5.0 | ✅ Medical degrees now resolve |
 
-**Design Note**: Use ❌ (red) for Before, ✅ (green) for After. Use the amber/coral accent for the "Root Cause" column.
+**Design Note**: Use ❌ (coral) for Before, ✅ (soft green) for After. Use amber for the "Root Cause" column.

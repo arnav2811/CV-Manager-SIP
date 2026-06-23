@@ -1,0 +1,46 @@
+{
+  "generated": "2026-06-22",
+  "base_seed": "/mnt/data/education_reference_seed.sql",
+  "base_counts": {
+    "field_alias_rows": 307,
+    "degree_field_rows": 186,
+    "canonical_fields": 68,
+    "canonical_degrees": 15
+  },
+  "outputs": {
+    "USA": {
+      "file": "/mnt/data/education_reference_expanded/education_reference_expanded_usa.sql",
+      "bytes": 1071266,
+      "canonical_fields": 218,
+      "canonical_degrees": 84,
+      "degree_field_combinations": 18312
+    },
+    "UK": {
+      "file": "/mnt/data/education_reference_expanded/education_reference_expanded_uk.sql",
+      "bytes": 773628,
+      "canonical_fields": 218,
+      "canonical_degrees": 61,
+      "degree_field_combinations": 13298
+    },
+    "WORLD": {
+      "file": "/mnt/data/education_reference_expanded/education_reference_expanded_world.sql",
+      "bytes": 3536178,
+      "canonical_fields": 348,
+      "canonical_degrees": 179,
+      "degree_field_combinations": 62292
+    }
+  },
+  "notes": [
+    "Each SQL file is standalone and includes field_of_study_aliases, degree_aliases, and degree_field_map.",
+    "degree_field_map uses an exhaustive cross-product for matching/parsing coverage; not every combination is a real offered programme.",
+    "Use a fresh database or ensure unique keys exist if you need duplicate prevention on an existing database."
+  ],
+  "source_urls": [
+    "https://nces.ed.gov/ipeds/cipcode/default.aspx?y=55",
+    "https://nces.ed.gov/statprog/handbook/ipeds.asp",
+    "https://www.hesa.ac.uk/innovation/hecos",
+    "https://www.qaa.ac.uk/the-quality-code/qualifications-frameworks",
+    "https://www.ucas.com/international/international-advisers/supporting-international-students/the-uk-degree-system",
+    "https://www.uis.unesco.org/sites/default/files/medias/fichiers/2025/04/international-standard-classification-of-education-fields-of-education-and-training-2013-detailed-field-descriptions-2015-en.pdf"
+  ]
+}

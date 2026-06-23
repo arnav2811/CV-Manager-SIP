@@ -6,7 +6,132 @@
 
 ---
 
+## Version 3.5.0 — 23 June 2026
+
+### What's New
+
+**Dataset expansion release** — a new `datasets_updated/` directory is introduced carrying purpose-built, internationally-scoped training datasets across three engine layers. The data engineering work was conducted by **Jai Gupta**; integration into the project structure, documentation, and pipeline references was carried out by **Arnav**. No engine code was modified in this release — all changes are additive data and documentation.
+
+---
+
+### 1. New Dataset Folder — `datasets_updated/`
+
+Eight new files (plus the SQL sub-directory) provide training, evaluation, and reference data across all three pipeline layers and three international degree systems. Each file has been designed for a distinct purpose:
+
+| File | Rows / Entries | Purpose |
+|---|---:|---|
+| `layer1_exact_lookup_training.csv` | 6,976 | Gold-standard exact-match samples for L1 dictionary validation |
+| `layer2_fuzzy_training.csv` | 15,233 | Noisy alias pairs with difficulty ratings for L2 threshold tuning |
+| `layer3_unstructured_training.csv` | 1,124 | Conversational sentence examples with character-span annotations for L3 NER/regex evaluation |
+| `degree_only_canonical_catalog.csv` | 141 | Multi-country canonical degree catalog (degree names only, no field combinations) |
+| `indian_usa_degrees_training.csv` | 9,448 | India + USA combined degree alias permutations (49 canonical entries) |
+| `indian_uk_degrees_training.csv` | 9,240 | India + UK combined degree alias permutations (43 canonical entries) |
+| `indian_world_degrees_training.csv` | 17,913 | India + USA + UK + curated world systems (141 canonical entries) |
+| `degree_only_manifest.json` | — | Manifest describing scope, permutation rules, and row counts |
+
+---
+
+### 2. Per-Layer Training Datasets
+
+#### Layer 1 — Exact Lookup Training (`layer1_exact_lookup_training.csv`)
+- **6,976 samples** covering the full current alias dictionary.
+- Columns: `sample_id`, `raw_input`, `normalized_degree_part`, `canonical_degree`, `canonical_field`, `degree_level`, `degree_short_code`, `split_pattern`, `expected_layer`, `expected_status`, `gold_confidence`, `training_use`, `source`.
+- Use case: regression testing of the exact-match dictionary; detecting alias regressions after dictionary updates.
+
+#### Layer 2 — Fuzzy Matching Training (`layer2_fuzzy_training.csv`)
+- **15,233 noisy alias samples** spanning multiple noise types (single vowel drops, adjacent transpositions, abbreviation variants, OCR artefacts, etc.) with per-row difficulty ratings (`easy`, `medium`, `hard`).
+- Columns: `sample_id`, `raw_input`, `gold_clean_alias`, `canonical_degree`, `canonical_field`, `degree_level`, `noise_type`, `difficulty`, `expected_layer`, `expected_status`, `expected_min_confidence`, `training_use`, `source`.
+- Use case: threshold calibration for RapidFuzz and TF-IDF engines; identifying confidence cut-off values per noise type.
+
+#### Layer 3 — Unstructured Text Training (`layer3_unstructured_training.csv`)
+- **1,124 conversational sentence examples** with character-span annotations marking degree and field mentions.
+- Columns: `sample_id`, `raw_text`, `canonical_degree`, `canonical_field`, `degree_mention`, `field_mention`, `degree_span_start`, `degree_span_end`, `field_span_start`, `field_span_end`, `expected_layer`, `expected_status`, `strategy_hint`, `training_use`.
+- Strategy hints include `completed_sentence`, `pursuing_sentence`, `shortcode_expansion` and others — directly aligned with L3 cascade strategies.
+- Use case: evaluating and improving L3 sentence extraction regex patterns; future NER model fine-tuning.
+
+---
+
+### 3. International Degree Catalog (`datasets_updated/degree_only_canonical_catalog.csv` + `indian_*_degrees_training.csv`)
+
+The degree catalog and training sets cover **three international degree systems** alongside the existing India-centric dataset:
+
+| Dataset | Canonical Entries | Degree Systems Covered |
+|---|---:|---|
+| `indian_usa_degrees_training.csv` | 49 | India + United States |
+| `indian_uk_degrees_training.csv` | 43 | India + United Kingdom |
+| `indian_world_degrees_training.csv` | 141 | India + USA + UK + curated world |
+| `degree_only_canonical_catalog.csv` | 141 | All of the above (catalog view) |
+
+Alias permutation rules applied per entry:
+- Degree-only aliases (no field-of-study combinations)
+- Abbreviation punctuation and spacing variants
+- Country adjective/name/code prefixes
+- Qualification/degree/country/duration/honours suffixes
+- Catalogued, lowercase, uppercase, and title-case variants
+
+---
+
+### 4. Expanded SQL Reference Seeds (`datasets_updated/education_reference_expanded_sql_files/`)
+
+Three standalone SQL seed files targeting USA, UK, and global degree systems, expanded from the base Indian seed (`education_reference_seed.sql`). Sources used: NCES CIP 2020, IPEDS/NCES, HESA HECoS, QAA/UCAS, and UNESCO ISCED-F 2013.
+
+| Scope | Canonical Fields | Canonical Degrees / Awards | Degree-Field Combinations |
+|-------|---:|---:|---:|
+| USA | 218 | 84 | 18,312 |
+| UK | 218 | 61 | 13,298 |
+| WORLD | 348 | 179 | 62,292 |
+
+Each file includes `field_of_study_aliases`, `degree_aliases`, and `degree_field_map` tables. The `degree_field_map` is a deliberate exhaustive cross-product for CV parser coverage — not an accreditation list.
+
+---
+
+### 5. Bug Fix — RapidFuzz Scorer `**kwargs` (`normalizer_rapidfuzz.py`)
+
+- **Bug**: `_combined_score()` was defined without `**kwargs`, causing `process.extractOne()` to crash when passing `score_cutoff` internally (`got an unexpected keyword argument 'score_cutoff'`). The exception was silently caught, causing all L2 matches to return `0.000` — including obviously resolvable inputs like `MBBS`.
+- **Fix**: Updated function signature to `def _combined_score(query, choice, **kwargs)` and forwarded `**kwargs` to `fuzz.token_set_ratio` and `fuzz.token_sort_ratio`.
+- **Impact**: L2 RapidFuzz now correctly scores all inputs. This also resolves the `MBBS` recognition gap identified in testing.
+
+---
+
+### 6. Medical Degrees Added to Dictionary (`generate_data.py` + regenerated data files)
+
+- Added `UG MEDICINE` degree category to `generate_data.py` with three new canonical degrees:
+  - **Bachelor of Medicine and Bachelor of Surgery (MBBS)** — aliases: `MBBS`, `M.B.B.S.`, `M B B S`, `MB ChB`, `BMBS`
+  - **Bachelor of Dental Surgery (BDS)** — aliases: `BDS`, `B.D.S.`
+  - **Bachelor of Pharmacy (BPHARM)** — aliases: `BPharm`, `B.Pharm`, `B. Pharma`, `B Pharma`
+- Also added `MEDICINE & HEALTH` field-of-study mappings for medical degrees.
+- Regenerated `degree_aliases.csv` (7,593 entries), `degree_dictionary.json`, and `education_seed.json`.
+
+---
+
+### Attribution
+
+| Contributor | Contribution |
+|---|---|
+| **Jai Gupta** | Data engineering — authored all 8 files in `datasets_updated/` including the three international training CSV sets, the layered training datasets, the expanded SQL seeds, the canonical catalog, and the manifest |
+| **Arnav** | Integration — connected the new dataset folder to the project, fixed the RapidFuzz `**kwargs` bug, added medical degrees to the dictionary, updated all documentation |
+
+---
+
+### Files Changed in v3.5.0
+
+| File | Change |
+|---|---|
+| `datasets_updated/` | **New folder** — 8 dataset files + SQL sub-directory (Jai Gupta) |
+| `poc/normalizer_rapidfuzz.py` | Bug fix — `_combined_score` now accepts `**kwargs` |
+| `data/degree_aliases.csv` | Regenerated — 7,593 entries (added medical degrees) |
+| `data/degree_dictionary.json` | Regenerated — added MBBS, BDS, BPHARM |
+| `data/education_seed.json` | Regenerated — reflects new canonical set |
+| `README.md` | Updated — v3.5.0 directory structure, data extensibility, dataset table |
+| `CHANGELOG.md` | Added v3.5.0 entry |\
+| `explainme.md` | Updated — dataset context, international scope note |
+| `platform_audit.md` | Updated — v3.5.0 status, dataset audit section |
+| `ppt_generation_prompt.md` | Updated — slide content reflecting new dataset milestone |
+
+---
+
 ## Version 3.0.0 — 22 June 2026
+
 
 ### What's New
 

@@ -2,7 +2,8 @@
 
 > **Project:** Growth Grids × University of Southampton Delhi
 > **Deadline:** 3 July 2026
-> **Current Version:** 3.0.0 (22 June 2026)
+> **Current Version:** 3.5.0 (23 June 2026)
+> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering)
 
 This repository contains the deliverables for the Growth Grids Summer Internship Project regarding standardisation of candidate qualification strings in CV Manager.
 
@@ -50,7 +51,7 @@ Raw Input String
 ```
 cv_manager_sip/
 ├── data/
-│   ├── degree_aliases.csv            # ~7,000 alias → canonical mappings
+│   ├── degree_aliases.csv            # 7,593 alias → canonical mappings (inc. medical)
 │   ├── degree_dictionary.json        # Canonical degree dict with levels & codes
 │   ├── field_of_study_aliases.csv    # 308 field aliases across 68 fields
 │   ├── degree_field_map.csv          # 186 UGC-compliant degree-field pairs
@@ -60,6 +61,22 @@ cv_manager_sip/
 │   ├── education_seed.json           # JSON export of aliases + sample candidates
 │   └── education_schema_seed.csv     # Sample candidate data (CSV)
 │
+├── datasets_updated/                  # ★ NEW (v3.5.0) — Jai Gupta, integrated by Arnav
+│   ├── layer1_exact_lookup_training.csv   # 6,976 gold-standard L1 validation samples
+│   ├── layer2_fuzzy_training.csv          # 15,233 noisy alias samples for L2 tuning
+│   ├── layer3_unstructured_training.csv   # 1,124 conversational text samples for L3
+│   ├── degree_only_canonical_catalog.csv  # 141-entry multi-country canonical catalog
+│   ├── indian_usa_degrees_training.csv    # 9,448 India + USA alias permutations
+│   ├── indian_uk_degrees_training.csv     # 9,240 India + UK alias permutations
+│   ├── indian_world_degrees_training.csv  # 17,913 India + world alias permutations
+│   ├── degree_only_manifest.json          # Dataset manifest & permutation scope
+│   └── education_reference_expanded_sql_files/
+│       ├── education_reference_expanded_usa.sql    # 218 fields × 84 degrees (USA)
+│       ├── education_reference_expanded_uk.sql     # 218 fields × 61 degrees (UK)
+│       ├── education_reference_expanded_world.sql  # 348 fields × 179 degrees (world)
+│       ├── education_reference_expanded_summary.json
+│       └── README.md
+│
 ├── poc/
 │   ├── app.py                        # ★ Unified POC CLI — entry point for all engines
 │   │
@@ -67,9 +84,9 @@ cv_manager_sip/
 │   ├── normalizer_tfidf.py           # Standalone · Engine B-2 (TF-IDF)
 │   ├── normalizer_embeddings.py      # Standalone · Engine B-3 (Embeddings)
 │   │
-│   ├── engine_l2_combined.py         # ★ NEW · Layer 2 consensus voting engine
-│   ├── engine_l3.py                  # ★ NEW · Layer 3 NLP/heuristic engine
-│   └── engine_orchestrator.py        # ★ NEW · Master 3-layer orchestrator
+│   ├── engine_l2_combined.py         # ★ Layer 2 consensus voting engine
+│   ├── engine_l3.py                  # ★ Layer 3 NLP/heuristic engine
+│   └── engine_orchestrator.py        # ★ Master 3-layer orchestrator
 │
 ├── auxilary_sources/
 │   └── field_of_study.py             # Generator script for field aliases
@@ -78,6 +95,7 @@ cv_manager_sip/
 ├── requirements.txt                  # Python dependency manifest
 ├── README.md                         # This file
 ├── CHANGELOG.md                      # Full version history
+├── platform_audit.md                 # Platform & dataset audit log
 └── explainme.md                      # Growth Grids deployment decision brief
 ```
 
@@ -184,20 +202,38 @@ The pipeline is packaged as **three named deployment versions** for Growth Grids
 Reference data is provided in **JSON**, **CSV**, and **SQL** formats for easy ingestion across different systems:
 
 - `degree_dictionary.json` — import directly as a canonical degree reference
-- `degree_aliases.csv` — bulk-load alias mappings
+- `degree_aliases.csv` — bulk-load alias mappings (7,593 entries including medical degrees)
 - `education_seed.sql` — seed a relational DB (MySQL/PostgreSQL compatible)
 - `education_seed.json` — MongoDB / NoSQL ready
 
+### Training Datasets (v3.5.0 — `datasets_updated/`)
+
+A full suite of layer-specific training and evaluation datasets contributed by **Jai Gupta**:
+
+| Dataset | Rows | Scope |
+|---------|-----:|-------|
+| `layer1_exact_lookup_training.csv` | 6,976 | L1 gold-standard regression samples |
+| `layer2_fuzzy_training.csv` | 15,233 | L2 noisy inputs with noise-type & difficulty labels |
+| `layer3_unstructured_training.csv` | 1,124 | L3 conversational sentences with span annotations |
+| `indian_usa_degrees_training.csv` | 9,448 | India + USA international alias permutations |
+| `indian_uk_degrees_training.csv` | 9,240 | India + UK international alias permutations |
+| `indian_world_degrees_training.csv` | 17,913 | India + USA + UK + world alias permutations |
+| `degree_only_canonical_catalog.csv` | 141 | Multi-country canonical degree catalog |
+
+Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292) degree-field pairs are provided in `education_reference_expanded_sql_files/`.
+
 ---
 
-## Key Bug Fixes in v3.0.0
+## Key Bug Fixes in v3.0.0 – v3.5.0
 
-| Issue | Root Cause | Fix |
-|-------|-----------|-----|
-| `"Bachelor of Business Admin"` misclassified | `token_set_ratio` superset bias | Combined scorer: `token_set_ratio×0.65 + token_sort_ratio×0.35` |
-| False field-splits on "Admin", "Engineering" | `\bin\b` matched inside word boundaries | Replaced with `\s+in\s+` (requires surrounding spaces) |
-| FastAPI server instability | External HTTP server overhead | Removed; replaced with rich interactive CLI |
-| L3 stub returned `None` canonical crashing display | No null guard | L3 now returns structured dict; caller always gets displayable output |
+| Issue | Root Cause | Fix | Version |
+|-------|-----------|-----|--------|
+| `"Bachelor of Business Admin"` misclassified | `token_set_ratio` superset bias | Combined scorer: `token_set_ratio×0.65 + token_sort_ratio×0.35` | v3.0.0 |
+| False field-splits on "Admin", "Engineering" | `\bin\b` matched inside word boundaries | Replaced with `\s+in\s+` (requires surrounding spaces) | v3.0.0 |
+| FastAPI server instability | External HTTP server overhead | Removed; replaced with rich interactive CLI | v3.0.0 |
+| L3 stub returned `None` canonical crashing display | No null guard | L3 now returns structured dict; caller always gets displayable output | v3.0.0 |
+| `MBBS` and all L2 matches returning `0.000` | `_combined_score()` missing `**kwargs`; `score_cutoff` crash silently swallowed | Added `**kwargs` to scorer signature and forwarded to sub-scorers | v3.5.0 |
+| Medical degrees (MBBS, BDS, BPharm) not resolvable | Missing from training dictionary entirely | Added `UG MEDICINE` category to `generate_data.py`; dictionary regenerated | v3.5.0 |
 
 ---
 
