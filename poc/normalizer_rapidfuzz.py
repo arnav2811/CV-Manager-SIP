@@ -33,7 +33,7 @@ from rapidfuzz import process, fuzz
 # Helper: combined scorer
 # ---------------------------------------------------------------------------
 
-def _combined_score(query: str, choice: str) -> float:
+def _combined_score(query: str, choice: str, **kwargs) -> float:
     """
     Weighted combination of token_set_ratio and token_sort_ratio.
 
@@ -43,8 +43,8 @@ def _combined_score(query: str, choice: str) -> float:
                                long canonical purely via subset containment.
     Returns a float in [0, 100].
     """
-    set_s  = fuzz.token_set_ratio(query, choice)
-    sort_s = fuzz.token_sort_ratio(query, choice)
+    set_s  = fuzz.token_set_ratio(query, choice, **kwargs)
+    sort_s = fuzz.token_sort_ratio(query, choice, **kwargs)
     return 0.65 * set_s + 0.35 * sort_s
 
 
