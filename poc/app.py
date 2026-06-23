@@ -94,45 +94,53 @@ def _section(title: str) -> None:
 
 def _print_result_table(results: list[dict], label: str = "") -> None:
     total = len(results)
+    W = {"inp": 36, "canon": 32, "layer": 14, "conf": 6}
+    div = "  " + "─" * (W["inp"] + W["canon"] + W["layer"] + W["conf"] + 4 * 2 + 6)
     if label:
-        print(f"\n  {label}  ({total} inputs)\n")
-    print(f"  {'INPUT':<35} {'CANONICAL':<30} {'LAYER':<14} {'CONF':<6} STATUS")
-    print("  " + "─" * 100)
+        print(f"\n  {label}  ({total} inputs)")
+    print()
+    print(f"  {'INPUT':<{W['inp']}}  {'CANONICAL':<{W['canon']}}  "
+          f"{'LAYER':<{W['layer']}}  {'CONF':<{W['conf']}}  STATUS")
+    print(div)
     stats: dict[str, int] = {}
     for r in results:
-        inp    = (str(r.get("input") or ""))[:33]
-        canon  = (str(r.get("canonical_degree") or "—"))[:28]
-        layer  = str(r.get("layer_used") or "—")
+        inp    = (str(r.get("input") or ""))[:W["inp"] - 1]
+        canon  = (str(r.get("canonical_degree") or "—"))[:W["canon"] - 1]
+        layer  = str(r.get("layer_used") or "—")[:W["layer"] - 1]
         conf   = f"{r.get('confidence', 0):.2f}"
         status = str(r.get("status") or "—")
-        print(f"  {inp:<35} {canon:<30} {layer:<14} {conf:<6} {status}")
+        print(f"  {inp:<{W['inp']}}  {canon:<{W['canon']}}  "
+              f"{layer:<{W['layer']}}  {conf:<{W['conf']}}  {status}")
         if r.get("canonical_field"):
-            print(f"  {'':>35} ↳ field: {r['canonical_field']}")
+            print(f"  {'':>{W['inp']}}  ↳ field: {r['canonical_field']}")
         stats[status] = stats.get(status, 0) + 1
-    print("  " + "─" * 100)
-    print(f"\n  SUMMARY  (n={total})")
+    print(div)
+    print(f"\n  {'STATUS':<18}  {'N':>4}  {'%':>5}")
+    print(f"  {'─'*18}  {'─'*4}  {'─'*5}")
     for s, c in sorted(stats.items()):
-        print(f"    {s:<18}: {c:>3}  ({c / total * 100:.0f}%)")
+        print(f"  {s:<18}  {c:>4}  {c / total * 100:>4.0f}%")
+
 
 
 def _print_single_result(r: dict) -> None:
-    print("\n  " + "─" * 60)
+    W = 22
+    div = "  " + "─" * 64
+    print(f"\n{div}")
     print("  NORMALISATION RESULT")
-    print("  " + "─" * 60)
-    print(f"  Input            : {r.get('input','')}")
-    print(f"  Canonical Degree : {r.get('canonical_degree') or 'None'}")
-    print(f"  Canonical Field  : {r.get('canonical_field')  or 'None'}")
-    print(f"  Layer Used       : {r.get('layer_used','—')}")
-    print(f"  Confidence       : {r.get('confidence', 0):.4f}")
-    print(f"  Fuzzy Score      : {r.get('fuzzy_score', 0)}")
-    print(f"  Status           : {r.get('status','—')}")
+    print(div)
+    print(f"  {'Input':<{W}}: {r.get('input','')}")
+    print(f"  {'Canonical Degree':<{W}}: {r.get('canonical_degree') or 'None'}")
+    print(f"  {'Canonical Field':<{W}}: {r.get('canonical_field') or 'None'}")
+    print(f"  {'Layer Used':<{W}}: {r.get('layer_used','—')}")
+    print(f"  {'Confidence':<{W}}: {r.get('confidence', 0):.4f}")
+    print(f"  {'Fuzzy Score':<{W}}: {r.get('fuzzy_score', 0)}")
+    print(f"  {'Status':<{W}}: {r.get('status','—')}")
     if r.get("alternatives"):
-        print("\n  Alternatives:")
+        print(f"\n  {'Alternatives':<{W}}:")
         for alt, sc in r["alternatives"]:
-            print(f"    • {alt:<38}  {sc:.4f}")
-    # Orchestrator-specific extras
+            print(f"  {'':>{W}}  • {alt:<38}  {sc:.4f}")
     if r.get("audit"):
-        print("\n  Audit Trail:")
+        print(f"\n  Audit Trail:")
         for layer, info in r["audit"].items():
             if isinstance(info, dict):
                 print(f"    [{layer}]  hit={info.get('hit', '—')}  "
@@ -143,31 +151,38 @@ def _print_single_result(r: dict) -> None:
                               f"{(ed.get('result') or '—'):<28}  "
                               f"conf={ed.get('conf',0):.3f}  {ed.get('ms',0):.1f}ms")
     if r.get("l3_strategy"):
-        print(f"\n  L3 Strategy      : {r['l3_strategy']}")
-        print(f"  Extracted Text   : {r.get('extracted_mention') or '—'}")
-    print("  " + "─" * 60)
+        print(f"\n  {'L3 Strategy':<{W}}: {r['l3_strategy']}")
+        print(f"  {'Extracted Text':<{W}}: {r.get('extracted_mention') or '—'}")
+    print(div)
+
 
 
 def _compare_all_engines(raw: str, engine_map: dict) -> None:
+    W = {"eng": 20, "canon": 34, "conf": 6, "layer": 14}
+    div = "  " + "─" * (W["eng"] + W["canon"] + W["conf"] + W["layer"] + 4 * 2 + 6)
     print(f"\n  ENGINE COMPARISON  —  \"{raw}\"\n")
-    print(f"  {'ENGINE':<18} {'CANONICAL':<32} {'CONF':<6} {'LAYER':<14} STATUS")
-    print("  " + "─" * 88)
+    print(f"  {'ENGINE':<{W['eng']}}  {'CANONICAL':<{W['canon']}}  "
+          f"{'CONF':<{W['conf']}}  {'LAYER':<{W['layer']}}  STATUS")
+    print(div)
     for label, eng in engine_map.items():
         if eng is None:
-            print(f"  {label:<18} (not loaded — missing dependency)")
+            print(f"  {label:<{W['eng']}}  (not loaded — missing dependency)")
             continue
         try:
             t0 = time.perf_counter()
             r  = eng.normalize(raw)
             ms = (time.perf_counter() - t0) * 1000
-            canon  = (str(r.get("canonical_degree") or "—"))[:30]
+            canon  = (str(r.get("canonical_degree") or "—"))[:W["canon"] - 1]
             conf   = f"{r.get('confidence', 0):.3f}"
-            layer  = str(r.get("layer_used") or "—")
+            layer  = str(r.get("layer_used") or "—")[:W["layer"] - 1]
             status = str(r.get("status") or "—")
-            print(f"  {label:<18} {canon:<32} {conf:<6} {layer:<14} {status}  ({ms:.1f}ms)")
+            lbl    = str(label)[:W["eng"] - 1]
+            print(f"  {lbl:<{W['eng']}}  {canon:<{W['canon']}}  "
+                  f"{conf:<{W['conf']}}  {layer:<{W['layer']}}  {status}  ({ms:.1f}ms)")
         except Exception as exc:
-            print(f"  {label:<18} ERROR: {exc}")
-    print("  " + "─" * 88)
+            print(f"  {label:<{W['eng']}}  ERROR: {exc}")
+    print(div)
+
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -338,7 +353,7 @@ def main() -> None:
         print("  MAIN MENU — Select an engine")
         print("═" * 70)
         for idx, (display, key) in enumerate(display_labels, 1):
-            status = "✓" if engines.get(key) else "✗ (unavailable)"
+            status = "OK" if engines.get(key) else "X (unavailable)"
             print(f"    {idx}.  {display:<36}  {status}")
         print(f"    {len(display_labels)+1}.  Compare all engines on custom input")
         print(f"    {len(display_labels)+2}.  Exit")

@@ -5,7 +5,7 @@
 >
 > **v3.0.0 Update**: Layer 2 now offers a **Combined Engine (Engine C)** that runs all three sub-engines in consensus, and Layer 3 is now a **fully implemented heuristic engine** (no ML required) rather than a stub.
 >
-> **v3.5.0 Update**: A comprehensive suite of **internationally-scoped training datasets** (`datasets_updated/`) has been added, engineered by Jai Gupta. These datasets cover India, USA, UK, and a curated world catalog — enabling future model evaluation, threshold calibration, and production testing at global scale. Additionally, the dictionary now includes **medical degrees** (MBBS, BDS, BPharm), and a RapidFuzz scoring bug causing all L2 matches to silently return `0.000` has been fixed.
+> **v3.5.0 Update**: A comprehensive suite of **internationally-scoped training datasets** (`data/`) has been added, engineered by Jai Gupta. These datasets cover India, USA, UK, and a curated world catalog — enabling future model evaluation, threshold calibration, and production testing at global scale. Additionally, the dictionary now includes **medical degrees** (MBBS, BDS, BPharm), and a RapidFuzz scoring bug causing all L2 matches to silently return `0.000` has been fixed.
 
 ---
 

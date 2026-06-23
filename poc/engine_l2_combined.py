@@ -277,28 +277,37 @@ if __name__ == "__main__":
 
         if choice == "1":
             results = engine.batch_normalize(TEST_CASES)
-            print(f"\n  {len(TEST_CASES)} inputs · L2 Combined consensus engine\n")
-            print(f"  {'INPUT':<32} {'CANONICAL':<30} {'CONF':<6} {'VOTES':<6} STATUS")
-            print("  " + "-" * 90)
+            W = {"inp": 33, "canon": 32, "conf": 6, "votes": 7}
+            div = "  " + "─" * (W["inp"] + W["canon"] + W["conf"] + W["votes"] + 4 * 2 + 6)
+            print(f"\n  {len(TEST_CASES)} inputs · L2 Combined consensus engine")
+            print()
+            print(f"  {'INPUT':<{W['inp']}}  {'CANONICAL':<{W['canon']}}  "
+                  f"{'CONF':<{W['conf']}}  {'VOTES':<{W['votes']}}  STATUS")
+            print(div)
             stats = {"L1": 0, "L2": 0, "review": 0, "unresolved": 0}
             for r in results:
-                inp    = (r["input"] or "")[:30]
-                canon  = (r["canonical_degree"] or "-")[:28]
+                inp    = (r["input"] or "")[:W["inp"] - 1]
+                canon  = (r["canonical_degree"] or "—")[:W["canon"] - 1]
                 conf   = f"{r['confidence']:.2f}"
-                votes  = f"{r.get('consensus_votes', '-')}/{r.get('engines_polled', '-')}"
+                votes  = f"{r.get('consensus_votes', '—')}/{r.get('engines_polled', '—')}"
                 status = r["status"]
-                print(f"  {inp:<32} {canon:<30} {conf:<6} {votes:<6} {status}")
+                print(f"  {inp:<{W['inp']}}  {canon:<{W['canon']}}  "
+                      f"{conf:<{W['conf']}}  {votes:<{W['votes']}}  {status}")
                 if r.get("canonical_field"):
-                    print(f"  {'':>32} ↳ field: {r['canonical_field']}")
+                    print(f"  {'':>{W['inp']}}  ↳ field: {r['canonical_field']}")
                 layer = r["layer_used"]
-                if   layer == "L1":              stats["L1"]         += 1
-                elif "L2" in layer:              stats["L2"]         += 1
-                elif status == "review_needed":  stats["review"]     += 1
-                else:                            stats["unresolved"] += 1
+                if   layer.startswith("L1"):   stats["L1"]         += 1
+                elif "L2" in layer:            stats["L2"]         += 1
+                elif status == "review_needed": stats["review"]    += 1
+                else:                           stats["unresolved"] += 1
+            print(div)
             total = len(TEST_CASES)
-            print("\n  SUMMARY")
+            print(f"\n  {'LAYER/STATUS':<14}  {'N':>4}  {'%':>5}")
+            print(f"  {'─'*14}  {'─'*4}  {'─'*5}")
             for k, v in stats.items():
-                print(f"    {k:<12}: {v}  ({v/total*100:.0f}%)")
+                if v:
+                    print(f"  {k:<14}  {v:>4}  {v/total*100:>4.0f}%")
+
 
         elif choice == "2":
             raw = input("\n  Enter degree string: ").strip()

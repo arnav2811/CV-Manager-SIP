@@ -50,7 +50,9 @@ Raw Input String
 
 ```
 cv_manager_sip/
-├── data/
+├── data/                              # All reference data & training datasets
+│   │
+│   │  ── Core dictionary & alias files ──
 │   ├── degree_aliases.csv            # 7,593 alias → canonical mappings (inc. medical)
 │   ├── degree_dictionary.json        # Canonical degree dict with levels & codes
 │   ├── field_of_study_aliases.csv    # 308 field aliases across 68 fields
@@ -59,9 +61,9 @@ cv_manager_sip/
 │   ├── education_reference_seed.sql  # SQL schema + seed for field aliases
 │   ├── education_seed.sql            # Full 5-table relational schema + inserts
 │   ├── education_seed.json           # JSON export of aliases + sample candidates
-│   └── education_schema_seed.csv     # Sample candidate data (CSV)
-│
-├── datasets_updated/                  # ★ NEW (v3.5.0) — Jai Gupta, integrated by Arnav
+│   ├── education_schema_seed.csv     # Sample candidate data (CSV)
+│   │
+│   │  ── ★ NEW (v3.5.0) Training datasets — Jai Gupta ──
 │   ├── layer1_exact_lookup_training.csv   # 6,976 gold-standard L1 validation samples
 │   ├── layer2_fuzzy_training.csv          # 15,233 noisy alias samples for L2 tuning
 │   ├── layer3_unstructured_training.csv   # 1,124 conversational text samples for L3
@@ -70,7 +72,7 @@ cv_manager_sip/
 │   ├── indian_uk_degrees_training.csv     # 9,240 India + UK alias permutations
 │   ├── indian_world_degrees_training.csv  # 17,913 India + world alias permutations
 │   ├── degree_only_manifest.json          # Dataset manifest & permutation scope
-│   └── education_reference_expanded_sql_files/
+│   └── education_reference_expanded_sql_files/   # ★ Expanded SQL seeds (v3.5.0)
 │       ├── education_reference_expanded_usa.sql    # 218 fields × 84 degrees (USA)
 │       ├── education_reference_expanded_uk.sql     # 218 fields × 61 degrees (UK)
 │       ├── education_reference_expanded_world.sql  # 348 fields × 179 degrees (world)
@@ -86,7 +88,8 @@ cv_manager_sip/
 │   │
 │   ├── engine_l2_combined.py         # ★ Layer 2 consensus voting engine
 │   ├── engine_l3.py                  # ★ Layer 3 NLP/heuristic engine
-│   └── engine_orchestrator.py        # ★ Master 3-layer orchestrator
+│   ├── engine_orchestrator.py        # ★ Master 3-layer orchestrator
+│   └── evaluate_datasets.py          # ★ NEW (v3.5.0) — Training dataset evaluation runner
 │
 ├── auxilary_sources/
 │   └── field_of_study.py             # Generator script for field aliases
@@ -206,7 +209,7 @@ Reference data is provided in **JSON**, **CSV**, and **SQL** formats for easy in
 - `education_seed.sql` — seed a relational DB (MySQL/PostgreSQL compatible)
 - `education_seed.json` — MongoDB / NoSQL ready
 
-### Training Datasets (v3.5.0 — `datasets_updated/`)
+### Training Datasets (v3.5.0 — `data/`)
 
 A full suite of layer-specific training and evaluation datasets contributed by **Jai Gupta**:
 
@@ -220,7 +223,7 @@ A full suite of layer-specific training and evaluation datasets contributed by *
 | `indian_world_degrees_training.csv` | 17,913 | India + USA + UK + world alias permutations |
 | `degree_only_canonical_catalog.csv` | 141 | Multi-country canonical degree catalog |
 
-Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292) degree-field pairs are provided in `education_reference_expanded_sql_files/`.
+Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292) degree-field pairs are provided in `data/education_reference_expanded_sql_files/`.
 
 ---
 

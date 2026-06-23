@@ -10,11 +10,11 @@
 
 ### What's New
 
-**Dataset expansion release** — a new `datasets_updated/` directory is introduced carrying purpose-built, internationally-scoped training datasets across three engine layers. The data engineering work was conducted by **Jai Gupta**; integration into the project structure, documentation, and pipeline references was carried out by **Arnav**. No engine code was modified in this release — all changes are additive data and documentation.
+**Dataset expansion release** — all training datasets consolidated into the `data/` directory for direct engine access. A new `evaluate_datasets.py` runner evaluates all engines against the v3.5.0 training sets. CLI tabular output across all POC files has been tidied for consistent column widths. The data engineering work was conducted by **Jai Gupta**; integration, evaluation tooling, and documentation were carried out by **Arnav**.
 
 ---
 
-### 1. New Dataset Folder — `datasets_updated/`
+### 1. New Dataset Folder — `data/`
 
 Eight new files (plus the SQL sub-directory) provide training, evaluation, and reference data across all three pipeline layers and three international degree systems. Each file has been designed for a distinct purpose:
 
@@ -51,7 +51,7 @@ Eight new files (plus the SQL sub-directory) provide training, evaluation, and r
 
 ---
 
-### 3. International Degree Catalog (`datasets_updated/degree_only_canonical_catalog.csv` + `indian_*_degrees_training.csv`)
+### 3. International Degree Catalog (`data/degree_only_canonical_catalog.csv` + `indian_*_degrees_training.csv`)
 
 The degree catalog and training sets cover **three international degree systems** alongside the existing India-centric dataset:
 
@@ -71,7 +71,7 @@ Alias permutation rules applied per entry:
 
 ---
 
-### 4. Expanded SQL Reference Seeds (`datasets_updated/education_reference_expanded_sql_files/`)
+### 4. Expanded SQL Reference Seeds (`data/education_reference_expanded_sql_files/`)
 
 Three standalone SQL seed files targeting USA, UK, and global degree systems, expanded from the base Indian seed (`education_reference_seed.sql`). Sources used: NCES CIP 2020, IPEDS/NCES, HESA HECoS, QAA/UCAS, and UNESCO ISCED-F 2013.
 
@@ -108,8 +108,8 @@ Each file includes `field_of_study_aliases`, `degree_aliases`, and `degree_field
 
 | Contributor | Contribution |
 |---|---|
-| **Jai Gupta** | Data engineering — authored all 8 files in `datasets_updated/` including the three international training CSV sets, the layered training datasets, the expanded SQL seeds, the canonical catalog, and the manifest |
-| **Arnav** | Integration — connected the new dataset folder to the project, fixed the RapidFuzz `**kwargs` bug, added medical degrees to the dictionary, updated all documentation |
+| **Jai Gupta** | Data engineering — authored all 8 files in `data/` including the three international training CSV sets, the layered training datasets, the expanded SQL seeds, the canonical catalog, and the manifest |
+| **Arnav** | Integration — connected the new dataset folder to the project, fixed the RapidFuzz `**kwargs` bug, added medical degrees to the dictionary, created `evaluate_datasets.py`, tidied all CLI tables, updated all documentation |
 
 ---
 
@@ -117,16 +117,24 @@ Each file includes `field_of_study_aliases`, `degree_aliases`, and `degree_field
 
 | File | Change |
 |---|---|
-| `datasets_updated/` | **New folder** — 8 dataset files + SQL sub-directory (Jai Gupta) |
+| `data/` | **New folder** — 8 dataset files + SQL sub-directory (Jai Gupta) |
 | `poc/normalizer_rapidfuzz.py` | Bug fix — `_combined_score` now accepts `**kwargs` |
 | `data/degree_aliases.csv` | Regenerated — 7,593 entries (added medical degrees) |
 | `data/degree_dictionary.json` | Regenerated — added MBBS, BDS, BPHARM |
 | `data/education_seed.json` | Regenerated — reflects new canonical set |
 | `README.md` | Updated — v3.5.0 directory structure, data extensibility, dataset table |
-| `CHANGELOG.md` | Added v3.5.0 entry |\
+| `CHANGELOG.md` | Added v3.5.0 entry |
 | `explainme.md` | Updated — dataset context, international scope note |
 | `platform_audit.md` | Updated — v3.5.0 status, dataset audit section |
 | `ppt_generation_prompt.md` | Updated — slide content reflecting new dataset milestone |
+| `poc/evaluate_datasets.py` | **New** — Dataset evaluation runner for all training CSVs |
+| `poc/app.py` | Tidied — consistent column widths and Unicode separators in CLI tables |
+| `poc/normalizer_rapidfuzz.py` | Tidied — consistent CLI table output formatting |
+| `poc/normalizer_tfidf.py` | Tidied — consistent CLI table output formatting |
+| `poc/normalizer_embeddings.py` | Tidied — consistent CLI table output formatting |
+| `poc/engine_l2_combined.py` | Tidied — consistent CLI table output formatting |
+| `poc/engine_l3.py` | Tidied — consistent CLI table output formatting |
+| `poc/engine_orchestrator.py` | Tidied — consistent CLI table output formatting |
 
 ---
 

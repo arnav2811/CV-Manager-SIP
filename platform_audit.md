@@ -66,7 +66,7 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | `education_seed.sql` | ✅ Current | 5-table schema + seeds |
 | `education_seed.json` | ✅ Current | Regenerated v3.5.0 |
 
-### New Datasets — `datasets_updated/` (Jai Gupta)
+### New Datasets — `data/` (Jai Gupta)
 
 | File | Rows | Layer | Status |
 |------|-----:|-------|--------|
@@ -145,7 +145,7 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | v2.0.0 | Arnav | Layer 1/2 overhaul, permutation engine, 7k alias expansion |
 | v2.1.0–v2.3.0 | Arnav | REST API, TF-IDF/Embeddings engines, SQL rewrite, documentation |
 | v3.0.0 | Arnav | L3 engine, L2 combined, orchestrator, CLI, superset bias fix |
-| v3.5.0 | **Jai Gupta** | Dataset engineering — all `datasets_updated/` files |
+| v3.5.0 | **Jai Gupta** | Dataset engineering — all `data/` files |
 | v3.5.0 | Arnav | Integration, RapidFuzz `**kwargs` fix, medical degrees, docs |
 
 ---

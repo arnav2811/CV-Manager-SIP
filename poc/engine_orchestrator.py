@@ -97,31 +97,31 @@ class CVNormalizationOrchestrator:
         # Always load RapidFuzz (used for L1 + fast L2)
         try:
             self._engines["rf"] = _RF(self.data_dir)
-            print("[Orchestrator] ✓ RapidFuzz engine ready")
+            print("[Orchestrator] OK RapidFuzz engine ready")
         except Exception as exc:
             raise RuntimeError(f"RapidFuzz engine failed to load: {exc}") from exc
 
         if mode in ("standard", "full"):
             try:
                 self._engines["tfidf"] = _TFIDF(self.data_dir)
-                print("[Orchestrator] ✓ TF-IDF engine ready")
+                print("[Orchestrator] OK TF-IDF engine ready")
             except Exception as exc:
-                print(f"[Orchestrator] ✗ TF-IDF unavailable: {exc}")
+                print(f"[Orchestrator] X TF-IDF unavailable: {exc}")
 
         if mode == "full" and _EMB_AVAILABLE:
             try:
                 emb = _EMB(self.data_dir)
                 if emb.model is not None:
                     self._engines["emb"] = emb
-                    print("[Orchestrator] ✓ Embeddings engine ready")
+                    print("[Orchestrator] OK Embeddings engine ready")
                 else:
-                    print("[Orchestrator] ✗ Embeddings: model not loaded")
+                    print("[Orchestrator] X Embeddings: model not loaded")
             except Exception as exc:
-                print(f"[Orchestrator] ✗ Embeddings unavailable: {exc}")
+                print(f"[Orchestrator] X Embeddings unavailable: {exc}")
 
         if mode == "full":
             self._l3 = _L3()
-            print("[Orchestrator] ✓ L3 Heuristic engine ready")
+            print("[Orchestrator] OK L3 Heuristic engine ready")
 
         active = list(self._engines.keys())
         print(f"[Orchestrator] Active engines: {active}  L3={'yes' if self._l3 else 'no'}")
@@ -428,27 +428,34 @@ if __name__ == "__main__":
             t_start  = time.perf_counter()
             results  = orch.batch_normalize(TEST_CASES)
             t_total  = (time.perf_counter() - t_start) * 1000
-
-            print(f"\n  {len(TEST_CASES)} inputs · mode={mode}\n")
-            print(f"  {'INPUT':<36} {'CANONICAL':<30} {'LAYER':<12} {'CONF':<6} STATUS")
-            print("  " + "-" * 98)
-
+            W = {"inp": 36, "canon": 32, "layer": 13, "conf": 6}
+            div = "  " + "─" * (W["inp"] + W["canon"] + W["layer"] + W["conf"] + 4 * 2 + 6)
+            print(f"\n  {len(TEST_CASES)} inputs · mode={mode}")
+            print()
+            print(f"  {'INPUT':<{W['inp']}}  {'CANONICAL':<{W['canon']}}  "
+                  f"{'LAYER':<{W['layer']}}  {'CONF':<{W['conf']}}  STATUS")
+            print(div)
             stats = {"resolved": 0, "fuzzy_matched": 0, "review_needed": 0, "unresolved": 0}
             for r in results:
-                inp    = (r["input"] or "")[:34]
-                canon  = (r["canonical_degree"] or "-")[:28]
-                layer  = r["layer_used"]
+                inp    = (r["input"] or "")[:W["inp"] - 1]
+                canon  = (r["canonical_degree"] or "—")[:W["canon"] - 1]
+                layer  = r["layer_used"][:W["layer"] - 1]
                 conf   = f"{r['confidence']:.2f}"
                 status = r["status"]
-                print(f"  {inp:<36} {canon:<30} {layer:<12} {conf:<6} {status}")
+                print(f"  {inp:<{W['inp']}}  {canon:<{W['canon']}}  "
+                      f"{layer:<{W['layer']}}  {conf:<{W['conf']}}  {status}")
                 if r.get("canonical_field"):
-                    print(f"  {'':>36} ↳ field: {r['canonical_field']}")
+                    print(f"  {'':>{W['inp']}}  ↳ field: {r['canonical_field']}")
                 stats[status] = stats.get(status, 0) + 1
-
+            print(div)
             total = len(TEST_CASES)
-            print(f"\n  SUMMARY  (total time: {t_total:.1f} ms,  avg: {t_total/total:.1f} ms/input)")
+            print(f"\n  Total time: {t_total:.1f} ms   avg: {t_total/total:.1f} ms/input")
+            print(f"\n  {'STATUS':<18}  {'N':>4}  {'%':>5}")
+            print(f"  {'─'*18}  {'─'*4}  {'─'*5}")
             for k, v in stats.items():
-                print(f"    {k:<16}: {v:>3}  ({v/total*100:.0f}%)")
+                if v:
+                    print(f"  {k:<18}  {v:>4}  {v/total*100:>4.0f}%")
+
 
         elif choice == "2":
             raw = input("\n  Enter degree string: ").strip()

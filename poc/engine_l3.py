@@ -387,23 +387,28 @@ if __name__ == "__main__":
         choice = input("\n  Choice [1/2/3]: ").strip()
 
         if choice == "1":
-            print(f"\n  {len(UNSTRUCTURED_CASES)} inputs · L3 Heuristic cascade\n")
-            print(f"  {'INPUT':<45} {'CANONICAL':<32} {'CONF':<6} STRATEGY")
-            print("  " + "-" * 100)
+            print(f"\n  {len(UNSTRUCTURED_CASES)} inputs · L3 Heuristic cascade")
+            W = {"inp": 46, "canon": 34, "conf": 6}
+            div = "  " + "─" * (W["inp"] + W["canon"] + W["conf"] + 3 * 2 + 8)
+            print()
+            print(f"  {'INPUT':<{W['inp']}}  {'CANONICAL':<{W['canon']}}  "
+                  f"{'CONF':<{W['conf']}}  STRATEGY")
+            print(div)
             for raw in UNSTRUCTURED_CASES:
                 r = engine.analyze(raw)
+                inp = raw[:W["inp"] - 1]
                 if r:
-                    inp    = raw[:43]
-                    canon  = (r["canonical_degree"] or "(field only)")[:30]
-                    conf   = f"{r['confidence']:.2f}"
-                    strat  = r["strategy"]
-                    field  = r.get("field_mention", "")
-                    print(f"  {inp:<45} {canon:<32} {conf:<6} {strat}")
+                    canon = (r["canonical_degree"] or "(field only)")[:W["canon"] - 1]
+                    conf  = f"{r['confidence']:.2f}"
+                    strat = r["strategy"]
+                    field = r.get("field_mention") or ""
+                    print(f"  {inp:<{W['inp']}}  {canon:<{W['canon']}}  {conf:<{W['conf']}}  {strat}")
                     if field:
-                        print(f"  {'':>45} ↳ field: {field}")
+                        print(f"  {'':>{W['inp']}}  ↳ field: {field}")
                 else:
-                    inp = raw[:43]
-                    print(f"  {inp:<45} {'— no signal —':<32} —      —")
+                    print(f"  {inp:<{W['inp']}}  {'— no signal —':<{W['canon']}}  {'—':<{W['conf']}}  —")
+            print(div)
+
 
         elif choice == "2":
             raw = input("\n  Enter any text containing a degree mention: ").strip()
