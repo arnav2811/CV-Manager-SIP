@@ -6,7 +6,6 @@ Run from the repository root:
   python poc/evaluate_f1.py --dataset all --max-rows 500
 
 For full scoring, omit --max-rows.
-Layer 3 is not included in --dataset all unless --include-layer3 is passed.
 """
 
 from __future__ import annotations
@@ -55,6 +54,30 @@ DATASETS = {
         "field_col": "canonical_field",
         "engine": "rapidfuzz",
         "failure_file": "layer3_failures.csv",
+    },
+    "indian_usa": {
+        "file": "cleaned_eval_indian_usa.csv",
+        "input_col": "raw_input",
+        "degree_col": "canonical_degree",
+        "field_col": None,
+        "engine": "rapidfuzz",
+        "failure_file": "indian_usa_failures.csv",
+    },
+    "indian_uk": {
+        "file": "cleaned_eval_indian_uk.csv",
+        "input_col": "raw_input",
+        "degree_col": "canonical_degree",
+        "field_col": None,
+        "engine": "rapidfuzz",
+        "failure_file": "indian_uk_failures.csv",
+    },
+    "indian_world": {
+        "file": "cleaned_eval_indian_world.csv",
+        "input_col": "raw_input",
+        "degree_col": "canonical_degree",
+        "field_col": None,
+        "engine": "rapidfuzz",
+        "failure_file": "indian_world_failures.csv",
     },
 }
 
@@ -180,6 +203,7 @@ def evaluate_dataset(key: str, eval_dir: Path, max_rows: int | None) -> dict[str
     cfg = DATASETS[key]
     rows = load_rows(eval_dir / cfg["file"], max_rows)
     engine = load_engine(cfg["engine"])
+    has_field_col = cfg["field_col"] is not None
 
     true_degree: list[str] = []
     pred_degree: list[str] = []
@@ -194,11 +218,11 @@ def evaluate_dataset(key: str, eval_dir: Path, max_rows: int | None) -> dict[str
     for row in rows:
         raw_input = row[cfg["input_col"]]
         expected_degree = label(row.get(cfg["degree_col"]))
-        expected_field = label(row.get(cfg["field_col"]))
+        expected_field = label(row.get(cfg["field_col"])) if cfg["field_col"] else NONE_LABEL
 
         result = engine.normalize(raw_input)
         predicted_degree = label(result.get("canonical_degree"))
-        predicted_field = label(result.get("canonical_field"))
+        predicted_field = label(result.get("canonical_field")) if has_field_col else NONE_LABEL
 
         true_degree.append(expected_degree)
         pred_degree.append(predicted_degree)
@@ -236,7 +260,7 @@ def evaluate_dataset(key: str, eval_dir: Path, max_rows: int | None) -> dict[str
     field = precision_recall_f1(true_field, pred_field)
     pair = exact_f1(true_pair, pred_pair)
     combined = precision_recall_f1(true_degree + true_field, pred_degree + pred_field)
-    field_has_labels = field["label_count"] > 0
+    field_has_labels = has_field_col and field["label_count"] > 0
 
     write_failure_file(eval_dir / cfg["failure_file"], failure_rows)
 
@@ -307,6 +331,10 @@ This evaluation reports several scores instead of only one overall number.
 Missing field values are treated as blank values. They are not treated as the text `nan`.
 
 Rows in `ambiguous_cases.csv` are excluded from the cleaned evaluation files until the team decides the correct business rule.
+
+International datasets are degree-only. Their field metrics are reported as `N/A`.
+
+Layer 3 is included in the complete evaluation summary, but it should be interpreted separately because it scores unstructured sentence extraction rather than direct alias lookup.
 """
     (eval_dir / "metrics_explanation.md").write_text(text, encoding="utf-8")
 
@@ -316,20 +344,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dataset", choices=[*DATASETS.keys(), "all"], default="all")
     parser.add_argument("--eval-dir", type=Path, default=EVAL_DIR)
     parser.add_argument("--max-rows", type=int, default=None)
-    parser.add_argument(
-        "--include-layer3",
-        action="store_true",
-        help="Include Layer 3 when --dataset all is used.",
-    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     if args.dataset == "all":
-        keys = ["layer1", "layer2"]
-        if args.include_layer3:
-            keys.append("layer3")
+        keys = list(DATASETS)
     else:
         keys = [args.dataset]
     results = [evaluate_dataset(key, args.eval_dir, args.max_rows) for key in keys]

@@ -5,6 +5,9 @@ This script creates the files used by evaluate_f1.py:
   - evaluation/cleaned_eval_layer1.csv
   - evaluation/cleaned_eval_layer2.csv
   - evaluation/cleaned_eval_layer3.csv
+  - evaluation/cleaned_eval_indian_usa.csv
+  - evaluation/cleaned_eval_indian_uk.csv
+  - evaluation/cleaned_eval_indian_world.csv
   - evaluation/ambiguous_cases.csv
 
 Run from the repository root:
@@ -86,7 +89,29 @@ def prepare_layer3() -> tuple[int, int]:
     return len(rows), len(cleaned)
 
 
-def write_ambiguous_cases(layer1_rows: list[dict[str, str]], layer2_rows: list[dict[str, str]]) -> int:
+def prepare_international(source_file: str, output_file: str) -> tuple[int, int, list[dict[str, str]]]:
+    rows = _read_csv(DATA_DIR / source_file)
+    ambiguous_rows = [
+        row
+        for row in rows
+        if row.get("is_ambiguous_across_systems", "").strip().lower() == "true"
+        or row.get("is_ambiguous_across_degrees", "").strip().lower() == "true"
+        or _blank(row.get("canonical_degree"))
+    ]
+    cleaned = [
+        row
+        for row in rows
+        if row not in ambiguous_rows
+    ]
+    _write_csv(OUT_DIR / output_file, cleaned, list(rows[0].keys()))
+    return len(rows), len(cleaned), ambiguous_rows
+
+
+def write_ambiguous_cases(
+    layer1_rows: list[dict[str, str]],
+    layer2_rows: list[dict[str, str]],
+    international_rows: list[dict[str, str]],
+) -> int:
     rows: list[dict[str, str]] = []
 
     for source_name, source_rows in [
@@ -115,6 +140,24 @@ def write_ambiguous_cases(layer1_rows: list[dict[str, str]], layer2_rows: list[d
                 }
             )
 
+    for row in international_rows:
+        reasons = []
+        if row.get("is_ambiguous_across_systems", "").strip().lower() == "true":
+            reasons.append("ambiguous_across_systems")
+        if row.get("is_ambiguous_across_degrees", "").strip().lower() == "true":
+            reasons.append("ambiguous_across_degrees")
+        if _blank(row.get("canonical_degree")):
+            reasons.append("missing_canonical_degree")
+        rows.append(
+            {
+                "source_file": row.get("dataset_id", "international"),
+                "raw_input": row.get("raw_input", ""),
+                "canonical_degree_options": row.get("canonical_degree", ""),
+                "sample_id_example": row.get("sample_id", ""),
+                "note": "Exclude from F1 scoring: " + "|".join(reasons),
+            }
+        )
+
     _write_csv(
         OUT_DIR / "ambiguous_cases.csv",
         rows,
@@ -133,6 +176,9 @@ This note explains which columns are used for F1 scoring.
 | `cleaned_eval_layer1.csv` | `raw_input` | `canonical_degree` | `canonical_field` | Exact alias lookup examples. Ambiguous raw inputs are excluded. |
 | `cleaned_eval_layer2.csv` | `raw_input` | `canonical_degree` | `canonical_field` | Fuzzy, typo, and noisy examples. Hard negatives and ambiguous raw inputs are excluded. |
 | `cleaned_eval_layer3.csv` | `raw_text` | `canonical_degree` | `canonical_field` | Unstructured sentence examples. Use carefully because Layer 3 is still a heuristic extractor. |
+| `cleaned_eval_indian_usa.csv` | `raw_input` | `canonical_degree` | none | India + USA degree-only examples. Cross-system and cross-degree ambiguous rows are excluded. |
+| `cleaned_eval_indian_uk.csv` | `raw_input` | `canonical_degree` | none | India + UK degree-only examples. Cross-system and cross-degree ambiguous rows are excluded. |
+| `cleaned_eval_indian_world.csv` | `raw_input` | `canonical_degree` | none | India + world degree-only examples. Cross-system and cross-degree ambiguous rows are excluded. |
 
 Rows listed in `ambiguous_cases.csv` should not be scored until the team decides the correct business rule.
 """
@@ -144,7 +190,7 @@ def write_future_scope_note() -> None:
 
 Layer 3 data contains resume-like sentences and span annotations. It can be used for future extraction scoring, but it should be reported separately from Layer 1 and Layer 2.
 
-For the first F1 pass, treat Layer 1 and Layer 2 as the main scoring targets. Layer 3 should only be scored if the team agrees that the current heuristic extractor is ready to evaluate.
+Layer 3 is included in the complete evaluation run, but its scores should be interpreted separately because it measures unstructured extraction behavior rather than direct alias normalization.
 """
     (OUT_DIR / "future_scope_note.md").write_text(text, encoding="utf-8")
 
@@ -163,7 +209,23 @@ def main() -> None:
     l1_total, l1_clean, l1_ambiguous_rows = prepare_layer1()
     l2_total, l2_clean, l2_ambiguous_rows = prepare_layer2()
     l3_total, l3_clean = prepare_layer3()
-    ambiguous_count = write_ambiguous_cases(l1_ambiguous_rows, l2_ambiguous_rows)
+    usa_total, usa_clean, usa_ambiguous_rows = prepare_international(
+        "indian_usa_degrees_training.csv",
+        "cleaned_eval_indian_usa.csv",
+    )
+    uk_total, uk_clean, uk_ambiguous_rows = prepare_international(
+        "indian_uk_degrees_training.csv",
+        "cleaned_eval_indian_uk.csv",
+    )
+    world_total, world_clean, world_ambiguous_rows = prepare_international(
+        "indian_world_degrees_training.csv",
+        "cleaned_eval_indian_world.csv",
+    )
+    ambiguous_count = write_ambiguous_cases(
+        l1_ambiguous_rows,
+        l2_ambiguous_rows,
+        usa_ambiguous_rows + uk_ambiguous_rows + world_ambiguous_rows,
+    )
     write_dataset_column_mapping()
     write_future_scope_note()
 
@@ -171,6 +233,9 @@ def main() -> None:
     print(f"Layer 1: {l1_clean:,} cleaned rows from {l1_total:,}")
     print(f"Layer 2: {l2_clean:,} cleaned rows from {l2_total:,}")
     print(f"Layer 3: {l3_clean:,} cleaned rows from {l3_total:,}")
+    print(f"India + USA: {usa_clean:,} cleaned rows from {usa_total:,}")
+    print(f"India + UK: {uk_clean:,} cleaned rows from {uk_total:,}")
+    print(f"India + World: {world_clean:,} cleaned rows from {world_total:,}")
     print(f"Ambiguous cases: {ambiguous_count:,}")
     print(f"Output directory: {OUT_DIR}")
 
