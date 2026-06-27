@@ -1,9 +1,9 @@
 raw_input,expected_degree,predicted_degree,expected_field,predicted_field,status,layer_used,confidence,fuzzy_score,error_category
 B. Sc - Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 B.Sc - Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
-BSc Hons / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc Hons / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSC in Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
-BSc (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSc (Banking and Finance),Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 BSc - International Business,Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 "BSC, Entrepreneurship",Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
@@ -15,9 +15,9 @@ BSC - Operations Management,Bachelor of Business Administration,Bachelor of Scie
 B.Sc. (Business Administration),Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSC (Business Administration),Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 B.Sc / Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-B.Sc (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSc - Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-BSC (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSC (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "B.Sc, Business Administration",Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSc / Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 "BSc Hons, Accounting",Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
@@ -25,7 +25,7 @@ B. Sc (International Business),Bachelor of Business Administration,Bachelor of S
 "BSC, International Business",Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 "BSc Hons, Business Administration",Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSC / Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-BSC in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSC in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "BSc, Operations Management",Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 BSc - Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 B. Sc (Commerce),Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
@@ -41,13 +41,13 @@ BSc Hons - International Business,Bachelor of Business Administration,Bachelor o
 B.Sc / Entrepreneurship,Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "B. Sc, International Business",Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 BSc Hons - Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-"B.Sc., Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"B.Sc., Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSc - Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 B. Sc / International Business,Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Business Administration",Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSc Hons in Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 B.Sc. / International Business,Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
-BSC - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSC - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B.Sc / Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 BSc in Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 B.Sc (Entrepreneurship),Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
@@ -56,10 +56,10 @@ B.Sc - Marketing,Bachelor of Business Administration,Bachelor of Science,Marketi
 BSc in Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 "BSc, Marketing",Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 B.Sc (Marketing),Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-BSc Hons (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc Hons (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B.Sc. in Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 BSc Hons / Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-BSc in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "BSC, Marketing",Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 BSC - Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 Bachelor of Business Administration (Human Resources Management),Bachelor of Business Administration,Bachelor of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
@@ -73,14 +73,14 @@ BSc Hons (Operations Management),Bachelor of Business Administration,Bachelor of
 B.Sc. (Accounting),Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 B.Sc. / Entrepreneurship,Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "B. Sc, Banking and Finance",Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
-BSc Hons in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc Hons in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B.Sc. - Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "BSc, Business Administration",Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSC / Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Marketing",Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 BSC in Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 BSc (Operations Management),Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-B.Sc. in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc. in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc - Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Banking and Finance",Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 "BSC, Commerce",Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
@@ -101,7 +101,7 @@ BSc Hons (Banking and Finance),Bachelor of Business Administration,Bachelor of S
 BSC in Accounting,Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 BSc Hons / Entrepreneurship,Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "BSc Hons, Entrepreneurship",Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-BSc / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B.Sc. in Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 B.Sc (Finance),Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 BSc Hons (Entrepreneurship),Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
@@ -115,11 +115,11 @@ B.Sc. in International Business,Bachelor of Business Administration,Bachelor of 
 B.Sc. / Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 B.Sc. (Marketing),Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Entrepreneurship",Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-B. Sc - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B. Sc - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B.Sc in Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 BSC - Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 BSc Hons / Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-B.Sc - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc in Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 Bachelor of Business Administration - Human Resources Management,Bachelor of Business Administration,Bachelor of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
 BSc Hons in Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
@@ -155,7 +155,7 @@ BSc Hons - Entrepreneurship,Bachelor of Business Administration,Bachelor of Scie
 B.Sc - Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 B.Sc (Operations Management),Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 BSc - Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
-BSc - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Operations Management",Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 B.Sc - Accounting,Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 BSc / Accounting,Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
@@ -165,7 +165,7 @@ B.Sc in Entrepreneurship,Bachelor of Business Administration,Bachelor of Science
 "BSc, Finance",Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 "B.Sc, Entrepreneurship",Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 BSC / Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
-BSc Hons - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSc Hons - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc / Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 BSc Hons - Accounting,Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 "B. Sc, Entrepreneurship",Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
@@ -190,7 +190,7 @@ BSc in International Business,Bachelor of Business Administration,Bachelor of Sc
 B.Sc. in Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "B.Sc, Accounting",Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 "B.Sc, Banking and Finance",Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
-"BSc, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"BSc, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSc Hons in Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 "B.Sc, Finance",Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 BSc Hons (Business Administration),Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
@@ -208,14 +208,14 @@ BSC / Marketing,Bachelor of Business Administration,Bachelor of Science,Marketin
 B.Sc. (Commerce),Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 Bachelor of Business Administration / Human Resources Management,Bachelor of Business Administration,Bachelor of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
 B. Sc / Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-"B. Sc, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"B. Sc, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSC - Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 BSC in Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 BSc in Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 BSC - Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 BSc Hons in Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-B.Sc in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
-B.Sc. - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
+B.Sc. - Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc / Finance,Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 B.Sc. / Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 B.Sc. - Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
@@ -225,21 +225,21 @@ Bachelor of Business Administration in Human Resources Management,Bachelor of Bu
 BSc / Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 B.Sc. (Entrepreneurship),Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 B. Sc in Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-B.Sc. (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc. (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSC (Operations Management),Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 B. Sc - Entrepreneurship,Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 B. Sc (Business Administration),Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 "B. Sc, Commerce",Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Finance",Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 BSc (Business Administration),Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-"BSc Hons, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
-"BSC, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"BSc Hons, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
+"BSC, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 BSc (Marketing),Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 BSC (Entrepreneurship),Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-B. Sc / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B. Sc / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "BSc Hons, International Business",Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
-B. Sc in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
-"B.Sc, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B. Sc in Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
+"B.Sc, Human Resources Management",Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc - Operations Management,Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 BSc Hons in International Business,Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 B.Sc (Accounting),Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
@@ -247,7 +247,7 @@ B.Sc. in Finance,Bachelor of Business Administration,Bachelor of Science,Finance
 BSC - Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSc Hons (Commerce),Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "B. Sc, Operations Management",Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-B. Sc (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B. Sc (Human Resources Management),Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc - Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 BSc Hons / Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 BSC (International Business),Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
@@ -258,7 +258,7 @@ BSC in Business Administration,Bachelor of Business Administration,Bachelor of S
 B.Sc. - Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 B.Sc. - International Business,Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 B.Sc in Accounting,Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
-B.Sc. / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc. / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "B.Sc., Accounting",Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 B.Sc. (Operations Management),Bachelor of Business Administration,Bachelor of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 B.Sc. (International Business),Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
@@ -268,7 +268,7 @@ B.Sc. - Marketing,Bachelor of Business Administration,Bachelor of Science,Market
 B. Sc in Banking and Finance,Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 B. Sc / Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 BSc / Marketing,Bachelor of Business Administration,Bachelor of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-B.Sc / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "BSc, International Business",Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 BSc (International Business),Bachelor of Business Administration,Bachelor of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 BSc Hons / Business Administration,Bachelor of Business Administration,Bachelor of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
@@ -281,7 +281,7 @@ B.Sc. / Commerce,Bachelor of Business Administration,Bachelor of Science,Commerc
 "BSC, Finance",Bachelor of Business Administration,Bachelor of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 BSc in Entrepreneurship,Bachelor of Business Administration,Bachelor of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "BSc Hons, Banking and Finance",Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
-BSC / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+BSC / Human Resources Management,Bachelor of Business Administration,Bachelor of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 B. Sc / Commerce,Bachelor of Business Administration,Bachelor of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 B.Sc. (Banking and Finance),Bachelor of Business Administration,Bachelor of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 BSc - Accounting,Bachelor of Business Administration,Bachelor of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
@@ -307,14 +307,13 @@ B.Sc in Commerce,Bachelor of Business Administration,Bachelor of Science,Commerc
 BSc Hons (Computer Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 BSC (Computer Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 B.Sc in Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-BSc Hons (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+BSc Hons (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B.Sc - Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 BSc Hons - Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 B. Sc in Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 "B.Sc., Computer Applications",Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 BSc Hons in Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 "B. Sc, Computer Applications",Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
-Bachelor of Computer Applications (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Computer Applications,Computer Science (Applications),,resolved,L1,1.0,100,wrong_field
 BSc in Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 BSC / Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 BSc Hons in Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
@@ -326,7 +325,7 @@ B.Sc. (Computer Applications),Bachelor of Computer Applications,Bachelor of Scie
 BSc in Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B. Sc - Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 BSC in Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-B. Sc (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+B. Sc (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B. Sc in Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 BSc (Computer Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 B.Sc. / Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
@@ -340,9 +339,9 @@ B.Sc - Computer Science (Applications),Bachelor of Computer Applications,Bachelo
 BSC / Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 "BSC, Computer Applications",Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 B.Sc. in Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-B.Sc (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B.Sc. / Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
-BSC (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+BSC (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B. Sc / Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 BSc Hons / Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B.Sc / Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
@@ -357,13 +356,13 @@ B.Sc (Computer Applications),Bachelor of Computer Applications,Bachelor of Scien
 BSc - Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B.Sc. - Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 BSc / Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-BSc (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+BSc (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 BSc Hons - Computer Science (Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 "B.Sc., Computer Science (Applications)",Bachelor of Computer Applications,Bachelor of Engineering,,,review_needed,L2,0.8071,80.7,wrong_degree
 "B.Sc, Computer Applications",Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 "BSc, Computer Applications",Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 B.Sc. in Computer Applications,Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
-B.Sc. (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+B.Sc. (Computer Science (Applications)),Bachelor of Computer Applications,Bachelor of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 B. Sc (Computer Applications),Bachelor of Computer Applications,Bachelor of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 "Bachelor of Engineering, Production Engineering",Bachelor of Engineering,Bachelor of Engineering,Production Engineering,,resolved,L1,1.0,100,wrong_field
 Bachelor of Engineering (Electronics and Communication Engineering),Bachelor of Engineering,Bachelor of Engineering,Electronics and Communication Engineering,,resolved,L1,1.0,100,wrong_field
@@ -698,14 +697,14 @@ MS (Operations Management),Master of Business Administration,Master of Science,O
 M.Sc in Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 MS / Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 M. Sc / Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-M.Sc (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.Sc (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS - Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 M. Sc - Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 M.S. - Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 "MSC, Marketing",Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 M.S. in International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 MS (Marketing),Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-M.Sc in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.Sc in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS in Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 "M. Sc, Business Administration",Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 M. Sc / Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
@@ -719,15 +718,15 @@ M.Sc - Banking and Finance,Master of Business Administration,Master of Science,B
 MS (Entrepreneurship),Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "MSC, International Business",Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M.S. - Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-MSc / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSc / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 M.S. (Commerce),Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 MSC / Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 "MS, Operations Management",Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 MSc in International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 MSC in Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-M.S. / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.S. / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 M. Sc / Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-M.S. (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.S. (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSC / International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 MSC in Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 M. Sc in Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
@@ -736,7 +735,7 @@ M. Sc in Marketing,Master of Business Administration,Master of Science,Marketing
 M. Sc in Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 M. Sc in Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 M.Sc / Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
-MSC in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSC in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 M. Sc / Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 MSC - Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 "M.Sc, Operations Management",Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
@@ -753,7 +752,7 @@ M.Sc - Operations Management,Master of Business Administration,Master of Science
 M.Sc in International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 MSc (Banking and Finance),Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 Master of Business Administration (Human Resources Management),Master of Business Administration,Master of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
-M.S. - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.S. - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSc - Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 M.Sc (Marketing),Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 MSC in International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
@@ -772,11 +771,11 @@ MSC (Commerce),Master of Business Administration,Master of Science,Commerce,Comm
 MSC / Banking and Finance,Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 "MSC, Banking and Finance",Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 "MS, Commerce",Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
-MSC (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
-M. Sc (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSC (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
+M. Sc (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "M. Sc, Accounting",Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 M.Sc in Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-M.Sc - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.Sc - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 M.Sc / Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 MS in Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 MSC in Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
@@ -797,8 +796,8 @@ M.S. in Banking and Finance,Master of Business Administration,Master of Science,
 M.S. / Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 M.S. (Banking and Finance),Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 M.Sc - Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-MS / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
-"MS, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MS / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
+"MS, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS in Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 M.Sc - International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M.Sc - Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
@@ -828,17 +827,17 @@ M.S. (Accounting),Master of Business Administration,Master of Science,Accounting
 M. Sc - Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 MSc / Banking and Finance,Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 MSc - Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-MS - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
-"M.Sc, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MS - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
+"M.Sc, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSC - Banking and Finance,Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 M.S. / Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 M. Sc (International Business),Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 MSc in Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 M. Sc - Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
-M. Sc / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M. Sc / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS - Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 "MSc, Operations Management",Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-MSc in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSc in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSc / Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 MSc (International Business),Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 MSc (Entrepreneurship),Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
@@ -846,27 +845,27 @@ M.Sc (Commerce),Master of Business Administration,Master of Science,Commerce,Com
 "M.Sc, International Business",Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M.S. in Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "Master of Business Administration, Human Resources Management",Master of Business Administration,Master of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
-MSC / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSC / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "M.Sc, Entrepreneurship",Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 MS / International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M.Sc (Finance),Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 M.S. in Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 MSc (Commerce),Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 M. Sc / Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
-M.Sc / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.Sc / Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 M.Sc - Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 M.Sc (Banking and Finance),Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 "M.Sc, Finance",Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 MS / Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-MSc (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSc (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSC / Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 "M.Sc, Marketing",Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
-MS (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MS (Human Resources Management),Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 M.S. in Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 M. Sc in Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "MS, Entrepreneurship",Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "M.Sc, Banking and Finance",Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
-"M.S., Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"M.S., Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSC / Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "M. Sc, Entrepreneurship",Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 M. Sc (Marketing),Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
@@ -890,15 +889,15 @@ M. Sc - Accounting,Master of Business Administration,Master of Science,Accountin
 MSc / International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M.S. / Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 MSc in Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
-MS in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MS in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "M.S., Business Administration",Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-M. Sc - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M. Sc - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "MSC, Entrepreneurship",Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 MSC / Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 MS (Finance),Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 MSc - Banking and Finance,Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 MSc in Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
-MSC - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSC - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSc (Business Administration),Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 MSC in Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 M.Sc / Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
@@ -907,14 +906,14 @@ M.Sc in Operations Management,Master of Business Administration,Master of Scienc
 M.Sc / Marketing,Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 M. Sc in International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M. Sc in Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-"MSC, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"MSC, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS - Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 MS in International Business,Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 M. Sc / Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 MSc (Accounting),Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 "M.S., Operations Management",Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 MS - Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
-"MSc, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"MSc, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSC in Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 M. Sc in Accounting,Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 M. Sc (Banking and Finance),Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
@@ -932,17 +931,17 @@ M.Sc in Accounting,Master of Business Administration,Master of Science,Accountin
 MS in Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 MSc in Business Administration,Master of Business Administration,Master of Science,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 MS / Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-M. Sc in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M. Sc in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MSc (Marketing),Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 "MS, International Business",Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 "M.S., Banking and Finance",Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
-M.S. in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+M.S. in Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS (Commerce),Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 Master of Business Administration / Human Resources Management,Master of Business Administration,Master of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
 "MSC, Commerce",Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
 "M. Sc, Marketing",Master of Business Administration,Master of Science,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 "M. Sc, International Business",Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
-MSc - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+MSc - Human Resources Management,Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 MS in Banking and Finance,Master of Business Administration,Master of Science,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 M.S. - Finance,Master of Business Administration,Master of Science,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 M.S. (International Business),Master of Business Administration,Master of Science,International Business,International Business,resolved,L1,1.0,100,wrong_degree
@@ -978,7 +977,7 @@ M. Sc - Banking and Finance,Master of Business Administration,Master of Science,
 MSC (Operations Management),Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 M.S. - Operations Management,Master of Business Administration,Master of Science,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 "MSc, Entrepreneurship",Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
-"M. Sc, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
+"M. Sc, Human Resources Management",Master of Business Administration,Master of Science,Human Resources Management,Human Resources Management,resolved,L1,1.0,100,wrong_degree
 "M.Sc, Accounting",Master of Business Administration,Master of Science,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
 M.Sc / Entrepreneurship,Master of Business Administration,Master of Science,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 MSc - Commerce,Master of Business Administration,Master of Science,Commerce,Commerce,resolved,L1,1.0,100,wrong_degree
@@ -1002,9 +1001,9 @@ MSC in Computer Applications,Master of Computer Applications,Master of Science,C
 M.S. / Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 MSC - Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 MSC - Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
-MSc (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
-MSC (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
-M. Sc (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+MSc (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
+MSC (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
+M. Sc (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 "MS, Computer Science (Applications)",Master of Computer Applications,Bachelor of Engineering,,,review_needed,L2,0.8031,80.3,wrong_degree
 "MSc, Computer Science (Applications)",Master of Computer Applications,Bachelor of Engineering,,,review_needed,L2,0.783,78.3,wrong_degree
 M.S. in Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
@@ -1033,7 +1032,7 @@ M. Sc in Computer Science (Applications),Master of Computer Applications,Master 
 "M.S., Computer Science (Applications)",Master of Computer Applications,Bachelor of Engineering,,,review_needed,L2,0.8031,80.3,wrong_degree
 "MS, Computer Applications",Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 M.Sc - Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-M.Sc (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+M.Sc (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 M. Sc / Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 M.Sc / Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 M.Sc / Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
@@ -1042,17 +1041,16 @@ M.S. in Computer Applications,Master of Computer Applications,Master of Science,
 M. Sc (Computer Applications),Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 MS - Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 MS in Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-M.S. (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+M.S. (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 "MSC, Computer Science (Applications)",Master of Computer Applications,Bachelor of Engineering,,,review_needed,L2,0.783,78.3,wrong_degree
 MSc / Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 M.Sc in Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 M. Sc in Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 MS - Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 MS / Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
-Master of Computer Applications (Computer Science (Applications)),Master of Computer Applications,Master of Computer Applications,Computer Science (Applications),,resolved,L1,1.0,100,wrong_field
 MSc - Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 MSc / Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
-MS (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),,resolved,L1,1.0,100,wrong_degree_and_field
+MS (Computer Science (Applications)),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
 M. Sc - Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 MS / Computer Applications,Master of Computer Applications,Master of Science,Computer Applications,Computer Applications,resolved,L1,1.0,100,wrong_degree
 M.S. - Computer Science (Applications),Master of Computer Applications,Master of Science,Computer Science (Applications),Computer Science (Applications),resolved,L1,1.0,100,wrong_degree
@@ -1219,6 +1217,7 @@ Dip. Engg / Commerce,Post Graduate Diploma,Diploma in Engineering,Commerce,Comme
 3 Year Diploma (Banking and Finance),Post Graduate Diploma,Diploma in Engineering,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 Dip. Engg in Business Administration,Post Graduate Diploma,Diploma in Engineering,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
 Polytechnic / Marketing,Post Graduate Diploma,Diploma in Engineering,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
+Post Graduate Diploma in Business Management Hons,Post Graduate Diploma,Post Graduate Diploma,,Business Administration,resolved,L1,1.0,100,wrong_field
 3 Year Diploma - Marketing,Post Graduate Diploma,Diploma in Engineering,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 Polytechnic (Human Resources Management),Post Graduate Diploma,Diploma in Engineering,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
 3 Year Diploma - Accounting,Post Graduate Diploma,Diploma in Engineering,Accounting,Accounting,resolved,L1,1.0,100,wrong_degree
@@ -1248,6 +1247,7 @@ Dip. Engg (International Business),Post Graduate Diploma,Diploma in Engineering,
 Polytechnic in International Business,Post Graduate Diploma,Diploma in Engineering,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 3 Year Diploma / International Business,Post Graduate Diploma,Diploma in Engineering,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 Polytechnic (Marketing),Post Graduate Diploma,Diploma in Engineering,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
+Post Graduate Diploma in Management (Hons),Post Graduate Diploma,Post Graduate Diploma,,Business Administration,resolved,L1,1.0,100,wrong_field
 Polytechnic (International Business),Post Graduate Diploma,Diploma in Engineering,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 "Dip. Engg, Entrepreneurship",Post Graduate Diploma,Diploma in Engineering,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 "Dip. Engg, Human Resources Management",Post Graduate Diploma,Diploma in Engineering,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
@@ -1332,6 +1332,7 @@ Polytechnic - Entrepreneurship,Post Graduate Diploma,Diploma in Engineering,Entr
 Dip. Engg (Entrepreneurship),Post Graduate Diploma,Diploma in Engineering,Entrepreneurship,Entrepreneurship,resolved,L1,1.0,100,wrong_degree
 3 Year Diploma / Banking and Finance,Post Graduate Diploma,Diploma in Engineering,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
 Polytechnic in Banking and Finance,Post Graduate Diploma,Diploma in Engineering,Banking and Finance,Banking and Finance,resolved,L1,1.0,100,wrong_degree
+Post Graduate Diploma in Business Management (Hons),Post Graduate Diploma,Post Graduate Diploma,,Business Administration,resolved,L1,1.0,100,wrong_field
 Dip. Engg - Marketing,Post Graduate Diploma,Diploma in Engineering,Marketing,Marketing,resolved,L1,1.0,100,wrong_degree
 Dip. Engg in International Business,Post Graduate Diploma,Diploma in Engineering,International Business,International Business,resolved,L1,1.0,100,wrong_degree
 Polytechnic in Finance,Post Graduate Diploma,Diploma in Engineering,Finance,Finance,resolved,L1,1.0,100,wrong_degree
@@ -1347,6 +1348,7 @@ Dip. Engg - Commerce,Post Graduate Diploma,Diploma in Engineering,Commerce,Comme
 Dip. Engg (Finance),Post Graduate Diploma,Diploma in Engineering,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 Dip. Engg - Finance,Post Graduate Diploma,Diploma in Engineering,Finance,Finance,resolved,L1,1.0,100,wrong_degree
 3 Year Diploma - Business Administration,Post Graduate Diploma,Diploma in Engineering,Business Administration,Business Administration,resolved,L1,1.0,100,wrong_degree
+Post Graduate Diploma in Management Hons,Post Graduate Diploma,Post Graduate Diploma,,Business Administration,resolved,L1,1.0,100,wrong_field
 Dip. Engg / Operations Management,Post Graduate Diploma,Diploma in Engineering,Operations Management,Operations Management,resolved,L1,1.0,100,wrong_degree
 Post Graduate Diploma / Human Resources Management,Post Graduate Diploma,Post Graduate Diploma,Human Resources Management,,resolved,L1,1.0,100,wrong_field
 Dip. Engg - Human Resources Management,Post Graduate Diploma,Diploma in Engineering,Human Resources Management,,resolved,L1,1.0,100,wrong_degree_and_field
