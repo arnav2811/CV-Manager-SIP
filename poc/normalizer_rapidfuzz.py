@@ -56,11 +56,24 @@ class Normalizer:
     """RapidFuzz-backed 3-layer degree normalizer."""
 
     ENGINE_ID = "B-1_RapidFuzz"
+    FIELD_INFERENCE_DEGREES = {
+        "Bachelor of Technology",
+        "Bachelor of Engineering",
+        "Bachelor of Science",
+        "Bachelor of Computer Applications",
+        "Master of Technology",
+        "Master of Engineering",
+        "Master of Science",
+        "Master of Computer Applications",
+        "Doctor of Philosophy",
+    }
 
     def __init__(self, data_dir: str = "../data"):
         self.data_dir        = data_dir
         self.degree_aliases: dict[str, str] = {}   # cleaned_alias → canonical
+        self.degree_aliases_by_canonical: dict[str, list[str]] = {}
         self.field_aliases:  dict[str, str] = {}   # cleaned_alias → canonical_field
+        self.field_aliases_cleaned: dict[str, str] = {}
         self.canonical_degrees: set[str]    = set()
         self._load_aliases()
 
@@ -84,18 +97,26 @@ class Normalizer:
             for canon, data in deg_dict.items():
                 self.canonical_degrees.add(canon)
                 for alias in data.get("aliases", []):
-                    self.degree_aliases[self._clean_token(alias)] = canon
+                    cleaned_alias = self._clean_token(alias)
+                    self.degree_aliases[cleaned_alias] = canon
+                    self.degree_aliases_by_canonical.setdefault(canon, []).append(cleaned_alias)
         else:
             with open(degree_csv, "r", encoding="utf-8") as fh:
                 for row in csv.DictReader(fh):
                     key = self._clean_token(row["normalized"])
                     self.degree_aliases[key] = row["canonical_name"]
                     self.canonical_degrees.add(row["canonical_name"])
+                    self.degree_aliases_by_canonical.setdefault(row["canonical_name"], []).append(key)
 
         with open(field_csv, "r", encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
                 key = row["alias"].strip().lower().replace(".", "")
                 self.field_aliases[key] = row["canonical_field"]
+                cleaned_key = self._clean_token(row["alias"])
+                self.field_aliases_cleaned[cleaned_key] = row["canonical_field"]
+
+        for canon, aliases in self.degree_aliases_by_canonical.items():
+            self.degree_aliases_by_canonical[canon] = sorted(set(aliases), key=len, reverse=True)
 
         print(f"[RapidFuzz] Loaded {len(self.degree_aliases):,} degree aliases  |  "
               f"{len(self.field_aliases):,} field aliases")
@@ -163,8 +184,61 @@ class Normalizer:
     def _normalize_field(self, field_str: str | None) -> str | None:
         if not field_str:
             return None
-        key = field_str.strip().lower().replace(".", "")
-        return self.field_aliases.get(key)
+        field_str = field_str.strip()
+        candidates = [field_str]
+        if field_str.count("(") > field_str.count(")"):
+            candidates.append(field_str + ")")
+
+        for candidate in candidates:
+            key = candidate.strip().lower().replace(".", "")
+            if key in self.field_aliases:
+                return self.field_aliases[key]
+
+            cleaned_key = self._clean_token(candidate)
+            if cleaned_key in self.field_aliases_cleaned:
+                return self.field_aliases_cleaned[cleaned_key]
+
+        return None
+
+    @staticmethod
+    def _remove_token_phrase(text: str, phrase: str) -> str:
+        padded_text = f" {text} "
+        padded_phrase = f" {phrase} "
+        if padded_phrase not in padded_text:
+            return text
+        return " ".join(padded_text.replace(padded_phrase, " ", 1).split())
+
+    def _infer_field_from_cleaned(self, cleaned_raw: str, canonical_degree: str | None) -> str | None:
+        """
+        Infer fields from compact inputs such as "B.Tech CSE" or "BCA Computer Applications".
+
+        The degree alias is removed first so a degree name like "Bachelor of Computer
+        Applications" does not accidentally become a field match.
+        """
+        if not cleaned_raw or canonical_degree not in self.FIELD_INFERENCE_DEGREES:
+            return None
+
+        remainder = cleaned_raw
+        degree_alias_removed = False
+        for alias in self.degree_aliases_by_canonical.get(canonical_degree, []):
+            updated = self._remove_token_phrase(remainder, alias)
+            if updated != remainder:
+                remainder = updated
+                degree_alias_removed = True
+                break
+
+        if not degree_alias_removed or not remainder:
+            return None
+
+        padded = f" {remainder} "
+        for alias, canonical_field in sorted(
+            self.field_aliases_cleaned.items(),
+            key=lambda item: len(item[0]),
+            reverse=True,
+        ):
+            if alias and (padded == f" {alias} " or f" {alias} " in padded):
+                return canonical_field
+        return None
 
     # ------------------------------------------------------------------
     # Layer 1 — Exact lookup
@@ -314,6 +388,7 @@ class Normalizer:
         Always returns a dict; never raises.
         """
         cleaned, extracted_field = self.clean(raw_string)
+        cleaned_raw = self._clean_token(raw_string)
         canonical_field = self._normalize_field(extracted_field)
 
         result = {
@@ -332,12 +407,22 @@ class Normalizer:
         l1 = self.layer1_lookup(cleaned)
         if l1:
             result.update(l1)
+            if result["canonical_field"] is None:
+                result["canonical_field"] = self._infer_field_from_cleaned(
+                    cleaned_raw,
+                    result["canonical_degree"],
+                )
             return result
 
         # --- L2 ---
         l2 = self.layer2_fuzzy(cleaned)
         if l2:
             result.update(l2)
+            if result["canonical_field"] is None:
+                result["canonical_field"] = self._infer_field_from_cleaned(
+                    cleaned_raw,
+                    result["canonical_degree"],
+                )
             if l2["status"] == "fuzzy_matched":
                 return result
             # review_needed — still try L3 if confidence very low
