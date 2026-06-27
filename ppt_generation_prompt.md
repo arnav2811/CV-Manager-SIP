@@ -474,8 +474,9 @@ field_of_study               candidate_education
 1. Prepare cleaned datasets using `poc/prepare_f1_datasets.py`
 2. Run all evaluation datasets using `poc/evaluate_f1.py --dataset all`
 3. Review `evaluation/evaluation_summary.csv`
-4. Use `evaluation/*_failures.csv` to identify incorrect predictions
-5. Confirm CLI path with `poc/smoke_test_cli.py`
+4. Check accuracy, TP/FP/FN, resolution rate, and average latency
+5. Use `evaluation/*_failures.csv` and `evaluation/*_confusion.csv` to identify incorrect predictions
+6. Confirm CLI path with `poc/smoke_test_cli.py`
 
 **F1 Summary Table**:
 
@@ -488,7 +489,7 @@ field_of_study               candidate_education
 | India + UK | 0.5533 | N/A | 0.4509 |
 | India + World | 0.3479 | N/A | 0.2572 |
 
-**Callout**: "The project now has measurable precision, recall, and F1 outputs instead of only manual CLI checks."
+**Callout**: "The project now has measurable precision, recall, F1, accuracy, TP/FP/FN, latency, and confusion outputs instead of only manual CLI checks."
 
 ---
 

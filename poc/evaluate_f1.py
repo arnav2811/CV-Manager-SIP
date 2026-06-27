@@ -136,6 +136,9 @@ def precision_recall_f1(y_true: Iterable[str], y_pred: Iterable[str], ignore_non
         "recall": recall,
         "f1": f1,
         "macro_f1": macro_f1,
+        "tp": tp,
+        "fp": fp,
+        "fn": fn,
         "label_count": len(labels),
     }
 
@@ -145,8 +148,47 @@ def exact_f1(y_true: Iterable[str], y_pred: Iterable[str]) -> dict[str, float]:
     pred_values = list(y_pred)
     total = len(true_values)
     correct = sum(1 for t, p in zip(true_values, pred_values) if t == p)
+    incorrect = total - correct
     score = correct / total if total else 0.0
-    return {"precision": score, "recall": score, "f1": score, "macro_f1": score}
+    return {
+        "precision": score,
+        "recall": score,
+        "f1": score,
+        "macro_f1": score,
+        "correct": correct,
+        "incorrect": incorrect,
+    }
+
+
+def accuracy(y_true: Iterable[str], y_pred: Iterable[str]) -> float:
+    true_values = list(y_true)
+    pred_values = list(y_pred)
+    total = len(true_values)
+    if total == 0:
+        return 0.0
+    return sum(1 for t, p in zip(true_values, pred_values) if t == p) / total
+
+
+def write_confusion_file(path: Path, y_true: Iterable[str], y_pred: Iterable[str]) -> None:
+    counts = Counter(zip(y_true, y_pred))
+    rows = [
+        {
+            "expected_label": "" if expected == NONE_LABEL else expected,
+            "predicted_label": "" if predicted == NONE_LABEL else predicted,
+            "count": count,
+            "is_correct": expected == predicted,
+        }
+        for (expected, predicted), count in counts.items()
+    ]
+    rows.sort(key=lambda row: (row["is_correct"], -row["count"], row["expected_label"], row["predicted_label"]))
+
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(
+            fh,
+            fieldnames=["expected_label", "predicted_label", "count", "is_correct"],
+        )
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def load_rows(path: Path, max_rows: int | None) -> list[dict[str, str]]:
@@ -263,6 +305,14 @@ def evaluate_dataset(key: str, eval_dir: Path, max_rows: int | None) -> dict[str
     field_has_labels = has_field_col and field["label_count"] > 0
 
     write_failure_file(eval_dir / cfg["failure_file"], failure_rows)
+    write_confusion_file(eval_dir / f"{key}_degree_confusion.csv", true_degree, pred_degree)
+    if field_has_labels:
+        write_confusion_file(eval_dir / f"{key}_field_confusion.csv", true_field, pred_field)
+    write_confusion_file(eval_dir / f"{key}_pair_confusion.csv", true_pair, pred_pair)
+
+    resolved_rows = len(rows) - status_counts.get("unresolved", 0)
+    resolution_rate = resolved_rows / len(rows) if rows else 0.0
+    avg_latency_ms = elapsed_ms / len(rows) if rows else 0.0
 
     return {
         "dataset": key,
@@ -270,12 +320,24 @@ def evaluate_dataset(key: str, eval_dir: Path, max_rows: int | None) -> dict[str
         "sampled": max_rows is not None,
         "max_rows": max_rows or "",
         "failures": len(failure_rows),
+        "resolution_rate": round(resolution_rate, 4),
+        "degree_accuracy": round(accuracy(true_degree, pred_degree), 4),
+        "degree_tp": degree["tp"],
+        "degree_fp": degree["fp"],
+        "degree_fn": degree["fn"],
         "degree_precision": round(degree["precision"], 4),
         "degree_recall": round(degree["recall"], 4),
         "degree_f1": round(degree["f1"], 4),
+        "field_accuracy": round(accuracy(true_field, pred_field), 4) if field_has_labels else "N/A",
+        "field_tp": field["tp"] if field_has_labels else "N/A",
+        "field_fp": field["fp"] if field_has_labels else "N/A",
+        "field_fn": field["fn"] if field_has_labels else "N/A",
         "field_precision": round(field["precision"], 4) if field_has_labels else "N/A",
         "field_recall": round(field["recall"], 4) if field_has_labels else "N/A",
         "field_f1": round(field["f1"], 4) if field_has_labels else "N/A",
+        "pair_accuracy": round(pair["f1"], 4),
+        "pair_correct": pair["correct"],
+        "pair_incorrect": pair["incorrect"],
         "pair_precision": round(pair["precision"], 4),
         "pair_recall": round(pair["recall"], 4),
         "pair_f1": round(pair["f1"], 4),
@@ -284,6 +346,7 @@ def evaluate_dataset(key: str, eval_dir: Path, max_rows: int | None) -> dict[str
         if field_has_labels
         else round(degree["macro_f1"], 4),
         "elapsed_ms": round(elapsed_ms, 1),
+        "avg_latency_ms": round(avg_latency_ms, 4),
         "status_counts": dict(status_counts),
     }
 
@@ -295,18 +358,31 @@ def write_summary(path: Path, rows: list[dict[str, object]]) -> None:
         "sampled",
         "max_rows",
         "failures",
+        "resolution_rate",
+        "degree_accuracy",
+        "degree_tp",
+        "degree_fp",
+        "degree_fn",
         "degree_precision",
         "degree_recall",
         "degree_f1",
+        "field_accuracy",
+        "field_tp",
+        "field_fp",
+        "field_fn",
         "field_precision",
         "field_recall",
         "field_f1",
+        "pair_accuracy",
+        "pair_correct",
+        "pair_incorrect",
         "pair_precision",
         "pair_recall",
         "pair_f1",
         "micro_f1",
         "macro_f1",
         "elapsed_ms",
+        "avg_latency_ms",
         "status_counts",
     ]
     with path.open("w", encoding="utf-8", newline="") as fh:
@@ -325,8 +401,18 @@ This evaluation reports several scores instead of only one overall number.
 | Degree F1 | Checks whether the predicted canonical degree is correct. |
 | Field F1 | Checks whether the predicted field or specialization is correct. |
 | Pair F1 | Checks degree and field together. Both must match. |
+| Accuracy | Percentage of exact matches for degree, field, or degree-field pair. |
+| TP / FP / FN | True positives, false positives, and false negatives used to calculate precision and recall. |
 | Micro F1 | Overall score across degree and field labels together. |
 | Macro F1 | Average of degree macro F1 and field macro F1, so rare labels still matter. |
+| Resolution Rate | Percentage of rows that produced a non-`unresolved` status. |
+| Average Latency | Average scoring time per row in milliseconds. |
+
+Confusion matrix CSVs are also written for each dataset:
+
+- `{dataset}_degree_confusion.csv`
+- `{dataset}_field_confusion.csv` when field labels are available
+- `{dataset}_pair_confusion.csv`
 
 Missing field values are treated as blank values. They are not treated as the text `nan`.
 

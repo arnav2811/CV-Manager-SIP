@@ -10,7 +10,7 @@
 
 ### What's New
 
-**F1 scoring release** — added a reproducible F1 evaluation workflow for the qualification normalizer. The workflow prepares cleaned evaluation datasets, scores predictions with precision/recall/F1, writes summary and failure CSVs under `evaluation/`, and includes smoke checks for the CLI pipeline. The F1 scoring work was completed by **Himanshi Kaushik**, with help from **Keshav Singhal**.
+**F1 scoring release** — added a reproducible F1 evaluation workflow for the qualification normalizer. The workflow prepares cleaned evaluation datasets, scores predictions with precision/recall/F1, writes summary and failure CSVs under `evaluation/`, records accuracy, TP/FP/FN counts, resolution rate, latency, and confusion CSVs, and includes smoke checks for the CLI pipeline. The F1 scoring work was completed by **Himanshi Kaushik**, with help from **Keshav Singhal**.
 
 ---
 
@@ -18,9 +18,10 @@
 
 - Added cleaned evaluation datasets for Layer 1, Layer 2, Layer 3, and international degree-only datasets.
 - Added `poc/prepare_f1_datasets.py` to convert the training CSVs into consistent evaluation inputs.
-- Added `poc/evaluate_f1.py` to calculate precision, recall, F1, and incorrect prediction outputs.
+- Added `poc/evaluate_f1.py` to calculate precision, recall, F1, accuracy, TP/FP/FN counts, resolution rate, average latency, and incorrect prediction outputs.
 - Added `evaluation/evaluation_summary.csv` as the main summary output.
 - Added failure CSVs to make debugging easier after each scoring run.
+- Added confusion matrix CSV outputs for degree, field, and degree-field pair labels.
 
 ---
 
@@ -69,9 +70,9 @@ International datasets are degree-only, so field F1 is marked `N/A`.
 
 | File | Change |
 |---|---|
-| `evaluation/` | **New / Updated** — cleaned evaluation datasets, F1 summary, failure files, and notes |
+| `evaluation/` | **New / Updated** — cleaned evaluation datasets, F1 summary, failure files, confusion CSVs, and notes |
 | `poc/prepare_f1_datasets.py` | **New** — prepares cleaned datasets for F1 scoring |
-| `poc/evaluate_f1.py` | **New** — runs precision, recall, and F1 scoring |
+| `poc/evaluate_f1.py` | **New** — runs precision, recall, F1, accuracy, TP/FP/FN, latency, and confusion scoring |
 | `poc/smoke_test_cli.py` | **New** — verifies the CLI path with quick smoke checks |
 | `poc/normalizer_rapidfuzz.py` | Updated — compact CS/IT field inference |
 | `README.md` | Updated — F1 scoring commands, outputs, and contributor note |

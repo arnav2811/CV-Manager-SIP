@@ -7,7 +7,7 @@
 >
 > **v3.5.0 Update**: A comprehensive suite of **internationally-scoped training datasets** (`data/`) has been added, engineered by Jai Gupta. These datasets cover India, USA, UK, and a curated world catalog — enabling future model evaluation, threshold calibration, and production testing at global scale. Additionally, the dictionary now includes **medical degrees** (MBBS, BDS, BPharm), and a RapidFuzz scoring bug causing all L2 matches to silently return `0.000` has been fixed.
 >
-> **v3.6.0 Update**: A reproducible **F1 scoring workflow** has been added for Layer 1, Layer 2, Layer 3, and the international degree-only datasets. The workflow was completed by Himanshi Kaushik, with help from Keshav Singhal, and now gives measurable precision/recall/F1 outputs for the existing CLI and normalizer behavior.
+> **v3.6.0 Update**: A reproducible **F1 scoring workflow** has been added for Layer 1, Layer 2, Layer 3, and the international degree-only datasets. The workflow was completed by Himanshi Kaushik, with help from Keshav Singhal, and now gives measurable precision/recall/F1, accuracy, TP/FP/FN, resolution, latency, and confusion outputs for the existing CLI and normalizer behavior.
 
 ---
 
@@ -199,7 +199,7 @@ Expanded SQL seeds (USA: 18,312 · UK: 13,298 · WORLD: 62,292 degree-field comb
 
 ## F1 Scoring Workflow (v3.6.0)
 
-The project now includes an evaluation workflow that measures how well the existing CLI/normalizer pipeline performs against the prepared datasets.
+The project now includes an evaluation workflow that measures how well the existing CLI/normalizer pipeline performs against the prepared datasets. Along with F1, it records accuracy, TP/FP/FN counts, resolution rate, average latency, and confusion matrix CSVs.
 
 ### How To Run
 
