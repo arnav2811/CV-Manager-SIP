@@ -2,8 +2,8 @@
 
 > **Project:** Growth Grids × University of Southampton Delhi
 > **Deadline:** 3 July 2026
-> **Current Version:** 3.5.0 (23 June 2026)
-> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering)
+> **Current Version:** 3.6.0 (27 June 2026)
+> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
 
 This repository contains the deliverables for the Growth Grids Summer Internship Project regarding standardisation of candidate qualification strings in CV Manager.
 
@@ -79,6 +79,18 @@ cv_manager_sip/
 │       ├── education_reference_expanded_summary.json
 │       └── README.md
 │
+├── evaluation/                       # ★ NEW (v3.6.0) — F1 scoring outputs
+│   ├── cleaned_eval_layer1.csv       # Cleaned L1 evaluation dataset
+│   ├── cleaned_eval_layer2.csv       # Cleaned L2 evaluation dataset
+│   ├── cleaned_eval_layer3.csv       # Cleaned L3 evaluation dataset
+│   ├── cleaned_eval_indian_usa.csv   # Degree-only India + USA evaluation dataset
+│   ├── cleaned_eval_indian_uk.csv    # Degree-only India + UK evaluation dataset
+│   ├── cleaned_eval_indian_world.csv # Degree-only India + world evaluation dataset
+│   ├── evaluation_summary.csv        # F1 precision/recall summary
+│   ├── layer*_failures.csv           # Failure outputs for debugging
+│   ├── indian_*_failures.csv         # International failure outputs
+│   └── *.md                          # Metrics, mapping, ambiguity, and scope notes
+│
 ├── poc/
 │   ├── app.py                        # ★ Unified POC CLI — entry point for all engines
 │   │
@@ -89,7 +101,10 @@ cv_manager_sip/
 │   ├── engine_l2_combined.py         # ★ Layer 2 consensus voting engine
 │   ├── engine_l3.py                  # ★ Layer 3 NLP/heuristic engine
 │   ├── engine_orchestrator.py        # ★ Master 3-layer orchestrator
-│   └── evaluate_datasets.py          # ★ NEW (v3.5.0) — Training dataset evaluation runner
+│   ├── evaluate_datasets.py          # ★ NEW (v3.5.0) — Training dataset evaluation runner
+│   ├── prepare_f1_datasets.py        # ★ NEW (v3.6.0) — Builds cleaned F1 datasets
+│   ├── evaluate_f1.py                # ★ NEW (v3.6.0) — Precision/recall/F1 scorer
+│   └── smoke_test_cli.py             # ★ NEW (v3.6.0) — CLI smoke checks
 │
 ├── auxilary_sources/
 │   └── field_of_study.py             # Generator script for field aliases
@@ -164,6 +179,18 @@ python engine_l3.py               # Layer 3 heuristics (conversational text)
 python engine_orchestrator.py     # Full 3-layer master orchestrator
 ```
 
+### 4. Run F1 scoring
+
+The F1 scoring workflow prepares cleaned evaluation datasets, runs precision/recall/F1 across the layer and international datasets, and writes updated outputs under `evaluation/`.
+
+```bash
+python poc/prepare_f1_datasets.py
+python poc/evaluate_f1.py --dataset all
+python poc/smoke_test_cli.py
+```
+
+The F1 scoring work was completed by **Himanshi Kaushik**, with help from **Keshav Singhal**.
+
 ---
 
 ## Engine Reference
@@ -225,9 +252,22 @@ A full suite of layer-specific training and evaluation datasets contributed by *
 
 Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292) degree-field pairs are provided in `data/education_reference_expanded_sql_files/`.
 
+### F1 Evaluation Outputs (v3.6.0 — `evaluation/`)
+
+The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only international datasets. International datasets are degree-only, so field F1 is marked `N/A`.
+
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
+|---------|----------:|---------:|---------------------:|
+| `layer1` | 0.7618 | 0.9134 | 0.6353 |
+| `layer2` | 0.7863 | 0.8312 | 0.5323 |
+| `layer3` | 0.3975 | 0.5153 | 0.1604 |
+| `indian_usa` | 0.5393 | N/A | 0.4400 |
+| `indian_uk` | 0.5533 | N/A | 0.4509 |
+| `indian_world` | 0.3479 | N/A | 0.2572 |
+
 ---
 
-## Key Bug Fixes in v3.0.0 – v3.5.0
+## Key Bug Fixes in v3.0.0 – v3.6.0
 
 | Issue | Root Cause | Fix | Version |
 |-------|-----------|-----|--------|
@@ -237,6 +277,7 @@ Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292
 | L3 stub returned `None` canonical crashing display | No null guard | L3 now returns structured dict; caller always gets displayable output | v3.0.0 |
 | `MBBS` and all L2 matches returning `0.000` | `_combined_score()` missing `**kwargs`; `score_cutoff` crash silently swallowed | Added `**kwargs` to scorer signature and forwarded to sub-scorers | v3.5.0 |
 | Medical degrees (MBBS, BDS, BPharm) not resolvable | Missing from training dictionary entirely | Added `UG MEDICINE` category to `generate_data.py`; dictionary regenerated | v3.5.0 |
+| Compact CS/IT inputs missed field inference | Inputs like `BTech CSE` and `BTech IT` kept the degree but dropped the field | Added compact CS/IT field inference after degree alias removal | v3.6.0 |
 
 ---
 

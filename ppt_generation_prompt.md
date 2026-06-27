@@ -1,7 +1,7 @@
 # PPT Generation Prompt — CV Manager Qualification Standardization (SIP)
 
-> **Version**: v3.5.0 — Updated 23 June 2026  
-> **Use this prompt** to generate a professional 25-slide PowerPoint presentation for the Growth Grids Summer Internship Project. Feed this document to any AI presentation tool (Gamma, SlidesAI, Beautiful.AI, Claude, GPT, etc.) or use it as a slide-by-slide brief for manual creation.
+> **Version**: v3.6.0 — Updated 27 June 2026  
+> **Use this prompt** to generate a professional 25-slide PowerPoint presentation for the Growth Grids Summer Internship Project. Use it as a slide-by-slide brief for manual creation or for a presentation-building tool.
 
 ---
 
@@ -36,7 +36,7 @@
 - **Subtitle**: Summer Internship Project (SIP) — Final Presentation
 - **Organisation**: Growth Grids × University of Southampton Delhi
 - **Date**: July 2026
-- **Team**: Arnav · Jai Gupta
+- **Team**: Arnav · Jai Gupta · Himanshi Kaushik · Keshav Singhal
 - **Mentor**: Dr. Rashi R. Sharma
 
 **Design Notes**: Large title, clean logo placement. No clutter.
@@ -60,15 +60,16 @@
 10. The Data Model
 11. The Alias Dictionary — By the Numbers
 12. International Training Datasets (NEW v3.5.0)
-13. Deployment Options (A / B / C)
-14. Proof of Concept — Unified CLI Demo
-15. Results & Pipeline Performance
-16. Bug Fixes & Engine Improvements (v3.0.0 + v3.5.0)
-17. Data Formats & Extensibility
-18. SWOT Analysis
-19. Implementation Roadmap
-20. Recommendations
-21. Q&A
+13. F1 Scoring & Evaluation Results (NEW v3.6.0)
+14. Deployment Options (A / B / C)
+15. Proof of Concept — Unified CLI Demo
+16. Results & Pipeline Performance
+17. Bug Fixes & Engine Improvements (v3.0.0 + v3.6.0)
+18. Data Formats & Extensibility
+19. SWOT Analysis
+20. Implementation Roadmap
+21. Recommendations
+22. Q&A
 
 **Design Notes**: Use a progress-bar or stepper visual. Keep it scannable.
 
@@ -459,6 +460,38 @@ field_of_study               candidate_education
 
 ---
 
+### SLIDE 13 (NEW — v3.6.0) — F1 Scoring & Evaluation Results
+
+**Layout**: Two-column. Left = workflow steps. Right = F1 result table.
+
+**Content**:
+
+**Heading**: "F1 Scoring — Measuring the Pipeline"
+
+**Contributor badge**: 📊 **F1 Scoring: Himanshi Kaushik** · Support: Keshav Singhal
+
+**Workflow Steps**:
+1. Prepare cleaned datasets using `poc/prepare_f1_datasets.py`
+2. Run all evaluation datasets using `poc/evaluate_f1.py --dataset all`
+3. Review `evaluation/evaluation_summary.csv`
+4. Use `evaluation/*_failures.csv` to identify incorrect predictions
+5. Confirm CLI path with `poc/smoke_test_cli.py`
+
+**F1 Summary Table**:
+
+| Dataset | Degree F1 | Field F1 | Pair F1 |
+|---------|----------:|---------:|--------:|
+| Layer 1 | 0.7618 | 0.9134 | 0.6353 |
+| Layer 2 | 0.7863 | 0.8312 | 0.5323 |
+| Layer 3 | 0.3975 | 0.5153 | 0.1604 |
+| India + USA | 0.5393 | N/A | 0.4400 |
+| India + UK | 0.5533 | N/A | 0.4509 |
+| India + World | 0.3479 | N/A | 0.2572 |
+
+**Callout**: "The project now has measurable precision, recall, and F1 outputs instead of only manual CLI checks."
+
+---
+
 ### SLIDE 14 — Deployment Options (A / B / C)
 
 **Layout**: Three-column comparison table (the decision matrix).
@@ -616,7 +649,7 @@ field_of_study               candidate_education
 | | • 59,949-row internationally-scoped training dataset ready for evaluation | • Combined engine latency is sum of all sub-engine latencies |
 | **External** | **OPPORTUNITIES** | **THREATS** |
 | | • International datasets (USA/UK/World) enable cross-market expansion | • Novel degree formats (new UGC programmes) may miss L1+L2+L3 |
-| | • Alias dictionary is extensible — any new degree can be added in minutes | • AI-generated resumes may produce highly irregular education text |
+| | • Alias dictionary is extensible — any new degree can be added in minutes | • Synthetic resumes may produce highly irregular education text |
 | | • Same architecture can normalise job titles, skills, and locations | • Without a review queue UI, L3 results risk being accepted unchecked |
 
 ---
@@ -724,11 +757,11 @@ field_of_study               candidate_education
 
 ---
 
-### NEW SLIDE — Bug Fixes & Engine Improvements (v3.0.0 + v3.5.0)
+### NEW SLIDE — Bug Fixes & Engine Improvements (v3.0.0 + v3.6.0)
 
 Insert this as **Slide 16** (before Data Formats).
 
-**Heading**: "What We Fixed — v3.0.0 & v3.5.0"
+**Heading**: "What We Fixed — v3.0.0 to v3.6.0"
 
 **Layout**: Five-row before/after comparison table with status badges.
 
@@ -740,5 +773,6 @@ Insert this as **Slide 16** (before Data Formats).
 | Layer 3 returning `None` canonical crashing display | No null guard in stub implementation | L3 now returns structured dict; caller always gets displayable output | v3.0.0 | ✅ Graceful handling |
 | `MBBS` and all L2 inputs scoring 0.000 | `_combined_score()` missing `**kwargs` — `score_cutoff` kwarg crash silently swallowed | Added `**kwargs` to scorer signature; forwarded to sub-scorers | v3.5.0 | ✅ L2 fully operational |
 | Medical degrees (MBBS, BDS, BPharm) not resolvable | Absent from training dictionary | Added `UG MEDICINE` category; dictionary regenerated (7,593 entries) | v3.5.0 | ✅ Medical degrees now resolve |
+| Compact CS/IT inputs missed field inference | Field abbreviation stayed attached to the degree text | Added compact CS/IT field inference after degree alias removal | v3.6.0 | ✅ CS/IT fields now resolve better |
 
 **Design Note**: Use ❌ (coral) for Before, ✅ (soft green) for After. Use amber for the "Root Cause" column.

@@ -6,6 +6,81 @@
 
 ---
 
+## Version 3.6.0 — 27 June 2026
+
+### What's New
+
+**F1 scoring release** — added a reproducible F1 evaluation workflow for the qualification normalizer. The workflow prepares cleaned evaluation datasets, scores predictions with precision/recall/F1, writes summary and failure CSVs under `evaluation/`, and includes smoke checks for the CLI pipeline. The F1 scoring work was completed by **Himanshi Kaushik**, with help from **Keshav Singhal**.
+
+---
+
+### 1. F1 Evaluation Framework (`evaluation/` + `poc/evaluate_f1.py`)
+
+- Added cleaned evaluation datasets for Layer 1, Layer 2, Layer 3, and international degree-only datasets.
+- Added `poc/prepare_f1_datasets.py` to convert the training CSVs into consistent evaluation inputs.
+- Added `poc/evaluate_f1.py` to calculate precision, recall, F1, and incorrect prediction outputs.
+- Added `evaluation/evaluation_summary.csv` as the main summary output.
+- Added failure CSVs to make debugging easier after each scoring run.
+
+---
+
+### 2. Complete Evaluation Coverage
+
+The F1 scorer now covers all current evaluation datasets:
+
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
+|---|---:|---:|---:|
+| `layer1` | 0.7618 | 0.9134 | 0.6353 |
+| `layer2` | 0.7863 | 0.8312 | 0.5323 |
+| `layer3` | 0.3975 | 0.5153 | 0.1604 |
+| `indian_usa` | 0.5393 | N/A | 0.4400 |
+| `indian_uk` | 0.5533 | N/A | 0.4509 |
+| `indian_world` | 0.3479 | N/A | 0.2572 |
+
+International datasets are degree-only, so field F1 is marked `N/A`.
+
+---
+
+### 3. CS/IT Field Inference Improvement (`normalizer_rapidfuzz.py`)
+
+- Improved handling for compact CS/IT inputs such as `BTech CSE`, `B.Tech IT`, and similar variants.
+- The normalizer now keeps the degree result and also infers the expected Computer Science / Information Technology field when the field is present in compact form.
+- Updated F1 output files after this fix so the metrics reflect the latest behavior.
+
+---
+
+### 4. CLI Smoke Checks (`poc/smoke_test_cli.py`)
+
+- Added a lightweight smoke test file for the existing CLI flow.
+- Current smoke check result: `3/3 smoke checks passed`.
+
+---
+
+### Attribution
+
+| Contributor | Contribution |
+|---|---|
+| **Himanshi Kaushik** | F1 scoring workflow, evaluation outputs, GitHub PR integration, and documentation sync |
+| **Keshav Singhal** | Helped with the F1 scoring work, validation, and review |
+
+---
+
+### Files Changed in v3.6.0
+
+| File | Change |
+|---|---|
+| `evaluation/` | **New / Updated** — cleaned evaluation datasets, F1 summary, failure files, and notes |
+| `poc/prepare_f1_datasets.py` | **New** — prepares cleaned datasets for F1 scoring |
+| `poc/evaluate_f1.py` | **New** — runs precision, recall, and F1 scoring |
+| `poc/smoke_test_cli.py` | **New** — verifies the CLI path with quick smoke checks |
+| `poc/normalizer_rapidfuzz.py` | Updated — compact CS/IT field inference |
+| `README.md` | Updated — F1 scoring commands, outputs, and contributor note |
+| `CHANGELOG.md` | Added v3.6.0 entry |
+| `explainme.md` | Updated — F1 evaluation context and current score table |
+| `platform_audit.md` | Updated — evaluation audit, action items, and contribution log |
+
+---
+
 ## Version 3.5.0 — 23 June 2026
 
 ### What's New
