@@ -1,8 +1,8 @@
 # Platform Audit: CV Normalization Engine
 
-> **Version:** 3.5.0 — 23 June 2026
+> **Version:** 3.6.0 — 27 June 2026
 > **Project:** Growth Grids × University of Southampton Delhi
-> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering)
+> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
 
 ---
 
@@ -91,6 +91,33 @@ This document serves as the living audit log for the CV Normalization Engine. It
 
 ---
 
+## Evaluation Audit (v3.6.0)
+
+### F1 Scoring Workflow
+
+| File | Status | Notes |
+|------|--------|-------|
+| `poc/prepare_f1_datasets.py` | ✅ Active | Builds cleaned evaluation datasets from the training CSVs |
+| `poc/evaluate_f1.py` | ✅ Active | Calculates precision, recall, and F1 for degree, field, and degree-field pair outputs |
+| `poc/smoke_test_cli.py` | ✅ Active | Runs quick CLI checks; current result is `3/3 smoke checks passed` |
+| `evaluation/evaluation_summary.csv` | ✅ Current | Stores the latest F1 summary |
+| `evaluation/*_failures.csv` | ✅ Current | Stores incorrect predictions for debugging |
+
+### Current F1 Summary
+
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
+|---------|----------:|---------:|---------------------:|
+| `layer1` | 0.7618 | 0.9134 | 0.6353 |
+| `layer2` | 0.7863 | 0.8312 | 0.5323 |
+| `layer3` | 0.3975 | 0.5153 | 0.1604 |
+| `indian_usa` | 0.5393 | N/A | 0.4400 |
+| `indian_uk` | 0.5533 | N/A | 0.4509 |
+| `indian_world` | 0.3479 | N/A | 0.2572 |
+
+**Note:** International datasets are degree-only, so field F1 is not applicable.
+
+---
+
 ## User Interfaces
 
 ### Interactive CLI Proof of Concept (`app.py`)
@@ -110,16 +137,17 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | L3 stub `None` canonical crash | v3.0.0-beta | ✅ Fixed | v3.0.0 — structured dict return |
 | `_combined_score()` missing `**kwargs` — all L2 scores zeroed | v3.0.0 | ✅ Fixed | v3.5.0 — added `**kwargs` |
 | Medical degrees (MBBS, BDS, BPharm) absent from dictionary | ≤v3.0.0 | ✅ Fixed | v3.5.0 — `UG MEDICINE` category added |
+| Compact CS/IT field inputs not inferred | v3.5.0 | ✅ Fixed | v3.6.0 — compact CS/IT inference added |
 
 ---
 
 ## Known Issues & Action Items
 
 - [ ] **Threshold Calibration:** Use `layer2_fuzzy_training.csv` to fine-tune `auto_accept` (currently 88.0) and `flag_review` (currently 70.0) thresholds per noise type and difficulty level.
-- [ ] **L3 Regex Tuning:** Evaluate regex strategy coverage using `layer3_unstructured_training.csv`; character-span annotations enable precision/recall scoring.
+- [ ] **L3 Regex Tuning:** Use `evaluation/layer3_failures.csv` and `layer3_unstructured_training.csv` to improve sentence extraction and degree-field pair matching.
 - [ ] **International Integration:** Determine which SQL scope (USA / UK / WORLD) to adopt for the Growth Grids production database seed.
 - [ ] **HuggingFace Token:** Set `HF_TOKEN` environment variable to resolve unauthenticated download warning from Sentence-Transformers.
-- [ ] **Evaluation Runner:** Build a formal evaluation script that ingests any training CSV and reports per-layer precision, recall, and F1 against gold labels.
+- [x] **Evaluation Runner:** Added formal F1 scoring through `poc/evaluate_f1.py`, with summary and failure outputs under `evaluation/`.
 
 ---
 
@@ -147,7 +175,9 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | v3.0.0 | Arnav | L3 engine, L2 combined, orchestrator, CLI, superset bias fix |
 | v3.5.0 | **Jai Gupta** | Dataset engineering — all `data/` files |
 | v3.5.0 | Arnav | Integration, RapidFuzz `**kwargs` fix, medical degrees, docs |
+| v3.6.0 | **Himanshi Kaushik** | F1 scoring workflow, evaluation outputs, GitHub PR integration, and documentation sync |
+| v3.6.0 | **Keshav Singhal** | Helped with F1 scoring work, validation, and review |
 
 ---
 
-*Last updated: 23 June 2026 — v3.5.0*
+*Last updated: 27 June 2026 — v3.6.0*

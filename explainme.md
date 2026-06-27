@@ -1,11 +1,13 @@
 # Pipeline Deployment Options — Growth Grids Decision Brief
-# (Updated for v3.5.0 — 23 June 2026)
+# (Updated for v3.6.0 — 27 June 2026)
 
 > **Purpose**: This document packages the CV Manager normalisation pipeline as **three distinct, named deployment versions** so that Growth Grids can evaluate and select the option that best fits their infrastructure, latency, and accuracy requirements.
 >
 > **v3.0.0 Update**: Layer 2 now offers a **Combined Engine (Engine C)** that runs all three sub-engines in consensus, and Layer 3 is now a **fully implemented heuristic engine** (no ML required) rather than a stub.
 >
 > **v3.5.0 Update**: A comprehensive suite of **internationally-scoped training datasets** (`data/`) has been added, engineered by Jai Gupta. These datasets cover India, USA, UK, and a curated world catalog — enabling future model evaluation, threshold calibration, and production testing at global scale. Additionally, the dictionary now includes **medical degrees** (MBBS, BDS, BPharm), and a RapidFuzz scoring bug causing all L2 matches to silently return `0.000` has been fixed.
+>
+> **v3.6.0 Update**: A reproducible **F1 scoring workflow** has been added for Layer 1, Layer 2, Layer 3, and the international degree-only datasets. The workflow was completed by Himanshi Kaushik, with help from Keshav Singhal, and now gives measurable precision/recall/F1 outputs for the existing CLI and normalizer behavior.
 
 ---
 
@@ -192,6 +194,38 @@ A purpose-built suite of **internationally-scoped** training datasets now accomp
 | `degree_only_canonical_catalog.csv` | 141 | Multi-country canonical degree catalog |
 
 Expanded SQL seeds (USA: 18,312 · UK: 13,298 · WORLD: 62,292 degree-field combinations) are in `education_reference_expanded_sql_files/`, sourced from NCES CIP 2020, HESA HECoS, QAA/UCAS, and UNESCO ISCED-F 2013.
+
+---
+
+## F1 Scoring Workflow (v3.6.0)
+
+The project now includes an evaluation workflow that measures how well the existing CLI/normalizer pipeline performs against the prepared datasets.
+
+### How To Run
+
+```bash
+python poc/prepare_f1_datasets.py
+python poc/evaluate_f1.py --dataset all
+python poc/smoke_test_cli.py
+```
+
+### Current Results
+
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
+|---------|----------:|---------:|---------------------:|
+| `layer1` | 0.7618 | 0.9134 | 0.6353 |
+| `layer2` | 0.7863 | 0.8312 | 0.5323 |
+| `layer3` | 0.3975 | 0.5153 | 0.1604 |
+| `indian_usa` | 0.5393 | N/A | 0.4400 |
+| `indian_uk` | 0.5533 | N/A | 0.4509 |
+| `indian_world` | 0.3479 | N/A | 0.2572 |
+
+### What This Means
+
+- Layer 1 and Layer 2 are the strongest current paths for structured and semi-structured qualification strings.
+- Layer 3 works, but the lower pair F1 shows that unstructured sentence extraction still needs more tuning.
+- The international datasets are degree-only, so they mainly measure degree recognition rather than full degree-field matching.
+- The failure CSVs in `evaluation/` should be used to decide the next fixes and threshold changes.
 
 ---
 
