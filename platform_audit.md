@@ -98,10 +98,11 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | File | Status | Notes |
 |------|--------|-------|
 | `poc/prepare_f1_datasets.py` | ✅ Active | Builds cleaned evaluation datasets from the training CSVs |
-| `poc/evaluate_f1.py` | ✅ Active | Calculates precision, recall, and F1 for degree, field, and degree-field pair outputs |
+| `poc/evaluate_f1.py` | ✅ Active | Calculates precision, recall, F1, accuracy, TP/FP/FN, resolution rate, latency, and confusion outputs |
 | `poc/smoke_test_cli.py` | ✅ Active | Runs quick CLI checks; current result is `3/3 smoke checks passed` |
 | `evaluation/evaluation_summary.csv` | ✅ Current | Stores the latest F1 summary |
 | `evaluation/*_failures.csv` | ✅ Current | Stores incorrect predictions for debugging |
+| `evaluation/*_confusion.csv` | ✅ Current | Stores degree, field, and pair confusion counts |
 
 ### Current F1 Summary
 
@@ -147,7 +148,7 @@ This document serves as the living audit log for the CV Normalization Engine. It
 - [ ] **L3 Regex Tuning:** Use `evaluation/layer3_failures.csv` and `layer3_unstructured_training.csv` to improve sentence extraction and degree-field pair matching.
 - [ ] **International Integration:** Determine which SQL scope (USA / UK / WORLD) to adopt for the Growth Grids production database seed.
 - [ ] **HuggingFace Token:** Set `HF_TOKEN` environment variable to resolve unauthenticated download warning from Sentence-Transformers.
-- [x] **Evaluation Runner:** Added formal F1 scoring through `poc/evaluate_f1.py`, with summary and failure outputs under `evaluation/`.
+- [x] **Evaluation Runner:** Added formal F1 scoring through `poc/evaluate_f1.py`, with summary, failure, TP/FP/FN, latency, and confusion outputs under `evaluation/`.
 
 ---
 

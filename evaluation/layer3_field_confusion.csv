@@ -1,0 +1,138 @@
+expected_label,predicted_label,count,is_correct
+Finance,,27,False
+Computer Science and Engineering,,25,False
+Banking and Finance,,18,False
+Electrical Engineering,,18,False
+Information Technology,,18,False
+Civil Engineering,,17,False
+Data Science,,17,False
+Environmental Science,,16,False
+Business Administration,,15,False
+Computer Applications,,15,False
+Electronics and Communication Engineering,,15,False
+Entrepreneurship,,15,False
+Marketing,,15,False
+Mathematics,,15,False
+Public Administration,,15,False
+Biotechnology Engineering,,14,False
+Mechanical Engineering,,14,False
+Chemical Engineering,,13,False
+Commerce,,13,False
+English,,13,False
+Hindi,,13,False
+Mass Communication,,13,False
+Sociology,,13,False
+Bioinformatics,,12,False
+Geography,,12,False
+Human Resources Management,,12,False
+International Business,,12,False
+Microbiology,,12,False
+Accounting,,11,False
+Artificial Intelligence and Machine Learning,,11,False
+Biology,,11,False
+Chemistry,,11,False
+Economics,,11,False
+Food Technology,,11,False
+Instrumentation Engineering,,11,False
+Physics,,11,False
+Aerospace Engineering,,10,False
+Biochemistry,,10,False
+Cybersecurity,,10,False
+Environmental Engineering,,10,False
+Geology,,10,False
+History,,10,False
+Political Science,,10,False
+Production Engineering,,10,False
+Psychology,,10,False
+Software Engineering,,10,False
+Statistics,,10,False
+Botany,,9,False
+Metallurgical Engineering,,7,False
+Nursing,,7,False
+Philosophy,,7,False
+Textile Engineering,,7,False
+Agriculture,,6,False
+Design,,6,False
+Operations Management,,6,False
+Zoology,,6,False
+Architecture,,4,False
+Computer Science (Applications),,4,False
+Hotel Management,,4,False
+Physiotherapy,,4,False
+Ayurveda,,3,False
+Dentistry,,3,False
+Education,,3,False
+General,,3,False
+Law,,3,False
+Medicine,,3,False
+Mining Engineering,,3,False
+Pharmacy,,3,False
+Computer Science and Engineering,Information Technology,1,False
+Instrumentation Engineering,Production Engineering,1,False
+Computer Science and Engineering,Computer Science and Engineering,16,True
+Mechanical Engineering,Mechanical Engineering,16,True
+Electronics and Communication Engineering,Electronics and Communication Engineering,15,True
+Civil Engineering,Civil Engineering,13,True
+Electrical Engineering,Electrical Engineering,12,True
+Information Technology,Information Technology,12,True
+Biotechnology Engineering,Biotechnology Engineering,10,True
+Aerospace Engineering,Aerospace Engineering,8,True
+Biochemistry,Biochemistry,8,True
+Cybersecurity,Cybersecurity,8,True
+History,History,8,True
+Political Science,Political Science,8,True
+Production Engineering,Production Engineering,8,True
+Psychology,Psychology,8,True
+Software Engineering,Software Engineering,8,True
+Statistics,Statistics,8,True
+Accounting,Accounting,7,True
+Artificial Intelligence and Machine Learning,Artificial Intelligence and Machine Learning,7,True
+Biology,Biology,7,True
+Chemistry,Chemistry,7,True
+Data Science,Data Science,7,True
+Economics,Economics,7,True
+Physics,Physics,7,True
+Agriculture,Agriculture,6,True
+Banking and Finance,Banking and Finance,6,True
+Bioinformatics,Bioinformatics,6,True
+Geography,Geography,6,True
+Human Resources Management,Human Resources Management,6,True
+Instrumentation Engineering,Instrumentation Engineering,6,True
+International Business,International Business,6,True
+Microbiology,Microbiology,6,True
+Operations Management,Operations Management,6,True
+Zoology,Zoology,6,True
+Chemical Engineering,Chemical Engineering,5,True
+Commerce,Commerce,5,True
+English,English,5,True
+Hindi,Hindi,5,True
+Mass Communication,Mass Communication,5,True
+Metallurgical Engineering,Metallurgical Engineering,5,True
+Nursing,Nursing,5,True
+Philosophy,Philosophy,5,True
+Sociology,Sociology,5,True
+Textile Engineering,Textile Engineering,5,True
+Ayurveda,Ayurveda,3,True
+Botany,Botany,3,True
+Business Administration,Business Administration,3,True
+Computer Applications,Computer Applications,3,True
+Dentistry,Dentistry,3,True
+Education,Education,3,True
+Entrepreneurship,Entrepreneurship,3,True
+Finance,Finance,3,True
+General,General,3,True
+Law,Law,3,True
+Marketing,Marketing,3,True
+Mathematics,Mathematics,3,True
+Medicine,Medicine,3,True
+Mining Engineering,Mining Engineering,3,True
+Pharmacy,Pharmacy,3,True
+Public Administration,Public Administration,3,True
+Architecture,Architecture,2,True
+Computer Science (Applications),Computer Science (Applications),2,True
+Environmental Engineering,Environmental Engineering,2,True
+Environmental Science,Environmental Science,2,True
+Geology,Geology,2,True
+Hotel Management,Hotel Management,2,True
+Physiotherapy,Physiotherapy,2,True
+Food Technology,Food Technology,1,True

@@ -1,0 +1,626 @@
+expected_label,predicted_label,count,is_correct
+Bachelor of Engineering,,233,False
+12th Standard,,226,False
+Post Graduate Diploma,,192,False
+Doctor of Philosophy,,191,False
+Bachelor of Arts,,158,False
+10th Standard,,152,False
+Master of Engineering,,137,False
+Bachelor of Technology,,133,False
+Foundation Degree,,122,False
+Bachelor of Technology,Bachelor of Engineering,119,False
+Bachelor of Science,,118,False
+Bachelor of Medicine Bachelor of Surgery,Bachelor of Medicine and Bachelor of Surgery,111,False
+Master of Technology,,110,False
+Advanced Level,,105,False
+Bachelor of Medicine Bachelor of Surgery,,104,False
+Master of Business Administration,,104,False
+Master of Science,,103,False
+Master of Arts,,91,False
+Bachelor of Commerce,,77,False
+Master of Technology,Master of Engineering,76,False
+General Certificate of Secondary Education,,75,False
+Bachelor of Computer Applications,,74,False
+Bachelor of Business Administration,,68,False
+Bachelor of Laws,,64,False
+Diploma of Higher Education,,56,False
+Bachelor of Technology,Master of Technology,55,False
+Master of Commerce,,54,False
+Master of Computer Applications,,46,False
+Certificate of Higher Education,,45,False
+Doctor of Education,,45,False
+Higher National Certificate,,45,False
+Higher National Diploma,,45,False
+Postgraduate Certificate,,45,False
+Bachelor of Science,Bachelor of Business Administration,44,False
+Master of Science,Master of Business Administration,44,False
+Master of Laws,,37,False
+Master of Research,,37,False
+Bachelor of Engineering,Master of Engineering,34,False
+Bachelor of Engineering,Master of Technology,32,False
+Postgraduate Diploma,,32,False
+Master of Philosophy,,29,False
+Diploma in Engineering,,26,False
+Postgraduate Diploma,Post Graduate Diploma,26,False
+Foundation Degree,Foundation,24,False
+Foundation Degree,UK Foundation,24,False
+Foundation Degree,United Kingdom Foundation,24,False
+Bachelor of Technology,Diploma in Engineering,22,False
+Bachelor of Engineering,Diploma in Engineering,20,False
+Doctor of Business Administration,,18,False
+Master of Engineering,Bachelor of Engineering,18,False
+Master of Philosophy,Doctor of Philosophy,18,False
+Diploma in Engineering,Post Graduate Diploma,17,False
+12th Standard,Bachelor of Science,16,False
+Master of Business Administration,Bachelor of Arts,16,False
+Master of Science,Bachelor of Science,16,False
+Bachelor of Engineering,Bachelor of Technology,14,False
+Bachelor of Science,Bachelor of Dental Surgery,14,False
+Bachelor of Technology,Master of Engineering,12,False
+Master of Business Administration,Bachelor of Engineering,12,False
+Bachelor of Business Administration,Bachelor of Arts,10,False
+Bachelor of Commerce,Bachelor of Medicine and Bachelor of Surgery,10,False
+Bachelor of Computer Applications,Bachelor of Arts,10,False
+Bachelor of Laws,Bachelor of Dental Surgery,10,False
+Bachelor of Laws,Bachelor of Technology,10,False
+Doctor of Business Administration,Bachelor of Engineering,10,False
+Master of Laws,Master of Arts,10,False
+10th Standard,Bachelor of Engineering,8,False
+10th Standard,Bachelor of Science,8,False
+Doctor of Business Administration,Master of Business Administration,8,False
+Master of Arts,Bachelor of Arts,8,False
+Master of Commerce,Bachelor of Commerce,8,False
+Master of Computer Applications,Bachelor of Arts,8,False
+Master of Science,Bachelor of Medicine and Bachelor of Surgery,8,False
+Master of Technology,Bachelor of Commerce,8,False
+Master of Technology,Bachelor of Technology,8,False
+Post Graduate Diploma,Bachelor of Arts,8,False
+Post Graduate Diploma,Bachelor of Medicine and Bachelor of Surgery,8,False
+Master of Science,Master of Engineering,7,False
+Bachelor of Business Administration,Bachelor of Engineering,6,False
+Bachelor of Arts,Bachelor of Computer Applications,5,False
+Bachelor of Science,Bachelor of Engineering,5,False
+Foundation Degree,Bachelor of Dental Surgery,5,False
+Master of Business Administration,Master of Engineering,5,False
+10th Standard,12th Standard,4,False
+Diploma of Higher Education,Diploma in Engineering,4,False
+Doctor of Business Administration,Bachelor of Arts,4,False
+Doctor of Business Administration,Bachelor of Business Administration,4,False
+Doctor of Business Administration,Bachelor of Computer Applications,4,False
+Master of Computer Applications,Bachelor of Computer Applications,4,False
+Master of Research,Master of Engineering,4,False
+Master of Research,Master of Science,4,False
+Bachelor of Commerce,Bachelor of Computer Applications,3,False
+Bachelor of Commerce,Hons,2,False
+Bachelor of Laws,Bachelor of Commerce,2,False
+Master of Commerce,Master of Computer Applications,2,False
+Master of Technology,Bachelor of Computer Applications,2,False
+Bachelor of Arts,BA Hons Hons,1,False
+Bachelor of Arts,BAHONSHONS,1,False
+Bachelor of Arts,IN B A,1,False
+Bachelor of Arts,IN BA,1,False
+Bachelor of Arts,IN BA Hons Hons,1,False
+Bachelor of Arts,IN BAHONSHONS,1,False
+Bachelor of Arts,India B A,1,False
+Bachelor of Arts,India BA,1,False
+Bachelor of Arts,India BA Hons Hons,1,False
+Bachelor of Arts,India BAHONS,1,False
+Bachelor of Arts,India BAHONSHONS,1,False
+Bachelor of Arts,Indian B A,1,False
+Bachelor of Arts,Indian BA,1,False
+Bachelor of Arts,Indian BA Hons Hons,1,False
+Bachelor of Arts,Indian BAHONS,1,False
+Bachelor of Arts,Indian BAHONSHONS,1,False
+Bachelor of Arts,UK B A,1,False
+Bachelor of Arts,UK BA,1,False
+Bachelor of Arts,UK BA Hons,1,False
+Bachelor of Arts,UK BAHONS,1,False
+Bachelor of Arts,United Kingdom B A,1,False
+Bachelor of Arts,United Kingdom BA,1,False
+Bachelor of Arts,United Kingdom BA Hons,1,False
+Bachelor of Arts,United Kingdom BAHONS,1,False
+Bachelor of Arts,United Kingdom Bachelor of Arts,1,False
+Bachelor of Arts,m Bachelor of Arts with Honours,1,False
+Bachelor of Business Administration,B.B.A. Hons,1,False
+Bachelor of Business Administration,BBA,1,False
+Bachelor of Business Administration,BBAHONS,1,False
+Bachelor of Business Administration,IN B.B.A. Hons,1,False
+Bachelor of Business Administration,IN BBA,1,False
+Bachelor of Business Administration,IN BBAHONS,1,False
+Bachelor of Business Administration,India B B A,1,False
+Bachelor of Business Administration,India B B A Hons,1,False
+Bachelor of Business Administration,India B.B.A. Hons,1,False
+Bachelor of Business Administration,India BBA,1,False
+Bachelor of Business Administration,India BBAHONS,1,False
+Bachelor of Business Administration,Indian B B A,1,False
+Bachelor of Business Administration,Indian B B A Hons,1,False
+Bachelor of Business Administration,Indian B.B.A. Hons,1,False
+Bachelor of Business Administration,Indian BBA,1,False
+Bachelor of Business Administration,Indian BBAHONS,1,False
+Bachelor of Commerce,B C O M,1,False
+Bachelor of Commerce,IN B C O M,1,False
+Bachelor of Commerce,India B C O M,1,False
+Bachelor of Commerce,India B Com,1,False
+Bachelor of Commerce,India B. Com Hons,1,False
+Bachelor of Commerce,India BCOM,1,False
+Bachelor of Commerce,India BCOMHONS,1,False
+Bachelor of Commerce,India BCom Hons,1,False
+Bachelor of Commerce,Indian B C O M,1,False
+Bachelor of Commerce,Indian B Com,1,False
+Bachelor of Commerce,Indian B. Com Hons,1,False
+Bachelor of Commerce,Indian BCOM,1,False
+Bachelor of Commerce,Indian BCOMHONS,1,False
+Bachelor of Commerce,Indian BCom Hons,1,False
+Bachelor of Computer Applications,BCA,1,False
+Bachelor of Computer Applications,BCAHONS,1,False
+Bachelor of Computer Applications,IN BCA,1,False
+Bachelor of Computer Applications,IN BCAHONS,1,False
+Bachelor of Computer Applications,India B C A,1,False
+Bachelor of Computer Applications,India BCA,1,False
+Bachelor of Computer Applications,India BCAHONS,1,False
+Bachelor of Computer Applications,Indian B C A,1,False
+Bachelor of Computer Applications,Indian BCA,1,False
+Bachelor of Computer Applications,Indian BCAHONS,1,False
+Bachelor of Engineering,B E,1,False
+Bachelor of Engineering,BEHONSHONS,1,False
+Bachelor of Engineering,IN B E,1,False
+Bachelor of Engineering,IN B E N G,1,False
+Bachelor of Engineering,IN BE,1,False
+Bachelor of Engineering,IN BEHONSHONS,1,False
+Bachelor of Engineering,IN BENGHONS,1,False
+Bachelor of Engineering,India B E,1,False
+Bachelor of Engineering,India B E N G,1,False
+Bachelor of Engineering,India B Eng,1,False
+Bachelor of Engineering,India BE,1,False
+Bachelor of Engineering,India BEHONS,1,False
+Bachelor of Engineering,India BEHONSHONS,1,False
+Bachelor of Engineering,India BENG,1,False
+Bachelor of Engineering,India BENGHONS,1,False
+Bachelor of Engineering,Indian B E,1,False
+Bachelor of Engineering,Indian B E N G,1,False
+Bachelor of Engineering,Indian B Eng,1,False
+Bachelor of Engineering,Indian BE,1,False
+Bachelor of Engineering,Indian BEHONS,1,False
+Bachelor of Engineering,Indian BEHONSHONS,1,False
+Bachelor of Engineering,Indian BENG,1,False
+Bachelor of Engineering,Indian BENGHONS,1,False
+Bachelor of Engineering,UK B E N G,1,False
+Bachelor of Engineering,UK BENGHONS,1,False
+Bachelor of Engineering,United Kingdom B E N G,1,False
+Bachelor of Engineering,United Kingdom BENGHONS,1,False
+Bachelor of Engineering,United Kingdom BEng,1,False
+Bachelor of Engineering,United Kingdom BEng Hons,1,False
+Bachelor of Laws,L L B,1,False
+Bachelor of Laws,LLB,1,False
+Bachelor of Laws,UK Bachelor of Law,1,False
+Bachelor of Laws,UK Bachelor of Laws,1,False
+Bachelor of Laws,UK L L B,1,False
+Bachelor of Laws,UK LLB,1,False
+Bachelor of Laws,United Kingdom Bachelor of Law,1,False
+Bachelor of Laws,United Kingdom Bachelor of Laws,1,False
+Bachelor of Laws,United Kingdom L L B,1,False
+Bachelor of Laws,United Kingdom LLB,1,False
+Bachelor of Medicine Bachelor of Surgery,B M B S,1,False
+Bachelor of Medicine Bachelor of Surgery,BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B S,1,False
+Bachelor of Medicine Bachelor of Surgery,M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBS,1,False
+Bachelor of Medicine Bachelor of Surgery,UK B M B S,1,False
+Bachelor of Medicine Bachelor of Surgery,UK BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B S,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBS,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom B M B S,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B S,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M.B.C.H.B.,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MBBS,1,False
+Bachelor of Science,IN B S C,1,False
+Bachelor of Science,IN B Sc,1,False
+Bachelor of Science,IN BSC,1,False
+Bachelor of Science,IN BSC Hons,1,False
+Bachelor of Science,India B S C,1,False
+Bachelor of Science,India B Sc,1,False
+Bachelor of Science,India BSC,1,False
+Bachelor of Science,India BSC Hons,1,False
+Bachelor of Science,India BSCHONS,1,False
+Bachelor of Science,Indian B S C,1,False
+Bachelor of Science,Indian B Sc,1,False
+Bachelor of Science,Indian BSC,1,False
+Bachelor of Science,Indian BSC Hons,1,False
+Bachelor of Science,Indian BSCHONS,1,False
+Bachelor of Science,UK B S C,1,False
+Bachelor of Science,UK B Sc,1,False
+Bachelor of Science,UK BSc,1,False
+Bachelor of Science,UK BSc Hons,1,False
+Bachelor of Science,United Kingdom B S C,1,False
+Bachelor of Science,United Kingdom B Sc,1,False
+Bachelor of Science,United Kingdom BSCHONS,1,False
+Bachelor of Science,United Kingdom BSc,1,False
+Bachelor of Science,United Kingdom BSc Hons,1,False
+Bachelor of Science,achelor of Science with Honours,1,False
+Bachelor of Technology,B T E C H,1,False
+Bachelor of Technology,BTECH,1,False
+Bachelor of Technology,IN B T E C H,1,False
+Bachelor of Technology,IN BTECH,1,False
+Bachelor of Technology,India 4YEARBTECH,1,False
+Bachelor of Technology,India B T E C H,1,False
+Bachelor of Technology,India B Tech,1,False
+Bachelor of Technology,India BTECH,1,False
+Bachelor of Technology,India BTECHHONS,1,False
+Bachelor of Technology,Indian 4YEARBTECH,1,False
+Bachelor of Technology,Indian B T E C H,1,False
+Bachelor of Technology,Indian BTECH,1,False
+Bachelor of Technology,Indian BTECHHONS,1,False
+Bachelor of Technology,Indian Tecnolgy of Technology,1,False
+Doctor of Business Administration,D B A,1,False
+Doctor of Business Administration,DBA,1,False
+Doctor of Business Administration,UK D B A,1,False
+Doctor of Business Administration,UK DBA,1,False
+Doctor of Business Administration,United Kingdom D B A,1,False
+Doctor of Business Administration,United Kingdom DBA,1,False
+Doctor of Education,E D D,1,False
+Doctor of Education,EdD,1,False
+Doctor of Education,UK Doctor of Education,1,False
+Doctor of Education,UK E D D,1,False
+Doctor of Education,UK EdD,1,False
+Doctor of Education,United Kingdom E D D,1,False
+Doctor of Education,United Kingdom EdD,1,False
+Doctor of Education,ted Kingdom Doctor of Education,1,False
+Doctor of Philosophy,DPHILHONS,1,False
+Doctor of Philosophy,DPhil Hons,1,False
+Doctor of Philosophy,IN D P H I L,1,False
+Doctor of Philosophy,IN DPHIL,1,False
+Doctor of Philosophy,IN DPHILHONS,1,False
+Doctor of Philosophy,IN DPhil Hons,1,False
+Doctor of Philosophy,IN Doctorate,1,False
+Doctor of Philosophy,IN P H D,1,False
+Doctor of Philosophy,IN PHD,1,False
+Doctor of Philosophy,IN PHDHONS,1,False
+Doctor of Philosophy,IN Ph. D.,1,False
+Doctor of Philosophy,IN Ph. D. Hons,1,False
+Doctor of Philosophy,IN Ph.D Hons,1,False
+Doctor of Philosophy,India D P H I L,1,False
+Doctor of Philosophy,India DPHIL,1,False
+Doctor of Philosophy,India DPHILHONS,1,False
+Doctor of Philosophy,India DPhil Hons,1,False
+Doctor of Philosophy,India Doctorate,1,False
+Doctor of Philosophy,India P H D,1,False
+Doctor of Philosophy,India PHD,1,False
+Doctor of Philosophy,India PHDHONS,1,False
+Doctor of Philosophy,India Ph. D.,1,False
+Doctor of Philosophy,India Ph. D. Hons,1,False
+Doctor of Philosophy,India Ph.D Hons,1,False
+Doctor of Philosophy,Indian D P H I L,1,False
+Doctor of Philosophy,Indian DPHIL,1,False
+Doctor of Philosophy,Indian DPHILHONS,1,False
+Doctor of Philosophy,Indian DPhil Hons,1,False
+Doctor of Philosophy,Indian Doctorate,1,False
+Doctor of Philosophy,Indian P H D,1,False
+Doctor of Philosophy,Indian PHD,1,False
+Doctor of Philosophy,Indian PHDHONS,1,False
+Doctor of Philosophy,Indian Ph. D.,1,False
+Doctor of Philosophy,Indian Ph. D. Hons,1,False
+Doctor of Philosophy,Indian Ph.D Hons,1,False
+Doctor of Philosophy,PHDHONS,1,False
+Doctor of Philosophy,Ph. D. Hons,1,False
+Doctor of Philosophy,Ph.D Hons,1,False
+Doctor of Philosophy,UK D P H I L,1,False
+Doctor of Philosophy,UK DPhil,1,False
+Doctor of Philosophy,UK Doctorate,1,False
+Doctor of Philosophy,UK P H D,1,False
+Doctor of Philosophy,UK Ph. D.,1,False
+Doctor of Philosophy,UK PhD,1,False
+Doctor of Philosophy,United Kingdom D P H I L,1,False
+Doctor of Philosophy,United Kingdom DPhil,1,False
+Doctor of Philosophy,United Kingdom Doctorate,1,False
+Doctor of Philosophy,United Kingdom P H D,1,False
+Doctor of Philosophy,United Kingdom Ph. D.,1,False
+Doctor of Philosophy,United Kingdom PhD,1,False
+Foundation Degree,F D,1,False
+Foundation Degree,F D A,1,False
+Foundation Degree,F D S C,1,False
+Foundation Degree,FdA,1,False
+Foundation Degree,FdSc,1,False
+Foundation Degree,UK F D,1,False
+Foundation Degree,UK F D A,1,False
+Foundation Degree,UK F D S C,1,False
+Foundation Degree,UK Fd,1,False
+Foundation Degree,UK FdA,1,False
+Foundation Degree,UK FdSc,1,False
+Foundation Degree,United Kingdom F D,1,False
+Foundation Degree,United Kingdom F D A,1,False
+Foundation Degree,United Kingdom F D S C,1,False
+Foundation Degree,United Kingdom Fd,1,False
+Foundation Degree,United Kingdom FdA,1,False
+Foundation Degree,United Kingdom FdSc,1,False
+Master of Arts,IN M A,1,False
+Master of Arts,IN MA,1,False
+Master of Arts,IN MAHONS,1,False
+Master of Arts,India M A,1,False
+Master of Arts,India MA,1,False
+Master of Arts,India MAHONS,1,False
+Master of Arts,India MasterofArts,1,False
+Master of Arts,Indian M A,1,False
+Master of Arts,Indian MA,1,False
+Master of Arts,Indian MAHONS,1,False
+Master of Arts,Indian MasterofArts,1,False
+Master of Arts,MAHONS,1,False
+Master of Arts,UK M A,1,False
+Master of Arts,UK MA,1,False
+Master of Arts,United Kingdom M A,1,False
+Master of Arts,United Kingdom MA,1,False
+Master of Arts,United Kingdom Master of Arts,1,False
+Master of Business Administration,E M B A,1,False
+Master of Business Administration,EMBAHONS,1,False
+Master of Business Administration,IN E M B A,1,False
+Master of Business Administration,IN EMBAHONS,1,False
+Master of Business Administration,IN M B A,1,False
+Master of Business Administration,IN MBA,1,False
+Master of Business Administration,IN MBAHONS,1,False
+Master of Business Administration,India E M B A,1,False
+Master of Business Administration,India EMBA,1,False
+Master of Business Administration,India EMBAHONS,1,False
+Master of Business Administration,India M B A,1,False
+Master of Business Administration,India MBA,1,False
+Master of Business Administration,India MBAHONS,1,False
+Master of Business Administration,Indian E M B A,1,False
+Master of Business Administration,Indian EMBA,1,False
+Master of Business Administration,Indian EMBAHONS,1,False
+Master of Business Administration,Indian M B A,1,False
+Master of Business Administration,Indian MBA,1,False
+Master of Business Administration,Indian MBAHONS,1,False
+Master of Business Administration,MBAHONS,1,False
+Master of Business Administration,UK M B A,1,False
+Master of Business Administration,UK MBA,1,False
+Master of Business Administration,United Kingdom M B A,1,False
+Master of Business Administration,United Kingdom MBA,1,False
+Master of Commerce,IN M C O M,1,False
+Master of Commerce,IN M Com,1,False
+Master of Commerce,IN MCOMHONS,1,False
+Master of Commerce,India M C O M,1,False
+Master of Commerce,India M Com,1,False
+Master of Commerce,India MCOM,1,False
+Master of Commerce,India MCOMHONS,1,False
+Master of Commerce,India MCom Hons,1,False
+Master of Commerce,Indian M C O M,1,False
+Master of Commerce,Indian M Com,1,False
+Master of Commerce,Indian MCOM,1,False
+Master of Commerce,Indian MCOMHONS,1,False
+Master of Commerce,Indian MCom Hons,1,False
+Master of Commerce,M C O M,1,False
+Master of Commerce,M Com,1,False
+Master of Commerce,MCOMHONS,1,False
+Master of Computer Applications,IN MCA,1,False
+Master of Computer Applications,IN MCA Hons,1,False
+Master of Computer Applications,IN MCAHONS,1,False
+Master of Computer Applications,India M C A,1,False
+Master of Computer Applications,India MCA,1,False
+Master of Computer Applications,India MCA Hons,1,False
+Master of Computer Applications,India MCAHONS,1,False
+Master of Computer Applications,Indian M C A,1,False
+Master of Computer Applications,Indian MCA,1,False
+Master of Computer Applications,Indian MCA Hons,1,False
+Master of Computer Applications,Indian MCAHONS,1,False
+Master of Computer Applications,MCA,1,False
+Master of Computer Applications,MCA Hons,1,False
+Master of Computer Applications,MCAHONS,1,False
+Master of Engineering,IN M E,1,False
+Master of Engineering,IN M E N G,1,False
+Master of Engineering,IN M Eng,1,False
+Master of Engineering,IN ME,1,False
+Master of Engineering,IN MEHONS,1,False
+Master of Engineering,IN MENGHONS,1,False
+Master of Engineering,India M E,1,False
+Master of Engineering,India M E N G,1,False
+Master of Engineering,India M Eng,1,False
+Master of Engineering,India ME,1,False
+Master of Engineering,India MEHONS,1,False
+Master of Engineering,India MENGHONS,1,False
+Master of Engineering,India MEng,1,False
+Master of Engineering,Indian M E,1,False
+Master of Engineering,Indian M E N G,1,False
+Master of Engineering,Indian M Eng,1,False
+Master of Engineering,Indian ME,1,False
+Master of Engineering,Indian MEHONS,1,False
+Master of Engineering,Indian MENGHONS,1,False
+Master of Engineering,Indian MEng,1,False
+Master of Engineering,M E,1,False
+Master of Engineering,M Eng,1,False
+Master of Engineering,MEHONS,1,False
+Master of Engineering,UK M E N G,1,False
+Master of Engineering,UK MENGHONS,1,False
+Master of Engineering,UK MEng,1,False
+Master of Engineering,UK MEng Hons,1,False
+Master of Engineering,United Kingdom M E N G,1,False
+Master of Engineering,United Kingdom MENGHONS,1,False
+Master of Engineering,United Kingdom MEng,1,False
+Master of Engineering,United Kingdom MEng Hons,1,False
+Master of Laws,L L M,1,False
+Master of Laws,LLM,1,False
+Master of Laws,UK L L M,1,False
+Master of Laws,UK LLM,1,False
+Master of Laws,United Kingdom L L M,1,False
+Master of Laws,United Kingdom LLM,1,False
+Master of Laws,United Kingdom Master of Laws,1,False
+Master of Philosophy,M P H I L,1,False
+Master of Philosophy,MPhil,1,False
+Master of Philosophy,UK M P H I L,1,False
+Master of Philosophy,UK MPhil,1,False
+Master of Philosophy,United Kingdom M P H I L,1,False
+Master of Philosophy,United Kingdom MPhil,1,False
+Master of Philosophy,ed Kingdom Master of Philosophy,1,False
+Master of Research,M R E S,1,False
+Master of Research,MRes,1,False
+Master of Research,UK M R E S,1,False
+Master of Research,UK MRes,1,False
+Master of Research,UK Master of Research,1,False
+Master of Research,United Kingdom M R E S,1,False
+Master of Research,United Kingdom MRes,1,False
+Master of Research,ited Kingdom Master of Research,1,False
+Master of Science,IN M S,1,False
+Master of Science,IN M S C,1,False
+Master of Science,IN M Sc,1,False
+Master of Science,IN M. Sc Hons,1,False
+Master of Science,IN M.S. Hons,1,False
+Master of Science,IN MSC,1,False
+Master of Science,IN MSCHONS,1,False
+Master of Science,IN MSHONS,1,False
+Master of Science,IN ms,1,False
+Master of Science,India M S,1,False
+Master of Science,India M S C,1,False
+Master of Science,India M Sc,1,False
+Master of Science,India M. Sc Hons,1,False
+Master of Science,India M.S. Hons,1,False
+Master of Science,India MSC,1,False
+Master of Science,India MSCHONS,1,False
+Master of Science,India MSHONS,1,False
+Master of Science,India ms,1,False
+Master of Science,Indian M S,1,False
+Master of Science,Indian M S C,1,False
+Master of Science,Indian M Sc,1,False
+Master of Science,Indian M. Sc Hons,1,False
+Master of Science,Indian M.S. Hons,1,False
+Master of Science,Indian MSC,1,False
+Master of Science,Indian MSCHONS,1,False
+Master of Science,Indian MSHONS,1,False
+Master of Science,Indian ms,1,False
+Master of Science,M S,1,False
+Master of Science,M. Sc Hons,1,False
+Master of Science,M.S. Hons,1,False
+Master of Science,MSCHONS,1,False
+Master of Science,MSHONS,1,False
+Master of Science,UK M S C,1,False
+Master of Science,UK M Sc,1,False
+Master of Science,UK MSc,1,False
+Master of Science,United Kingdom M S C,1,False
+Master of Science,United Kingdom M Sc,1,False
+Master of Science,United Kingdom MSc,1,False
+Master of Technology,IN M T E C H,1,False
+Master of Technology,IN M.Tech Hons,1,False
+Master of Technology,IN MASTERENGG,1,False
+Master of Technology,IN MTECH,1,False
+Master of Technology,IN MTECHHONS,1,False
+Master of Technology,IN Master Bacheler,1,False
+Master of Technology,IN Master Bachellor,1,False
+Master of Technology,India M T E C H,1,False
+Master of Technology,India M Tech,1,False
+Master of Technology,India M.Tech Hons,1,False
+Master of Technology,India MASTERENGG,1,False
+Master of Technology,India MTECH,1,False
+Master of Technology,India MTECHHONS,1,False
+Master of Technology,India Master Bacheler,1,False
+Master of Technology,India Master Bachellor,1,False
+Master of Technology,India Master Engg,1,False
+Master of Technology,Indian M T E C H,1,False
+Master of Technology,Indian M Tech,1,False
+Master of Technology,Indian M.Tech Hons,1,False
+Master of Technology,Indian MASTERENGG,1,False
+Master of Technology,Indian MTECH,1,False
+Master of Technology,Indian MTECHHONS,1,False
+Master of Technology,Indian Master Bacheler,1,False
+Master of Technology,Indian Master Bachellor,1,False
+Master of Technology,Indian Master Engg,1,False
+Master of Technology,M T E C H,1,False
+Master of Technology,M.Tech Hons,1,False
+Master of Technology,MASTERENGG,1,False
+Master of Technology,MTECH,1,False
+Master of Technology,MTECHHONS,1,False
+Master of Technology,Master Bacheler,1,False
+Master of Technology,Master Bachellor,1,False
+Post Graduate Diploma,IN P G D,1,False
+Post Graduate Diploma,IN P G D B A,1,False
+Post Graduate Diploma,IN P G D B M,1,False
+Post Graduate Diploma,IN P G D I P,1,False
+Post Graduate Diploma,IN PGD,1,False
+Post Graduate Diploma,IN PGD Hons,1,False
+Post Graduate Diploma,IN PGDBAHONS,1,False
+Post Graduate Diploma,IN PGDBMHONS,1,False
+Post Graduate Diploma,IN PGDHONS,1,False
+Post Graduate Diploma,IN PGDIPHONS,1,False
+Post Graduate Diploma,India P G D,1,False
+Post Graduate Diploma,India P G D B A,1,False
+Post Graduate Diploma,India P G D B M,1,False
+Post Graduate Diploma,India P G D I P,1,False
+Post Graduate Diploma,India P.G.D.I.P.,1,False
+Post Graduate Diploma,India PG DIP,1,False
+Post Graduate Diploma,India PG Diploma,1,False
+Post Graduate Diploma,India PG Diploma Hons,1,False
+Post Graduate Diploma,India PGD,1,False
+Post Graduate Diploma,India PGD Hons,1,False
+Post Graduate Diploma,India PGDBAHONS,1,False
+Post Graduate Diploma,India PGDBM,1,False
+Post Graduate Diploma,India PGDBMHONS,1,False
+Post Graduate Diploma,India PGDHONS,1,False
+Post Graduate Diploma,India PGDIPHONS,1,False
+Post Graduate Diploma,India pgdba,1,False
+Post Graduate Diploma,Indian P G D,1,False
+Post Graduate Diploma,Indian P G D B A,1,False
+Post Graduate Diploma,Indian P G D B M,1,False
+Post Graduate Diploma,Indian P G D I P,1,False
+Post Graduate Diploma,Indian P.G.D.I.P.,1,False
+Post Graduate Diploma,Indian PG DIP,1,False
+Post Graduate Diploma,Indian PG Diploma,1,False
+Post Graduate Diploma,Indian PG Diploma Hons,1,False
+Post Graduate Diploma,Indian PGD,1,False
+Post Graduate Diploma,Indian PGD Hons,1,False
+Post Graduate Diploma,Indian PGDBAHONS,1,False
+Post Graduate Diploma,Indian PGDBM,1,False
+Post Graduate Diploma,Indian PGDBMHONS,1,False
+Post Graduate Diploma,Indian PGDHONS,1,False
+Post Graduate Diploma,Indian PGDIPHONS,1,False
+Post Graduate Diploma,Indian pgdba,1,False
+Post Graduate Diploma,P G D,1,False
+Post Graduate Diploma,P G D B A,1,False
+Post Graduate Diploma,P G D B M,1,False
+Post Graduate Diploma,PGD,1,False
+Post Graduate Diploma,PGD Hons,1,False
+Post Graduate Diploma,PGDBAHONS,1,False
+Post Graduate Diploma,PGDBMHONS,1,False
+Post Graduate Diploma,PGDHONS,1,False
+Post Graduate Diploma,PGDIPHONS,1,False
+Postgraduate Certificate,PG Cert,1,False
+Postgraduate Certificate,PGCert,1,False
+Postgraduate Certificate,UK PG Cert,1,False
+Postgraduate Certificate,UK PGCert,1,False
+Postgraduate Certificate,UK Postgraduate Certificate,1,False
+Postgraduate Certificate,United Kingdom PG Cert,1,False
+Postgraduate Certificate,United Kingdom PGCert,1,False
+Postgraduate Certificate,ingdom Postgraduate Certificate,1,False
+Postgraduate Diploma,UK P G D I P,1,False
+Postgraduate Diploma,United Kingdom P G D I P,1,False
+Postgraduate Diploma,United Kingdom PG Dip,1,False
+Postgraduate Diploma,United Kingdom PGDip,1,False
+Postgraduate Diploma,ed Kingdom Postgraduate Diploma,1,False
+Bachelor of Technology,Bachelor of Technology,449,True
+Bachelor of Engineering,Bachelor of Engineering,409,True
+Post Graduate Diploma,Post Graduate Diploma,356,True
+12th Standard,12th Standard,278,True
+10th Standard,10th Standard,228,True
+Bachelor of Commerce,Bachelor of Commerce,198,True
+Bachelor of Arts,Bachelor of Arts,195,True
+Bachelor of Science,Bachelor of Science,191,True
+Doctor of Philosophy,Doctor of Philosophy,179,True
+Diploma in Engineering,Diploma in Engineering,177,True
+Master of Engineering,Master of Engineering,162,True
+Bachelor of Computer Applications,Bachelor of Computer Applications,150,True
+Master of Technology,Master of Technology,148,True
+Bachelor of Business Administration,Bachelor of Business Administration,144,True
+Master of Commerce,Master of Commerce,136,True
+Master of Science,Master of Science,136,True
+Master of Business Administration,Master of Business Administration,133,True
+Master of Computer Applications,Master of Computer Applications,120,True
+Master of Arts,Master of Arts,106,True
+Doctor of Education,Doctor of Education,1,True
+Master of Research,Master of Research,1,True
+Postgraduate Certificate,Postgraduate Certificate,1,True

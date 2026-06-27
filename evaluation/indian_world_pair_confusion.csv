@@ -1,0 +1,1676 @@
+expected_label,predicted_label,count,is_correct
+Bachelor of Engineering||__NONE__,__NONE__||__NONE__,292,False
+Bachelor of Arts||__NONE__,__NONE__||__NONE__,233,False
+Doctor of Philosophy||__NONE__,__NONE__||__NONE__,228,False
+12th Standard||__NONE__,__NONE__||__NONE__,226,False
+Doctoral Degree||__NONE__,__NONE__||__NONE__,211,False
+Post Graduate Diploma||__NONE__,__NONE__||__NONE__,192,False
+Master of Engineering||__NONE__,__NONE__||__NONE__,188,False
+Bachelor of Science||__NONE__,__NONE__||__NONE__,179,False
+Advanced Diploma||__NONE__,__NONE__||__NONE__,160,False
+Bachelor of Commerce||__NONE__,__NONE__||__NONE__,160,False
+Master of Science||__NONE__,__NONE__||__NONE__,157,False
+HBO Bachelor||__NONE__,__NONE__||__NONE__,153,False
+WO Bachelor||__NONE__,__NONE__||__NONE__,153,False
+10th Standard||__NONE__,__NONE__||__NONE__,152,False
+Master of Arts||__NONE__,__NONE__||__NONE__,147,False
+Bachelor of Technology||__NONE__,__NONE__||__NONE__,133,False
+Bachelor Degree||__NONE__,__NONE__||__NONE__,123,False
+Foundation Degree||__NONE__,__NONE__||__NONE__,122,False
+Bachelor of Technology||__NONE__,Bachelor of Engineering||__NONE__,119,False
+Master of Business Administration||__NONE__,__NONE__||__NONE__,116,False
+WO Master||__NONE__,__NONE__||__NONE__,116,False
+Laurea Triennale||__NONE__,__NONE__||__NONE__,113,False
+Licence Professionnelle||__NONE__,__NONE__||__NONE__,113,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,111,False
+Master of Technology||__NONE__,__NONE__||__NONE__,110,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,__NONE__||__NONE__,104,False
+HBO Master||__NONE__,__NONE__||__NONE__,104,False
+Master Degree||__NONE__,__NONE__||__NONE__,100,False
+Advanced Level||__NONE__,__NONE__||__NONE__,97,False
+Higher Certificate||__NONE__,__NONE__||__NONE__,96,False
+Doutorado||__NONE__,__NONE__||__NONE__,93,False
+Doctorado||__NONE__,__NONE__||__NONE__,91,False
+Doctorat||__NONE__,__NONE__||__NONE__,87,False
+Dottorato di Ricerca||__NONE__,__NONE__||__NONE__,87,False
+Bacharelado||__NONE__,__NONE__||__NONE__,84,False
+Licenciatura||__NONE__,__NONE__||__NONE__,84,False
+Titulo de Grado||__NONE__,__NONE__||__NONE__,84,False
+Bachelor of Business Administration||__NONE__,__NONE__||__NONE__,82,False
+Laurea Magistrale||__NONE__,__NONE__||__NONE__,81,False
+Especializacao||__NONE__,__NONE__||__NONE__,80,False
+Ontario Secondary School Diploma||__NONE__,__NONE__||__NONE__,80,False
+Bachelor Honours Degree||__NONE__,__NONE__||__NONE__,79,False
+Bachelor's Degree||__NONE__,__NONE__||__NONE__,79,False
+Juris Doctor||__NONE__,__NONE__||__NONE__,76,False
+Master of Technology||__NONE__,Master of Engineering||__NONE__,76,False
+Senior Secondary Certificate of Education||__NONE__,__NONE__||__NONE__,76,False
+General Certificate of Secondary Education||__NONE__,__NONE__||__NONE__,75,False
+Bachelor of Computer Applications||__NONE__,__NONE__||__NONE__,74,False
+Doctor of Education||__NONE__,__NONE__||__NONE__,72,False
+Mestrado||__NONE__,__NONE__||__NONE__,69,False
+Ensino Medio||__NONE__,__NONE__||__NONE__,68,False
+VWO Diploma||__NONE__,__NONE__||__NONE__,68,False
+Bachelor of Music||__NONE__,__NONE__||__NONE__,66,False
+Bachelor of Laws||__NONE__,__NONE__||__NONE__,64,False
+Certificate III||__NONE__,__NONE__||__NONE__,64,False
+Certificate IV||__NONE__,__NONE__||__NONE__,64,False
+National Senior Certificate||__NONE__,__NONE__||__NONE__,64,False
+Staatsexamen||__NONE__,__NONE__||__NONE__,64,False
+Short Cycle Qualification||__NONE__,__NONE__||__NONE__,63,False
+Diplome d'Ingenieur||__NONE__,__NONE__||__NONE__,62,False
+GCE Ordinary Level||__NONE__,__NONE__||__NONE__,60,False
+Laurea Magistrale a Ciclo Unico||__NONE__,__NONE__||__NONE__,60,False
+National Certificate of Educational Achievement Level 3||__NONE__,__NONE__||__NONE__,60,False
+Zhuanke Diploma||__NONE__,__NONE__||__NONE__,60,False
+High School Diploma||__NONE__,__NONE__||__NONE__,58,False
+Diploma of Higher Education||__NONE__,__NONE__||__NONE__,56,False
+Doctoral Degree||__NONE__,Doctor of Philosophy||__NONE__,56,False
+Master's Degree||__NONE__,__NONE__||__NONE__,56,False
+Bachelor of Technology||__NONE__,Master of Technology||__NONE__,55,False
+Master of Commerce||__NONE__,__NONE__||__NONE__,54,False
+Associate of Applied Science||__NONE__,__NONE__||__NONE__,52,False
+Baccalaureat||__NONE__,__NONE__||__NONE__,52,False
+Brevet de Technicien Superieur||__NONE__,__NONE__||__NONE__,52,False
+GCE Advanced Level||__NONE__,__NONE__||__NONE__,52,False
+Honours Degree||__NONE__,__NONE__||__NONE__,51,False
+New Zealand Diploma||__NONE__,__NONE__||__NONE__,51,False
+Magister Artium||__NONE__,__NONE__||__NONE__,50,False
+Master Universitario||__NONE__,__NONE__||__NONE__,50,False
+Associate of Arts||__NONE__,__NONE__||__NONE__,49,False
+Licence||__NONE__,__NONE__||__NONE__,49,False
+Bachelor of Social Work||__NONE__,__NONE__||__NONE__,48,False
+General Educational Development||__NONE__,__NONE__||__NONE__,48,False
+College Diploma||__NONE__,__NONE__||__NONE__,47,False
+Master of Computer Applications||__NONE__,__NONE__||__NONE__,46,False
+Certificate of Higher Education||__NONE__,__NONE__||__NONE__,45,False
+Diploma di Maturita||__NONE__,__NONE__||__NONE__,45,False
+Diplom||__NONE__,__NONE__||__NONE__,45,False
+Higher National Certificate||__NONE__,__NONE__||__NONE__,45,False
+Higher National Diploma||__NONE__,__NONE__||__NONE__,45,False
+Postgraduate Certificate||__NONE__,__NONE__||__NONE__,45,False
+Bachelor of Science||__NONE__,Bachelor of Business Administration||__NONE__,44,False
+Master of Science||__NONE__,Master of Business Administration||__NONE__,44,False
+Bachelor of Architecture||__NONE__,__NONE__||__NONE__,43,False
+Bachelor of Fine Arts||__NONE__,__NONE__||__NONE__,43,False
+Doctor of Medicine||__NONE__,__NONE__||__NONE__,42,False
+Associate of Science||__NONE__,__NONE__||__NONE__,41,False
+Doctor of Nursing Practice||__NONE__,__NONE__||__NONE__,41,False
+Master of Public Health||__NONE__,__NONE__||__NONE__,41,False
+Graduate Certificate||__NONE__,__NONE__||__NONE__,40,False
+Doctor of Psychology||__NONE__,__NONE__||__NONE__,37,False
+Master of Laws||__NONE__,__NONE__||__NONE__,37,False
+Master of Research||__NONE__,__NONE__||__NONE__,37,False
+Bachelor of Fine Arts||__NONE__,Bachelor of Arts||__NONE__,35,False
+Bachelor of Engineering||__NONE__,Master of Engineering||__NONE__,34,False
+Master of Applied Science||__NONE__,__NONE__||__NONE__,34,False
+Graduate Diploma||__NONE__,__NONE__||__NONE__,33,False
+Abitur||__NONE__,__NONE__||__NONE__,32,False
+Bachelor of Engineering||__NONE__,Master of Technology||__NONE__,32,False
+Bachillerato||__NONE__,__NONE__||__NONE__,32,False
+Doctor of Business Administration||__NONE__,__NONE__||__NONE__,32,False
+Postgraduate Diploma||__NONE__,__NONE__||__NONE__,32,False
+Polytechnic Diploma||__NONE__,__NONE__||__NONE__,31,False
+Bachelor Degree||__NONE__,Bachelor of Science||__NONE__,30,False
+Doctor of Dental Surgery||__NONE__,__NONE__||__NONE__,29,False
+Master of Fine Arts||__NONE__,__NONE__||__NONE__,29,False
+Master of Philosophy||__NONE__,__NONE__||__NONE__,29,False
+Master of Public Administration||__NONE__,__NONE__||__NONE__,29,False
+Master of Social Work||__NONE__,__NONE__||__NONE__,29,False
+Master||__NONE__,__NONE__||__NONE__,29,False
+Diploma in Engineering||__NONE__,__NONE__||__NONE__,26,False
+Postgraduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,26,False
+Bachelor of Science||__NONE__,Bachelor of Dental Surgery||__NONE__,25,False
+Graduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,25,False
+Foundation Degree||__NONE__,Foundation||__NONE__,24,False
+Foundation Degree||__NONE__,UK Foundation||__NONE__,24,False
+Foundation Degree||__NONE__,United Kingdom Foundation||__NONE__,24,False
+Associate of Science||__NONE__,Master of Science||__NONE__,22,False
+Bachelor of Technology||__NONE__,Diploma in Engineering||__NONE__,22,False
+Diplome d'Ingenieur||__NONE__,Diploma in Engineering||__NONE__,22,False
+Master of Applied Science||__NONE__,Master of Science||__NONE__,22,False
+Bachelor of Engineering||__NONE__,Bachelor of Technology||__NONE__,21,False
+Associate Degree||__NONE__,__NONE__||__NONE__,20,False
+Bachelor of Engineering||__NONE__,Diploma in Engineering||__NONE__,20,False
+Bachelor of Music||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,20,False
+Tecnologo||__NONE__,__NONE__||__NONE__,20,False
+Bachelor of Business Administration||__NONE__,Bachelor of Engineering||__NONE__,18,False
+Doctor of Dental Surgery||__NONE__,Bachelor of Dental Surgery||__NONE__,18,False
+Doctor of Pharmacy||__NONE__,__NONE__||__NONE__,18,False
+Master of Engineering||__NONE__,Bachelor of Engineering||__NONE__,18,False
+Master of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,18,False
+Diploma in Engineering||__NONE__,Post Graduate Diploma||__NONE__,17,False
+12th Standard||__NONE__,Bachelor of Science||__NONE__,16,False
+Doctor of Business Administration||__NONE__,Bachelor of Engineering||__NONE__,16,False
+Doctorat||__NONE__,Doctor of Philosophy||__NONE__,16,False
+Dottorato di Ricerca||__NONE__,Doctor of Philosophy||__NONE__,16,False
+Master Degree||__NONE__,Master of Science||__NONE__,16,False
+Master of Business Administration||__NONE__,Bachelor of Arts||__NONE__,16,False
+Master of Science||__NONE__,Bachelor of Science||__NONE__,16,False
+Master of Social Work||__NONE__,Master of Science||__NONE__,16,False
+Polytechnic Diploma||__NONE__,Post Graduate Diploma||__NONE__,16,False
+Bachelor of Arts||__NONE__,Bachelor of Computer Applications||__NONE__,15,False
+Bachelor of Social Work||__NONE__,Bachelor of Science||__NONE__,15,False
+Master of Business Administration||__NONE__,Bachelor of Engineering||__NONE__,15,False
+Doutorado||__NONE__,Doctor of Philosophy||__NONE__,14,False
+Master of Fine Arts||__NONE__,Master of Arts||__NONE__,13,False
+Bachelor of Architecture||__NONE__,Bachelor of Arts||__NONE__,12,False
+Bachelor of Technology||__NONE__,Master of Engineering||__NONE__,12,False
+Doctor of Business Administration||__NONE__,Master of Business Administration||__NONE__,12,False
+Doctor of Pharmacy||__NONE__,Bachelor of Pharmacy||__NONE__,12,False
+Doctorado||__NONE__,Doctor of Philosophy||__NONE__,12,False
+General Educational Development||__NONE__,Post Graduate Diploma||__NONE__,12,False
+Master of Science||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,12,False
+VWO Diploma||__NONE__,Post Graduate Diploma||__NONE__,12,False
+Bachelor of Commerce||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,11,False
+Graduate Diploma||__NONE__,Australian||__NONE__,11,False
+Graduate Diploma||__NONE__,Australia||__NONE__,11,False
+Mestrado||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,11,False
+Bachelor Degree||__NONE__,Bachelor of Computer Applications||__NONE__,10,False
+Bachelor of Architecture||__NONE__,Bachelor of Computer Applications||__NONE__,10,False
+Bachelor of Business Administration||__NONE__,Bachelor of Arts||__NONE__,10,False
+Bachelor of Computer Applications||__NONE__,Bachelor of Arts||__NONE__,10,False
+Bachelor of Laws||__NONE__,Bachelor of Dental Surgery||__NONE__,10,False
+Bachelor of Laws||__NONE__,Bachelor of Technology||__NONE__,10,False
+Bachelor of Music||__NONE__,Bachelor of Science||__NONE__,10,False
+Graduate Certificate||__NONE__,Australian||__NONE__,10,False
+Graduate Certificate||__NONE__,Australia||__NONE__,10,False
+HBO Bachelor||__NONE__,Bachelor of Science||__NONE__,10,False
+Master of Laws||__NONE__,Master of Arts||__NONE__,10,False
+Master of Public Administration||__NONE__,Master of Technology||__NONE__,10,False
+Mestrado||__NONE__,Master of Science||__NONE__,10,False
+WO Bachelor||__NONE__,Bachelor of Technology||__NONE__,10,False
+Doctoral Degree||__NONE__,Doctoral||__NONE__,9,False
+Ensino Medio||__NONE__,Master of Engineering||__NONE__,9,False
+10th Standard||__NONE__,Bachelor of Engineering||__NONE__,8,False
+10th Standard||__NONE__,Bachelor of Science||__NONE__,8,False
+Associate of Applied Science||__NONE__,Master of Science||__NONE__,8,False
+Associate of Arts||__NONE__,Master of Arts||__NONE__,8,False
+Bachelor Degree||__NONE__,Bologna Bachelor||__NONE__,8,False
+Bachelor Degree||__NONE__,Bologna First Cycle||__NONE__,8,False
+Bachelor Degree||__NONE__,CN Bachelor||__NONE__,8,False
+Bachelor Degree||__NONE__,China Bachelor||__NONE__,8,False
+Bachelor Degree||__NONE__,Chinese Bachelor||__NONE__,8,False
+Bachelor Degree||__NONE__,EU Bachelor||__NONE__,8,False
+Bachelor Degree||__NONE__,EU First Cycle||__NONE__,8,False
+Bachelor Degree||__NONE__,First Cycle||__NONE__,8,False
+Bachelor Degree||__NONE__,Higher Education Area Bachelor||__NONE__,8,False
+Bachelor Degree||__NONE__,gher Education Area First Cycle||__NONE__,8,False
+Bachelor Honours Degree||__NONE__,AU Bachelor Honours||__NONE__,8,False
+Bachelor Honours Degree||__NONE__,Australia Bachelor Honours||__NONE__,8,False
+Bachelor Honours Degree||__NONE__,Australian Bachelor Honours||__NONE__,8,False
+Brevet de Technicien Superieur||__NONE__,Bachelor of Business Administration||__NONE__,8,False
+College Diploma||__NONE__,Diploma in Engineering||__NONE__,8,False
+Doctor of Psychology||__NONE__,Doctor of Philosophy||__NONE__,8,False
+HBO Master||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,8,False
+High School Diploma||__NONE__,Post Graduate Diploma||__NONE__,8,False
+Licenciatura||__NONE__,BR Teaching||__NONE__,8,False
+Licenciatura||__NONE__,Brazil Teaching||__NONE__,8,False
+Licenciatura||__NONE__,Brazilian Teaching||__NONE__,8,False
+Licenciatura||__NONE__,Teaching||__NONE__,8,False
+Master of Arts||__NONE__,Bachelor of Arts||__NONE__,8,False
+Master of Arts||__NONE__,Master of Science||__NONE__,8,False
+Master of Commerce||__NONE__,Bachelor of Commerce||__NONE__,8,False
+Master of Computer Applications||__NONE__,Bachelor of Arts||__NONE__,8,False
+Master of Public Administration||__NONE__,Master of Arts||__NONE__,8,False
+Master of Technology||__NONE__,Bachelor of Commerce||__NONE__,8,False
+Master of Technology||__NONE__,Bachelor of Technology||__NONE__,8,False
+Polytechnic Diploma||__NONE__,Diploma in Engineering||__NONE__,8,False
+Post Graduate Diploma||__NONE__,Bachelor of Arts||__NONE__,8,False
+Post Graduate Diploma||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,8,False
+Titulo de Grado||__NONE__,ES Spanish Bachelor||__NONE__,8,False
+Titulo de Grado||__NONE__,Spain Spanish Bachelor||__NONE__,8,False
+Titulo de Grado||__NONE__,Spanish Bachelor||__NONE__,8,False
+Titulo de Grado||__NONE__,Spanish Spanish Bachelor||__NONE__,8,False
+Bachelor Honours Degree||__NONE__,Bachelor Honours||__NONE__,7,False
+Master of Science||__NONE__,Master of Engineering||__NONE__,7,False
+Associate Degree||__NONE__,Associate||__NONE__,6,False
+Associate Degree||__NONE__,JP Associate||__NONE__,6,False
+Associate Degree||__NONE__,JP Junior College Associate||__NONE__,6,False
+Associate Degree||__NONE__,Japan Associate||__NONE__,6,False
+Associate Degree||__NONE__,Japan Junior College Associate||__NONE__,6,False
+Associate Degree||__NONE__,Japanese Associate||__NONE__,6,False
+Associate Degree||__NONE__,Junior College Associate||__NONE__,6,False
+Associate Degree||__NONE__,panese Junior College Associate||__NONE__,6,False
+Baccalaureat||__NONE__,Bachelor of Computer Applications||__NONE__,6,False
+Bachelor Degree||__NONE__,Bachelor of Engineering||__NONE__,6,False
+Bachelor's Degree||__NONE__,Bachelor of Engineering||__NONE__,6,False
+Doctoral Degree||__NONE__,AU Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Australia Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Australian Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Bologna Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Bologna Third Cycle||__NONE__,6,False
+Doctoral Degree||__NONE__,CN Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,China Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Chinese Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,EU Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,EU Third Cycle||__NONE__,6,False
+Doctoral Degree||__NONE__,Higher Education Area Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,JP Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Japan Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Japanese Doctoral||__NONE__,6,False
+Doctoral Degree||__NONE__,Third Cycle||__NONE__,6,False
+Doctoral Degree||__NONE__,gher Education Area Third Cycle||__NONE__,6,False
+Honours Degree||__NONE__,Honours||__NONE__,6,False
+Honours Degree||__NONE__,South Africa Honours||__NONE__,6,False
+Honours Degree||__NONE__,South African Honours||__NONE__,6,False
+Honours Degree||__NONE__,ZA Honours||__NONE__,6,False
+Laurea Magistrale a Ciclo Unico||__NONE__,IT Single Cycle||__NONE__,6,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Italian Single Cycle||__NONE__,6,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Italy Single Cycle||__NONE__,6,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Single Cycle||__NONE__,6,False
+Master Degree||__NONE__,Bologna Master||__NONE__,6,False
+Master Degree||__NONE__,Bologna Second Cycle||__NONE__,6,False
+Master Degree||__NONE__,CN Master||__NONE__,6,False
+Master Degree||__NONE__,China Master||__NONE__,6,False
+Master Degree||__NONE__,Chinese Master||__NONE__,6,False
+Master Degree||__NONE__,EU Master||__NONE__,6,False
+Master Degree||__NONE__,EU Second Cycle||__NONE__,6,False
+Master Degree||__NONE__,Master||__NONE__,6,False
+Master Degree||__NONE__,Second Cycle||__NONE__,6,False
+Master Degree||__NONE__,an Higher Education Area Master||__NONE__,6,False
+Master Degree||__NONE__,her Education Area Second Cycle||__NONE__,6,False
+New Zealand Diploma||__NONE__,Post Graduate Diploma||__NONE__,6,False
+Tecnologo||__NONE__,BR Technology||__NONE__,6,False
+Tecnologo||__NONE__,Brazil Technology||__NONE__,6,False
+Tecnologo||__NONE__,Brazilian Technology||__NONE__,6,False
+Tecnologo||__NONE__,Technology||__NONE__,6,False
+Bachelor Degree||__NONE__,Bachelor of Technology||__NONE__,5,False
+Bachelor Honours Degree||__NONE__,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Arts||__NONE__,Bachelor of Science||__NONE__,5,False
+Bachelor of Business Administration||__NONE__,Bachelor of Technology||__NONE__,5,False
+Bachelor of Fine Arts||__NONE__,Bachelor of Business Administration||__NONE__,5,False
+Bachelor of Fine Arts||__NONE__,Bachelor of Computer Applications||__NONE__,5,False
+Bachelor of Music||__NONE__,Bachelor of Commerce||__NONE__,5,False
+Bachelor of Music||__NONE__,Master of Business Administration||__NONE__,5,False
+Bachelor of Science||__NONE__,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Science||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,5,False
+Diplom||__NONE__,DE Diplom||__NONE__,5,False
+Diplom||__NONE__,German Diplom||__NONE__,5,False
+Diplom||__NONE__,Germany Diplom||__NONE__,5,False
+Foundation Degree||__NONE__,Bachelor of Dental Surgery||__NONE__,5,False
+HBO Bachelor||__NONE__,Bachelor of Arts||__NONE__,5,False
+Master of Business Administration||__NONE__,Master of Engineering||__NONE__,5,False
+WO Bachelor||__NONE__,Bachelor of Arts||__NONE__,5,False
+10th Standard||__NONE__,12th Standard||__NONE__,4,False
+Associate of Arts||__NONE__,Bachelor of Computer Applications||__NONE__,4,False
+Bachelor Degree||__NONE__,BSc||__NONE__,4,False
+Diploma of Higher Education||__NONE__,Diploma in Engineering||__NONE__,4,False
+Diplome d'Ingenieur||__NONE__,Ingenieur||__NONE__,4,False
+Doctor of Business Administration||__NONE__,Bachelor of Arts||__NONE__,4,False
+Doctor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,4,False
+Doctor of Business Administration||__NONE__,Bachelor of Computer Applications||__NONE__,4,False
+Doctor of Business Administration||__NONE__,Bachelor of Dental Surgery||__NONE__,4,False
+Doctor of Medicine||__NONE__,Master of Science||__NONE__,4,False
+Doctor of Nursing Practice||__NONE__,Bachelor of Pharmacy||__NONE__,4,False
+Doctoral Degree||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,4,False
+HBO Bachelor||__NONE__,ty of Applied Sciences Bachelor||__NONE__,4,False
+HBO Master||__NONE__,Bachelor of Commerce||__NONE__,4,False
+HBO Master||__NONE__,Master of Science||__NONE__,4,False
+High School Diploma||__NONE__,Bachelor of Dental Surgery||__NONE__,4,False
+Higher Certificate||__NONE__,12th Standard||__NONE__,4,False
+Honours Degree||__NONE__,Bachelor of Arts||__NONE__,4,False
+Honours Degree||__NONE__,Bachelor of Engineering||__NONE__,4,False
+Magister Artium||__NONE__,Master of Arts||__NONE__,4,False
+Master Degree||__NONE__,MSc||__NONE__,4,False
+Master Degree||__NONE__,Master of Computer Applications||__NONE__,4,False
+Master Universitario||__NONE__,Master of Commerce||__NONE__,4,False
+Master Universitario||__NONE__,Master of Science||__NONE__,4,False
+Master Universitario||__NONE__,s Degree||__NONE__,4,False
+Master of Applied Science||__NONE__,Master of Computer Applications||__NONE__,4,False
+Master of Business Administration||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,4,False
+Master of Business Administration||__NONE__,Master of Technology||__NONE__,4,False
+Master of Computer Applications||__NONE__,Bachelor of Computer Applications||__NONE__,4,False
+Master of Engineering||__NONE__,Master of Technology||__NONE__,4,False
+Master of Fine Arts||__NONE__,Master of Computer Applications||__NONE__,4,False
+Master of Public Health||__NONE__,Master of Arts||__NONE__,4,False
+Master of Research||__NONE__,Master of Engineering||__NONE__,4,False
+Master of Research||__NONE__,Master of Science||__NONE__,4,False
+Master's Degree||__NONE__,Master of Engineering||__NONE__,4,False
+Master's Degree||__NONE__,s Degree||__NONE__,4,False
+Master||__NONE__,Master of Engineering||__NONE__,4,False
+Mestrado||__NONE__,Bachelor of Science||__NONE__,4,False
+Senior Secondary Certificate of Education||__NONE__,10th Standard||__NONE__,4,False
+WO Master||__NONE__,Master of Technology||__NONE__,4,False
+Baccalaureat||__NONE__,Bachelor of Arts||__NONE__,3,False
+Baccalaureat||__NONE__,Bachelor of Business Administration||__NONE__,3,False
+Bachelor of Commerce||__NONE__,Bachelor of Computer Applications||__NONE__,3,False
+Bachelor's Degree||__NONE__,s Degree||__NONE__,3,False
+Diploma di Maturita||__NONE__,10th Standard||__NONE__,3,False
+Diplom||__NONE__,Post Graduate Diploma||__NONE__,3,False
+Ensino Medio||__NONE__,Bachelor of Engineering||__NONE__,3,False
+Magister Artium||__NONE__,Master of Computer Applications||__NONE__,3,False
+Magister Artium||__NONE__,Master of Engineering||__NONE__,3,False
+Master of Applied Science||__NONE__,Master of Engineering||__NONE__,3,False
+New Zealand Diploma||__NONE__,Diploma in Engineering||__NONE__,3,False
+Bachelor of Commerce||__NONE__,Hons||__NONE__,2,False
+Bachelor of Laws||__NONE__,Bachelor of Commerce||__NONE__,2,False
+Master of Commerce||__NONE__,Master of Computer Applications||__NONE__,2,False
+Master of Technology||__NONE__,Bachelor of Computer Applications||__NONE__,2,False
+Associate of Applied Science||__NONE__,A A S||__NONE__,1,False
+Associate of Applied Science||__NONE__,AAS||__NONE__,1,False
+Associate of Applied Science||__NONE__,Applied Science Associate||__NONE__,1,False
+Associate of Applied Science||__NONE__,US A A S||__NONE__,1,False
+Associate of Applied Science||__NONE__,US AAS||__NONE__,1,False
+Associate of Applied Science||__NONE__,US Applied Science Associate||__NONE__,1,False
+Associate of Applied Science||__NONE__,US Associate of Applied Science||__NONE__,1,False
+Associate of Applied Science||__NONE__,United States A A S||__NONE__,1,False
+Associate of Applied Science||__NONE__,United States AAS||__NONE__,1,False
+Associate of Applied Science||__NONE__,es Associate of Applied Science||__NONE__,1,False
+Associate of Applied Science||__NONE__,tates Applied Science Associate||__NONE__,1,False
+Associate of Arts||__NONE__,A A||__NONE__,1,False
+Associate of Arts||__NONE__,Associate Arts||__NONE__,1,False
+Associate of Arts||__NONE__,US A A||__NONE__,1,False
+Associate of Arts||__NONE__,US AA||__NONE__,1,False
+Associate of Arts||__NONE__,US Associate Arts||__NONE__,1,False
+Associate of Arts||__NONE__,US Associate of Arts||__NONE__,1,False
+Associate of Arts||__NONE__,United States A A||__NONE__,1,False
+Associate of Arts||__NONE__,United States AA||__NONE__,1,False
+Associate of Arts||__NONE__,United States Associate Arts||__NONE__,1,False
+Associate of Arts||__NONE__,United States Associate of Arts||__NONE__,1,False
+Associate of Science||__NONE__,A S||__NONE__,1,False
+Associate of Science||__NONE__,Associate Science||__NONE__,1,False
+Associate of Science||__NONE__,US A S||__NONE__,1,False
+Associate of Science||__NONE__,US AS||__NONE__,1,False
+Associate of Science||__NONE__,US Associate Science||__NONE__,1,False
+Associate of Science||__NONE__,United States A S||__NONE__,1,False
+Associate of Science||__NONE__,United States AS||__NONE__,1,False
+Associate of Science||__NONE__,United States Associate Science||__NONE__,1,False
+Associate of Science||__NONE__,ted States Associate of Science||__NONE__,1,False
+Bacharelado||__NONE__,BR Bacharelado||__NONE__,1,False
+Bacharelado||__NONE__,BR Bacharel||__NONE__,1,False
+Bacharelado||__NONE__,BR Bachelor Brazil||__NONE__,1,False
+Bacharelado||__NONE__,Bacharel||__NONE__,1,False
+Bacharelado||__NONE__,Bachelor Brazil||__NONE__,1,False
+Bacharelado||__NONE__,Brazil Bacharelado||__NONE__,1,False
+Bacharelado||__NONE__,Brazil Bacharel||__NONE__,1,False
+Bacharelado||__NONE__,Brazil Bachelor Brazil||__NONE__,1,False
+Bacharelado||__NONE__,Brazilian Bacharelado||__NONE__,1,False
+Bacharelado||__NONE__,Brazilian Bacharel||__NONE__,1,False
+Bacharelado||__NONE__,Brazilian Bachelor Brazil||__NONE__,1,False
+Bachelor Degree||__NONE__,B A B S C||__NONE__,1,False
+Bachelor Degree||__NONE__,B.A.B.S.C.||__NONE__,1,False
+Bachelor Degree||__NONE__,Bologna B A B S C||__NONE__,1,False
+Bachelor Degree||__NONE__,Bologna B.A.B.S.C.||__NONE__,1,False
+Bachelor Degree||__NONE__,Bologna Bologna Bachelor||__NONE__,1,False
+Bachelor Degree||__NONE__,CN Chinese Bachelor||__NONE__,1,False
+Bachelor Degree||__NONE__,CN Xueshi||__NONE__,1,False
+Bachelor Degree||__NONE__,China Chinese Bachelor||__NONE__,1,False
+Bachelor Degree||__NONE__,China Xueshi||__NONE__,1,False
+Bachelor Degree||__NONE__,Chinese Chinese Bachelor||__NONE__,1,False
+Bachelor Degree||__NONE__,Chinese Xueshi||__NONE__,1,False
+Bachelor Degree||__NONE__,EU B A B S C||__NONE__,1,False
+Bachelor Degree||__NONE__,EU B.A.B.S.C.||__NONE__,1,False
+Bachelor Degree||__NONE__,EU Bologna Bachelor||__NONE__,1,False
+Bachelor Degree||__NONE__,Education Area Bologna Bachelor||__NONE__,1,False
+Bachelor Degree||__NONE__,Higher Education Area B A B S C||__NONE__,1,False
+Bachelor Degree||__NONE__,Xueshi||__NONE__,1,False
+Bachelor Degree||__NONE__,igher Education Area B.A.B.S.C.||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,AU B H O N||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,AU BHon||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,AU Bachelor with Honours||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,Australia B H O N||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,Australia BHon||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,Australia Bachelor with Honours||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,Australian B H O N||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,Australian BHon||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,B H O N||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,BHon||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,Bachelor with Honours||__NONE__,1,False
+Bachelor Honours Degree||__NONE__,ustralian Bachelor with Honours||__NONE__,1,False
+Bachelor of Architecture||__NONE__,B A R C H||__NONE__,1,False
+Bachelor of Architecture||__NONE__,BArch||__NONE__,1,False
+Bachelor of Architecture||__NONE__,States Bachelor of Architecture||__NONE__,1,False
+Bachelor of Architecture||__NONE__,US B A R C H||__NONE__,1,False
+Bachelor of Architecture||__NONE__,US BArch||__NONE__,1,False
+Bachelor of Architecture||__NONE__,United States B A R C H||__NONE__,1,False
+Bachelor of Architecture||__NONE__,United States BArch||__NONE__,1,False
+Bachelor of Arts||__NONE__,A B||__NONE__,1,False
+Bachelor of Arts||__NONE__,Artium Baccalaureus||__NONE__,1,False
+Bachelor of Arts||__NONE__,BA Hons Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,BAHONSHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BA Hons Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BAHONSHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,India B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BA Hons Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONSHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BA Hons Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONSHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,UK B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,UK BA Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,UK BAHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,UK BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,US A B||__NONE__,1,False
+Bachelor of Arts||__NONE__,US AB||__NONE__,1,False
+Bachelor of Arts||__NONE__,US Artium Baccalaureus||__NONE__,1,False
+Bachelor of Arts||__NONE__,US B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,US BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,United Kingdom B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,United Kingdom BA Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,United Kingdom BAHONS||__NONE__,1,False
+Bachelor of Arts||__NONE__,United Kingdom BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,United Kingdom Bachelor of Arts||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States A B||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States AB||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States B A||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States Bachelor of Arts||__NONE__,1,False
+Bachelor of Arts||__NONE__,ited States Artium Baccalaureus||__NONE__,1,False
+Bachelor of Arts||__NONE__,m Bachelor of Arts with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,B.B.A. Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,BBAHONS||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B.B.A. Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN BBAHONS||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN BBA||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B.B.A. Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India BBAHONS||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India BBA||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B.B.A. Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian BBAHONS||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian BBA||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,US B B A||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,US BBA||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,United States B B A||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,United States BBA||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B C O M M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,BComm||__NONE__,1,False
+Bachelor of Commerce||__NONE__,CA B C O M M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,CA B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,CA BComm||__NONE__,1,False
+Bachelor of Commerce||__NONE__,CA BCom||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canada B C O M M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canada B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canada B Com||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canada BComm||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canada BCom||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canadian B C O M M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canadian B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canadian B Com||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canadian BComm||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Canadian BCom||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B Com||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B. Com Hons||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India BCOMHONS||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India BCOM||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India BCom Hons||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B Com||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B. Com Hons||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian BCOMHONS||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian BCOM||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian BCom Hons||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,BCAHONS||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,BCA||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN BCAHONS||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN BCA||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India B C A||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India BCAHONS||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India BCA||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian B C A||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian BCAHONS||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian BCA||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BEHONSHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,DE B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,DE BEng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,German B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,German BEng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Germany B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Germany BEng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BEHONSHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BENGHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B Eng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONSHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BENGHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BENG||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B Eng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONSHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BENGHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BENG||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,UK B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,UK BENGHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US BEng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United Kingdom B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United Kingdom BENGHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United Kingdom BEng Hons||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United Kingdom BEng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States BEng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States BE||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,B F A||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,BFA||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US B F A||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US BFA||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,United States B F A||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,United States BFA||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,ed States Bachelor of Fine Arts||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,nited States Fine Arts Bachelor||__NONE__,1,False
+Bachelor of Laws||__NONE__,L L B||__NONE__,1,False
+Bachelor of Laws||__NONE__,LLB||__NONE__,1,False
+Bachelor of Laws||__NONE__,UK Bachelor of Laws||__NONE__,1,False
+Bachelor of Laws||__NONE__,UK Bachelor of Law||__NONE__,1,False
+Bachelor of Laws||__NONE__,UK L L B||__NONE__,1,False
+Bachelor of Laws||__NONE__,UK LLB||__NONE__,1,False
+Bachelor of Laws||__NONE__,United Kingdom Bachelor of Laws||__NONE__,1,False
+Bachelor of Laws||__NONE__,United Kingdom Bachelor of Law||__NONE__,1,False
+Bachelor of Laws||__NONE__,United Kingdom L L B||__NONE__,1,False
+Bachelor of Laws||__NONE__,United Kingdom LLB||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,B M B S||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,BMBS||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,M B B C H||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,M B B S||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,M B C H B||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,MB ChB||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,MBBCh||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,MBBS||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK B M B S||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK BMBS||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK M B B C H||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK M B B S||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK M B C H B||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK MB ChB||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK MBBCh||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,UK MBBS||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom B M B S||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom BMBS||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom M B B C H||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom M B B S||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom M B C H B||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom M.B.C.H.B.||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom MB ChB||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom MBBCh||__NONE__,1,False
+Bachelor of Medicine Bachelor of Surgery||__NONE__,United Kingdom MBBS||__NONE__,1,False
+Bachelor of Music||__NONE__,B M U S||__NONE__,1,False
+Bachelor of Music||__NONE__,B M||__NONE__,1,False
+Bachelor of Music||__NONE__,BMus||__NONE__,1,False
+Bachelor of Music||__NONE__,Bachelor of Engineering||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M U S||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M||__NONE__,1,False
+Bachelor of Music||__NONE__,US BMus||__NONE__,1,False
+Bachelor of Music||__NONE__,US BM||__NONE__,1,False
+Bachelor of Music||__NONE__,US Bachelor of Music||__NONE__,1,False
+Bachelor of Music||__NONE__,United States B M U S||__NONE__,1,False
+Bachelor of Music||__NONE__,United States B M||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BMus||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BM||__NONE__,1,False
+Bachelor of Music||__NONE__,United States Bachelor of Music||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B S C||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B Sc||__NONE__,1,False
+Bachelor of Science||__NONE__,IN BSC Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,IN BSC||__NONE__,1,False
+Bachelor of Science||__NONE__,India B S C||__NONE__,1,False
+Bachelor of Science||__NONE__,India B Sc||__NONE__,1,False
+Bachelor of Science||__NONE__,India BSC Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,India BSCHONS||__NONE__,1,False
+Bachelor of Science||__NONE__,India BSC||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B S C||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B Sc||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian BSC Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian BSCHONS||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian BSC||__NONE__,1,False
+Bachelor of Science||__NONE__,S C B||__NONE__,1,False
+Bachelor of Science||__NONE__,ScB||__NONE__,1,False
+Bachelor of Science||__NONE__,UK B S C||__NONE__,1,False
+Bachelor of Science||__NONE__,UK B Sc||__NONE__,1,False
+Bachelor of Science||__NONE__,UK BSc Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,UK BSc||__NONE__,1,False
+Bachelor of Science||__NONE__,US B S||__NONE__,1,False
+Bachelor of Science||__NONE__,US BS||__NONE__,1,False
+Bachelor of Science||__NONE__,US S C B||__NONE__,1,False
+Bachelor of Science||__NONE__,US ScB||__NONE__,1,False
+Bachelor of Science||__NONE__,United Kingdom B S C||__NONE__,1,False
+Bachelor of Science||__NONE__,United Kingdom B Sc||__NONE__,1,False
+Bachelor of Science||__NONE__,United Kingdom BSCHONS||__NONE__,1,False
+Bachelor of Science||__NONE__,United Kingdom BSc Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,United Kingdom BSc||__NONE__,1,False
+Bachelor of Science||__NONE__,United States B S||__NONE__,1,False
+Bachelor of Science||__NONE__,United States BS||__NONE__,1,False
+Bachelor of Science||__NONE__,United States S C B||__NONE__,1,False
+Bachelor of Science||__NONE__,United States ScB||__NONE__,1,False
+Bachelor of Science||__NONE__,achelor of Science with Honours||__NONE__,1,False
+Bachelor of Social Work||__NONE__,B S W||__NONE__,1,False
+Bachelor of Social Work||__NONE__,BSW||__NONE__,1,False
+Bachelor of Social Work||__NONE__,States Bachelor of Social Work||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US B S W||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US BSW||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US Bachelor of Social Work||__NONE__,1,False
+Bachelor of Social Work||__NONE__,United States B S W||__NONE__,1,False
+Bachelor of Social Work||__NONE__,United States BSW||__NONE__,1,False
+Bachelor of Technology||__NONE__,B T E C H||__NONE__,1,False
+Bachelor of Technology||__NONE__,BTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN B T E C H||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN BTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,India 4YEARBTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B T E C H||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B Tech||__NONE__,1,False
+Bachelor of Technology||__NONE__,India BTECHHONS||__NONE__,1,False
+Bachelor of Technology||__NONE__,India BTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian 4YEARBTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian B T E C H||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian BTECHHONS||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian BTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian Tecnolgy of Technology||__NONE__,1,False
+Bachelor's Degree||__NONE__,Gakushi||__NONE__,1,False
+Bachelor's Degree||__NONE__,JP Gakushi||__NONE__,1,False
+Bachelor's Degree||__NONE__,JP Japanese Bachelor||__NONE__,1,False
+Bachelor's Degree||__NONE__,Japan Gakushi||__NONE__,1,False
+Bachelor's Degree||__NONE__,Japan Japanese Bachelor||__NONE__,1,False
+Bachelor's Degree||__NONE__,Japanese Bachelor||__NONE__,1,False
+Bachelor's Degree||__NONE__,Japanese Gakushi||__NONE__,1,False
+Bachelor's Degree||__NONE__,Japanese Japanese Bachelor||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,B T S||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,BTS||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,FR B T S||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,FR BTS||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,France B T S||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,France BTS||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,French B T S||__NONE__,1,False
+Brevet de Technicien Superieur||__NONE__,French BTS||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,FR I N G||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,FR Ing||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,France I N G||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,France Ing||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,French I N G||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,French Ing||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,I N G||__NONE__,1,False
+Diplome d'Ingenieur||__NONE__,Ing||__NONE__,1,False
+Diplom||__NONE__,D I P L||__NONE__,1,False
+Diplom||__NONE__,DE D I P L||__NONE__,1,False
+Diplom||__NONE__,DE Dipl.||__NONE__,1,False
+Diplom||__NONE__,Dipl.||__NONE__,1,False
+Diplom||__NONE__,German D I P L||__NONE__,1,False
+Diplom||__NONE__,German Dipl.||__NONE__,1,False
+Diplom||__NONE__,Germany D I P L||__NONE__,1,False
+Diplom||__NONE__,Germany Dipl.||__NONE__,1,False
+Doctor of Business Administration||__NONE__,UK D B A||__NONE__,1,False
+Doctor of Business Administration||__NONE__,UK DBA||__NONE__,1,False
+Doctor of Business Administration||__NONE__,US D B A||__NONE__,1,False
+Doctor of Business Administration||__NONE__,US DBA||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United Kingdom D B A||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United Kingdom DBA||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United States D B A||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United States DBA||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,D D S||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,DDS||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,States Doctor of Dental Surgery||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,US D D S||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,US DDS||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,United States D D S||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,United States DDS||__NONE__,1,False
+Doctor of Education||__NONE__,UK Doctor of Education||__NONE__,1,False
+Doctor of Education||__NONE__,UK E D D||__NONE__,1,False
+Doctor of Education||__NONE__,UK EdD||__NONE__,1,False
+Doctor of Education||__NONE__,US Doctor of Education||__NONE__,1,False
+Doctor of Education||__NONE__,US E D D||__NONE__,1,False
+Doctor of Education||__NONE__,US EdD||__NONE__,1,False
+Doctor of Education||__NONE__,United Kingdom E D D||__NONE__,1,False
+Doctor of Education||__NONE__,United Kingdom EdD||__NONE__,1,False
+Doctor of Education||__NONE__,United States E D D||__NONE__,1,False
+Doctor of Education||__NONE__,United States EdD||__NONE__,1,False
+Doctor of Education||__NONE__,ited States Doctor of Education||__NONE__,1,False
+Doctor of Education||__NONE__,ted Kingdom Doctor of Education||__NONE__,1,False
+Doctor of Medicine||__NONE__,M D||__NONE__,1,False
+Doctor of Medicine||__NONE__,US Doctor of Medicine||__NONE__,1,False
+Doctor of Medicine||__NONE__,US M D||__NONE__,1,False
+Doctor of Medicine||__NONE__,US MD||__NONE__,1,False
+Doctor of Medicine||__NONE__,United States M D||__NONE__,1,False
+Doctor of Medicine||__NONE__,United States MD||__NONE__,1,False
+Doctor of Medicine||__NONE__,nited States Doctor of Medicine||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,D N P||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,DNP||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US D N P||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US DNP||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US Doctor of Nursing Practice||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,United States D N P||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,United States DNP||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,ates Doctor of Nursing Practice||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,PharmD||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,US Doctor of Pharmacy||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,US PharmD||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,United States PharmD||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,nited States Doctor of Pharmacy||__NONE__,1,False
+Doctor of Philosophy||__NONE__,DPHILHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,DPhil Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN D P H I L||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN DPHILHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN DPHIL||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN DPhil Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN PHDHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN PHD||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN Ph. D. Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN Ph.D Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India D P H I L||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India DPHILHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India DPHIL||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India DPhil Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India PHDHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India PHD||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India Ph. D. Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India Ph.D Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian D P H I L||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian DPHILHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian DPHIL||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian DPhil Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian PHDHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian PHD||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian Ph. D. Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian Ph.D Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,PHDHONS||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Ph. D. Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Ph.D Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,UK D P H I L||__NONE__,1,False
+Doctor of Philosophy||__NONE__,UK DPhil||__NONE__,1,False
+Doctor of Philosophy||__NONE__,UK Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,UK P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,UK Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,UK PhD||__NONE__,1,False
+Doctor of Philosophy||__NONE__,US Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,US P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,US Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,US PhD||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United Kingdom D P H I L||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United Kingdom DPhil||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United Kingdom Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United Kingdom P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United Kingdom Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United Kingdom PhD||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United States Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United States P H D||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United States Ph. D.||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United States PhD||__NONE__,1,False
+Doctor of Psychology||__NONE__,P S Y D||__NONE__,1,False
+Doctor of Psychology||__NONE__,PsyD||__NONE__,1,False
+Doctor of Psychology||__NONE__,US Doctor of Psychology||__NONE__,1,False
+Doctor of Psychology||__NONE__,US P S Y D||__NONE__,1,False
+Doctor of Psychology||__NONE__,US PsyD||__NONE__,1,False
+Doctor of Psychology||__NONE__,United States P S Y D||__NONE__,1,False
+Doctor of Psychology||__NONE__,United States PsyD||__NONE__,1,False
+Doctor of Psychology||__NONE__,ted States Doctor of Psychology||__NONE__,1,False
+Doctorado||__NONE__,ES Doctorado||__NONE__,1,False
+Doctorado||__NONE__,ES Doctorate||__NONE__,1,False
+Doctorado||__NONE__,ES P H D||__NONE__,1,False
+Doctorado||__NONE__,ES Ph. D.||__NONE__,1,False
+Doctorado||__NONE__,ES PhD||__NONE__,1,False
+Doctorado||__NONE__,ES Spanish Doctorate||__NONE__,1,False
+Doctorado||__NONE__,Spain Doctorado||__NONE__,1,False
+Doctorado||__NONE__,Spain Doctorate||__NONE__,1,False
+Doctorado||__NONE__,Spain P H D||__NONE__,1,False
+Doctorado||__NONE__,Spain Ph. D.||__NONE__,1,False
+Doctorado||__NONE__,Spain PhD||__NONE__,1,False
+Doctorado||__NONE__,Spain Spanish Doctorate||__NONE__,1,False
+Doctorado||__NONE__,Spanish Doctorado||__NONE__,1,False
+Doctorado||__NONE__,Spanish Doctorate||__NONE__,1,False
+Doctorado||__NONE__,Spanish P H D||__NONE__,1,False
+Doctorado||__NONE__,Spanish Ph. D.||__NONE__,1,False
+Doctorado||__NONE__,Spanish PhD||__NONE__,1,False
+Doctorado||__NONE__,Spanish Spanish Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,AU Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,AU P H D||__NONE__,1,False
+Doctoral Degree||__NONE__,AU Ph. D.||__NONE__,1,False
+Doctoral Degree||__NONE__,AU PhD||__NONE__,1,False
+Doctoral Degree||__NONE__,Australia Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Australia P H D||__NONE__,1,False
+Doctoral Degree||__NONE__,Australia Ph. D.||__NONE__,1,False
+Doctoral Degree||__NONE__,Australia PhD||__NONE__,1,False
+Doctoral Degree||__NONE__,Australian Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Australian P H D||__NONE__,1,False
+Doctoral Degree||__NONE__,Australian Ph. D.||__NONE__,1,False
+Doctoral Degree||__NONE__,Australian PhD||__NONE__,1,False
+Doctoral Degree||__NONE__,B O S H I||__NONE__,1,False
+Doctoral Degree||__NONE__,Bologna Bologna Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Bologna Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Bologna P H D||__NONE__,1,False
+Doctoral Degree||__NONE__,Bologna Ph. D.||__NONE__,1,False
+Doctoral Degree||__NONE__,Bologna PhD||__NONE__,1,False
+Doctoral Degree||__NONE__,Boshi||__NONE__,1,False
+Doctoral Degree||__NONE__,CN B O S H I||__NONE__,1,False
+Doctoral Degree||__NONE__,CN Boshi||__NONE__,1,False
+Doctoral Degree||__NONE__,CN Chinese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,China B O S H I||__NONE__,1,False
+Doctoral Degree||__NONE__,China Boshi||__NONE__,1,False
+Doctoral Degree||__NONE__,China Chinese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Chinese B O S H I||__NONE__,1,False
+Doctoral Degree||__NONE__,Chinese Boshi||__NONE__,1,False
+Doctoral Degree||__NONE__,Chinese Chinese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Chinese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,EU Bologna Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,EU Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,EU P H D||__NONE__,1,False
+Doctoral Degree||__NONE__,EU Ph. D.||__NONE__,1,False
+Doctoral Degree||__NONE__,EU PhD||__NONE__,1,False
+Doctoral Degree||__NONE__,Hakushi||__NONE__,1,False
+Doctoral Degree||__NONE__,Higher Education Area Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,JP Hakushi||__NONE__,1,False
+Doctoral Degree||__NONE__,JP Japanese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Japan Hakushi||__NONE__,1,False
+Doctoral Degree||__NONE__,Japan Japanese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Japanese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,Japanese Hakushi||__NONE__,1,False
+Doctoral Degree||__NONE__,Japanese Japanese Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,an Higher Education Area Ph. D.||__NONE__,1,False
+Doctoral Degree||__NONE__,ducation Area Bologna Doctorate||__NONE__,1,False
+Doctoral Degree||__NONE__,ean Higher Education Area P H D||__NONE__,1,False
+Doctoral Degree||__NONE__,opean Higher Education Area PhD||__NONE__,1,False
+Doctorat||__NONE__,FR Doctorate||__NONE__,1,False
+Doctorat||__NONE__,FR Doctorat||__NONE__,1,False
+Doctorat||__NONE__,FR French Doctorate||__NONE__,1,False
+Doctorat||__NONE__,FR P H D||__NONE__,1,False
+Doctorat||__NONE__,FR Ph. D.||__NONE__,1,False
+Doctorat||__NONE__,FR PhD||__NONE__,1,False
+Doctorat||__NONE__,France Doctorate||__NONE__,1,False
+Doctorat||__NONE__,France Doctorat||__NONE__,1,False
+Doctorat||__NONE__,France French Doctorate||__NONE__,1,False
+Doctorat||__NONE__,France P H D||__NONE__,1,False
+Doctorat||__NONE__,France Ph. D.||__NONE__,1,False
+Doctorat||__NONE__,France PhD||__NONE__,1,False
+Doctorat||__NONE__,French Doctorate||__NONE__,1,False
+Doctorat||__NONE__,French Doctorat||__NONE__,1,False
+Doctorat||__NONE__,French French Doctorate||__NONE__,1,False
+Doctorat||__NONE__,French P H D||__NONE__,1,False
+Doctorat||__NONE__,French Ph. D.||__NONE__,1,False
+Doctorat||__NONE__,French PhD||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,IT Doctorate||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,IT Dottorato di Ricerca||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,IT Italian Doctorate||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,IT P H D||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,IT Ph. D.||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,IT PhD||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italian Doctorate||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italian Dottorato di Ricerca||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italian Italian Doctorate||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italian P H D||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italian Ph. D.||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italian PhD||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italy Doctorate||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italy Dottorato di Ricerca||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italy Italian Doctorate||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italy P H D||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italy Ph. D.||__NONE__,1,False
+Dottorato di Ricerca||__NONE__,Italy PhD||__NONE__,1,False
+Doutorado||__NONE__,BR Brazilian Doctorate||__NONE__,1,False
+Doutorado||__NONE__,BR Doctorate||__NONE__,1,False
+Doutorado||__NONE__,BR Doutorado||__NONE__,1,False
+Doutorado||__NONE__,BR P H D||__NONE__,1,False
+Doutorado||__NONE__,BR Ph. D.||__NONE__,1,False
+Doutorado||__NONE__,BR PhD||__NONE__,1,False
+Doutorado||__NONE__,Brazil Brazilian Doctorate||__NONE__,1,False
+Doutorado||__NONE__,Brazil Doctorate||__NONE__,1,False
+Doutorado||__NONE__,Brazil Doutorado||__NONE__,1,False
+Doutorado||__NONE__,Brazil P H D||__NONE__,1,False
+Doutorado||__NONE__,Brazil Ph. D.||__NONE__,1,False
+Doutorado||__NONE__,Brazil PhD||__NONE__,1,False
+Doutorado||__NONE__,Brazilian Brazilian Doctorate||__NONE__,1,False
+Doutorado||__NONE__,Brazilian Doctorate||__NONE__,1,False
+Doutorado||__NONE__,Brazilian Doutorado||__NONE__,1,False
+Doutorado||__NONE__,Brazilian P H D||__NONE__,1,False
+Doutorado||__NONE__,Brazilian Ph. D.||__NONE__,1,False
+Doutorado||__NONE__,Brazilian PhD||__NONE__,1,False
+Especializacao||__NONE__,BR E S P||__NONE__,1,False
+Especializacao||__NONE__,BR Esp.||__NONE__,1,False
+Especializacao||__NONE__,BR Especializacao||__NONE__,1,False
+Especializacao||__NONE__,BR Lato Sensu Specialization||__NONE__,1,False
+Especializacao||__NONE__,Brazil E S P||__NONE__,1,False
+Especializacao||__NONE__,Brazil Esp.||__NONE__,1,False
+Especializacao||__NONE__,Brazil Especializacao||__NONE__,1,False
+Especializacao||__NONE__,Brazilian E S P||__NONE__,1,False
+Especializacao||__NONE__,Brazilian Esp.||__NONE__,1,False
+Especializacao||__NONE__,Brazilian Especializacao||__NONE__,1,False
+Especializacao||__NONE__,E S P||__NONE__,1,False
+Especializacao||__NONE__,Esp.||__NONE__,1,False
+Especializacao||__NONE__,Lato Sensu Specialization||__NONE__,1,False
+Especializacao||__NONE__,ilian Lato Sensu Specialization||__NONE__,1,False
+Especializacao||__NONE__,razil Lato Sensu Specialization||__NONE__,1,False
+Foundation Degree||__NONE__,F D A||__NONE__,1,False
+Foundation Degree||__NONE__,F D S C||__NONE__,1,False
+Foundation Degree||__NONE__,F D||__NONE__,1,False
+Foundation Degree||__NONE__,FdA||__NONE__,1,False
+Foundation Degree||__NONE__,FdSc||__NONE__,1,False
+Foundation Degree||__NONE__,UK F D A||__NONE__,1,False
+Foundation Degree||__NONE__,UK F D S C||__NONE__,1,False
+Foundation Degree||__NONE__,UK F D||__NONE__,1,False
+Foundation Degree||__NONE__,UK FdA||__NONE__,1,False
+Foundation Degree||__NONE__,UK FdSc||__NONE__,1,False
+Foundation Degree||__NONE__,UK Fd||__NONE__,1,False
+Foundation Degree||__NONE__,United Kingdom F D A||__NONE__,1,False
+Foundation Degree||__NONE__,United Kingdom F D S C||__NONE__,1,False
+Foundation Degree||__NONE__,United Kingdom F D||__NONE__,1,False
+Foundation Degree||__NONE__,United Kingdom FdA||__NONE__,1,False
+Foundation Degree||__NONE__,United Kingdom FdSc||__NONE__,1,False
+Foundation Degree||__NONE__,United Kingdom Fd||__NONE__,1,False
+HBO Bachelor||__NONE__,Bachelor of Commerce||__NONE__,1,False
+HBO Bachelor||__NONE__,Dutch H B O B||__NONE__,1,False
+HBO Bachelor||__NONE__,Dutch H.B.O.B.||__NONE__,1,False
+HBO Bachelor||__NONE__,Dutch HBO Bachelor||__NONE__,1,False
+HBO Bachelor||__NONE__,Dutch HBO B||__NONE__,1,False
+HBO Bachelor||__NONE__,Dutch HBOBACHELOR||__NONE__,1,False
+HBO Bachelor||__NONE__,H B O B||__NONE__,1,False
+HBO Bachelor||__NONE__,H.B.O.B.||__NONE__,1,False
+HBO Bachelor||__NONE__,HBO B||__NONE__,1,False
+HBO Bachelor||__NONE__,HBOBACHELOR||__NONE__,1,False
+HBO Bachelor||__NONE__,NL H B O B||__NONE__,1,False
+HBO Bachelor||__NONE__,NL H.B.O.B.||__NONE__,1,False
+HBO Bachelor||__NONE__,NL HBO Bachelor||__NONE__,1,False
+HBO Bachelor||__NONE__,NL HBO B||__NONE__,1,False
+HBO Bachelor||__NONE__,NL HBOBACHELOR||__NONE__,1,False
+HBO Bachelor||__NONE__,Netherlands H B O B||__NONE__,1,False
+HBO Bachelor||__NONE__,Netherlands H.B.O.B.||__NONE__,1,False
+HBO Bachelor||__NONE__,Netherlands HBO Bachelor||__NONE__,1,False
+HBO Bachelor||__NONE__,Netherlands HBO B||__NONE__,1,False
+HBO Bachelor||__NONE__,Netherlands HBOBACHELOR||__NONE__,1,False
+HBO Master||__NONE__,Applied Sciences Master||__NONE__,1,False
+HBO Master||__NONE__,Dutch Applied Sciences Master||__NONE__,1,False
+HBO Master||__NONE__,Dutch H B O M||__NONE__,1,False
+HBO Master||__NONE__,Dutch H.B.O.M.||__NONE__,1,False
+HBO Master||__NONE__,Dutch HBO Master||__NONE__,1,False
+HBO Master||__NONE__,Dutch HBO M||__NONE__,1,False
+HBO Master||__NONE__,Dutch HBOMASTER||__NONE__,1,False
+HBO Master||__NONE__,H B O M||__NONE__,1,False
+HBO Master||__NONE__,H.B.O.M.||__NONE__,1,False
+HBO Master||__NONE__,HBO M||__NONE__,1,False
+HBO Master||__NONE__,HBOMASTER||__NONE__,1,False
+HBO Master||__NONE__,NL Applied Sciences Master||__NONE__,1,False
+HBO Master||__NONE__,NL H B O M||__NONE__,1,False
+HBO Master||__NONE__,NL H.B.O.M.||__NONE__,1,False
+HBO Master||__NONE__,NL HBO Master||__NONE__,1,False
+HBO Master||__NONE__,NL HBO M||__NONE__,1,False
+HBO Master||__NONE__,NL HBOMASTER||__NONE__,1,False
+HBO Master||__NONE__,Netherlands H B O M||__NONE__,1,False
+HBO Master||__NONE__,Netherlands H.B.O.M.||__NONE__,1,False
+HBO Master||__NONE__,Netherlands HBO Master||__NONE__,1,False
+HBO Master||__NONE__,Netherlands HBO M||__NONE__,1,False
+HBO Master||__NONE__,Netherlands HBOMASTER||__NONE__,1,False
+HBO Master||__NONE__,erlands Applied Sciences Master||__NONE__,1,False
+Honours Degree||__NONE__,Bachelor of Computer Applications||__NONE__,1,False
+Honours Degree||__NONE__,H O N S||__NONE__,1,False
+Honours Degree||__NONE__,Hons||__NONE__,1,False
+Honours Degree||__NONE__,South Africa Bachelor Honours||__NONE__,1,False
+Honours Degree||__NONE__,South Africa H O N S||__NONE__,1,False
+Honours Degree||__NONE__,South Africa Hons||__NONE__,1,False
+Honours Degree||__NONE__,South African Bachelor Honours||__NONE__,1,False
+Honours Degree||__NONE__,South African H O N S||__NONE__,1,False
+Honours Degree||__NONE__,South African Hons||__NONE__,1,False
+Honours Degree||__NONE__,ZA Bachelor Honours||__NONE__,1,False
+Honours Degree||__NONE__,ZA H O N S||__NONE__,1,False
+Honours Degree||__NONE__,ZA Hons||__NONE__,1,False
+Juris Doctor||__NONE__,Doctor of Jurisprudence||__NONE__,1,False
+Juris Doctor||__NONE__,J D||__NONE__,1,False
+Juris Doctor||__NONE__,JURISDOCTOR||__NONE__,1,False
+Juris Doctor||__NONE__,States Doctor of Jurisprudence||__NONE__,1,False
+Juris Doctor||__NONE__,US Doctor of Jurisprudence||__NONE__,1,False
+Juris Doctor||__NONE__,US J D||__NONE__,1,False
+Juris Doctor||__NONE__,US JD||__NONE__,1,False
+Juris Doctor||__NONE__,US JURISDOCTOR||__NONE__,1,False
+Juris Doctor||__NONE__,US Juris Doctor||__NONE__,1,False
+Juris Doctor||__NONE__,United States J D||__NONE__,1,False
+Juris Doctor||__NONE__,United States JD||__NONE__,1,False
+Juris Doctor||__NONE__,United States JURISDOCTOR||__NONE__,1,False
+Juris Doctor||__NONE__,United States Juris Doctor||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,IT L M C U||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,IT LMCU||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Italian L M C U||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Italian LMCU||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Italy L M C U||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,Italy LMCU||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,L M C U||__NONE__,1,False
+Laurea Magistrale a Ciclo Unico||__NONE__,LMCU||__NONE__,1,False
+Laurea Magistrale||__NONE__,IT L M||__NONE__,1,False
+Laurea Magistrale||__NONE__,IT LM||__NONE__,1,False
+Laurea Magistrale||__NONE__,IT Laurea Magistrale||__NONE__,1,False
+Laurea Magistrale||__NONE__,IT Second Cycle Laurea||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italian L M||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italian LM||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italian Laurea Magistrale||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italian Second Cycle Laurea||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italy L M||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italy LM||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italy Laurea Magistrale||__NONE__,1,False
+Laurea Magistrale||__NONE__,Italy Second Cycle Laurea||__NONE__,1,False
+Laurea Magistrale||__NONE__,L M||__NONE__,1,False
+Laurea Magistrale||__NONE__,Second Cycle Laurea||__NONE__,1,False
+Laurea Triennale||__NONE__,First Cycle Laurea||__NONE__,1,False
+Laurea Triennale||__NONE__,IT First Cycle Laurea||__NONE__,1,False
+Laurea Triennale||__NONE__,IT L T||__NONE__,1,False
+Laurea Triennale||__NONE__,IT LT||__NONE__,1,False
+Laurea Triennale||__NONE__,IT Laurea Triennale||__NONE__,1,False
+Laurea Triennale||__NONE__,Italian First Cycle Laurea||__NONE__,1,False
+Laurea Triennale||__NONE__,Italian L T||__NONE__,1,False
+Laurea Triennale||__NONE__,Italian LT||__NONE__,1,False
+Laurea Triennale||__NONE__,Italian Laurea Triennale||__NONE__,1,False
+Laurea Triennale||__NONE__,Italy First Cycle Laurea||__NONE__,1,False
+Laurea Triennale||__NONE__,Italy L T||__NONE__,1,False
+Laurea Triennale||__NONE__,Italy LT||__NONE__,1,False
+Laurea Triennale||__NONE__,Italy Laurea Triennale||__NONE__,1,False
+Laurea Triennale||__NONE__,L T||__NONE__,1,False
+Licence Professionnelle||__NONE__,FR L P||__NONE__,1,False
+Licence Professionnelle||__NONE__,FR LP||__NONE__,1,False
+Licence Professionnelle||__NONE__,FR Licence Professionnelle||__NONE__,1,False
+Licence Professionnelle||__NONE__,FR Professional Licence||__NONE__,1,False
+Licence Professionnelle||__NONE__,France L P||__NONE__,1,False
+Licence Professionnelle||__NONE__,France LP||__NONE__,1,False
+Licence Professionnelle||__NONE__,France Licence Professionnelle||__NONE__,1,False
+Licence Professionnelle||__NONE__,France Professional Licence||__NONE__,1,False
+Licence Professionnelle||__NONE__,French L P||__NONE__,1,False
+Licence Professionnelle||__NONE__,French LP||__NONE__,1,False
+Licence Professionnelle||__NONE__,French Licence Professionnelle||__NONE__,1,False
+Licence Professionnelle||__NONE__,French Professional Licence||__NONE__,1,False
+Licence Professionnelle||__NONE__,L P||__NONE__,1,False
+Licence Professionnelle||__NONE__,Professional Licence||__NONE__,1,False
+Licence||__NONE__,FR French Licence||__NONE__,1,False
+Licence||__NONE__,FR Licence||__NONE__,1,False
+Licence||__NONE__,France French Licence||__NONE__,1,False
+Licence||__NONE__,France Licence||__NONE__,1,False
+Licence||__NONE__,French French Licence||__NONE__,1,False
+Licence||__NONE__,French Licence||__NONE__,1,False
+Licenciatura||__NONE__,BR L I C||__NONE__,1,False
+Licenciatura||__NONE__,BR Lic.||__NONE__,1,False
+Licenciatura||__NONE__,BR Licenciatura||__NONE__,1,False
+Licenciatura||__NONE__,Brazil L I C||__NONE__,1,False
+Licenciatura||__NONE__,Brazil Lic.||__NONE__,1,False
+Licenciatura||__NONE__,Brazil Licenciatura||__NONE__,1,False
+Licenciatura||__NONE__,Brazilian L I C||__NONE__,1,False
+Licenciatura||__NONE__,Brazilian Lic.||__NONE__,1,False
+Licenciatura||__NONE__,Brazilian Licenciatura||__NONE__,1,False
+Licenciatura||__NONE__,L I C||__NONE__,1,False
+Licenciatura||__NONE__,Lic.||__NONE__,1,False
+Magister Artium||__NONE__,DE M A||__NONE__,1,False
+Magister Artium||__NONE__,DE MA||__NONE__,1,False
+Magister Artium||__NONE__,DE Magister Artium||__NONE__,1,False
+Magister Artium||__NONE__,DE Magister||__NONE__,1,False
+Magister Artium||__NONE__,German M A||__NONE__,1,False
+Magister Artium||__NONE__,German MA||__NONE__,1,False
+Magister Artium||__NONE__,German Magister Artium||__NONE__,1,False
+Magister Artium||__NONE__,German Magister||__NONE__,1,False
+Magister Artium||__NONE__,Germany M A||__NONE__,1,False
+Magister Artium||__NONE__,Germany MA||__NONE__,1,False
+Magister Artium||__NONE__,Germany Magister Artium||__NONE__,1,False
+Magister Artium||__NONE__,Germany Magister||__NONE__,1,False
+Magister Artium||__NONE__,Magister||__NONE__,1,False
+Master Degree||__NONE__,Bologna Bologna Master||__NONE__,1,False
+Master Degree||__NONE__,Bologna M A M S C||__NONE__,1,False
+Master Degree||__NONE__,Bologna M.A.M.S.C.||__NONE__,1,False
+Master Degree||__NONE__,CN Chinese Master||__NONE__,1,False
+Master Degree||__NONE__,CN Shuoshi||__NONE__,1,False
+Master Degree||__NONE__,China Chinese Master||__NONE__,1,False
+Master Degree||__NONE__,China Shuoshi||__NONE__,1,False
+Master Degree||__NONE__,Chinese Chinese Master||__NONE__,1,False
+Master Degree||__NONE__,Chinese Shuoshi||__NONE__,1,False
+Master Degree||__NONE__,EU Bologna Master||__NONE__,1,False
+Master Degree||__NONE__,EU M A M S C||__NONE__,1,False
+Master Degree||__NONE__,EU M.A.M.S.C.||__NONE__,1,False
+Master Degree||__NONE__,Higher Education Area M A M S C||__NONE__,1,False
+Master Degree||__NONE__,M A M S C||__NONE__,1,False
+Master Degree||__NONE__,M.A.M.S.C.||__NONE__,1,False
+Master Degree||__NONE__,Shuoshi||__NONE__,1,False
+Master Degree||__NONE__,igher Education Area M.A.M.S.C.||__NONE__,1,False
+Master Degree||__NONE__,r Education Area Bologna Master||__NONE__,1,False
+Master Universitario||__NONE__,ES Master Universitario||__NONE__,1,False
+Master Universitario||__NONE__,ES Master||__NONE__,1,False
+Master Universitario||__NONE__,Spain Master Universitario||__NONE__,1,False
+Master Universitario||__NONE__,Spain Master||__NONE__,1,False
+Master Universitario||__NONE__,Spanish Master Universitario||__NONE__,1,False
+Master Universitario||__NONE__,Spanish Master||__NONE__,1,False
+Master of Applied Science||__NONE__,CA M A S C||__NONE__,1,False
+Master of Applied Science||__NONE__,CA MASc||__NONE__,1,False
+Master of Applied Science||__NONE__,Canada M A S C||__NONE__,1,False
+Master of Applied Science||__NONE__,Canada MASc||__NONE__,1,False
+Master of Applied Science||__NONE__,Canadian M A S C||__NONE__,1,False
+Master of Applied Science||__NONE__,Canadian MASc||__NONE__,1,False
+Master of Applied Science||__NONE__,M A S C||__NONE__,1,False
+Master of Applied Science||__NONE__,MASc||__NONE__,1,False
+Master of Applied Science||__NONE__,adian Master of Applied Science||__NONE__,1,False
+Master of Arts||__NONE__,A M||__NONE__,1,False
+Master of Arts||__NONE__,Artium Magister||__NONE__,1,False
+Master of Arts||__NONE__,IN M A||__NONE__,1,False
+Master of Arts||__NONE__,IN MAHONS||__NONE__,1,False
+Master of Arts||__NONE__,IN MA||__NONE__,1,False
+Master of Arts||__NONE__,India M A||__NONE__,1,False
+Master of Arts||__NONE__,India MAHONS||__NONE__,1,False
+Master of Arts||__NONE__,India MA||__NONE__,1,False
+Master of Arts||__NONE__,India MasterofArts||__NONE__,1,False
+Master of Arts||__NONE__,Indian M A||__NONE__,1,False
+Master of Arts||__NONE__,Indian MAHONS||__NONE__,1,False
+Master of Arts||__NONE__,Indian MA||__NONE__,1,False
+Master of Arts||__NONE__,Indian MasterofArts||__NONE__,1,False
+Master of Arts||__NONE__,MAHONS||__NONE__,1,False
+Master of Arts||__NONE__,UK M A||__NONE__,1,False
+Master of Arts||__NONE__,UK MA||__NONE__,1,False
+Master of Arts||__NONE__,US A M||__NONE__,1,False
+Master of Arts||__NONE__,US AM||__NONE__,1,False
+Master of Arts||__NONE__,US Artium Magister||__NONE__,1,False
+Master of Arts||__NONE__,US M A||__NONE__,1,False
+Master of Arts||__NONE__,US MA||__NONE__,1,False
+Master of Arts||__NONE__,United Kingdom M A||__NONE__,1,False
+Master of Arts||__NONE__,United Kingdom MA||__NONE__,1,False
+Master of Arts||__NONE__,United Kingdom Master of Arts||__NONE__,1,False
+Master of Arts||__NONE__,United States A M||__NONE__,1,False
+Master of Arts||__NONE__,United States AM||__NONE__,1,False
+Master of Arts||__NONE__,United States Artium Magister||__NONE__,1,False
+Master of Arts||__NONE__,United States M A||__NONE__,1,False
+Master of Arts||__NONE__,United States MA||__NONE__,1,False
+Master of Arts||__NONE__,United States Master of Arts||__NONE__,1,False
+Master of Business Administration||__NONE__,E M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,EMBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,IN E M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,IN EMBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,IN M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,IN MBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,IN MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,India E M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,India EMBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,India EMBA||__NONE__,1,False
+Master of Business Administration||__NONE__,India M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,India MBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,India MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian E M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian EMBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian EMBA||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian MBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,MBAHONS||__NONE__,1,False
+Master of Business Administration||__NONE__,UK M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,UK MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,US M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,US MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,United Kingdom M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,United Kingdom MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,United States M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,United States MBA||__NONE__,1,False
+Master of Commerce||__NONE__,IN M C O M||__NONE__,1,False
+Master of Commerce||__NONE__,IN M Com||__NONE__,1,False
+Master of Commerce||__NONE__,IN MCOMHONS||__NONE__,1,False
+Master of Commerce||__NONE__,India M C O M||__NONE__,1,False
+Master of Commerce||__NONE__,India M Com||__NONE__,1,False
+Master of Commerce||__NONE__,India MCOMHONS||__NONE__,1,False
+Master of Commerce||__NONE__,India MCOM||__NONE__,1,False
+Master of Commerce||__NONE__,India MCom Hons||__NONE__,1,False
+Master of Commerce||__NONE__,Indian M C O M||__NONE__,1,False
+Master of Commerce||__NONE__,Indian M Com||__NONE__,1,False
+Master of Commerce||__NONE__,Indian MCOMHONS||__NONE__,1,False
+Master of Commerce||__NONE__,Indian MCOM||__NONE__,1,False
+Master of Commerce||__NONE__,Indian MCom Hons||__NONE__,1,False
+Master of Commerce||__NONE__,M C O M||__NONE__,1,False
+Master of Commerce||__NONE__,M Com||__NONE__,1,False
+Master of Commerce||__NONE__,MCOMHONS||__NONE__,1,False
+Master of Computer Applications||__NONE__,IN MCA Hons||__NONE__,1,False
+Master of Computer Applications||__NONE__,IN MCAHONS||__NONE__,1,False
+Master of Computer Applications||__NONE__,IN MCA||__NONE__,1,False
+Master of Computer Applications||__NONE__,India M C A||__NONE__,1,False
+Master of Computer Applications||__NONE__,India MCA Hons||__NONE__,1,False
+Master of Computer Applications||__NONE__,India MCAHONS||__NONE__,1,False
+Master of Computer Applications||__NONE__,India MCA||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian M C A||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian MCA Hons||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian MCAHONS||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian MCA||__NONE__,1,False
+Master of Computer Applications||__NONE__,MCA Hons||__NONE__,1,False
+Master of Computer Applications||__NONE__,MCAHONS||__NONE__,1,False
+Master of Computer Applications||__NONE__,MCA||__NONE__,1,False
+Master of Engineering||__NONE__,DE M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,DE MEng||__NONE__,1,False
+Master of Engineering||__NONE__,German M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,German MEng||__NONE__,1,False
+Master of Engineering||__NONE__,Germany M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,Germany MEng||__NONE__,1,False
+Master of Engineering||__NONE__,IN M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,IN M Eng||__NONE__,1,False
+Master of Engineering||__NONE__,IN M E||__NONE__,1,False
+Master of Engineering||__NONE__,IN MEHONS||__NONE__,1,False
+Master of Engineering||__NONE__,IN MENGHONS||__NONE__,1,False
+Master of Engineering||__NONE__,IN ME||__NONE__,1,False
+Master of Engineering||__NONE__,India M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,India M Eng||__NONE__,1,False
+Master of Engineering||__NONE__,India M E||__NONE__,1,False
+Master of Engineering||__NONE__,India MEHONS||__NONE__,1,False
+Master of Engineering||__NONE__,India MENGHONS||__NONE__,1,False
+Master of Engineering||__NONE__,India MEng||__NONE__,1,False
+Master of Engineering||__NONE__,India ME||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M Eng||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M E||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MEHONS||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MENGHONS||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MEng||__NONE__,1,False
+Master of Engineering||__NONE__,Indian ME||__NONE__,1,False
+Master of Engineering||__NONE__,M Eng||__NONE__,1,False
+Master of Engineering||__NONE__,MEHONS||__NONE__,1,False
+Master of Engineering||__NONE__,UK M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,UK MENGHONS||__NONE__,1,False
+Master of Engineering||__NONE__,UK MEng Hons||__NONE__,1,False
+Master of Engineering||__NONE__,UK MEng||__NONE__,1,False
+Master of Engineering||__NONE__,US M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,US M E||__NONE__,1,False
+Master of Engineering||__NONE__,US MEng||__NONE__,1,False
+Master of Engineering||__NONE__,US ME||__NONE__,1,False
+Master of Engineering||__NONE__,United Kingdom M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,United Kingdom MENGHONS||__NONE__,1,False
+Master of Engineering||__NONE__,United Kingdom MEng Hons||__NONE__,1,False
+Master of Engineering||__NONE__,United Kingdom MEng||__NONE__,1,False
+Master of Engineering||__NONE__,United States M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,United States M E||__NONE__,1,False
+Master of Engineering||__NONE__,United States MEng||__NONE__,1,False
+Master of Engineering||__NONE__,United States ME||__NONE__,1,False
+Master of Fine Arts||__NONE__,M F A||__NONE__,1,False
+Master of Fine Arts||__NONE__,MFA||__NONE__,1,False
+Master of Fine Arts||__NONE__,US M F A||__NONE__,1,False
+Master of Fine Arts||__NONE__,US MFA||__NONE__,1,False
+Master of Fine Arts||__NONE__,US Master of Fine Arts||__NONE__,1,False
+Master of Fine Arts||__NONE__,United States M F A||__NONE__,1,False
+Master of Fine Arts||__NONE__,United States MFA||__NONE__,1,False
+Master of Fine Arts||__NONE__,ited States Master of Fine Arts||__NONE__,1,False
+Master of Laws||__NONE__,L L M||__NONE__,1,False
+Master of Laws||__NONE__,LLM||__NONE__,1,False
+Master of Laws||__NONE__,UK L L M||__NONE__,1,False
+Master of Laws||__NONE__,UK LLM||__NONE__,1,False
+Master of Laws||__NONE__,United Kingdom L L M||__NONE__,1,False
+Master of Laws||__NONE__,United Kingdom LLM||__NONE__,1,False
+Master of Laws||__NONE__,United Kingdom Master of Laws||__NONE__,1,False
+Master of Philosophy||__NONE__,M P H I L||__NONE__,1,False
+Master of Philosophy||__NONE__,MPhil||__NONE__,1,False
+Master of Philosophy||__NONE__,UK M P H I L||__NONE__,1,False
+Master of Philosophy||__NONE__,UK MPhil||__NONE__,1,False
+Master of Philosophy||__NONE__,United Kingdom M P H I L||__NONE__,1,False
+Master of Philosophy||__NONE__,United Kingdom MPhil||__NONE__,1,False
+Master of Philosophy||__NONE__,ed Kingdom Master of Philosophy||__NONE__,1,False
+Master of Public Administration||__NONE__,M P A||__NONE__,1,False
+Master of Public Administration||__NONE__,MPA||__NONE__,1,False
+Master of Public Administration||__NONE__,US M P A||__NONE__,1,False
+Master of Public Administration||__NONE__,US MPA||__NONE__,1,False
+Master of Public Administration||__NONE__,United States M P A||__NONE__,1,False
+Master of Public Administration||__NONE__,United States MPA||__NONE__,1,False
+Master of Public Health||__NONE__,M P H||__NONE__,1,False
+Master of Public Health||__NONE__,MPH||__NONE__,1,False
+Master of Public Health||__NONE__,States Master of Public Health||__NONE__,1,False
+Master of Public Health||__NONE__,US M P H||__NONE__,1,False
+Master of Public Health||__NONE__,US MPH||__NONE__,1,False
+Master of Public Health||__NONE__,US Master of Public Health||__NONE__,1,False
+Master of Public Health||__NONE__,United States M P H||__NONE__,1,False
+Master of Public Health||__NONE__,United States MPH||__NONE__,1,False
+Master of Research||__NONE__,M R E S||__NONE__,1,False
+Master of Research||__NONE__,MRes||__NONE__,1,False
+Master of Research||__NONE__,UK M R E S||__NONE__,1,False
+Master of Research||__NONE__,UK MRes||__NONE__,1,False
+Master of Research||__NONE__,UK Master of Research||__NONE__,1,False
+Master of Research||__NONE__,United Kingdom M R E S||__NONE__,1,False
+Master of Research||__NONE__,United Kingdom MRes||__NONE__,1,False
+Master of Research||__NONE__,ited Kingdom Master of Research||__NONE__,1,False
+Master of Science||__NONE__,IN M S C||__NONE__,1,False
+Master of Science||__NONE__,IN M Sc||__NONE__,1,False
+Master of Science||__NONE__,IN M S||__NONE__,1,False
+Master of Science||__NONE__,IN M. Sc Hons||__NONE__,1,False
+Master of Science||__NONE__,IN M.S. Hons||__NONE__,1,False
+Master of Science||__NONE__,IN MSCHONS||__NONE__,1,False
+Master of Science||__NONE__,IN MSC||__NONE__,1,False
+Master of Science||__NONE__,IN MSHONS||__NONE__,1,False
+Master of Science||__NONE__,IN ms||__NONE__,1,False
+Master of Science||__NONE__,India M S C||__NONE__,1,False
+Master of Science||__NONE__,India M Sc||__NONE__,1,False
+Master of Science||__NONE__,India M S||__NONE__,1,False
+Master of Science||__NONE__,India M. Sc Hons||__NONE__,1,False
+Master of Science||__NONE__,India M.S. Hons||__NONE__,1,False
+Master of Science||__NONE__,India MSCHONS||__NONE__,1,False
+Master of Science||__NONE__,India MSC||__NONE__,1,False
+Master of Science||__NONE__,India MSHONS||__NONE__,1,False
+Master of Science||__NONE__,India ms||__NONE__,1,False
+Master of Science||__NONE__,Indian M S C||__NONE__,1,False
+Master of Science||__NONE__,Indian M Sc||__NONE__,1,False
+Master of Science||__NONE__,Indian M S||__NONE__,1,False
+Master of Science||__NONE__,Indian M. Sc Hons||__NONE__,1,False
+Master of Science||__NONE__,Indian M.S. Hons||__NONE__,1,False
+Master of Science||__NONE__,Indian MSCHONS||__NONE__,1,False
+Master of Science||__NONE__,Indian MSC||__NONE__,1,False
+Master of Science||__NONE__,Indian MSHONS||__NONE__,1,False
+Master of Science||__NONE__,Indian ms||__NONE__,1,False
+Master of Science||__NONE__,M. Sc Hons||__NONE__,1,False
+Master of Science||__NONE__,M.S. Hons||__NONE__,1,False
+Master of Science||__NONE__,MSCHONS||__NONE__,1,False
+Master of Science||__NONE__,MSHONS||__NONE__,1,False
+Master of Science||__NONE__,S C M||__NONE__,1,False
+Master of Science||__NONE__,S M||__NONE__,1,False
+Master of Science||__NONE__,ScM||__NONE__,1,False
+Master of Science||__NONE__,UK M S C||__NONE__,1,False
+Master of Science||__NONE__,UK M Sc||__NONE__,1,False
+Master of Science||__NONE__,UK MSc||__NONE__,1,False
+Master of Science||__NONE__,US M S||__NONE__,1,False
+Master of Science||__NONE__,US MS||__NONE__,1,False
+Master of Science||__NONE__,US S C M||__NONE__,1,False
+Master of Science||__NONE__,US S M||__NONE__,1,False
+Master of Science||__NONE__,US SM||__NONE__,1,False
+Master of Science||__NONE__,US ScM||__NONE__,1,False
+Master of Science||__NONE__,United Kingdom M S C||__NONE__,1,False
+Master of Science||__NONE__,United Kingdom M Sc||__NONE__,1,False
+Master of Science||__NONE__,United Kingdom MSc||__NONE__,1,False
+Master of Science||__NONE__,United States M S||__NONE__,1,False
+Master of Science||__NONE__,United States MS||__NONE__,1,False
+Master of Science||__NONE__,United States S C M||__NONE__,1,False
+Master of Science||__NONE__,United States S M||__NONE__,1,False
+Master of Science||__NONE__,United States SM||__NONE__,1,False
+Master of Science||__NONE__,United States ScM||__NONE__,1,False
+Master of Social Work||__NONE__,M S W||__NONE__,1,False
+Master of Social Work||__NONE__,MSW||__NONE__,1,False
+Master of Social Work||__NONE__,US M S W||__NONE__,1,False
+Master of Social Work||__NONE__,US MSW||__NONE__,1,False
+Master of Social Work||__NONE__,US Master of Social Work||__NONE__,1,False
+Master of Social Work||__NONE__,United States M S W||__NONE__,1,False
+Master of Social Work||__NONE__,United States MSW||__NONE__,1,False
+Master of Social Work||__NONE__,ed States Master of Social Work||__NONE__,1,False
+Master of Technology||__NONE__,IN M T E C H||__NONE__,1,False
+Master of Technology||__NONE__,IN M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,IN MASTERENGG||__NONE__,1,False
+Master of Technology||__NONE__,IN MTECHHONS||__NONE__,1,False
+Master of Technology||__NONE__,IN MTECH||__NONE__,1,False
+Master of Technology||__NONE__,IN Master Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,IN Master Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,India M T E C H||__NONE__,1,False
+Master of Technology||__NONE__,India M Tech||__NONE__,1,False
+Master of Technology||__NONE__,India M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,India MASTERENGG||__NONE__,1,False
+Master of Technology||__NONE__,India MTECHHONS||__NONE__,1,False
+Master of Technology||__NONE__,India MTECH||__NONE__,1,False
+Master of Technology||__NONE__,India Master Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,India Master Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,India Master Engg||__NONE__,1,False
+Master of Technology||__NONE__,Indian M T E C H||__NONE__,1,False
+Master of Technology||__NONE__,Indian M Tech||__NONE__,1,False
+Master of Technology||__NONE__,Indian M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,Indian MASTERENGG||__NONE__,1,False
+Master of Technology||__NONE__,Indian MTECHHONS||__NONE__,1,False
+Master of Technology||__NONE__,Indian MTECH||__NONE__,1,False
+Master of Technology||__NONE__,Indian Master Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,Indian Master Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,Indian Master Engg||__NONE__,1,False
+Master of Technology||__NONE__,M T E C H||__NONE__,1,False
+Master of Technology||__NONE__,M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,MASTERENGG||__NONE__,1,False
+Master of Technology||__NONE__,MTECHHONS||__NONE__,1,False
+Master of Technology||__NONE__,MTECH||__NONE__,1,False
+Master of Technology||__NONE__,Master Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,Master Bachellor||__NONE__,1,False
+Master's Degree||__NONE__,JP Japanese Master||__NONE__,1,False
+Master's Degree||__NONE__,JP Shushi||__NONE__,1,False
+Master's Degree||__NONE__,Japan Japanese Master||__NONE__,1,False
+Master's Degree||__NONE__,Japan Shushi||__NONE__,1,False
+Master's Degree||__NONE__,Japanese Japanese Master||__NONE__,1,False
+Master's Degree||__NONE__,Japanese Master||__NONE__,1,False
+Master's Degree||__NONE__,Japanese Shushi||__NONE__,1,False
+Master's Degree||__NONE__,Shushi||__NONE__,1,False
+Master||__NONE__,FR French Master||__NONE__,1,False
+Master||__NONE__,FR Master||__NONE__,1,False
+Master||__NONE__,France French Master||__NONE__,1,False
+Master||__NONE__,France Master||__NONE__,1,False
+Master||__NONE__,French French Master||__NONE__,1,False
+Master||__NONE__,French Master||__NONE__,1,False
+Mestrado||__NONE__,BR Brazilian Masters||__NONE__,1,False
+Mestrado||__NONE__,BR M S C||__NONE__,1,False
+Mestrado||__NONE__,BR M Sc||__NONE__,1,False
+Mestrado||__NONE__,BR MSc||__NONE__,1,False
+Mestrado||__NONE__,BR Mestrado||__NONE__,1,False
+Mestrado||__NONE__,Brazil Brazilian Masters||__NONE__,1,False
+Mestrado||__NONE__,Brazil M S C||__NONE__,1,False
+Mestrado||__NONE__,Brazil M Sc||__NONE__,1,False
+Mestrado||__NONE__,Brazil MSc||__NONE__,1,False
+Mestrado||__NONE__,Brazil Mestrado||__NONE__,1,False
+Mestrado||__NONE__,Brazilian Brazilian Masters||__NONE__,1,False
+Mestrado||__NONE__,Brazilian M S C||__NONE__,1,False
+Mestrado||__NONE__,Brazilian M Sc||__NONE__,1,False
+Mestrado||__NONE__,Brazilian MSc||__NONE__,1,False
+Mestrado||__NONE__,Brazilian Masters||__NONE__,1,False
+Mestrado||__NONE__,Brazilian Mestrado||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D B A||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D I P||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGD Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBAHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBMHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDIPHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGD||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D B A||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D I P||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P.G.D.I.P.||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PG DIP||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PG Diploma Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PG Diploma||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGD Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBAHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBMHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBM||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDIPHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGD||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India pgdba||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D B A||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D I P||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P.G.D.I.P.||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PG DIP||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PG Diploma Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PG Diploma||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGD Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBAHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBMHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBM||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDIPHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGD||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian pgdba||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D B A||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGD Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBAHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBMHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDIPHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGD||__NONE__,1,False
+Postgraduate Certificate||__NONE__,PG Cert||__NONE__,1,False
+Postgraduate Certificate||__NONE__,PGCert||__NONE__,1,False
+Postgraduate Certificate||__NONE__,UK PG Cert||__NONE__,1,False
+Postgraduate Certificate||__NONE__,UK PGCert||__NONE__,1,False
+Postgraduate Certificate||__NONE__,UK Postgraduate Certificate||__NONE__,1,False
+Postgraduate Certificate||__NONE__,United Kingdom PG Cert||__NONE__,1,False
+Postgraduate Certificate||__NONE__,United Kingdom PGCert||__NONE__,1,False
+Postgraduate Certificate||__NONE__,ingdom Postgraduate Certificate||__NONE__,1,False
+Postgraduate Diploma||__NONE__,UK P G D I P||__NONE__,1,False
+Postgraduate Diploma||__NONE__,United Kingdom P G D I P||__NONE__,1,False
+Postgraduate Diploma||__NONE__,United Kingdom PG Dip||__NONE__,1,False
+Postgraduate Diploma||__NONE__,United Kingdom PGDip||__NONE__,1,False
+Postgraduate Diploma||__NONE__,ed Kingdom Postgraduate Diploma||__NONE__,1,False
+Short Cycle Qualification||__NONE__,Area Short Cycle Qualification||__NONE__,1,False
+Short Cycle Qualification||__NONE__,Bologna Bologna Short Cycle||__NONE__,1,False
+Short Cycle Qualification||__NONE__,Bologna S C Q F||__NONE__,1,False
+Short Cycle Qualification||__NONE__,Bologna SCQF||__NONE__,1,False
+Short Cycle Qualification||__NONE__,Bologna Short Cycle||__NONE__,1,False
+Short Cycle Qualification||__NONE__,EU Bologna Short Cycle||__NONE__,1,False
+Short Cycle Qualification||__NONE__,EU S C Q F||__NONE__,1,False
+Short Cycle Qualification||__NONE__,EU SCQF||__NONE__,1,False
+Short Cycle Qualification||__NONE__,EU Short Cycle Qualification||__NONE__,1,False
+Short Cycle Qualification||__NONE__,S C Q F||__NONE__,1,False
+Short Cycle Qualification||__NONE__,SCQF||__NONE__,1,False
+Short Cycle Qualification||__NONE__,cation Area Bologna Short Cycle||__NONE__,1,False
+Short Cycle Qualification||__NONE__,logna Short Cycle Qualification||__NONE__,1,False
+Short Cycle Qualification||__NONE__,n Higher Education Area S C Q F||__NONE__,1,False
+Short Cycle Qualification||__NONE__,pean Higher Education Area SCQF||__NONE__,1,False
+Staatsexamen||__NONE__,DE S T E X||__NONE__,1,False
+Staatsexamen||__NONE__,DE StEx||__NONE__,1,False
+Staatsexamen||__NONE__,DE Staatsexamen||__NONE__,1,False
+Staatsexamen||__NONE__,DE State Examination||__NONE__,1,False
+Staatsexamen||__NONE__,German S T E X||__NONE__,1,False
+Staatsexamen||__NONE__,German StEx||__NONE__,1,False
+Staatsexamen||__NONE__,German Staatsexamen||__NONE__,1,False
+Staatsexamen||__NONE__,German State Examination||__NONE__,1,False
+Staatsexamen||__NONE__,Germany S T E X||__NONE__,1,False
+Staatsexamen||__NONE__,Germany StEx||__NONE__,1,False
+Staatsexamen||__NONE__,Germany Staatsexamen||__NONE__,1,False
+Staatsexamen||__NONE__,Germany State Examination||__NONE__,1,False
+Staatsexamen||__NONE__,S T E X||__NONE__,1,False
+Staatsexamen||__NONE__,StEx||__NONE__,1,False
+Staatsexamen||__NONE__,State Examination||__NONE__,1,False
+Tecnologo||__NONE__,BR Tecnologo||__NONE__,1,False
+Tecnologo||__NONE__,Brazil Tecnologo||__NONE__,1,False
+Tecnologo||__NONE__,Brazilian Tecnologo||__NONE__,1,False
+Titulo de Grado||__NONE__,ES G R A D O||__NONE__,1,False
+Titulo de Grado||__NONE__,ES Grado||__NONE__,1,False
+Titulo de Grado||__NONE__,ES Titulo de Grado||__NONE__,1,False
+Titulo de Grado||__NONE__,G R A D O||__NONE__,1,False
+Titulo de Grado||__NONE__,Grado||__NONE__,1,False
+Titulo de Grado||__NONE__,Spain G R A D O||__NONE__,1,False
+Titulo de Grado||__NONE__,Spain Grado||__NONE__,1,False
+Titulo de Grado||__NONE__,Spain Titulo de Grado||__NONE__,1,False
+Titulo de Grado||__NONE__,Spanish G R A D O||__NONE__,1,False
+Titulo de Grado||__NONE__,Spanish Grado||__NONE__,1,False
+Titulo de Grado||__NONE__,Spanish Titulo de Grado||__NONE__,1,False
+WO Bachelor||__NONE__,Bachelor of Commerce||__NONE__,1,False
+WO Bachelor||__NONE__,Bachelor of Engineering||__NONE__,1,False
+WO Bachelor||__NONE__,Dutch W O B||__NONE__,1,False
+WO Bachelor||__NONE__,Dutch W.O.B.||__NONE__,1,False
+WO Bachelor||__NONE__,Dutch WO Bachelor||__NONE__,1,False
+WO Bachelor||__NONE__,Dutch WO B||__NONE__,1,False
+WO Bachelor||__NONE__,Dutch WOBACHELOR||__NONE__,1,False
+WO Bachelor||__NONE__,NL Research University Bachelor||__NONE__,1,False
+WO Bachelor||__NONE__,NL W O B||__NONE__,1,False
+WO Bachelor||__NONE__,NL W.O.B.||__NONE__,1,False
+WO Bachelor||__NONE__,NL WO B||__NONE__,1,False
+WO Bachelor||__NONE__,NL WOBACHELOR||__NONE__,1,False
+WO Bachelor||__NONE__,Netherlands W O B||__NONE__,1,False
+WO Bachelor||__NONE__,Netherlands W.O.B.||__NONE__,1,False
+WO Bachelor||__NONE__,Netherlands WO Bachelor||__NONE__,1,False
+WO Bachelor||__NONE__,Netherlands WO B||__NONE__,1,False
+WO Bachelor||__NONE__,Netherlands WOBACHELOR||__NONE__,1,False
+WO Bachelor||__NONE__,Research University Bachelor||__NONE__,1,False
+WO Bachelor||__NONE__,W O B||__NONE__,1,False
+WO Bachelor||__NONE__,W.O.B.||__NONE__,1,False
+WO Bachelor||__NONE__,WO B||__NONE__,1,False
+WO Bachelor||__NONE__,WOBACHELOR||__NONE__,1,False
+WO Bachelor||__NONE__,ch Research University Bachelor||__NONE__,1,False
+WO Bachelor||__NONE__,ds Research University Bachelor||__NONE__,1,False
+WO Master||__NONE__,Dutch W O M||__NONE__,1,False
+WO Master||__NONE__,Dutch W.O.M.||__NONE__,1,False
+WO Master||__NONE__,Dutch WO Master||__NONE__,1,False
+WO Master||__NONE__,Dutch WO M||__NONE__,1,False
+WO Master||__NONE__,Dutch WOMASTER||__NONE__,1,False
+WO Master||__NONE__,Master of Commerce||__NONE__,1,False
+WO Master||__NONE__,NL Research University Master||__NONE__,1,False
+WO Master||__NONE__,NL W O M||__NONE__,1,False
+WO Master||__NONE__,NL W.O.M.||__NONE__,1,False
+WO Master||__NONE__,NL WO Master||__NONE__,1,False
+WO Master||__NONE__,NL WO M||__NONE__,1,False
+WO Master||__NONE__,NL WOMASTER||__NONE__,1,False
+WO Master||__NONE__,Netherlands W O M||__NONE__,1,False
+WO Master||__NONE__,Netherlands W.O.M.||__NONE__,1,False
+WO Master||__NONE__,Netherlands WO Master||__NONE__,1,False
+WO Master||__NONE__,Netherlands WO M||__NONE__,1,False
+WO Master||__NONE__,Netherlands WOMASTER||__NONE__,1,False
+WO Master||__NONE__,Research University Master||__NONE__,1,False
+WO Master||__NONE__,W O M||__NONE__,1,False
+WO Master||__NONE__,W.O.M.||__NONE__,1,False
+WO Master||__NONE__,WO M||__NONE__,1,False
+WO Master||__NONE__,WOMASTER||__NONE__,1,False
+WO Master||__NONE__,ands Research University Master||__NONE__,1,False
+WO Master||__NONE__,utch Research University Master||__NONE__,1,False
+Zhuanke Diploma||__NONE__,CN College Diploma China||__NONE__,1,False
+Zhuanke Diploma||__NONE__,CN Zhuanke Diploma||__NONE__,1,False
+Zhuanke Diploma||__NONE__,CN Zhuanke||__NONE__,1,False
+Zhuanke Diploma||__NONE__,China College Diploma China||__NONE__,1,False
+Zhuanke Diploma||__NONE__,China Zhuanke Diploma||__NONE__,1,False
+Zhuanke Diploma||__NONE__,China Zhuanke||__NONE__,1,False
+Zhuanke Diploma||__NONE__,Chinese College Diploma China||__NONE__,1,False
+Zhuanke Diploma||__NONE__,Chinese Zhuanke Diploma||__NONE__,1,False
+Zhuanke Diploma||__NONE__,Chinese Zhuanke||__NONE__,1,False
+Zhuanke Diploma||__NONE__,College Diploma China||__NONE__,1,False
+Zhuanke Diploma||__NONE__,Zhuanke||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Bachelor of Engineering||__NONE__,493,True
+Bachelor of Technology||__NONE__,Bachelor of Technology||__NONE__,449,True
+Post Graduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,356,True
+12th Standard||__NONE__,12th Standard||__NONE__,278,True
+Bachelor of Commerce||__NONE__,Bachelor of Commerce||__NONE__,251,True
+Bachelor of Science||__NONE__,Bachelor of Science||__NONE__,243,True
+10th Standard||__NONE__,10th Standard||__NONE__,228,True
+Bachelor of Arts||__NONE__,Bachelor of Arts||__NONE__,221,True
+Master of Engineering||__NONE__,Master of Engineering||__NONE__,213,True
+Doctor of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,204,True
+Diploma in Engineering||__NONE__,Diploma in Engineering||__NONE__,177,True
+Bachelor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,176,True
+Master of Science||__NONE__,Master of Science||__NONE__,170,True
+Bachelor of Computer Applications||__NONE__,Bachelor of Computer Applications||__NONE__,150,True
+Master of Business Administration||__NONE__,Master of Business Administration||__NONE__,148,True
+Master of Technology||__NONE__,Master of Technology||__NONE__,148,True
+Master of Commerce||__NONE__,Master of Commerce||__NONE__,136,True
+Master of Arts||__NONE__,Master of Arts||__NONE__,125,True
+Master of Computer Applications||__NONE__,Master of Computer Applications||__NONE__,120,True
+Diplom||__NONE__,Diplom||__NONE__,5,True
+Brevet de Technicien Superieur||__NONE__,Brevet de Technicien Superieur||__NONE__,4,True
+Laurea Magistrale a Ciclo Unico||__NONE__,Laurea Magistrale a Ciclo Unico||__NONE__,4,True
+Associate of Applied Science||__NONE__,Associate of Applied Science||__NONE__,1,True
+Associate of Arts||__NONE__,Associate of Arts||__NONE__,1,True
+Bacharelado||__NONE__,Bacharelado||__NONE__,1,True
+Bachelor of Social Work||__NONE__,Bachelor of Social Work||__NONE__,1,True
+Doctor of Medicine||__NONE__,Doctor of Medicine||__NONE__,1,True
+Doctor of Nursing Practice||__NONE__,Doctor of Nursing Practice||__NONE__,1,True
+Doctor of Pharmacy||__NONE__,Doctor of Pharmacy||__NONE__,1,True
+Doctor of Psychology||__NONE__,Doctor of Psychology||__NONE__,1,True
+Doctorado||__NONE__,Doctorado||__NONE__,1,True
+Doctorat||__NONE__,Doctorat||__NONE__,1,True
+Dottorato di Ricerca||__NONE__,Dottorato di Ricerca||__NONE__,1,True
+Doutorado||__NONE__,Doutorado||__NONE__,1,True
+Especializacao||__NONE__,Especializacao||__NONE__,1,True
+HBO Master||__NONE__,HBO Master||__NONE__,1,True
+Juris Doctor||__NONE__,Juris Doctor||__NONE__,1,True
+Laurea Magistrale||__NONE__,Laurea Magistrale||__NONE__,1,True
+Laurea Triennale||__NONE__,Laurea Triennale||__NONE__,1,True
+Licence Professionnelle||__NONE__,Licence Professionnelle||__NONE__,1,True
+Licence||__NONE__,Licence||__NONE__,1,True
+Licenciatura||__NONE__,Licenciatura||__NONE__,1,True
+Magister Artium||__NONE__,Magister Artium||__NONE__,1,True
+Master Universitario||__NONE__,Master Universitario||__NONE__,1,True
+Master of Public Administration||__NONE__,Master of Public Administration||__NONE__,1,True
+Master of Public Health||__NONE__,Master of Public Health||__NONE__,1,True
+Master of Research||__NONE__,Master of Research||__NONE__,1,True
+Master of Social Work||__NONE__,Master of Social Work||__NONE__,1,True
+Mestrado||__NONE__,Mestrado||__NONE__,1,True
+Postgraduate Certificate||__NONE__,Postgraduate Certificate||__NONE__,1,True
+Short Cycle Qualification||__NONE__,Short Cycle Qualification||__NONE__,1,True
+Staatsexamen||__NONE__,Staatsexamen||__NONE__,1,True
+Tecnologo||__NONE__,Tecnologo||__NONE__,1,True
+Titulo de Grado||__NONE__,Titulo de Grado||__NONE__,1,True
+Zhuanke Diploma||__NONE__,Zhuanke Diploma||__NONE__,1,True

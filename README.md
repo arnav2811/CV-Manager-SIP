@@ -86,9 +86,10 @@ cv_manager_sip/
 │   ├── cleaned_eval_indian_usa.csv   # Degree-only India + USA evaluation dataset
 │   ├── cleaned_eval_indian_uk.csv    # Degree-only India + UK evaluation dataset
 │   ├── cleaned_eval_indian_world.csv # Degree-only India + world evaluation dataset
-│   ├── evaluation_summary.csv        # F1 precision/recall summary
+│   ├── evaluation_summary.csv        # F1, accuracy, TP/FP/FN, latency summary
 │   ├── layer*_failures.csv           # Failure outputs for debugging
 │   ├── indian_*_failures.csv         # International failure outputs
+│   ├── *_confusion.csv               # Degree, field, and pair confusion matrices
 │   └── *.md                          # Metrics, mapping, ambiguity, and scope notes
 │
 ├── poc/
@@ -181,7 +182,7 @@ python engine_orchestrator.py     # Full 3-layer master orchestrator
 
 ### 4. Run F1 scoring
 
-The F1 scoring workflow prepares cleaned evaluation datasets, runs precision/recall/F1 across the layer and international datasets, and writes updated outputs under `evaluation/`.
+The F1 scoring workflow prepares cleaned evaluation datasets, runs precision/recall/F1 across the layer and international datasets, and writes updated outputs under `evaluation/`. It also records accuracy, TP/FP/FN counts, resolution rate, average latency, and confusion matrix CSVs.
 
 ```bash
 python poc/prepare_f1_datasets.py
@@ -254,7 +255,7 @@ Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292
 
 ### F1 Evaluation Outputs (v3.6.0 — `evaluation/`)
 
-The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only international datasets. International datasets are degree-only, so field F1 is marked `N/A`.
+The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only international datasets. International datasets are degree-only, so field F1 is marked `N/A`. The summary also includes accuracy, TP/FP/FN counts, resolution rate, average latency, and per-dataset confusion CSVs.
 
 | Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
 |---------|----------:|---------:|---------------------:|

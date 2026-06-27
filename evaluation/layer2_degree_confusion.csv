@@ -1,0 +1,77 @@
+expected_label,predicted_label,count,is_correct
+Post Graduate Diploma,Diploma in Engineering,404,False
+Bachelor of Science,,324,False
+Bachelor of Business Administration,,250,False
+Diploma in Engineering,Post Graduate Diploma,213,False
+Master of Business Administration,Master of Science,152,False
+Doctor of Philosophy,,126,False
+Bachelor of Business Administration,Bachelor of Science,125,False
+Master of Science,,66,False
+Master of Business Administration,,50,False
+Master of Computer Applications,Master of Science,50,False
+Bachelor of Computer Applications,,45,False
+Bachelor of Computer Applications,Bachelor of Science,38,False
+Master of Technology,,19,False
+Master of Arts,,12,False
+Bachelor of Computer Applications,Bachelor of Engineering,11,False
+Master of Computer Applications,Bachelor of Engineering,11,False
+Master of Computer Applications,,10,False
+Bachelor of Technology,Bachelor of Engineering,8,False
+12th Standard,,7,False
+Master of Commerce,,7,False
+10th Standard,,6,False
+Bachelor of Engineering,Master of Engineering,6,False
+Bachelor of Technology,,5,False
+Bachelor of Technology,Master of Engineering,5,False
+Diploma in Engineering,,5,False
+Master of Technology,Master of Engineering,5,False
+10th Standard,Master of Arts,4,False
+Master of Engineering,,4,False
+Bachelor of Business Administration,Bachelor of Arts,3,False
+Bachelor of Technology,Master of Technology,3,False
+Post Graduate Diploma,,3,False
+Bachelor of Arts,Bachelor of Computer Applications,2,False
+Bachelor of Computer Applications,Bachelor of Arts,2,False
+Bachelor of Computer Applications,Bachelor of Commerce,2,False
+Bachelor of Engineering,Bachelor of Technology,2,False
+Bachelor of Engineering,Diploma in Engineering,2,False
+Bachelor of Engineering,Master of Technology,2,False
+Bachelor of Technology,Diploma in Engineering,2,False
+Master of Business Administration,Master of Arts,2,False
+Master of Business Administration,Master of Commerce,2,False
+Master of Computer Applications,Master of Arts,2,False
+Bachelor of Arts,,1,False
+Bachelor of Arts,Bachelor of Engineering,1,False
+Bachelor of Commerce,Bachelor of Arts,1,False
+Bachelor of Engineering,,1,False
+Bachelor of Science,Bachelor of Arts,1,False
+Bachelor of Science,Bachelor of Engineering,1,False
+Bachelor of Science,Diploma in Engineering,1,False
+Master of Arts,Master of Computer Applications,1,False
+Master of Business Administration,Bachelor of Arts,1,False
+Master of Commerce,Master of Arts,1,False
+Master of Computer Applications,Bachelor of Science,1,False
+Master of Computer Applications,Master of Commerce,1,False
+Master of Engineering,Master of Arts,1,False
+Master of Science,Master of Arts,1,False
+Master of Technology,Bachelor of Commerce,1,False
+Master of Technology,Master of Arts,1,False
+Diploma in Engineering,Diploma in Engineering,739,True
+Master of Science,Master of Science,579,True
+Bachelor of Technology,Bachelor of Technology,560,True
+Doctor of Philosophy,Doctor of Philosophy,540,True
+Bachelor of Engineering,Bachelor of Engineering,492,True
+Bachelor of Science,Bachelor of Science,487,True
+Master of Technology,Master of Technology,465,True
+Master of Engineering,Master of Engineering,444,True
+Master of Business Administration,Master of Business Administration,341,True
+Bachelor of Business Administration,Bachelor of Business Administration,286,True
+Post Graduate Diploma,Post Graduate Diploma,277,True
+Master of Computer Applications,Master of Computer Applications,83,True
+Bachelor of Computer Applications,Bachelor of Computer Applications,81,True
+Bachelor of Commerce,Bachelor of Commerce,77,True
+12th Standard,12th Standard,60,True
+10th Standard,10th Standard,58,True
+Master of Commerce,Master of Commerce,53,True
+Bachelor of Arts,Bachelor of Arts,35,True
+Master of Arts,Master of Arts,19,True

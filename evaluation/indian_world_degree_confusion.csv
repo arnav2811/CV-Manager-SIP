@@ -1,0 +1,1676 @@
+expected_label,predicted_label,count,is_correct
+Bachelor of Engineering,,292,False
+Bachelor of Arts,,233,False
+Doctor of Philosophy,,228,False
+12th Standard,,226,False
+Doctoral Degree,,211,False
+Post Graduate Diploma,,192,False
+Master of Engineering,,188,False
+Bachelor of Science,,179,False
+Advanced Diploma,,160,False
+Bachelor of Commerce,,160,False
+Master of Science,,157,False
+HBO Bachelor,,153,False
+WO Bachelor,,153,False
+10th Standard,,152,False
+Master of Arts,,147,False
+Bachelor of Technology,,133,False
+Bachelor Degree,,123,False
+Foundation Degree,,122,False
+Bachelor of Technology,Bachelor of Engineering,119,False
+Master of Business Administration,,116,False
+WO Master,,116,False
+Laurea Triennale,,113,False
+Licence Professionnelle,,113,False
+Bachelor of Medicine Bachelor of Surgery,Bachelor of Medicine and Bachelor of Surgery,111,False
+Master of Technology,,110,False
+Bachelor of Medicine Bachelor of Surgery,,104,False
+HBO Master,,104,False
+Master Degree,,100,False
+Advanced Level,,97,False
+Higher Certificate,,96,False
+Doutorado,,93,False
+Doctorado,,91,False
+Doctorat,,87,False
+Dottorato di Ricerca,,87,False
+Bacharelado,,84,False
+Licenciatura,,84,False
+Titulo de Grado,,84,False
+Bachelor of Business Administration,,82,False
+Laurea Magistrale,,81,False
+Especializacao,,80,False
+Ontario Secondary School Diploma,,80,False
+Bachelor Honours Degree,,79,False
+Bachelor's Degree,,79,False
+Juris Doctor,,76,False
+Master of Technology,Master of Engineering,76,False
+Senior Secondary Certificate of Education,,76,False
+General Certificate of Secondary Education,,75,False
+Bachelor of Computer Applications,,74,False
+Doctor of Education,,72,False
+Mestrado,,69,False
+Ensino Medio,,68,False
+VWO Diploma,,68,False
+Bachelor of Music,,66,False
+Bachelor of Laws,,64,False
+Certificate III,,64,False
+Certificate IV,,64,False
+National Senior Certificate,,64,False
+Staatsexamen,,64,False
+Short Cycle Qualification,,63,False
+Diplome d'Ingenieur,,62,False
+GCE Ordinary Level,,60,False
+Laurea Magistrale a Ciclo Unico,,60,False
+National Certificate of Educational Achievement Level 3,,60,False
+Zhuanke Diploma,,60,False
+High School Diploma,,58,False
+Diploma of Higher Education,,56,False
+Doctoral Degree,Doctor of Philosophy,56,False
+Master's Degree,,56,False
+Bachelor of Technology,Master of Technology,55,False
+Master of Commerce,,54,False
+Associate of Applied Science,,52,False
+Baccalaureat,,52,False
+Brevet de Technicien Superieur,,52,False
+GCE Advanced Level,,52,False
+Honours Degree,,51,False
+New Zealand Diploma,,51,False
+Magister Artium,,50,False
+Master Universitario,,50,False
+Associate of Arts,,49,False
+Licence,,49,False
+Bachelor of Social Work,,48,False
+General Educational Development,,48,False
+College Diploma,,47,False
+Master of Computer Applications,,46,False
+Certificate of Higher Education,,45,False
+Diplom,,45,False
+Diploma di Maturita,,45,False
+Higher National Certificate,,45,False
+Higher National Diploma,,45,False
+Postgraduate Certificate,,45,False
+Bachelor of Science,Bachelor of Business Administration,44,False
+Master of Science,Master of Business Administration,44,False
+Bachelor of Architecture,,43,False
+Bachelor of Fine Arts,,43,False
+Doctor of Medicine,,42,False
+Associate of Science,,41,False
+Doctor of Nursing Practice,,41,False
+Master of Public Health,,41,False
+Graduate Certificate,,40,False
+Doctor of Psychology,,37,False
+Master of Laws,,37,False
+Master of Research,,37,False
+Bachelor of Fine Arts,Bachelor of Arts,35,False
+Bachelor of Engineering,Master of Engineering,34,False
+Master of Applied Science,,34,False
+Graduate Diploma,,33,False
+Abitur,,32,False
+Bachelor of Engineering,Master of Technology,32,False
+Bachillerato,,32,False
+Doctor of Business Administration,,32,False
+Postgraduate Diploma,,32,False
+Polytechnic Diploma,,31,False
+Bachelor Degree,Bachelor of Science,30,False
+Doctor of Dental Surgery,,29,False
+Master,,29,False
+Master of Fine Arts,,29,False
+Master of Philosophy,,29,False
+Master of Public Administration,,29,False
+Master of Social Work,,29,False
+Diploma in Engineering,,26,False
+Postgraduate Diploma,Post Graduate Diploma,26,False
+Bachelor of Science,Bachelor of Dental Surgery,25,False
+Graduate Diploma,Post Graduate Diploma,25,False
+Foundation Degree,Foundation,24,False
+Foundation Degree,UK Foundation,24,False
+Foundation Degree,United Kingdom Foundation,24,False
+Associate of Science,Master of Science,22,False
+Bachelor of Technology,Diploma in Engineering,22,False
+Diplome d'Ingenieur,Diploma in Engineering,22,False
+Master of Applied Science,Master of Science,22,False
+Bachelor of Engineering,Bachelor of Technology,21,False
+Associate Degree,,20,False
+Bachelor of Engineering,Diploma in Engineering,20,False
+Bachelor of Music,Bachelor of Medicine and Bachelor of Surgery,20,False
+Tecnologo,,20,False
+Bachelor of Business Administration,Bachelor of Engineering,18,False
+Doctor of Dental Surgery,Bachelor of Dental Surgery,18,False
+Doctor of Pharmacy,,18,False
+Master of Engineering,Bachelor of Engineering,18,False
+Master of Philosophy,Doctor of Philosophy,18,False
+Diploma in Engineering,Post Graduate Diploma,17,False
+12th Standard,Bachelor of Science,16,False
+Doctor of Business Administration,Bachelor of Engineering,16,False
+Doctorat,Doctor of Philosophy,16,False
+Dottorato di Ricerca,Doctor of Philosophy,16,False
+Master Degree,Master of Science,16,False
+Master of Business Administration,Bachelor of Arts,16,False
+Master of Science,Bachelor of Science,16,False
+Master of Social Work,Master of Science,16,False
+Polytechnic Diploma,Post Graduate Diploma,16,False
+Bachelor of Arts,Bachelor of Computer Applications,15,False
+Bachelor of Social Work,Bachelor of Science,15,False
+Master of Business Administration,Bachelor of Engineering,15,False
+Doutorado,Doctor of Philosophy,14,False
+Master of Fine Arts,Master of Arts,13,False
+Bachelor of Architecture,Bachelor of Arts,12,False
+Bachelor of Technology,Master of Engineering,12,False
+Doctor of Business Administration,Master of Business Administration,12,False
+Doctor of Pharmacy,Bachelor of Pharmacy,12,False
+Doctorado,Doctor of Philosophy,12,False
+General Educational Development,Post Graduate Diploma,12,False
+Master of Science,Bachelor of Medicine and Bachelor of Surgery,12,False
+VWO Diploma,Post Graduate Diploma,12,False
+Bachelor of Commerce,Bachelor of Medicine and Bachelor of Surgery,11,False
+Graduate Diploma,Australia,11,False
+Graduate Diploma,Australian,11,False
+Mestrado,Bachelor of Medicine and Bachelor of Surgery,11,False
+Bachelor Degree,Bachelor of Computer Applications,10,False
+Bachelor of Architecture,Bachelor of Computer Applications,10,False
+Bachelor of Business Administration,Bachelor of Arts,10,False
+Bachelor of Computer Applications,Bachelor of Arts,10,False
+Bachelor of Laws,Bachelor of Dental Surgery,10,False
+Bachelor of Laws,Bachelor of Technology,10,False
+Bachelor of Music,Bachelor of Science,10,False
+Graduate Certificate,Australia,10,False
+Graduate Certificate,Australian,10,False
+HBO Bachelor,Bachelor of Science,10,False
+Master of Laws,Master of Arts,10,False
+Master of Public Administration,Master of Technology,10,False
+Mestrado,Master of Science,10,False
+WO Bachelor,Bachelor of Technology,10,False
+Doctoral Degree,Doctoral,9,False
+Ensino Medio,Master of Engineering,9,False
+10th Standard,Bachelor of Engineering,8,False
+10th Standard,Bachelor of Science,8,False
+Associate of Applied Science,Master of Science,8,False
+Associate of Arts,Master of Arts,8,False
+Bachelor Degree,Bologna Bachelor,8,False
+Bachelor Degree,Bologna First Cycle,8,False
+Bachelor Degree,CN Bachelor,8,False
+Bachelor Degree,China Bachelor,8,False
+Bachelor Degree,Chinese Bachelor,8,False
+Bachelor Degree,EU Bachelor,8,False
+Bachelor Degree,EU First Cycle,8,False
+Bachelor Degree,First Cycle,8,False
+Bachelor Degree,Higher Education Area Bachelor,8,False
+Bachelor Degree,gher Education Area First Cycle,8,False
+Bachelor Honours Degree,AU Bachelor Honours,8,False
+Bachelor Honours Degree,Australia Bachelor Honours,8,False
+Bachelor Honours Degree,Australian Bachelor Honours,8,False
+Brevet de Technicien Superieur,Bachelor of Business Administration,8,False
+College Diploma,Diploma in Engineering,8,False
+Doctor of Psychology,Doctor of Philosophy,8,False
+HBO Master,Bachelor of Medicine and Bachelor of Surgery,8,False
+High School Diploma,Post Graduate Diploma,8,False
+Licenciatura,BR Teaching,8,False
+Licenciatura,Brazil Teaching,8,False
+Licenciatura,Brazilian Teaching,8,False
+Licenciatura,Teaching,8,False
+Master of Arts,Bachelor of Arts,8,False
+Master of Arts,Master of Science,8,False
+Master of Commerce,Bachelor of Commerce,8,False
+Master of Computer Applications,Bachelor of Arts,8,False
+Master of Public Administration,Master of Arts,8,False
+Master of Technology,Bachelor of Commerce,8,False
+Master of Technology,Bachelor of Technology,8,False
+Polytechnic Diploma,Diploma in Engineering,8,False
+Post Graduate Diploma,Bachelor of Arts,8,False
+Post Graduate Diploma,Bachelor of Medicine and Bachelor of Surgery,8,False
+Titulo de Grado,ES Spanish Bachelor,8,False
+Titulo de Grado,Spain Spanish Bachelor,8,False
+Titulo de Grado,Spanish Bachelor,8,False
+Titulo de Grado,Spanish Spanish Bachelor,8,False
+Bachelor Honours Degree,Bachelor Honours,7,False
+Master of Science,Master of Engineering,7,False
+Associate Degree,Associate,6,False
+Associate Degree,JP Associate,6,False
+Associate Degree,JP Junior College Associate,6,False
+Associate Degree,Japan Associate,6,False
+Associate Degree,Japan Junior College Associate,6,False
+Associate Degree,Japanese Associate,6,False
+Associate Degree,Junior College Associate,6,False
+Associate Degree,panese Junior College Associate,6,False
+Baccalaureat,Bachelor of Computer Applications,6,False
+Bachelor Degree,Bachelor of Engineering,6,False
+Bachelor's Degree,Bachelor of Engineering,6,False
+Doctoral Degree,AU Doctoral,6,False
+Doctoral Degree,Australia Doctoral,6,False
+Doctoral Degree,Australian Doctoral,6,False
+Doctoral Degree,Bologna Doctoral,6,False
+Doctoral Degree,Bologna Third Cycle,6,False
+Doctoral Degree,CN Doctoral,6,False
+Doctoral Degree,China Doctoral,6,False
+Doctoral Degree,Chinese Doctoral,6,False
+Doctoral Degree,EU Doctoral,6,False
+Doctoral Degree,EU Third Cycle,6,False
+Doctoral Degree,Higher Education Area Doctoral,6,False
+Doctoral Degree,JP Doctoral,6,False
+Doctoral Degree,Japan Doctoral,6,False
+Doctoral Degree,Japanese Doctoral,6,False
+Doctoral Degree,Third Cycle,6,False
+Doctoral Degree,gher Education Area Third Cycle,6,False
+Honours Degree,Honours,6,False
+Honours Degree,South Africa Honours,6,False
+Honours Degree,South African Honours,6,False
+Honours Degree,ZA Honours,6,False
+Laurea Magistrale a Ciclo Unico,IT Single Cycle,6,False
+Laurea Magistrale a Ciclo Unico,Italian Single Cycle,6,False
+Laurea Magistrale a Ciclo Unico,Italy Single Cycle,6,False
+Laurea Magistrale a Ciclo Unico,Single Cycle,6,False
+Master Degree,Bologna Master,6,False
+Master Degree,Bologna Second Cycle,6,False
+Master Degree,CN Master,6,False
+Master Degree,China Master,6,False
+Master Degree,Chinese Master,6,False
+Master Degree,EU Master,6,False
+Master Degree,EU Second Cycle,6,False
+Master Degree,Master,6,False
+Master Degree,Second Cycle,6,False
+Master Degree,an Higher Education Area Master,6,False
+Master Degree,her Education Area Second Cycle,6,False
+New Zealand Diploma,Post Graduate Diploma,6,False
+Tecnologo,BR Technology,6,False
+Tecnologo,Brazil Technology,6,False
+Tecnologo,Brazilian Technology,6,False
+Tecnologo,Technology,6,False
+Bachelor Degree,Bachelor of Technology,5,False
+Bachelor Honours Degree,Bachelor of Engineering,5,False
+Bachelor of Arts,Bachelor of Science,5,False
+Bachelor of Business Administration,Bachelor of Technology,5,False
+Bachelor of Fine Arts,Bachelor of Business Administration,5,False
+Bachelor of Fine Arts,Bachelor of Computer Applications,5,False
+Bachelor of Music,Bachelor of Commerce,5,False
+Bachelor of Music,Master of Business Administration,5,False
+Bachelor of Science,Bachelor of Engineering,5,False
+Bachelor of Science,Bachelor of Medicine and Bachelor of Surgery,5,False
+Diplom,DE Diplom,5,False
+Diplom,German Diplom,5,False
+Diplom,Germany Diplom,5,False
+Foundation Degree,Bachelor of Dental Surgery,5,False
+HBO Bachelor,Bachelor of Arts,5,False
+Master of Business Administration,Master of Engineering,5,False
+WO Bachelor,Bachelor of Arts,5,False
+10th Standard,12th Standard,4,False
+Associate of Arts,Bachelor of Computer Applications,4,False
+Bachelor Degree,BSc,4,False
+Diploma of Higher Education,Diploma in Engineering,4,False
+Diplome d'Ingenieur,Ingenieur,4,False
+Doctor of Business Administration,Bachelor of Arts,4,False
+Doctor of Business Administration,Bachelor of Business Administration,4,False
+Doctor of Business Administration,Bachelor of Computer Applications,4,False
+Doctor of Business Administration,Bachelor of Dental Surgery,4,False
+Doctor of Medicine,Master of Science,4,False
+Doctor of Nursing Practice,Bachelor of Pharmacy,4,False
+Doctoral Degree,Bachelor of Medicine and Bachelor of Surgery,4,False
+HBO Bachelor,ty of Applied Sciences Bachelor,4,False
+HBO Master,Bachelor of Commerce,4,False
+HBO Master,Master of Science,4,False
+High School Diploma,Bachelor of Dental Surgery,4,False
+Higher Certificate,12th Standard,4,False
+Honours Degree,Bachelor of Arts,4,False
+Honours Degree,Bachelor of Engineering,4,False
+Magister Artium,Master of Arts,4,False
+Master,Master of Engineering,4,False
+Master Degree,MSc,4,False
+Master Degree,Master of Computer Applications,4,False
+Master Universitario,Master of Commerce,4,False
+Master Universitario,Master of Science,4,False
+Master Universitario,s Degree,4,False
+Master of Applied Science,Master of Computer Applications,4,False
+Master of Business Administration,Bachelor of Medicine and Bachelor of Surgery,4,False
+Master of Business Administration,Master of Technology,4,False
+Master of Computer Applications,Bachelor of Computer Applications,4,False
+Master of Engineering,Master of Technology,4,False
+Master of Fine Arts,Master of Computer Applications,4,False
+Master of Public Health,Master of Arts,4,False
+Master of Research,Master of Engineering,4,False
+Master of Research,Master of Science,4,False
+Master's Degree,Master of Engineering,4,False
+Master's Degree,s Degree,4,False
+Mestrado,Bachelor of Science,4,False
+Senior Secondary Certificate of Education,10th Standard,4,False
+WO Master,Master of Technology,4,False
+Baccalaureat,Bachelor of Arts,3,False
+Baccalaureat,Bachelor of Business Administration,3,False
+Bachelor of Commerce,Bachelor of Computer Applications,3,False
+Bachelor's Degree,s Degree,3,False
+Diplom,Post Graduate Diploma,3,False
+Diploma di Maturita,10th Standard,3,False
+Ensino Medio,Bachelor of Engineering,3,False
+Magister Artium,Master of Computer Applications,3,False
+Magister Artium,Master of Engineering,3,False
+Master of Applied Science,Master of Engineering,3,False
+New Zealand Diploma,Diploma in Engineering,3,False
+Bachelor of Commerce,Hons,2,False
+Bachelor of Laws,Bachelor of Commerce,2,False
+Master of Commerce,Master of Computer Applications,2,False
+Master of Technology,Bachelor of Computer Applications,2,False
+Associate of Applied Science,A A S,1,False
+Associate of Applied Science,AAS,1,False
+Associate of Applied Science,Applied Science Associate,1,False
+Associate of Applied Science,US A A S,1,False
+Associate of Applied Science,US AAS,1,False
+Associate of Applied Science,US Applied Science Associate,1,False
+Associate of Applied Science,US Associate of Applied Science,1,False
+Associate of Applied Science,United States A A S,1,False
+Associate of Applied Science,United States AAS,1,False
+Associate of Applied Science,es Associate of Applied Science,1,False
+Associate of Applied Science,tates Applied Science Associate,1,False
+Associate of Arts,A A,1,False
+Associate of Arts,Associate Arts,1,False
+Associate of Arts,US A A,1,False
+Associate of Arts,US AA,1,False
+Associate of Arts,US Associate Arts,1,False
+Associate of Arts,US Associate of Arts,1,False
+Associate of Arts,United States A A,1,False
+Associate of Arts,United States AA,1,False
+Associate of Arts,United States Associate Arts,1,False
+Associate of Arts,United States Associate of Arts,1,False
+Associate of Science,A S,1,False
+Associate of Science,Associate Science,1,False
+Associate of Science,US A S,1,False
+Associate of Science,US AS,1,False
+Associate of Science,US Associate Science,1,False
+Associate of Science,United States A S,1,False
+Associate of Science,United States AS,1,False
+Associate of Science,United States Associate Science,1,False
+Associate of Science,ted States Associate of Science,1,False
+Bacharelado,BR Bacharel,1,False
+Bacharelado,BR Bacharelado,1,False
+Bacharelado,BR Bachelor Brazil,1,False
+Bacharelado,Bacharel,1,False
+Bacharelado,Bachelor Brazil,1,False
+Bacharelado,Brazil Bacharel,1,False
+Bacharelado,Brazil Bacharelado,1,False
+Bacharelado,Brazil Bachelor Brazil,1,False
+Bacharelado,Brazilian Bacharel,1,False
+Bacharelado,Brazilian Bacharelado,1,False
+Bacharelado,Brazilian Bachelor Brazil,1,False
+Bachelor Degree,B A B S C,1,False
+Bachelor Degree,B.A.B.S.C.,1,False
+Bachelor Degree,Bologna B A B S C,1,False
+Bachelor Degree,Bologna B.A.B.S.C.,1,False
+Bachelor Degree,Bologna Bologna Bachelor,1,False
+Bachelor Degree,CN Chinese Bachelor,1,False
+Bachelor Degree,CN Xueshi,1,False
+Bachelor Degree,China Chinese Bachelor,1,False
+Bachelor Degree,China Xueshi,1,False
+Bachelor Degree,Chinese Chinese Bachelor,1,False
+Bachelor Degree,Chinese Xueshi,1,False
+Bachelor Degree,EU B A B S C,1,False
+Bachelor Degree,EU B.A.B.S.C.,1,False
+Bachelor Degree,EU Bologna Bachelor,1,False
+Bachelor Degree,Education Area Bologna Bachelor,1,False
+Bachelor Degree,Higher Education Area B A B S C,1,False
+Bachelor Degree,Xueshi,1,False
+Bachelor Degree,igher Education Area B.A.B.S.C.,1,False
+Bachelor Honours Degree,AU B H O N,1,False
+Bachelor Honours Degree,AU BHon,1,False
+Bachelor Honours Degree,AU Bachelor with Honours,1,False
+Bachelor Honours Degree,Australia B H O N,1,False
+Bachelor Honours Degree,Australia BHon,1,False
+Bachelor Honours Degree,Australia Bachelor with Honours,1,False
+Bachelor Honours Degree,Australian B H O N,1,False
+Bachelor Honours Degree,Australian BHon,1,False
+Bachelor Honours Degree,B H O N,1,False
+Bachelor Honours Degree,BHon,1,False
+Bachelor Honours Degree,Bachelor with Honours,1,False
+Bachelor Honours Degree,ustralian Bachelor with Honours,1,False
+Bachelor of Architecture,B A R C H,1,False
+Bachelor of Architecture,BArch,1,False
+Bachelor of Architecture,States Bachelor of Architecture,1,False
+Bachelor of Architecture,US B A R C H,1,False
+Bachelor of Architecture,US BArch,1,False
+Bachelor of Architecture,United States B A R C H,1,False
+Bachelor of Architecture,United States BArch,1,False
+Bachelor of Arts,A B,1,False
+Bachelor of Arts,Artium Baccalaureus,1,False
+Bachelor of Arts,BA Hons Hons,1,False
+Bachelor of Arts,BAHONSHONS,1,False
+Bachelor of Arts,IN B A,1,False
+Bachelor of Arts,IN BA,1,False
+Bachelor of Arts,IN BA Hons Hons,1,False
+Bachelor of Arts,IN BAHONSHONS,1,False
+Bachelor of Arts,India B A,1,False
+Bachelor of Arts,India BA,1,False
+Bachelor of Arts,India BA Hons Hons,1,False
+Bachelor of Arts,India BAHONS,1,False
+Bachelor of Arts,India BAHONSHONS,1,False
+Bachelor of Arts,Indian B A,1,False
+Bachelor of Arts,Indian BA,1,False
+Bachelor of Arts,Indian BA Hons Hons,1,False
+Bachelor of Arts,Indian BAHONS,1,False
+Bachelor of Arts,Indian BAHONSHONS,1,False
+Bachelor of Arts,UK B A,1,False
+Bachelor of Arts,UK BA,1,False
+Bachelor of Arts,UK BA Hons,1,False
+Bachelor of Arts,UK BAHONS,1,False
+Bachelor of Arts,US A B,1,False
+Bachelor of Arts,US AB,1,False
+Bachelor of Arts,US Artium Baccalaureus,1,False
+Bachelor of Arts,US B A,1,False
+Bachelor of Arts,US BA,1,False
+Bachelor of Arts,United Kingdom B A,1,False
+Bachelor of Arts,United Kingdom BA,1,False
+Bachelor of Arts,United Kingdom BA Hons,1,False
+Bachelor of Arts,United Kingdom BAHONS,1,False
+Bachelor of Arts,United Kingdom Bachelor of Arts,1,False
+Bachelor of Arts,United States A B,1,False
+Bachelor of Arts,United States AB,1,False
+Bachelor of Arts,United States B A,1,False
+Bachelor of Arts,United States BA,1,False
+Bachelor of Arts,United States Bachelor of Arts,1,False
+Bachelor of Arts,ited States Artium Baccalaureus,1,False
+Bachelor of Arts,m Bachelor of Arts with Honours,1,False
+Bachelor of Business Administration,B.B.A. Hons,1,False
+Bachelor of Business Administration,BBAHONS,1,False
+Bachelor of Business Administration,IN B.B.A. Hons,1,False
+Bachelor of Business Administration,IN BBA,1,False
+Bachelor of Business Administration,IN BBAHONS,1,False
+Bachelor of Business Administration,India B B A,1,False
+Bachelor of Business Administration,India B B A Hons,1,False
+Bachelor of Business Administration,India B.B.A. Hons,1,False
+Bachelor of Business Administration,India BBA,1,False
+Bachelor of Business Administration,India BBAHONS,1,False
+Bachelor of Business Administration,Indian B B A,1,False
+Bachelor of Business Administration,Indian B B A Hons,1,False
+Bachelor of Business Administration,Indian B.B.A. Hons,1,False
+Bachelor of Business Administration,Indian BBA,1,False
+Bachelor of Business Administration,Indian BBAHONS,1,False
+Bachelor of Business Administration,US B B A,1,False
+Bachelor of Business Administration,US BBA,1,False
+Bachelor of Business Administration,United States B B A,1,False
+Bachelor of Business Administration,United States BBA,1,False
+Bachelor of Commerce,B C O M M,1,False
+Bachelor of Commerce,BComm,1,False
+Bachelor of Commerce,CA B C O M,1,False
+Bachelor of Commerce,CA B C O M M,1,False
+Bachelor of Commerce,CA BCom,1,False
+Bachelor of Commerce,CA BComm,1,False
+Bachelor of Commerce,Canada B C O M,1,False
+Bachelor of Commerce,Canada B C O M M,1,False
+Bachelor of Commerce,Canada B Com,1,False
+Bachelor of Commerce,Canada BCom,1,False
+Bachelor of Commerce,Canada BComm,1,False
+Bachelor of Commerce,Canadian B C O M,1,False
+Bachelor of Commerce,Canadian B C O M M,1,False
+Bachelor of Commerce,Canadian B Com,1,False
+Bachelor of Commerce,Canadian BCom,1,False
+Bachelor of Commerce,Canadian BComm,1,False
+Bachelor of Commerce,IN B C O M,1,False
+Bachelor of Commerce,India B C O M,1,False
+Bachelor of Commerce,India B Com,1,False
+Bachelor of Commerce,India B. Com Hons,1,False
+Bachelor of Commerce,India BCOM,1,False
+Bachelor of Commerce,India BCOMHONS,1,False
+Bachelor of Commerce,India BCom Hons,1,False
+Bachelor of Commerce,Indian B C O M,1,False
+Bachelor of Commerce,Indian B Com,1,False
+Bachelor of Commerce,Indian B. Com Hons,1,False
+Bachelor of Commerce,Indian BCOM,1,False
+Bachelor of Commerce,Indian BCOMHONS,1,False
+Bachelor of Commerce,Indian BCom Hons,1,False
+Bachelor of Computer Applications,BCA,1,False
+Bachelor of Computer Applications,BCAHONS,1,False
+Bachelor of Computer Applications,IN BCA,1,False
+Bachelor of Computer Applications,IN BCAHONS,1,False
+Bachelor of Computer Applications,India B C A,1,False
+Bachelor of Computer Applications,India BCA,1,False
+Bachelor of Computer Applications,India BCAHONS,1,False
+Bachelor of Computer Applications,Indian B C A,1,False
+Bachelor of Computer Applications,Indian BCA,1,False
+Bachelor of Computer Applications,Indian BCAHONS,1,False
+Bachelor of Engineering,BEHONSHONS,1,False
+Bachelor of Engineering,DE B E N G,1,False
+Bachelor of Engineering,DE BEng,1,False
+Bachelor of Engineering,German B E N G,1,False
+Bachelor of Engineering,German BEng,1,False
+Bachelor of Engineering,Germany B E N G,1,False
+Bachelor of Engineering,Germany BEng,1,False
+Bachelor of Engineering,IN B E,1,False
+Bachelor of Engineering,IN B E N G,1,False
+Bachelor of Engineering,IN BE,1,False
+Bachelor of Engineering,IN BEHONSHONS,1,False
+Bachelor of Engineering,IN BENGHONS,1,False
+Bachelor of Engineering,India B E,1,False
+Bachelor of Engineering,India B E N G,1,False
+Bachelor of Engineering,India B Eng,1,False
+Bachelor of Engineering,India BE,1,False
+Bachelor of Engineering,India BEHONS,1,False
+Bachelor of Engineering,India BEHONSHONS,1,False
+Bachelor of Engineering,India BENG,1,False
+Bachelor of Engineering,India BENGHONS,1,False
+Bachelor of Engineering,Indian B E,1,False
+Bachelor of Engineering,Indian B E N G,1,False
+Bachelor of Engineering,Indian B Eng,1,False
+Bachelor of Engineering,Indian BE,1,False
+Bachelor of Engineering,Indian BEHONS,1,False
+Bachelor of Engineering,Indian BEHONSHONS,1,False
+Bachelor of Engineering,Indian BENG,1,False
+Bachelor of Engineering,Indian BENGHONS,1,False
+Bachelor of Engineering,UK B E N G,1,False
+Bachelor of Engineering,UK BENGHONS,1,False
+Bachelor of Engineering,US B E,1,False
+Bachelor of Engineering,US B E N G,1,False
+Bachelor of Engineering,US BE,1,False
+Bachelor of Engineering,US BEng,1,False
+Bachelor of Engineering,United Kingdom B E N G,1,False
+Bachelor of Engineering,United Kingdom BENGHONS,1,False
+Bachelor of Engineering,United Kingdom BEng,1,False
+Bachelor of Engineering,United Kingdom BEng Hons,1,False
+Bachelor of Engineering,United States B E,1,False
+Bachelor of Engineering,United States B E N G,1,False
+Bachelor of Engineering,United States BE,1,False
+Bachelor of Engineering,United States BEng,1,False
+Bachelor of Fine Arts,B F A,1,False
+Bachelor of Fine Arts,BFA,1,False
+Bachelor of Fine Arts,US B F A,1,False
+Bachelor of Fine Arts,US BFA,1,False
+Bachelor of Fine Arts,United States B F A,1,False
+Bachelor of Fine Arts,United States BFA,1,False
+Bachelor of Fine Arts,ed States Bachelor of Fine Arts,1,False
+Bachelor of Fine Arts,nited States Fine Arts Bachelor,1,False
+Bachelor of Laws,L L B,1,False
+Bachelor of Laws,LLB,1,False
+Bachelor of Laws,UK Bachelor of Law,1,False
+Bachelor of Laws,UK Bachelor of Laws,1,False
+Bachelor of Laws,UK L L B,1,False
+Bachelor of Laws,UK LLB,1,False
+Bachelor of Laws,United Kingdom Bachelor of Law,1,False
+Bachelor of Laws,United Kingdom Bachelor of Laws,1,False
+Bachelor of Laws,United Kingdom L L B,1,False
+Bachelor of Laws,United Kingdom LLB,1,False
+Bachelor of Medicine Bachelor of Surgery,B M B S,1,False
+Bachelor of Medicine Bachelor of Surgery,BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B S,1,False
+Bachelor of Medicine Bachelor of Surgery,M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBS,1,False
+Bachelor of Medicine Bachelor of Surgery,UK B M B S,1,False
+Bachelor of Medicine Bachelor of Surgery,UK BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B S,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBS,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom B M B S,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B S,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M.B.C.H.B.,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MBBS,1,False
+Bachelor of Music,B M,1,False
+Bachelor of Music,B M U S,1,False
+Bachelor of Music,BMus,1,False
+Bachelor of Music,Bachelor of Engineering,1,False
+Bachelor of Music,US B M,1,False
+Bachelor of Music,US B M U S,1,False
+Bachelor of Music,US BM,1,False
+Bachelor of Music,US BMus,1,False
+Bachelor of Music,US Bachelor of Music,1,False
+Bachelor of Music,United States B M,1,False
+Bachelor of Music,United States B M U S,1,False
+Bachelor of Music,United States BM,1,False
+Bachelor of Music,United States BMus,1,False
+Bachelor of Music,United States Bachelor of Music,1,False
+Bachelor of Science,IN B S C,1,False
+Bachelor of Science,IN B Sc,1,False
+Bachelor of Science,IN BSC,1,False
+Bachelor of Science,IN BSC Hons,1,False
+Bachelor of Science,India B S C,1,False
+Bachelor of Science,India B Sc,1,False
+Bachelor of Science,India BSC,1,False
+Bachelor of Science,India BSC Hons,1,False
+Bachelor of Science,India BSCHONS,1,False
+Bachelor of Science,Indian B S C,1,False
+Bachelor of Science,Indian B Sc,1,False
+Bachelor of Science,Indian BSC,1,False
+Bachelor of Science,Indian BSC Hons,1,False
+Bachelor of Science,Indian BSCHONS,1,False
+Bachelor of Science,S C B,1,False
+Bachelor of Science,ScB,1,False
+Bachelor of Science,UK B S C,1,False
+Bachelor of Science,UK B Sc,1,False
+Bachelor of Science,UK BSc,1,False
+Bachelor of Science,UK BSc Hons,1,False
+Bachelor of Science,US B S,1,False
+Bachelor of Science,US BS,1,False
+Bachelor of Science,US S C B,1,False
+Bachelor of Science,US ScB,1,False
+Bachelor of Science,United Kingdom B S C,1,False
+Bachelor of Science,United Kingdom B Sc,1,False
+Bachelor of Science,United Kingdom BSCHONS,1,False
+Bachelor of Science,United Kingdom BSc,1,False
+Bachelor of Science,United Kingdom BSc Hons,1,False
+Bachelor of Science,United States B S,1,False
+Bachelor of Science,United States BS,1,False
+Bachelor of Science,United States S C B,1,False
+Bachelor of Science,United States ScB,1,False
+Bachelor of Science,achelor of Science with Honours,1,False
+Bachelor of Social Work,B S W,1,False
+Bachelor of Social Work,BSW,1,False
+Bachelor of Social Work,States Bachelor of Social Work,1,False
+Bachelor of Social Work,US B S W,1,False
+Bachelor of Social Work,US BSW,1,False
+Bachelor of Social Work,US Bachelor of Social Work,1,False
+Bachelor of Social Work,United States B S W,1,False
+Bachelor of Social Work,United States BSW,1,False
+Bachelor of Technology,B T E C H,1,False
+Bachelor of Technology,BTECH,1,False
+Bachelor of Technology,IN B T E C H,1,False
+Bachelor of Technology,IN BTECH,1,False
+Bachelor of Technology,India 4YEARBTECH,1,False
+Bachelor of Technology,India B T E C H,1,False
+Bachelor of Technology,India B Tech,1,False
+Bachelor of Technology,India BTECH,1,False
+Bachelor of Technology,India BTECHHONS,1,False
+Bachelor of Technology,Indian 4YEARBTECH,1,False
+Bachelor of Technology,Indian B T E C H,1,False
+Bachelor of Technology,Indian BTECH,1,False
+Bachelor of Technology,Indian BTECHHONS,1,False
+Bachelor of Technology,Indian Tecnolgy of Technology,1,False
+Bachelor's Degree,Gakushi,1,False
+Bachelor's Degree,JP Gakushi,1,False
+Bachelor's Degree,JP Japanese Bachelor,1,False
+Bachelor's Degree,Japan Gakushi,1,False
+Bachelor's Degree,Japan Japanese Bachelor,1,False
+Bachelor's Degree,Japanese Bachelor,1,False
+Bachelor's Degree,Japanese Gakushi,1,False
+Bachelor's Degree,Japanese Japanese Bachelor,1,False
+Brevet de Technicien Superieur,B T S,1,False
+Brevet de Technicien Superieur,BTS,1,False
+Brevet de Technicien Superieur,FR B T S,1,False
+Brevet de Technicien Superieur,FR BTS,1,False
+Brevet de Technicien Superieur,France B T S,1,False
+Brevet de Technicien Superieur,France BTS,1,False
+Brevet de Technicien Superieur,French B T S,1,False
+Brevet de Technicien Superieur,French BTS,1,False
+Diplom,D I P L,1,False
+Diplom,DE D I P L,1,False
+Diplom,DE Dipl.,1,False
+Diplom,Dipl.,1,False
+Diplom,German D I P L,1,False
+Diplom,German Dipl.,1,False
+Diplom,Germany D I P L,1,False
+Diplom,Germany Dipl.,1,False
+Diplome d'Ingenieur,FR I N G,1,False
+Diplome d'Ingenieur,FR Ing,1,False
+Diplome d'Ingenieur,France I N G,1,False
+Diplome d'Ingenieur,France Ing,1,False
+Diplome d'Ingenieur,French I N G,1,False
+Diplome d'Ingenieur,French Ing,1,False
+Diplome d'Ingenieur,I N G,1,False
+Diplome d'Ingenieur,Ing,1,False
+Doctor of Business Administration,UK D B A,1,False
+Doctor of Business Administration,UK DBA,1,False
+Doctor of Business Administration,US D B A,1,False
+Doctor of Business Administration,US DBA,1,False
+Doctor of Business Administration,United Kingdom D B A,1,False
+Doctor of Business Administration,United Kingdom DBA,1,False
+Doctor of Business Administration,United States D B A,1,False
+Doctor of Business Administration,United States DBA,1,False
+Doctor of Dental Surgery,D D S,1,False
+Doctor of Dental Surgery,DDS,1,False
+Doctor of Dental Surgery,States Doctor of Dental Surgery,1,False
+Doctor of Dental Surgery,US D D S,1,False
+Doctor of Dental Surgery,US DDS,1,False
+Doctor of Dental Surgery,United States D D S,1,False
+Doctor of Dental Surgery,United States DDS,1,False
+Doctor of Education,UK Doctor of Education,1,False
+Doctor of Education,UK E D D,1,False
+Doctor of Education,UK EdD,1,False
+Doctor of Education,US Doctor of Education,1,False
+Doctor of Education,US E D D,1,False
+Doctor of Education,US EdD,1,False
+Doctor of Education,United Kingdom E D D,1,False
+Doctor of Education,United Kingdom EdD,1,False
+Doctor of Education,United States E D D,1,False
+Doctor of Education,United States EdD,1,False
+Doctor of Education,ited States Doctor of Education,1,False
+Doctor of Education,ted Kingdom Doctor of Education,1,False
+Doctor of Medicine,M D,1,False
+Doctor of Medicine,US Doctor of Medicine,1,False
+Doctor of Medicine,US M D,1,False
+Doctor of Medicine,US MD,1,False
+Doctor of Medicine,United States M D,1,False
+Doctor of Medicine,United States MD,1,False
+Doctor of Medicine,nited States Doctor of Medicine,1,False
+Doctor of Nursing Practice,D N P,1,False
+Doctor of Nursing Practice,DNP,1,False
+Doctor of Nursing Practice,US D N P,1,False
+Doctor of Nursing Practice,US DNP,1,False
+Doctor of Nursing Practice,US Doctor of Nursing Practice,1,False
+Doctor of Nursing Practice,United States D N P,1,False
+Doctor of Nursing Practice,United States DNP,1,False
+Doctor of Nursing Practice,ates Doctor of Nursing Practice,1,False
+Doctor of Pharmacy,PharmD,1,False
+Doctor of Pharmacy,US Doctor of Pharmacy,1,False
+Doctor of Pharmacy,US PharmD,1,False
+Doctor of Pharmacy,United States PharmD,1,False
+Doctor of Pharmacy,nited States Doctor of Pharmacy,1,False
+Doctor of Philosophy,DPHILHONS,1,False
+Doctor of Philosophy,DPhil Hons,1,False
+Doctor of Philosophy,IN D P H I L,1,False
+Doctor of Philosophy,IN DPHIL,1,False
+Doctor of Philosophy,IN DPHILHONS,1,False
+Doctor of Philosophy,IN DPhil Hons,1,False
+Doctor of Philosophy,IN Doctorate,1,False
+Doctor of Philosophy,IN P H D,1,False
+Doctor of Philosophy,IN PHD,1,False
+Doctor of Philosophy,IN PHDHONS,1,False
+Doctor of Philosophy,IN Ph. D.,1,False
+Doctor of Philosophy,IN Ph. D. Hons,1,False
+Doctor of Philosophy,IN Ph.D Hons,1,False
+Doctor of Philosophy,India D P H I L,1,False
+Doctor of Philosophy,India DPHIL,1,False
+Doctor of Philosophy,India DPHILHONS,1,False
+Doctor of Philosophy,India DPhil Hons,1,False
+Doctor of Philosophy,India Doctorate,1,False
+Doctor of Philosophy,India P H D,1,False
+Doctor of Philosophy,India PHD,1,False
+Doctor of Philosophy,India PHDHONS,1,False
+Doctor of Philosophy,India Ph. D.,1,False
+Doctor of Philosophy,India Ph. D. Hons,1,False
+Doctor of Philosophy,India Ph.D Hons,1,False
+Doctor of Philosophy,Indian D P H I L,1,False
+Doctor of Philosophy,Indian DPHIL,1,False
+Doctor of Philosophy,Indian DPHILHONS,1,False
+Doctor of Philosophy,Indian DPhil Hons,1,False
+Doctor of Philosophy,Indian Doctorate,1,False
+Doctor of Philosophy,Indian P H D,1,False
+Doctor of Philosophy,Indian PHD,1,False
+Doctor of Philosophy,Indian PHDHONS,1,False
+Doctor of Philosophy,Indian Ph. D.,1,False
+Doctor of Philosophy,Indian Ph. D. Hons,1,False
+Doctor of Philosophy,Indian Ph.D Hons,1,False
+Doctor of Philosophy,PHDHONS,1,False
+Doctor of Philosophy,Ph. D. Hons,1,False
+Doctor of Philosophy,Ph.D Hons,1,False
+Doctor of Philosophy,UK D P H I L,1,False
+Doctor of Philosophy,UK DPhil,1,False
+Doctor of Philosophy,UK Doctorate,1,False
+Doctor of Philosophy,UK P H D,1,False
+Doctor of Philosophy,UK Ph. D.,1,False
+Doctor of Philosophy,UK PhD,1,False
+Doctor of Philosophy,US Doctorate,1,False
+Doctor of Philosophy,US P H D,1,False
+Doctor of Philosophy,US Ph. D.,1,False
+Doctor of Philosophy,US PhD,1,False
+Doctor of Philosophy,United Kingdom D P H I L,1,False
+Doctor of Philosophy,United Kingdom DPhil,1,False
+Doctor of Philosophy,United Kingdom Doctorate,1,False
+Doctor of Philosophy,United Kingdom P H D,1,False
+Doctor of Philosophy,United Kingdom Ph. D.,1,False
+Doctor of Philosophy,United Kingdom PhD,1,False
+Doctor of Philosophy,United States Doctorate,1,False
+Doctor of Philosophy,United States P H D,1,False
+Doctor of Philosophy,United States Ph. D.,1,False
+Doctor of Philosophy,United States PhD,1,False
+Doctor of Psychology,P S Y D,1,False
+Doctor of Psychology,PsyD,1,False
+Doctor of Psychology,US Doctor of Psychology,1,False
+Doctor of Psychology,US P S Y D,1,False
+Doctor of Psychology,US PsyD,1,False
+Doctor of Psychology,United States P S Y D,1,False
+Doctor of Psychology,United States PsyD,1,False
+Doctor of Psychology,ted States Doctor of Psychology,1,False
+Doctorado,ES Doctorado,1,False
+Doctorado,ES Doctorate,1,False
+Doctorado,ES P H D,1,False
+Doctorado,ES Ph. D.,1,False
+Doctorado,ES PhD,1,False
+Doctorado,ES Spanish Doctorate,1,False
+Doctorado,Spain Doctorado,1,False
+Doctorado,Spain Doctorate,1,False
+Doctorado,Spain P H D,1,False
+Doctorado,Spain Ph. D.,1,False
+Doctorado,Spain PhD,1,False
+Doctorado,Spain Spanish Doctorate,1,False
+Doctorado,Spanish Doctorado,1,False
+Doctorado,Spanish Doctorate,1,False
+Doctorado,Spanish P H D,1,False
+Doctorado,Spanish Ph. D.,1,False
+Doctorado,Spanish PhD,1,False
+Doctorado,Spanish Spanish Doctorate,1,False
+Doctoral Degree,AU Doctorate,1,False
+Doctoral Degree,AU P H D,1,False
+Doctoral Degree,AU Ph. D.,1,False
+Doctoral Degree,AU PhD,1,False
+Doctoral Degree,Australia Doctorate,1,False
+Doctoral Degree,Australia P H D,1,False
+Doctoral Degree,Australia Ph. D.,1,False
+Doctoral Degree,Australia PhD,1,False
+Doctoral Degree,Australian Doctorate,1,False
+Doctoral Degree,Australian P H D,1,False
+Doctoral Degree,Australian Ph. D.,1,False
+Doctoral Degree,Australian PhD,1,False
+Doctoral Degree,B O S H I,1,False
+Doctoral Degree,Bologna Bologna Doctorate,1,False
+Doctoral Degree,Bologna Doctorate,1,False
+Doctoral Degree,Bologna P H D,1,False
+Doctoral Degree,Bologna Ph. D.,1,False
+Doctoral Degree,Bologna PhD,1,False
+Doctoral Degree,Boshi,1,False
+Doctoral Degree,CN B O S H I,1,False
+Doctoral Degree,CN Boshi,1,False
+Doctoral Degree,CN Chinese Doctorate,1,False
+Doctoral Degree,China B O S H I,1,False
+Doctoral Degree,China Boshi,1,False
+Doctoral Degree,China Chinese Doctorate,1,False
+Doctoral Degree,Chinese B O S H I,1,False
+Doctoral Degree,Chinese Boshi,1,False
+Doctoral Degree,Chinese Chinese Doctorate,1,False
+Doctoral Degree,Chinese Doctorate,1,False
+Doctoral Degree,EU Bologna Doctorate,1,False
+Doctoral Degree,EU Doctorate,1,False
+Doctoral Degree,EU P H D,1,False
+Doctoral Degree,EU Ph. D.,1,False
+Doctoral Degree,EU PhD,1,False
+Doctoral Degree,Hakushi,1,False
+Doctoral Degree,Higher Education Area Doctorate,1,False
+Doctoral Degree,JP Hakushi,1,False
+Doctoral Degree,JP Japanese Doctorate,1,False
+Doctoral Degree,Japan Hakushi,1,False
+Doctoral Degree,Japan Japanese Doctorate,1,False
+Doctoral Degree,Japanese Doctorate,1,False
+Doctoral Degree,Japanese Hakushi,1,False
+Doctoral Degree,Japanese Japanese Doctorate,1,False
+Doctoral Degree,an Higher Education Area Ph. D.,1,False
+Doctoral Degree,ducation Area Bologna Doctorate,1,False
+Doctoral Degree,ean Higher Education Area P H D,1,False
+Doctoral Degree,opean Higher Education Area PhD,1,False
+Doctorat,FR Doctorat,1,False
+Doctorat,FR Doctorate,1,False
+Doctorat,FR French Doctorate,1,False
+Doctorat,FR P H D,1,False
+Doctorat,FR Ph. D.,1,False
+Doctorat,FR PhD,1,False
+Doctorat,France Doctorat,1,False
+Doctorat,France Doctorate,1,False
+Doctorat,France French Doctorate,1,False
+Doctorat,France P H D,1,False
+Doctorat,France Ph. D.,1,False
+Doctorat,France PhD,1,False
+Doctorat,French Doctorat,1,False
+Doctorat,French Doctorate,1,False
+Doctorat,French French Doctorate,1,False
+Doctorat,French P H D,1,False
+Doctorat,French Ph. D.,1,False
+Doctorat,French PhD,1,False
+Dottorato di Ricerca,IT Doctorate,1,False
+Dottorato di Ricerca,IT Dottorato di Ricerca,1,False
+Dottorato di Ricerca,IT Italian Doctorate,1,False
+Dottorato di Ricerca,IT P H D,1,False
+Dottorato di Ricerca,IT Ph. D.,1,False
+Dottorato di Ricerca,IT PhD,1,False
+Dottorato di Ricerca,Italian Doctorate,1,False
+Dottorato di Ricerca,Italian Dottorato di Ricerca,1,False
+Dottorato di Ricerca,Italian Italian Doctorate,1,False
+Dottorato di Ricerca,Italian P H D,1,False
+Dottorato di Ricerca,Italian Ph. D.,1,False
+Dottorato di Ricerca,Italian PhD,1,False
+Dottorato di Ricerca,Italy Doctorate,1,False
+Dottorato di Ricerca,Italy Dottorato di Ricerca,1,False
+Dottorato di Ricerca,Italy Italian Doctorate,1,False
+Dottorato di Ricerca,Italy P H D,1,False
+Dottorato di Ricerca,Italy Ph. D.,1,False
+Dottorato di Ricerca,Italy PhD,1,False
+Doutorado,BR Brazilian Doctorate,1,False
+Doutorado,BR Doctorate,1,False
+Doutorado,BR Doutorado,1,False
+Doutorado,BR P H D,1,False
+Doutorado,BR Ph. D.,1,False
+Doutorado,BR PhD,1,False
+Doutorado,Brazil Brazilian Doctorate,1,False
+Doutorado,Brazil Doctorate,1,False
+Doutorado,Brazil Doutorado,1,False
+Doutorado,Brazil P H D,1,False
+Doutorado,Brazil Ph. D.,1,False
+Doutorado,Brazil PhD,1,False
+Doutorado,Brazilian Brazilian Doctorate,1,False
+Doutorado,Brazilian Doctorate,1,False
+Doutorado,Brazilian Doutorado,1,False
+Doutorado,Brazilian P H D,1,False
+Doutorado,Brazilian Ph. D.,1,False
+Doutorado,Brazilian PhD,1,False
+Especializacao,BR E S P,1,False
+Especializacao,BR Esp.,1,False
+Especializacao,BR Especializacao,1,False
+Especializacao,BR Lato Sensu Specialization,1,False
+Especializacao,Brazil E S P,1,False
+Especializacao,Brazil Esp.,1,False
+Especializacao,Brazil Especializacao,1,False
+Especializacao,Brazilian E S P,1,False
+Especializacao,Brazilian Esp.,1,False
+Especializacao,Brazilian Especializacao,1,False
+Especializacao,E S P,1,False
+Especializacao,Esp.,1,False
+Especializacao,Lato Sensu Specialization,1,False
+Especializacao,ilian Lato Sensu Specialization,1,False
+Especializacao,razil Lato Sensu Specialization,1,False
+Foundation Degree,F D,1,False
+Foundation Degree,F D A,1,False
+Foundation Degree,F D S C,1,False
+Foundation Degree,FdA,1,False
+Foundation Degree,FdSc,1,False
+Foundation Degree,UK F D,1,False
+Foundation Degree,UK F D A,1,False
+Foundation Degree,UK F D S C,1,False
+Foundation Degree,UK Fd,1,False
+Foundation Degree,UK FdA,1,False
+Foundation Degree,UK FdSc,1,False
+Foundation Degree,United Kingdom F D,1,False
+Foundation Degree,United Kingdom F D A,1,False
+Foundation Degree,United Kingdom F D S C,1,False
+Foundation Degree,United Kingdom Fd,1,False
+Foundation Degree,United Kingdom FdA,1,False
+Foundation Degree,United Kingdom FdSc,1,False
+HBO Bachelor,Bachelor of Commerce,1,False
+HBO Bachelor,Dutch H B O B,1,False
+HBO Bachelor,Dutch H.B.O.B.,1,False
+HBO Bachelor,Dutch HBO B,1,False
+HBO Bachelor,Dutch HBO Bachelor,1,False
+HBO Bachelor,Dutch HBOBACHELOR,1,False
+HBO Bachelor,H B O B,1,False
+HBO Bachelor,H.B.O.B.,1,False
+HBO Bachelor,HBO B,1,False
+HBO Bachelor,HBOBACHELOR,1,False
+HBO Bachelor,NL H B O B,1,False
+HBO Bachelor,NL H.B.O.B.,1,False
+HBO Bachelor,NL HBO B,1,False
+HBO Bachelor,NL HBO Bachelor,1,False
+HBO Bachelor,NL HBOBACHELOR,1,False
+HBO Bachelor,Netherlands H B O B,1,False
+HBO Bachelor,Netherlands H.B.O.B.,1,False
+HBO Bachelor,Netherlands HBO B,1,False
+HBO Bachelor,Netherlands HBO Bachelor,1,False
+HBO Bachelor,Netherlands HBOBACHELOR,1,False
+HBO Master,Applied Sciences Master,1,False
+HBO Master,Dutch Applied Sciences Master,1,False
+HBO Master,Dutch H B O M,1,False
+HBO Master,Dutch H.B.O.M.,1,False
+HBO Master,Dutch HBO M,1,False
+HBO Master,Dutch HBO Master,1,False
+HBO Master,Dutch HBOMASTER,1,False
+HBO Master,H B O M,1,False
+HBO Master,H.B.O.M.,1,False
+HBO Master,HBO M,1,False
+HBO Master,HBOMASTER,1,False
+HBO Master,NL Applied Sciences Master,1,False
+HBO Master,NL H B O M,1,False
+HBO Master,NL H.B.O.M.,1,False
+HBO Master,NL HBO M,1,False
+HBO Master,NL HBO Master,1,False
+HBO Master,NL HBOMASTER,1,False
+HBO Master,Netherlands H B O M,1,False
+HBO Master,Netherlands H.B.O.M.,1,False
+HBO Master,Netherlands HBO M,1,False
+HBO Master,Netherlands HBO Master,1,False
+HBO Master,Netherlands HBOMASTER,1,False
+HBO Master,erlands Applied Sciences Master,1,False
+Honours Degree,Bachelor of Computer Applications,1,False
+Honours Degree,H O N S,1,False
+Honours Degree,Hons,1,False
+Honours Degree,South Africa Bachelor Honours,1,False
+Honours Degree,South Africa H O N S,1,False
+Honours Degree,South Africa Hons,1,False
+Honours Degree,South African Bachelor Honours,1,False
+Honours Degree,South African H O N S,1,False
+Honours Degree,South African Hons,1,False
+Honours Degree,ZA Bachelor Honours,1,False
+Honours Degree,ZA H O N S,1,False
+Honours Degree,ZA Hons,1,False
+Juris Doctor,Doctor of Jurisprudence,1,False
+Juris Doctor,J D,1,False
+Juris Doctor,JURISDOCTOR,1,False
+Juris Doctor,States Doctor of Jurisprudence,1,False
+Juris Doctor,US Doctor of Jurisprudence,1,False
+Juris Doctor,US J D,1,False
+Juris Doctor,US JD,1,False
+Juris Doctor,US JURISDOCTOR,1,False
+Juris Doctor,US Juris Doctor,1,False
+Juris Doctor,United States J D,1,False
+Juris Doctor,United States JD,1,False
+Juris Doctor,United States JURISDOCTOR,1,False
+Juris Doctor,United States Juris Doctor,1,False
+Laurea Magistrale,IT L M,1,False
+Laurea Magistrale,IT LM,1,False
+Laurea Magistrale,IT Laurea Magistrale,1,False
+Laurea Magistrale,IT Second Cycle Laurea,1,False
+Laurea Magistrale,Italian L M,1,False
+Laurea Magistrale,Italian LM,1,False
+Laurea Magistrale,Italian Laurea Magistrale,1,False
+Laurea Magistrale,Italian Second Cycle Laurea,1,False
+Laurea Magistrale,Italy L M,1,False
+Laurea Magistrale,Italy LM,1,False
+Laurea Magistrale,Italy Laurea Magistrale,1,False
+Laurea Magistrale,Italy Second Cycle Laurea,1,False
+Laurea Magistrale,L M,1,False
+Laurea Magistrale,Second Cycle Laurea,1,False
+Laurea Magistrale a Ciclo Unico,IT L M C U,1,False
+Laurea Magistrale a Ciclo Unico,IT LMCU,1,False
+Laurea Magistrale a Ciclo Unico,Italian L M C U,1,False
+Laurea Magistrale a Ciclo Unico,Italian LMCU,1,False
+Laurea Magistrale a Ciclo Unico,Italy L M C U,1,False
+Laurea Magistrale a Ciclo Unico,Italy LMCU,1,False
+Laurea Magistrale a Ciclo Unico,L M C U,1,False
+Laurea Magistrale a Ciclo Unico,LMCU,1,False
+Laurea Triennale,First Cycle Laurea,1,False
+Laurea Triennale,IT First Cycle Laurea,1,False
+Laurea Triennale,IT L T,1,False
+Laurea Triennale,IT LT,1,False
+Laurea Triennale,IT Laurea Triennale,1,False
+Laurea Triennale,Italian First Cycle Laurea,1,False
+Laurea Triennale,Italian L T,1,False
+Laurea Triennale,Italian LT,1,False
+Laurea Triennale,Italian Laurea Triennale,1,False
+Laurea Triennale,Italy First Cycle Laurea,1,False
+Laurea Triennale,Italy L T,1,False
+Laurea Triennale,Italy LT,1,False
+Laurea Triennale,Italy Laurea Triennale,1,False
+Laurea Triennale,L T,1,False
+Licence,FR French Licence,1,False
+Licence,FR Licence,1,False
+Licence,France French Licence,1,False
+Licence,France Licence,1,False
+Licence,French French Licence,1,False
+Licence,French Licence,1,False
+Licence Professionnelle,FR L P,1,False
+Licence Professionnelle,FR LP,1,False
+Licence Professionnelle,FR Licence Professionnelle,1,False
+Licence Professionnelle,FR Professional Licence,1,False
+Licence Professionnelle,France L P,1,False
+Licence Professionnelle,France LP,1,False
+Licence Professionnelle,France Licence Professionnelle,1,False
+Licence Professionnelle,France Professional Licence,1,False
+Licence Professionnelle,French L P,1,False
+Licence Professionnelle,French LP,1,False
+Licence Professionnelle,French Licence Professionnelle,1,False
+Licence Professionnelle,French Professional Licence,1,False
+Licence Professionnelle,L P,1,False
+Licence Professionnelle,Professional Licence,1,False
+Licenciatura,BR L I C,1,False
+Licenciatura,BR Lic.,1,False
+Licenciatura,BR Licenciatura,1,False
+Licenciatura,Brazil L I C,1,False
+Licenciatura,Brazil Lic.,1,False
+Licenciatura,Brazil Licenciatura,1,False
+Licenciatura,Brazilian L I C,1,False
+Licenciatura,Brazilian Lic.,1,False
+Licenciatura,Brazilian Licenciatura,1,False
+Licenciatura,L I C,1,False
+Licenciatura,Lic.,1,False
+Magister Artium,DE M A,1,False
+Magister Artium,DE MA,1,False
+Magister Artium,DE Magister,1,False
+Magister Artium,DE Magister Artium,1,False
+Magister Artium,German M A,1,False
+Magister Artium,German MA,1,False
+Magister Artium,German Magister,1,False
+Magister Artium,German Magister Artium,1,False
+Magister Artium,Germany M A,1,False
+Magister Artium,Germany MA,1,False
+Magister Artium,Germany Magister,1,False
+Magister Artium,Germany Magister Artium,1,False
+Magister Artium,Magister,1,False
+Master,FR French Master,1,False
+Master,FR Master,1,False
+Master,France French Master,1,False
+Master,France Master,1,False
+Master,French French Master,1,False
+Master,French Master,1,False
+Master Degree,Bologna Bologna Master,1,False
+Master Degree,Bologna M A M S C,1,False
+Master Degree,Bologna M.A.M.S.C.,1,False
+Master Degree,CN Chinese Master,1,False
+Master Degree,CN Shuoshi,1,False
+Master Degree,China Chinese Master,1,False
+Master Degree,China Shuoshi,1,False
+Master Degree,Chinese Chinese Master,1,False
+Master Degree,Chinese Shuoshi,1,False
+Master Degree,EU Bologna Master,1,False
+Master Degree,EU M A M S C,1,False
+Master Degree,EU M.A.M.S.C.,1,False
+Master Degree,Higher Education Area M A M S C,1,False
+Master Degree,M A M S C,1,False
+Master Degree,M.A.M.S.C.,1,False
+Master Degree,Shuoshi,1,False
+Master Degree,igher Education Area M.A.M.S.C.,1,False
+Master Degree,r Education Area Bologna Master,1,False
+Master Universitario,ES Master,1,False
+Master Universitario,ES Master Universitario,1,False
+Master Universitario,Spain Master,1,False
+Master Universitario,Spain Master Universitario,1,False
+Master Universitario,Spanish Master,1,False
+Master Universitario,Spanish Master Universitario,1,False
+Master of Applied Science,CA M A S C,1,False
+Master of Applied Science,CA MASc,1,False
+Master of Applied Science,Canada M A S C,1,False
+Master of Applied Science,Canada MASc,1,False
+Master of Applied Science,Canadian M A S C,1,False
+Master of Applied Science,Canadian MASc,1,False
+Master of Applied Science,M A S C,1,False
+Master of Applied Science,MASc,1,False
+Master of Applied Science,adian Master of Applied Science,1,False
+Master of Arts,A M,1,False
+Master of Arts,Artium Magister,1,False
+Master of Arts,IN M A,1,False
+Master of Arts,IN MA,1,False
+Master of Arts,IN MAHONS,1,False
+Master of Arts,India M A,1,False
+Master of Arts,India MA,1,False
+Master of Arts,India MAHONS,1,False
+Master of Arts,India MasterofArts,1,False
+Master of Arts,Indian M A,1,False
+Master of Arts,Indian MA,1,False
+Master of Arts,Indian MAHONS,1,False
+Master of Arts,Indian MasterofArts,1,False
+Master of Arts,MAHONS,1,False
+Master of Arts,UK M A,1,False
+Master of Arts,UK MA,1,False
+Master of Arts,US A M,1,False
+Master of Arts,US AM,1,False
+Master of Arts,US Artium Magister,1,False
+Master of Arts,US M A,1,False
+Master of Arts,US MA,1,False
+Master of Arts,United Kingdom M A,1,False
+Master of Arts,United Kingdom MA,1,False
+Master of Arts,United Kingdom Master of Arts,1,False
+Master of Arts,United States A M,1,False
+Master of Arts,United States AM,1,False
+Master of Arts,United States Artium Magister,1,False
+Master of Arts,United States M A,1,False
+Master of Arts,United States MA,1,False
+Master of Arts,United States Master of Arts,1,False
+Master of Business Administration,E M B A,1,False
+Master of Business Administration,EMBAHONS,1,False
+Master of Business Administration,IN E M B A,1,False
+Master of Business Administration,IN EMBAHONS,1,False
+Master of Business Administration,IN M B A,1,False
+Master of Business Administration,IN MBA,1,False
+Master of Business Administration,IN MBAHONS,1,False
+Master of Business Administration,India E M B A,1,False
+Master of Business Administration,India EMBA,1,False
+Master of Business Administration,India EMBAHONS,1,False
+Master of Business Administration,India M B A,1,False
+Master of Business Administration,India MBA,1,False
+Master of Business Administration,India MBAHONS,1,False
+Master of Business Administration,Indian E M B A,1,False
+Master of Business Administration,Indian EMBA,1,False
+Master of Business Administration,Indian EMBAHONS,1,False
+Master of Business Administration,Indian M B A,1,False
+Master of Business Administration,Indian MBA,1,False
+Master of Business Administration,Indian MBAHONS,1,False
+Master of Business Administration,MBAHONS,1,False
+Master of Business Administration,UK M B A,1,False
+Master of Business Administration,UK MBA,1,False
+Master of Business Administration,US M B A,1,False
+Master of Business Administration,US MBA,1,False
+Master of Business Administration,United Kingdom M B A,1,False
+Master of Business Administration,United Kingdom MBA,1,False
+Master of Business Administration,United States M B A,1,False
+Master of Business Administration,United States MBA,1,False
+Master of Commerce,IN M C O M,1,False
+Master of Commerce,IN M Com,1,False
+Master of Commerce,IN MCOMHONS,1,False
+Master of Commerce,India M C O M,1,False
+Master of Commerce,India M Com,1,False
+Master of Commerce,India MCOM,1,False
+Master of Commerce,India MCOMHONS,1,False
+Master of Commerce,India MCom Hons,1,False
+Master of Commerce,Indian M C O M,1,False
+Master of Commerce,Indian M Com,1,False
+Master of Commerce,Indian MCOM,1,False
+Master of Commerce,Indian MCOMHONS,1,False
+Master of Commerce,Indian MCom Hons,1,False
+Master of Commerce,M C O M,1,False
+Master of Commerce,M Com,1,False
+Master of Commerce,MCOMHONS,1,False
+Master of Computer Applications,IN MCA,1,False
+Master of Computer Applications,IN MCA Hons,1,False
+Master of Computer Applications,IN MCAHONS,1,False
+Master of Computer Applications,India M C A,1,False
+Master of Computer Applications,India MCA,1,False
+Master of Computer Applications,India MCA Hons,1,False
+Master of Computer Applications,India MCAHONS,1,False
+Master of Computer Applications,Indian M C A,1,False
+Master of Computer Applications,Indian MCA,1,False
+Master of Computer Applications,Indian MCA Hons,1,False
+Master of Computer Applications,Indian MCAHONS,1,False
+Master of Computer Applications,MCA,1,False
+Master of Computer Applications,MCA Hons,1,False
+Master of Computer Applications,MCAHONS,1,False
+Master of Engineering,DE M E N G,1,False
+Master of Engineering,DE MEng,1,False
+Master of Engineering,German M E N G,1,False
+Master of Engineering,German MEng,1,False
+Master of Engineering,Germany M E N G,1,False
+Master of Engineering,Germany MEng,1,False
+Master of Engineering,IN M E,1,False
+Master of Engineering,IN M E N G,1,False
+Master of Engineering,IN M Eng,1,False
+Master of Engineering,IN ME,1,False
+Master of Engineering,IN MEHONS,1,False
+Master of Engineering,IN MENGHONS,1,False
+Master of Engineering,India M E,1,False
+Master of Engineering,India M E N G,1,False
+Master of Engineering,India M Eng,1,False
+Master of Engineering,India ME,1,False
+Master of Engineering,India MEHONS,1,False
+Master of Engineering,India MENGHONS,1,False
+Master of Engineering,India MEng,1,False
+Master of Engineering,Indian M E,1,False
+Master of Engineering,Indian M E N G,1,False
+Master of Engineering,Indian M Eng,1,False
+Master of Engineering,Indian ME,1,False
+Master of Engineering,Indian MEHONS,1,False
+Master of Engineering,Indian MENGHONS,1,False
+Master of Engineering,Indian MEng,1,False
+Master of Engineering,M Eng,1,False
+Master of Engineering,MEHONS,1,False
+Master of Engineering,UK M E N G,1,False
+Master of Engineering,UK MENGHONS,1,False
+Master of Engineering,UK MEng,1,False
+Master of Engineering,UK MEng Hons,1,False
+Master of Engineering,US M E,1,False
+Master of Engineering,US M E N G,1,False
+Master of Engineering,US ME,1,False
+Master of Engineering,US MEng,1,False
+Master of Engineering,United Kingdom M E N G,1,False
+Master of Engineering,United Kingdom MENGHONS,1,False
+Master of Engineering,United Kingdom MEng,1,False
+Master of Engineering,United Kingdom MEng Hons,1,False
+Master of Engineering,United States M E,1,False
+Master of Engineering,United States M E N G,1,False
+Master of Engineering,United States ME,1,False
+Master of Engineering,United States MEng,1,False
+Master of Fine Arts,M F A,1,False
+Master of Fine Arts,MFA,1,False
+Master of Fine Arts,US M F A,1,False
+Master of Fine Arts,US MFA,1,False
+Master of Fine Arts,US Master of Fine Arts,1,False
+Master of Fine Arts,United States M F A,1,False
+Master of Fine Arts,United States MFA,1,False
+Master of Fine Arts,ited States Master of Fine Arts,1,False
+Master of Laws,L L M,1,False
+Master of Laws,LLM,1,False
+Master of Laws,UK L L M,1,False
+Master of Laws,UK LLM,1,False
+Master of Laws,United Kingdom L L M,1,False
+Master of Laws,United Kingdom LLM,1,False
+Master of Laws,United Kingdom Master of Laws,1,False
+Master of Philosophy,M P H I L,1,False
+Master of Philosophy,MPhil,1,False
+Master of Philosophy,UK M P H I L,1,False
+Master of Philosophy,UK MPhil,1,False
+Master of Philosophy,United Kingdom M P H I L,1,False
+Master of Philosophy,United Kingdom MPhil,1,False
+Master of Philosophy,ed Kingdom Master of Philosophy,1,False
+Master of Public Administration,M P A,1,False
+Master of Public Administration,MPA,1,False
+Master of Public Administration,US M P A,1,False
+Master of Public Administration,US MPA,1,False
+Master of Public Administration,United States M P A,1,False
+Master of Public Administration,United States MPA,1,False
+Master of Public Health,M P H,1,False
+Master of Public Health,MPH,1,False
+Master of Public Health,States Master of Public Health,1,False
+Master of Public Health,US M P H,1,False
+Master of Public Health,US MPH,1,False
+Master of Public Health,US Master of Public Health,1,False
+Master of Public Health,United States M P H,1,False
+Master of Public Health,United States MPH,1,False
+Master of Research,M R E S,1,False
+Master of Research,MRes,1,False
+Master of Research,UK M R E S,1,False
+Master of Research,UK MRes,1,False
+Master of Research,UK Master of Research,1,False
+Master of Research,United Kingdom M R E S,1,False
+Master of Research,United Kingdom MRes,1,False
+Master of Research,ited Kingdom Master of Research,1,False
+Master of Science,IN M S,1,False
+Master of Science,IN M S C,1,False
+Master of Science,IN M Sc,1,False
+Master of Science,IN M. Sc Hons,1,False
+Master of Science,IN M.S. Hons,1,False
+Master of Science,IN MSC,1,False
+Master of Science,IN MSCHONS,1,False
+Master of Science,IN MSHONS,1,False
+Master of Science,IN ms,1,False
+Master of Science,India M S,1,False
+Master of Science,India M S C,1,False
+Master of Science,India M Sc,1,False
+Master of Science,India M. Sc Hons,1,False
+Master of Science,India M.S. Hons,1,False
+Master of Science,India MSC,1,False
+Master of Science,India MSCHONS,1,False
+Master of Science,India MSHONS,1,False
+Master of Science,India ms,1,False
+Master of Science,Indian M S,1,False
+Master of Science,Indian M S C,1,False
+Master of Science,Indian M Sc,1,False
+Master of Science,Indian M. Sc Hons,1,False
+Master of Science,Indian M.S. Hons,1,False
+Master of Science,Indian MSC,1,False
+Master of Science,Indian MSCHONS,1,False
+Master of Science,Indian MSHONS,1,False
+Master of Science,Indian ms,1,False
+Master of Science,M. Sc Hons,1,False
+Master of Science,M.S. Hons,1,False
+Master of Science,MSCHONS,1,False
+Master of Science,MSHONS,1,False
+Master of Science,S C M,1,False
+Master of Science,S M,1,False
+Master of Science,ScM,1,False
+Master of Science,UK M S C,1,False
+Master of Science,UK M Sc,1,False
+Master of Science,UK MSc,1,False
+Master of Science,US M S,1,False
+Master of Science,US MS,1,False
+Master of Science,US S C M,1,False
+Master of Science,US S M,1,False
+Master of Science,US SM,1,False
+Master of Science,US ScM,1,False
+Master of Science,United Kingdom M S C,1,False
+Master of Science,United Kingdom M Sc,1,False
+Master of Science,United Kingdom MSc,1,False
+Master of Science,United States M S,1,False
+Master of Science,United States MS,1,False
+Master of Science,United States S C M,1,False
+Master of Science,United States S M,1,False
+Master of Science,United States SM,1,False
+Master of Science,United States ScM,1,False
+Master of Social Work,M S W,1,False
+Master of Social Work,MSW,1,False
+Master of Social Work,US M S W,1,False
+Master of Social Work,US MSW,1,False
+Master of Social Work,US Master of Social Work,1,False
+Master of Social Work,United States M S W,1,False
+Master of Social Work,United States MSW,1,False
+Master of Social Work,ed States Master of Social Work,1,False
+Master of Technology,IN M T E C H,1,False
+Master of Technology,IN M.Tech Hons,1,False
+Master of Technology,IN MASTERENGG,1,False
+Master of Technology,IN MTECH,1,False
+Master of Technology,IN MTECHHONS,1,False
+Master of Technology,IN Master Bacheler,1,False
+Master of Technology,IN Master Bachellor,1,False
+Master of Technology,India M T E C H,1,False
+Master of Technology,India M Tech,1,False
+Master of Technology,India M.Tech Hons,1,False
+Master of Technology,India MASTERENGG,1,False
+Master of Technology,India MTECH,1,False
+Master of Technology,India MTECHHONS,1,False
+Master of Technology,India Master Bacheler,1,False
+Master of Technology,India Master Bachellor,1,False
+Master of Technology,India Master Engg,1,False
+Master of Technology,Indian M T E C H,1,False
+Master of Technology,Indian M Tech,1,False
+Master of Technology,Indian M.Tech Hons,1,False
+Master of Technology,Indian MASTERENGG,1,False
+Master of Technology,Indian MTECH,1,False
+Master of Technology,Indian MTECHHONS,1,False
+Master of Technology,Indian Master Bacheler,1,False
+Master of Technology,Indian Master Bachellor,1,False
+Master of Technology,Indian Master Engg,1,False
+Master of Technology,M T E C H,1,False
+Master of Technology,M.Tech Hons,1,False
+Master of Technology,MASTERENGG,1,False
+Master of Technology,MTECH,1,False
+Master of Technology,MTECHHONS,1,False
+Master of Technology,Master Bacheler,1,False
+Master of Technology,Master Bachellor,1,False
+Master's Degree,JP Japanese Master,1,False
+Master's Degree,JP Shushi,1,False
+Master's Degree,Japan Japanese Master,1,False
+Master's Degree,Japan Shushi,1,False
+Master's Degree,Japanese Japanese Master,1,False
+Master's Degree,Japanese Master,1,False
+Master's Degree,Japanese Shushi,1,False
+Master's Degree,Shushi,1,False
+Mestrado,BR Brazilian Masters,1,False
+Mestrado,BR M S C,1,False
+Mestrado,BR M Sc,1,False
+Mestrado,BR MSc,1,False
+Mestrado,BR Mestrado,1,False
+Mestrado,Brazil Brazilian Masters,1,False
+Mestrado,Brazil M S C,1,False
+Mestrado,Brazil M Sc,1,False
+Mestrado,Brazil MSc,1,False
+Mestrado,Brazil Mestrado,1,False
+Mestrado,Brazilian Brazilian Masters,1,False
+Mestrado,Brazilian M S C,1,False
+Mestrado,Brazilian M Sc,1,False
+Mestrado,Brazilian MSc,1,False
+Mestrado,Brazilian Masters,1,False
+Mestrado,Brazilian Mestrado,1,False
+Post Graduate Diploma,IN P G D,1,False
+Post Graduate Diploma,IN P G D B A,1,False
+Post Graduate Diploma,IN P G D B M,1,False
+Post Graduate Diploma,IN P G D I P,1,False
+Post Graduate Diploma,IN PGD,1,False
+Post Graduate Diploma,IN PGD Hons,1,False
+Post Graduate Diploma,IN PGDBAHONS,1,False
+Post Graduate Diploma,IN PGDBMHONS,1,False
+Post Graduate Diploma,IN PGDHONS,1,False
+Post Graduate Diploma,IN PGDIPHONS,1,False
+Post Graduate Diploma,India P G D,1,False
+Post Graduate Diploma,India P G D B A,1,False
+Post Graduate Diploma,India P G D B M,1,False
+Post Graduate Diploma,India P G D I P,1,False
+Post Graduate Diploma,India P.G.D.I.P.,1,False
+Post Graduate Diploma,India PG DIP,1,False
+Post Graduate Diploma,India PG Diploma,1,False
+Post Graduate Diploma,India PG Diploma Hons,1,False
+Post Graduate Diploma,India PGD,1,False
+Post Graduate Diploma,India PGD Hons,1,False
+Post Graduate Diploma,India PGDBAHONS,1,False
+Post Graduate Diploma,India PGDBM,1,False
+Post Graduate Diploma,India PGDBMHONS,1,False
+Post Graduate Diploma,India PGDHONS,1,False
+Post Graduate Diploma,India PGDIPHONS,1,False
+Post Graduate Diploma,India pgdba,1,False
+Post Graduate Diploma,Indian P G D,1,False
+Post Graduate Diploma,Indian P G D B A,1,False
+Post Graduate Diploma,Indian P G D B M,1,False
+Post Graduate Diploma,Indian P G D I P,1,False
+Post Graduate Diploma,Indian P.G.D.I.P.,1,False
+Post Graduate Diploma,Indian PG DIP,1,False
+Post Graduate Diploma,Indian PG Diploma,1,False
+Post Graduate Diploma,Indian PG Diploma Hons,1,False
+Post Graduate Diploma,Indian PGD,1,False
+Post Graduate Diploma,Indian PGD Hons,1,False
+Post Graduate Diploma,Indian PGDBAHONS,1,False
+Post Graduate Diploma,Indian PGDBM,1,False
+Post Graduate Diploma,Indian PGDBMHONS,1,False
+Post Graduate Diploma,Indian PGDHONS,1,False
+Post Graduate Diploma,Indian PGDIPHONS,1,False
+Post Graduate Diploma,Indian pgdba,1,False
+Post Graduate Diploma,P G D,1,False
+Post Graduate Diploma,P G D B A,1,False
+Post Graduate Diploma,P G D B M,1,False
+Post Graduate Diploma,PGD,1,False
+Post Graduate Diploma,PGD Hons,1,False
+Post Graduate Diploma,PGDBAHONS,1,False
+Post Graduate Diploma,PGDBMHONS,1,False
+Post Graduate Diploma,PGDHONS,1,False
+Post Graduate Diploma,PGDIPHONS,1,False
+Postgraduate Certificate,PG Cert,1,False
+Postgraduate Certificate,PGCert,1,False
+Postgraduate Certificate,UK PG Cert,1,False
+Postgraduate Certificate,UK PGCert,1,False
+Postgraduate Certificate,UK Postgraduate Certificate,1,False
+Postgraduate Certificate,United Kingdom PG Cert,1,False
+Postgraduate Certificate,United Kingdom PGCert,1,False
+Postgraduate Certificate,ingdom Postgraduate Certificate,1,False
+Postgraduate Diploma,UK P G D I P,1,False
+Postgraduate Diploma,United Kingdom P G D I P,1,False
+Postgraduate Diploma,United Kingdom PG Dip,1,False
+Postgraduate Diploma,United Kingdom PGDip,1,False
+Postgraduate Diploma,ed Kingdom Postgraduate Diploma,1,False
+Short Cycle Qualification,Area Short Cycle Qualification,1,False
+Short Cycle Qualification,Bologna Bologna Short Cycle,1,False
+Short Cycle Qualification,Bologna S C Q F,1,False
+Short Cycle Qualification,Bologna SCQF,1,False
+Short Cycle Qualification,Bologna Short Cycle,1,False
+Short Cycle Qualification,EU Bologna Short Cycle,1,False
+Short Cycle Qualification,EU S C Q F,1,False
+Short Cycle Qualification,EU SCQF,1,False
+Short Cycle Qualification,EU Short Cycle Qualification,1,False
+Short Cycle Qualification,S C Q F,1,False
+Short Cycle Qualification,SCQF,1,False
+Short Cycle Qualification,cation Area Bologna Short Cycle,1,False
+Short Cycle Qualification,logna Short Cycle Qualification,1,False
+Short Cycle Qualification,n Higher Education Area S C Q F,1,False
+Short Cycle Qualification,pean Higher Education Area SCQF,1,False
+Staatsexamen,DE S T E X,1,False
+Staatsexamen,DE StEx,1,False
+Staatsexamen,DE Staatsexamen,1,False
+Staatsexamen,DE State Examination,1,False
+Staatsexamen,German S T E X,1,False
+Staatsexamen,German StEx,1,False
+Staatsexamen,German Staatsexamen,1,False
+Staatsexamen,German State Examination,1,False
+Staatsexamen,Germany S T E X,1,False
+Staatsexamen,Germany StEx,1,False
+Staatsexamen,Germany Staatsexamen,1,False
+Staatsexamen,Germany State Examination,1,False
+Staatsexamen,S T E X,1,False
+Staatsexamen,StEx,1,False
+Staatsexamen,State Examination,1,False
+Tecnologo,BR Tecnologo,1,False
+Tecnologo,Brazil Tecnologo,1,False
+Tecnologo,Brazilian Tecnologo,1,False
+Titulo de Grado,ES G R A D O,1,False
+Titulo de Grado,ES Grado,1,False
+Titulo de Grado,ES Titulo de Grado,1,False
+Titulo de Grado,G R A D O,1,False
+Titulo de Grado,Grado,1,False
+Titulo de Grado,Spain G R A D O,1,False
+Titulo de Grado,Spain Grado,1,False
+Titulo de Grado,Spain Titulo de Grado,1,False
+Titulo de Grado,Spanish G R A D O,1,False
+Titulo de Grado,Spanish Grado,1,False
+Titulo de Grado,Spanish Titulo de Grado,1,False
+WO Bachelor,Bachelor of Commerce,1,False
+WO Bachelor,Bachelor of Engineering,1,False
+WO Bachelor,Dutch W O B,1,False
+WO Bachelor,Dutch W.O.B.,1,False
+WO Bachelor,Dutch WO B,1,False
+WO Bachelor,Dutch WO Bachelor,1,False
+WO Bachelor,Dutch WOBACHELOR,1,False
+WO Bachelor,NL Research University Bachelor,1,False
+WO Bachelor,NL W O B,1,False
+WO Bachelor,NL W.O.B.,1,False
+WO Bachelor,NL WO B,1,False
+WO Bachelor,NL WOBACHELOR,1,False
+WO Bachelor,Netherlands W O B,1,False
+WO Bachelor,Netherlands W.O.B.,1,False
+WO Bachelor,Netherlands WO B,1,False
+WO Bachelor,Netherlands WO Bachelor,1,False
+WO Bachelor,Netherlands WOBACHELOR,1,False
+WO Bachelor,Research University Bachelor,1,False
+WO Bachelor,W O B,1,False
+WO Bachelor,W.O.B.,1,False
+WO Bachelor,WO B,1,False
+WO Bachelor,WOBACHELOR,1,False
+WO Bachelor,ch Research University Bachelor,1,False
+WO Bachelor,ds Research University Bachelor,1,False
+WO Master,Dutch W O M,1,False
+WO Master,Dutch W.O.M.,1,False
+WO Master,Dutch WO M,1,False
+WO Master,Dutch WO Master,1,False
+WO Master,Dutch WOMASTER,1,False
+WO Master,Master of Commerce,1,False
+WO Master,NL Research University Master,1,False
+WO Master,NL W O M,1,False
+WO Master,NL W.O.M.,1,False
+WO Master,NL WO M,1,False
+WO Master,NL WO Master,1,False
+WO Master,NL WOMASTER,1,False
+WO Master,Netherlands W O M,1,False
+WO Master,Netherlands W.O.M.,1,False
+WO Master,Netherlands WO M,1,False
+WO Master,Netherlands WO Master,1,False
+WO Master,Netherlands WOMASTER,1,False
+WO Master,Research University Master,1,False
+WO Master,W O M,1,False
+WO Master,W.O.M.,1,False
+WO Master,WO M,1,False
+WO Master,WOMASTER,1,False
+WO Master,ands Research University Master,1,False
+WO Master,utch Research University Master,1,False
+Zhuanke Diploma,CN College Diploma China,1,False
+Zhuanke Diploma,CN Zhuanke,1,False
+Zhuanke Diploma,CN Zhuanke Diploma,1,False
+Zhuanke Diploma,China College Diploma China,1,False
+Zhuanke Diploma,China Zhuanke,1,False
+Zhuanke Diploma,China Zhuanke Diploma,1,False
+Zhuanke Diploma,Chinese College Diploma China,1,False
+Zhuanke Diploma,Chinese Zhuanke,1,False
+Zhuanke Diploma,Chinese Zhuanke Diploma,1,False
+Zhuanke Diploma,College Diploma China,1,False
+Zhuanke Diploma,Zhuanke,1,False
+Bachelor of Engineering,Bachelor of Engineering,493,True
+Bachelor of Technology,Bachelor of Technology,449,True
+Post Graduate Diploma,Post Graduate Diploma,356,True
+12th Standard,12th Standard,278,True
+Bachelor of Commerce,Bachelor of Commerce,251,True
+Bachelor of Science,Bachelor of Science,243,True
+10th Standard,10th Standard,228,True
+Bachelor of Arts,Bachelor of Arts,221,True
+Master of Engineering,Master of Engineering,213,True
+Doctor of Philosophy,Doctor of Philosophy,204,True
+Diploma in Engineering,Diploma in Engineering,177,True
+Bachelor of Business Administration,Bachelor of Business Administration,176,True
+Master of Science,Master of Science,170,True
+Bachelor of Computer Applications,Bachelor of Computer Applications,150,True
+Master of Business Administration,Master of Business Administration,148,True
+Master of Technology,Master of Technology,148,True
+Master of Commerce,Master of Commerce,136,True
+Master of Arts,Master of Arts,125,True
+Master of Computer Applications,Master of Computer Applications,120,True
+Diplom,Diplom,5,True
+Brevet de Technicien Superieur,Brevet de Technicien Superieur,4,True
+Laurea Magistrale a Ciclo Unico,Laurea Magistrale a Ciclo Unico,4,True
+Associate of Applied Science,Associate of Applied Science,1,True
+Associate of Arts,Associate of Arts,1,True
+Bacharelado,Bacharelado,1,True
+Bachelor of Social Work,Bachelor of Social Work,1,True
+Doctor of Medicine,Doctor of Medicine,1,True
+Doctor of Nursing Practice,Doctor of Nursing Practice,1,True
+Doctor of Pharmacy,Doctor of Pharmacy,1,True
+Doctor of Psychology,Doctor of Psychology,1,True
+Doctorado,Doctorado,1,True
+Doctorat,Doctorat,1,True
+Dottorato di Ricerca,Dottorato di Ricerca,1,True
+Doutorado,Doutorado,1,True
+Especializacao,Especializacao,1,True
+HBO Master,HBO Master,1,True
+Juris Doctor,Juris Doctor,1,True
+Laurea Magistrale,Laurea Magistrale,1,True
+Laurea Triennale,Laurea Triennale,1,True
+Licence,Licence,1,True
+Licence Professionnelle,Licence Professionnelle,1,True
+Licenciatura,Licenciatura,1,True
+Magister Artium,Magister Artium,1,True
+Master Universitario,Master Universitario,1,True
+Master of Public Administration,Master of Public Administration,1,True
+Master of Public Health,Master of Public Health,1,True
+Master of Research,Master of Research,1,True
+Master of Social Work,Master of Social Work,1,True
+Mestrado,Mestrado,1,True
+Postgraduate Certificate,Postgraduate Certificate,1,True
+Short Cycle Qualification,Short Cycle Qualification,1,True
+Staatsexamen,Staatsexamen,1,True
+Tecnologo,Tecnologo,1,True
+Titulo de Grado,Titulo de Grado,1,True
+Zhuanke Diploma,Zhuanke Diploma,1,True
