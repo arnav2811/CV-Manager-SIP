@@ -39,7 +39,7 @@ sys.path.insert(0, _HERE)
 sys.path.insert(0, _ROOT)
 
 # ── version ────────────────────────────────────────────────────────────────
-APP_VERSION = "3.0.0"
+APP_VERSION = "3.6.5"
 
 # ── shared test suite ─────────────────────────────────────────────────────
 STANDARD_TESTS: list[str] = [
@@ -80,16 +80,20 @@ STANDARD_TESTS: list[str] = [
 # ══════════════════════════════════════════════════════════════════════════
 
 def _banner() -> None:
-    print("\n" + "╔" + "═" * 66 + "╗")
-    print("║" + " " * 15 + "CV MANAGER — NORMALISATION POC" + " " * 21 + "║")
-    print("║" + f"  Version {APP_VERSION}  ·  Growth Grids × University of Southampton".center(66) + "║")
-    print("╚" + "═" * 66 + "╝")
+    width = 68
+    print()
+    print("╔" + "═" * width + "╗")
+    print("║" + " CV MANAGER  —  Qualification Normalisation PoC ".center(width) + "║")
+    print("║" + f" Version {APP_VERSION}  ·  Growth Grids × University of Southampton ".center(width) + "║")
+    print("║" + " Contributor: Arnav Mishra ".center(width) + "║")
+    print("╚" + "═" * width + "╝")
 
 
 def _section(title: str) -> None:
-    print(f"\n  ┌{'─' * (len(title) + 4)}┐")
-    print(f"  │  {title}  │")
-    print(f"  └{'─' * (len(title) + 4)}┘")
+    width = len(title) + 6
+    print(f"\n  ┌{'─' * width}┐")
+    print(f"  │   {title}   │")
+    print(f"  └{'─' * width}┘")
 
 
 def _print_result_table(results: list[dict], label: str = "") -> None:
@@ -121,29 +125,35 @@ def _print_result_table(results: list[dict], label: str = "") -> None:
         print(f"  {s:<18}  {c:>4}  {c / total * 100:>4.0f}%")
 
 
-
 def _print_single_result(r: dict) -> None:
-    W = 22
-    div = "  " + "─" * 64
+    W = 24
+    width = 66
+    div = "  " + "─" * width
     print(f"\n{div}")
     print("  NORMALISATION RESULT")
     print(div)
     print(f"  {'Input':<{W}}: {r.get('input','')}")
-    print(f"  {'Canonical Degree':<{W}}: {r.get('canonical_degree') or 'None'}")
-    print(f"  {'Canonical Field':<{W}}: {r.get('canonical_field') or 'None'}")
+    canon = r.get("canonical_degree") or "—"
+    field = r.get("canonical_field") or "—"
+    print(f"  {'Canonical Degree':<{W}}: {canon}")
+    print(f"  {'Canonical Field':<{W}}: {field}")
     print(f"  {'Layer Used':<{W}}: {r.get('layer_used','—')}")
-    print(f"  {'Confidence':<{W}}: {r.get('confidence', 0):.4f}")
-    print(f"  {'Fuzzy Score':<{W}}: {r.get('fuzzy_score', 0)}")
+    conf  = r.get("confidence", 0)
+    score = r.get("fuzzy_score", 0)
+    bar_fill = int(conf * 20)
+    bar = "█" * bar_fill + "░" * (20 - bar_fill)
+    print(f"  {'Confidence':<{W}}: {conf:.4f}  [{bar}]")
+    print(f"  {'Fuzzy Score':<{W}}: {score}")
     print(f"  {'Status':<{W}}: {r.get('status','—')}")
     if r.get("alternatives"):
         print(f"\n  {'Alternatives':<{W}}:")
         for alt, sc in r["alternatives"]:
-            print(f"  {'':>{W}}  • {alt:<38}  {sc:.4f}")
+            print(f"  {'':{W}}  • {alt:<40}  score: {sc:.1f}")
     if r.get("audit"):
         print(f"\n  Audit Trail:")
-        for layer, info in r["audit"].items():
+        for lyr, info in r["audit"].items():
             if isinstance(info, dict):
-                print(f"    [{layer}]  hit={info.get('hit', '—')}  "
+                print(f"    [{lyr}]  hit={info.get('hit', '—')}  "
                       f"latency={info.get('latency_ms', info.get('ms', '—'))}ms")
                 if "engines" in info:
                     for ed in info["engines"]:
@@ -154,8 +164,6 @@ def _print_single_result(r: dict) -> None:
         print(f"\n  {'L3 Strategy':<{W}}: {r['l3_strategy']}")
         print(f"  {'Extracted Text':<{W}}: {r.get('extracted_mention') or '—'}")
     print(div)
-
-
 
 def _compare_all_engines(raw: str, engine_map: dict) -> None:
     W = {"eng": 20, "canon": 34, "conf": 6, "layer": 14}
@@ -353,10 +361,13 @@ def main() -> None:
         print("  MAIN MENU — Select an engine")
         print("═" * 70)
         for idx, (display, key) in enumerate(display_labels, 1):
-            status = "OK" if engines.get(key) else "X (unavailable)"
-            print(f"    {idx}.  {display:<36}  {status}")
+            avail  = engines.get(key) is not None
+            icon   = "✅" if avail else "❌"
+            suffix = "" if avail else "  (unavailable — missing dependency)"
+            print(f"    {idx}.  {display:<36}  {icon}{suffix}")
         print(f"    {len(display_labels)+1}.  Compare all engines on custom input")
         print(f"    {len(display_labels)+2}.  Exit")
+        print("─" * 70)
 
         choice = input(f"\n  Choice [1-{len(display_labels)+2}]: ").strip()
 
@@ -386,4 +397,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure") and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
     main()

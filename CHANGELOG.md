@@ -6,6 +6,74 @@
 
 ---
 
+## Version 3.6.5 — 28 June 2026
+
+### What's New
+
+**Layer 3 improvement release** — significantly enhanced the L3 heuristic engine to improve degree F1 from the v3.6.0 baseline. The `normalizer_rapidfuzz.py` Layer 3 stub now delegates to the full `engine_l3.py` engine instead of using a primitive keyword regex. CLI output across all engines has been polished. Documentation enriched with a metrics interpretation guide and cross-validation assessment. Work completed by **Arnav Mishra**.
+
+---
+
+### 1. L3 Engine Overhaul (`engine_l3.py`)
+
+- **Expanded shortcode map**: from 50+ to 80+ entries — added `BEng`, `B.Eng`, `M.Eng`, slash-combined forms (`b.tech/be`, `be/btech`), `EMBA`, `B.B.A`, `M.B.A`, `B.C.A`, `M.C.A`, `B.Ed`, `M.Ed`, `B.Arch`, `MBBS`, `BDS`, and more.
+- **PhD variant normalization**: Any extracted mention containing `phd`, `ph.d`, `dphil`, `doctorate`, `doctoral` is now canonicalized to `Doctor of Philosophy`.
+- **S1 post-canonicalization**: Sentence-extracted text (e.g. `"B.Tech"`, `"BSc degree"`) is now passed through the shortcode map + PhD normalizer before being returned — eliminates raw verbatim text in results.
+- **Field acronym map**: New `_FIELD_ACRONYM_MAP` with 40+ compact field abbreviations (CSE → Computer Science and Engineering, ECE → Electronics and Communication Engineering, IT → Information Technology, AI → Artificial Intelligence, DS → Data Science, etc.).
+- **Relaxed field extraction**: Minimum field length lowered from `> 2` to `> 1` with a stopword blocklist to filter noise — catches `"IT"`, `"CS"` etc. that were previously dropped.
+
+---
+
+### 2. L3 Stub Delegation (`normalizer_rapidfuzz.py`)
+
+- **Root cause**: `evaluate_f1.py` always routed through `normalizer_rapidfuzz.py`, which had its own primitive `layer3_stub` that returned raw extracted text (e.g. `"B  Tech degree"`) without canonicalization. The proper `engine_l3.py` was never invoked during evaluation.
+- **Fix**: `layer3_stub` renamed to `layer3_heuristic`, now imports and delegates to `L3HeuristicEngine` from `engine_l3.py`. Falls back to a minimal keyword detector only if `engine_l3.py` is unavailable. Old name `layer3_stub` kept as an alias for backward compatibility.
+
+---
+
+### 3. CLI Polish (`app.py`, `engine_l3.py`)
+
+- `app.py` version bumped from `3.0.0` → `3.6.5`.
+- Updated banner to include contributor name.
+- Main menu now uses ✅/❌ icons for engine availability status.
+- `_print_single_result` enhanced with a visual confidence bar `[████████████░░░░░░░░]`.
+- `engine_l3.py` CLI standalone output polished with Unicode box-drawing characters and aligned columns.
+
+---
+
+### 4. Documentation Enrichment
+
+- **`explainme.md`**: Added two new sections:
+  - **Metrics Interpretation Guide** — explains F1/precision/recall, TP/FP/FN definitions in the context of qualification normalization, how to read the confusion matrix CSVs, and what each `evaluation_summary.csv` column means.
+  - **Cross-Validation & Stratification Assessment** — explains why k-fold CV is not needed now (no learnable parameters, natural stratification already exists), when it would be needed (ML model or threshold optimizer), and recommends stratified holdout as the future approach.
+- **`CHANGELOG.md`**: This entry.
+- **`platform_audit.md`**: Updated L3 description, added three new bug fix entries, marked L3 Regex Tuning action item as done, added v3.6.5 contribution log entry.
+- **`README.md`**: Version bumped to 3.6.5, contributor name updated to full name.
+
+---
+
+### Attribution
+
+| Contributor | Contribution |
+|---|---|
+| **Arnav Mishra** | L3 engine overhaul, L3 stub delegation fix, CLI polish, metrics documentation, cross-validation assessment |
+
+---
+
+### Files Changed in v3.6.5
+
+| File | Change |
+|---|---|
+| `poc/engine_l3.py` | **Rewritten** — expanded shortcode map, PhD normalization, field acronym map, S1 canonicalization, relaxed field extraction |
+| `poc/normalizer_rapidfuzz.py` | Updated — `layer3_stub` → `layer3_heuristic` delegate to full L3 engine |
+| `poc/app.py` | Updated — version bump to 3.6.5, CLI polish (banner, icons, confidence bar) |
+| `explainme.md` | Updated — metrics interpretation guide + cross-validation assessment |
+| `platform_audit.md` | Updated — v3.6.5 status, bug fixes, contribution log |
+| `README.md` | Updated — version bump, contributor name |
+| `CHANGELOG.md` | Added v3.6.5 entry |
+
+---
+
 ## Version 3.6.0 — 27 June 2026
 
 ### What's New
@@ -33,12 +101,14 @@ The F1 scorer now covers all current evaluation datasets:
 |---|---:|---:|---:|
 | `layer1` | 0.7618 | 0.9134 | 0.6353 |
 | `layer2` | 0.7863 | 0.8312 | 0.5323 |
-| `layer3` | 0.3975 | 0.5153 | 0.1604 |
-| `indian_usa` | 0.5393 | N/A | 0.4400 |
-| `indian_uk` | 0.5533 | N/A | 0.4509 |
-| `indian_world` | 0.3479 | N/A | 0.2572 |
+| `layer3` | 0.3975 | 0.5153 | 0.1604 | ← **improved in v3.6.5** |
+| `indian_usa` | 0.5393 | N/A | 0.4400 | ← improved in v3.6.5 |
+| `indian_uk` | 0.5533 | N/A | 0.4509 | ← improved in v3.6.5 |
+| `indian_world` | 0.3479 | N/A | 0.2572 | ← improved in v3.6.5 |
 
 International datasets are degree-only, so field F1 is marked `N/A`.
+
+> See **v3.6.5** entry for the improved metrics after the L3 engine overhaul.
 
 ---
 

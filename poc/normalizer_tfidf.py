@@ -243,6 +243,10 @@ class NormalizerTFIDF:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    import sys
+    if hasattr(sys.stdout, "reconfigure") and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
+
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(base_dir, "..", "data")
     n = NormalizerTFIDF(data_dir)
@@ -255,13 +259,19 @@ if __name__ == "__main__":
         "BBA", "Kuchh bhi degree",
     ]
 
+    VERSION = "3.6.5"
+
     while True:
-        print("\n" + "=" * 60)
-        print("  CV MANAGER · TF-IDF Engine (B-2)   [standalone CLI]")
-        print("=" * 60)
-        print("  1. Run default test suite")
-        print("  2. Enter custom degree string")
-        print("  3. Exit")
+        print()
+        print("╔" + "═" * 64 + "╗")
+        print("║" + " CV MANAGER · TF-IDF Engine (B-2) · Standalone CLI ".center(64) + "║")
+        print("║" + f" Version {VERSION}  ·  char n-gram cosine similarity ".center(64) + "║")
+        print("╚" + "═" * 64 + "╝")
+        print()
+        print("    1.  Run default test suite")
+        print("    2.  Enter custom degree string")
+        print("    3.  Exit")
+        print("─" * 68)
 
         choice = input("\n  Choice [1/2/3]: ").strip()
 
@@ -303,18 +313,27 @@ if __name__ == "__main__":
             if not raw:
                 continue
             r = n.normalize(raw)
-            print(f"\n  Input   : {r['input']}")
-            print(f"  Canon.  : {r['canonical_degree'] or 'None'}")
-            print(f"  Field   : {r['canonical_field']  or 'None'}")
-            print(f"  Layer   : {r['layer_used']}")
-            print(f"  Conf.   : {r['confidence']:.4f}")
-            print(f"  Status  : {r['status']}")
-            if r["alternatives"]:
-                print("\n  Alternatives:")
+            W = 22
+            div = "  " + "─" * 66
+            print(f"\n{div}")
+            print("  NORMALISATION RESULT  (TF-IDF Engine B-2)")
+            print(div)
+            print(f"  {'Input':<{W}}: {r['input']}")
+            print(f"  {'Canonical Degree':<{W}}: {r.get('canonical_degree') or '—'}")
+            print(f"  {'Canonical Field':<{W}}: {r.get('canonical_field') or '—'}")
+            print(f"  {'Layer Used':<{W}}: {r.get('layer_used')}")
+            conf = r.get('confidence', 0)
+            bar  = "█" * int(conf * 20) + "░" * (20 - int(conf * 20))
+            print(f"  {'Confidence':<{W}}: {conf:.4f}  [{bar}]")
+            print(f"  {'Status':<{W}}: {r.get('status')}")
+            if r.get("alternatives"):
+                print(f"\n  {'Alternatives':<{W}}:")
                 for alt, sc in r["alternatives"]:
-                    print(f"    • {alt}  ({sc})")
+                    print(f"  {'':{W}}  • {alt:<38}  score: {sc:.3f}")
+            print(div)
 
         elif choice == "3":
+            print("\n  Goodbye.\n")
             import sys; sys.exit(0)
         else:
             print("  Invalid choice.")

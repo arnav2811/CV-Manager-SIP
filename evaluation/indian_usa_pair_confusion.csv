@@ -1,100 +1,112 @@
 expected_label,predicted_label,count,is_correct
-Bachelor of Engineering||__NONE__,__NONE__||__NONE__,234,False
-12th Standard||__NONE__,__NONE__||__NONE__,226,False
-Post Graduate Diploma||__NONE__,__NONE__||__NONE__,196,False
-Bachelor of Arts||__NONE__,__NONE__||__NONE__,191,False
-Doctor of Philosophy||__NONE__,__NONE__||__NONE__,175,False
-10th Standard||__NONE__,__NONE__||__NONE__,152,False
-Master of Science||__NONE__,__NONE__||__NONE__,137,False
-Master of Engineering||__NONE__,__NONE__||__NONE__,135,False
-Bachelor of Technology||__NONE__,__NONE__||__NONE__,133,False
-Bachelor of Science||__NONE__,__NONE__||__NONE__,132,False
-Master of Arts||__NONE__,__NONE__||__NONE__,130,False
-Bachelor of Technology||__NONE__,Bachelor of Engineering||__NONE__,119,False
-Master of Technology||__NONE__,__NONE__||__NONE__,110,False
-Master of Business Administration||__NONE__,__NONE__||__NONE__,104,False
-Bachelor of Business Administration||__NONE__,__NONE__||__NONE__,82,False
-Bachelor of Commerce||__NONE__,__NONE__||__NONE__,77,False
-Juris Doctor||__NONE__,__NONE__||__NONE__,76,False
+Bachelor of Technology||__NONE__,Bachelor of Engineering||__NONE__,145,False
+12th Standard||__NONE__,__NONE__||__NONE__,114,False
 Master of Technology||__NONE__,Master of Engineering||__NONE__,76,False
-Bachelor of Computer Applications||__NONE__,__NONE__||__NONE__,74,False
-Bachelor of Music||__NONE__,__NONE__||__NONE__,66,False
-High School Diploma||__NONE__,__NONE__||__NONE__,58,False
+Bachelor of Arts||__NONE__,__NONE__||__NONE__,71,False
+Bachelor of Engineering||__NONE__,__NONE__||__NONE__,71,False
+10th Standard||__NONE__,__NONE__||__NONE__,63,False
 Bachelor of Technology||__NONE__,Master of Technology||__NONE__,55,False
-Master of Commerce||__NONE__,__NONE__||__NONE__,54,False
-Associate of Applied Science||__NONE__,__NONE__||__NONE__,52,False
-Associate of Arts||__NONE__,__NONE__||__NONE__,49,False
-Bachelor of Social Work||__NONE__,__NONE__||__NONE__,48,False
-General Educational Development||__NONE__,__NONE__||__NONE__,48,False
-Master of Computer Applications||__NONE__,__NONE__||__NONE__,46,False
-Doctor of Education||__NONE__,__NONE__||__NONE__,45,False
+Juris Doctor||__NONE__,__NONE__||__NONE__,55,False
+Master of Arts||__NONE__,__NONE__||__NONE__,54,False
+Master of Engineering||__NONE__,__NONE__||__NONE__,53,False
+10th Standard||__NONE__,Secondary (Class X)||__NONE__,49,False
+Master of Technology||__NONE__,Master of Science||__NONE__,49,False
+Doctor of Philosophy||__NONE__,__NONE__||__NONE__,48,False
+Master of Science||__NONE__,__NONE__||__NONE__,46,False
+Associate of Applied Science||__NONE__,__NONE__||__NONE__,45,False
 Bachelor of Science||__NONE__,Bachelor of Business Administration||__NONE__,44,False
 Master of Science||__NONE__,Master of Business Administration||__NONE__,44,False
-Bachelor of Architecture||__NONE__,__NONE__||__NONE__,43,False
-Bachelor of Fine Arts||__NONE__,__NONE__||__NONE__,43,False
-Doctor of Medicine||__NONE__,__NONE__||__NONE__,42,False
-Associate of Science||__NONE__,__NONE__||__NONE__,41,False
-Doctor of Nursing Practice||__NONE__,__NONE__||__NONE__,41,False
-Master of Public Health||__NONE__,__NONE__||__NONE__,41,False
-Doctor of Psychology||__NONE__,__NONE__||__NONE__,37,False
+Post Graduate Diploma||__NONE__,__NONE__||__NONE__,42,False
+12th Standard||__NONE__,Senior Secondary (Class XII)||__NONE__,41,False
+Bachelor of Technology||__NONE__,__NONE__||__NONE__,39,False
+Post Graduate Diploma||__NONE__,Master of Science||__NONE__,39,False
+Bachelor of Computer Applications||__NONE__,__NONE__||__NONE__,37,False
+Bachelor of Science||__NONE__,__NONE__||__NONE__,37,False
+High School Diploma||__NONE__,Post Graduate Diploma||__NONE__,37,False
+Bachelor of Technology||__NONE__,Bachelor of Science||__NONE__,36,False
 Bachelor of Fine Arts||__NONE__,Bachelor of Arts||__NONE__,35,False
 Bachelor of Engineering||__NONE__,Master of Engineering||__NONE__,34,False
+Doctor of Education||__NONE__,__NONE__||__NONE__,33,False
+Associate of Arts||__NONE__,__NONE__||__NONE__,32,False
 Bachelor of Engineering||__NONE__,Master of Technology||__NONE__,32,False
-Doctor of Dental Surgery||__NONE__,__NONE__||__NONE__,29,False
-Master of Fine Arts||__NONE__,__NONE__||__NONE__,29,False
-Master of Public Administration||__NONE__,__NONE__||__NONE__,29,False
-Master of Social Work||__NONE__,__NONE__||__NONE__,29,False
+Doctor of Nursing Practice||__NONE__,__NONE__||__NONE__,32,False
+Bachelor of Music||__NONE__,__NONE__||__NONE__,31,False
+Doctor of Medicine||__NONE__,__NONE__||__NONE__,29,False
+Associate of Science||__NONE__,__NONE__||__NONE__,28,False
+Doctor of Psychology||__NONE__,__NONE__||__NONE__,28,False
+Bachelor of Business Administration||__NONE__,__NONE__||__NONE__,27,False
+Master of Social Work||__NONE__,Master of Science||__NONE__,27,False
 Bachelor of Science||__NONE__,Bachelor of Dental Surgery||__NONE__,26,False
-Diploma in Engineering||__NONE__,__NONE__||__NONE__,26,False
+Bachelor of Social Work||__NONE__,__NONE__||__NONE__,26,False
+Diploma in Engineering||__NONE__,Post Graduate Diploma||__NONE__,24,False
+General Educational Development||__NONE__,__NONE__||__NONE__,24,False
+Bachelor of Commerce||__NONE__,__NONE__||__NONE__,23,False
+Bachelor of Social Work||__NONE__,Bachelor of Science||__NONE__,23,False
 Associate of Science||__NONE__,Master of Science||__NONE__,22,False
 Bachelor of Technology||__NONE__,Diploma in Engineering||__NONE__,22,False
+Doctor of Dental Surgery||__NONE__,__NONE__||__NONE__,21,False
 Bachelor of Engineering||__NONE__,Diploma in Engineering||__NONE__,20,False
 Bachelor of Music||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,20,False
+Master of Arts||__NONE__,Master of Science||__NONE__,19,False
+Master of Commerce||__NONE__,__NONE__||__NONE__,19,False
+Master of Public Health||__NONE__,__NONE__||__NONE__,19,False
 Bachelor of Business Administration||__NONE__,Bachelor of Engineering||__NONE__,18,False
-Doctor of Business Administration||__NONE__,__NONE__||__NONE__,18,False
+Bachelor of Fine Arts||__NONE__,Bachelor of Science||__NONE__,18,False
 Doctor of Dental Surgery||__NONE__,Bachelor of Dental Surgery||__NONE__,18,False
-Doctor of Pharmacy||__NONE__,__NONE__||__NONE__,18,False
-Diploma in Engineering||__NONE__,Post Graduate Diploma||__NONE__,17,False
+General Educational Development||__NONE__,Post Graduate Diploma||__NONE__,18,False
+Master of Technology||__NONE__,__NONE__||__NONE__,18,False
+Master of Engineering||__NONE__,Master of Science||__NONE__,17,False
 12th Standard||__NONE__,Bachelor of Science||__NONE__,16,False
+High School Diploma||__NONE__,__NONE__||__NONE__,16,False
 Master of Business Administration||__NONE__,Bachelor of Arts||__NONE__,16,False
+Master of Business Administration||__NONE__,__NONE__||__NONE__,16,False
 Master of Engineering||__NONE__,Bachelor of Engineering||__NONE__,16,False
 Master of Science||__NONE__,Bachelor of Science||__NONE__,16,False
-Master of Social Work||__NONE__,Master of Science||__NONE__,16,False
-Bachelor of Social Work||__NONE__,Bachelor of Science||__NONE__,15,False
+Bachelor of Music||__NONE__,Bachelor of Science||__NONE__,15,False
+Doctor of Pharmacy||__NONE__,__NONE__||__NONE__,15,False
 Bachelor of Engineering||__NONE__,Bachelor of Technology||__NONE__,14,False
+Bachelor of Fine Arts||__NONE__,__NONE__||__NONE__,14,False
+Post Graduate Diploma||__NONE__,Post Graduate Diploma in Business Administration||__NONE__,14,False
 Master of Business Administration||__NONE__,Bachelor of Engineering||__NONE__,13,False
 Master of Fine Arts||__NONE__,Master of Arts||__NONE__,13,False
+Master of Fine Arts||__NONE__,__NONE__||__NONE__,13,False
+Master of Public Administration||__NONE__,__NONE__||__NONE__,13,False
 Bachelor of Architecture||__NONE__,Bachelor of Arts||__NONE__,12,False
+Bachelor of Architecture||__NONE__,Bachelor of Science||__NONE__,12,False
 Bachelor of Technology||__NONE__,Master of Engineering||__NONE__,12,False
 Doctor of Pharmacy||__NONE__,Bachelor of Pharmacy||__NONE__,12,False
-General Educational Development||__NONE__,Post Graduate Diploma||__NONE__,12,False
+Master of Business Administration||__NONE__,Master of Science||__NONE__,12,False
+Master of Computer Applications||__NONE__,__NONE__||__NONE__,12,False
+Master of Public Health||__NONE__,Master of Science||__NONE__,12,False
 Master of Science||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,12,False
+Bachelor of Arts||__NONE__,Bachelor of Science||__NONE__,11,False
 Bachelor of Architecture||__NONE__,Bachelor of Computer Applications||__NONE__,10,False
 Bachelor of Arts||__NONE__,Bachelor of Computer Applications||__NONE__,10,False
 Bachelor of Business Administration||__NONE__,Bachelor of Arts||__NONE__,10,False
 Bachelor of Commerce||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,10,False
 Bachelor of Computer Applications||__NONE__,Bachelor of Arts||__NONE__,10,False
-Bachelor of Music||__NONE__,Bachelor of Science||__NONE__,10,False
 Doctor of Business Administration||__NONE__,Bachelor of Engineering||__NONE__,10,False
+Doctor of Business Administration||__NONE__,__NONE__||__NONE__,10,False
 Master of Public Administration||__NONE__,Master of Technology||__NONE__,10,False
+Master of Social Work||__NONE__,__NONE__||__NONE__,10,False
 10th Standard||__NONE__,Bachelor of Engineering||__NONE__,8,False
 10th Standard||__NONE__,Bachelor of Science||__NONE__,8,False
 Associate of Applied Science||__NONE__,Master of Science||__NONE__,8,False
 Associate of Arts||__NONE__,Master of Arts||__NONE__,8,False
 Doctor of Business Administration||__NONE__,Master of Business Administration||__NONE__,8,False
 Doctor of Psychology||__NONE__,Doctor of Philosophy||__NONE__,8,False
-High School Diploma||__NONE__,Post Graduate Diploma||__NONE__,8,False
 Master of Arts||__NONE__,Bachelor of Arts||__NONE__,8,False
-Master of Arts||__NONE__,Master of Science||__NONE__,8,False
 Master of Commerce||__NONE__,Bachelor of Commerce||__NONE__,8,False
 Master of Computer Applications||__NONE__,Bachelor of Arts||__NONE__,8,False
+Master of Fine Arts||__NONE__,Master of Science||__NONE__,8,False
 Master of Public Administration||__NONE__,Master of Arts||__NONE__,8,False
+Master of Public Administration||__NONE__,Master of Science||__NONE__,8,False
 Master of Technology||__NONE__,Bachelor of Commerce||__NONE__,8,False
 Master of Technology||__NONE__,Bachelor of Technology||__NONE__,8,False
 Post Graduate Diploma||__NONE__,Bachelor of Arts||__NONE__,8,False
 Post Graduate Diploma||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NONE__,8,False
+Bachelor of Architecture||__NONE__,__NONE__||__NONE__,6,False
 Master of Science||__NONE__,Master of Engineering||__NONE__,6,False
-Bachelor of Arts||__NONE__,Bachelor of Science||__NONE__,5,False
 Bachelor of Business Administration||__NONE__,Bachelor of Technology||__NONE__,5,False
 Bachelor of Fine Arts||__NONE__,Bachelor of Business Administration||__NONE__,5,False
 Bachelor of Fine Arts||__NONE__,Bachelor of Computer Applications||__NONE__,5,False
@@ -104,6 +116,7 @@ Bachelor of Science||__NONE__,Bachelor of Medicine and Bachelor of Surgery||__NO
 10th Standard||__NONE__,12th Standard||__NONE__,4,False
 Associate of Arts||__NONE__,Bachelor of Computer Applications||__NONE__,4,False
 Bachelor of Science||__NONE__,Bachelor of Engineering||__NONE__,4,False
+Diploma in Engineering||__NONE__,__NONE__||__NONE__,4,False
 Doctor of Business Administration||__NONE__,Bachelor of Arts||__NONE__,4,False
 Doctor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,4,False
 Doctor of Business Administration||__NONE__,Bachelor of Dental Surgery||__NONE__,4,False
@@ -117,633 +130,1377 @@ Master of Computer Applications||__NONE__,Bachelor of Computer Applications||__N
 Master of Engineering||__NONE__,Master of Technology||__NONE__,4,False
 Master of Fine Arts||__NONE__,Master of Computer Applications||__NONE__,4,False
 Master of Public Health||__NONE__,Master of Arts||__NONE__,4,False
+Associate of Applied Science||__NONE__,A S||__NONE__,3,False
 Bachelor of Commerce||__NONE__,Bachelor of Computer Applications||__NONE__,3,False
-Bachelor of Commerce||__NONE__,Hons||__NONE__,2,False
+Bachelor of Engineering||__NONE__,Bachelor of Science||__NONE__,3,False
+Master of Public Health||__NONE__,Doctor of Philosophy||__NONE__,3,False
+Bachelor of Architecture||__NONE__,R C H||__NONE__,2,False
+Bachelor of Business Administration||__NONE__,Hons||__NONE__,2,False
 Master of Commerce||__NONE__,Master of Computer Applications||__NONE__,2,False
+Master of Commerce||__NONE__,Master of Science||__NONE__,2,False
 Master of Technology||__NONE__,Bachelor of Computer Applications||__NONE__,2,False
+10th Standard||__NONE__,IN S S C qualification||__NONE__,1,False
+10th Standard||__NONE__,IN S S C||__NONE__,1,False
+10th Standard||__NONE__,IN SSCHONS qualification||__NONE__,1,False
+10th Standard||__NONE__,IN X H O N S qualification||__NONE__,1,False
+10th Standard||__NONE__,IN X H O N S||__NONE__,1,False
+10th Standard||__NONE__,IN X qualification||__NONE__,1,False
+10th Standard||__NONE__,IN X.H.O.N.S. qualification||__NONE__,1,False
+10th Standard||__NONE__,India MATRICHONS qualification||__NONE__,1,False
+10th Standard||__NONE__,India MATRICHONS||__NONE__,1,False
+10th Standard||__NONE__,India Matric Hons qualification||__NONE__,1,False
+10th Standard||__NONE__,India S S C qualification||__NONE__,1,False
+10th Standard||__NONE__,India S S C||__NONE__,1,False
+10th Standard||__NONE__,India SSCHONS qualification||__NONE__,1,False
+10th Standard||__NONE__,India SSCHONS||__NONE__,1,False
+10th Standard||__NONE__,India X H O N S qualification||__NONE__,1,False
+10th Standard||__NONE__,India X H O N S||__NONE__,1,False
+10th Standard||__NONE__,India X qualification||__NONE__,1,False
+10th Standard||__NONE__,India X.H.O.N.S. qualification||__NONE__,1,False
+10th Standard||__NONE__,India X.H.O.N.S.||__NONE__,1,False
+10th Standard||__NONE__,India X||__NONE__,1,False
+10th Standard||__NONE__,India matric qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian MATRICHONS qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian MATRICHONS||__NONE__,1,False
+10th Standard||__NONE__,Indian S S C qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian S S C||__NONE__,1,False
+10th Standard||__NONE__,Indian SSCHONS qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian SSCHONS||__NONE__,1,False
+10th Standard||__NONE__,Indian X H O N S qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian X H O N S||__NONE__,1,False
+10th Standard||__NONE__,Indian X qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian X.H.O.N.S. qualification||__NONE__,1,False
+10th Standard||__NONE__,Indian X.H.O.N.S.||__NONE__,1,False
+10th Standard||__NONE__,Indian X||__NONE__,1,False
+10th Standard||__NONE__,Indian matric qualification||__NONE__,1,False
+10th Standard||__NONE__,S S C qualification||__NONE__,1,False
+10th Standard||__NONE__,SSCHONS qualification||__NONE__,1,False
+10th Standard||__NONE__,X H O N S qualification||__NONE__,1,False
+10th Standard||__NONE__,X H O N S||__NONE__,1,False
+10th Standard||__NONE__,X qualification||__NONE__,1,False
+10th Standard||__NONE__,X.H.O.N.S. qualification||__NONE__,1,False
+12th Standard||__NONE__,H S C qualification||__NONE__,1,False
+12th Standard||__NONE__,HSCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,I S C qualification||__NONE__,1,False
+12th Standard||__NONE__,I S C||__NONE__,1,False
+12th Standard||__NONE__,IN H S C qualification||__NONE__,1,False
+12th Standard||__NONE__,IN H S C||__NONE__,1,False
+12th Standard||__NONE__,IN HSCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,IN I S C qualification||__NONE__,1,False
+12th Standard||__NONE__,IN I S C||__NONE__,1,False
+12th Standard||__NONE__,IN ISC Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,IN ISCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,IN PLUSTWO qualification||__NONE__,1,False
+12th Standard||__NONE__,IN X I I qualification||__NONE__,1,False
+12th Standard||__NONE__,IN X I I||__NONE__,1,False
+12th Standard||__NONE__,IN XII Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,IN XII qualification||__NONE__,1,False
+12th Standard||__NONE__,IN XIIHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,IN XIIHONS||__NONE__,1,False
+12th Standard||__NONE__,IN isc qualification||__NONE__,1,False
+12th Standard||__NONE__,ISC Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,ISCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,India H S C qualification||__NONE__,1,False
+12th Standard||__NONE__,India H S C||__NONE__,1,False
+12th Standard||__NONE__,India HSCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,India HSCHONS||__NONE__,1,False
+12th Standard||__NONE__,India I S C qualification||__NONE__,1,False
+12th Standard||__NONE__,India I S C||__NONE__,1,False
+12th Standard||__NONE__,India ISC Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,India ISC Hons||__NONE__,1,False
+12th Standard||__NONE__,India ISCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,India ISCHONS||__NONE__,1,False
+12th Standard||__NONE__,India PLUSTWO qualification||__NONE__,1,False
+12th Standard||__NONE__,India X I I qualification||__NONE__,1,False
+12th Standard||__NONE__,India X I I||__NONE__,1,False
+12th Standard||__NONE__,India XII Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,India XII qualification||__NONE__,1,False
+12th Standard||__NONE__,India XIIHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,India XIIHONS||__NONE__,1,False
+12th Standard||__NONE__,India isc qualification||__NONE__,1,False
+12th Standard||__NONE__,India isc||__NONE__,1,False
+12th Standard||__NONE__,India plus two qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian H S C qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian H S C||__NONE__,1,False
+12th Standard||__NONE__,Indian HSCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian HSCHONS||__NONE__,1,False
+12th Standard||__NONE__,Indian I S C qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian I S C||__NONE__,1,False
+12th Standard||__NONE__,Indian ISC Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian ISC Hons||__NONE__,1,False
+12th Standard||__NONE__,Indian ISCHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian ISCHONS||__NONE__,1,False
+12th Standard||__NONE__,Indian PLUSTWO qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian X I I qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian X I I||__NONE__,1,False
+12th Standard||__NONE__,Indian XII Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian XII Hons||__NONE__,1,False
+12th Standard||__NONE__,Indian XII qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian XIIHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian XIIHONS||__NONE__,1,False
+12th Standard||__NONE__,Indian XII||__NONE__,1,False
+12th Standard||__NONE__,Indian isc qualification||__NONE__,1,False
+12th Standard||__NONE__,Indian isc||__NONE__,1,False
+12th Standard||__NONE__,Indian plus two qualification||__NONE__,1,False
+12th Standard||__NONE__,PLUSTWO qualification||__NONE__,1,False
+12th Standard||__NONE__,X I I qualification||__NONE__,1,False
+12th Standard||__NONE__,X I I||__NONE__,1,False
+12th Standard||__NONE__,XII Hons qualification||__NONE__,1,False
+12th Standard||__NONE__,XII qualification||__NONE__,1,False
+12th Standard||__NONE__,XIIHONS qualification||__NONE__,1,False
+12th Standard||__NONE__,XIIHONS||__NONE__,1,False
+12th Standard||__NONE__,isc qualification||__NONE__,1,False
+Associate of Applied Science||__NONE__,A A S qualification||__NONE__,1,False
 Associate of Applied Science||__NONE__,A A S||__NONE__,1,False
+Associate of Applied Science||__NONE__,AAS degree||__NONE__,1,False
+Associate of Applied Science||__NONE__,AAS qualification||__NONE__,1,False
 Associate of Applied Science||__NONE__,AAS||__NONE__,1,False
 Associate of Applied Science||__NONE__,Applied Science Associate||__NONE__,1,False
+Associate of Applied Science||__NONE__,US A A S qualification||__NONE__,1,False
 Associate of Applied Science||__NONE__,US A A S||__NONE__,1,False
+Associate of Applied Science||__NONE__,US AAS degree||__NONE__,1,False
+Associate of Applied Science||__NONE__,US AAS qualification||__NONE__,1,False
 Associate of Applied Science||__NONE__,US AAS||__NONE__,1,False
 Associate of Applied Science||__NONE__,US Applied Science Associate||__NONE__,1,False
-Associate of Applied Science||__NONE__,US Associate of Applied Science||__NONE__,1,False
 Associate of Applied Science||__NONE__,United States A A S||__NONE__,1,False
+Associate of Applied Science||__NONE__,United States AAS degree||__NONE__,1,False
+Associate of Applied Science||__NONE__,United States AAS qualification||__NONE__,1,False
 Associate of Applied Science||__NONE__,United States AAS||__NONE__,1,False
-Associate of Applied Science||__NONE__,es Associate of Applied Science||__NONE__,1,False
-Associate of Applied Science||__NONE__,tates Applied Science Associate||__NONE__,1,False
-Associate of Arts||__NONE__,A A||__NONE__,1,False
+Associate of Arts||__NONE__,A A degree||__NONE__,1,False
+Associate of Arts||__NONE__,A A qualification||__NONE__,1,False
+Associate of Arts||__NONE__,AA degree||__NONE__,1,False
+Associate of Arts||__NONE__,AA qualification||__NONE__,1,False
+Associate of Arts||__NONE__,AA||__NONE__,1,False
+Associate of Arts||__NONE__,Associate Arts degree||__NONE__,1,False
+Associate of Arts||__NONE__,Associate Arts qualification||__NONE__,1,False
 Associate of Arts||__NONE__,Associate Arts||__NONE__,1,False
+Associate of Arts||__NONE__,Associate of Arts degree||__NONE__,1,False
+Associate of Arts||__NONE__,Associate of Arts qualification||__NONE__,1,False
+Associate of Arts||__NONE__,US A A degree||__NONE__,1,False
+Associate of Arts||__NONE__,US A A qualification||__NONE__,1,False
 Associate of Arts||__NONE__,US A A||__NONE__,1,False
+Associate of Arts||__NONE__,US AA degree||__NONE__,1,False
+Associate of Arts||__NONE__,US AA qualification||__NONE__,1,False
 Associate of Arts||__NONE__,US AA||__NONE__,1,False
+Associate of Arts||__NONE__,US Associate Arts degree||__NONE__,1,False
+Associate of Arts||__NONE__,US Associate Arts qualification||__NONE__,1,False
 Associate of Arts||__NONE__,US Associate Arts||__NONE__,1,False
-Associate of Arts||__NONE__,US Associate of Arts||__NONE__,1,False
+Associate of Arts||__NONE__,US Associate of Arts degree||__NONE__,1,False
+Associate of Arts||__NONE__,United States A A degree||__NONE__,1,False
+Associate of Arts||__NONE__,United States A A qualification||__NONE__,1,False
 Associate of Arts||__NONE__,United States A A||__NONE__,1,False
+Associate of Arts||__NONE__,United States AA degree||__NONE__,1,False
+Associate of Arts||__NONE__,United States AA qualification||__NONE__,1,False
 Associate of Arts||__NONE__,United States AA||__NONE__,1,False
 Associate of Arts||__NONE__,United States Associate Arts||__NONE__,1,False
 Associate of Arts||__NONE__,United States Associate of Arts||__NONE__,1,False
+Associate of Science||__NONE__,A S degree||__NONE__,1,False
+Associate of Science||__NONE__,A S qualification||__NONE__,1,False
 Associate of Science||__NONE__,A S||__NONE__,1,False
-Associate of Science||__NONE__,Associate Science||__NONE__,1,False
+Associate of Science||__NONE__,AS degree||__NONE__,1,False
+Associate of Science||__NONE__,AS qualification||__NONE__,1,False
+Associate of Science||__NONE__,AS||__NONE__,1,False
+Associate of Science||__NONE__,Associate Science degree||__NONE__,1,False
+Associate of Science||__NONE__,Associate Science qualification||__NONE__,1,False
+Associate of Science||__NONE__,US A S degree||__NONE__,1,False
+Associate of Science||__NONE__,US A S qualification||__NONE__,1,False
 Associate of Science||__NONE__,US A S||__NONE__,1,False
+Associate of Science||__NONE__,US AS degree||__NONE__,1,False
+Associate of Science||__NONE__,US AS qualification||__NONE__,1,False
 Associate of Science||__NONE__,US AS||__NONE__,1,False
-Associate of Science||__NONE__,US Associate Science||__NONE__,1,False
+Associate of Science||__NONE__,US Associate Science degree||__NONE__,1,False
+Associate of Science||__NONE__,United States A S degree||__NONE__,1,False
+Associate of Science||__NONE__,United States A S qualification||__NONE__,1,False
 Associate of Science||__NONE__,United States A S||__NONE__,1,False
+Associate of Science||__NONE__,United States AS degree||__NONE__,1,False
+Associate of Science||__NONE__,United States AS qualification||__NONE__,1,False
 Associate of Science||__NONE__,United States AS||__NONE__,1,False
 Associate of Science||__NONE__,United States Associate Science||__NONE__,1,False
-Associate of Science||__NONE__,ted States Associate of Science||__NONE__,1,False
-Bachelor of Architecture||__NONE__,B A R C H||__NONE__,1,False
-Bachelor of Architecture||__NONE__,BArch||__NONE__,1,False
-Bachelor of Architecture||__NONE__,States Bachelor of Architecture||__NONE__,1,False
-Bachelor of Architecture||__NONE__,US B A R C H||__NONE__,1,False
-Bachelor of Architecture||__NONE__,US BArch||__NONE__,1,False
+Bachelor of Architecture||__NONE__,B A R C H qualification||__NONE__,1,False
+Bachelor of Architecture||__NONE__,B A R C H with Honours||__NONE__,1,False
+Bachelor of Architecture||__NONE__,US B A R C H qualification||__NONE__,1,False
+Bachelor of Architecture||__NONE__,US B A R C H with Honours||__NONE__,1,False
 Bachelor of Architecture||__NONE__,United States B A R C H||__NONE__,1,False
-Bachelor of Architecture||__NONE__,United States BArch||__NONE__,1,False
-Bachelor of Arts||__NONE__,A B||__NONE__,1,False
+Bachelor of Arts||__NONE__,A B degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,A B qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,A B with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,AB degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,AB qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,AB with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,Artium Baccalaureus degree||__NONE__,1,False
 Bachelor of Arts||__NONE__,Artium Baccalaureus||__NONE__,1,False
-Bachelor of Arts||__NONE__,BA Hons Hons||__NONE__,1,False
-Bachelor of Arts||__NONE__,BAHONSHONS||__NONE__,1,False
-Bachelor of Arts||__NONE__,IN B A||__NONE__,1,False
-Bachelor of Arts||__NONE__,IN BA Hons Hons||__NONE__,1,False
-Bachelor of Arts||__NONE__,IN BAHONSHONS||__NONE__,1,False
-Bachelor of Arts||__NONE__,IN BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,BAHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,BAHONSHONS degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,BAHONSHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,BAHONSHONS with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,BachelorofArts qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN B A degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN B A qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN B A with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BAHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BAHONSHONS degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BAHONSHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BAHONSHONS with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,IN BachelorofArts qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,India B A degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,India B A qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,India B A with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,India B A||__NONE__,1,False
-Bachelor of Arts||__NONE__,India BA Hons Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONS degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONS with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONSHONS degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONSHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,India BAHONSHONS with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,India BAHONSHONS||__NONE__,1,False
-Bachelor of Arts||__NONE__,India BAHONS||__NONE__,1,False
-Bachelor of Arts||__NONE__,India BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian B A degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian B A qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian B A with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,Indian B A||__NONE__,1,False
-Bachelor of Arts||__NONE__,Indian BA Hons Hons||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONS degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONS with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONSHONS degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONSHONS qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,Indian BAHONSHONS with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,Indian BAHONSHONS||__NONE__,1,False
-Bachelor of Arts||__NONE__,Indian BAHONS||__NONE__,1,False
-Bachelor of Arts||__NONE__,Indian BA||__NONE__,1,False
-Bachelor of Arts||__NONE__,US A B||__NONE__,1,False
+Bachelor of Arts||__NONE__,US A B degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,US A B qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,US A B with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,US AB degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,US AB qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,US AB with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,US AB||__NONE__,1,False
+Bachelor of Arts||__NONE__,US Artium Baccalaureus degree||__NONE__,1,False
 Bachelor of Arts||__NONE__,US Artium Baccalaureus||__NONE__,1,False
-Bachelor of Arts||__NONE__,US B A||__NONE__,1,False
-Bachelor of Arts||__NONE__,US BA||__NONE__,1,False
+Bachelor of Arts||__NONE__,US B A degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,US B A qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,US B A with Honours||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States A B degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States A B qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States A B with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,United States A B||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States AB degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States AB qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States AB with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,United States AB||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States B A degree||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States B A qualification||__NONE__,1,False
+Bachelor of Arts||__NONE__,United States B A with Honours||__NONE__,1,False
 Bachelor of Arts||__NONE__,United States B A||__NONE__,1,False
-Bachelor of Arts||__NONE__,United States BA||__NONE__,1,False
-Bachelor of Arts||__NONE__,United States Bachelor of Arts||__NONE__,1,False
-Bachelor of Arts||__NONE__,ited States Artium Baccalaureus||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,B.B.A. Hons||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,BBAHONS||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,IN B.B.A. Hons||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,IN BBAHONS||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,IN BBA||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,India B B A Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,B B A Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,B B A Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,B.B.A. Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,B.B.A. Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,BBAHONS degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,BBAHONS qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,BBAHONS with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B B A Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B B A Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B B A qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B B A with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B.B.A. Hons degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B.B.A. Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN B.B.A. Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN BBAHONS degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN BBAHONS qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,IN BBAHONS with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B B A with Honours||__NONE__,1,False
 Bachelor of Business Administration||__NONE__,India B B A||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,India B.B.A. Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B.B.A. Hons degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B.B.A. Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India B.B.A. Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India BBAHONS degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India BBAHONS qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,India BBAHONS with Honours||__NONE__,1,False
 Bachelor of Business Administration||__NONE__,India BBAHONS||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,India BBA||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,Indian B B A Hons||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,Indian B B A||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,Indian B.B.A. Hons||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A Hons qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B B A with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B.B.A. Hons degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian B.B.A. Hons with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian BBAHONS degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian BBAHONS qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,Indian BBAHONS with Honours||__NONE__,1,False
 Bachelor of Business Administration||__NONE__,Indian BBAHONS||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,Indian BBA||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,US B B A||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,US BBA||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,US B B A degree||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,US B B A qualification||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,US B B A with Honours||__NONE__,1,False
+Bachelor of Business Administration||__NONE__,United States B B A degree||__NONE__,1,False
 Bachelor of Business Administration||__NONE__,United States B B A||__NONE__,1,False
-Bachelor of Business Administration||__NONE__,United States BBA||__NONE__,1,False
-Bachelor of Commerce||__NONE__,B C O M||__NONE__,1,False
-Bachelor of Commerce||__NONE__,IN B C O M||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B C O M qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B C O M with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B Com qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B Com with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B. Com Hons qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,B. Com Hons with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,BCOMHONS qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Bachelor of Science||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B C O M degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B C O M qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B C O M with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B Com qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B Com with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B. Com Hons qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN B. Com Hons with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,IN BCOMHONS qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B C O M degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B C O M qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B C O M with Honours||__NONE__,1,False
 Bachelor of Commerce||__NONE__,India B C O M||__NONE__,1,False
-Bachelor of Commerce||__NONE__,India B Com||__NONE__,1,False
-Bachelor of Commerce||__NONE__,India B. Com Hons||__NONE__,1,False
-Bachelor of Commerce||__NONE__,India BCOMHONS||__NONE__,1,False
-Bachelor of Commerce||__NONE__,India BCOM||__NONE__,1,False
-Bachelor of Commerce||__NONE__,India BCom Hons||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B Com degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B Com qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B Com with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B. Com Hons degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B. Com Hons qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India B. Com Hons with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India BCOMHONS degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,India BCOMHONS qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B C O M degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B C O M qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B C O M with Honours||__NONE__,1,False
 Bachelor of Commerce||__NONE__,Indian B C O M||__NONE__,1,False
-Bachelor of Commerce||__NONE__,Indian B Com||__NONE__,1,False
-Bachelor of Commerce||__NONE__,Indian B. Com Hons||__NONE__,1,False
-Bachelor of Commerce||__NONE__,Indian BCOMHONS||__NONE__,1,False
-Bachelor of Commerce||__NONE__,Indian BCOM||__NONE__,1,False
-Bachelor of Commerce||__NONE__,Indian BCom Hons||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,BCAHONS||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,BCA||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,IN BCAHONS||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,IN BCA||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,India B C A||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B Com degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B Com qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B Com with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B. Com Hons degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian B. Com Hons with Honours||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian BCOMHONS degree||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian BCOMHONS qualification||__NONE__,1,False
+Bachelor of Commerce||__NONE__,Indian BCOMHONS with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,B C A qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,B C A with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,BCAHONS degree||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,BCAHONS qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,BCAHONS with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN B C A qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN B C A with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN BCAHONS degree||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN BCAHONS qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,IN BCAHONS with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India B C A degree||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India B C A qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India B C A with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India BCAHONS degree||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India BCAHONS qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,India BCAHONS with Honours||__NONE__,1,False
 Bachelor of Computer Applications||__NONE__,India BCAHONS||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,India BCA||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,Indian B C A||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian B C A degree||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian B C A qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian B C A with Honours||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian BCAHONS degree||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian BCAHONS qualification||__NONE__,1,False
+Bachelor of Computer Applications||__NONE__,Indian BCAHONS with Honours||__NONE__,1,False
 Bachelor of Computer Applications||__NONE__,Indian BCAHONS||__NONE__,1,False
-Bachelor of Computer Applications||__NONE__,Indian BCA||__NONE__,1,False
-Bachelor of Engineering||__NONE__,BEHONSHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,BENGHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,IN B E N G||__NONE__,1,False
-Bachelor of Engineering||__NONE__,IN B E||__NONE__,1,False
-Bachelor of Engineering||__NONE__,IN BEHONSHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,IN BENGHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,IN BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,B Eng qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,B Eng with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BEHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BEHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BEHONSHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BEHONSHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BEHONSHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BENGHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BENGHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,BENGHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E N G degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E N G qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E N G with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B E with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B Eng qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN B Eng with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BEHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BEHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BEHONSHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BEHONSHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BEHONSHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BENGHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BENGHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,IN BENGHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E N G degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E N G qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E N G with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,India B E N G||__NONE__,1,False
-Bachelor of Engineering||__NONE__,India B Eng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B E with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B Eng degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B Eng qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India B Eng with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,India B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONSHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONSHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BEHONSHONS with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,India BEHONSHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,India BEHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BENGHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BENGHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,India BENGHONS with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,India BENGHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,India BENG||__NONE__,1,False
-Bachelor of Engineering||__NONE__,India BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E N G degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E N G qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E N G with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,Indian B E N G||__NONE__,1,False
-Bachelor of Engineering||__NONE__,Indian B Eng||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B E with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B Eng degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B Eng qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian B Eng with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,Indian B E||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONS with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONSHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONSHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BEHONSHONS with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,Indian BEHONSHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,Indian BEHONS||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BENGHONS degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BENGHONS qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Indian BENGHONS with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,Indian BENGHONS||__NONE__,1,False
-Bachelor of Engineering||__NONE__,Indian BENG||__NONE__,1,False
-Bachelor of Engineering||__NONE__,Indian BE||__NONE__,1,False
-Bachelor of Engineering||__NONE__,US B E N G||__NONE__,1,False
-Bachelor of Engineering||__NONE__,US B E||__NONE__,1,False
-Bachelor of Engineering||__NONE__,US BEng||__NONE__,1,False
-Bachelor of Engineering||__NONE__,US BE||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E N G degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E N G qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E N G with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,US B E with Honours||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States B E N G degree||__NONE__,1,False
 Bachelor of Engineering||__NONE__,United States B E N G||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States B E degree||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States B E qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,United States B E with Honours||__NONE__,1,False
 Bachelor of Engineering||__NONE__,United States B E||__NONE__,1,False
-Bachelor of Engineering||__NONE__,United States BEng||__NONE__,1,False
-Bachelor of Engineering||__NONE__,United States BE||__NONE__,1,False
-Bachelor of Fine Arts||__NONE__,B F A||__NONE__,1,False
-Bachelor of Fine Arts||__NONE__,BFA||__NONE__,1,False
-Bachelor of Fine Arts||__NONE__,US B F A||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,B F A degree||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,B F A qualification||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,B F A with Honours||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,BFA degree||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,BFA qualification||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,BFA with Honours||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US B F A degree||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US B F A qualification||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US B F A with Honours||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US BFA degree||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US BFA qualification||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,US BFA with Honours||__NONE__,1,False
 Bachelor of Fine Arts||__NONE__,US BFA||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,United States B F A degree||__NONE__,1,False
 Bachelor of Fine Arts||__NONE__,United States B F A||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,United States BFA degree||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,United States BFA qualification||__NONE__,1,False
+Bachelor of Fine Arts||__NONE__,United States BFA with Honours||__NONE__,1,False
 Bachelor of Fine Arts||__NONE__,United States BFA||__NONE__,1,False
-Bachelor of Fine Arts||__NONE__,ed States Bachelor of Fine Arts||__NONE__,1,False
-Bachelor of Fine Arts||__NONE__,nited States Fine Arts Bachelor||__NONE__,1,False
-Bachelor of Music||__NONE__,B M U S||__NONE__,1,False
-Bachelor of Music||__NONE__,B M||__NONE__,1,False
-Bachelor of Music||__NONE__,BMus||__NONE__,1,False
+Bachelor of Music||__NONE__,B M U S degree||__NONE__,1,False
+Bachelor of Music||__NONE__,B M U S qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,B M U S with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,B M degree||__NONE__,1,False
+Bachelor of Music||__NONE__,B M qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,B M with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,BM degree||__NONE__,1,False
+Bachelor of Music||__NONE__,BM qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,BM with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,BMus degree||__NONE__,1,False
+Bachelor of Music||__NONE__,BMus qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,BMus with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,BM||__NONE__,1,False
 Bachelor of Music||__NONE__,Bachelor of Engineering||__NONE__,1,False
+Bachelor of Music||__NONE__,Bachelor of Music qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,Bachelor of Music with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M U S degree||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M U S qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M U S with Honours||__NONE__,1,False
 Bachelor of Music||__NONE__,US B M U S||__NONE__,1,False
-Bachelor of Music||__NONE__,US B M||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M degree||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,US B M with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,US BM degree||__NONE__,1,False
+Bachelor of Music||__NONE__,US BM qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,US BM with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,US BMus degree||__NONE__,1,False
+Bachelor of Music||__NONE__,US BMus qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,US BMus with Honours||__NONE__,1,False
 Bachelor of Music||__NONE__,US BMus||__NONE__,1,False
-Bachelor of Music||__NONE__,US BM||__NONE__,1,False
-Bachelor of Music||__NONE__,US Bachelor of Music||__NONE__,1,False
+Bachelor of Music||__NONE__,US Bachelor of Music degree||__NONE__,1,False
+Bachelor of Music||__NONE__,United States B M U S degree||__NONE__,1,False
 Bachelor of Music||__NONE__,United States B M U S||__NONE__,1,False
+Bachelor of Music||__NONE__,United States B M degree||__NONE__,1,False
+Bachelor of Music||__NONE__,United States B M qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,United States B M with Honours||__NONE__,1,False
 Bachelor of Music||__NONE__,United States B M||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BM degree||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BM qualification||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BM with Honours||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BMus degree||__NONE__,1,False
+Bachelor of Music||__NONE__,United States BMus with Honours||__NONE__,1,False
 Bachelor of Music||__NONE__,United States BMus||__NONE__,1,False
 Bachelor of Music||__NONE__,United States BM||__NONE__,1,False
-Bachelor of Music||__NONE__,United States Bachelor of Music||__NONE__,1,False
-Bachelor of Science||__NONE__,B S C||__NONE__,1,False
-Bachelor of Science||__NONE__,B Sc||__NONE__,1,False
-Bachelor of Science||__NONE__,BSC Hons||__NONE__,1,False
-Bachelor of Science||__NONE__,BSC||__NONE__,1,False
-Bachelor of Science||__NONE__,IN B S C||__NONE__,1,False
-Bachelor of Science||__NONE__,IN B Sc||__NONE__,1,False
-Bachelor of Science||__NONE__,IN BSC Hons||__NONE__,1,False
-Bachelor of Science||__NONE__,IN BSC||__NONE__,1,False
-Bachelor of Science||__NONE__,India B S C||__NONE__,1,False
-Bachelor of Science||__NONE__,India B Sc||__NONE__,1,False
-Bachelor of Science||__NONE__,India BSC Hons||__NONE__,1,False
-Bachelor of Science||__NONE__,India BSCHONS||__NONE__,1,False
-Bachelor of Science||__NONE__,India BSC||__NONE__,1,False
+Bachelor of Science||__NONE__,B S C qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,B S C with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,B S qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,B S with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,B Sc qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,B Sc with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B S C degree||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B S C qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B S C with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B Sc degree||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B Sc qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,IN B Sc with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,India B S C degree||__NONE__,1,False
+Bachelor of Science||__NONE__,India B S C qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,India B S C with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,India B Sc degree||__NONE__,1,False
+Bachelor of Science||__NONE__,India B Sc qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,India B Sc with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,India BSCHONS degree||__NONE__,1,False
+Bachelor of Science||__NONE__,India BSCHONS qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,India BSCHONS with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B S C degree||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B S C qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B S C with Honours||__NONE__,1,False
 Bachelor of Science||__NONE__,Indian B S C||__NONE__,1,False
-Bachelor of Science||__NONE__,Indian B Sc||__NONE__,1,False
-Bachelor of Science||__NONE__,Indian BSC Hons||__NONE__,1,False
-Bachelor of Science||__NONE__,Indian BSCHONS||__NONE__,1,False
-Bachelor of Science||__NONE__,Indian BSC||__NONE__,1,False
-Bachelor of Science||__NONE__,S C B||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B Sc degree||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B Sc qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian B Sc with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian BSCHONS degree||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian BSCHONS qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,Indian BSCHONS with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,S C B degree||__NONE__,1,False
+Bachelor of Science||__NONE__,S C B qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,S C B with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,ScB degree||__NONE__,1,False
+Bachelor of Science||__NONE__,ScB qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,ScB with Honours||__NONE__,1,False
 Bachelor of Science||__NONE__,ScB||__NONE__,1,False
-Bachelor of Science||__NONE__,US B S||__NONE__,1,False
-Bachelor of Science||__NONE__,US BS||__NONE__,1,False
-Bachelor of Science||__NONE__,US S C B||__NONE__,1,False
+Bachelor of Science||__NONE__,US B S degree||__NONE__,1,False
+Bachelor of Science||__NONE__,US B S qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,US B S with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,US S C B degree||__NONE__,1,False
+Bachelor of Science||__NONE__,US S C B qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,US S C B with Honours||__NONE__,1,False
+Bachelor of Science||__NONE__,US ScB degree||__NONE__,1,False
+Bachelor of Science||__NONE__,US ScB qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,US ScB with Honours||__NONE__,1,False
 Bachelor of Science||__NONE__,US ScB||__NONE__,1,False
+Bachelor of Science||__NONE__,United States B S degree||__NONE__,1,False
+Bachelor of Science||__NONE__,United States B S qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,United States B S with Honours||__NONE__,1,False
 Bachelor of Science||__NONE__,United States B S||__NONE__,1,False
-Bachelor of Science||__NONE__,United States BS||__NONE__,1,False
+Bachelor of Science||__NONE__,United States S C B degree||__NONE__,1,False
 Bachelor of Science||__NONE__,United States S C B||__NONE__,1,False
+Bachelor of Science||__NONE__,United States ScB degree||__NONE__,1,False
+Bachelor of Science||__NONE__,United States ScB qualification||__NONE__,1,False
+Bachelor of Science||__NONE__,United States ScB with Honours||__NONE__,1,False
 Bachelor of Science||__NONE__,United States ScB||__NONE__,1,False
+Bachelor of Social Work||__NONE__,B S W degree||__NONE__,1,False
+Bachelor of Social Work||__NONE__,B S W qualification||__NONE__,1,False
+Bachelor of Social Work||__NONE__,B S W with Honours||__NONE__,1,False
 Bachelor of Social Work||__NONE__,B S W||__NONE__,1,False
+Bachelor of Social Work||__NONE__,BSW degree||__NONE__,1,False
+Bachelor of Social Work||__NONE__,BSW qualification||__NONE__,1,False
+Bachelor of Social Work||__NONE__,BSW with Honours||__NONE__,1,False
 Bachelor of Social Work||__NONE__,BSW||__NONE__,1,False
-Bachelor of Social Work||__NONE__,States Bachelor of Social Work||__NONE__,1,False
+Bachelor of Social Work||__NONE__,Bachelor of Social Work degree||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US B S W degree||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US B S W qualification||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US B S W with Honours||__NONE__,1,False
 Bachelor of Social Work||__NONE__,US B S W||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US BSW degree||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US BSW qualification||__NONE__,1,False
+Bachelor of Social Work||__NONE__,US BSW with Honours||__NONE__,1,False
 Bachelor of Social Work||__NONE__,US BSW||__NONE__,1,False
-Bachelor of Social Work||__NONE__,US Bachelor of Social Work||__NONE__,1,False
+Bachelor of Social Work||__NONE__,United States B S W degree||__NONE__,1,False
 Bachelor of Social Work||__NONE__,United States B S W||__NONE__,1,False
+Bachelor of Social Work||__NONE__,United States BSW degree||__NONE__,1,False
+Bachelor of Social Work||__NONE__,United States BSW qualification||__NONE__,1,False
+Bachelor of Social Work||__NONE__,United States BSW with Honours||__NONE__,1,False
 Bachelor of Social Work||__NONE__,United States BSW||__NONE__,1,False
-Bachelor of Technology||__NONE__,B T E C H||__NONE__,1,False
-Bachelor of Technology||__NONE__,BTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,B T E C H qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,B T E C H with Honours||__NONE__,1,False
+Bachelor of Technology||__NONE__,B Tech qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,B Tech with Honours||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN B T E C H degree||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN B T E C H qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN B T E C H with Honours||__NONE__,1,False
 Bachelor of Technology||__NONE__,IN B T E C H||__NONE__,1,False
-Bachelor of Technology||__NONE__,IN BTECH||__NONE__,1,False
-Bachelor of Technology||__NONE__,India 4YEARBTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN B Tech qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,IN B Tech with Honours||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B T E C H degree||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B T E C H qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B T E C H with Honours||__NONE__,1,False
 Bachelor of Technology||__NONE__,India B T E C H||__NONE__,1,False
-Bachelor of Technology||__NONE__,India B Tech||__NONE__,1,False
-Bachelor of Technology||__NONE__,India BTECHHONS||__NONE__,1,False
-Bachelor of Technology||__NONE__,India BTECH||__NONE__,1,False
-Bachelor of Technology||__NONE__,Indian 4YEARBTECH||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B Tech degree||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B Tech qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,India B Tech with Honours||__NONE__,1,False
+Bachelor of Technology||__NONE__,India BTECHHONS degree||__NONE__,1,False
+Bachelor of Technology||__NONE__,India BTECHHONS qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,India BTECHHONS with Honours||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian B T E C H degree||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian B T E C H qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian B T E C H with Honours||__NONE__,1,False
 Bachelor of Technology||__NONE__,Indian B T E C H||__NONE__,1,False
-Bachelor of Technology||__NONE__,Indian BTECHHONS||__NONE__,1,False
-Bachelor of Technology||__NONE__,Indian BTECH||__NONE__,1,False
-Bachelor of Technology||__NONE__,Indian Tecnolgy of Technology||__NONE__,1,False
-Doctor of Business Administration||__NONE__,D B A||__NONE__,1,False
-Doctor of Business Administration||__NONE__,DBA||__NONE__,1,False
-Doctor of Business Administration||__NONE__,US D B A||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian B Tech qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian B Tech with Honours||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian BTECHHONS degree||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian BTECHHONS qualification||__NONE__,1,False
+Bachelor of Technology||__NONE__,Indian BTECHHONS with Honours||__NONE__,1,False
+Diploma in Engineering||__NONE__,DIPENG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,DIPENGG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,Dip Engg qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,IN DIPENG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,IN DIPENGG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,IN Dip Engg qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,IN polytechnic qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,India DIPENG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,India DIPENGG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,India Dip Engg qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,India polytechnic qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,Indian DIPENG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,Indian DIPENGG qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,Indian Dip Engg qualification||__NONE__,1,False
+Diploma in Engineering||__NONE__,polytechnic qualification||__NONE__,1,False
+Doctor of Business Administration||__NONE__,D B A degree||__NONE__,1,False
+Doctor of Business Administration||__NONE__,D B A qualification||__NONE__,1,False
+Doctor of Business Administration||__NONE__,DBA degree||__NONE__,1,False
+Doctor of Business Administration||__NONE__,DBA qualification||__NONE__,1,False
+Doctor of Business Administration||__NONE__,US D B A degree||__NONE__,1,False
+Doctor of Business Administration||__NONE__,US D B A qualification||__NONE__,1,False
+Doctor of Business Administration||__NONE__,US DBA degree||__NONE__,1,False
+Doctor of Business Administration||__NONE__,US DBA qualification||__NONE__,1,False
 Doctor of Business Administration||__NONE__,US DBA||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United States D B A degree||__NONE__,1,False
 Doctor of Business Administration||__NONE__,United States D B A||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United States DBA degree||__NONE__,1,False
+Doctor of Business Administration||__NONE__,United States DBA qualification||__NONE__,1,False
 Doctor of Business Administration||__NONE__,United States DBA||__NONE__,1,False
-Doctor of Dental Surgery||__NONE__,D D S||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,D D S degree||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,D D S qualification||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,DDS degree||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,DDS qualification||__NONE__,1,False
 Doctor of Dental Surgery||__NONE__,DDS||__NONE__,1,False
-Doctor of Dental Surgery||__NONE__,States Doctor of Dental Surgery||__NONE__,1,False
-Doctor of Dental Surgery||__NONE__,US D D S||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,US D D S degree||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,US D D S qualification||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,US DDS degree||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,US DDS qualification||__NONE__,1,False
 Doctor of Dental Surgery||__NONE__,US DDS||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,United States D D S degree||__NONE__,1,False
 Doctor of Dental Surgery||__NONE__,United States D D S||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,United States DDS degree||__NONE__,1,False
+Doctor of Dental Surgery||__NONE__,United States DDS qualification||__NONE__,1,False
 Doctor of Dental Surgery||__NONE__,United States DDS||__NONE__,1,False
+Doctor of Education||__NONE__,Doctor of Education degree||__NONE__,1,False
+Doctor of Education||__NONE__,E D D degree||__NONE__,1,False
+Doctor of Education||__NONE__,E D D qualification||__NONE__,1,False
 Doctor of Education||__NONE__,E D D||__NONE__,1,False
+Doctor of Education||__NONE__,EdD degree||__NONE__,1,False
+Doctor of Education||__NONE__,EdD qualification||__NONE__,1,False
 Doctor of Education||__NONE__,EdD||__NONE__,1,False
+Doctor of Education||__NONE__,US Doctor of Education degree||__NONE__,1,False
 Doctor of Education||__NONE__,US Doctor of Education||__NONE__,1,False
+Doctor of Education||__NONE__,US E D D degree||__NONE__,1,False
+Doctor of Education||__NONE__,US E D D qualification||__NONE__,1,False
 Doctor of Education||__NONE__,US E D D||__NONE__,1,False
+Doctor of Education||__NONE__,US EdD degree||__NONE__,1,False
+Doctor of Education||__NONE__,US EdD qualification||__NONE__,1,False
 Doctor of Education||__NONE__,US EdD||__NONE__,1,False
+Doctor of Education||__NONE__,United States E D D degree||__NONE__,1,False
 Doctor of Education||__NONE__,United States E D D||__NONE__,1,False
+Doctor of Education||__NONE__,United States EdD degree||__NONE__,1,False
+Doctor of Education||__NONE__,United States EdD qualification||__NONE__,1,False
 Doctor of Education||__NONE__,United States EdD||__NONE__,1,False
-Doctor of Education||__NONE__,ited States Doctor of Education||__NONE__,1,False
+Doctor of Medicine||__NONE__,Doctor of Medicine degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,M D degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,M D qualification||__NONE__,1,False
 Doctor of Medicine||__NONE__,M D||__NONE__,1,False
+Doctor of Medicine||__NONE__,MD degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,MD qualification||__NONE__,1,False
+Doctor of Medicine||__NONE__,MD||__NONE__,1,False
+Doctor of Medicine||__NONE__,US Doctor of Medicine degree||__NONE__,1,False
 Doctor of Medicine||__NONE__,US Doctor of Medicine||__NONE__,1,False
+Doctor of Medicine||__NONE__,US M D degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,US M D qualification||__NONE__,1,False
 Doctor of Medicine||__NONE__,US M D||__NONE__,1,False
-Doctor of Medicine||__NONE__,US MD||__NONE__,1,False
+Doctor of Medicine||__NONE__,US MD degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,US MD qualification||__NONE__,1,False
+Doctor of Medicine||__NONE__,United States M D degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,United States M D qualification||__NONE__,1,False
 Doctor of Medicine||__NONE__,United States M D||__NONE__,1,False
+Doctor of Medicine||__NONE__,United States MD degree||__NONE__,1,False
+Doctor of Medicine||__NONE__,United States MD qualification||__NONE__,1,False
 Doctor of Medicine||__NONE__,United States MD||__NONE__,1,False
-Doctor of Medicine||__NONE__,nited States Doctor of Medicine||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,D N P degree||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,D N P qualification||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,D N P||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,DNP degree||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,DNP qualification||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,DNP||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US D N P degree||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US D N P qualification||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,US D N P||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US DNP degree||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,US DNP qualification||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,US DNP||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,US Doctor of Nursing Practice||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,United States D N P degree||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,United States D N P||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,United States DNP degree||__NONE__,1,False
+Doctor of Nursing Practice||__NONE__,United States DNP qualification||__NONE__,1,False
 Doctor of Nursing Practice||__NONE__,United States DNP||__NONE__,1,False
-Doctor of Nursing Practice||__NONE__,ates Doctor of Nursing Practice||__NONE__,1,False
-Doctor of Pharmacy||__NONE__,PharmD||__NONE__,1,False
-Doctor of Pharmacy||__NONE__,US Doctor of Pharmacy||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,Doctor of Pharmacy degree||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,PharmD degree||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,PharmD qualification||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,US Doctor of Pharmacy degree||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,US PharmD degree||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,US PharmD qualification||__NONE__,1,False
 Doctor of Pharmacy||__NONE__,US PharmD||__NONE__,1,False
+Doctor of Pharmacy||__NONE__,United States PharmD degree||__NONE__,1,False
 Doctor of Pharmacy||__NONE__,United States PharmD||__NONE__,1,False
-Doctor of Pharmacy||__NONE__,nited States Doctor of Pharmacy||__NONE__,1,False
-Doctor of Philosophy||__NONE__,D P H I L||__NONE__,1,False
-Doctor of Philosophy||__NONE__,DPHILHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,DPHIL||__NONE__,1,False
-Doctor of Philosophy||__NONE__,DPhil Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,D P H I L qualification||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN D P H I L degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN D P H I L qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,IN D P H I L||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN DPHILHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN DPHIL||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN DPhil Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN P H D degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,IN P H D qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,IN P H D||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN PHDHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN PHD||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN Ph. D. Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN Ph. D.||__NONE__,1,False
-Doctor of Philosophy||__NONE__,IN Ph.D Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India D P H I L degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India D P H I L qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,India D P H I L||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India DPHILHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India DPHIL||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India DPhil Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India P H D degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,India P H D qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,India P H D||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India PHDHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India PHD||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India Ph. D. Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India Ph. D.||__NONE__,1,False
-Doctor of Philosophy||__NONE__,India Ph.D Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian D P H I L degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian D P H I L qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,Indian D P H I L||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian DPHILHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian DPHIL||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian DPhil Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian P H D degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,Indian P H D qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,Indian P H D||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian PHDHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian PHD||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian Ph. D. Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian Ph. D.||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Indian Ph.D Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,PHDHONS||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Ph. D. Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,Ph.D Hons||__NONE__,1,False
-Doctor of Philosophy||__NONE__,US Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,US P H D degree||__NONE__,1,False
+Doctor of Philosophy||__NONE__,US P H D qualification||__NONE__,1,False
 Doctor of Philosophy||__NONE__,US P H D||__NONE__,1,False
-Doctor of Philosophy||__NONE__,US Ph. D.||__NONE__,1,False
-Doctor of Philosophy||__NONE__,US PhD||__NONE__,1,False
-Doctor of Philosophy||__NONE__,United States Doctorate||__NONE__,1,False
+Doctor of Philosophy||__NONE__,United States P H D degree||__NONE__,1,False
 Doctor of Philosophy||__NONE__,United States P H D||__NONE__,1,False
-Doctor of Philosophy||__NONE__,United States Ph. D.||__NONE__,1,False
-Doctor of Philosophy||__NONE__,United States PhD||__NONE__,1,False
+Doctor of Psychology||__NONE__,Doctor of Psychology degree||__NONE__,1,False
+Doctor of Psychology||__NONE__,P S Y D degree||__NONE__,1,False
+Doctor of Psychology||__NONE__,P S Y D qualification||__NONE__,1,False
 Doctor of Psychology||__NONE__,P S Y D||__NONE__,1,False
+Doctor of Psychology||__NONE__,PsyD degree||__NONE__,1,False
+Doctor of Psychology||__NONE__,PsyD qualification||__NONE__,1,False
 Doctor of Psychology||__NONE__,PsyD||__NONE__,1,False
-Doctor of Psychology||__NONE__,US Doctor of Psychology||__NONE__,1,False
+Doctor of Psychology||__NONE__,US Doctor of Psychology degree||__NONE__,1,False
+Doctor of Psychology||__NONE__,US P S Y D degree||__NONE__,1,False
+Doctor of Psychology||__NONE__,US P S Y D qualification||__NONE__,1,False
 Doctor of Psychology||__NONE__,US P S Y D||__NONE__,1,False
+Doctor of Psychology||__NONE__,US PsyD degree||__NONE__,1,False
+Doctor of Psychology||__NONE__,US PsyD qualification||__NONE__,1,False
 Doctor of Psychology||__NONE__,US PsyD||__NONE__,1,False
+Doctor of Psychology||__NONE__,United States P S Y D degree||__NONE__,1,False
 Doctor of Psychology||__NONE__,United States P S Y D||__NONE__,1,False
+Doctor of Psychology||__NONE__,United States PsyD degree||__NONE__,1,False
 Doctor of Psychology||__NONE__,United States PsyD||__NONE__,1,False
-Doctor of Psychology||__NONE__,ted States Doctor of Psychology||__NONE__,1,False
+General Educational Development||__NONE__,G E D qualification||__NONE__,1,False
+General Educational Development||__NONE__,G E D||__NONE__,1,False
+General Educational Development||__NONE__,GED Diploma qualification||__NONE__,1,False
+General Educational Development||__NONE__,GED qualification||__NONE__,1,False
+General Educational Development||__NONE__,GEDDIPLOMA qualification||__NONE__,1,False
+General Educational Development||__NONE__,GED||__NONE__,1,False
+General Educational Development||__NONE__,US G E D qualification||__NONE__,1,False
+General Educational Development||__NONE__,US G E D||__NONE__,1,False
+General Educational Development||__NONE__,US GED Diploma qualification||__NONE__,1,False
+General Educational Development||__NONE__,US GED qualification||__NONE__,1,False
+General Educational Development||__NONE__,US GEDDIPLOMA qualification||__NONE__,1,False
+General Educational Development||__NONE__,US GED||__NONE__,1,False
+General Educational Development||__NONE__,United States G E D||__NONE__,1,False
+General Educational Development||__NONE__,United States GED Diploma||__NONE__,1,False
+General Educational Development||__NONE__,United States GED qualification||__NONE__,1,False
+General Educational Development||__NONE__,United States GEDDIPLOMA||__NONE__,1,False
+General Educational Development||__NONE__,United States GED||__NONE__,1,False
+High School Diploma||__NONE__,H S D qualification||__NONE__,1,False
+High School Diploma||__NONE__,HSD qualification||__NONE__,1,False
+High School Diploma||__NONE__,HSD||__NONE__,1,False
+High School Diploma||__NONE__,Secondary School Diploma||__NONE__,1,False
+High School Diploma||__NONE__,US H S D qualification||__NONE__,1,False
+High School Diploma||__NONE__,US H S D||__NONE__,1,False
+High School Diploma||__NONE__,US HSD qualification||__NONE__,1,False
+High School Diploma||__NONE__,US HSD||__NONE__,1,False
+High School Diploma||__NONE__,US Secondary School Diploma||__NONE__,1,False
+High School Diploma||__NONE__,US US High School Diploma||__NONE__,1,False
+High School Diploma||__NONE__,United States H S D||__NONE__,1,False
+High School Diploma||__NONE__,United States HSD qualification||__NONE__,1,False
+High School Diploma||__NONE__,United States HSD||__NONE__,1,False
+Juris Doctor||__NONE__,Doctor of Jurisprudence degree||__NONE__,1,False
 Juris Doctor||__NONE__,Doctor of Jurisprudence||__NONE__,1,False
+Juris Doctor||__NONE__,J D degree||__NONE__,1,False
+Juris Doctor||__NONE__,J D qualification||__NONE__,1,False
 Juris Doctor||__NONE__,J D||__NONE__,1,False
+Juris Doctor||__NONE__,JD degree||__NONE__,1,False
+Juris Doctor||__NONE__,JD qualification||__NONE__,1,False
+Juris Doctor||__NONE__,JD||__NONE__,1,False
+Juris Doctor||__NONE__,JURISDOCTOR degree||__NONE__,1,False
+Juris Doctor||__NONE__,JURISDOCTOR qualification||__NONE__,1,False
 Juris Doctor||__NONE__,JURISDOCTOR||__NONE__,1,False
-Juris Doctor||__NONE__,States Doctor of Jurisprudence||__NONE__,1,False
+Juris Doctor||__NONE__,Juris Doctor degree||__NONE__,1,False
+Juris Doctor||__NONE__,Juris Doctor qualification||__NONE__,1,False
 Juris Doctor||__NONE__,US Doctor of Jurisprudence||__NONE__,1,False
+Juris Doctor||__NONE__,US J D degree||__NONE__,1,False
+Juris Doctor||__NONE__,US J D qualification||__NONE__,1,False
 Juris Doctor||__NONE__,US J D||__NONE__,1,False
+Juris Doctor||__NONE__,US JD degree||__NONE__,1,False
+Juris Doctor||__NONE__,US JD qualification||__NONE__,1,False
 Juris Doctor||__NONE__,US JD||__NONE__,1,False
+Juris Doctor||__NONE__,US JURISDOCTOR degree||__NONE__,1,False
+Juris Doctor||__NONE__,US JURISDOCTOR qualification||__NONE__,1,False
 Juris Doctor||__NONE__,US JURISDOCTOR||__NONE__,1,False
+Juris Doctor||__NONE__,US Juris Doctor degree||__NONE__,1,False
+Juris Doctor||__NONE__,US Juris Doctor qualification||__NONE__,1,False
 Juris Doctor||__NONE__,US Juris Doctor||__NONE__,1,False
+Juris Doctor||__NONE__,United States J D degree||__NONE__,1,False
+Juris Doctor||__NONE__,United States J D qualification||__NONE__,1,False
 Juris Doctor||__NONE__,United States J D||__NONE__,1,False
+Juris Doctor||__NONE__,United States JD degree||__NONE__,1,False
+Juris Doctor||__NONE__,United States JD qualification||__NONE__,1,False
 Juris Doctor||__NONE__,United States JD||__NONE__,1,False
 Juris Doctor||__NONE__,United States JURISDOCTOR||__NONE__,1,False
 Juris Doctor||__NONE__,United States Juris Doctor||__NONE__,1,False
-Master of Arts||__NONE__,A M||__NONE__,1,False
+Master of Arts||__NONE__,A M degree||__NONE__,1,False
+Master of Arts||__NONE__,A M qualification||__NONE__,1,False
+Master of Arts||__NONE__,AM degree||__NONE__,1,False
+Master of Arts||__NONE__,AM qualification||__NONE__,1,False
+Master of Arts||__NONE__,Artium Magister degree||__NONE__,1,False
+Master of Arts||__NONE__,Artium Magister qualification||__NONE__,1,False
 Master of Arts||__NONE__,Artium Magister||__NONE__,1,False
-Master of Arts||__NONE__,IN M A||__NONE__,1,False
-Master of Arts||__NONE__,IN MAHONS||__NONE__,1,False
-Master of Arts||__NONE__,IN MA||__NONE__,1,False
+Master of Arts||__NONE__,IN M A degree||__NONE__,1,False
+Master of Arts||__NONE__,IN M A qualification||__NONE__,1,False
+Master of Arts||__NONE__,IN MAHONS degree||__NONE__,1,False
+Master of Arts||__NONE__,IN MAHONS qualification||__NONE__,1,False
+Master of Arts||__NONE__,IN MasterofArts qualification||__NONE__,1,False
+Master of Arts||__NONE__,India M A degree||__NONE__,1,False
+Master of Arts||__NONE__,India M A qualification||__NONE__,1,False
 Master of Arts||__NONE__,India M A||__NONE__,1,False
+Master of Arts||__NONE__,India MAHONS degree||__NONE__,1,False
+Master of Arts||__NONE__,India MAHONS qualification||__NONE__,1,False
 Master of Arts||__NONE__,India MAHONS||__NONE__,1,False
-Master of Arts||__NONE__,India MA||__NONE__,1,False
-Master of Arts||__NONE__,India MasterofArts||__NONE__,1,False
+Master of Arts||__NONE__,India MasterofArts degree||__NONE__,1,False
+Master of Arts||__NONE__,Indian M A degree||__NONE__,1,False
+Master of Arts||__NONE__,Indian M A qualification||__NONE__,1,False
 Master of Arts||__NONE__,Indian M A||__NONE__,1,False
+Master of Arts||__NONE__,Indian MAHONS degree||__NONE__,1,False
+Master of Arts||__NONE__,Indian MAHONS qualification||__NONE__,1,False
 Master of Arts||__NONE__,Indian MAHONS||__NONE__,1,False
-Master of Arts||__NONE__,Indian MA||__NONE__,1,False
-Master of Arts||__NONE__,Indian MasterofArts||__NONE__,1,False
-Master of Arts||__NONE__,MAHONS||__NONE__,1,False
+Master of Arts||__NONE__,Indian MasterofArts degree||__NONE__,1,False
+Master of Arts||__NONE__,MAHONS degree||__NONE__,1,False
+Master of Arts||__NONE__,MAHONS qualification||__NONE__,1,False
+Master of Arts||__NONE__,MasterofArts qualification||__NONE__,1,False
+Master of Arts||__NONE__,US A M degree||__NONE__,1,False
+Master of Arts||__NONE__,US A M qualification||__NONE__,1,False
 Master of Arts||__NONE__,US A M||__NONE__,1,False
-Master of Arts||__NONE__,US AM||__NONE__,1,False
+Master of Arts||__NONE__,US AM degree||__NONE__,1,False
+Master of Arts||__NONE__,US AM qualification||__NONE__,1,False
+Master of Arts||__NONE__,US Artium Magister degree||__NONE__,1,False
 Master of Arts||__NONE__,US Artium Magister||__NONE__,1,False
+Master of Arts||__NONE__,US M A degree||__NONE__,1,False
+Master of Arts||__NONE__,US M A qualification||__NONE__,1,False
 Master of Arts||__NONE__,US M A||__NONE__,1,False
-Master of Arts||__NONE__,US MA||__NONE__,1,False
+Master of Arts||__NONE__,US Master of Arts qualification||__NONE__,1,False
+Master of Arts||__NONE__,United States A M degree||__NONE__,1,False
+Master of Arts||__NONE__,United States A M qualification||__NONE__,1,False
 Master of Arts||__NONE__,United States A M||__NONE__,1,False
+Master of Arts||__NONE__,United States AM degree||__NONE__,1,False
+Master of Arts||__NONE__,United States AM qualification||__NONE__,1,False
 Master of Arts||__NONE__,United States AM||__NONE__,1,False
 Master of Arts||__NONE__,United States Artium Magister||__NONE__,1,False
+Master of Arts||__NONE__,United States M A degree||__NONE__,1,False
+Master of Arts||__NONE__,United States M A qualification||__NONE__,1,False
 Master of Arts||__NONE__,United States M A||__NONE__,1,False
-Master of Arts||__NONE__,United States MA||__NONE__,1,False
 Master of Arts||__NONE__,United States Master of Arts||__NONE__,1,False
-Master of Business Administration||__NONE__,E M B A||__NONE__,1,False
-Master of Business Administration||__NONE__,EMBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,IN E M B A||__NONE__,1,False
-Master of Business Administration||__NONE__,IN EMBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,IN M B A||__NONE__,1,False
-Master of Business Administration||__NONE__,IN MBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,IN MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,E M B A qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,EMBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,EMBAHONS qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,IN E M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,IN E M B A qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,IN EMBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,IN EMBAHONS qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,IN M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,IN M B A qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,IN MBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,IN MBAHONS qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,India E M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,India E M B A qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,India E M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,India EMBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,India EMBAHONS qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,India EMBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,India EMBA||__NONE__,1,False
+Master of Business Administration||__NONE__,India M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,India M B A qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,India M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,India MBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,India MBAHONS qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,India MBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,India MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian E M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian E M B A qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,Indian E M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian EMBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian EMBAHONS qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,Indian EMBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,Indian EMBA||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian M B A qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,Indian M B A||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian MBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,Indian MBAHONS qualification||__NONE__,1,False
 Master of Business Administration||__NONE__,Indian MBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,Indian MBA||__NONE__,1,False
-Master of Business Administration||__NONE__,MBAHONS||__NONE__,1,False
-Master of Business Administration||__NONE__,US M B A||__NONE__,1,False
-Master of Business Administration||__NONE__,US MBA||__NONE__,1,False
+Master of Business Administration||__NONE__,MBAHONS degree||__NONE__,1,False
+Master of Business Administration||__NONE__,MBAHONS qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,US M B A degree||__NONE__,1,False
+Master of Business Administration||__NONE__,US M B A qualification||__NONE__,1,False
+Master of Business Administration||__NONE__,United States M B A degree||__NONE__,1,False
 Master of Business Administration||__NONE__,United States M B A||__NONE__,1,False
-Master of Business Administration||__NONE__,United States MBA||__NONE__,1,False
-Master of Commerce||__NONE__,IN M C O M||__NONE__,1,False
-Master of Commerce||__NONE__,IN M Com||__NONE__,1,False
-Master of Commerce||__NONE__,IN MCOMHONS||__NONE__,1,False
+Master of Commerce||__NONE__,IN M C O M degree||__NONE__,1,False
+Master of Commerce||__NONE__,IN M C O M qualification||__NONE__,1,False
+Master of Commerce||__NONE__,IN M Com degree||__NONE__,1,False
+Master of Commerce||__NONE__,IN M Com qualification||__NONE__,1,False
+Master of Commerce||__NONE__,IN MCOMHONS degree||__NONE__,1,False
+Master of Commerce||__NONE__,IN MCOMHONS qualification||__NONE__,1,False
+Master of Commerce||__NONE__,India M C O M degree||__NONE__,1,False
+Master of Commerce||__NONE__,India M C O M qualification||__NONE__,1,False
 Master of Commerce||__NONE__,India M C O M||__NONE__,1,False
-Master of Commerce||__NONE__,India M Com||__NONE__,1,False
+Master of Commerce||__NONE__,India M Com degree||__NONE__,1,False
+Master of Commerce||__NONE__,India M Com qualification||__NONE__,1,False
+Master of Commerce||__NONE__,India MCOMHONS degree||__NONE__,1,False
+Master of Commerce||__NONE__,India MCOMHONS qualification||__NONE__,1,False
 Master of Commerce||__NONE__,India MCOMHONS||__NONE__,1,False
-Master of Commerce||__NONE__,India MCOM||__NONE__,1,False
-Master of Commerce||__NONE__,India MCom Hons||__NONE__,1,False
+Master of Commerce||__NONE__,Indian M C O M degree||__NONE__,1,False
+Master of Commerce||__NONE__,Indian M C O M qualification||__NONE__,1,False
 Master of Commerce||__NONE__,Indian M C O M||__NONE__,1,False
-Master of Commerce||__NONE__,Indian M Com||__NONE__,1,False
+Master of Commerce||__NONE__,Indian M Com degree||__NONE__,1,False
+Master of Commerce||__NONE__,Indian M Com qualification||__NONE__,1,False
+Master of Commerce||__NONE__,Indian MCOMHONS degree||__NONE__,1,False
+Master of Commerce||__NONE__,Indian MCOMHONS qualification||__NONE__,1,False
 Master of Commerce||__NONE__,Indian MCOMHONS||__NONE__,1,False
-Master of Commerce||__NONE__,Indian MCOM||__NONE__,1,False
-Master of Commerce||__NONE__,Indian MCom Hons||__NONE__,1,False
-Master of Commerce||__NONE__,M C O M||__NONE__,1,False
-Master of Commerce||__NONE__,M Com||__NONE__,1,False
-Master of Commerce||__NONE__,MCOMHONS||__NONE__,1,False
-Master of Computer Applications||__NONE__,IN MCA Hons||__NONE__,1,False
-Master of Computer Applications||__NONE__,IN MCAHONS||__NONE__,1,False
-Master of Computer Applications||__NONE__,IN MCA||__NONE__,1,False
-Master of Computer Applications||__NONE__,India M C A||__NONE__,1,False
-Master of Computer Applications||__NONE__,India MCA Hons||__NONE__,1,False
+Master of Commerce||__NONE__,M C O M qualification||__NONE__,1,False
+Master of Commerce||__NONE__,M Com qualification||__NONE__,1,False
+Master of Commerce||__NONE__,MCOMHONS degree||__NONE__,1,False
+Master of Commerce||__NONE__,MCOMHONS qualification||__NONE__,1,False
+Master of Computer Applications||__NONE__,IN M C A qualification||__NONE__,1,False
+Master of Computer Applications||__NONE__,IN MCAHONS degree||__NONE__,1,False
+Master of Computer Applications||__NONE__,IN MCAHONS qualification||__NONE__,1,False
+Master of Computer Applications||__NONE__,India M C A degree||__NONE__,1,False
+Master of Computer Applications||__NONE__,India M C A qualification||__NONE__,1,False
+Master of Computer Applications||__NONE__,India MCAHONS degree||__NONE__,1,False
+Master of Computer Applications||__NONE__,India MCAHONS qualification||__NONE__,1,False
 Master of Computer Applications||__NONE__,India MCAHONS||__NONE__,1,False
-Master of Computer Applications||__NONE__,India MCA||__NONE__,1,False
-Master of Computer Applications||__NONE__,Indian M C A||__NONE__,1,False
-Master of Computer Applications||__NONE__,Indian MCA Hons||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian M C A degree||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian M C A qualification||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian MCAHONS degree||__NONE__,1,False
+Master of Computer Applications||__NONE__,Indian MCAHONS qualification||__NONE__,1,False
 Master of Computer Applications||__NONE__,Indian MCAHONS||__NONE__,1,False
-Master of Computer Applications||__NONE__,Indian MCA||__NONE__,1,False
-Master of Computer Applications||__NONE__,MCA Hons||__NONE__,1,False
-Master of Computer Applications||__NONE__,MCAHONS||__NONE__,1,False
-Master of Computer Applications||__NONE__,MCA||__NONE__,1,False
+Master of Computer Applications||__NONE__,M C A qualification||__NONE__,1,False
+Master of Computer Applications||__NONE__,MCAHONS degree||__NONE__,1,False
+Master of Computer Applications||__NONE__,MCAHONS qualification||__NONE__,1,False
+Master of Engineering||__NONE__,IN M E N G degree||__NONE__,1,False
+Master of Engineering||__NONE__,IN M E N G qualification||__NONE__,1,False
 Master of Engineering||__NONE__,IN M E N G||__NONE__,1,False
-Master of Engineering||__NONE__,IN M Eng||__NONE__,1,False
-Master of Engineering||__NONE__,IN M E||__NONE__,1,False
-Master of Engineering||__NONE__,IN MEHONS||__NONE__,1,False
-Master of Engineering||__NONE__,IN MENGHONS||__NONE__,1,False
-Master of Engineering||__NONE__,IN ME||__NONE__,1,False
+Master of Engineering||__NONE__,IN M E degree||__NONE__,1,False
+Master of Engineering||__NONE__,IN M E qualification||__NONE__,1,False
+Master of Engineering||__NONE__,IN M Eng degree||__NONE__,1,False
+Master of Engineering||__NONE__,IN M Eng qualification||__NONE__,1,False
+Master of Engineering||__NONE__,IN MEHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,IN MEHONS qualification||__NONE__,1,False
+Master of Engineering||__NONE__,IN MENGHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,IN MENGHONS qualification||__NONE__,1,False
+Master of Engineering||__NONE__,India M E N G degree||__NONE__,1,False
+Master of Engineering||__NONE__,India M E N G qualification||__NONE__,1,False
 Master of Engineering||__NONE__,India M E N G||__NONE__,1,False
-Master of Engineering||__NONE__,India M Eng||__NONE__,1,False
+Master of Engineering||__NONE__,India M E degree||__NONE__,1,False
+Master of Engineering||__NONE__,India M E qualification||__NONE__,1,False
+Master of Engineering||__NONE__,India M Eng degree||__NONE__,1,False
+Master of Engineering||__NONE__,India M Eng qualification||__NONE__,1,False
 Master of Engineering||__NONE__,India M E||__NONE__,1,False
+Master of Engineering||__NONE__,India MEHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,India MEHONS qualification||__NONE__,1,False
 Master of Engineering||__NONE__,India MEHONS||__NONE__,1,False
+Master of Engineering||__NONE__,India MENGHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,India MENGHONS qualification||__NONE__,1,False
 Master of Engineering||__NONE__,India MENGHONS||__NONE__,1,False
-Master of Engineering||__NONE__,India MEng||__NONE__,1,False
-Master of Engineering||__NONE__,India ME||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M E N G degree||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M E N G qualification||__NONE__,1,False
 Master of Engineering||__NONE__,Indian M E N G||__NONE__,1,False
-Master of Engineering||__NONE__,Indian M Eng||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M E degree||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M E qualification||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M Eng degree||__NONE__,1,False
+Master of Engineering||__NONE__,Indian M Eng qualification||__NONE__,1,False
 Master of Engineering||__NONE__,Indian M E||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MEHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MEHONS qualification||__NONE__,1,False
 Master of Engineering||__NONE__,Indian MEHONS||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MENGHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,Indian MENGHONS qualification||__NONE__,1,False
 Master of Engineering||__NONE__,Indian MENGHONS||__NONE__,1,False
-Master of Engineering||__NONE__,Indian MEng||__NONE__,1,False
-Master of Engineering||__NONE__,Indian ME||__NONE__,1,False
-Master of Engineering||__NONE__,M Eng||__NONE__,1,False
-Master of Engineering||__NONE__,MEHONS||__NONE__,1,False
-Master of Engineering||__NONE__,MENGHONS||__NONE__,1,False
+Master of Engineering||__NONE__,M Eng qualification||__NONE__,1,False
+Master of Engineering||__NONE__,MEHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,MEHONS qualification||__NONE__,1,False
+Master of Engineering||__NONE__,MENGHONS degree||__NONE__,1,False
+Master of Engineering||__NONE__,MENGHONS qualification||__NONE__,1,False
+Master of Engineering||__NONE__,US M E N G degree||__NONE__,1,False
+Master of Engineering||__NONE__,US M E N G qualification||__NONE__,1,False
 Master of Engineering||__NONE__,US M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,US M E degree||__NONE__,1,False
+Master of Engineering||__NONE__,US M E qualification||__NONE__,1,False
 Master of Engineering||__NONE__,US M E||__NONE__,1,False
-Master of Engineering||__NONE__,US MEng||__NONE__,1,False
-Master of Engineering||__NONE__,US ME||__NONE__,1,False
+Master of Engineering||__NONE__,United States M E N G degree||__NONE__,1,False
 Master of Engineering||__NONE__,United States M E N G||__NONE__,1,False
+Master of Engineering||__NONE__,United States M E degree||__NONE__,1,False
+Master of Engineering||__NONE__,United States M E qualification||__NONE__,1,False
 Master of Engineering||__NONE__,United States M E||__NONE__,1,False
-Master of Engineering||__NONE__,United States MEng||__NONE__,1,False
-Master of Engineering||__NONE__,United States ME||__NONE__,1,False
-Master of Fine Arts||__NONE__,M F A||__NONE__,1,False
-Master of Fine Arts||__NONE__,MFA||__NONE__,1,False
+Master of Fine Arts||__NONE__,M F A degree||__NONE__,1,False
+Master of Fine Arts||__NONE__,M F A qualification||__NONE__,1,False
+Master of Fine Arts||__NONE__,MFA degree||__NONE__,1,False
+Master of Fine Arts||__NONE__,MFA qualification||__NONE__,1,False
+Master of Fine Arts||__NONE__,US M F A degree||__NONE__,1,False
+Master of Fine Arts||__NONE__,US M F A qualification||__NONE__,1,False
 Master of Fine Arts||__NONE__,US M F A||__NONE__,1,False
+Master of Fine Arts||__NONE__,US MFA degree||__NONE__,1,False
+Master of Fine Arts||__NONE__,US MFA qualification||__NONE__,1,False
 Master of Fine Arts||__NONE__,US MFA||__NONE__,1,False
-Master of Fine Arts||__NONE__,US Master of Fine Arts||__NONE__,1,False
+Master of Fine Arts||__NONE__,US Master of Fine Arts degree||__NONE__,1,False
+Master of Fine Arts||__NONE__,United States M F A degree||__NONE__,1,False
 Master of Fine Arts||__NONE__,United States M F A||__NONE__,1,False
+Master of Fine Arts||__NONE__,United States MFA degree||__NONE__,1,False
+Master of Fine Arts||__NONE__,United States MFA qualification||__NONE__,1,False
 Master of Fine Arts||__NONE__,United States MFA||__NONE__,1,False
-Master of Fine Arts||__NONE__,ited States Master of Fine Arts||__NONE__,1,False
-Master of Public Administration||__NONE__,M P A||__NONE__,1,False
-Master of Public Administration||__NONE__,MPA||__NONE__,1,False
+Master of Public Administration||__NONE__,M P A degree||__NONE__,1,False
+Master of Public Administration||__NONE__,M P A qualification||__NONE__,1,False
+Master of Public Administration||__NONE__,MPA degree||__NONE__,1,False
+Master of Public Administration||__NONE__,MPA qualification||__NONE__,1,False
+Master of Public Administration||__NONE__,US M P A degree||__NONE__,1,False
+Master of Public Administration||__NONE__,US M P A qualification||__NONE__,1,False
 Master of Public Administration||__NONE__,US M P A||__NONE__,1,False
+Master of Public Administration||__NONE__,US MPA degree||__NONE__,1,False
+Master of Public Administration||__NONE__,US MPA qualification||__NONE__,1,False
 Master of Public Administration||__NONE__,US MPA||__NONE__,1,False
+Master of Public Administration||__NONE__,United States M P A degree||__NONE__,1,False
 Master of Public Administration||__NONE__,United States M P A||__NONE__,1,False
+Master of Public Administration||__NONE__,United States MPA degree||__NONE__,1,False
+Master of Public Administration||__NONE__,United States MPA qualification||__NONE__,1,False
 Master of Public Administration||__NONE__,United States MPA||__NONE__,1,False
+Master of Public Health||__NONE__,M P H degree||__NONE__,1,False
+Master of Public Health||__NONE__,M P H qualification||__NONE__,1,False
 Master of Public Health||__NONE__,M P H||__NONE__,1,False
+Master of Public Health||__NONE__,MPH qualification||__NONE__,1,False
 Master of Public Health||__NONE__,MPH||__NONE__,1,False
-Master of Public Health||__NONE__,States Master of Public Health||__NONE__,1,False
+Master of Public Health||__NONE__,Master of Public Health degree||__NONE__,1,False
+Master of Public Health||__NONE__,US M P H degree||__NONE__,1,False
+Master of Public Health||__NONE__,US M P H qualification||__NONE__,1,False
 Master of Public Health||__NONE__,US M P H||__NONE__,1,False
+Master of Public Health||__NONE__,US MPH qualification||__NONE__,1,False
 Master of Public Health||__NONE__,US MPH||__NONE__,1,False
 Master of Public Health||__NONE__,US Master of Public Health||__NONE__,1,False
+Master of Public Health||__NONE__,United States M P H degree||__NONE__,1,False
 Master of Public Health||__NONE__,United States M P H||__NONE__,1,False
+Master of Public Health||__NONE__,United States MPH qualification||__NONE__,1,False
 Master of Public Health||__NONE__,United States MPH||__NONE__,1,False
-Master of Science||__NONE__,IN M S C||__NONE__,1,False
-Master of Science||__NONE__,IN M Sc||__NONE__,1,False
-Master of Science||__NONE__,IN M S||__NONE__,1,False
-Master of Science||__NONE__,IN M. Sc Hons||__NONE__,1,False
-Master of Science||__NONE__,IN M.S. Hons||__NONE__,1,False
-Master of Science||__NONE__,IN MSCHONS||__NONE__,1,False
-Master of Science||__NONE__,IN MSC||__NONE__,1,False
-Master of Science||__NONE__,IN MSHONS||__NONE__,1,False
-Master of Science||__NONE__,IN ms||__NONE__,1,False
+Master of Science||__NONE__,IN M S C degree||__NONE__,1,False
+Master of Science||__NONE__,IN M S C qualification||__NONE__,1,False
+Master of Science||__NONE__,IN M S degree||__NONE__,1,False
+Master of Science||__NONE__,IN M S qualification||__NONE__,1,False
+Master of Science||__NONE__,IN M Sc degree||__NONE__,1,False
+Master of Science||__NONE__,IN M Sc qualification||__NONE__,1,False
+Master of Science||__NONE__,IN M. Sc Hons degree||__NONE__,1,False
+Master of Science||__NONE__,IN M. Sc Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,IN M.S. Hons degree||__NONE__,1,False
+Master of Science||__NONE__,IN M.S. Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,IN MSCHONS degree||__NONE__,1,False
+Master of Science||__NONE__,IN MSCHONS qualification||__NONE__,1,False
+Master of Science||__NONE__,IN MSHONS degree||__NONE__,1,False
+Master of Science||__NONE__,IN MSHONS qualification||__NONE__,1,False
+Master of Science||__NONE__,India M S C degree||__NONE__,1,False
+Master of Science||__NONE__,India M S C qualification||__NONE__,1,False
 Master of Science||__NONE__,India M S C||__NONE__,1,False
-Master of Science||__NONE__,India M Sc||__NONE__,1,False
+Master of Science||__NONE__,India M S degree||__NONE__,1,False
+Master of Science||__NONE__,India M S qualification||__NONE__,1,False
+Master of Science||__NONE__,India M Sc degree||__NONE__,1,False
+Master of Science||__NONE__,India M Sc qualification||__NONE__,1,False
 Master of Science||__NONE__,India M S||__NONE__,1,False
-Master of Science||__NONE__,India M. Sc Hons||__NONE__,1,False
+Master of Science||__NONE__,India M. Sc Hons degree||__NONE__,1,False
+Master of Science||__NONE__,India M. Sc Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,India M.S. Hons degree||__NONE__,1,False
+Master of Science||__NONE__,India M.S. Hons qualification||__NONE__,1,False
 Master of Science||__NONE__,India M.S. Hons||__NONE__,1,False
+Master of Science||__NONE__,India MSCHONS degree||__NONE__,1,False
+Master of Science||__NONE__,India MSCHONS qualification||__NONE__,1,False
 Master of Science||__NONE__,India MSCHONS||__NONE__,1,False
-Master of Science||__NONE__,India MSC||__NONE__,1,False
+Master of Science||__NONE__,India MSHONS degree||__NONE__,1,False
+Master of Science||__NONE__,India MSHONS qualification||__NONE__,1,False
 Master of Science||__NONE__,India MSHONS||__NONE__,1,False
-Master of Science||__NONE__,India ms||__NONE__,1,False
+Master of Science||__NONE__,Indian M S C degree||__NONE__,1,False
+Master of Science||__NONE__,Indian M S C qualification||__NONE__,1,False
 Master of Science||__NONE__,Indian M S C||__NONE__,1,False
-Master of Science||__NONE__,Indian M Sc||__NONE__,1,False
-Master of Science||__NONE__,Indian M S||__NONE__,1,False
-Master of Science||__NONE__,Indian M. Sc Hons||__NONE__,1,False
-Master of Science||__NONE__,Indian M.S. Hons||__NONE__,1,False
+Master of Science||__NONE__,Indian M S degree||__NONE__,1,False
+Master of Science||__NONE__,Indian M S qualification||__NONE__,1,False
+Master of Science||__NONE__,Indian M Sc degree||__NONE__,1,False
+Master of Science||__NONE__,Indian M Sc qualification||__NONE__,1,False
+Master of Science||__NONE__,Indian M. Sc Hons degree||__NONE__,1,False
+Master of Science||__NONE__,Indian M. Sc Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,Indian M.S. Hons degree||__NONE__,1,False
+Master of Science||__NONE__,Indian M.S. Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,Indian MSCHONS degree||__NONE__,1,False
+Master of Science||__NONE__,Indian MSCHONS qualification||__NONE__,1,False
 Master of Science||__NONE__,Indian MSCHONS||__NONE__,1,False
-Master of Science||__NONE__,Indian MSC||__NONE__,1,False
+Master of Science||__NONE__,Indian MSHONS degree||__NONE__,1,False
+Master of Science||__NONE__,Indian MSHONS qualification||__NONE__,1,False
 Master of Science||__NONE__,Indian MSHONS||__NONE__,1,False
-Master of Science||__NONE__,Indian ms||__NONE__,1,False
-Master of Science||__NONE__,M S C||__NONE__,1,False
-Master of Science||__NONE__,M Sc||__NONE__,1,False
-Master of Science||__NONE__,M. Sc Hons||__NONE__,1,False
-Master of Science||__NONE__,M.S. Hons||__NONE__,1,False
-Master of Science||__NONE__,MSCHONS||__NONE__,1,False
-Master of Science||__NONE__,MSC||__NONE__,1,False
-Master of Science||__NONE__,MSHONS||__NONE__,1,False
-Master of Science||__NONE__,S C M||__NONE__,1,False
-Master of Science||__NONE__,S M||__NONE__,1,False
+Master of Science||__NONE__,M S C qualification||__NONE__,1,False
+Master of Science||__NONE__,M Sc qualification||__NONE__,1,False
+Master of Science||__NONE__,M. Sc Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,M.S. Hons qualification||__NONE__,1,False
+Master of Science||__NONE__,MSCHONS degree||__NONE__,1,False
+Master of Science||__NONE__,MSCHONS qualification||__NONE__,1,False
+Master of Science||__NONE__,MSHONS degree||__NONE__,1,False
+Master of Science||__NONE__,MSHONS qualification||__NONE__,1,False
+Master of Science||__NONE__,S C M degree||__NONE__,1,False
+Master of Science||__NONE__,S C M qualification||__NONE__,1,False
+Master of Science||__NONE__,S M degree||__NONE__,1,False
+Master of Science||__NONE__,S M qualification||__NONE__,1,False
+Master of Science||__NONE__,SM degree||__NONE__,1,False
+Master of Science||__NONE__,SM qualification||__NONE__,1,False
+Master of Science||__NONE__,SM||__NONE__,1,False
+Master of Science||__NONE__,ScM degree||__NONE__,1,False
+Master of Science||__NONE__,ScM qualification||__NONE__,1,False
 Master of Science||__NONE__,ScM||__NONE__,1,False
-Master of Science||__NONE__,US M S||__NONE__,1,False
-Master of Science||__NONE__,US MS||__NONE__,1,False
+Master of Science||__NONE__,US M S degree||__NONE__,1,False
+Master of Science||__NONE__,US M S qualification||__NONE__,1,False
+Master of Science||__NONE__,US S C M degree||__NONE__,1,False
+Master of Science||__NONE__,US S C M qualification||__NONE__,1,False
 Master of Science||__NONE__,US S C M||__NONE__,1,False
-Master of Science||__NONE__,US S M||__NONE__,1,False
-Master of Science||__NONE__,US SM||__NONE__,1,False
+Master of Science||__NONE__,US S M degree||__NONE__,1,False
+Master of Science||__NONE__,US S M qualification||__NONE__,1,False
+Master of Science||__NONE__,US SM degree||__NONE__,1,False
+Master of Science||__NONE__,US SM qualification||__NONE__,1,False
+Master of Science||__NONE__,US ScM degree||__NONE__,1,False
+Master of Science||__NONE__,US ScM qualification||__NONE__,1,False
 Master of Science||__NONE__,US ScM||__NONE__,1,False
+Master of Science||__NONE__,United States M S degree||__NONE__,1,False
+Master of Science||__NONE__,United States M S qualification||__NONE__,1,False
 Master of Science||__NONE__,United States M S||__NONE__,1,False
-Master of Science||__NONE__,United States MS||__NONE__,1,False
+Master of Science||__NONE__,United States S C M degree||__NONE__,1,False
 Master of Science||__NONE__,United States S C M||__NONE__,1,False
+Master of Science||__NONE__,United States S M degree||__NONE__,1,False
+Master of Science||__NONE__,United States S M qualification||__NONE__,1,False
 Master of Science||__NONE__,United States S M||__NONE__,1,False
+Master of Science||__NONE__,United States SM degree||__NONE__,1,False
+Master of Science||__NONE__,United States SM qualification||__NONE__,1,False
 Master of Science||__NONE__,United States SM||__NONE__,1,False
+Master of Science||__NONE__,United States ScM degree||__NONE__,1,False
+Master of Science||__NONE__,United States ScM qualification||__NONE__,1,False
 Master of Science||__NONE__,United States ScM||__NONE__,1,False
-Master of Social Work||__NONE__,M S W||__NONE__,1,False
-Master of Social Work||__NONE__,MSW||__NONE__,1,False
-Master of Social Work||__NONE__,US M S W||__NONE__,1,False
+Master of Social Work||__NONE__,M S W degree||__NONE__,1,False
+Master of Social Work||__NONE__,M S W qualification||__NONE__,1,False
+Master of Social Work||__NONE__,MSW degree||__NONE__,1,False
+Master of Social Work||__NONE__,MSW qualification||__NONE__,1,False
+Master of Social Work||__NONE__,Master of Social Work degree||__NONE__,1,False
+Master of Social Work||__NONE__,US M S W degree||__NONE__,1,False
+Master of Social Work||__NONE__,US M S W qualification||__NONE__,1,False
+Master of Social Work||__NONE__,US MSW degree||__NONE__,1,False
+Master of Social Work||__NONE__,US MSW qualification||__NONE__,1,False
 Master of Social Work||__NONE__,US MSW||__NONE__,1,False
+Master of Social Work||__NONE__,US Master of Social Work degree||__NONE__,1,False
 Master of Social Work||__NONE__,US Master of Social Work||__NONE__,1,False
+Master of Social Work||__NONE__,United States M S W degree||__NONE__,1,False
 Master of Social Work||__NONE__,United States M S W||__NONE__,1,False
+Master of Social Work||__NONE__,United States MSW degree||__NONE__,1,False
+Master of Social Work||__NONE__,United States MSW qualification||__NONE__,1,False
 Master of Social Work||__NONE__,United States MSW||__NONE__,1,False
-Master of Social Work||__NONE__,ed States Master of Social Work||__NONE__,1,False
+Master of Technology||__NONE__,IN M T E C H degree||__NONE__,1,False
+Master of Technology||__NONE__,IN M T E C H qualification||__NONE__,1,False
 Master of Technology||__NONE__,IN M T E C H||__NONE__,1,False
-Master of Technology||__NONE__,IN M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,IN M Tech qualification||__NONE__,1,False
+Master of Technology||__NONE__,IN M.Tech Hons degree||__NONE__,1,False
+Master of Technology||__NONE__,IN M.Tech Hons qualification||__NONE__,1,False
+Master of Technology||__NONE__,IN MASTERENGG degree||__NONE__,1,False
+Master of Technology||__NONE__,IN MASTERENGG qualification||__NONE__,1,False
 Master of Technology||__NONE__,IN MASTERENGG||__NONE__,1,False
-Master of Technology||__NONE__,IN MTECHHONS||__NONE__,1,False
-Master of Technology||__NONE__,IN MTECH||__NONE__,1,False
+Master of Technology||__NONE__,IN MTECHHONS degree||__NONE__,1,False
+Master of Technology||__NONE__,IN MTECHHONS qualification||__NONE__,1,False
+Master of Technology||__NONE__,IN Master Bacheler degree||__NONE__,1,False
 Master of Technology||__NONE__,IN Master Bacheler||__NONE__,1,False
-Master of Technology||__NONE__,IN Master Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,IN Master Bachellor degree||__NONE__,1,False
+Master of Technology||__NONE__,IN Master Engg qualification||__NONE__,1,False
+Master of Technology||__NONE__,India M T E C H degree||__NONE__,1,False
+Master of Technology||__NONE__,India M T E C H qualification||__NONE__,1,False
 Master of Technology||__NONE__,India M T E C H||__NONE__,1,False
-Master of Technology||__NONE__,India M Tech||__NONE__,1,False
-Master of Technology||__NONE__,India M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,India M Tech degree||__NONE__,1,False
+Master of Technology||__NONE__,India M Tech qualification||__NONE__,1,False
+Master of Technology||__NONE__,India M.Tech Hons degree||__NONE__,1,False
+Master of Technology||__NONE__,India M.Tech Hons qualification||__NONE__,1,False
+Master of Technology||__NONE__,India MASTERENGG degree||__NONE__,1,False
+Master of Technology||__NONE__,India MASTERENGG qualification||__NONE__,1,False
 Master of Technology||__NONE__,India MASTERENGG||__NONE__,1,False
+Master of Technology||__NONE__,India MTECHHONS degree||__NONE__,1,False
+Master of Technology||__NONE__,India MTECHHONS qualification||__NONE__,1,False
 Master of Technology||__NONE__,India MTECHHONS||__NONE__,1,False
-Master of Technology||__NONE__,India MTECH||__NONE__,1,False
+Master of Technology||__NONE__,India Master Bacheler degree||__NONE__,1,False
 Master of Technology||__NONE__,India Master Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,India Master Bachellor degree||__NONE__,1,False
 Master of Technology||__NONE__,India Master Bachellor||__NONE__,1,False
-Master of Technology||__NONE__,India Master Engg||__NONE__,1,False
+Master of Technology||__NONE__,India Master Engg degree||__NONE__,1,False
+Master of Technology||__NONE__,India Master Engg qualification||__NONE__,1,False
+Master of Technology||__NONE__,Indian M T E C H degree||__NONE__,1,False
+Master of Technology||__NONE__,Indian M T E C H qualification||__NONE__,1,False
 Master of Technology||__NONE__,Indian M T E C H||__NONE__,1,False
-Master of Technology||__NONE__,Indian M Tech||__NONE__,1,False
-Master of Technology||__NONE__,Indian M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,Indian M Tech degree||__NONE__,1,False
+Master of Technology||__NONE__,Indian M Tech qualification||__NONE__,1,False
+Master of Technology||__NONE__,Indian M.Tech Hons degree||__NONE__,1,False
+Master of Technology||__NONE__,Indian MASTERENGG degree||__NONE__,1,False
+Master of Technology||__NONE__,Indian MASTERENGG qualification||__NONE__,1,False
 Master of Technology||__NONE__,Indian MASTERENGG||__NONE__,1,False
+Master of Technology||__NONE__,Indian MTECHHONS degree||__NONE__,1,False
+Master of Technology||__NONE__,Indian MTECHHONS qualification||__NONE__,1,False
 Master of Technology||__NONE__,Indian MTECHHONS||__NONE__,1,False
-Master of Technology||__NONE__,Indian MTECH||__NONE__,1,False
+Master of Technology||__NONE__,Indian Master Bacheler degree||__NONE__,1,False
 Master of Technology||__NONE__,Indian Master Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,Indian Master Bachellor degree||__NONE__,1,False
 Master of Technology||__NONE__,Indian Master Bachellor||__NONE__,1,False
-Master of Technology||__NONE__,Indian Master Engg||__NONE__,1,False
-Master of Technology||__NONE__,M T E C H||__NONE__,1,False
-Master of Technology||__NONE__,M.Tech Hons||__NONE__,1,False
+Master of Technology||__NONE__,Indian Master Engg degree||__NONE__,1,False
+Master of Technology||__NONE__,M T E C H qualification||__NONE__,1,False
+Master of Technology||__NONE__,M Tech qualification||__NONE__,1,False
+Master of Technology||__NONE__,M.Tech Hons qualification||__NONE__,1,False
+Master of Technology||__NONE__,MASTERENGG degree||__NONE__,1,False
+Master of Technology||__NONE__,MASTERENGG qualification||__NONE__,1,False
 Master of Technology||__NONE__,MASTERENGG||__NONE__,1,False
-Master of Technology||__NONE__,MTECHHONS||__NONE__,1,False
-Master of Technology||__NONE__,MTECH||__NONE__,1,False
+Master of Technology||__NONE__,MTECHHONS degree||__NONE__,1,False
+Master of Technology||__NONE__,MTECHHONS qualification||__NONE__,1,False
+Master of Technology||__NONE__,Master Bacheler degree||__NONE__,1,False
+Master of Technology||__NONE__,Master Bacheler qualification||__NONE__,1,False
 Master of Technology||__NONE__,Master Bacheler||__NONE__,1,False
-Master of Technology||__NONE__,Master Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,Master Bachellor degree||__NONE__,1,False
+Master of Technology||__NONE__,Master Engg qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D B A degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D B A qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,IN P G D B A||__NONE__,1,False
-Post Graduate Diploma||__NONE__,IN P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D B M degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D B M qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D I P degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D I P qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,IN P G D I P||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P G D qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,IN P G D||__NONE__,1,False
-Post Graduate Diploma||__NONE__,IN PGD Hons||__NONE__,1,False
-Post Graduate Diploma||__NONE__,IN PGDBAHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,IN PGDBMHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN P.G.D.I.P. qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBAHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBAHONS qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBM qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBMHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDBMHONS qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,IN PGDHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,IN PGDIPHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,IN PGD||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDIPHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,IN PGDIPHONS qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D B A degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D B A qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India P G D B A||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D B M degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D B M qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D I P degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D I P qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India P G D I P||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P G D qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India P G D||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India P.G.D.I.P.||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India PG DIP||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India PG Diploma Hons||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India PG Diploma||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India PGD Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P.G.D.I.P. degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India P.G.D.I.P. qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBAHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBAHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India PGDBAHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBM degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBM qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBMHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDBMHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India PGDBMHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India PGDBM||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India PGDHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDIPHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDIPHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,India PGDIPHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India PGD||__NONE__,1,False
-Post Graduate Diploma||__NONE__,India pgdba||__NONE__,1,False
+Post Graduate Diploma||__NONE__,India PGDIPLOMA qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D B A degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D B A qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian P G D B A||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D B M degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D B M qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D I P degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D I P qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian P G D I P||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P G D qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian P G D||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian P.G.D.I.P.||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian PG DIP||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian PG Diploma Hons||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian PG Diploma||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian PGD Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P.G.D.I.P. degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian P.G.D.I.P. qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBAHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBAHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian PGDBAHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBM degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBM qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBMHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDBMHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian PGDBMHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian PGDBM||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian PGDHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDIPHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDIPHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,Indian PGDIPHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian PGD||__NONE__,1,False
-Post Graduate Diploma||__NONE__,Indian pgdba||__NONE__,1,False
-Post Graduate Diploma||__NONE__,P G D B A||__NONE__,1,False
-Post Graduate Diploma||__NONE__,P G D B M||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Indian PGDIPLOMA qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D B A qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D B M degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D B M qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D I P degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D I P qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,P G D I P||__NONE__,1,False
-Post Graduate Diploma||__NONE__,P G D||__NONE__,1,False
-Post Graduate Diploma||__NONE__,PGD Hons||__NONE__,1,False
-Post Graduate Diploma||__NONE__,PGDBAHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,PGDBMHONS||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P G D qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,P.G.D.I.P. qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBAHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBAHONS qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBM qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBMHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDBMHONS qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDHONS qualification||__NONE__,1,False
 Post Graduate Diploma||__NONE__,PGDHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,PGDIPHONS||__NONE__,1,False
-Post Graduate Diploma||__NONE__,PGD||__NONE__,1,False
-Bachelor of Technology||__NONE__,Bachelor of Technology||__NONE__,449,True
-Bachelor of Engineering||__NONE__,Bachelor of Engineering||__NONE__,417,True
-Post Graduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,360,True
+Post Graduate Diploma||__NONE__,PGDIPHONS degree||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PGDIPHONS qualification||__NONE__,1,False
+Post Graduate Diploma||__NONE__,Post Grad Diploma qualification||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Bachelor of Engineering||__NONE__,526,True
+Bachelor of Technology||__NONE__,Bachelor of Technology||__NONE__,466,True
+Post Graduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,414,True
+Doctor of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,324,True
 12th Standard||__NONE__,12th Standard||__NONE__,278,True
+Bachelor of Science||__NONE__,Bachelor of Science||__NONE__,264,True
+Bachelor of Arts||__NONE__,Bachelor of Arts||__NONE__,259,True
 10th Standard||__NONE__,10th Standard||__NONE__,228,True
-Bachelor of Science||__NONE__,Bachelor of Science||__NONE__,199,True
-Bachelor of Commerce||__NONE__,Bachelor of Commerce||__NONE__,198,True
-Bachelor of Arts||__NONE__,Bachelor of Arts||__NONE__,183,True
+Bachelor of Commerce||__NONE__,Bachelor of Commerce||__NONE__,228,True
+Bachelor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,202,True
+Master of Science||__NONE__,Master of Science||__NONE__,196,True
+Master of Engineering||__NONE__,Master of Engineering||__NONE__,193,True
+Master of Business Administration||__NONE__,Master of Business Administration||__NONE__,184,True
 Diploma in Engineering||__NONE__,Diploma in Engineering||__NONE__,177,True
-Bachelor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,176,True
-Doctor of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,173,True
-Master of Engineering||__NONE__,Master of Engineering||__NONE__,152,True
-Bachelor of Computer Applications||__NONE__,Bachelor of Computer Applications||__NONE__,150,True
-Master of Science||__NONE__,Master of Science||__NONE__,150,True
-Master of Technology||__NONE__,Master of Technology||__NONE__,148,True
-Master of Commerce||__NONE__,Master of Commerce||__NONE__,136,True
-Master of Business Administration||__NONE__,Master of Business Administration||__NONE__,125,True
-Master of Computer Applications||__NONE__,Master of Computer Applications||__NONE__,120,True
-Master of Arts||__NONE__,Master of Arts||__NONE__,105,True
-Associate of Applied Science||__NONE__,Associate of Applied Science||__NONE__,1,True
-Associate of Arts||__NONE__,Associate of Arts||__NONE__,1,True
-Bachelor of Social Work||__NONE__,Bachelor of Social Work||__NONE__,1,True
+Bachelor of Computer Applications||__NONE__,Bachelor of Computer Applications||__NONE__,173,True
+Master of Commerce||__NONE__,Master of Commerce||__NONE__,159,True
+Master of Technology||__NONE__,Master of Technology||__NONE__,159,True
+Master of Computer Applications||__NONE__,Master of Computer Applications||__NONE__,152,True
+Master of Arts||__NONE__,Master of Arts||__NONE__,144,True
+Bachelor of Architecture||__NONE__,Bachelor of Architecture||__NONE__,25,True
 Doctor of Education||__NONE__,Doctor of Education||__NONE__,1,True
 Doctor of Medicine||__NONE__,Doctor of Medicine||__NONE__,1,True
-Doctor of Nursing Practice||__NONE__,Doctor of Nursing Practice||__NONE__,1,True
-Doctor of Pharmacy||__NONE__,Doctor of Pharmacy||__NONE__,1,True
-Doctor of Psychology||__NONE__,Doctor of Psychology||__NONE__,1,True
+General Educational Development||__NONE__,General Educational Development||__NONE__,1,True
 Juris Doctor||__NONE__,Juris Doctor||__NONE__,1,True
-Master of Public Administration||__NONE__,Master of Public Administration||__NONE__,1,True
-Master of Public Health||__NONE__,Master of Public Health||__NONE__,1,True
-Master of Social Work||__NONE__,Master of Social Work||__NONE__,1,True

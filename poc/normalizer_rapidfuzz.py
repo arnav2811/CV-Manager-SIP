@@ -8,15 +8,19 @@ Three-layer qualification normalization pipeline:
       Combined scorer eliminates the "superset-string bias" that caused long
       canonical names (e.g. Bachelor of Business Administration) to absorb
       unrelated short inputs under the old token_set_ratio-only approach.
-  L3  Lightweight regex heuristic stub (detects unstructured degree mentions).
+  L3  Delegates to the full L3HeuristicEngine (engine_l3.py) — shortcode
+      expansion, PhD normalization, sentence extraction, field acronym map.
+
+Version: 3.6.5
+Contributor: Arnav Mishra
 
 Bug-fixes vs v2.3.0
   • Replaced \\bin\\b with \\s+in\\s+ in clean() — prevents false splits on
     words like "Admin", "Administration", "Engineering" that contain "in".
   • Layer 2 now uses a weighted combination scorer, not token_set_ratio alone.
-  • Layer 3 stub is only triggered if L2 also fails; return value is properly
-    structured so downstream consumers never see a None canonical_degree crash.
-  • Full try/except guards in layer2_fuzzy and layer3_stub.
+  • Layer 3 now delegates to L3HeuristicEngine (v3.6.5) instead of a
+    primitive keyword stub — proper PhD/shortcode canonicalization applied.
+  • Full try/except guards in layer2_fuzzy and layer3_heuristic.
 
 Run:  python normalizer_rapidfuzz.py
 """
@@ -25,8 +29,20 @@ import csv
 import json
 import re
 import os
+import sys
 
 from rapidfuzz import process, fuzz
+
+# --- L3 engine import (lazy, with fallback) --------------------------------
+_L3_ENGINE_CLASS = None
+try:
+    _this_dir = os.path.dirname(os.path.abspath(__file__))
+    if _this_dir not in sys.path:
+        sys.path.insert(0, _this_dir)
+    from engine_l3 import L3HeuristicEngine as _L3HeuristicEngine
+    _L3_ENGINE_CLASS = _L3HeuristicEngine
+except Exception as _l3_import_err:
+    pass  # L3 will fall back to the primitive stub if engine_l3 is unavailable
 
 
 # ---------------------------------------------------------------------------
@@ -76,6 +92,8 @@ class Normalizer:
         self.field_aliases_cleaned: dict[str, str] = {}
         self.canonical_degrees: set[str]    = set()
         self._load_aliases()
+        # Initialise the real L3 heuristic engine (replaces primitive stub)
+        self._l3_engine = _L3_ENGINE_CLASS() if _L3_ENGINE_CLASS is not None else None
 
     # ------------------------------------------------------------------
     # Data loading
@@ -341,13 +359,26 @@ class Normalizer:
     # Layer 3 — Lightweight heuristic stub
     # ------------------------------------------------------------------
 
-    def layer3_stub(self, raw: str) -> dict | None:
+    def layer3_heuristic(self, raw: str) -> dict | None:
         """
-        Regex-based keyword detector for unstructured text.
-        Returns a low-confidence 'review_needed' result when degree-level
-        keywords are found, so the caller can queue the record for human review.
-        Returns None when no degree signal is detected at all.
+        Delegates to the full L3HeuristicEngine (engine_l3.py) when available,
+        or falls back to a minimal keyword detector.
+
+        The full engine applies shortcode expansion, PhD canonicalization,
+        sentence extraction, field acronym mapping, and level keyword detection.
+        Returns a structured dict or None when no signal is found.
         """
+        if self._l3_engine is not None:
+            try:
+                result = self._l3_engine.normalize(raw)
+                # Only return if the engine found something
+                if result.get("status") != "unresolved":
+                    return result
+                return None
+            except Exception:
+                pass  # Fall through to primitive fallback
+
+        # ── Primitive fallback (only used if engine_l3 failed to import) ──
         raw_lower = raw.lower()
         degree_keywords = [
             "bachelor", "master", "doctorate", "phd", "diploma",
@@ -356,20 +387,9 @@ class Normalizer:
         if not any(kw in raw_lower for kw in degree_keywords):
             return None
 
-        # Try to extract a degree mention using sentence patterns
-        patterns = [
-            r"(?:completed?|finished?|pursuing?|did|have|holds?)\s+(?:a\s+|an\s+|my\s+)?([A-Z][\w\.\s]{2,40}?)(?:\s+(?:from|at|in)\b|$)",
-            r"([A-Z][\w\.\s]{2,30}?)\s+(?:graduate|degree|program)",
-        ]
-        extracted = None
-        for pat in patterns:
-            m = re.search(pat, raw, re.IGNORECASE)
-            if m:
-                extracted = m.group(1).strip()
-                break
-
         return {
-            "canonical_degree": extracted,   # may be None — caller handles display
+            "canonical_degree": None,
+            "canonical_field":  None,
             "confidence":       0.35,
             "status":           "review_needed",
             "layer_used":       "L3_stub",
@@ -377,6 +397,10 @@ class Normalizer:
             "alternatives":     [],
             "engine":           self.ENGINE_ID,
         }
+
+    # Keep the old name as an alias for backward compatibility
+    def layer3_stub(self, raw: str) -> dict | None:
+        return self.layer3_heuristic(raw)
 
     # ------------------------------------------------------------------
     # Public interface
@@ -429,9 +453,30 @@ class Normalizer:
 
         # --- L3 (only when L2 failed entirely or gave low confidence) ---
         if not l2 or l2["fuzzy_score"] < 55:
-            l3 = self.layer3_stub(raw_string)
+            l3 = self.layer3_heuristic(raw_string)
             if l3:
                 result.update(l3)
+                # Normalize L3-extracted field through field alias dictionary
+                l3_field = result.get("canonical_field")
+                if l3_field:
+                    normalized = self._normalize_field(l3_field)
+                    if normalized:
+                        result["canonical_field"] = normalized
+                    else:
+                        # L3 extracted a raw field that doesn't map — clear it
+                        # to avoid false positives with institution names etc.
+                        result["canonical_field"] = None
+                # If no field yet, try inference from the raw string
+                if result["canonical_field"] is None and result.get("canonical_degree"):
+                    result["canonical_field"] = self._infer_field_from_cleaned(
+                        cleaned_raw,
+                        result["canonical_degree"],
+                    )
+
+        # Final fallback: if we have a field from initial clean() but nothing
+        # was set yet, keep the one from the initial parse
+        if result["canonical_field"] is None and canonical_field:
+            result["canonical_field"] = canonical_field
 
         return result
 
@@ -445,6 +490,8 @@ class Normalizer:
 
 if __name__ == "__main__":
     import sys
+    if hasattr(sys.stdout, "reconfigure") and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(base_dir, "..", "data")
@@ -469,13 +516,19 @@ if __name__ == "__main__":
         "I completed my Masters in Data Science from IIT",
     ]
 
+    VERSION = "3.6.5"
+
     while True:
-        print("\n" + "=" * 60)
-        print("  CV MANAGER · RapidFuzz Engine (B-1)   [standalone CLI]")
-        print("=" * 60)
-        print("  1. Run default test suite")
-        print("  2. Enter custom degree string")
-        print("  3. Exit")
+        print()
+        print("╔" + "═" * 64 + "╗")
+        print("║" + " CV MANAGER · RapidFuzz Engine (B-1) · Standalone CLI ".center(64) + "║")
+        print("║" + f" Version {VERSION}  ·  Contributor: Arnav Mishra ".center(64) + "║")
+        print("╚" + "═" * 64 + "╝")
+        print()
+        print("    1.  Run default test suite")
+        print("    2.  Enter custom degree string")
+        print("    3.  Exit")
+        print("─" * 68)
 
         choice = input("\n  Choice [1/2/3]: ").strip()
 
@@ -518,24 +571,28 @@ if __name__ == "__main__":
             if not raw:
                 continue
             r = n.normalize(raw)
-            print("\n" + "  " + "-" * 50)
-            print("  NORMALIZATION RESULT")
-            print("  " + "-" * 50)
-            print(f"  Input            : {r['input']}")
-            print(f"  Canonical Degree : {r['canonical_degree'] or 'None'}")
-            print(f"  Canonical Field  : {r['canonical_field']  or 'None'}")
-            print(f"  Layer Used       : {r['layer_used']}")
-            print(f"  Confidence       : {r['confidence']:.4f}")
-            print(f"  Fuzzy Score      : {r['fuzzy_score']}")
-            print(f"  Status           : {r['status']}")
+            W = 22
+            div = "  " + "─" * 66
+            print(f"\n{div}")
+            print("  NORMALISATION RESULT  (RapidFuzz Engine B-1)")
+            print(div)
+            print(f"  {'Input':<{W}}: {r['input']}")
+            print(f"  {'Canonical Degree':<{W}}: {r['canonical_degree'] or '—'}")
+            print(f"  {'Canonical Field':<{W}}: {r['canonical_field']  or '—'}")
+            print(f"  {'Layer Used':<{W}}: {r['layer_used']}")
+            conf = r['confidence']
+            bar  = "█" * int(conf * 20) + "░" * (20 - int(conf * 20))
+            print(f"  {'Confidence':<{W}}: {conf:.4f}  [{bar}]")
+            print(f"  {'Fuzzy Score':<{W}}: {r['fuzzy_score']}")
+            print(f"  {'Status':<{W}}: {r['status']}")
             if r["alternatives"]:
-                print("\n  Alternatives:")
+                print(f"\n  {'Alternatives':<{W}}:")
                 for alt, sc in r["alternatives"]:
-                    print(f"    • {alt}  (score: {sc})")
-            print("  " + "-" * 50)
+                    print(f"  {'':{W}}  • {alt:<38}  score: {sc:.1f}")
+            print(div)
 
         elif choice == "3":
-            print("  Exiting.")
+            print("\n  Goodbye.\n")
             sys.exit(0)
         else:
             print("  Invalid choice.")

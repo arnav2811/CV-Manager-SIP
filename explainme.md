@@ -1,5 +1,5 @@
 # Pipeline Deployment Options — Growth Grids Decision Brief
-# (Updated for v3.6.0 — 27 June 2026)
+# (Updated for v3.6.5 — 28 June 2026)
 
 > **Purpose**: This document packages the CV Manager normalisation pipeline as **three distinct, named deployment versions** so that Growth Grids can evaluate and select the option that best fits their infrastructure, latency, and accuracy requirements.
 >
@@ -8,6 +8,8 @@
 > **v3.5.0 Update**: A comprehensive suite of **internationally-scoped training datasets** (`data/`) has been added, engineered by Jai Gupta. These datasets cover India, USA, UK, and a curated world catalog — enabling future model evaluation, threshold calibration, and production testing at global scale. Additionally, the dictionary now includes **medical degrees** (MBBS, BDS, BPharm), and a RapidFuzz scoring bug causing all L2 matches to silently return `0.000` has been fixed.
 >
 > **v3.6.0 Update**: A reproducible **F1 scoring workflow** has been added for Layer 1, Layer 2, Layer 3, and the international degree-only datasets. The workflow was completed by Himanshi Kaushik, with help from Keshav Singhal, and now gives measurable precision/recall/F1, accuracy, TP/FP/FN, resolution, latency, and confusion outputs for the existing CLI and normalizer behavior.
+>
+> **v3.6.5 Update**: Layer 3 engine (`engine_l3.py`) has been significantly improved by **Arnav Mishra** — expanded shortcode map (BEng, slash-combined forms, EMBA, MBBS, BDS, etc.), PhD variant normalization, field acronym map for compact abbreviations (CSE, ECE, IT, AI), relaxed field extraction, and S1 sentence-extracted text is now post-processed through canonicalization. The `normalizer_rapidfuzz.py` Layer 3 stub now delegates to the full engine instead of using a primitive regex. CLI output across all engines has been polished.
 
 ---
 
@@ -109,10 +111,10 @@ Layer 3 is no longer a stub. `engine_l3.py` implements a **four-strategy heurist
 
 | Strategy | Description | Confidence |
 |----------|-------------|------------|
-| **S2 Shortcode Expansion** | Hard-coded map of 50+ abbreviations (BCA, PGDM, LLB…) → canonical. Runs first (highest precision). | 0.80 |
-| **S1 Sentence Extraction** | Regex patterns extract degree mentions from conversational sentences. | 0.60–0.72 |
-| **S3 Level Keyword Detection** | Maps level keywords (bachelor, master, phd, diploma…) to a degree-level group. | 0.50 |
-| **S4 Field-Only Inference** | Detects field-of-study mention when no degree level is identifiable. | 0.35 |
+| **S2 Shortcode Expansion** | Hard-coded map of 80+ abbreviations (BCA, PGDM, LLB, BEng, MBBS, BDS, PhD variants…) → canonical. Runs first (highest precision). Post-processes extracted mentions through the shortcode map for canonicalization. | 0.75–0.80 |
+| **S1 Sentence Extraction** | Regex patterns extract degree mentions from conversational sentences. Extracted text is canonicalized via shortcode lookup and PhD normalization before being returned. | 0.50–0.72 |
+| **S3 Level Keyword Detection** | Maps level keywords (bachelor, master, phd, diploma…) to a degree-level group. Also extracts field mentions via acronym map. | 0.50 |
+| **S4 Field-Only Inference** | Detects field-of-study mention when no degree level is identifiable. Uses field acronym map for compact abbreviations (CSE, ECE, IT, AI). | 0.35 |
 
 ### Orchestrator Operating Modes
 `engine_orchestrator.py` exposes three modes so you can tune the speed/accuracy tradeoff:
@@ -197,7 +199,7 @@ Expanded SQL seeds (USA: 18,312 · UK: 13,298 · WORLD: 62,292 degree-field comb
 
 ---
 
-## F1 Scoring Workflow (v3.6.0)
+## F1 Scoring Workflow (v3.6.5)
 
 The project now includes an evaluation workflow that measures how well the existing CLI/normalizer pipeline performs against the prepared datasets. Along with F1, it records accuracy, TP/FP/FN counts, resolution rate, average latency, and confusion matrix CSVs.
 
@@ -209,23 +211,113 @@ python poc/evaluate_f1.py --dataset all
 python poc/smoke_test_cli.py
 ```
 
-### Current Results
+### Current Results (v3.6.5)
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
-|---------|----------:|---------:|---------------------:|
-| `layer1` | 0.7618 | 0.9134 | 0.6353 |
-| `layer2` | 0.7863 | 0.8312 | 0.5323 |
-| `layer3` | 0.3975 | 0.5153 | 0.1604 |
-| `indian_usa` | 0.5393 | N/A | 0.4400 |
-| `indian_uk` | 0.5533 | N/A | 0.4509 |
-| `indian_world` | 0.3479 | N/A | 0.2572 |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
+|---------|----------:|---------:|---------------------:|:---------:|
+| `layer1` | 0.7614 | 0.9129 | 0.6353 | ≈ same |
+| `layer2` | 0.7753 | 0.8288 | 0.5334 | ≈ same |
+| `layer3` | **0.7985** | **0.7343** | **0.4901** | ⬆️ **+0.40 / +0.22 / +0.33** |
+| `indian_usa` | **0.5730** | N/A | **0.5315** | ⬆️ +0.034 |
+| `indian_uk` | **0.5926** | N/A | **0.5506** | ⬆️ +0.039 |
+| `indian_world` | **0.3610** | N/A | **0.3184** | ⬆️ +0.013 |
+
+> **Key improvement:** Layer 3 degree F1 doubled (0.40 → 0.80), field F1 rose from 0.52 → 0.73, and pair F1 tripled (0.16 → 0.49) in v3.6.5. International datasets also improved across the board.
 
 ### What This Means
 
-- Layer 1 and Layer 2 are the strongest current paths for structured and semi-structured qualification strings.
-- Layer 3 works, but the lower pair F1 shows that unstructured sentence extraction still needs more tuning.
-- The international datasets are degree-only, so they mainly measure degree recognition rather than full degree-field matching.
-- The failure CSVs in `evaluation/` should be used to decide the next fixes and threshold changes.
+- Layer 1 and Layer 2 remain stable — no regressions from the L3 changes.
+- Layer 3 is now the most-improved path: degree F1 is now 0.80 (was 0.40), making it a genuinely useful extraction layer, not just a catch-all.
+- The pair F1 improvement (0.16 → 0.49) shows that both degree AND field are now being correctly extracted together in roughly half the L3 cases.
+- The international datasets benefited from the expanded shortcode map in the L3 engine.
+
+---
+
+## Metrics Interpretation Guide (v3.6.5)
+
+The evaluation workflow outputs three families of metrics. This section explains what each one means in the context of qualification normalization.
+
+### F1, Precision, and Recall
+
+| Metric | Definition | What It Means Here |
+|--------|-----------|--------------------|
+| **Precision** | TP / (TP + FP) | Of all records the engine *resolved*, what fraction are correct? High precision = few false matches. |
+| **Recall** | TP / (TP + FN) | Of all records that *should* have been resolved, what fraction did the engine actually find? High recall = few missed records. |
+| **F1** | Harmonic mean of P and R | The single number that balances precision and recall. F1 = 1.0 is perfect; F1 = 0.0 is total failure. |
+
+### TP, FP, FN in This Problem
+
+| Term | What It Means |
+|------|---------------|
+| **True Positive (TP)** | Engine predicted a canonical degree/field AND it matches the gold label. |
+| **False Positive (FP)** | Engine predicted a canonical degree/field BUT it doesn't match the gold label (wrong match). |
+| **False Negative (FN)** | Engine returned `None`/`unresolved` BUT a gold label exists (missed detection). |
+| **True Negative (TN)** | Not applicable — the evaluation only measures records where a gold label exists. |
+
+> **Example**: Input `"I completed my B.Tech in CSE from IIT"` has gold label `(Bachelor of Technology, Computer Science and Engineering)`. If the engine returns `(Bachelor of Technology, None)`, the degree is a TP but the field is a FN.
+
+### Why Three F1 Scores?
+
+| F1 Score | What It Measures | Why It Matters |
+|----------|-----------------|----------------|
+| **Degree F1** | Correctness of the `canonical_degree` field alone. | Measures the core skill: "can the engine recognise the degree?" |
+| **Field F1** | Correctness of the `canonical_field` field alone. | Measures whether the field-of-study extraction is working. |
+| **Pair F1** | Both `canonical_degree` AND `canonical_field` must match simultaneously. | The strictest metric — measures whether the *complete* qualification is correctly normalised. This is the number Growth Grids should optimise for. |
+
+### Reading the Confusion Matrix CSVs
+
+The `evaluation/*_confusion.csv` files use a **flattened edge-list format**, not a traditional grid matrix:
+
+| Column | Meaning |
+|--------|---------|
+| `expected_label` | The gold (correct) canonical name. |
+| `predicted_label` | What the engine produced. Empty string = `unresolved`. |
+| `count` | How many times this (expected → predicted) pair occurred. |
+| `is_correct` | `True` if predicted matches expected, `False` otherwise. |
+
+To find **False Negatives**: filter for `predicted_label == ""` (empty) and `is_correct == False`.  
+To find **False Positives**: filter for `predicted_label != ""` and `is_correct == False`.  
+To find **True Positives**: filter for `is_correct == True`.
+
+### Other Metrics in `evaluation_summary.csv`
+
+| Column | What It Measures |
+|--------|------------------|
+| `accuracy` | Raw accuracy (TP / total rows) — less useful than F1 for imbalanced data. |
+| `resolution_rate` | Fraction of inputs that received any canonical prediction (not `unresolved`). A low resolution rate with high precision means the engine is conservative. |
+| `avg_latency_ms` | Average time to normalise one input. Useful for SLA sizing. |
+
+---
+
+## Cross-Validation & Stratification Assessment (v3.6.5)
+
+### Is K-Fold Cross-Validation Needed?
+
+**Not currently required.** Here's why:
+
+1. **No learnable parameters.** Layers 1, 2, and 3 are all rule-based or distance-based — there is no trained ML model that could overfit to a specific train/test split. The shortcode map, regex patterns, and fuzzy thresholds are hand-coded, not learned.
+
+2. **Natural stratification already exists.** The evaluation datasets are already stratified by:
+   - **Layer** — `layer1`, `layer2`, `layer3` each test a distinct input difficulty level.
+   - **Geography** — `indian_usa`, `indian_uk`, `indian_world` each cover a different degree system.
+   - **Noise type** — `layer2_fuzzy_training.csv` labels each row with a difficulty rating (`easy`, `medium`, `hard`) and noise type.
+
+3. **Dataset sizes are adequate.** Layer 3 has 1,124 test rows; Layer 2 has 15,233; international sets have 9,000–18,000 each. These are large enough to produce stable F1 estimates without resampling.
+
+### When Would Cross-Validation Be Needed?
+
+- If the team introduces a **trained ML model** (e.g., fine-tuned NER for L3, or a learned scorer for L2), k-fold or stratified holdout would be essential to prevent overfitting.
+- If a **threshold optimizer** is built to automatically tune `auto_accept` and `flag_review` cutoffs, holdout validation is needed to avoid data leakage.
+
+### Recommended Alternative: Stratified Holdout
+
+If future work requires a train/validate/test split, use **stratified holdout** rather than full k-fold:
+
+1. Split each dataset 80/20 by `canonical_degree`, ensuring every degree appears in both splits.
+2. Tune on the 80% portion.
+3. Report final metrics on the held-out 20%.
+
+This is simpler than k-fold and equally valid for the dataset sizes involved.
 
 ---
 

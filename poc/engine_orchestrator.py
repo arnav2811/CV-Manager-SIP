@@ -63,7 +63,7 @@ except ImportError:
 from engine_l3 import L3HeuristicEngine as _L3
 
 ENGINE_ID = "Orchestrator_v3"
-VERSION   = "3.0.0"
+VERSION   = "3.6.5"
 
 
 class CVNormalizationOrchestrator:
@@ -375,6 +375,8 @@ class CVNormalizationOrchestrator:
 
 if __name__ == "__main__":
     import sys as _sys
+    if hasattr(_sys.stdout, "reconfigure") and _sys.stdout.encoding.lower() != "utf-8":
+        _sys.stdout.reconfigure(encoding="utf-8")
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(base_dir, "..", "data")
@@ -399,9 +401,12 @@ if __name__ == "__main__":
         "Have a diploma in Mechanical from a polytechnic",
     ]
 
-    print("\n" + "=" * 70)
-    print("  CV MANAGER · Orchestrator v3.0.0")
-    print("=" * 70)
+    print()
+    print("╔" + "═" * 68 + "╗")
+    print("║" + " CV MANAGER · Orchestrator v3.6.5 ".center(68) + "║")
+    print("║" + " Growth Grids × University of Southampton ".center(68) + "║")
+    print("║" + " Contributor: Arnav Mishra ".center(68) + "║")
+    print("╚" + "═" * 68 + "╝")
     print("\n  Select operating mode:")
     print("    1  fast      — L1 + RapidFuzz only          (lowest latency)")
     print("    2  standard  — L1 + RapidFuzz + TF-IDF      (recommended)")

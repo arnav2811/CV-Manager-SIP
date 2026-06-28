@@ -93,17 +93,19 @@ Master of Technology||Textile Engineering,Master of Technology||__NONE__,5,False
 Post Graduate Diploma||Human Resources Management,Post Graduate Diploma||__NONE__,5,False
 Post Graduate Diploma||__NONE__,Post Graduate Diploma||Business Administration,4,False
 Bachelor of Engineering||__NONE__,Master of Engineering||__NONE__,3,False
-Bachelor of Science||__NONE__,__NONE__||__NONE__,3,False
 Master of Technology||__NONE__,Master of Engineering||__NONE__,2,False
 Bachelor of Science||__NONE__,Bachelor of Arts||__NONE__,1,False
 Bachelor of Science||__NONE__,Bachelor of Engineering||__NONE__,1,False
 Bachelor of Science||__NONE__,Bachelor of Technology||__NONE__,1,False
+Bachelor of Science||__NONE__,Enginering in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tecnolgy in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tecnology in Science||__NONE__,1,False
 Bachelor of Technology||__NONE__,Bachelor of Engineering||__NONE__,1,False
 Bachelor of Technology||__NONE__,Diploma in Engineering||__NONE__,1,False
 Bachelor of Technology||__NONE__,Master of Engineering||__NONE__,1,False
 Bachelor of Technology||__NONE__,Master of Technology||__NONE__,1,False
 Master of Technology||__NONE__,Bachelor of Commerce||__NONE__,1,False
-Master of Technology||__NONE__,__NONE__||__NONE__,1,False
+Master of Technology||__NONE__,Master Bacheler||__NONE__,1,False
 Diploma in Engineering||__NONE__,Diploma in Engineering||__NONE__,126,True
 Bachelor of Technology||__NONE__,Bachelor of Technology||__NONE__,58,True
 Bachelor of Engineering||__NONE__,Bachelor of Engineering||__NONE__,44,True

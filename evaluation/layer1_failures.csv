@@ -431,7 +431,7 @@ B.Sc / Computer Science and Engineering,Bachelor of Science,Bachelor of Science,
 BSC - Computer Science and Engineering,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 "BSc Hons, Computer Science and Engineering",Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 BSC (Computer Science and Engineering),Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
-Enginering in Science,Bachelor of Science,,,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Enginering in Science,Bachelor of Science,Enginering in Science,,,review_needed,L3,0.62,62.0,wrong_degree
 "B.Sc., Computer Science and Engineering",Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 Bachelor of Science in Computer Science and Engineering,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 BSc Hons (Computer Science and Engineering),Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
@@ -443,8 +443,8 @@ B. Sc - Computer Science and Engineering,Bachelor of Science,Bachelor of Science
 Bachelor of Science (Computer Science and Engineering),Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 BSC in Computer Science and Engineering,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 B. Sc in Computer Science and Engineering,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
-Tecnology in Science,Bachelor of Science,,,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
-Tecnolgy in Science,Bachelor of Science,,,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Tecnology in Science,Bachelor of Science,Tecnology in Science,,,review_needed,L3,0.62,62.0,wrong_degree
+Tecnolgy in Science,Bachelor of Science,Tecnolgy in Science,,,review_needed,L3,0.62,62.0,wrong_degree
 B.Sc. / Computer Science and Engineering,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 "BSc, Computer Science and Engineering",Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
 B.Sc in Computer Science and Engineering,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
@@ -1155,7 +1155,7 @@ Master of Technology in Computer Science and Engineering,Master of Technology,Ma
 "Master of Technology, Aerospace Engineering",Master of Technology,Master of Technology,Aerospace Engineering,,resolved,L1,1.0,100,wrong_field
 Master of Technology (Instrumentation Engineering),Master of Technology,Master of Technology,Instrumentation Engineering,,resolved,L1,1.0,100,wrong_field
 Master of Technology - Instrumentation Engineering,Master of Technology,Master of Technology,Instrumentation Engineering,,resolved,L1,1.0,100,wrong_field
-Master Bacheler,Master of Technology,,,,review_needed,L3_stub,0.35,35,wrong_degree
+Master Bacheler,Master of Technology,Master Bacheler,,,review_needed,L3,0.5,50.0,wrong_degree
 Master of Technology - Aerospace Engineering,Master of Technology,Master of Technology,Aerospace Engineering,,resolved,L1,1.0,100,wrong_field
 Master of Technology - Biotechnology Engineering,Master of Technology,Master of Technology,Biotechnology Engineering,,resolved,L1,1.0,100,wrong_field
 Master of Technology in Aerospace Engineering,Master of Technology,Master of Technology,Aerospace Engineering,,resolved,L1,1.0,100,wrong_field

@@ -2,8 +2,8 @@
 
 > **Project:** Growth Grids × University of Southampton Delhi
 > **Deadline:** 3 July 2026
-> **Current Version:** 3.6.0 (27 June 2026)
-> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
+> **Current Version:** 3.6.5 (28 June 2026)
+> **Contributors:** Arnav Mishra (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
 
 This repository contains the deliverables for the Growth Grids Summer Internship Project regarding standardisation of candidate qualification strings in CV Manager.
 
@@ -253,22 +253,22 @@ A full suite of layer-specific training and evaluation datasets contributed by *
 
 Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292) degree-field pairs are provided in `data/education_reference_expanded_sql_files/`.
 
-### F1 Evaluation Outputs (v3.6.0 — `evaluation/`)
+### F1 Evaluation Outputs (v3.6.5 — `evaluation/`)
 
 The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only international datasets. International datasets are degree-only, so field F1 is marked `N/A`. The summary also includes accuracy, TP/FP/FN counts, resolution rate, average latency, and per-dataset confusion CSVs.
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
-|---------|----------:|---------:|---------------------:|
-| `layer1` | 0.7618 | 0.9134 | 0.6353 |
-| `layer2` | 0.7863 | 0.8312 | 0.5323 |
-| `layer3` | 0.3975 | 0.5153 | 0.1604 |
-| `indian_usa` | 0.5393 | N/A | 0.4400 |
-| `indian_uk` | 0.5533 | N/A | 0.4509 |
-| `indian_world` | 0.3479 | N/A | 0.2572 |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
+|---------|----------:|---------:|---------------------:|:---------:|
+| `layer1` | 0.7614 | 0.9129 | 0.6353 | ≈ same |
+| `layer2` | 0.7753 | 0.8288 | 0.5334 | ≈ same |
+| `layer3` | **0.7985** | **0.7343** | **0.4901** | ⬆️ +101% / +42% / +206% |
+| `indian_usa` | **0.5730** | N/A | **0.5315** | ⬆️ +3.4% |
+| `indian_uk` | **0.5926** | N/A | **0.5506** | ⬆️ +3.9% |
+| `indian_world` | **0.3610** | N/A | **0.3184** | ⬆️ +1.3% |
 
 ---
 
-## Key Bug Fixes in v3.0.0 – v3.6.0
+## Key Bug Fixes in v3.0.0 – v3.6.5
 
 | Issue | Root Cause | Fix | Version |
 |-------|-----------|-----|--------|
@@ -279,6 +279,9 @@ The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only i
 | `MBBS` and all L2 matches returning `0.000` | `_combined_score()` missing `**kwargs`; `score_cutoff` crash silently swallowed | Added `**kwargs` to scorer signature and forwarded to sub-scorers | v3.5.0 |
 | Medical degrees (MBBS, BDS, BPharm) not resolvable | Missing from training dictionary entirely | Added `UG MEDICINE` category to `generate_data.py`; dictionary regenerated | v3.5.0 |
 | Compact CS/IT inputs missed field inference | Inputs like `BTech CSE` and `BTech IT` kept the degree but dropped the field | Added compact CS/IT field inference after degree alias removal | v3.6.0 |
+| L3 shortcode map incomplete | Missing BEng, slash-forms, PhD variants, EMBA, MBBS | Expanded to 80+ shortcodes; PhD normalization; field acronym map added | v3.6.5 |
+| L3 stub in `normalizer_rapidfuzz.py` bypassed the real engine | `layer3_stub` used primitive regex instead of delegating to `engine_l3.py` | Renamed to `layer3_heuristic`; now delegates to `L3HeuristicEngine` | v3.6.5 |
+| Institution names leaking as field predictions | Field regex captured `Jadavpur`, `Pune`, `Amity` etc. | Extended `_FIELD_STOPWORDS` + `_normalize_field()` validation in L3 path | v3.6.5 |
 
 ---
 

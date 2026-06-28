@@ -1,8 +1,8 @@
 # Platform Audit: CV Normalization Engine
 
-> **Version:** 3.6.0 — 27 June 2026
+> **Version:** 3.6.5 — 28 June 2026
 > **Project:** Growth Grids × University of Southampton Delhi
-> **Contributors:** Arnav (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
+> **Contributors:** Arnav Mishra (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
 
 ---
 
@@ -21,14 +21,15 @@ This document serves as the living audit log for the CV Normalization Engine. It
 - **Audit Trails:** Per-layer timing, confidence scores, engine votes, and decision rationale are captured in every result dict.
 
 ### Layer 3: Heuristic NLP Engine (`engine_l3.py`)
-- **Status:** ✅ Active
+- **Status:** ✅ Active (v3.6.5 — significantly improved)
 - **Description:** Pure-Python, zero-ML engine for processing unstructured and conversational text.
 - **Strategy Cascade (priority order):**
-  1. **S2 Shortcode Expansion** — 50+ hard-coded abbreviations (BCA, PGDM, LLB, 12th…) → canonical (conf: 0.80)
-  2. **S1 Sentence Extraction** — Regex patterns pull degree mentions from natural language (conf: 0.60–0.72)
-  3. **S3 Level Keyword Detection** — Maps keywords (bachelor, master, phd…) to degree-level group (conf: 0.50)
-  4. **S4 Field-Only Inference** — Detects field-of-study when no degree level is identifiable (conf: 0.35)
+  1. **S2 Shortcode Expansion** — 80+ hard-coded abbreviations (BCA, PGDM, LLB, BEng, MBBS, BDS, PhD variants…) → canonical (conf: 0.75–0.80)
+  2. **S1 Sentence Extraction** — Regex patterns pull degree mentions from natural language; extracted text post-processed through shortcode + PhD canonicalizer (conf: 0.50–0.72)
+  3. **S3 Level Keyword Detection** — Maps keywords (bachelor, master, phd…) to degree-level group; extracts field via acronym map (conf: 0.50)
+  4. **S4 Field-Only Inference** — Detects field-of-study when no degree level is identifiable; uses field acronym map for CSE, ECE, IT, AI etc. (conf: 0.35)
 - **Note:** All L3 results are flagged `review_needed` — expected behaviour.
+- **v3.6.5 Changes:** Expanded shortcode map, PhD normalization, field acronym map, relaxed field extraction, S1 canonicalization, `normalizer_rapidfuzz.py` stub now delegates to the full engine.
 
 ### Layer 2 Combined: Consensus Voting Engine (`engine_l2_combined.py`)
 - **Status:** ✅ Active
@@ -104,18 +105,18 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | `evaluation/*_failures.csv` | ✅ Current | Stores incorrect predictions for debugging |
 | `evaluation/*_confusion.csv` | ✅ Current | Stores degree, field, and pair confusion counts |
 
-### Current F1 Summary
+### Current F1 Summary (v3.6.5)
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
-|---------|----------:|---------:|---------------------:|
-| `layer1` | 0.7618 | 0.9134 | 0.6353 |
-| `layer2` | 0.7863 | 0.8312 | 0.5323 |
-| `layer3` | 0.3975 | 0.5153 | 0.1604 |
-| `indian_usa` | 0.5393 | N/A | 0.4400 |
-| `indian_uk` | 0.5533 | N/A | 0.4509 |
-| `indian_world` | 0.3479 | N/A | 0.2572 |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
+|---------|----------:|---------:|---------------------:|:---------:|
+| `layer1` | 0.7614 | 0.9129 | 0.6353 | ≈ same |
+| `layer2` | 0.7753 | 0.8288 | 0.5334 | ≈ same |
+| `layer3` | **0.7985** | **0.7343** | **0.4901** | ⬆️ +0.40 / +0.22 / +0.33 |
+| `indian_usa` | **0.5730** | N/A | **0.5315** | ⬆️ +0.034 |
+| `indian_uk` | **0.5926** | N/A | **0.5506** | ⬆️ +0.039 |
+| `indian_world` | **0.3610** | N/A | **0.3184** | ⬆️ +0.013 |
 
-**Note:** International datasets are degree-only, so field F1 is not applicable.
+**Note:** International datasets are degree-only, so field F1 is not applicable. Layer 3 improvements driven by v3.6.5 engine overhaul (Arnav Mishra).
 
 ---
 
@@ -139,13 +140,16 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | `_combined_score()` missing `**kwargs` — all L2 scores zeroed | v3.0.0 | ✅ Fixed | v3.5.0 — added `**kwargs` |
 | Medical degrees (MBBS, BDS, BPharm) absent from dictionary | ≤v3.0.0 | ✅ Fixed | v3.5.0 — `UG MEDICINE` category added |
 | Compact CS/IT field inputs not inferred | v3.5.0 | ✅ Fixed | v3.6.0 — compact CS/IT inference added |
+| L3 shortcode map incomplete (BEng, slash-forms, PhD variants) | ≤v3.6.0 | ✅ Fixed | v3.6.5 — 80+ shortcodes, PhD canonicalization |
+| L3 stub in `normalizer_rapidfuzz.py` returned raw uncanonicalised text | ≤v3.6.0 | ✅ Fixed | v3.6.5 — stub delegates to full L3HeuristicEngine |
+| L3 field extraction dropped all ≤2-char fields (IT, CS) | ≤v3.6.0 | ✅ Fixed | v3.6.5 — field acronym map + relaxed min-length |
 
 ---
 
 ## Known Issues & Action Items
 
 - [ ] **Threshold Calibration:** Use `layer2_fuzzy_training.csv` to fine-tune `auto_accept` (currently 88.0) and `flag_review` (currently 70.0) thresholds per noise type and difficulty level.
-- [ ] **L3 Regex Tuning:** Use `evaluation/layer3_failures.csv` and `layer3_unstructured_training.csv` to improve sentence extraction and degree-field pair matching.
+- [x] **L3 Regex Tuning:** Use `evaluation/layer3_failures.csv` and `layer3_unstructured_training.csv` to improve sentence extraction and degree-field pair matching. (Done in v3.6.5)
 - [ ] **International Integration:** Determine which SQL scope (USA / UK / WORLD) to adopt for the Growth Grids production database seed.
 - [ ] **HuggingFace Token:** Set `HF_TOKEN` environment variable to resolve unauthenticated download warning from Sentence-Transformers.
 - [x] **Evaluation Runner:** Added formal F1 scoring through `poc/evaluate_f1.py`, with summary, failure, TP/FP/FN, latency, and confusion outputs under `evaluation/`.
@@ -178,7 +182,8 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | v3.5.0 | Arnav | Integration, RapidFuzz `**kwargs` fix, medical degrees, docs |
 | v3.6.0 | **Himanshi Kaushik** | F1 scoring workflow, evaluation outputs, GitHub PR integration, and documentation sync |
 | v3.6.0 | **Keshav Singhal** | Helped with F1 scoring work, validation, and review |
+| v3.6.5 | **Arnav Mishra** | L3 engine overhaul (shortcode expansion, PhD normalization, field acronyms, S1 canonicalization), L3 stub delegation in normalizer_rapidfuzz, CLI polish, metrics documentation, cross-validation assessment |
 
 ---
 
-*Last updated: 27 June 2026 — v3.6.0*
+*Last updated: 28 June 2026 — v3.6.5*

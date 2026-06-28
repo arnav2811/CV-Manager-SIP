@@ -26,6 +26,7 @@ def run_command(name: str, command: list[str], user_input: str = "") -> bool:
         input=user_input,
         cwd=ROOT,
         text=True,
+        encoding="utf-8",
         capture_output=True,
         timeout=60,
     )

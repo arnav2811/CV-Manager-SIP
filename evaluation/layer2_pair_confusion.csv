@@ -23,36 +23,34 @@ Master of Business Administration||Human Resources Management,Master of Business
 Master of Science||Computer Science and Engineering,Master of Science||__NONE__,30,False
 Post Graduate Diploma||Business Administration,Diploma in Engineering||Business Administration,30,False
 Bachelor of Business Administration||Human Resources Management,Bachelor of Business Administration||__NONE__,27,False
-Bachelor of Business Administration||Accounting,__NONE__||Accounting,25,False
-Bachelor of Business Administration||Banking and Finance,__NONE__||Banking and Finance,25,False
-Bachelor of Business Administration||Business Administration,__NONE__||Business Administration,25,False
-Bachelor of Business Administration||Commerce,__NONE__||Commerce,25,False
-Bachelor of Business Administration||Entrepreneurship,__NONE__||Entrepreneurship,25,False
-Bachelor of Business Administration||Finance,__NONE__||Finance,25,False
 Bachelor of Business Administration||Human Resources Management,__NONE__||__NONE__,25,False
-Bachelor of Business Administration||International Business,__NONE__||International Business,25,False
-Bachelor of Business Administration||Marketing,__NONE__||Marketing,25,False
-Bachelor of Business Administration||Operations Management,__NONE__||Operations Management,25,False
-Bachelor of Computer Applications||Computer Applications,__NONE__||Computer Applications,25,False
-Bachelor of Science||Biochemistry,__NONE__||Biochemistry,25,False
-Bachelor of Science||Bioinformatics,__NONE__||Bioinformatics,25,False
-Bachelor of Science||Biology,__NONE__||Biology,25,False
-Bachelor of Science||Botany,__NONE__||Botany,25,False
-Bachelor of Science||Chemistry,__NONE__||Chemistry,25,False
 Bachelor of Science||Computer Science and Engineering,__NONE__||__NONE__,25,False
-Bachelor of Science||Geology,__NONE__||Geology,25,False
-Bachelor of Science||Mathematics,__NONE__||Mathematics,25,False
-Bachelor of Science||Microbiology,__NONE__||Microbiology,25,False
-Bachelor of Science||Physics,__NONE__||Physics,25,False
-Bachelor of Science||Statistics,__NONE__||Statistics,25,False
-Bachelor of Science||Zoology,__NONE__||Zoology,25,False
-Bachelor of Science||__NONE__,__NONE__||__NONE__,24,False
 Master of Computer Applications||__NONE__,Master of Science||__NONE__,23,False
+Bachelor of Business Administration||Business Administration,__NONE__||Business Administration,22,False
+Bachelor of Business Administration||International Business,__NONE__||International Business,21,False
+Bachelor of Business Administration||Operations Management,__NONE__||Operations Management,21,False
+Bachelor of Computer Applications||Computer Applications,__NONE__||Computer Applications,21,False
+Bachelor of Business Administration||Accounting,__NONE__||Accounting,20,False
+Bachelor of Business Administration||Banking and Finance,__NONE__||Banking and Finance,20,False
+Bachelor of Business Administration||Commerce,__NONE__||Commerce,20,False
+Bachelor of Business Administration||Entrepreneurship,__NONE__||Entrepreneurship,20,False
+Bachelor of Business Administration||Finance,__NONE__||Finance,20,False
+Bachelor of Business Administration||Marketing,__NONE__||Marketing,20,False
 Bachelor of Computer Applications||Computer Science (Applications),__NONE__||Computer Science (Applications),20,False
+Bachelor of Science||Biochemistry,__NONE__||Biochemistry,20,False
+Bachelor of Science||Bioinformatics,__NONE__||Bioinformatics,20,False
+Bachelor of Science||Biology,__NONE__||Biology,20,False
+Bachelor of Science||Botany,__NONE__||Botany,20,False
+Bachelor of Science||Chemistry,__NONE__||Chemistry,20,False
 Bachelor of Science||Computer Science and Engineering,Bachelor of Science||__NONE__,20,False
+Bachelor of Science||Geology,__NONE__||Geology,20,False
+Bachelor of Science||Mathematics,__NONE__||Mathematics,20,False
+Bachelor of Science||Microbiology,__NONE__||Microbiology,20,False
+Bachelor of Science||Physics,__NONE__||Physics,20,False
+Bachelor of Science||Statistics,__NONE__||Statistics,20,False
+Bachelor of Science||Zoology,__NONE__||Zoology,20,False
 Doctor of Philosophy||Computer Science and Engineering,Doctor of Philosophy||__NONE__,20,False
 Bachelor of Computer Applications||__NONE__,Bachelor of Science||__NONE__,19,False
-Master of Technology||__NONE__,__NONE__||__NONE__,19,False
 Post Graduate Diploma||Human Resources Management,Post Graduate Diploma||__NONE__,19,False
 Bachelor of Engineering||Metallurgical Engineering,Bachelor of Engineering||__NONE__,16,False
 Bachelor of Technology||Metallurgical Engineering,Bachelor of Technology||__NONE__,16,False
@@ -121,7 +119,6 @@ Bachelor of Business Administration||Entrepreneurship,Bachelor of Business Admin
 Bachelor of Business Administration||International Business,Bachelor of Business Administration||__NONE__,12,False
 Bachelor of Business Administration||Operations Management,Bachelor of Business Administration||__NONE__,12,False
 Bachelor of Computer Applications||Computer Applications,Bachelor of Computer Applications||__NONE__,12,False
-Master of Arts||__NONE__,__NONE__||__NONE__,12,False
 Master of Computer Applications||Computer Science (Applications),Master of Science||Computer Science (Applications),12,False
 Post Graduate Diploma||__NONE__,Post Graduate Diploma||Business Administration,12,False
 Bachelor of Business Administration||Accounting,Bachelor of Science||Accounting,10,False
@@ -134,22 +131,21 @@ Bachelor of Business Administration||International Business,Bachelor of Science|
 Bachelor of Business Administration||Marketing,Bachelor of Science||Marketing,10,False
 Bachelor of Business Administration||Operations Management,Bachelor of Science||Operations Management,10,False
 Bachelor of Computer Applications||Computer Applications,Bachelor of Science||Computer Applications,10,False
-Doctor of Philosophy||Biochemistry,__NONE__||Biochemistry,10,False
-Doctor of Philosophy||Bioinformatics,__NONE__||Bioinformatics,10,False
-Doctor of Philosophy||Biology,__NONE__||Biology,10,False
-Doctor of Philosophy||Botany,__NONE__||Botany,10,False
-Doctor of Philosophy||Chemistry,__NONE__||Chemistry,10,False
 Doctor of Philosophy||Computer Science and Engineering,__NONE__||__NONE__,10,False
-Doctor of Philosophy||Geology,__NONE__||Geology,10,False
-Doctor of Philosophy||Mathematics,__NONE__||Mathematics,10,False
-Doctor of Philosophy||Microbiology,__NONE__||Microbiology,10,False
-Doctor of Philosophy||Physics,__NONE__||Physics,10,False
-Doctor of Philosophy||Statistics,__NONE__||Statistics,10,False
-Doctor of Philosophy||Zoology,__NONE__||Zoology,10,False
 Bachelor of Computer Applications||Computer Science (Applications),Bachelor of Science||Computer Science (Applications),9,False
 Bachelor of Technology||__NONE__,Bachelor of Engineering||__NONE__,8,False
+Doctor of Philosophy||Biochemistry,__NONE__||Biochemistry,8,False
+Doctor of Philosophy||Bioinformatics,__NONE__||Bioinformatics,8,False
+Doctor of Philosophy||Biology,__NONE__||Biology,8,False
+Doctor of Philosophy||Botany,__NONE__||Botany,8,False
+Doctor of Philosophy||Chemistry,__NONE__||Chemistry,8,False
+Doctor of Philosophy||Geology,__NONE__||Geology,8,False
+Doctor of Philosophy||Mathematics,__NONE__||Mathematics,8,False
+Doctor of Philosophy||Microbiology,__NONE__||Microbiology,8,False
+Doctor of Philosophy||Physics,__NONE__||Physics,8,False
+Doctor of Philosophy||Statistics,__NONE__||Statistics,8,False
+Doctor of Philosophy||Zoology,__NONE__||Zoology,8,False
 Master of Computer Applications||Computer Science (Applications),Bachelor of Engineering||__NONE__,8,False
-12th Standard||__NONE__,__NONE__||__NONE__,7,False
 Bachelor of Computer Applications||__NONE__,Bachelor of Engineering||__NONE__,7,False
 Bachelor of Science||Biochemistry,Bachelor of Science||__NONE__,7,False
 Bachelor of Science||Bioinformatics,Bachelor of Science||__NONE__,7,False
@@ -158,7 +154,6 @@ Bachelor of Science||Geology,Bachelor of Science||Geography,7,False
 Bachelor of Science||Mathematics,Bachelor of Science||__NONE__,7,False
 Bachelor of Science||Microbiology,Bachelor of Science||__NONE__,7,False
 Bachelor of Science||Statistics,Bachelor of Science||__NONE__,7,False
-Master of Commerce||__NONE__,__NONE__||__NONE__,7,False
 Master of Science||Biochemistry,Master of Science||__NONE__,7,False
 Master of Science||Bioinformatics,Master of Science||__NONE__,7,False
 Master of Science||Botany,Master of Science||__NONE__,7,False
@@ -166,7 +161,6 @@ Master of Science||Geology,Master of Science||Geography,7,False
 Master of Science||Mathematics,Master of Science||__NONE__,7,False
 Master of Science||Microbiology,Master of Science||__NONE__,7,False
 Master of Science||Statistics,Master of Science||__NONE__,7,False
-10th Standard||__NONE__,__NONE__||__NONE__,6,False
 Bachelor of Business Administration||Accounting,Bachelor of Business Administration||__NONE__,6,False
 Bachelor of Business Administration||Accounting,Bachelor of Science||__NONE__,6,False
 Bachelor of Business Administration||Commerce,Bachelor of Business Administration||__NONE__,6,False
@@ -184,46 +178,44 @@ Doctor of Philosophy||Geology,Doctor of Philosophy||Geography,6,False
 Doctor of Philosophy||Mathematics,Doctor of Philosophy||__NONE__,6,False
 Doctor of Philosophy||Microbiology,Doctor of Philosophy||__NONE__,6,False
 Doctor of Philosophy||Statistics,Doctor of Philosophy||__NONE__,6,False
-Doctor of Philosophy||__NONE__,__NONE__||__NONE__,6,False
 Master of Computer Applications||Computer Science (Applications),Master of Computer Applications||__NONE__,6,False
-Master of Science||__NONE__,__NONE__||__NONE__,6,False
 Bachelor of Business Administration||Human Resources Management,Bachelor of Science||Human Resources Management,5,False
 Bachelor of Business Administration||Human Resources Management,Bachelor of Science||__NONE__,5,False
+Bachelor of Science||__NONE__,__NONE__||__NONE__,5,False
 Bachelor of Technology||__NONE__,Master of Engineering||__NONE__,5,False
-Bachelor of Technology||__NONE__,__NONE__||__NONE__,5,False
-Diploma in Engineering||__NONE__,__NONE__||__NONE__,5,False
-Master of Business Administration||Accounting,__NONE__||Accounting,5,False
-Master of Business Administration||Banking and Finance,__NONE__||Banking and Finance,5,False
 Master of Business Administration||Business Administration,__NONE__||Business Administration,5,False
-Master of Business Administration||Commerce,__NONE__||Commerce,5,False
-Master of Business Administration||Entrepreneurship,__NONE__||Entrepreneurship,5,False
-Master of Business Administration||Finance,__NONE__||Finance,5,False
 Master of Business Administration||Human Resources Management,__NONE__||__NONE__,5,False
-Master of Business Administration||International Business,__NONE__||International Business,5,False
-Master of Business Administration||Marketing,__NONE__||Marketing,5,False
-Master of Business Administration||Operations Management,__NONE__||Operations Management,5,False
-Master of Computer Applications||Computer Applications,__NONE__||Computer Applications,5,False
-Master of Science||Biochemistry,__NONE__||Biochemistry,5,False
-Master of Science||Bioinformatics,__NONE__||Bioinformatics,5,False
-Master of Science||Biology,__NONE__||Biology,5,False
-Master of Science||Botany,__NONE__||Botany,5,False
-Master of Science||Chemistry,__NONE__||Chemistry,5,False
 Master of Science||Computer Science and Engineering,__NONE__||__NONE__,5,False
-Master of Science||Geology,__NONE__||Geology,5,False
-Master of Science||Mathematics,__NONE__||Mathematics,5,False
-Master of Science||Microbiology,__NONE__||Microbiology,5,False
-Master of Science||Physics,__NONE__||Physics,5,False
-Master of Science||Statistics,__NONE__||Statistics,5,False
-Master of Science||Zoology,__NONE__||Zoology,5,False
 Master of Technology||__NONE__,Master of Engineering||__NONE__,5,False
 10th Standard||__NONE__,Master of Arts||__NONE__,4,False
+12th Standard||__NONE__,__NONE__||__NONE__,4,False
 Bachelor of Computer Applications||Computer Science (Applications),Bachelor of Engineering||__NONE__,4,False
+Master of Business Administration||Accounting,__NONE__||Accounting,4,False
+Master of Business Administration||Banking and Finance,__NONE__||Banking and Finance,4,False
+Master of Business Administration||Commerce,__NONE__||Commerce,4,False
+Master of Business Administration||Entrepreneurship,__NONE__||Entrepreneurship,4,False
+Master of Business Administration||Finance,__NONE__||Finance,4,False
+Master of Business Administration||International Business,__NONE__||International Business,4,False
+Master of Business Administration||Marketing,__NONE__||Marketing,4,False
+Master of Business Administration||Operations Management,__NONE__||Operations Management,4,False
+Master of Computer Applications||Computer Applications,__NONE__||Computer Applications,4,False
 Master of Computer Applications||Computer Science (Applications),__NONE__||Computer Science (Applications),4,False
-Master of Engineering||__NONE__,__NONE__||__NONE__,4,False
+Master of Science||Biochemistry,__NONE__||Biochemistry,4,False
+Master of Science||Bioinformatics,__NONE__||Bioinformatics,4,False
+Master of Science||Biology,__NONE__||Biology,4,False
+Master of Science||Botany,__NONE__||Botany,4,False
+Master of Science||Chemistry,__NONE__||Chemistry,4,False
+Master of Science||Geology,__NONE__||Geology,4,False
+Master of Science||Mathematics,__NONE__||Mathematics,4,False
+Master of Science||Microbiology,__NONE__||Microbiology,4,False
+Master of Science||Physics,__NONE__||Physics,4,False
+Master of Science||Statistics,__NONE__||Statistics,4,False
+Master of Science||Zoology,__NONE__||Zoology,4,False
 Post Graduate Diploma||Banking and Finance,Post Graduate Diploma||__NONE__,4,False
 Post Graduate Diploma||Business Administration,Post Graduate Diploma||__NONE__,4,False
 Post Graduate Diploma||International Business,Post Graduate Diploma||__NONE__,4,False
 Post Graduate Diploma||Operations Management,Post Graduate Diploma||__NONE__,4,False
+10th Standard||__NONE__,__NONE__||__NONE__,3,False
 Bachelor of Business Administration||__NONE__,Bachelor of Arts||__NONE__,3,False
 Bachelor of Technology||__NONE__,Master of Technology||__NONE__,3,False
 Diploma in Engineering||Chemical Engineering,Diploma in Engineering||__NONE__,3,False
@@ -236,12 +228,12 @@ Diploma in Engineering||Information Technology,Diploma in Engineering||__NONE__,
 Diploma in Engineering||Mechanical Engineering,Diploma in Engineering||__NONE__,3,False
 Diploma in Engineering||Mining Engineering,Diploma in Engineering||__NONE__,3,False
 Diploma in Engineering||Software Engineering,Diploma in Engineering||__NONE__,3,False
+Master of Arts||__NONE__,__NONE__||__NONE__,3,False
 Master of Computer Applications||__NONE__,Bachelor of Engineering||__NONE__,3,False
 Post Graduate Diploma||Accounting,Diploma in Engineering||__NONE__,3,False
 Post Graduate Diploma||Commerce,Diploma in Engineering||__NONE__,3,False
 Post Graduate Diploma||Finance,Diploma in Engineering||__NONE__,3,False
 Post Graduate Diploma||Marketing,Diploma in Engineering||__NONE__,3,False
-Post Graduate Diploma||__NONE__,__NONE__||__NONE__,3,False
 Bachelor of Arts||__NONE__,Bachelor of Computer Applications||__NONE__,2,False
 Bachelor of Computer Applications||__NONE__,Bachelor of Arts||__NONE__,2,False
 Bachelor of Computer Applications||__NONE__,Bachelor of Commerce||__NONE__,2,False
@@ -249,15 +241,69 @@ Bachelor of Engineering||__NONE__,Bachelor of Technology||__NONE__,2,False
 Bachelor of Engineering||__NONE__,Diploma in Engineering||__NONE__,2,False
 Bachelor of Engineering||__NONE__,Master of Technology||__NONE__,2,False
 Bachelor of Technology||__NONE__,Diploma in Engineering||__NONE__,2,False
+Doctor of Philosophy||__NONE__,__NONE__||__NONE__,2,False
 Master of Business Administration||Commerce,Master of Commerce||__NONE__,2,False
 Master of Business Administration||__NONE__,Master of Arts||__NONE__,2,False
+Master of Commerce||__NONE__,M oCm||__NONE__,2,False
 Master of Computer Applications||__NONE__,Master of Arts||__NONE__,2,False
+Master of Technology||__NONE__,M eTch||__NONE__,2,False
 Post Graduate Diploma||Entrepreneurship,Diploma in Engineering||__NONE__,2,False
 Post Graduate Diploma||Entrepreneurship,Post Graduate Diploma||__NONE__,2,False
+10th Standard||__NONE__,SCS Hons||__NONE__,1,False
+10th Standard||__NONE__,X Hns||__NONE__,1,False
+10th Standard||__NONE__,X oHns||__NONE__,1,False
+12th Standard||__NONE__,HCS Hons||__NONE__,1,False
+12th Standard||__NONE__,ICS Hons||__NONE__,1,False
+12th Standard||__NONE__,Plu||__NONE__,1,False
 Bachelor of Arts||__NONE__,Bachelor of Engineering||__NONE__,1,False
-Bachelor of Arts||__NONE__,__NONE__||__NONE__,1,False
+Bachelor of Arts||__NONE__,Bachelo||__NONE__,1,False
+Bachelor of Business Administration||Accounting,B.cS in Accounting||Accounting,1,False
+Bachelor of Business Administration||Accounting,B.cS. in Accounting||Accounting,1,False
+Bachelor of Business Administration||Accounting,BCS in Accounting||Accounting,1,False
+Bachelor of Business Administration||Accounting,BcS Hons in Accounting||Accounting,1,False
+Bachelor of Business Administration||Accounting,BcS in Accounting||Accounting,1,False
+Bachelor of Business Administration||Banking and Finance,B.cS in Banking and Finance||Banking and Finance,1,False
+Bachelor of Business Administration||Banking and Finance,B.cS. in Banking and Finance||Banking and Finance,1,False
+Bachelor of Business Administration||Banking and Finance,BCS in Banking and Finance||Banking and Finance,1,False
+Bachelor of Business Administration||Banking and Finance,BcS Hons in Banking and Finance||Banking and Finance,1,False
+Bachelor of Business Administration||Banking and Finance,BcS in Banking and Finance||Banking and Finance,1,False
+Bachelor of Business Administration||Business Administration,B.cS in Business Administration||Business Administration,1,False
+Bachelor of Business Administration||Business Administration,BCS in Business Administration||Business Administration,1,False
+Bachelor of Business Administration||Business Administration,BcS in Business Administration||Business Administration,1,False
+Bachelor of Business Administration||Commerce,B.cS in Commerce||Commerce,1,False
+Bachelor of Business Administration||Commerce,B.cS. in Commerce||Commerce,1,False
+Bachelor of Business Administration||Commerce,BCS in Commerce||Commerce,1,False
+Bachelor of Business Administration||Commerce,BcS Hons in Commerce||Commerce,1,False
+Bachelor of Business Administration||Commerce,BcS in Commerce||Commerce,1,False
+Bachelor of Business Administration||Entrepreneurship,B.cS in Entrepreneurship||Entrepreneurship,1,False
+Bachelor of Business Administration||Entrepreneurship,B.cS. in Entrepreneurship||Entrepreneurship,1,False
+Bachelor of Business Administration||Entrepreneurship,BCS in Entrepreneurship||Entrepreneurship,1,False
+Bachelor of Business Administration||Entrepreneurship,BcS Hons in Entrepreneurship||Entrepreneurship,1,False
+Bachelor of Business Administration||Entrepreneurship,BcS in Entrepreneurship||Entrepreneurship,1,False
+Bachelor of Business Administration||Finance,B.cS in Finance||Finance,1,False
+Bachelor of Business Administration||Finance,B.cS. in Finance||Finance,1,False
+Bachelor of Business Administration||Finance,BCS in Finance||Finance,1,False
+Bachelor of Business Administration||Finance,BcS Hons in Finance||Finance,1,False
+Bachelor of Business Administration||Finance,BcS in Finance||Finance,1,False
+Bachelor of Business Administration||International Business,B.cS in International Business||International Business,1,False
+Bachelor of Business Administration||International Business,B.cS. in International Business||International Business,1,False
+Bachelor of Business Administration||International Business,BCS in International Business||International Business,1,False
+Bachelor of Business Administration||International Business,BcS in International Business||International Business,1,False
+Bachelor of Business Administration||Marketing,B.cS in Marketing||Marketing,1,False
+Bachelor of Business Administration||Marketing,B.cS. in Marketing||Marketing,1,False
+Bachelor of Business Administration||Marketing,BCS in Marketing||Marketing,1,False
+Bachelor of Business Administration||Marketing,BcS Hons in Marketing||Marketing,1,False
+Bachelor of Business Administration||Marketing,BcS in Marketing||Marketing,1,False
+Bachelor of Business Administration||Operations Management,B.cS in Operations Management||Operations Management,1,False
+Bachelor of Business Administration||Operations Management,B.cS. in Operations Management||Operations Management,1,False
+Bachelor of Business Administration||Operations Management,BCS in Operations Management||Operations Management,1,False
+Bachelor of Business Administration||Operations Management,BcS in Operations Management||Operations Management,1,False
 Bachelor of Business Administration||__NONE__,Bachelor of Science||__NONE__,1,False
 Bachelor of Commerce||__NONE__,Bachelor of Arts||__NONE__,1,False
+Bachelor of Computer Applications||Computer Applications,B.cS in Computer Applications||Computer Applications,1,False
+Bachelor of Computer Applications||Computer Applications,B.cS. in Computer Applications||Computer Applications,1,False
+Bachelor of Computer Applications||Computer Applications,BCS in Computer Applications||Computer Applications,1,False
+Bachelor of Computer Applications||Computer Applications,BcS in Computer Applications||Computer Applications,1,False
 Bachelor of Computer Applications||Computer Science (Applications),Bachelor of Computer Applications||Computer Science and Engineering,1,False
 Bachelor of Engineering||Business Administration,Bachelor of Engineering||__NONE__,1,False
 Bachelor of Engineering||Cybersecurity,Bachelor of Engineering||__NONE__,1,False
@@ -267,10 +313,84 @@ Bachelor of Engineering||Finance,Bachelor of Engineering||__NONE__,1,False
 Bachelor of Engineering||Food Technology,Bachelor of Engineering||__NONE__,1,False
 Bachelor of Engineering||Information Technology,Bachelor of Engineering||__NONE__,1,False
 Bachelor of Engineering||Mathematics,Bachelor of Engineering||__NONE__,1,False
-Bachelor of Engineering||__NONE__,__NONE__||__NONE__,1,False
+Bachelor of Engineering||__NONE__,Engg of Engin||__NONE__,1,False
+Bachelor of Science||Biochemistry,B.cS in Biochemistry||Biochemistry,1,False
+Bachelor of Science||Biochemistry,B.cS. in Biochemistry||Biochemistry,1,False
+Bachelor of Science||Biochemistry,BCS in Biochemistry||Biochemistry,1,False
+Bachelor of Science||Biochemistry,BcS Hons in Biochemistry||Biochemistry,1,False
+Bachelor of Science||Biochemistry,BcS in Biochemistry||Biochemistry,1,False
+Bachelor of Science||Bioinformatics,B.cS in Bioinformatics||Bioinformatics,1,False
+Bachelor of Science||Bioinformatics,B.cS. in Bioinformatics||Bioinformatics,1,False
+Bachelor of Science||Bioinformatics,BCS in Bioinformatics||Bioinformatics,1,False
+Bachelor of Science||Bioinformatics,BcS Hons in Bioinformatics||Bioinformatics,1,False
+Bachelor of Science||Bioinformatics,BcS in Bioinformatics||Bioinformatics,1,False
+Bachelor of Science||Biology,B.cS in Biology||Biology,1,False
+Bachelor of Science||Biology,B.cS. in Biology||Biology,1,False
+Bachelor of Science||Biology,BCS in Biology||Biology,1,False
+Bachelor of Science||Biology,BcS Hons in Biology||Biology,1,False
+Bachelor of Science||Biology,BcS in Biology||Biology,1,False
+Bachelor of Science||Botany,B.cS in Botany||Botany,1,False
+Bachelor of Science||Botany,B.cS. in Botany||Botany,1,False
+Bachelor of Science||Botany,BCS in Botany||Botany,1,False
+Bachelor of Science||Botany,BcS Hons in Botany||Botany,1,False
+Bachelor of Science||Botany,BcS in Botany||Botany,1,False
+Bachelor of Science||Chemistry,B.cS in Chemistry||Chemistry,1,False
+Bachelor of Science||Chemistry,B.cS. in Chemistry||Chemistry,1,False
+Bachelor of Science||Chemistry,BCS in Chemistry||Chemistry,1,False
+Bachelor of Science||Chemistry,BcS Hons in Chemistry||Chemistry,1,False
+Bachelor of Science||Chemistry,BcS in Chemistry||Chemistry,1,False
+Bachelor of Science||Geology,B.cS in Geology||Geology,1,False
+Bachelor of Science||Geology,B.cS. in Geology||Geology,1,False
+Bachelor of Science||Geology,BCS in Geology||Geology,1,False
+Bachelor of Science||Geology,BcS Hons in Geology||Geology,1,False
+Bachelor of Science||Geology,BcS in Geology||Geology,1,False
+Bachelor of Science||Mathematics,B.cS in Mathematics||Mathematics,1,False
+Bachelor of Science||Mathematics,B.cS. in Mathematics||Mathematics,1,False
+Bachelor of Science||Mathematics,BCS in Mathematics||Mathematics,1,False
+Bachelor of Science||Mathematics,BcS Hons in Mathematics||Mathematics,1,False
+Bachelor of Science||Mathematics,BcS in Mathematics||Mathematics,1,False
+Bachelor of Science||Microbiology,B.cS in Microbiology||Microbiology,1,False
+Bachelor of Science||Microbiology,B.cS. in Microbiology||Microbiology,1,False
+Bachelor of Science||Microbiology,BCS in Microbiology||Microbiology,1,False
+Bachelor of Science||Microbiology,BcS Hons in Microbiology||Microbiology,1,False
+Bachelor of Science||Microbiology,BcS in Microbiology||Microbiology,1,False
+Bachelor of Science||Physics,B.cS in Physics||Physics,1,False
+Bachelor of Science||Physics,B.cS. in Physics||Physics,1,False
+Bachelor of Science||Physics,BCS in Physics||Physics,1,False
+Bachelor of Science||Physics,BcS Hons in Physics||Physics,1,False
+Bachelor of Science||Physics,BcS in Physics||Physics,1,False
+Bachelor of Science||Statistics,B.cS in Statistics||Statistics,1,False
+Bachelor of Science||Statistics,B.cS. in Statistics||Statistics,1,False
+Bachelor of Science||Statistics,BCS in Statistics||Statistics,1,False
+Bachelor of Science||Statistics,BcS Hons in Statistics||Statistics,1,False
+Bachelor of Science||Statistics,BcS in Statistics||Statistics,1,False
+Bachelor of Science||Zoology,B.cS in Zoology||Zoology,1,False
+Bachelor of Science||Zoology,B.cS. in Zoology||Zoology,1,False
+Bachelor of Science||Zoology,BCS in Zoology||Zoology,1,False
+Bachelor of Science||Zoology,BcS Hons in Zoology||Zoology,1,False
+Bachelor of Science||Zoology,BcS in Zoology||Zoology,1,False
+Bachelor of Science||__NONE__,B.CS.||__NONE__,1,False
+Bachelor of Science||__NONE__,B.cS Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,B.cS. Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,B.cS.||__NONE__,1,False
+Bachelor of Science||__NONE__,BCS HONS||__NONE__,1,False
+Bachelor of Science||__NONE__,BCS Hons||__NONE__,1,False
 Bachelor of Science||__NONE__,Bachelor of Arts||__NONE__,1,False
 Bachelor of Science||__NONE__,Bachelor of Engineering||__NONE__,1,False
+Bachelor of Science||__NONE__,Bachler in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Bachllor in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,BcS Hons Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,BcS Hons||__NONE__,1,False
+Bachelor of Science||__NONE__,Bcaheler in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Bcahellor in Science||__NONE__,1,False
 Bachelor of Science||__NONE__,Diploma in Engineering||__NONE__,1,False
+Bachelor of Science||__NONE__,Egninering in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Engnering in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tcenolgy in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tecnlgy in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tecnlogy in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,b.cs.||__NONE__,1,False
+Bachelor of Science||__NONE__,bcs hons||__NONE__,1,False
 Bachelor of Technology||Business Administration,Bachelor of Technology||__NONE__,1,False
 Bachelor of Technology||Cybersecurity,Bachelor of Technology||__NONE__,1,False
 Bachelor of Technology||Data Science,Bachelor of Technology||__NONE__,1,False
@@ -279,15 +399,70 @@ Bachelor of Technology||Finance,Bachelor of Technology||__NONE__,1,False
 Bachelor of Technology||Food Technology,Bachelor of Technology||__NONE__,1,False
 Bachelor of Technology||Information Technology,Bachelor of Technology||__NONE__,1,False
 Bachelor of Technology||Mathematics,Bachelor of Technology||__NONE__,1,False
+Bachelor of Technology||__NONE__,B.T Hons||__NONE__,1,False
+Bachelor of Technology||__NONE__,B.T||__NONE__,1,False
+Bachelor of Technology||__NONE__,Engg of Techn||__NONE__,1,False
+Bachelor of Technology||__NONE__,__NONE__||__NONE__,1,False
+Bachelor of Technology||__NONE__,b.t||__NONE__,1,False
+Diploma in Engineering||__NONE__,POLYT||__NONE__,1,False
+Diploma in Engineering||__NONE__,Polyt Hons||__NONE__,1,False
+Diploma in Engineering||__NONE__,Polyt||__NONE__,1,False
+Diploma in Engineering||__NONE__,__NONE__||__NONE__,1,False
+Diploma in Engineering||__NONE__,polyt||__NONE__,1,False
+Doctor of Philosophy||Biochemistry,PDH in Biochemistry||Biochemistry,1,False
+Doctor of Philosophy||Biochemistry,PDh in Biochemistry||Biochemistry,1,False
+Doctor of Philosophy||Bioinformatics,PDH in Bioinformatics||Bioinformatics,1,False
+Doctor of Philosophy||Bioinformatics,PDh in Bioinformatics||Bioinformatics,1,False
+Doctor of Philosophy||Biology,PDH in Biology||Biology,1,False
+Doctor of Philosophy||Biology,PDh in Biology||Biology,1,False
+Doctor of Philosophy||Botany,PDH in Botany||Botany,1,False
+Doctor of Philosophy||Botany,PDh in Botany||Botany,1,False
+Doctor of Philosophy||Chemistry,PDH in Chemistry||Chemistry,1,False
+Doctor of Philosophy||Chemistry,PDh in Chemistry||Chemistry,1,False
+Doctor of Philosophy||Geology,PDH in Geology||Geology,1,False
+Doctor of Philosophy||Geology,PDh in Geology||Geology,1,False
+Doctor of Philosophy||Mathematics,PDH in Mathematics||Mathematics,1,False
+Doctor of Philosophy||Mathematics,PDh in Mathematics||Mathematics,1,False
+Doctor of Philosophy||Microbiology,PDH in Microbiology||Microbiology,1,False
+Doctor of Philosophy||Microbiology,PDh in Microbiology||Microbiology,1,False
+Doctor of Philosophy||Physics,PDH in Physics||Physics,1,False
+Doctor of Philosophy||Physics,PDh in Physics||Physics,1,False
+Doctor of Philosophy||Statistics,PDH in Statistics||Statistics,1,False
+Doctor of Philosophy||Statistics,PDh in Statistics||Statistics,1,False
+Doctor of Philosophy||Zoology,PDH in Zoology||Zoology,1,False
+Doctor of Philosophy||Zoology,PDh in Zoology||Zoology,1,False
+Doctor of Philosophy||__NONE__,DoctorofP||__NONE__,1,False
+Doctor of Philosophy||__NONE__,PDH Hons||__NONE__,1,False
+Doctor of Philosophy||__NONE__,PDh Hons||__NONE__,1,False
+Master of Arts||__NONE__,M. . Hons||__NONE__,1,False
+Master of Arts||__NONE__,M. .||__NONE__,1,False
+Master of Arts||__NONE__,M. A. oHns||__NONE__,1,False
+Master of Arts||__NONE__,M.A. oHns||__NONE__,1,False
 Master of Arts||__NONE__,Master of Computer Applications||__NONE__,1,False
+Master of Arts||__NONE__,Master||__NONE__,1,False
+Master of Arts||__NONE__,m. .||__NONE__,1,False
+Master of Business Administration||Accounting,M. cS in Accounting||Accounting,1,False
+Master of Business Administration||Banking and Finance,M. cS in Banking and Finance||Banking and Finance,1,False
+Master of Business Administration||Commerce,M. cS in Commerce||Commerce,1,False
+Master of Business Administration||Entrepreneurship,M. cS in Entrepreneurship||Entrepreneurship,1,False
+Master of Business Administration||Finance,M. cS in Finance||Finance,1,False
 Master of Business Administration||Finance,Master of Science||__NONE__,1,False
+Master of Business Administration||International Business,M. cS in International Business||International Business,1,False
+Master of Business Administration||Marketing,M. cS in Marketing||Marketing,1,False
+Master of Business Administration||Operations Management,M. cS in Operations Management||Operations Management,1,False
 Master of Business Administration||__NONE__,Bachelor of Arts||__NONE__,1,False
 Master of Business Administration||__NONE__,Master of Science||__NONE__,1,False
+Master of Commerce||__NONE__,M. OCM||__NONE__,1,False
+Master of Commerce||__NONE__,M. oCm Hons||__NONE__,1,False
+Master of Commerce||__NONE__,M. oCm||__NONE__,1,False
 Master of Commerce||__NONE__,Master of Arts||__NONE__,1,False
+Master of Commerce||__NONE__,__NONE__||__NONE__,1,False
+Master of Commerce||__NONE__,m. ocm||__NONE__,1,False
+Master of Computer Applications||Computer Applications,M. cS in Computer Applications||Computer Applications,1,False
 Master of Computer Applications||Computer Science (Applications),Master of Computer Applications||Computer Science and Engineering,1,False
 Master of Computer Applications||__NONE__,Bachelor of Science||__NONE__,1,False
+Master of Computer Applications||__NONE__,M.C.A. oHns||__NONE__,1,False
 Master of Computer Applications||__NONE__,Master of Commerce||__NONE__,1,False
-Master of Computer Applications||__NONE__,__NONE__||__NONE__,1,False
 Master of Engineering||Business Administration,Master of Engineering||__NONE__,1,False
 Master of Engineering||Cybersecurity,Master of Engineering||__NONE__,1,False
 Master of Engineering||Data Science,Master of Engineering||__NONE__,1,False
@@ -296,8 +471,25 @@ Master of Engineering||Finance,Master of Engineering||__NONE__,1,False
 Master of Engineering||Food Technology,Master of Engineering||__NONE__,1,False
 Master of Engineering||Information Technology,Master of Engineering||__NONE__,1,False
 Master of Engineering||Mathematics,Master of Engineering||__NONE__,1,False
+Master of Engineering||__NONE__,M nEg||__NONE__,1,False
+Master of Engineering||__NONE__,M.E. oHns||__NONE__,1,False
 Master of Engineering||__NONE__,Master of Arts||__NONE__,1,False
+Master of Science||Biochemistry,M. cS in Biochemistry||Biochemistry,1,False
+Master of Science||Bioinformatics,M. cS in Bioinformatics||Bioinformatics,1,False
+Master of Science||Biology,M. cS in Biology||Biology,1,False
+Master of Science||Botany,M. cS in Botany||Botany,1,False
+Master of Science||Chemistry,M. cS in Chemistry||Chemistry,1,False
+Master of Science||Geology,M. cS in Geology||Geology,1,False
+Master of Science||Mathematics,M. cS in Mathematics||Mathematics,1,False
+Master of Science||Microbiology,M. cS in Microbiology||Microbiology,1,False
+Master of Science||Physics,M. cS in Physics||Physics,1,False
+Master of Science||Statistics,M. cS in Statistics||Statistics,1,False
+Master of Science||Zoology,M. cS in Zoology||Zoology,1,False
+Master of Science||__NONE__,M. cS Hons||__NONE__,1,False
+Master of Science||__NONE__,M.S. Hns||__NONE__,1,False
+Master of Science||__NONE__,M.S. oHns||__NONE__,1,False
 Master of Science||__NONE__,Master of Arts||__NONE__,1,False
+Master of Science||__NONE__,__NONE__||__NONE__,1,False
 Master of Technology||Business Administration,Master of Technology||__NONE__,1,False
 Master of Technology||Cybersecurity,Master of Technology||__NONE__,1,False
 Master of Technology||Data Science,Master of Technology||__NONE__,1,False
@@ -307,11 +499,31 @@ Master of Technology||Food Technology,Master of Technology||__NONE__,1,False
 Master of Technology||Information Technology,Master of Technology||__NONE__,1,False
 Master of Technology||Mathematics,Master of Technology||__NONE__,1,False
 Master of Technology||__NONE__,Bachelor of Commerce||__NONE__,1,False
+Master of Technology||__NONE__,M. ETCH||__NONE__,1,False
+Master of Technology||__NONE__,M. eTch Hons||__NONE__,1,False
+Master of Technology||__NONE__,M. eTch||__NONE__,1,False
+Master of Technology||__NONE__,M.T Hons||__NONE__,1,False
+Master of Technology||__NONE__,M.T||__NONE__,1,False
+Master of Technology||__NONE__,Mastcr Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,Mastcr Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,Mastcr Engg||__NONE__,1,False
+Master of Technology||__NONE__,Master Bach||__NONE__,1,False
 Master of Technology||__NONE__,Master of Arts||__NONE__,1,False
+Master of Technology||__NONE__,Mastr Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,Mastr Bachellor||__NONE__,1,False
+Master of Technology||__NONE__,Mastr Engg||__NONE__,1,False
+Master of Technology||__NONE__,Msater Bacheler||__NONE__,1,False
+Master of Technology||__NONE__,Msater Engg||__NONE__,1,False
+Master of Technology||__NONE__,__NONE__||__NONE__,1,False
+Master of Technology||__NONE__,m. etch||__NONE__,1,False
+Master of Technology||__NONE__,m.t||__NONE__,1,False
 Post Graduate Diploma||Accounting,Post Graduate Diploma||__NONE__,1,False
 Post Graduate Diploma||Commerce,Post Graduate Diploma||__NONE__,1,False
 Post Graduate Diploma||Finance,Post Graduate Diploma||__NONE__,1,False
 Post Graduate Diploma||Marketing,Post Graduate Diploma||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PDG Hons||__NONE__,1,False
+Post Graduate Diploma||__NONE__,PostGradu||__NONE__,1,False
+Post Graduate Diploma||__NONE__,__NONE__||__NONE__,1,False
 Bachelor of Technology||__NONE__,Bachelor of Technology||__NONE__,160,True
 Bachelor of Engineering||__NONE__,Bachelor of Engineering||__NONE__,92,True
 Post Graduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,78,True
@@ -321,21 +533,21 @@ Master of Technology||__NONE__,Master of Technology||__NONE__,65,True
 Diploma in Engineering||__NONE__,Diploma in Engineering||__NONE__,59,True
 10th Standard||__NONE__,10th Standard||__NONE__,58,True
 Master of Commerce||__NONE__,Master of Commerce||__NONE__,53,True
-Doctor of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,46,True
+Doctor of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,47,True
+Master of Engineering||__NONE__,Master of Engineering||__NONE__,46,True
 Master of Science||Biology,Master of Science||Biology,45,True
 Master of Science||Chemistry,Master of Science||Chemistry,45,True
 Master of Science||Physics,Master of Science||Physics,45,True
 Master of Science||Zoology,Master of Science||Zoology,45,True
 Master of Business Administration||__NONE__,Master of Business Administration||__NONE__,44,True
-Master of Engineering||__NONE__,Master of Engineering||__NONE__,44,True
 Bachelor of Science||__NONE__,Bachelor of Science||__NONE__,43,True
 Doctor of Philosophy||Biology,Doctor of Philosophy||Biology,42,True
 Doctor of Philosophy||Chemistry,Doctor of Philosophy||Chemistry,42,True
 Doctor of Philosophy||Physics,Doctor of Philosophy||Physics,42,True
 Doctor of Philosophy||Zoology,Doctor of Philosophy||Zoology,42,True
+Master of Science||__NONE__,Master of Science||__NONE__,41,True
 Bachelor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,40,True
 Diploma in Engineering||Cybersecurity,Diploma in Engineering||Cybersecurity,40,True
-Master of Science||__NONE__,Master of Science||__NONE__,39,True
 Master of Science||Biochemistry,Master of Science||Biochemistry,38,True
 Master of Science||Bioinformatics,Master of Science||Bioinformatics,38,True
 Master of Science||Botany,Master of Science||Botany,38,True
@@ -374,7 +586,7 @@ Diploma in Engineering||Mechanical Engineering,Diploma in Engineering||Mechanica
 Diploma in Engineering||Mining Engineering,Diploma in Engineering||Mining Engineering,30,True
 Diploma in Engineering||Software Engineering,Diploma in Engineering||Software Engineering,30,True
 Post Graduate Diploma||Business Administration,Post Graduate Diploma||Business Administration,26,True
-Master of Arts||__NONE__,Master of Arts||__NONE__,19,True
+Master of Arts||__NONE__,Master of Arts||__NONE__,22,True
 Bachelor of Science||Computer Science and Engineering,Bachelor of Science||Computer Science and Engineering,17,True
 Bachelor of Engineering||Chemical Engineering,Bachelor of Engineering||Chemical Engineering,16,True
 Bachelor of Engineering||Chemistry,Bachelor of Engineering||Chemistry,16,True

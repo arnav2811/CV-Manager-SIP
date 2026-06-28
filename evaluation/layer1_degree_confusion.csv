@@ -7,17 +7,19 @@ Master of Computer Applications,Master of Science,54,False
 Bachelor of Computer Applications,Bachelor of Engineering,6,False
 Master of Computer Applications,Bachelor of Engineering,6,False
 Bachelor of Engineering,Master of Engineering,3,False
-Bachelor of Science,,3,False
 Master of Technology,Master of Engineering,2,False
 Bachelor of Science,Bachelor of Arts,1,False
 Bachelor of Science,Bachelor of Engineering,1,False
 Bachelor of Science,Bachelor of Technology,1,False
+Bachelor of Science,Enginering in Science,1,False
+Bachelor of Science,Tecnolgy in Science,1,False
+Bachelor of Science,Tecnology in Science,1,False
 Bachelor of Technology,Bachelor of Engineering,1,False
 Bachelor of Technology,Diploma in Engineering,1,False
 Bachelor of Technology,Master of Engineering,1,False
 Bachelor of Technology,Master of Technology,1,False
-Master of Technology,,1,False
 Master of Technology,Bachelor of Commerce,1,False
+Master of Technology,Master Bacheler,1,False
 Bachelor of Science,Bachelor of Science,455,True
 Master of Science,Master of Science,454,True
 Diploma in Engineering,Diploma in Engineering,426,True
