@@ -85,7 +85,6 @@ def _banner() -> None:
     print("╔" + "═" * width + "╗")
     print("║" + " CV MANAGER  —  Qualification Normalisation PoC ".center(width) + "║")
     print("║" + f" Version {APP_VERSION}  ·  Growth Grids × University of Southampton ".center(width) + "║")
-    print("║" + " Contributor: Arnav Mishra ".center(width) + "║")
     print("╚" + "═" * width + "╝")
 
 

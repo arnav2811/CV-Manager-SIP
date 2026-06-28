@@ -405,7 +405,6 @@ if __name__ == "__main__":
     print("╔" + "═" * 68 + "╗")
     print("║" + " CV MANAGER · Orchestrator v3.6.5 ".center(68) + "║")
     print("║" + " Growth Grids × University of Southampton ".center(68) + "║")
-    print("║" + " Contributor: Arnav Mishra ".center(68) + "║")
     print("╚" + "═" * 68 + "╝")
     print("\n  Select operating mode:")
     print("    1  fast      — L1 + RapidFuzz only          (lowest latency)")

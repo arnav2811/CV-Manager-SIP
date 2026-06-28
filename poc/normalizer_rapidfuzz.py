@@ -12,7 +12,6 @@ Three-layer qualification normalization pipeline:
       expansion, PhD normalization, sentence extraction, field acronym map.
 
 Version: 3.6.5
-Contributor: Arnav Mishra
 
 Bug-fixes vs v2.3.0
   • Replaced \\bin\\b with \\s+in\\s+ in clean() — prevents false splits on
@@ -522,7 +521,7 @@ if __name__ == "__main__":
         print()
         print("╔" + "═" * 64 + "╗")
         print("║" + " CV MANAGER · RapidFuzz Engine (B-1) · Standalone CLI ".center(64) + "║")
-        print("║" + f" Version {VERSION}  ·  Contributor: Arnav Mishra ".center(64) + "║")
+        print("║" + f" Version {VERSION} ".center(64) + "║")
         print("╚" + "═" * 64 + "╝")
         print()
         print("    1.  Run default test suite")
