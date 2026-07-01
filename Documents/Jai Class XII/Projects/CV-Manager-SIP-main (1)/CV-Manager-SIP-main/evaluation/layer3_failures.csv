@@ -1,0 +1,570 @@
+raw_input,expected_degree,predicted_degree,expected_field,predicted_field,status,layer_used,confidence,fuzzy_score,error_category
+"Education: b.tech/be, C.S.E, Anna University, batch of 2019.",Bachelor of Technology,Bachelor of Engineering,Computer Science and Engineering,Computer Science and Engineering,review_needed,L2,0.7,70.0,wrong_degree
+Graduate of Pune University; qualification B  Tech (C.S.E.).,Bachelor of Technology,,Computer Science and Engineering,Computer Science and Engineering,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Currently pursuing B Tech (Hons) with specialization in Information Technology at University of Mumbai.,Bachelor of Technology,with specialization,Information Technology,Information Technology,review_needed,L3,0.62,62.0,wrong_degree
+Kabir holds a b.tech/be degree in I.T.,Bachelor of Technology,Bachelor of Engineering,Information Technology,Information Technology,review_needed,L3,0.75,75.0,wrong_degree
+"Education: B  Tech, I.T., Pune University, batch of 2020.",Bachelor of Technology,,Information Technology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+I completed my B Tech (Hons) in ECE from University of Mumbai in 2018.,Bachelor of Technology,Master of Science,Electronics and Communication Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing b.tech/be with specialization in E.C.E at Anna University.,Bachelor of Technology,Bachelor of Engineering,Electronics and Communication Engineering,Electronics and Communication Engineering,review_needed,L3,0.75,75.0,wrong_degree
+Neha holds a B  Tech degree in electronicsandcommunication.,Bachelor of Technology,Bachelor of Technology,Electronics and Communication Engineering,,review_needed,L3,0.72,72.0,wrong_field
+"Education: BTech/BE, Electronics & Communication, Amity University, batch of 2021.",Bachelor of Technology,Bachelor of Engineering,Electronics and Communication Engineering,Electronics and Communication Engineering,review_needed,L2,0.7,70.0,wrong_degree
+I completed my b.tech/be in E.E from Anna University in 2019.,Bachelor of Technology,Bachelor of Engineering,Electrical Engineering,Electrical Engineering,review_needed,L3,0.75,75.0,wrong_degree
+"Education: 4-Year BTech, electengg, IIM Ahmedabad, batch of 2022.",Bachelor of Technology,Bachelor of Technology,Electrical Engineering,,fuzzy_matched,L2,0.89,89.0,wrong_field
+Graduate of Jadavpur University; qualification 4-YEAR B.TECH (Elect Engg).,Bachelor of Technology,Bachelor of Science,Electrical Engineering,Electrical Engineering,review_needed,L3,0.5,50.0,wrong_degree
+4-Year B.Tech (Hons) - electricalandelectronics - VIT Vellore - 2024,Bachelor of Technology,Bachelor of Technology,Electrical Engineering,,resolved,L1,1.0,100,wrong_field
+Isha holds a 4-Year BTech degree in Mech.,Bachelor of Technology,Bachelor of Engineering,Mechanical Engineering,Mechanical Engineering,review_needed,L2,0.7163,71.6,wrong_degree
+Graduate of VIT Vellore; qualification 4-Year B.Tech (Hons) (mechengg).,Bachelor of Technology,Bachelor of Science,Mechanical Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Rohan holds a 4-YEAR B.TECH degree in civilengg.,Bachelor of Technology,Bachelor of Science,Civil Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+"Education: 4-Year B.Tech (Hons), Civil Engg., VIT Vellore, batch of 2024.",Bachelor of Technology,Bachelor of Science,Civil Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Manipal University; qualification B.TECH/BE (civilengineering).,Bachelor of Technology,Bachelor of Engineering,Civil Engineering,,review_needed,L3,0.75,75.0,wrong_degree_and_field
+I completed my 4-Year BTech in Chemical from IIM Ahmedabad in 2022.,Bachelor of Technology,Bachelor of Engineering,Chemical Engineering,,review_needed,L2,0.7017,70.2,wrong_degree_and_field
+Currently pursuing 4-YEAR B.TECH with specialization in che at Jadavpur University.,Bachelor of Technology,YEAR B.TECH with specialization,Chemical Engineering,Chemical Engineering,review_needed,L3,0.62,62.0,wrong_degree
+Aarav holds a 4-Year B.Tech (Hons) degree in ChE.,Bachelor of Technology,Bachelor of Science,Chemical Engineering,Chemical Engineering,review_needed,L3,0.5,50.0,wrong_degree
+"Education: B.TECH/BE, chemicalengineering, Manipal University, batch of 2025.",Bachelor of Technology,Bachelor of Engineering,Chemical Engineering,,review_needed,L2,0.7,70.0,wrong_degree_and_field
+Graduate of IIT Delhi; qualification b.tech (hons) (chemengg).,Bachelor of Technology,Master of Science,Chemical Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+b.tech. - Chemical Engineering - Delhi University - 2016,Bachelor of Technology,Bachelor of Technology,Chemical Engineering,,resolved,L1,1.0,100,wrong_field
+I completed my 4-YEAR B.TECH in Aero Engg from Jadavpur University in 2023.,Bachelor of Technology,Bachelor of Engineering,Aerospace Engineering,,review_needed,L2,0.7017,70.2,wrong_degree_and_field
+Currently pursuing 4-Year B.Tech (Hons) with specialization in aeroengg at VIT Vellore.,Bachelor of Technology,with specialization,Aerospace Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+Ananya holds a B.TECH/BE degree in aeronauticalengineering.,Bachelor of Technology,Bachelor of Engineering,Aerospace Engineering,,review_needed,L3,0.75,75.0,wrong_degree_and_field
+"Education: b.tech (hons), Aeronautical Engineering, IIT Delhi, batch of 2026.",Bachelor of Technology,Bachelor of Science,Aerospace Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Delhi University; qualification b.tech. (aerospaceengg).,Bachelor of Technology,Bachelor of Science,Aerospace Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+I completed my 4-Year B.Tech (Hons) in biotechnologyengg from VIT Vellore in 2024.,Bachelor of Technology,Bachelor of Engineering,Biotechnology Engineering,,review_needed,L2,0.7017,70.2,wrong_degree_and_field
+Currently pursuing B.TECH/BE with specialization in biotechengg at Manipal University.,Bachelor of Technology,Bachelor of Engineering,Biotechnology Engineering,,review_needed,L3,0.75,75.0,wrong_degree_and_field
+"Education: b.tech., Biotechnology Engineering, Delhi University, batch of 2016.",Bachelor of Technology,Bachelor of Science,Biotechnology Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of University of Mumbai; qualification B. TECH (biotech).,Bachelor of Technology,Master of Science,Biotechnology Engineering,Biotechnology Engineering,review_needed,L3,0.5,50.0,wrong_degree
+I completed my B.TECH/BE in Artificial Intelligence from Manipal University in 2025.,Bachelor of Technology,Bachelor of Engineering,Artificial Intelligence and Machine Learning,Artificial Intelligence and Machine Learning,review_needed,L3,0.75,75.0,wrong_degree
+Currently pursuing b.tech (hons) with specialization in artificialintelligence at IIT Delhi.,Bachelor of Technology,with specialization,Artificial Intelligence and Machine Learning,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: B. TECH, machinelearning, University of Mumbai, batch of 2017.",Bachelor of Technology,Master of Science,Artificial Intelligence and Machine Learning,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Anna University; qualification B.Tech. (Hons) (AI and ML).,Bachelor of Technology,Bachelor of Science,Artificial Intelligence and Machine Learning,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+I completed my b.tech (hons) in Data Sc from IIT Delhi in 2026.,Bachelor of Technology,Bachelor of Science,Data Science,Data Science,review_needed,L3,0.5,50.0,wrong_degree
+Currently pursuing b.tech. with specialization in datasc at Delhi University.,Bachelor of Technology,Bachelor of Technology,Data Science,,review_needed,L3,0.72,72.0,wrong_field
+Neha holds a B. TECH degree in datascience.,Bachelor of Technology,Bachelor of Technology,Data Science,,review_needed,L3,0.72,72.0,wrong_field
+"Education: B.Tech. (Hons), Data Science, Anna University, batch of 2018.",Bachelor of Technology,Bachelor of Science,Data Science,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Pune University; qualification B. Tech (Hons) (ds).,Bachelor of Technology,,Data Science,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+"Education: B. Tech (Hons), networksecurity, Pune University, batch of 2019.",Bachelor of Technology,,Cybersecurity,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Currently pursuing B.Tech. (Hons) with specialization in softwareengg at Anna University.,Bachelor of Technology,with specialization,Software Engineering,Software Engineering,review_needed,L3,0.62,62.0,wrong_degree
+Isha holds a B. Tech (Hons) degree in softwareengineering.,Bachelor of Technology,Bachelor of Technology,Software Engineering,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of IIM Ahmedabad; qualification B. Tech Hons (se).,Bachelor of Technology,,Software Engineering,Software Engineering,review_needed,L3,0.35,35.0,wrong_degree
+I completed my B.Tech. (Hons) in Instrumentation Engineering from Anna University in 2018.,Bachelor of Technology,Bachelor of Science,Instrumentation Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing B. Tech (Hons) with specialization in instrumentationengg at Pune University.,Bachelor of Technology,with specialization,Instrumentation Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: B. Tech Hons, ie, IIM Ahmedabad, batch of 2021.",Bachelor of Technology,,Instrumentation Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Jadavpur University; qualification 4-YearB.Tech (IE).,Bachelor of Technology,Bachelor of Science,Instrumentation Engineering,Production Engineering,review_needed,L3,0.5,50.0,wrong_degree_and_field
+4-Year B Tech - iandc - VIT Vellore - 2023,Bachelor of Technology,Bachelor of Technology,Instrumentation Engineering,,resolved,L1,1.0,100,wrong_field
+I completed my B. Tech (Hons) in Production Engineering from Pune University in 2019.,Bachelor of Technology,,Production Engineering,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Aarav holds a B. Tech Hons degree in productionengg.,Bachelor of Technology,Bachelor of Technology,Production Engineering,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of VIT Vellore; qualification 4-Year B Tech (manufacturing).,Bachelor of Technology,,Production Engineering,Production Engineering,review_needed,L3,0.35,35.0,wrong_degree
+I completed my bachelor of technology in metallurgicalengg from Amity University in 2020.,Bachelor of Technology,Bachelor of Technology,Metallurgical Engineering,,review_needed,L2,0.8035,80.4,wrong_field
+Currently pursuing B. Tech Hons with specialization in materialsscience at IIM Ahmedabad.,Bachelor of Technology,Bachelor of Technology,Metallurgical Engineering,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of Manipal University; qualification B.Tech(Hons) (materialsengg).,Bachelor of Technology,Bachelor of Science,Metallurgical Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing 4-YearB.Tech with specialization in Environmental Engineering at Jadavpur University.,Bachelor of Technology,YearB.Tech with specialization,Environmental Engineering,Environmental Engineering,review_needed,L3,0.62,62.0,wrong_degree
+Riya holds a 4-Year B Tech degree in environmentalengg.,Bachelor of Technology,Bachelor of Technology,Environmental Engineering,,review_needed,L2,0.8478,84.8,wrong_field
+"Education: B.Tech(Hons), environmentalengineering, Manipal University, batch of 2024.",Bachelor of Technology,Bachelor of Science,Environmental Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of IIT Delhi; qualification BachelorofTechnology (environmentengineering).,Bachelor of Technology,Bachelor of Science,Environmental Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing 4-Year B Tech with specialization in textile at VIT Vellore.,Bachelor of Technology,Year B Tech with specialization,Textile Engineering,Textile Engineering,review_needed,L3,0.62,62.0,wrong_degree
+Graduate of Delhi University; qualification Bacheler of Technology (Hons) (textileengg).,Bachelor of Technology,Bachelor of Science,Textile Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+I completed my 4-Year B Tech in Food Technology from VIT Vellore in 2023.,Bachelor of Technology,Bachelor of Technology,Food Technology,,review_needed,L2,0.872,87.2,wrong_field
+Currently pursuing B.Tech(Hons) with specialization in foodtechnology at Manipal University.,Bachelor of Technology,with specialization,Food Technology,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+Neha holds a BachelorofTechnology degree in foodscience.,Bachelor of Technology,Bachelor of Technology,Food Technology,,fuzzy_matched,L2,0.8833,88.3,wrong_field
+"Education: Bacheler of Technology (Hons), Food Science, Delhi University, batch of 2026.",Bachelor of Technology,Bachelor of Science,Food Technology,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of University of Mumbai; qualification BTech (Hons) (foodscienceandtechnology).,Bachelor of Technology,Bachelor of Technology,Food Technology,,review_needed,L3,0.75,75.0,wrong_field
+I completed my Enginering of Engineering in Computer Science & Engineering from Manipal University in 2024.,Bachelor of Engineering,Master of Engineering,Computer Science and Engineering,,review_needed,L2,0.7038,70.4,wrong_degree_and_field
+Graduate of Anna University; qualification Bachelor of Engineering (Hons) (compsci).,Bachelor of Engineering,Bachelor of Science,Computer Science and Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Bachelor of Engineering Hons - Information Technology - Pune University - 2018,Bachelor of Engineering,Bachelor of Engineering,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
+Currently pursuing bachelor of engineering with specialization in infotech at Delhi University.,Bachelor of Engineering,bachelor of engineering,Information Technology,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: Bachelor of Engineering (Hons), Infotech, Anna University, batch of 2017.",Bachelor of Engineering,Bachelor of Science,Information Technology,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Pune University; qualification Bachelor of Engineering Hons (Information Tech).,Bachelor of Engineering,Bachelor of Science,Information Technology,Information Technology,review_needed,L3,0.5,50.0,wrong_degree
+Tecnolgy of Engineering - informationtech - Amity University - 2019,Bachelor of Engineering,Master of Engineering,Information Technology,,review_needed,L2,0.7667,76.7,wrong_degree_and_field
+Currently pursuing BACHELER OF ENGINEERING with specialization in E&C at University of Mumbai.,Bachelor of Engineering,BACHELER OF ENGINEERING,Electronics and Communication Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+Rohan holds a Bachelor of Engineering (Hons) degree in eandc.,Bachelor of Engineering,Bachelor of Engineering,Electronics and Communication Engineering,,review_needed,L2,0.7317,73.2,wrong_field
+Graduate of Amity University; qualification Tecnolgy of Engineering (ec).,Bachelor of Engineering,,Electronics and Communication Engineering,Electronics and Communication Engineering,review_needed,L3,0.35,35.0,wrong_degree
+Currently pursuing Bachelor of Engineering (Hons) with specialization in electengg at Anna University.,Bachelor of Engineering,with specialization,Electrical Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: Tecnolgy of Engineering, electricalandelectronics, Amity University, batch of 2019.",Bachelor of Engineering,Diploma in Engineering,Electrical Engineering,,review_needed,L2,0.7536,75.4,wrong_degree_and_field
+Graduate of IIM Ahmedabad; qualification Bacheler of Engineering Hons (Electrical & Electronics).,Bachelor of Engineering,Bachelor of Science,Electrical Engineering,Electrical Engineering,review_needed,L3,0.5,50.0,wrong_degree
+Currently pursuing Bachelor of Engineering Hons with specialization in Mechanical Engg at Pune University.,Bachelor of Engineering,Bachelor of Engineering Hons,Mechanical Engineering,Mechanical Engineering,review_needed,L3,0.62,62.0,wrong_degree
+Ananya holds a Tecnolgy of Engineering degree in mechanicalengg.,Bachelor of Engineering,Bachelor of Engineering,Mechanical Engineering,,review_needed,L2,0.7143,71.4,wrong_field
+Graduate of Jadavpur University; qualification be (mechanicalengineering).,Bachelor of Engineering,Bachelor of Engineering,Mechanical Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Currently pursuing Tecnolgy of Engineering with specialization in Civil at Amity University.,Bachelor of Engineering,Tecnolgy of Engineering,Civil Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: be, civilengg, Jadavpur University, batch of 2021.",Bachelor of Engineering,Bachelor of Engineering,Civil Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of VIT Vellore; qualification B.ENG (Civil Engg.).,Bachelor of Engineering,,Civil Engineering,Civil Engineering,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Bacheler of Engineering - civilengineering - Manipal University - 2023,Bachelor of Engineering,Bachelor of Engineering,Civil Engineering,,resolved,L1,1.0,100,wrong_field
+I completed my Tecnolgy of Engineering in chemical from Amity University in 2019.,Bachelor of Engineering,Master of Technology,Chemical Engineering,,review_needed,L2,0.7368,73.7,wrong_degree_and_field
+Currently pursuing Bacheler of Engineering Hons with specialization in Chemical at IIM Ahmedabad.,Bachelor of Engineering,Bacheler of Engineering Hons,Chemical Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: B.ENG, ChE, VIT Vellore, batch of 2022.",Bachelor of Engineering,,Chemical Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Manipal University; qualification Bacheler of Engineering (chemicalengineering).,Bachelor of Engineering,Bachelor of Science,Chemical Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+B. E. Hons - chemengg - IIT Delhi - 2024,Bachelor of Engineering,Bachelor of Engineering,Chemical Engineering,,resolved,L1,1.0,100,wrong_field
+Graduate of IIT Delhi; qualification B. E. Hons (Aerospace).,Bachelor of Engineering,,Aerospace Engineering,Aerospace Engineering,review_needed,L3,0.35,35.0,wrong_degree
+"Education: B. E. Hons, biotechnologyengg, IIT Delhi, batch of 2024.",Bachelor of Engineering,,Biotechnology Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Delhi University; qualification be hons (biotechengg).,Bachelor of Engineering,Bachelor of Engineering,Biotechnology Engineering,,review_needed,L3,0.75,75.0,wrong_field
+I completed my B.ENG in IE from VIT Vellore in 2022.,Bachelor of Engineering,Bachelor of Engineering,Instrumentation Engineering,Production Engineering,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing Bacheler of Engineering with specialization in iandc at Manipal University.,Bachelor of Engineering,Bacheler of Engineering,Instrumentation Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: be hons, instrumentationandcontrol, Delhi University, batch of 2025.",Bachelor of Engineering,Bachelor of Engineering,Instrumentation Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of University of Mumbai; qualification B.E. Hons (Instrumentation and Control).,Bachelor of Engineering,Master of Science,Instrumentation Engineering,Instrumentation Engineering,review_needed,L3,0.5,50.0,wrong_degree
+I completed my Bacheler of Engineering in productionengg from Manipal University in 2023.,Bachelor of Engineering,Bachelor of Engineering,Production Engineering,,fuzzy_matched,L2,0.9139,91.4,wrong_field
+"Education: B.E. Hons, Manufacturing, University of Mumbai, batch of 2026.",Bachelor of Engineering,Master of Science,Production Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Anna University; qualification b.eng (manufacturingengg).,Bachelor of Engineering,,Production Engineering,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+I completed my B.SC in engineeringphysics from IIT Delhi in 2024.,Bachelor of Science,Bachelor of Science,Physics,,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing B.Sc (Hons) with specialization in Engineering Physics at Delhi University.,Bachelor of Science,with specialization,Physics,Physics,review_needed,L3,0.62,62.0,wrong_degree
+Graduate of Pune University; qualification B. Sc (Hons) (phy).,Bachelor of Science,,Physics,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Ananya holds a BScHons degree in chemistry.,Bachelor of Science,BScHons degree,Chemistry,Chemistry,review_needed,L3,0.62,62.0,wrong_degree
+"Education: B. Sc (Hons), Chem, Pune University, batch of 2017.",Bachelor of Science,,Chemistry,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Amity University; qualification b.sc. (chem).,Bachelor of Science,Bachelor of Science,Chemistry,Chemical Engineering,review_needed,L3,0.5,50.0,wrong_field
+B. Sc Hons - appliedchemistry - IIM Ahmedabad - 2019,Bachelor of Science,Bachelor of Science,Chemistry,,resolved,L1,1.0,100,wrong_field
+I completed my BSc in puremathematics from University of Mumbai in 2026.,Bachelor of Science,Bachelor of Science,Mathematics,,review_needed,L3,0.75,75.0,wrong_field
+Currently pursuing BScHons with specialization in Pure Mathematics at Anna University.,Bachelor of Science,BScHons,Mathematics,Mathematics,review_needed,L3,0.62,62.0,wrong_degree
+Riya holds a B. Sc (Hons) degree in statsandmaths.,Bachelor of Science,Bachelor of Science,Mathematics,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of IIM Ahmedabad; qualification B. Sc Hons (Mathematics).,Bachelor of Science,,Mathematics,Mathematics,review_needed,L3,0.35,35.0,wrong_degree
+B Sc - mathematics - Jadavpur University - 2020,Bachelor of Science,Bachelor of Science,Mathematics,,resolved,L1,1.0,100,wrong_field
+Currently pursuing B. Sc (Hons) with specialization in Stats at Pune University.,Bachelor of Science,with specialization,Statistics,Statistics,review_needed,L3,0.62,62.0,wrong_degree
+"Education: B. Sc Hons, Applied Statistics, IIM Ahmedabad, batch of 2019.",Bachelor of Science,,Statistics,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Jadavpur University; qualification B Sc (appliedstatistics).,Bachelor of Science,,Statistics,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+BSC - statisticsanddatascience - VIT Vellore - 2021,Bachelor of Science,Bachelor of Science,Statistics,,resolved,L1,1.0,100,wrong_field
+I completed my B. Sc (Hons) in Bio from Pune University in 2017.,Bachelor of Science,,Biology,Biology,review_needed,L3,0.35,35.0,wrong_degree
+"Education: B Sc, lifesciences, Jadavpur University, batch of 2020.",Bachelor of Science,,Biology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of VIT Vellore; qualification BSC (biologicalsciences).,Bachelor of Science,Bachelor of Science,Biology,,review_needed,L3,0.75,75.0,wrong_field
+bachelor of science - Microbiology - IIT Delhi - 2023,Bachelor of Science,Bachelor of Science,Microbiology,,resolved,L1,1.0,100,wrong_field
+B  Sc - biochemistry - Delhi University - 2024,Bachelor of Science,Bachelor of Science,Biochemistry,,resolved,L1,1.0,100,wrong_field
+Currently pursuing BSC with specialization in computationalbiology at VIT Vellore.,Bachelor of Science,Bachelor of Science,Bioinformatics,,review_needed,L3,0.75,75.0,wrong_field
+"Education: bachelor of science, bioinformatics, IIT Delhi, batch of 2023.",Bachelor of Science,Bachelor of Science,Bioinformatics,,review_needed,L2,0.8071,80.7,wrong_field
+Graduate of Delhi University; qualification B  Sc (Bioinformatics).,Bachelor of Science,,Bioinformatics,Bioinformatics,review_needed,L3,0.35,35.0,wrong_degree
+"Education: B  Sc, zoology, Delhi University, batch of 2024.",Bachelor of Science,,Zoology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Currently pursuing bachelor of science with specialization in botany at IIT Delhi.,Bachelor of Science,bachelor of science,Botany,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: BSC Hons, plantscience, University of Mumbai, batch of 2025.",Bachelor of Science,Bachelor of Science,Botany,,review_needed,L3,0.75,75.0,wrong_field
+B.Sc. Hons - botany - Pune University - 2016,Bachelor of Science,Bachelor of Science,Botany,,resolved,L1,1.0,100,wrong_field
+I completed my bachelor of science in Geology from IIT Delhi in 2023.,Bachelor of Science,Bachelor of Science,Geology,,review_needed,L2,0.8009,80.1,wrong_field
+Riya holds a BSC Hons degree in earthscience.,Bachelor of Science,Bachelor of Science,Geology,,review_needed,L3,0.75,75.0,wrong_field
+bsc hons - geology - Amity University - 2017,Bachelor of Science,Bachelor of Science,Geology,,resolved,L1,1.0,100,wrong_field
+Currently pursuing BSC Hons with specialization in environmentalscience at University of Mumbai.,Bachelor of Science,Bachelor of Science,Environmental Science,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Amity University; qualification bsc hons (envscience).,Bachelor of Science,Bachelor of Science,Environmental Science,,review_needed,L3,0.75,75.0,wrong_field
+BSC - environmentalstudies - IIM Ahmedabad - 2018,Bachelor of Science,Bachelor of Science,Environmental Science,,resolved,L1,1.0,100,wrong_field
+I completed my BSC Hons in computerscandengg from University of Mumbai in 2025.,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,review_needed,L3,0.75,75.0,wrong_field
+"Education: bsc hons, csande, Amity University, batch of 2017.",Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of IIM Ahmedabad; qualification BSC (computerscienceandengineering).,Bachelor of Science,Bachelor of Science,Computer Science and Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Currently pursuing B.Sc. Hons with specialization in informationscience at Pune University.,Bachelor of Science,Bachelor of Science,Information Technology,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of Jadavpur University; qualification B. Sc (I.S.).,Bachelor of Science,,Information Technology,Information Technology,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Isha holds a BSC degree in bscnursing.,Bachelor of Science,Bachelor of Science,Nursing,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of VIT Vellore; qualification B. SC (nursing).,Bachelor of Science,,Nursing,Nursing,review_needed,L3,0.35,35.0,wrong_degree
+"Education: B. SC, Agriculture, VIT Vellore, batch of 2020.",Bachelor of Science,,Agriculture,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+I completed my b.c.a. in computerapplication from IIM Ahmedabad in 2018.,Bachelor of Computer Applications,Bachelor of Computer Applications,Computer Applications,,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing B C A (Hons) with specialization in Computer Application at Jadavpur University.,Bachelor of Computer Applications,with specialization,Computer Applications,Computer Applications,review_needed,L3,0.62,62.0,wrong_degree
+Aarav holds a B C A Hons degree in computerapplications.,Bachelor of Computer Applications,Bachelor of Computer Applications,Computer Applications,,review_needed,L3,0.72,72.0,wrong_field
+"Education: b c a, Computer Applications, Manipal University, batch of 2021.",Bachelor of Computer Applications,,Computer Applications,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIT Delhi; qualification B C A  (Comp Applications).,Bachelor of Computer Applications,,Computer Applications,Computer Applications,review_needed,L3,0.35,35.0,wrong_degree
+B.C.A. (Hons) - compapplications - Delhi University - 2023,Bachelor of Computer Applications,Bachelor of Computer Applications,Computer Applications,,resolved,L1,1.0,100,wrong_field
+I completed my B.Com (Hons) Hons in businessstudies from Jadavpur University in 2019.,Bachelor of Commerce,Hons,Commerce,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: B Com (Hons), Business Studies, IIT Delhi, batch of 2022.",Bachelor of Commerce,,Commerce,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Delhi University; qualification B. Com (Hons) (businessstudies).,Bachelor of Commerce,,Commerce,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+BCom - Commerce - University of Mumbai - 2024,Bachelor of Commerce,Bachelor of Commerce,Commerce,,resolved,L1,1.0,100,wrong_field
+Currently pursuing BCom (Hons) with specialization in costaccounting at Manipal University.,Bachelor of Commerce,Bachelor of Commerce,Accounting,,review_needed,L3,0.75,75.0,wrong_field
+"Education: B. Com (Hons), Accounting, Delhi University, batch of 2023.",Bachelor of Commerce,,Accounting,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+B.Com(Hons) - accountancy - Anna University - 2025,Bachelor of Commerce,Bachelor of Commerce,Accounting,,resolved,L1,1.0,100,wrong_field
+Currently pursuing B Com (Hons) with specialization in Financial Management at IIT Delhi.,Bachelor of Commerce,with specialization,Finance,Finance,review_needed,L3,0.62,62.0,wrong_degree
+Kabir holds a B. Com (Hons) degree in financialmanagement.,Bachelor of Commerce,Bachelor of Commerce,Finance,,review_needed,L3,0.72,72.0,wrong_field
+"Education: BCom, financeandaccounts, University of Mumbai, batch of 2024.",Bachelor of Commerce,Bachelor of Commerce,Finance,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Anna University; qualification B.Com(Hons) (Finance & Accounts).,Bachelor of Commerce,,Finance,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+B.Com (Hons) - corporatefinance - Pune University - 2026,Bachelor of Commerce,Bachelor of Commerce,Finance,,resolved,L1,1.0,100,wrong_field
+I completed my B Com (Hons) in Banking & Finance from IIT Delhi in 2022.,Bachelor of Commerce,,Banking and Finance,Banking and Finance,review_needed,L3,0.35,35.0,wrong_degree
+Currently pursuing B. Com (Hons) with specialization in Banking and Finance at Delhi University.,Bachelor of Commerce,with specialization,Banking and Finance,Banking and Finance,review_needed,L3,0.62,62.0,wrong_degree
+"Education: B.Com(Hons), Banking, Anna University, batch of 2025.",Bachelor of Commerce,,Banking and Finance,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Pune University; qualification B.Com (Hons) (financeandbanking).,Bachelor of Commerce,,Banking and Finance,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+b. com - Finance & Banking - Amity University - 2016,Bachelor of Commerce,Bachelor of Commerce,Banking and Finance,,resolved,L1,1.0,100,wrong_field
+I completed my b.b.a. in businessadministration from Delhi University in 2023.,Bachelor of Business Administration,Bachelor of Business Administration,Business Administration,,review_needed,L3,0.72,72.0,wrong_field
+Arjun holds a B.B.A. (Hons) degree in businessadmin.,Bachelor of Business Administration,Bachelor of Business Administration,Business Administration,,review_needed,L3,0.72,72.0,wrong_field
+"Education: Bachelor of Business Administration (Hons), businessmgmt, Pune University, batch of 2026.",Bachelor of Business Administration,Bachelor of Engineering,Business Administration,,review_needed,L2,0.7347,73.5,wrong_degree_and_field
+Graduate of Amity University; qualification B B A (Hons) (Business Mgmt).,Bachelor of Business Administration,,Business Administration,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+BACHELOR OF BUSINESS ADMINISTRATION - businessmanagement - IIM Ahmedabad - 2017,Bachelor of Business Administration,Bachelor of Business Administration,Business Administration,,resolved,L1,1.0,100,wrong_field
+Currently pursuing B.B.A. (Hons) with specialization in Finance & Accounts at Anna University.,Bachelor of Business Administration,,Finance,Finance,review_needed,L3,0.35,35.0,wrong_degree
+Isha holds a Bachelor of Business Administration (Hons) degree in corporatefinance.,Bachelor of Business Administration,Bachelor of Engineering,Finance,,review_needed,L2,0.8363,83.6,wrong_degree_and_field
+"Education: B B A (Hons), Corporate Finance, Amity University, batch of 2016.",Bachelor of Business Administration,,Finance,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIM Ahmedabad; qualification BACHELOR OF BUSINESS ADMINISTRATION (Finance).,Bachelor of Business Administration,Bachelor of Engineering,Finance,Finance,review_needed,L2,0.7557,75.6,wrong_degree
+bba - finance - Jadavpur University - 2018,Bachelor of Business Administration,Bachelor of Business Administration,Finance,,resolved,L1,1.0,100,wrong_field
+I completed my B.B.A. (Hons) in Sales & Marketing from Anna University in 2025.,Bachelor of Business Administration,,Marketing,Marketing,review_needed,L3,0.35,35.0,wrong_degree
+Currently pursuing Bachelor of Business Administration (Hons) with specialization in digitalmarketing at Pune University.,Bachelor of Business Administration,Bachelor of Engineering,Marketing,,review_needed,L2,0.7661,76.6,wrong_degree_and_field
+"Education: BACHELOR OF BUSINESS ADMINISTRATION, marketing, IIM Ahmedabad, batch of 2017.",Bachelor of Business Administration,Bachelor of Business Administration,Marketing,,fuzzy_matched,L2,0.9525,95.2,wrong_field
+BBA - marketingmanagement - VIT Vellore - 2019,Bachelor of Business Administration,Bachelor of Business Administration,Marketing,,resolved,L1,1.0,100,wrong_field
+I completed my Bachelor of Business Administration (Hons) in Human Resources Management from Pune University in 2026.,Bachelor of Business Administration,Bachelor of Business Administration,Human Resources Management,,fuzzy_matched,L2,0.9382,93.8,wrong_field
+Currently pursuing B B A (Hons) with specialization in HR at Amity University.,Bachelor of Business Administration,with specialization,Human Resources Management,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+Aarav holds a BACHELOR OF BUSINESS ADMINISTRATION degree in hr.,Bachelor of Business Administration,Bachelor of Engineering,Human Resources Management,Human Resources Management,review_needed,L2,0.7921,79.2,wrong_degree
+"Education: bba, HRM, Jadavpur University, batch of 2018.",Bachelor of Business Administration,Bachelor of Business Administration,Human Resources Management,,review_needed,L3,0.75,75.0,wrong_field
+Bachelor of Business Administration Hons - Human Resource Management - Manipal University - 2020,Bachelor of Business Administration,Bachelor of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
+I completed my B B A (Hons) in globalbusiness from Amity University in 2016.,Bachelor of Business Administration,,International Business,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Currently pursuing BACHELOR OF BUSINESS ADMINISTRATION with specialization in internationalbusiness at IIM Ahmedabad.,Bachelor of Business Administration,Bachelor of Engineering,International Business,,review_needed,L2,0.7661,76.6,wrong_degree_and_field
+"Education: BBA, IB, VIT Vellore, batch of 2019.",Bachelor of Business Administration,Bachelor of Business Administration,International Business,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Manipal University; qualification Bachelor of Business Administration Hons (ib).,Bachelor of Business Administration,Bachelor of Engineering,International Business,International Business,review_needed,L2,0.747,74.7,wrong_degree
+B B A - International Trade - IIT Delhi - 2021,Bachelor of Business Administration,Bachelor of Business Administration,International Business,,resolved,L1,1.0,100,wrong_field
+I completed my BACHELOR OF BUSINESS ADMINISTRATION in startupmanagement from IIM Ahmedabad in 2017.,Bachelor of Business Administration,Bachelor of Business Administration,Entrepreneurship,,fuzzy_matched,L2,0.9382,93.8,wrong_field
+Riya holds a BBA degree in entrepreneurshipandinnovation.,Bachelor of Business Administration,Bachelor of Business Administration,Entrepreneurship,,review_needed,L3,0.75,75.0,wrong_field
+"Education: Bachelor of Business Administration Hons, Entrepreneurship & Innovation, Manipal University, batch of 2020.",Bachelor of Business Administration,Bachelor of Business Administration,Entrepreneurship,,fuzzy_matched,L2,0.9525,95.2,wrong_field
+Graduate of IIT Delhi; qualification B B A (entrepreneurship).,Bachelor of Business Administration,,Entrepreneurship,Entrepreneurship,review_needed,L3,0.35,35.0,wrong_degree
+b b a - Entrepreneurship - Delhi University - 2022,Bachelor of Business Administration,Bachelor of Business Administration,Entrepreneurship,,resolved,L1,1.0,100,wrong_field
+I completed my Bachelor of Arts in economics from Jadavpur University in 2018.,Bachelor of Arts,Bachelor of Arts,Economics,,review_needed,L3,0.62,62.0,wrong_field
+"Education: bachelor of arts, appliedeconomics, IIT Delhi, batch of 2021.",Bachelor of Arts,Bachelor of Arts,Economics,,fuzzy_matched,L2,0.9105,91.0,wrong_field
+Graduate of Delhi University; qualification b.a. (Applied Economics).,Bachelor of Arts,,Economics,Economics,review_needed,L3,0.35,35.0,wrong_degree
+BA Hons Hons - Business Economics - University of Mumbai - 2023,Bachelor of Arts,Bachelor of Arts,Economics,,resolved,L1,1.0,100,wrong_field
+Currently pursuing B. A. (Hons) with specialization in organizationalbehaviour at Manipal University.,Bachelor of Arts,with specialization,Psychology,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: b.a., Psychology, Delhi University, batch of 2022.",Bachelor of Arts,,Psychology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+B A - psych - Anna University - 2024,Bachelor of Arts,Bachelor of Arts,Psychology,,resolved,L1,1.0,100,wrong_field
+I completed my B. A. (Hons) in Social Work from Manipal University in 2020.,Bachelor of Arts,,Sociology,Sociology,review_needed,L3,0.35,35.0,wrong_degree
+Currently pursuing bachelor of arts with specialization in Sociology at IIT Delhi.,Bachelor of Arts,bachelor of arts,Sociology,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: BA Hons Hons, socialwork, University of Mumbai, batch of 2023.",Bachelor of Arts,Bachelor of Arts,Sociology,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Anna University; qualification B A (Social Work).,Bachelor of Arts,,Sociology,Sociology,review_needed,L3,0.35,35.0,wrong_degree
+BA Hons - Sociology - Pune University - 2025,Bachelor of Arts,Bachelor of Arts,Sociology,,resolved,L1,1.0,100,wrong_field
+I completed my bachelor of arts in politicalscience from IIT Delhi in 2021.,Bachelor of Arts,bachelor of arts,Political Science,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: B A, polscience, Anna University, batch of 2024.",Bachelor of Arts,,Political Science,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+BachelorofArts - Politics - Amity University - 2026,Bachelor of Arts,Bachelor of Arts,Political Science,,resolved,L1,1.0,100,wrong_field
+"Education: BA Hons, History, Pune University, batch of 2025.",Bachelor of Arts,Bachelor of Arts,History,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Amity University; qualification BachelorofArts (history).,Bachelor of Arts,Bachelor of Science,History,History,review_needed,L3,0.5,50.0,wrong_degree
+B.A. (Hons) - History - IIM Ahmedabad - 2016,Bachelor of Arts,Bachelor of Arts,History,,resolved,L1,1.0,100,wrong_field
+"Education: BachelorofArts, geography, Amity University, batch of 2026.",Bachelor of Arts,Bachelor of Arts,Geography,,fuzzy_matched,L2,0.9013,90.1,wrong_field
+Graduate of IIM Ahmedabad; qualification B.A. (Hons) (geo).,Bachelor of Arts,,Geography,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+BA HONS - Geo - Jadavpur University - 2017,Bachelor of Arts,Bachelor of Arts,Geography,,resolved,L1,1.0,100,wrong_field
+I completed my B A in englishlanguage from Anna University in 2024.,Bachelor of Arts,Bachelor of Arts,English,,review_needed,L3,0.72,72.0,wrong_field
+"Education: B.A. (Hons), englishliterature, IIM Ahmedabad, batch of 2016.",Bachelor of Arts,,English,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+B. A. Hons - English Lang & Lit - VIT Vellore - 2018,Bachelor of Arts,Bachelor of Arts,English,,resolved,L1,1.0,100,wrong_field
+Currently pursuing BachelorofArts with specialization in hindi at Amity University.,Bachelor of Arts,BachelorofArts,Hindi,Hindi,review_needed,L3,0.62,62.0,wrong_degree
+"Education: BA HONS, hindiliterature, Jadavpur University, batch of 2017.",Bachelor of Arts,Bachelor of Arts,Hindi,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of VIT Vellore; qualification B. A. Hons (Hindi).,Bachelor of Arts,,Hindi,Hindi,review_needed,L3,0.35,35.0,wrong_degree
+BACHELOR OF ARTS - hindi - Manipal University - 2019,Bachelor of Arts,Bachelor of Arts,Hindi,,resolved,L1,1.0,100,wrong_field
+I completed my BachelorofArts in philosophy from Amity University in 2026.,Bachelor of Arts,Bachelor of Arts,Philosophy,,review_needed,L2,0.8779,87.8,wrong_field
+Currently pursuing B.A. (Hons) with specialization in Phil at IIM Ahmedabad.,Bachelor of Arts,with specialization,Philosophy,Philosophy,review_needed,L3,0.62,62.0,wrong_degree
+"Education: B. A. Hons, Philosophy, VIT Vellore, batch of 2018.",Bachelor of Arts,,Philosophy,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Manipal University; qualification BACHELOR OF ARTS (philosophy).,Bachelor of Arts,Bachelor of Science,Philosophy,Philosophy,review_needed,L3,0.5,50.0,wrong_degree
+B. A. - Phil - IIT Delhi - 2020,Bachelor of Arts,Bachelor of Arts,Philosophy,,resolved,L1,1.0,100,wrong_field
+I completed my B.A. (Hons) in publicadministration from IIM Ahmedabad in 2016.,Bachelor of Arts,,Public Administration,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Neha holds a B. A. Hons degree in publicadmin.,Bachelor of Arts,Bachelor of Arts,Public Administration,,review_needed,L3,0.72,72.0,wrong_field
+"Education: BACHELOR OF ARTS, Public Admin, Manipal University, batch of 2019.",Bachelor of Arts,Bachelor of Arts,Public Administration,,fuzzy_matched,L2,0.9105,91.0,wrong_field
+Graduate of IIT Delhi; qualification B. A. (pubadmin).,Bachelor of Arts,,Public Administration,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+ba hons - Pub Admin - Delhi University - 2021,Bachelor of Arts,Bachelor of Arts,Public Administration,,resolved,L1,1.0,100,wrong_field
+I completed my BA HONS in mediastudies from Jadavpur University in 2017.,Bachelor of Arts,Bachelor of Arts,Mass Communication,,review_needed,L3,0.75,75.0,wrong_field
+Currently pursuing B. A. Hons with specialization in mediaandcommunication at VIT Vellore.,Bachelor of Arts,Bachelor of Arts,Mass Communication,,review_needed,L3,0.72,72.0,wrong_field
+"Education: B. A., Mass Communication, IIT Delhi, batch of 2020.",Bachelor of Arts,,Mass Communication,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Delhi University; qualification ba hons (masscommunication).,Bachelor of Arts,Bachelor of Arts,Mass Communication,,review_needed,L3,0.75,75.0,wrong_field
+BA - masscomm - University of Mumbai - 2022,Bachelor of Arts,Bachelor of Arts,Mass Communication,,resolved,L1,1.0,100,wrong_field
+I completed my MasterofTechnology in computersc from VIT Vellore in 2018.,Master of Technology,Master of Technology,Computer Science and Engineering,,fuzzy_matched,L2,0.8971,89.7,wrong_field
+Isha holds a M. Tech (Hons) degree in computerscandengg.,Master of Technology,Master of Technology,Computer Science and Engineering,,review_needed,L3,0.72,72.0,wrong_field
+Master of Technology - csande - Anna University - 2023,Master of Technology,Master of Technology,Computer Science and Engineering,,resolved,L1,1.0,100,wrong_field
+Currently pursuing M. Tech (Hons) with specialization in Info Tech at IIT Delhi.,Master of Technology,with specialization,Information Technology,Information Technology,review_needed,L3,0.62,62.0,wrong_degree
+Graduate of Anna University; qualification Master of Technology (informationtech).,Master of Technology,Master of Technology,Information Technology,,review_needed,L2,0.7616,76.2,wrong_field
+Master Bacheler - informationtechnology - Pune University - 2024,Master of Technology,Master of Science,Information Technology,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+I completed my M. Tech (Hons) in ec from IIT Delhi in 2020.,Master of Technology,,Electronics and Communication Engineering,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Aarav holds a MTECH degree in electronicscommunication.,Master of Technology,Master of Technology,Electronics and Communication Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Pune University; qualification Master Bacheler (elecandcomm).,Master of Technology,Master of Science,Electronics and Communication Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+"Education: Master Bacheler, electengg, Pune University, batch of 2024.",Master of Technology,Master of Science,Electrical Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Amity University; qualification M. TECH (Elect Engg).,Master of Technology,,Electrical Engineering,Electrical Engineering,review_needed,L3,0.35,35.0,wrong_degree
+m.tech - electricalandelectronics - IIM Ahmedabad - 2026,Master of Technology,Master of Technology,Electrical Engineering,,resolved,L1,1.0,100,wrong_field
+Riya holds a Master Bacheler degree in Mechanical.,Master of Technology,Master Bacheler degree,Mechanical Engineering,Mechanical Engineering,review_needed,L3,0.62,62.0,wrong_degree
+"Education: M. TECH, mechanical, Amity University, batch of 2025.",Master of Technology,,Mechanical Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIM Ahmedabad; qualification m.tech (Mech).,Master of Technology,Master of Science,Mechanical Engineering,Mechanical Engineering,review_needed,L3,0.5,50.0,wrong_degree
+Currently pursuing Master Bacheler with specialization in civil at Pune University.,Master of Technology,Master Bacheler,Civil Engineering,Civil Engineering,review_needed,L3,0.62,62.0,wrong_degree
+"Education: m.tech, Civil Engg, IIM Ahmedabad, batch of 2026.",Master of Technology,Master of Science,Civil Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Jadavpur University; qualification M.Tech Hons (civilengg).,Master of Technology,Master of Science,Civil Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Master Tecnolgy - Civil Engg. - VIT Vellore - 2017,Master of Technology,Master of Technology,Civil Engineering,,fuzzy_matched,L2,0.9091,90.9,wrong_field
+I completed my Master Bacheler in ds from Pune University in 2024.,Master of Technology,Master Bacheler,Data Science,Data Science,review_needed,L3,0.62,62.0,wrong_degree
+"Education: M.Tech Hons, dataanalytics, Jadavpur University, batch of 2016.",Master of Technology,Master of Science,Data Science,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of VIT Vellore; qualification Master Tecnolgy (bigdata).,Master of Technology,Master of Science,Data Science,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+"Education: Master Tecnolgy, aiandml, VIT Vellore, batch of 2017.",Master of Technology,Master of Technology,Artificial Intelligence and Machine Learning,,review_needed,L2,0.7244,72.4,wrong_field
+Graduate of Manipal University; qualification M.Tech (Hons) (ai/ml).,Master of Technology,Master of Science,Artificial Intelligence and Machine Learning,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Isha holds a Master Tecnolgy degree in Network Security.,Master of Technology,Master Tecnolgy degree,Cybersecurity,Cybersecurity,review_needed,L3,0.62,62.0,wrong_degree
+"Education: M.Tech (Hons), InfoSec, Manipal University, batch of 2018.",Master of Technology,Master of Science,Cybersecurity,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of IIT Delhi; qualification M.Tech (infosec).,Master of Technology,Master of Science,Cybersecurity,Cybersecurity,review_needed,L3,0.5,50.0,wrong_degree
+M.TECH - cybersecurity - Delhi University - 2020,Master of Technology,Master of Technology,Cybersecurity,,resolved,L1,1.0,100,wrong_field
+Currently pursuing Master Tecnolgy with specialization in Software Engg at VIT Vellore.,Master of Technology,Master Tecnolgy,Software Engineering,Software Engineering,review_needed,L3,0.62,62.0,wrong_degree
+"Education: M.Tech, softwareengineering, IIT Delhi, batch of 2019.",Master of Technology,Master of Science,Software Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Delhi University; qualification M.TECH (SE).,Master of Technology,Master of Science,Software Engineering,Software Engineering,review_needed,L3,0.5,50.0,wrong_degree
+I completed my Master Tecnolgy in biotech from VIT Vellore in 2017.,Master of Technology,Master Tecnolgy,Biotechnology Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+Currently pursuing M.Tech (Hons) with specialization in Biotech at Manipal University.,Master of Technology,with specialization,Biotechnology Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: M.TECH, Biotechnology, Delhi University, batch of 2020.",Master of Technology,Master of Science,Biotechnology Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing M.E. with specialization in Information Technology at IIT Delhi.,Master of Engineering,Master of Engineering,Computer Science and Engineering,Information Technology,review_needed,L3,0.72,72.0,wrong_field
+Ananya holds a m.e. degree in informationtechnology.,Master of Engineering,Master of Engineering,Computer Science and Engineering,,review_needed,L3,0.72,72.0,wrong_field
+"Education: M.ENG, it, University of Mumbai, batch of 2021.",Master of Engineering,Master of Science,Computer Science and Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Anna University; qualification ME Hons (IT).,Master of Engineering,Master of Engineering,Computer Science and Engineering,Information Technology,review_needed,L3,0.75,75.0,wrong_field
+"Education: ME Hons, eandc, Anna University, batch of 2022.",Master of Engineering,Master of Engineering,Electronics and Communication Engineering,,review_needed,L3,0.75,75.0,wrong_field
+I completed my m.e. in electricalelectronics from Delhi University in 2020.,Master of Engineering,Master of Engineering,Electrical Engineering,,review_needed,L3,0.72,72.0,wrong_field
+"Education: ME, electricalengg, Pune University, batch of 2023.",Master of Engineering,Master of Engineering,Electrical Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Amity University; qualification Master of Engineering (Electrical Engineering).,Master of Engineering,Master of Science,Electrical Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing ME Hons with specialization in mechanicalengineering at Anna University.,Master of Engineering,Master of Engineering,Mechanical Engineering,,review_needed,L3,0.75,75.0,wrong_field
+"Education: Master of Engineering, Mechanical Engineering, Amity University, batch of 2024.",Master of Engineering,Master of Engineering,Mechanical Engineering,,fuzzy_matched,L2,0.9274,92.7,wrong_field
+Graduate of IIM Ahmedabad; qualification Master of Engineering (ME).,Master of Engineering,Master of Science,Mechanical Engineering,Mechanical Engineering,review_needed,L3,0.5,50.0,wrong_degree
+Graduate of Jadavpur University; qualification Master of Engineering (Hons) (civilengg).,Master of Engineering,Master of Science,Civil Engineering,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Currently pursuing master of science with specialization in appliedphysics at Amity University.,Master of Science,master of science,Physics,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+Isha holds a M. SC degree in engineeringphysics.,Master of Science,Master of Science,Physics,,review_needed,L3,0.72,72.0,wrong_field
+"Education: M.S. Hons, Engineering Physics, Jadavpur University, batch of 2026.",Master of Science,,Physics,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+M.SC - physics - Manipal University - 2017,Master of Science,Master of Science,Physics,,resolved,L1,1.0,100,wrong_field
+Currently pursuing M. SC with specialization in industrialchemistry at IIM Ahmedabad.,Master of Science,Master of Science,Chemistry,,review_needed,L3,0.72,72.0,wrong_field
+"Education: M.Sc Hons, Chemistry, VIT Vellore, batch of 2016.",Master of Science,Master of Science,Chemistry,,review_needed,L3,0.5,50.0,wrong_field
+M Sc - appliedmathematics - Delhi University - 2019,Master of Science,Master of Science,Mathematics,,resolved,L1,1.0,100,wrong_field
+Graduate of Delhi University; qualification M Sc (stats).,Master of Science,,Statistics,Statistics,review_needed,L3,0.35,35.0,wrong_degree
+"Education: M Sc, bio, Delhi University, batch of 2019.",Master of Science,,Biology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+MSc - lifesciences - Anna University - 2021,Master of Science,Master of Science,Biology,,resolved,L1,1.0,100,wrong_field
+"Education: M. Sc Hons, microbio, University of Mumbai, batch of 2020.",Master of Science,Master of Science,Microbiology,,review_needed,L3,0.5,50.0,wrong_field
+Graduate of Pune University; qualification m. sc (Biochem).,Master of Science,,Biochemistry,Biochemistry,review_needed,L3,0.35,35.0,wrong_degree
+msc - Biochemistry - Amity University - 2023,Master of Science,Master of Science,Biochemistry,,resolved,L1,1.0,100,wrong_field
+Arjun holds a MSc degree in computationalbiology.,Master of Science,Master of Science,Bioinformatics,,review_needed,L3,0.75,75.0,wrong_field
+"Education: m. sc, Computational Biology, Pune University, batch of 2022.",Master of Science,,Bioinformatics,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+MASTER OF SCIENCE - Bioinformatics - IIM Ahmedabad - 2024,Master of Science,Master of Science,Bioinformatics,,resolved,L1,1.0,100,wrong_field
+I completed my M. Sc Hons in computerscience from University of Mumbai in 2020.,Master of Science,Master of Science,Computer Science and Engineering,,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing MSc with specialization in compscience at Anna University.,Master of Science,Master of Science,Computer Science and Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of IIM Ahmedabad; qualification MASTER OF SCIENCE (computersc).,Master of Science,Master of Science,Computer Science and Engineering,,review_needed,L3,0.5,50.0,wrong_field
+Rohan holds a msc degree in datasc.,Master of Science,Master of Science,Data Science,,review_needed,L3,0.75,75.0,wrong_field
+"Education: MASTER OF SCIENCE, datascience, IIM Ahmedabad, batch of 2024.",Master of Science,Master of Science,Data Science,,review_needed,L2,0.8083,80.8,wrong_field
+Graduate of Jadavpur University; qualification M. Sc (Hons) (Data Science).,Master of Science,,Data Science,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+I completed my m. sc in environmentalstudies from Pune University in 2022.,Master of Science,Master of Science,Environmental Science,,review_needed,L3,0.72,72.0,wrong_field
+Aarav holds a MASTER OF SCIENCE degree in environmentalscience.,Master of Science,Master of Science,Environmental Science,,review_needed,L2,0.7706,77.1,wrong_field
+"Education: M. Sc (Hons), Environmental Science, Jadavpur University, batch of 2025.",Master of Science,,Environmental Science,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+MSc Hons - envscience - Manipal University - 2016,Master of Science,Master of Science,Environmental Science,,resolved,L1,1.0,100,wrong_field
+I completed my Master of Computer Applications (Hons) in Computer Application from Amity University in 2023.,Master of Computer Applications,Bachelor of Computer Applications,Computer Applications,,review_needed,L2,0.8202,82.0,wrong_degree_and_field
+Currently pursuing M C A  with specialization in computerapplications at IIM Ahmedabad.,Master of Computer Applications,Master of Computer Applications,Computer Applications,,review_needed,L3,0.72,72.0,wrong_field
+"Education: M C A Hons, Comp Applications, VIT Vellore, batch of 2026.",Master of Computer Applications,,Computer Applications,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Manipal University; qualification Master of Computer Applications (compapplications).,Master of Computer Applications,Master of Science,Computer Applications,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+I completed my m.b.a. in businessmanagement from IIM Ahmedabad in 2024.,Master of Business Administration,Master of Business Administration,Business Administration,,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing master of business administration with specialization in Business Management at Jadavpur University.,Master of Business Administration,Bachelor of Engineering,Business Administration,,review_needed,L2,0.7563,75.6,wrong_degree_and_field
+"Education: M.B.A. Hons, management, Manipal University, batch of 2016.",Master of Business Administration,Master of Science,Business Administration,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Master of Business Administration - businessadministration - Delhi University - 2018,Master of Business Administration,Master of Business Administration,Business Administration,,resolved,L1,1.0,100,wrong_field
+I completed my master of business administration in finance from Jadavpur University in 2025.,Master of Business Administration,Master of Business Administration,Finance,,review_needed,L2,0.8753,87.5,wrong_field
+Kabir holds a M.B.A. Hons degree in financialmanagement.,Master of Business Administration,Master of Business Administration,Finance,,review_needed,L3,0.72,72.0,wrong_field
+"Education: MBA, financeandaccounts, IIT Delhi, batch of 2017.",Master of Business Administration,Master of Business Administration,Finance,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Delhi University; qualification Master of Business Administration (Finance & Accounts).,Master of Business Administration,Bachelor of Engineering,Finance,Finance,review_needed,L2,0.7408,74.1,wrong_degree
+Master of Business Administration (Hons) - corporatefinance - University of Mumbai - 2019,Master of Business Administration,Master of Business Administration,Finance,,resolved,L1,1.0,100,wrong_field
+I completed my EMBA Hons in marketingmanagement from VIT Vellore in 2026.,Master of Business Administration,Master of Business Administration,Marketing,,review_needed,L3,0.75,75.0,wrong_field
+Neha holds a MBA degree in salesandmarketing.,Master of Business Administration,Master of Business Administration,Marketing,,review_needed,L3,0.75,75.0,wrong_field
+"Education: Master of Business Administration, Sales & Marketing, Delhi University, batch of 2018.",Master of Business Administration,Master of Business Administration,Marketing,,review_needed,L2,0.8736,87.4,wrong_field
+Graduate of University of Mumbai; qualification Master of Business Administration (Hons) (digitalmarketing).,Master of Business Administration,Bachelor of Engineering,Marketing,,review_needed,L2,0.7344,73.4,wrong_degree_and_field
+Master of Business Administration Hons - Digital Marketing - Anna University - 2020,Master of Business Administration,Master of Business Administration,Marketing,,resolved,L1,1.0,100,wrong_field
+I completed my M.B.A. Hons in humanresourcemanagement from Manipal University in 2016.,Master of Business Administration,Master of Business Administration,Human Resources Management,,review_needed,L3,0.72,72.0,wrong_field
+Arjun holds a Master of Business Administration degree in peoplemanagement.,Master of Business Administration,Bachelor of Engineering,Human Resources Management,,review_needed,L2,0.7892,78.9,wrong_degree_and_field
+"Education: Master of Business Administration (Hons), hrandob, University of Mumbai, batch of 2019.",Master of Business Administration,Bachelor of Engineering,Human Resources Management,,review_needed,L2,0.7377,73.8,wrong_degree_and_field
+Graduate of Anna University; qualification Master of Business Administration Hons (HR & OB).,Master of Business Administration,Bachelor of Engineering,Human Resources Management,Human Resources Management,review_needed,L2,0.7491,74.9,wrong_degree
+M B A  - Human Resources - Pune University - 2021,Master of Business Administration,Master of Business Administration,Human Resources Management,,resolved,L1,1.0,100,wrong_field
+Currently pursuing Master of Business Administration with specialization in Operations at Delhi University.,Master of Business Administration,Bachelor of Engineering,Operations Management,,review_needed,L2,0.7563,75.6,wrong_degree_and_field
+Isha holds a Master of Business Administration (Hons) degree in operations.,Master of Business Administration,Master of Engineering,Operations Management,Operations Management,review_needed,L2,0.8286,82.9,wrong_degree
+"Education: Master of Business Administration Hons, operationsmanagement, Anna University, batch of 2020.",Master of Business Administration,Master of Business Administration,Operations Management,,review_needed,L2,0.8736,87.4,wrong_field
+Graduate of Pune University; qualification M B A  (supplychain).,Master of Business Administration,,Operations Management,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+MBA - Supply Chain - Amity University - 2022,Master of Business Administration,Master of Business Administration,Operations Management,,resolved,L1,1.0,100,wrong_field
+I completed my Master of Business Administration in internationaltrade from Delhi University in 2018.,Master of Business Administration,Master of Business Administration,International Business,,review_needed,L2,0.8753,87.5,wrong_field
+Currently pursuing Master of Business Administration (Hons) with specialization in Global Business at University of Mumbai.,Master of Business Administration,Bachelor of Engineering,International Business,,review_needed,L2,0.7563,75.6,wrong_degree_and_field
+Rohan holds a Master of Business Administration Hons degree in globalbusiness.,Master of Business Administration,Bachelor of Engineering,International Business,,review_needed,L2,0.7892,78.9,wrong_degree_and_field
+"Education: M B A , internationalbusiness, Pune University, batch of 2021.",Master of Business Administration,,International Business,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+EMBA (Hons) - IB - IIM Ahmedabad - 2023,Master of Business Administration,Master of Business Administration,International Business,,resolved,L1,1.0,100,wrong_field
+I completed my Master of Business Administration (Hons) in entrepreneurship from University of Mumbai in 2019.,Master of Business Administration,Master of Business Administration,Entrepreneurship,,review_needed,L2,0.8753,87.5,wrong_field
+Currently pursuing Master of Business Administration Hons with specialization in Entrepreneurship at Anna University.,Master of Business Administration,Bachelor of Engineering,Entrepreneurship,,review_needed,L2,0.7563,75.6,wrong_degree_and_field
+Aarav holds a M B A  degree in startupmanagement.,Master of Business Administration,Master of Business Administration,Entrepreneurship,,review_needed,L3,0.72,72.0,wrong_field
+"Education: MBA, Startup Management, Amity University, batch of 2022.",Master of Business Administration,Master of Business Administration,Entrepreneurship,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of IIM Ahmedabad; qualification EMBA (Hons) (entrepreneurshipandinnovation).,Master of Business Administration,Master of Business Administration,Entrepreneurship,,review_needed,L3,0.75,75.0,wrong_field
+MASTER OF BUSINESS ADMINISTRATION - Entrepreneurship & Innovation - Jadavpur University - 2024,Master of Business Administration,Master of Business Administration,Entrepreneurship,,resolved,L1,1.0,100,wrong_field
+I completed my Master of Business Administration Hons in financeandbanking from Anna University in 2020.,Master of Business Administration,Master of Business Administration,Banking and Finance,,review_needed,L2,0.8753,87.5,wrong_field
+Ananya holds a MBA degree in bankingandfinance.,Master of Business Administration,Master of Business Administration,Banking and Finance,,review_needed,L3,0.75,75.0,wrong_field
+"Education: EMBA (Hons), Banking & Finance, IIM Ahmedabad, batch of 2023.",Master of Business Administration,Master of Business Administration,Banking and Finance,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Jadavpur University; qualification MASTER OF BUSINESS ADMINISTRATION (Banking and Finance).,Master of Business Administration,Bachelor of Engineering,Banking and Finance,Banking and Finance,review_needed,L2,0.736,73.6,wrong_degree
+pgdm - banking - VIT Vellore - 2025,Master of Business Administration,Post Graduate Diploma,Banking and Finance,,resolved,L1,1.0,100,wrong_degree_and_field
+I completed my MasterofCommerce in Commerce from Pune University in 2021.,Master of Commerce,Master of Commerce,Commerce,,fuzzy_matched,L2,0.8883,88.8,wrong_field
+Currently pursuing master of commerce with specialization in commerce at Amity University.,Master of Commerce,master of commerce,Commerce,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: M Com, businessstudies, Jadavpur University, batch of 2024.",Master of Commerce,,Commerce,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of VIT Vellore; qualification Master of Commerce Hons (Commerce).,Master of Commerce,Master of Science,Commerce,Commerce,review_needed,L3,0.5,50.0,wrong_degree
+M.Com Hons - commerce - Manipal University - 2026,Master of Commerce,Master of Commerce,Commerce,,resolved,L1,1.0,100,wrong_field
+I completed my master of commerce in Accounts from Amity University in 2022.,Master of Commerce,Master of Commerce,Accounting,,fuzzy_matched,L2,0.8971,89.7,wrong_field
+Currently pursuing M.Com (Hons) with specialization in financialaccounting at IIM Ahmedabad.,Master of Commerce,with specialization,Accounting,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: Master of Commerce Hons, Cost Accounting, VIT Vellore, batch of 2025.",Master of Commerce,Master of Commerce,Accounting,,fuzzy_matched,L2,0.9181,91.8,wrong_field
+Graduate of Manipal University; qualification M.Com Hons (costaccounting).,Master of Commerce,,Accounting,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+mcom - accounting - IIT Delhi - 2016,Master of Commerce,Master of Commerce,Accounting,,resolved,L1,1.0,100,wrong_field
+I completed my M.Com (Hons) in Financial Management from IIM Ahmedabad in 2023.,Master of Commerce,,Finance,Finance,review_needed,L3,0.35,35.0,wrong_degree
+Currently pursuing M Com with specialization in financialmanagement at Jadavpur University.,Master of Commerce,Master of Commerce,Finance,,review_needed,L3,0.72,72.0,wrong_field
+Neha holds a Master of Commerce Hons degree in financeandaccounts.,Master of Commerce,Master of Commerce,Finance,,review_needed,L2,0.875,87.5,wrong_field
+"Education: M.Com Hons, Finance & Accounts, Manipal University, batch of 2026.",Master of Commerce,,Finance,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIT Delhi; qualification mcom (corporatefinance).,Master of Commerce,Master of Commerce,Finance,,review_needed,L3,0.75,75.0,wrong_field
+M. Com (Hons) - Corporate Finance - Delhi University - 2017,Master of Commerce,Master of Commerce,Finance,,resolved,L1,1.0,100,wrong_field
+Currently pursuing Master of Commerce Hons with specialization in banking at VIT Vellore.,Master of Commerce,Master of Commerce Hons,Banking and Finance,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: mcom, financeandbanking, IIT Delhi, batch of 2016.",Master of Commerce,Master of Commerce,Banking and Finance,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Delhi University; qualification M. Com (Hons) (Finance & Banking).,Master of Commerce,,Banking and Finance,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+M.COM - bankingandfinance - University of Mumbai - 2018,Master of Commerce,Master of Commerce,Banking and Finance,,resolved,L1,1.0,100,wrong_field
+I completed my m. a. in appliedeconomics from VIT Vellore in 2025.,Master of Arts,Master of Arts,Economics,,review_needed,L3,0.72,72.0,wrong_field
+"Education: MasterofArts, businesseconomics, Delhi University, batch of 2017.",Master of Arts,Master of Arts,Economics,,fuzzy_matched,L2,0.89,89.0,wrong_field
+Graduate of University of Mumbai; qualification m.a. (Economics).,Master of Arts,Master of Science,Economics,Economics,review_needed,L3,0.5,50.0,wrong_degree
+M. A. Hons - economics - Anna University - 2019,Master of Arts,Master of Arts,Economics,,resolved,L1,1.0,100,wrong_field
+I completed my MA in organizationalbehaviour from Manipal University in 2026.,Master of Arts,Master of Arts,Psychology,,review_needed,L3,0.75,75.0,wrong_field
+Rohan holds a MasterofArts degree in Psychology.,Master of Arts,MasterofArts degree,Psychology,Psychology,review_needed,L3,0.62,62.0,wrong_degree
+"Education: m.a., Psych, University of Mumbai, batch of 2018.",Master of Arts,Master of Science,Psychology,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Anna University; qualification M. A. Hons (psych).,Master of Arts,,Psychology,Psychology,review_needed,L3,0.35,35.0,wrong_degree
+M A  - appliedpsychology - Pune University - 2020,Master of Arts,Master of Arts,Psychology,,resolved,L1,1.0,100,wrong_field
+I completed my M A in socialwork from IIT Delhi in 2016.,Master of Arts,Master of Arts,Sociology,,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing MasterofArts with specialization in Social Work at Delhi University.,Master of Arts,MasterofArts,Sociology,Sociology,review_needed,L3,0.62,62.0,wrong_degree
+"Education: M. A. Hons, sociology, Anna University, batch of 2019.",Master of Arts,,Sociology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Pune University; qualification M A  (socialwork).,Master of Arts,,Sociology,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+MA - Social Work - Amity University - 2021,Master of Arts,Master of Arts,Sociology,,resolved,L1,1.0,100,wrong_field
+I completed my MasterofArts in polscience from Delhi University in 2017.,Master of Arts,MasterofArts,Political Science,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: M A , politicalscience, Pune University, batch of 2020.",Master of Arts,,Political Science,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Master of Arts - Pol Science - IIM Ahmedabad - 2022,Master of Arts,Master of Arts,Political Science,,resolved,L1,1.0,100,wrong_field
+"Education: MA, history, Amity University, batch of 2021.",Master of Arts,Master of Arts,History,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of IIM Ahmedabad; qualification Master of Arts (History).,Master of Arts,Master of Science,History,History,review_needed,L3,0.5,50.0,wrong_degree
+M. A. - history - Jadavpur University - 2023,Master of Arts,Master of Arts,History,,resolved,L1,1.0,100,wrong_field
+"Education: Master of Arts, Geography, IIM Ahmedabad, batch of 2022.",Master of Arts,Master of Arts,Geography,,fuzzy_matched,L2,0.9013,90.1,wrong_field
+Graduate of Jadavpur University; qualification M. A. (geography).,Master of Arts,,Geography,Geography,review_needed,L3,0.35,35.0,wrong_degree
+Master of Arts - geo - VIT Vellore - 2024,Master of Arts,Master of Arts,Geography,,resolved,L1,1.0,100,wrong_field
+I completed my M A  in englishliterature from Pune University in 2020.,Master of Arts,Master of Arts,English,,review_needed,L3,0.72,72.0,wrong_field
+"Education: M. A., englishlangandlit, Jadavpur University, batch of 2023.",Master of Arts,,English,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of VIT Vellore; qualification Master of Arts (English Language).,Master of Arts,Master of Science,English,English,review_needed,L3,0.5,50.0,wrong_degree
+M  A  - englishlanguage - Manipal University - 2025,Master of Arts,Master of Arts,English,,resolved,L1,1.0,100,wrong_field
+I completed my MA in hindiliterature from Amity University in 2021.,Master of Arts,Master of Arts,Hindi,,review_needed,L3,0.75,75.0,wrong_field
+Currently pursuing Master of Arts with specialization in Hindi at IIM Ahmedabad.,Master of Arts,Master of Arts,Hindi,,review_needed,L3,0.62,62.0,wrong_field
+"Education: Master of Arts, Hindi Literature, VIT Vellore, batch of 2024.",Master of Arts,Master of Arts,Hindi,,fuzzy_matched,L2,0.9013,90.1,wrong_field
+Graduate of Manipal University; qualification M  A  (hindiliterature).,Master of Arts,,Hindi,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+MA (Hons) - Hindi - IIT Delhi - 2026,Master of Arts,Master of Arts,Hindi,,resolved,L1,1.0,100,wrong_field
+I completed my Master of Arts in journalism from IIM Ahmedabad in 2022.,Master of Arts,Master of Arts,Mass Communication,,review_needed,L3,0.62,62.0,wrong_field
+"Education: M  A , journalismandmasscommunication, Manipal University, batch of 2025.",Master of Arts,,Mass Communication,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIT Delhi; qualification MA (Hons) (jmc).,Master of Arts,Master of Arts,Mass Communication,,review_needed,L3,0.75,75.0,wrong_field
+Master of Arts (Hons) - JMC - Delhi University - 2016,Master of Arts,Master of Arts,Mass Communication,,resolved,L1,1.0,100,wrong_field
+Currently pursuing Master of Arts with specialization in pubadmin at VIT Vellore.,Master of Arts,Master of Arts,Public Administration,,review_needed,L3,0.62,62.0,wrong_field
+"Education: MA (Hons), publicadministration, IIT Delhi, batch of 2026.",Master of Arts,Master of Arts,Public Administration,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Delhi University; qualification Master of Arts (Hons) (Public Administration).,Master of Arts,Master of Science,Public Administration,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+M.A. - publicadmin - University of Mumbai - 2017,Master of Arts,Master of Arts,Public Administration,,resolved,L1,1.0,100,wrong_field
+Aarav holds a DPhil degree in computerscience.,Doctor of Philosophy,Doctor of Philosophy,Computer Science and Engineering,,review_needed,L3,0.75,75.0,wrong_field
+"Education: Ph.D (Hons), compscience, Delhi University, batch of 2016.",Doctor of Philosophy,Doctor of Philosophy,Computer Science and Engineering,,review_needed,L3,0.5,50.0,wrong_field
+Ananya holds a Ph.D (Hons) degree in informationtech.,Doctor of Philosophy,Doctor of Philosophy,Information Technology,,review_needed,L3,0.72,72.0,wrong_field
+"Education: Ph.D., informationtechnology, University of Mumbai, batch of 2017.",Doctor of Philosophy,Doctor of Philosophy,Information Technology,,review_needed,L3,0.5,50.0,wrong_field
+Graduate of Anna University; qualification DoctorofPhilosophy (Information Science).,Doctor of Philosophy,,Information Technology,Information Technology,review_needed,L3,0.35,35.0,wrong_degree
+PHD - informationscience - Pune University - 2019,Doctor of Philosophy,Doctor of Philosophy,Information Technology,,resolved,L1,1.0,100,wrong_field
+Graduate of Pune University; qualification PHD (electronicsandcommunication).,Doctor of Philosophy,Doctor of Philosophy,Electronics and Communication Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Kabir holds a DoctorofPhilosophy degree in electrical.,Doctor of Philosophy,DoctorofPhilosophy degree,Electrical Engineering,Electrical Engineering,review_needed,L3,0.62,62.0,wrong_degree
+Graduate of Amity University; qualification DOCTOR OF PHILOSOPHY (electengg).,Doctor of Philosophy,Doctor of Philosophy,Electrical Engineering,,review_needed,L2,0.7062,70.6,wrong_field
+Currently pursuing DoctorofPhilosophy with specialization in mechanicalengg at Anna University.,Doctor of Philosophy,DoctorofPhilosophy,Mechanical Engineering,,review_needed,L3,0.62,62.0,wrong_degree_and_field
+"Education: DOCTOR OF PHILOSOPHY, mechanicalengineering, Amity University, batch of 2020.",Doctor of Philosophy,Doctor of Philosophy,Mechanical Engineering,,fuzzy_matched,L2,0.9245,92.5,wrong_field
+Graduate of IIM Ahmedabad; qualification Doctor of Philosophy Hons (me).,Doctor of Philosophy,,Mechanical Engineering,Mechanical Engineering,review_needed,L3,0.35,35.0,wrong_degree
+Graduate of Jadavpur University; qualification Ph  D  (civilengg).,Doctor of Philosophy,,Civil Engineering,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+"Education: Ph  D , che, Jadavpur University, batch of 2022.",Doctor of Philosophy,,Chemical Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Doctor of Philosophy (Hons) - chemicalengineering - Manipal University - 2024,Doctor of Philosophy,Doctor of Philosophy,Chemical Engineering,,resolved,L1,1.0,100,wrong_field
+I completed my DOCTOR OF PHILOSOPHY in aeroengg from Amity University in 2020.,Doctor of Philosophy,Doctor of Philosophy,Aerospace Engineering,,review_needed,L2,0.7785,77.8,wrong_field
+Currently pursuing Doctor of Philosophy Hons with specialization in aeronauticalengineering at IIM Ahmedabad.,Doctor of Philosophy,Doctor of Philosophy,Aerospace Engineering,,review_needed,L2,0.7166,71.7,wrong_field
+"Education: PH.D, aerospaceengg, VIT Vellore, batch of 2023.",Doctor of Philosophy,Doctor of Philosophy,Aerospace Engineering,,review_needed,L3,0.5,50.0,wrong_field
+Graduate of Manipal University; qualification Doctor of Philosophy (Hons) (Aerospace Engg).,Doctor of Philosophy,,Aerospace Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+"Education: Doctor of Philosophy (Hons), biotechnologyengg, Manipal University, batch of 2024.",Doctor of Philosophy,,Biotechnology Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIT Delhi; qualification doctor of philosophy (biotechengg).,Doctor of Philosophy,Doctor of Philosophy,Biotechnology Engineering,,review_needed,L2,0.7051,70.5,wrong_field
+PHD - aiandml - University of Mumbai - 2016,Doctor of Philosophy,Doctor of Philosophy,Artificial Intelligence and Machine Learning,,resolved,L1,1.0,100,wrong_field
+I completed my PH.D in datascienceandanalytics from VIT Vellore in 2023.,Doctor of Philosophy,Doctor of Philosophy,Data Science,,review_needed,L3,0.72,72.0,wrong_field
+"Education: phd, datasc, Delhi University, batch of 2026.",Doctor of Philosophy,Doctor of Philosophy,Data Science,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of University of Mumbai; qualification PHD (datascience).,Doctor of Philosophy,Doctor of Philosophy,Data Science,,review_needed,L3,0.75,75.0,wrong_field
+I completed my Doctor of Philosophy (Hons) in informationsecurity from Manipal University in 2024.,Doctor of Philosophy,Doctor of Philosophy,Cybersecurity,,review_needed,L2,0.7785,77.8,wrong_field
+Graduate of Anna University; qualification Doctor of Philosophy (InfoSec).,Doctor of Philosophy,,Cybersecurity,Cybersecurity,review_needed,L3,0.35,35.0,wrong_degree
+Graduate of Pune University; qualification PH. D. (softwareengg).,Doctor of Philosophy,,Software Engineering,Software Engineering,review_needed,L3,0.35,35.0,wrong_degree
+DPhil Hons - softwareengineering - Amity University - 2019,Doctor of Philosophy,Doctor of Philosophy,Software Engineering,,resolved,L1,1.0,100,wrong_field
+"Education: PH. D., Instrumentation Engineering, Pune University, batch of 2018.",Doctor of Philosophy,,Instrumentation Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Amity University; qualification DPhil Hons (instrumentationengg).,Doctor of Philosophy,Doctor of Philosophy,Instrumentation Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Currently pursuing Doctor of Philosophy with specialization in productionengg at Anna University.,Doctor of Philosophy,Doctor of Philosophy,Production Engineering,,review_needed,L2,0.7166,71.7,wrong_field
+Graduate of IIM Ahmedabad; qualification Ph. D. Hons (Manufacturing).,Doctor of Philosophy,,Production Engineering,Production Engineering,review_needed,L3,0.35,35.0,wrong_degree
+Ph D - manufacturingengg - Jadavpur University - 2021,Doctor of Philosophy,Doctor of Philosophy,Production Engineering,,resolved,L1,1.0,100,wrong_field
+"Education: Ph. D. Hons, miningengg, IIM Ahmedabad, batch of 2020.",Doctor of Philosophy,,Mining Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Jadavpur University; qualification Ph D (miningengineering).,Doctor of Philosophy,,Mining Engineering,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Aarav holds a Ph. D. Hons degree in metallurgicalengg.,Doctor of Philosophy,Doctor of Philosophy,Metallurgical Engineering,,review_needed,L3,0.72,72.0,wrong_field
+"Education: Ph D, materialsscience, Jadavpur University, batch of 2021.",Doctor of Philosophy,,Metallurgical Engineering,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+"Education: DPHIL, environmentalengg, VIT Vellore, batch of 2022.",Doctor of Philosophy,Doctor of Philosophy,Environmental Engineering,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Manipal University; qualification ph.d (environmentalengineering).,Doctor of Philosophy,Doctor of Philosophy,Environmental Engineering,,review_needed,L3,0.5,50.0,wrong_field
+Doctor of Philosophy - environmentengineering - IIT Delhi - 2024,Doctor of Philosophy,Doctor of Philosophy,Environmental Engineering,,resolved,L1,1.0,100,wrong_field
+Riya holds a DPHIL degree in textileengg.,Doctor of Philosophy,Doctor of Philosophy,Textile Engineering,,review_needed,L3,0.75,75.0,wrong_field
+I completed my Ph D in foodtech from Jadavpur University in 2021.,Doctor of Philosophy,Doctor of Philosophy,Food Technology,,review_needed,L3,0.72,72.0,wrong_field
+Kabir holds a ph.d degree in foodtechnology.,Doctor of Philosophy,Doctor of Philosophy,Food Technology,,review_needed,L3,0.72,72.0,wrong_field
+"Education: Doctor of Philosophy, foodscience, IIT Delhi, batch of 2024.",Doctor of Philosophy,Doctor of Philosophy,Food Technology,,fuzzy_matched,L2,0.9245,92.5,wrong_field
+Graduate of Delhi University; qualification Ph. D. (Hons) (Food Science).,Doctor of Philosophy,,Food Technology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Ph.D Hons - foodscienceandtechnology - University of Mumbai - 2026,Doctor of Philosophy,Doctor of Philosophy,Food Technology,,resolved,L1,1.0,100,wrong_field
+"Education: Ph. D. (Hons), appliedphysics, Delhi University, batch of 2025.",Doctor of Philosophy,,Physics,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of University of Mumbai; qualification Ph.D Hons (engineeringphysics).,Doctor of Philosophy,Doctor of Philosophy,Physics,,review_needed,L3,0.5,50.0,wrong_field
+I completed my ph.d in chem from Manipal University in 2023.,Doctor of Philosophy,Doctor of Philosophy,Chemistry,Chemical Engineering,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing Doctor of Philosophy with specialization in appliedchemistry at IIT Delhi.,Doctor of Philosophy,Doctor of Philosophy,Chemistry,,review_needed,L2,0.7166,71.7,wrong_field
+"Education: Ph.D Hons, industrialchemistry, University of Mumbai, batch of 2026.",Doctor of Philosophy,Doctor of Philosophy,Chemistry,,review_needed,L3,0.5,50.0,wrong_field
+PhD (Hons) - Chemistry - Pune University - 2017,Doctor of Philosophy,Doctor of Philosophy,Chemistry,,resolved,L1,1.0,100,wrong_field
+I completed my Doctor of Philosophy in puremathematics from IIT Delhi in 2024.,Doctor of Philosophy,Doctor of Philosophy,Mathematics,,review_needed,L2,0.7785,77.8,wrong_field
+Currently pursuing Ph. D. (Hons) with specialization in Pure Mathematics at Delhi University.,Doctor of Philosophy,with specialization,Mathematics,Mathematics,review_needed,L3,0.62,62.0,wrong_degree
+Isha holds a Ph.D Hons degree in statsandmaths.,Doctor of Philosophy,Doctor of Philosophy,Mathematics,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of Pune University; qualification PhD (Hons) (Mathematics).,Doctor of Philosophy,Doctor of Philosophy,Mathematics,,review_needed,L3,0.75,75.0,wrong_field
+PHD Hons - mathematics - Amity University - 2018,Doctor of Philosophy,Doctor of Philosophy,Mathematics,,resolved,L1,1.0,100,wrong_field
+I completed my Ph. D. (Hons) in appliedstatistics from Delhi University in 2025.,Doctor of Philosophy,,Statistics,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Currently pursuing Ph.D Hons with specialization in statisticsanddatascience at University of Mumbai.,Doctor of Philosophy,Doctor of Philosophy,Statistics,,review_needed,L3,0.72,72.0,wrong_field
+"Education: PhD (Hons), statistics, Pune University, batch of 2017.",Doctor of Philosophy,Doctor of Philosophy,Statistics,,review_needed,L3,0.75,75.0,wrong_field
+I completed my Ph.D Hons in biologicalsciences from University of Mumbai in 2026.,Doctor of Philosophy,Doctor of Philosophy,Biology,,review_needed,L3,0.72,72.0,wrong_field
+"Education: PHD Hons, Biology, Amity University, batch of 2018.",Doctor of Philosophy,Doctor of Philosophy,Biology,,review_needed,L3,0.75,75.0,wrong_field
+"Education: Ph.D, microbiology, IIM Ahmedabad, batch of 2019.",Doctor of Philosophy,Doctor of Philosophy,Microbiology,,review_needed,L3,0.5,50.0,wrong_field
+Graduate of VIT Vellore; qualification Ph. D. (biochem).,Doctor of Philosophy,,Biochemistry,Biochemistry,review_needed,L3,0.35,35.0,wrong_degree
+"Education: Ph. D., computationalbiology, VIT Vellore, batch of 2021.",Doctor of Philosophy,,Bioinformatics,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of Manipal University; qualification ph. d. (Computational Biology).,Doctor of Philosophy,,Bioinformatics,Bioinformatics,review_needed,L3,0.35,35.0,wrong_degree
+PhD Hons - bioinformatics - IIT Delhi - 2023,Doctor of Philosophy,Doctor of Philosophy,Bioinformatics,,resolved,L1,1.0,100,wrong_field
+"Education: ph. d., zoology, Manipal University, batch of 2022.",Doctor of Philosophy,,Zoology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+"Education: PhD Hons, plantscience, IIT Delhi, batch of 2023.",Doctor of Philosophy,Doctor of Philosophy,Botany,,review_needed,L3,0.75,75.0,wrong_field
+PhD - botany - University of Mumbai - 2025,Doctor of Philosophy,Doctor of Philosophy,Botany,,resolved,L1,1.0,100,wrong_field
+Isha holds a PhD Hons degree in earthscience.,Doctor of Philosophy,Doctor of Philosophy,Geology,,review_needed,L3,0.75,75.0,wrong_field
+DPhil - geology - Anna University - 2026,Doctor of Philosophy,Doctor of Philosophy,Geology,,resolved,L1,1.0,100,wrong_field
+Currently pursuing PhD Hons with specialization in environmentalscience at IIT Delhi.,Doctor of Philosophy,Doctor of Philosophy,Environmental Science,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Anna University; qualification DPhil (envscience).,Doctor of Philosophy,Doctor of Philosophy,Environmental Science,,review_needed,L3,0.75,75.0,wrong_field
+Ph.D (Hons) - environmentalstudies - Pune University - 2016,Doctor of Philosophy,Doctor of Philosophy,Environmental Science,,resolved,L1,1.0,100,wrong_field
+I completed my PhD Hons in computerapplication from IIT Delhi in 2023.,Doctor of Philosophy,Doctor of Philosophy,Computer Applications,,review_needed,L3,0.75,75.0,wrong_field
+Aarav holds a PhD degree in computerapplications.,Doctor of Philosophy,Doctor of Philosophy,Computer Applications,,review_needed,L3,0.75,75.0,wrong_field
+Ph.D. - compapplications - Amity University - 2017,Doctor of Philosophy,Doctor of Philosophy,Computer Applications,,resolved,L1,1.0,100,wrong_field
+I completed my PHD (Hons) in computerscience(applications) from Delhi University in 2024.,Doctor of Philosophy,Doctor of Philosophy,Computer Science (Applications),,review_needed,L3,0.75,75.0,wrong_field
+Ananya holds a DPhil degree in csapplications.,Doctor of Philosophy,Doctor of Philosophy,Computer Science (Applications),,review_needed,L3,0.75,75.0,wrong_field
+"Education: Ph.D (Hons), computerscienceapplications, Pune University, batch of 2016.",Doctor of Philosophy,Doctor of Philosophy,Computer Science (Applications),,review_needed,L3,0.5,50.0,wrong_field
+Currently pursuing DPhil with specialization in businessadmin at Anna University.,Doctor of Philosophy,Doctor of Philosophy,Business Administration,,review_needed,L3,0.75,75.0,wrong_field
+Riya holds a Ph.D (Hons) degree in businessmgmt.,Doctor of Philosophy,Doctor of Philosophy,Business Administration,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of IIM Ahmedabad; qualification DoctorofPhilosophy (businessmanagement).,Doctor of Philosophy,,Business Administration,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Currently pursuing Ph.D (Hons) with specialization in Financial Management at Pune University.,Doctor of Philosophy,with specialization,Finance,Finance,review_needed,L3,0.62,62.0,wrong_degree
+Kabir holds a Ph.D. degree in financialmanagement.,Doctor of Philosophy,Doctor of Philosophy,Finance,,review_needed,L3,0.72,72.0,wrong_field
+"Education: DoctorofPhilosophy, financeandaccounts, IIM Ahmedabad, batch of 2018.",Doctor of Philosophy,Doctor of Philosophy,Finance,,fuzzy_matched,L2,0.9181,91.8,wrong_field
+DOCTOR OF PHILOSOPHY - corporatefinance - VIT Vellore - 2020,Doctor of Philosophy,Doctor of Philosophy,Finance,,resolved,L1,1.0,100,wrong_field
+I completed my Ph.D (Hons) in marketingmanagement from Pune University in 2016.,Doctor of Philosophy,Doctor of Philosophy,Marketing,,review_needed,L3,0.5,50.0,wrong_field
+Neha holds a DoctorofPhilosophy degree in salesandmarketing.,Doctor of Philosophy,Doctor of Philosophy,Marketing,,review_needed,L2,0.875,87.5,wrong_field
+Graduate of VIT Vellore; qualification DOCTOR OF PHILOSOPHY (digitalmarketing).,Doctor of Philosophy,,Marketing,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+Currently pursuing DoctorofPhilosophy with specialization in Human Resources at IIM Ahmedabad.,Doctor of Philosophy,DoctorofPhilosophy,Human Resources Management,Human Resources Management,review_needed,L3,0.62,62.0,wrong_degree
+Arjun holds a PHD degree in humanresources.,Doctor of Philosophy,Doctor of Philosophy,Human Resources Management,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Manipal University; qualification Doctor of Philosophy Hons (HR).,Doctor of Philosophy,,Human Resources Management,Human Resources Management,review_needed,L3,0.35,35.0,wrong_degree
+Currently pursuing PHD with specialization in supplychainmanagement at Jadavpur University.,Doctor of Philosophy,Doctor of Philosophy,Operations Management,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of IIT Delhi; qualification Ph  D  (Operations Management).,Doctor of Philosophy,,Operations Management,Operations Management,review_needed,L3,0.35,35.0,wrong_degree
+I completed my PHD in internationaltrade from Jadavpur University in 2019.,Doctor of Philosophy,Doctor of Philosophy,International Business,,review_needed,L3,0.75,75.0,wrong_field
+Rohan holds a Doctor of Philosophy Hons degree in globalbusiness.,Doctor of Philosophy,Doctor of Philosophy,International Business,,review_needed,L2,0.7468,74.7,wrong_field
+"Education: Ph  D , internationalbusiness, IIT Delhi, batch of 2022.",Doctor of Philosophy,,International Business,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+I completed my DOCTOR OF PHILOSOPHY in startupmanagement from VIT Vellore in 2020.,Doctor of Philosophy,Doctor of Philosophy,Entrepreneurship,,review_needed,L2,0.7785,77.8,wrong_field
+Aarav holds a Ph  D  degree in entrepreneurshipandinnovation.,Doctor of Philosophy,Doctor of Philosophy,Entrepreneurship,,review_needed,L3,0.72,72.0,wrong_field
+Graduate of University of Mumbai; qualification Doctor of Philosophy (Hons) (entrepreneurship).,Doctor of Philosophy,Master of Science,Entrepreneurship,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+I completed my Doctor of Philosophy Hons in businessstudies from Manipal University in 2021.,Doctor of Philosophy,Doctor of Philosophy,Commerce,,review_needed,L2,0.7785,77.8,wrong_field
+"Education: Doctor of Philosophy (Hons), Business Studies, University of Mumbai, batch of 2024.",Doctor of Philosophy,Master of Science,Commerce,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+Graduate of Anna University; qualification doctor of philosophy (businessstudies).,Doctor of Philosophy,,Commerce,,review_needed,L3,0.35,35.0,wrong_degree_and_field
+I completed my PH.D in bankingandfinance from Delhi University in 2023.,Doctor of Philosophy,Doctor of Philosophy,Banking and Finance,,review_needed,L3,0.72,72.0,wrong_field
+Doctor of Philosophy - financeandbanking - IIM Ahmedabad - 2017,Doctor of Philosophy,Doctor of Philosophy,Banking and Finance,,resolved,L1,1.0,100,wrong_field
+Neha holds a phd degree in appliedeconomics.,Doctor of Philosophy,Doctor of Philosophy,Economics,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of IIM Ahmedabad; qualification Doctor of Philosophy (Business Economics).,Doctor of Philosophy,,Economics,Economics,review_needed,L3,0.35,35.0,wrong_degree
+PH. D. - businesseconomics - Jadavpur University - 2018,Doctor of Philosophy,Doctor of Philosophy,Economics,,resolved,L1,1.0,100,wrong_field
+Currently pursuing phd with specialization in appliedpsychology at Pune University.,Doctor of Philosophy,Doctor of Philosophy,Psychology,,review_needed,L3,0.75,75.0,wrong_field
+"Education: Doctor of Philosophy, industrialpsychology, IIM Ahmedabad, batch of 2017.",Doctor of Philosophy,Doctor of Philosophy,Psychology,,fuzzy_matched,L2,0.9245,92.5,wrong_field
+Graduate of Jadavpur University; qualification PH. D. (Industrial Psychology).,Doctor of Philosophy,,Psychology,Psychology,review_needed,L3,0.35,35.0,wrong_degree
+Isha holds a Doctor of Philosophy degree in socialwork.,Doctor of Philosophy,Doctor of Philosophy,Sociology,,review_needed,L2,0.75,75.0,wrong_field
+"Education: PH. D., Social Work, Jadavpur University, batch of 2018.",Doctor of Philosophy,,Sociology,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+I completed my PHD in polscience from Amity University in 2016.,Doctor of Philosophy,Doctor of Philosophy,Political Science,,review_needed,L3,0.75,75.0,wrong_field
+"Education: DPhil Hons, politicalscience, VIT Vellore, batch of 2019.",Doctor of Philosophy,Doctor of Philosophy,Political Science,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Manipal University; qualification Ph. D. Hons (Political Science).,Doctor of Philosophy,,Political Science,Political Science,review_needed,L3,0.35,35.0,wrong_degree
+"Education: Ph. D. Hons, history, Manipal University, batch of 2020.",Doctor of Philosophy,,History,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of IIT Delhi; qualification Ph D (History).,Doctor of Philosophy,,History,History,review_needed,L3,0.35,35.0,wrong_degree
+"Education: Ph D, geo, IIT Delhi, batch of 2021.",Doctor of Philosophy,,Geography,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Riya holds a Ph D degree in englishliterature.,Doctor of Philosophy,Doctor of Philosophy,English,,review_needed,L3,0.72,72.0,wrong_field
+Doctor of Philosophy - englishlangandlit - Anna University - 2024,Doctor of Philosophy,Doctor of Philosophy,English,,resolved,L1,1.0,100,wrong_field
+Kabir holds a DPHIL degree in hindiliterature.,Doctor of Philosophy,Doctor of Philosophy,Hindi,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Anna University; qualification Doctor of Philosophy (hindi).,Doctor of Philosophy,,Hindi,Hindi,review_needed,L3,0.35,35.0,wrong_degree
+Graduate of Pune University; qualification Ph. D. (Hons) (Phil).,Doctor of Philosophy,,Philosophy,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Currently pursuing ph.d with specialization in pubadmin at University of Mumbai.,Doctor of Philosophy,Doctor of Philosophy,Public Administration,,review_needed,L3,0.72,72.0,wrong_field
+"Education: Ph. D. (Hons), publicadministration, Pune University, batch of 2025.",Doctor of Philosophy,,Public Administration,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+DPhil (Hons) - publicadmin - IIM Ahmedabad - 2016,Doctor of Philosophy,Doctor of Philosophy,Public Administration,,resolved,L1,1.0,100,wrong_field
+"Education: Ph.D Hons, journalismandmasscommunication, Amity University, batch of 2026.",Doctor of Philosophy,Doctor of Philosophy,Mass Communication,,review_needed,L3,0.5,50.0,wrong_field
+Currently pursuing Ph. D. (Hons) with specialization in Jurisprudence at Pune University.,Doctor of Philosophy,with specialization,Law,Law,review_needed,L3,0.62,62.0,wrong_degree
+Graduate of Jadavpur University; qualification PhD (Hons) (corporatelaw).,Doctor of Philosophy,Doctor of Philosophy,Law,,review_needed,L3,0.75,75.0,wrong_field
+I completed my Ph. D. (Hons) in MBBS from Pune University in 2025.,Doctor of Philosophy,Bachelor of Medicine and Bachelor of Surgery,Medicine,Medicine,review_needed,L3,0.75,75.0,wrong_degree
+I completed my Ph.D Hons in BSc Nursing from Amity University in 2026.,Doctor of Philosophy,Bachelor of Science,Nursing,Nursing,review_needed,L3,0.75,75.0,wrong_degree
+"Education: PHD Hons, bscnursing, VIT Vellore, batch of 2018.",Doctor of Philosophy,Doctor of Philosophy,Nursing,,review_needed,L3,0.75,75.0,wrong_field
+I completed my DPhil (Hons) in pharmaceuticalsciences from IIM Ahmedabad in 2016.,Doctor of Philosophy,Doctor of Philosophy,Pharmacy,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Delhi University; qualification Ph. D. (Physiotherapy).,Doctor of Philosophy,,Physiotherapy,Physiotherapy,review_needed,L3,0.35,35.0,wrong_degree
+ph. d. - physicaltherapy - University of Mumbai - 2022,Doctor of Philosophy,Doctor of Philosophy,Physiotherapy,,resolved,L1,1.0,100,wrong_field
+"Education: Ph. D., Dentistry, Delhi University, batch of 2021.",Doctor of Philosophy,,Dentistry,,unresolved,unresolved,0.0,0,unresolved_below_confidence_threshold
+Graduate of University of Mumbai; qualification ph. d. (bds).,Doctor of Philosophy,Master of Science,Dentistry,Dentistry,review_needed,L3,0.5,50.0,wrong_degree
+I completed my Ph.D in ayurvedicmedicine from Manipal University in 2019.,Doctor of Philosophy,Doctor of Philosophy,Ayurveda,,review_needed,L3,0.72,72.0,wrong_field
+"Education: ph. d., BAMS, University of Mumbai, batch of 2022.",Doctor of Philosophy,Master of Science,Ayurveda,,review_needed,L3,0.5,50.0,wrong_degree_and_field
+"Education: PhD Hons, urbandesign, Anna University, batch of 2023.",Doctor of Philosophy,Doctor of Philosophy,Architecture,,review_needed,L3,0.75,75.0,wrong_field
+Rohan holds a PhD Hons degree in fashiondesign.,Doctor of Philosophy,Doctor of Philosophy,Design,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Amity University; qualification PhD (interiordesign).,Doctor of Philosophy,Doctor of Philosophy,Design,,review_needed,L3,0.75,75.0,wrong_field
+DPhil - graphicdesign - IIM Ahmedabad - 2026,Doctor of Philosophy,Doctor of Philosophy,Design,,resolved,L1,1.0,100,wrong_field
+I completed my ph. d. in teachereducation from University of Mumbai in 2022.,Doctor of Philosophy,Doctor of Philosophy,Education,,review_needed,L3,0.72,72.0,wrong_field
+Currently pursuing PHD (Hons) with specialization in hospitalitymanagement at Pune University.,Doctor of Philosophy,Doctor of Philosophy,Hotel Management,,review_needed,L3,0.75,75.0,wrong_field
+Graduate of Jadavpur University; qualification Ph.D (Hons) (tourismandhospitality).,Doctor of Philosophy,Doctor of Philosophy,Hotel Management,,review_needed,L3,0.5,50.0,wrong_field
+"Education: Ph.D (Hons), agriculturalscience, Jadavpur University, batch of 2016.",Doctor of Philosophy,Doctor of Philosophy,Agriculture,,review_needed,L3,0.5,50.0,wrong_field
+"Education: Ph.D., -, VIT Vellore, batch of 2017.",Doctor of Philosophy,Doctor of Philosophy,General,,review_needed,L3,0.5,50.0,wrong_field
+Graduate of Manipal University; qualification DoctorofPhilosophy (General).,Doctor of Philosophy,,General,General,review_needed,L3,0.35,35.0,wrong_degree

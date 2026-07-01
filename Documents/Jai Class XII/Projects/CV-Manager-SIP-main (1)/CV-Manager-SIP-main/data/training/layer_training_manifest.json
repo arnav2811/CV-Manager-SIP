@@ -1,0 +1,37 @@
+{
+  "generated_on": "2026-06-22",
+  "seed": 20260622,
+  "source_files": [
+    "data/degree_dictionary.json",
+    "data/degree_aliases.csv",
+    "data/field_of_study_aliases.csv",
+    "data/degree_field_map.csv"
+  ],
+  "datasets": {
+    "layer1_exact_lookup_training.csv": {
+      "rows": 6976,
+      "purpose": "Exact alias lookup training/loading and regression tests.",
+      "gold_rule": "raw_input should resolve to canonical_degree at confidence 1.0."
+    },
+    "layer2_fuzzy_training.csv": {
+      "rows": 15233,
+      "purpose": "Fuzzy matcher threshold tuning, typo handling, and false-positive control.",
+      "gold_rule": "raw_input is intentionally noisy and should not be solved by exact lookup."
+    },
+    "layer3_unstructured_training.csv": {
+      "rows": 1124,
+      "purpose": "Conversational/resume-text extraction and optional NER training.",
+      "gold_rule": "entity spans identify degree and field mentions in raw_text."
+    },
+    "layer3_unstructured_training.jsonl": {
+      "rows": 1124,
+      "purpose": "JSONL companion with entity arrays for NLP pipelines."
+    }
+  },
+  "recommended_splits": {
+    "train": "70%",
+    "validation": "15%",
+    "test": "15%",
+    "split_key": "sample_id"
+  }
+}

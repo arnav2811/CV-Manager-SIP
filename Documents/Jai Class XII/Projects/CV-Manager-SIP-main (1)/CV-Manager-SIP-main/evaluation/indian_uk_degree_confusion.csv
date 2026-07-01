@@ -1,0 +1,1329 @@
+expected_label,predicted_label,count,is_correct
+Bachelor of Technology,Bachelor of Engineering,145,False
+Foundation Degree,,137,False
+Bachelor of Medicine Bachelor of Surgery,Bachelor of Medicine and Bachelor of Surgery,126,False
+12th Standard,,114,False
+Master of Technology,Master of Engineering,76,False
+Bachelor of Engineering,,73,False
+Advanced Level,,70,False
+10th Standard,,63,False
+Doctor of Philosophy,,58,False
+Bachelor of Technology,Master of Technology,55,False
+Bachelor of Medicine Bachelor of Surgery,,53,False
+10th Standard,Secondary (Class X),49,False
+Master of Engineering,,49,False
+Master of Technology,Master of Science,49,False
+Bachelor of Arts,,46,False
+Bachelor of Science,Bachelor of Business Administration,44,False
+Master of Science,Master of Business Administration,44,False
+Post Graduate Diploma,,42,False
+12th Standard,Senior Secondary (Class XII),41,False
+General Certificate of Secondary Education,,40,False
+Bachelor of Technology,,39,False
+Post Graduate Diploma,Master of Science,39,False
+Bachelor of Computer Applications,,37,False
+Bachelor of Technology,Bachelor of Science,36,False
+Bachelor of Engineering,Master of Engineering,34,False
+Doctor of Education,,34,False
+Master of Arts,,34,False
+Postgraduate Diploma,Post Graduate Diploma,33,False
+Bachelor of Engineering,Master of Technology,32,False
+Bachelor of Science,,31,False
+Master of Science,,29,False
+Diploma of Higher Education,,27,False
+Postgraduate Certificate,Master of Science,25,False
+Diploma in Engineering,Post Graduate Diploma,24,False
+Bachelor of Commerce,,23,False
+Bachelor of Technology,Diploma in Engineering,22,False
+Master of Engineering,Master of Science,22,False
+Bachelor of Business Administration,,21,False
+Bachelor of Engineering,Diploma in Engineering,20,False
+Certificate of Higher Education,,20,False
+Higher National Certificate,,20,False
+Higher National Diploma,,20,False
+Master of Commerce,,19,False
+Master of Engineering,Bachelor of Engineering,18,False
+Master of Philosophy,Doctor of Philosophy,18,False
+Master of Technology,,18,False
+Postgraduate Certificate,Post Graduate Diploma,18,False
+Bachelor of Laws,Bachelor of Science,17,False
+Master of Philosophy,,17,False
+Master of Research,,17,False
+12th Standard,Bachelor of Science,16,False
+Master of Business Administration,,16,False
+Master of Business Administration,Bachelor of Arts,16,False
+Master of Science,Bachelor of Science,16,False
+Bachelor of Arts,Bachelor of Science,15,False
+General Certificate of Secondary Education,Certificate Program,15,False
+Master of Research,Master of Science,15,False
+Bachelor of Engineering,Bachelor of Technology,14,False
+Bachelor of Science,Bachelor of Dental Surgery,14,False
+Certificate of Higher Education,Certificate Program,14,False
+Post Graduate Diploma,Post Graduate Diploma in Business Administration,14,False
+Bachelor of Laws,,13,False
+Diploma of Higher Education,Post Graduate Diploma,13,False
+Higher National Certificate,Certificate Program,13,False
+Higher National Diploma,Post Graduate Diploma,13,False
+Bachelor of Technology,Master of Engineering,12,False
+Master of Business Administration,Bachelor of Engineering,12,False
+Master of Business Administration,Master of Science,12,False
+Master of Computer Applications,,12,False
+Postgraduate Diploma,Master of Science,12,False
+Doctor of Business Administration,,11,False
+Bachelor of Business Administration,Bachelor of Arts,10,False
+Bachelor of Commerce,Bachelor of Medicine and Bachelor of Surgery,10,False
+Bachelor of Computer Applications,Bachelor of Arts,10,False
+Bachelor of Laws,Bachelor of Dental Surgery,10,False
+Bachelor of Laws,Bachelor of Technology,10,False
+Doctor of Business Administration,Bachelor of Engineering,10,False
+Master of Laws,,10,False
+Master of Laws,Master of Arts,10,False
+Postgraduate Diploma,,10,False
+10th Standard,Bachelor of Engineering,8,False
+10th Standard,Bachelor of Science,8,False
+Doctor of Business Administration,Master of Business Administration,8,False
+Master of Arts,Bachelor of Arts,8,False
+Master of Arts,Master of Science,8,False
+Master of Commerce,Bachelor of Commerce,8,False
+Master of Computer Applications,Bachelor of Arts,8,False
+Master of Science,Bachelor of Medicine and Bachelor of Surgery,8,False
+Master of Technology,Bachelor of Commerce,8,False
+Master of Technology,Bachelor of Technology,8,False
+Post Graduate Diploma,Bachelor of Arts,8,False
+Post Graduate Diploma,Bachelor of Medicine and Bachelor of Surgery,8,False
+Master of Science,Master of Engineering,7,False
+Bachelor of Business Administration,Bachelor of Engineering,6,False
+Bachelor of Arts,Bachelor of Computer Applications,5,False
+Bachelor of Science,Bachelor of Engineering,5,False
+Foundation Degree,Bachelor of Dental Surgery,5,False
+Master of Business Administration,Master of Engineering,5,False
+Master of Laws,Master of Science,5,False
+10th Standard,12th Standard,4,False
+Diploma in Engineering,,4,False
+Diploma of Higher Education,Diploma in Engineering,4,False
+Doctor of Business Administration,Bachelor of Arts,4,False
+Doctor of Business Administration,Bachelor of Business Administration,4,False
+Doctor of Business Administration,Bachelor of Computer Applications,4,False
+Master of Computer Applications,Bachelor of Computer Applications,4,False
+Master of Philosophy,Master of Science,4,False
+Master of Research,Master of Engineering,4,False
+Bachelor of Commerce,Bachelor of Computer Applications,3,False
+Bachelor of Business Administration,Hons,2,False
+Bachelor of Engineering,Bachelor of Science,2,False
+Bachelor of Laws,Bachelor of Commerce,2,False
+Master of Commerce,Master of Computer Applications,2,False
+Master of Commerce,Master of Science,2,False
+Master of Technology,Bachelor of Computer Applications,2,False
+10th Standard,IN S S C,1,False
+10th Standard,IN S S C qualification,1,False
+10th Standard,IN SSCHONS qualification,1,False
+10th Standard,IN X H O N S,1,False
+10th Standard,IN X H O N S qualification,1,False
+10th Standard,IN X qualification,1,False
+10th Standard,IN X.H.O.N.S. qualification,1,False
+10th Standard,India MATRICHONS,1,False
+10th Standard,India MATRICHONS qualification,1,False
+10th Standard,India Matric Hons qualification,1,False
+10th Standard,India S S C,1,False
+10th Standard,India S S C qualification,1,False
+10th Standard,India SSCHONS,1,False
+10th Standard,India SSCHONS qualification,1,False
+10th Standard,India X,1,False
+10th Standard,India X H O N S,1,False
+10th Standard,India X H O N S qualification,1,False
+10th Standard,India X qualification,1,False
+10th Standard,India X.H.O.N.S.,1,False
+10th Standard,India X.H.O.N.S. qualification,1,False
+10th Standard,India matric qualification,1,False
+10th Standard,Indian MATRICHONS,1,False
+10th Standard,Indian MATRICHONS qualification,1,False
+10th Standard,Indian S S C,1,False
+10th Standard,Indian S S C qualification,1,False
+10th Standard,Indian SSCHONS,1,False
+10th Standard,Indian SSCHONS qualification,1,False
+10th Standard,Indian X,1,False
+10th Standard,Indian X H O N S,1,False
+10th Standard,Indian X H O N S qualification,1,False
+10th Standard,Indian X qualification,1,False
+10th Standard,Indian X.H.O.N.S.,1,False
+10th Standard,Indian X.H.O.N.S. qualification,1,False
+10th Standard,Indian matric qualification,1,False
+10th Standard,S S C qualification,1,False
+10th Standard,SSCHONS qualification,1,False
+10th Standard,X H O N S,1,False
+10th Standard,X H O N S qualification,1,False
+10th Standard,X qualification,1,False
+10th Standard,X.H.O.N.S. qualification,1,False
+12th Standard,H S C qualification,1,False
+12th Standard,HSCHONS qualification,1,False
+12th Standard,I S C,1,False
+12th Standard,I S C qualification,1,False
+12th Standard,IN H S C,1,False
+12th Standard,IN H S C qualification,1,False
+12th Standard,IN HSCHONS qualification,1,False
+12th Standard,IN I S C,1,False
+12th Standard,IN I S C qualification,1,False
+12th Standard,IN ISC Hons qualification,1,False
+12th Standard,IN ISCHONS qualification,1,False
+12th Standard,IN PLUSTWO qualification,1,False
+12th Standard,IN X I I,1,False
+12th Standard,IN X I I qualification,1,False
+12th Standard,IN XII Hons qualification,1,False
+12th Standard,IN XII qualification,1,False
+12th Standard,IN XIIHONS,1,False
+12th Standard,IN XIIHONS qualification,1,False
+12th Standard,IN isc qualification,1,False
+12th Standard,ISC Hons qualification,1,False
+12th Standard,ISCHONS qualification,1,False
+12th Standard,India H S C,1,False
+12th Standard,India H S C qualification,1,False
+12th Standard,India HSCHONS,1,False
+12th Standard,India HSCHONS qualification,1,False
+12th Standard,India I S C,1,False
+12th Standard,India I S C qualification,1,False
+12th Standard,India ISC Hons,1,False
+12th Standard,India ISC Hons qualification,1,False
+12th Standard,India ISCHONS,1,False
+12th Standard,India ISCHONS qualification,1,False
+12th Standard,India PLUSTWO qualification,1,False
+12th Standard,India X I I,1,False
+12th Standard,India X I I qualification,1,False
+12th Standard,India XII Hons qualification,1,False
+12th Standard,India XII qualification,1,False
+12th Standard,India XIIHONS,1,False
+12th Standard,India XIIHONS qualification,1,False
+12th Standard,India isc,1,False
+12th Standard,India isc qualification,1,False
+12th Standard,India plus two qualification,1,False
+12th Standard,Indian H S C,1,False
+12th Standard,Indian H S C qualification,1,False
+12th Standard,Indian HSCHONS,1,False
+12th Standard,Indian HSCHONS qualification,1,False
+12th Standard,Indian I S C,1,False
+12th Standard,Indian I S C qualification,1,False
+12th Standard,Indian ISC Hons,1,False
+12th Standard,Indian ISC Hons qualification,1,False
+12th Standard,Indian ISCHONS,1,False
+12th Standard,Indian ISCHONS qualification,1,False
+12th Standard,Indian PLUSTWO qualification,1,False
+12th Standard,Indian X I I,1,False
+12th Standard,Indian X I I qualification,1,False
+12th Standard,Indian XII,1,False
+12th Standard,Indian XII Hons,1,False
+12th Standard,Indian XII Hons qualification,1,False
+12th Standard,Indian XII qualification,1,False
+12th Standard,Indian XIIHONS,1,False
+12th Standard,Indian XIIHONS qualification,1,False
+12th Standard,Indian isc,1,False
+12th Standard,Indian isc qualification,1,False
+12th Standard,Indian plus two qualification,1,False
+12th Standard,PLUSTWO qualification,1,False
+12th Standard,X I I,1,False
+12th Standard,X I I qualification,1,False
+12th Standard,XII Hons qualification,1,False
+12th Standard,XII qualification,1,False
+12th Standard,XIIHONS,1,False
+12th Standard,XIIHONS qualification,1,False
+12th Standard,isc qualification,1,False
+Advanced Level,A Level,1,False
+Advanced Level,A Level qualification,1,False
+Advanced Level,A Levels,1,False
+Advanced Level,A Levels qualification,1,False
+Advanced Level,ALEVEL,1,False
+Advanced Level,ALEVEL qualification,1,False
+Advanced Level,ALEVELS,1,False
+Advanced Level,ALEVELS qualification,1,False
+Advanced Level,Advanced Level qualification,1,False
+Advanced Level,GCE A Level,1,False
+Advanced Level,GCE A Level qualification,1,False
+Advanced Level,GCEALEVEL,1,False
+Advanced Level,GCEALEVEL qualification,1,False
+Advanced Level,UK A Level,1,False
+Advanced Level,UK A Level qualification,1,False
+Advanced Level,UK A Levels,1,False
+Advanced Level,UK A Levels qualification,1,False
+Advanced Level,UK ALEVEL,1,False
+Advanced Level,UK ALEVEL qualification,1,False
+Advanced Level,UK ALEVELS,1,False
+Advanced Level,UK ALEVELS qualification,1,False
+Advanced Level,UK Advanced Level,1,False
+Advanced Level,UK Advanced Level qualification,1,False
+Advanced Level,UK GCE A Level,1,False
+Advanced Level,UK GCE A Level qualification,1,False
+Advanced Level,UK GCEALEVEL,1,False
+Advanced Level,UK GCEALEVEL qualification,1,False
+Advanced Level,United Kingdom A Level,1,False
+Advanced Level,United Kingdom A Levels,1,False
+Advanced Level,United Kingdom ALEVEL,1,False
+Advanced Level,United Kingdom ALEVELS,1,False
+Advanced Level,United Kingdom Advanced Level,1,False
+Advanced Level,United Kingdom GCE A Level,1,False
+Advanced Level,United Kingdom GCEALEVEL,1,False
+Bachelor of Arts,BAHONSHONS degree,1,False
+Bachelor of Arts,BAHONSHONS qualification,1,False
+Bachelor of Arts,BAHONSHONS with Honours,1,False
+Bachelor of Arts,BachelorofArts qualification,1,False
+Bachelor of Arts,IN B A degree,1,False
+Bachelor of Arts,IN B A qualification,1,False
+Bachelor of Arts,IN B A with Honours,1,False
+Bachelor of Arts,IN BAHONS qualification,1,False
+Bachelor of Arts,IN BAHONSHONS degree,1,False
+Bachelor of Arts,IN BAHONSHONS qualification,1,False
+Bachelor of Arts,IN BAHONSHONS with Honours,1,False
+Bachelor of Arts,IN BachelorofArts qualification,1,False
+Bachelor of Arts,India B A,1,False
+Bachelor of Arts,India B A degree,1,False
+Bachelor of Arts,India B A qualification,1,False
+Bachelor of Arts,India B A with Honours,1,False
+Bachelor of Arts,India BAHONS degree,1,False
+Bachelor of Arts,India BAHONS qualification,1,False
+Bachelor of Arts,India BAHONS with Honours,1,False
+Bachelor of Arts,India BAHONSHONS,1,False
+Bachelor of Arts,India BAHONSHONS degree,1,False
+Bachelor of Arts,India BAHONSHONS qualification,1,False
+Bachelor of Arts,India BAHONSHONS with Honours,1,False
+Bachelor of Arts,Indian B A,1,False
+Bachelor of Arts,Indian B A degree,1,False
+Bachelor of Arts,Indian B A qualification,1,False
+Bachelor of Arts,Indian B A with Honours,1,False
+Bachelor of Arts,Indian BAHONS degree,1,False
+Bachelor of Arts,Indian BAHONS qualification,1,False
+Bachelor of Arts,Indian BAHONS with Honours,1,False
+Bachelor of Arts,Indian BAHONSHONS,1,False
+Bachelor of Arts,Indian BAHONSHONS degree,1,False
+Bachelor of Arts,Indian BAHONSHONS qualification,1,False
+Bachelor of Arts,Indian BAHONSHONS with Honours,1,False
+Bachelor of Arts,UK B A degree,1,False
+Bachelor of Arts,UK B A qualification,1,False
+Bachelor of Arts,UK B A with Honours,1,False
+Bachelor of Arts,UK BAHONS degree,1,False
+Bachelor of Arts,UK BAHONS qualification,1,False
+Bachelor of Arts,UK BAHONS with Honours,1,False
+Bachelor of Arts,United Kingdom B A,1,False
+Bachelor of Arts,United Kingdom B A degree,1,False
+Bachelor of Arts,United Kingdom B A with Honours,1,False
+Bachelor of Arts,United Kingdom BAHONS,1,False
+Bachelor of Arts,United Kingdom BAHONS degree,1,False
+Bachelor of Business Administration,B B A Hons qualification,1,False
+Bachelor of Business Administration,B B A Hons with Honours,1,False
+Bachelor of Business Administration,B B A qualification,1,False
+Bachelor of Business Administration,B B A with Honours,1,False
+Bachelor of Business Administration,B.B.A. Hons qualification,1,False
+Bachelor of Business Administration,B.B.A. Hons with Honours,1,False
+Bachelor of Business Administration,BBAHONS degree,1,False
+Bachelor of Business Administration,BBAHONS qualification,1,False
+Bachelor of Business Administration,BBAHONS with Honours,1,False
+Bachelor of Business Administration,IN B B A Hons qualification,1,False
+Bachelor of Business Administration,IN B B A Hons with Honours,1,False
+Bachelor of Business Administration,IN B B A qualification,1,False
+Bachelor of Business Administration,IN B B A with Honours,1,False
+Bachelor of Business Administration,IN B.B.A. Hons degree,1,False
+Bachelor of Business Administration,IN B.B.A. Hons qualification,1,False
+Bachelor of Business Administration,IN B.B.A. Hons with Honours,1,False
+Bachelor of Business Administration,IN BBAHONS degree,1,False
+Bachelor of Business Administration,IN BBAHONS qualification,1,False
+Bachelor of Business Administration,IN BBAHONS with Honours,1,False
+Bachelor of Business Administration,India B B A,1,False
+Bachelor of Business Administration,India B B A Hons qualification,1,False
+Bachelor of Business Administration,India B B A Hons with Honours,1,False
+Bachelor of Business Administration,India B B A degree,1,False
+Bachelor of Business Administration,India B B A qualification,1,False
+Bachelor of Business Administration,India B B A with Honours,1,False
+Bachelor of Business Administration,India B.B.A. Hons degree,1,False
+Bachelor of Business Administration,India B.B.A. Hons qualification,1,False
+Bachelor of Business Administration,India B.B.A. Hons with Honours,1,False
+Bachelor of Business Administration,India BBAHONS,1,False
+Bachelor of Business Administration,India BBAHONS degree,1,False
+Bachelor of Business Administration,India BBAHONS qualification,1,False
+Bachelor of Business Administration,India BBAHONS with Honours,1,False
+Bachelor of Business Administration,Indian B B A Hons qualification,1,False
+Bachelor of Business Administration,Indian B B A Hons with Honours,1,False
+Bachelor of Business Administration,Indian B B A degree,1,False
+Bachelor of Business Administration,Indian B B A qualification,1,False
+Bachelor of Business Administration,Indian B B A with Honours,1,False
+Bachelor of Business Administration,Indian B.B.A. Hons degree,1,False
+Bachelor of Business Administration,Indian B.B.A. Hons with Honours,1,False
+Bachelor of Business Administration,Indian BBAHONS,1,False
+Bachelor of Business Administration,Indian BBAHONS degree,1,False
+Bachelor of Business Administration,Indian BBAHONS qualification,1,False
+Bachelor of Business Administration,Indian BBAHONS with Honours,1,False
+Bachelor of Commerce,B C O M qualification,1,False
+Bachelor of Commerce,B C O M with Honours,1,False
+Bachelor of Commerce,B Com qualification,1,False
+Bachelor of Commerce,B Com with Honours,1,False
+Bachelor of Commerce,B. Com Hons qualification,1,False
+Bachelor of Commerce,B. Com Hons with Honours,1,False
+Bachelor of Commerce,BCOMHONS qualification,1,False
+Bachelor of Commerce,Bachelor of Science,1,False
+Bachelor of Commerce,IN B C O M degree,1,False
+Bachelor of Commerce,IN B C O M qualification,1,False
+Bachelor of Commerce,IN B C O M with Honours,1,False
+Bachelor of Commerce,IN B Com qualification,1,False
+Bachelor of Commerce,IN B Com with Honours,1,False
+Bachelor of Commerce,IN B. Com Hons qualification,1,False
+Bachelor of Commerce,IN B. Com Hons with Honours,1,False
+Bachelor of Commerce,IN BCOMHONS qualification,1,False
+Bachelor of Commerce,India B C O M,1,False
+Bachelor of Commerce,India B C O M degree,1,False
+Bachelor of Commerce,India B C O M qualification,1,False
+Bachelor of Commerce,India B C O M with Honours,1,False
+Bachelor of Commerce,India B Com degree,1,False
+Bachelor of Commerce,India B Com qualification,1,False
+Bachelor of Commerce,India B Com with Honours,1,False
+Bachelor of Commerce,India B. Com Hons degree,1,False
+Bachelor of Commerce,India B. Com Hons qualification,1,False
+Bachelor of Commerce,India B. Com Hons with Honours,1,False
+Bachelor of Commerce,India BCOMHONS degree,1,False
+Bachelor of Commerce,India BCOMHONS qualification,1,False
+Bachelor of Commerce,Indian B C O M,1,False
+Bachelor of Commerce,Indian B C O M degree,1,False
+Bachelor of Commerce,Indian B C O M qualification,1,False
+Bachelor of Commerce,Indian B C O M with Honours,1,False
+Bachelor of Commerce,Indian B Com degree,1,False
+Bachelor of Commerce,Indian B Com qualification,1,False
+Bachelor of Commerce,Indian B Com with Honours,1,False
+Bachelor of Commerce,Indian B. Com Hons degree,1,False
+Bachelor of Commerce,Indian B. Com Hons with Honours,1,False
+Bachelor of Commerce,Indian BCOMHONS degree,1,False
+Bachelor of Commerce,Indian BCOMHONS qualification,1,False
+Bachelor of Commerce,Indian BCOMHONS with Honours,1,False
+Bachelor of Computer Applications,B C A qualification,1,False
+Bachelor of Computer Applications,B C A with Honours,1,False
+Bachelor of Computer Applications,BCAHONS degree,1,False
+Bachelor of Computer Applications,BCAHONS qualification,1,False
+Bachelor of Computer Applications,BCAHONS with Honours,1,False
+Bachelor of Computer Applications,IN B C A qualification,1,False
+Bachelor of Computer Applications,IN B C A with Honours,1,False
+Bachelor of Computer Applications,IN BCAHONS degree,1,False
+Bachelor of Computer Applications,IN BCAHONS qualification,1,False
+Bachelor of Computer Applications,IN BCAHONS with Honours,1,False
+Bachelor of Computer Applications,India B C A degree,1,False
+Bachelor of Computer Applications,India B C A qualification,1,False
+Bachelor of Computer Applications,India B C A with Honours,1,False
+Bachelor of Computer Applications,India BCAHONS,1,False
+Bachelor of Computer Applications,India BCAHONS degree,1,False
+Bachelor of Computer Applications,India BCAHONS qualification,1,False
+Bachelor of Computer Applications,India BCAHONS with Honours,1,False
+Bachelor of Computer Applications,Indian B C A degree,1,False
+Bachelor of Computer Applications,Indian B C A qualification,1,False
+Bachelor of Computer Applications,Indian B C A with Honours,1,False
+Bachelor of Computer Applications,Indian BCAHONS,1,False
+Bachelor of Computer Applications,Indian BCAHONS degree,1,False
+Bachelor of Computer Applications,Indian BCAHONS qualification,1,False
+Bachelor of Computer Applications,Indian BCAHONS with Honours,1,False
+Bachelor of Engineering,B E qualification,1,False
+Bachelor of Engineering,B E with Honours,1,False
+Bachelor of Engineering,B Eng qualification,1,False
+Bachelor of Engineering,B Eng with Honours,1,False
+Bachelor of Engineering,BEHONS qualification,1,False
+Bachelor of Engineering,BEHONS with Honours,1,False
+Bachelor of Engineering,BEHONSHONS degree,1,False
+Bachelor of Engineering,BEHONSHONS qualification,1,False
+Bachelor of Engineering,BEHONSHONS with Honours,1,False
+Bachelor of Engineering,IN B E N G degree,1,False
+Bachelor of Engineering,IN B E N G qualification,1,False
+Bachelor of Engineering,IN B E N G with Honours,1,False
+Bachelor of Engineering,IN B E degree,1,False
+Bachelor of Engineering,IN B E qualification,1,False
+Bachelor of Engineering,IN B E with Honours,1,False
+Bachelor of Engineering,IN B Eng qualification,1,False
+Bachelor of Engineering,IN B Eng with Honours,1,False
+Bachelor of Engineering,IN BEHONS qualification,1,False
+Bachelor of Engineering,IN BEHONS with Honours,1,False
+Bachelor of Engineering,IN BEHONSHONS degree,1,False
+Bachelor of Engineering,IN BEHONSHONS qualification,1,False
+Bachelor of Engineering,IN BEHONSHONS with Honours,1,False
+Bachelor of Engineering,IN BENGHONS degree,1,False
+Bachelor of Engineering,IN BENGHONS qualification,1,False
+Bachelor of Engineering,IN BENGHONS with Honours,1,False
+Bachelor of Engineering,India B E,1,False
+Bachelor of Engineering,India B E N G,1,False
+Bachelor of Engineering,India B E N G degree,1,False
+Bachelor of Engineering,India B E N G qualification,1,False
+Bachelor of Engineering,India B E N G with Honours,1,False
+Bachelor of Engineering,India B E degree,1,False
+Bachelor of Engineering,India B E qualification,1,False
+Bachelor of Engineering,India B E with Honours,1,False
+Bachelor of Engineering,India B Eng degree,1,False
+Bachelor of Engineering,India B Eng qualification,1,False
+Bachelor of Engineering,India B Eng with Honours,1,False
+Bachelor of Engineering,India BEHONS degree,1,False
+Bachelor of Engineering,India BEHONS qualification,1,False
+Bachelor of Engineering,India BEHONS with Honours,1,False
+Bachelor of Engineering,India BEHONSHONS,1,False
+Bachelor of Engineering,India BEHONSHONS degree,1,False
+Bachelor of Engineering,India BEHONSHONS qualification,1,False
+Bachelor of Engineering,India BEHONSHONS with Honours,1,False
+Bachelor of Engineering,India BENGHONS,1,False
+Bachelor of Engineering,India BENGHONS degree,1,False
+Bachelor of Engineering,India BENGHONS qualification,1,False
+Bachelor of Engineering,India BENGHONS with Honours,1,False
+Bachelor of Engineering,Indian B E,1,False
+Bachelor of Engineering,Indian B E N G,1,False
+Bachelor of Engineering,Indian B E N G degree,1,False
+Bachelor of Engineering,Indian B E N G qualification,1,False
+Bachelor of Engineering,Indian B E N G with Honours,1,False
+Bachelor of Engineering,Indian B E degree,1,False
+Bachelor of Engineering,Indian B E qualification,1,False
+Bachelor of Engineering,Indian B E with Honours,1,False
+Bachelor of Engineering,Indian B Eng degree,1,False
+Bachelor of Engineering,Indian B Eng qualification,1,False
+Bachelor of Engineering,Indian B Eng with Honours,1,False
+Bachelor of Engineering,Indian BEHONS degree,1,False
+Bachelor of Engineering,Indian BEHONS qualification,1,False
+Bachelor of Engineering,Indian BEHONS with Honours,1,False
+Bachelor of Engineering,Indian BEHONSHONS,1,False
+Bachelor of Engineering,Indian BEHONSHONS degree,1,False
+Bachelor of Engineering,Indian BEHONSHONS qualification,1,False
+Bachelor of Engineering,Indian BEHONSHONS with Honours,1,False
+Bachelor of Engineering,Indian BENGHONS,1,False
+Bachelor of Engineering,Indian BENGHONS degree,1,False
+Bachelor of Engineering,Indian BENGHONS qualification,1,False
+Bachelor of Engineering,Indian BENGHONS with Honours,1,False
+Bachelor of Engineering,UK B E N G degree,1,False
+Bachelor of Engineering,UK B E N G qualification,1,False
+Bachelor of Engineering,UK B E N G with Honours,1,False
+Bachelor of Engineering,UK BENGHONS degree,1,False
+Bachelor of Engineering,UK BENGHONS qualification,1,False
+Bachelor of Engineering,UK BENGHONS with Honours,1,False
+Bachelor of Engineering,United Kingdom B E N G,1,False
+Bachelor of Engineering,United Kingdom B E N G degree,1,False
+Bachelor of Engineering,United Kingdom BENGHONS,1,False
+Bachelor of Engineering,United Kingdom BENGHONS degree,1,False
+Bachelor of Laws,Bachelor of Law qualification,1,False
+Bachelor of Laws,Bachelor of Law with Honours,1,False
+Bachelor of Laws,Bachelor of Laws qualification,1,False
+Bachelor of Laws,Bachelor of Laws with Honours,1,False
+Bachelor of Laws,L L B qualification,1,False
+Bachelor of Laws,L L B with Honours,1,False
+Bachelor of Laws,UK Bachelor of Law degree,1,False
+Bachelor of Laws,UK Bachelor of Law with Honours,1,False
+Bachelor of Laws,UK Bachelor of Laws degree,1,False
+Bachelor of Laws,UK L L B,1,False
+Bachelor of Laws,UK L L B degree,1,False
+Bachelor of Laws,UK L L B qualification,1,False
+Bachelor of Laws,UK L L B with Honours,1,False
+Bachelor of Laws,United Kingdom Bachelor of Law,1,False
+Bachelor of Laws,United Kingdom Bachelor of Laws,1,False
+Bachelor of Laws,United Kingdom L L B,1,False
+Bachelor of Laws,United Kingdom L L B degree,1,False
+Bachelor of Medicine Bachelor of Surgery,B M B S degree,1,False
+Bachelor of Medicine Bachelor of Surgery,B M B S qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,B M B S with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,BMBS degree,1,False
+Bachelor of Medicine Bachelor of Surgery,BMBS qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,BMBS with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B C H degree,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B C H qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B C H with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B S qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,M B B S with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,M B C H B degree,1,False
+Bachelor of Medicine Bachelor of Surgery,M B C H B qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,M B C H B with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,M.B.C.H.B. qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,M.B.C.H.B. with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,MB ChB degree,1,False
+Bachelor of Medicine Bachelor of Surgery,MB ChB qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,MB ChB with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBCh degree,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBCh qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,MBBCh with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK B M B S degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK B M B S qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK B M B S with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK BMBS degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK BMBS qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK BMBS with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B C H degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B C H qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B C H with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B S degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B S qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B B S with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B C H B degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B C H B qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M B C H B with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M.B.C.H.B. qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK M.B.C.H.B. with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MB ChB degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MB ChB qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MB ChB with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBCh degree,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBCh qualification,1,False
+Bachelor of Medicine Bachelor of Surgery,UK MBBCh with Honours,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom B M B S degree,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom BMBS,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom BMBS degree,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B C H,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B C H degree,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B B S degree,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B C H B,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M B C H B degree,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom M.B.C.H.B.,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MB ChB,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MB ChB degree,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MBBCh,1,False
+Bachelor of Medicine Bachelor of Surgery,United Kingdom MBBCh degree,1,False
+Bachelor of Science,IN B S C degree,1,False
+Bachelor of Science,IN B S C qualification,1,False
+Bachelor of Science,IN B S C with Honours,1,False
+Bachelor of Science,IN B Sc degree,1,False
+Bachelor of Science,IN B Sc qualification,1,False
+Bachelor of Science,IN B Sc with Honours,1,False
+Bachelor of Science,India B S C degree,1,False
+Bachelor of Science,India B S C qualification,1,False
+Bachelor of Science,India B S C with Honours,1,False
+Bachelor of Science,India B Sc degree,1,False
+Bachelor of Science,India B Sc qualification,1,False
+Bachelor of Science,India B Sc with Honours,1,False
+Bachelor of Science,India BSCHONS degree,1,False
+Bachelor of Science,India BSCHONS qualification,1,False
+Bachelor of Science,India BSCHONS with Honours,1,False
+Bachelor of Science,Indian B S C,1,False
+Bachelor of Science,Indian B S C degree,1,False
+Bachelor of Science,Indian B S C qualification,1,False
+Bachelor of Science,Indian B S C with Honours,1,False
+Bachelor of Science,Indian B Sc degree,1,False
+Bachelor of Science,Indian B Sc qualification,1,False
+Bachelor of Science,Indian B Sc with Honours,1,False
+Bachelor of Science,Indian BSCHONS degree,1,False
+Bachelor of Science,Indian BSCHONS qualification,1,False
+Bachelor of Science,Indian BSCHONS with Honours,1,False
+Bachelor of Science,UK B S C,1,False
+Bachelor of Science,UK B S C degree,1,False
+Bachelor of Science,UK B S C qualification,1,False
+Bachelor of Science,UK B S C with Honours,1,False
+Bachelor of Science,UK B Sc degree,1,False
+Bachelor of Science,UK B Sc qualification,1,False
+Bachelor of Science,UK B Sc with Honours,1,False
+Bachelor of Science,UK BSCHONS qualification,1,False
+Bachelor of Science,United Kingdom B S C,1,False
+Bachelor of Science,United Kingdom B S C degree,1,False
+Bachelor of Science,United Kingdom B Sc,1,False
+Bachelor of Science,United Kingdom B Sc degree,1,False
+Bachelor of Science,United Kingdom BSCHONS degree,1,False
+Bachelor of Technology,B T E C H qualification,1,False
+Bachelor of Technology,B T E C H with Honours,1,False
+Bachelor of Technology,B Tech qualification,1,False
+Bachelor of Technology,B Tech with Honours,1,False
+Bachelor of Technology,IN B T E C H,1,False
+Bachelor of Technology,IN B T E C H degree,1,False
+Bachelor of Technology,IN B T E C H qualification,1,False
+Bachelor of Technology,IN B T E C H with Honours,1,False
+Bachelor of Technology,IN B Tech qualification,1,False
+Bachelor of Technology,IN B Tech with Honours,1,False
+Bachelor of Technology,India B T E C H,1,False
+Bachelor of Technology,India B T E C H degree,1,False
+Bachelor of Technology,India B T E C H qualification,1,False
+Bachelor of Technology,India B T E C H with Honours,1,False
+Bachelor of Technology,India B Tech degree,1,False
+Bachelor of Technology,India B Tech qualification,1,False
+Bachelor of Technology,India B Tech with Honours,1,False
+Bachelor of Technology,India BTECHHONS degree,1,False
+Bachelor of Technology,India BTECHHONS qualification,1,False
+Bachelor of Technology,India BTECHHONS with Honours,1,False
+Bachelor of Technology,Indian B T E C H,1,False
+Bachelor of Technology,Indian B T E C H degree,1,False
+Bachelor of Technology,Indian B T E C H qualification,1,False
+Bachelor of Technology,Indian B T E C H with Honours,1,False
+Bachelor of Technology,Indian B Tech qualification,1,False
+Bachelor of Technology,Indian B Tech with Honours,1,False
+Bachelor of Technology,Indian BTECHHONS degree,1,False
+Bachelor of Technology,Indian BTECHHONS qualification,1,False
+Bachelor of Technology,Indian BTECHHONS with Honours,1,False
+Certificate of Higher Education,Cert HE,1,False
+Certificate of Higher Education,Cert HE qualification,1,False
+Certificate of Higher Education,CertHE,1,False
+Certificate of Higher Education,CertHE qualification,1,False
+Certificate of Higher Education,UK Cert HE,1,False
+Certificate of Higher Education,UK Cert HE qualification,1,False
+Certificate of Higher Education,UK CertHE,1,False
+Certificate of Higher Education,UK CertHE qualification,1,False
+Certificate of Higher Education,United Kingdom Cert HE,1,False
+Certificate of Higher Education,United Kingdom CertHE,1,False
+Diploma in Engineering,DIPENG qualification,1,False
+Diploma in Engineering,DIPENGG qualification,1,False
+Diploma in Engineering,Dip Engg qualification,1,False
+Diploma in Engineering,IN DIPENG qualification,1,False
+Diploma in Engineering,IN DIPENGG qualification,1,False
+Diploma in Engineering,IN Dip Engg qualification,1,False
+Diploma in Engineering,IN polytechnic qualification,1,False
+Diploma in Engineering,India DIPENG qualification,1,False
+Diploma in Engineering,India DIPENGG qualification,1,False
+Diploma in Engineering,India Dip Engg qualification,1,False
+Diploma in Engineering,India polytechnic qualification,1,False
+Diploma in Engineering,Indian DIPENG qualification,1,False
+Diploma in Engineering,Indian DIPENGG qualification,1,False
+Diploma in Engineering,Indian Dip Engg qualification,1,False
+Diploma in Engineering,polytechnic qualification,1,False
+Diploma of Higher Education,D I P H E,1,False
+Diploma of Higher Education,D I P H E qualification,1,False
+Diploma of Higher Education,Dip HE qualification,1,False
+Diploma of Higher Education,DipHE,1,False
+Diploma of Higher Education,DipHE qualification,1,False
+Diploma of Higher Education,UK D I P H E,1,False
+Diploma of Higher Education,UK D I P H E qualification,1,False
+Diploma of Higher Education,UK Dip HE,1,False
+Diploma of Higher Education,UK Dip HE qualification,1,False
+Diploma of Higher Education,UK DipHE,1,False
+Diploma of Higher Education,UK DipHE qualification,1,False
+Diploma of Higher Education,UK Diploma of Higher Education,1,False
+Diploma of Higher Education,United Kingdom D I P H E,1,False
+Diploma of Higher Education,United Kingdom Dip HE,1,False
+Diploma of Higher Education,United Kingdom DipHE,1,False
+Doctor of Business Administration,D B A degree,1,False
+Doctor of Business Administration,D B A qualification,1,False
+Doctor of Business Administration,DBA degree,1,False
+Doctor of Business Administration,DBA qualification,1,False
+Doctor of Business Administration,UK D B A degree,1,False
+Doctor of Business Administration,UK D B A qualification,1,False
+Doctor of Business Administration,UK DBA,1,False
+Doctor of Business Administration,UK DBA degree,1,False
+Doctor of Business Administration,UK DBA qualification,1,False
+Doctor of Business Administration,United Kingdom D B A,1,False
+Doctor of Business Administration,United Kingdom D B A degree,1,False
+Doctor of Business Administration,United Kingdom DBA,1,False
+Doctor of Business Administration,United Kingdom DBA degree,1,False
+Doctor of Education,Doctor of Education degree,1,False
+Doctor of Education,E D D,1,False
+Doctor of Education,E D D degree,1,False
+Doctor of Education,E D D qualification,1,False
+Doctor of Education,EdD,1,False
+Doctor of Education,EdD degree,1,False
+Doctor of Education,EdD qualification,1,False
+Doctor of Education,UK Doctor of Education,1,False
+Doctor of Education,UK Doctor of Education degree,1,False
+Doctor of Education,UK E D D,1,False
+Doctor of Education,UK E D D degree,1,False
+Doctor of Education,UK E D D qualification,1,False
+Doctor of Education,UK EdD,1,False
+Doctor of Education,UK EdD degree,1,False
+Doctor of Education,UK EdD qualification,1,False
+Doctor of Education,United Kingdom E D D,1,False
+Doctor of Education,United Kingdom E D D degree,1,False
+Doctor of Education,United Kingdom EdD,1,False
+Doctor of Education,United Kingdom EdD degree,1,False
+Doctor of Philosophy,IN D P H I L,1,False
+Doctor of Philosophy,IN D P H I L degree,1,False
+Doctor of Philosophy,IN D P H I L qualification,1,False
+Doctor of Philosophy,IN P H D,1,False
+Doctor of Philosophy,IN P H D degree,1,False
+Doctor of Philosophy,IN P H D qualification,1,False
+Doctor of Philosophy,India D P H I L,1,False
+Doctor of Philosophy,India D P H I L degree,1,False
+Doctor of Philosophy,India D P H I L qualification,1,False
+Doctor of Philosophy,India P H D,1,False
+Doctor of Philosophy,India P H D degree,1,False
+Doctor of Philosophy,India P H D qualification,1,False
+Doctor of Philosophy,Indian D P H I L,1,False
+Doctor of Philosophy,Indian D P H I L degree,1,False
+Doctor of Philosophy,Indian D P H I L qualification,1,False
+Doctor of Philosophy,Indian P H D,1,False
+Doctor of Philosophy,Indian P H D degree,1,False
+Doctor of Philosophy,Indian P H D qualification,1,False
+Doctor of Philosophy,UK D P H I L,1,False
+Doctor of Philosophy,UK D P H I L degree,1,False
+Doctor of Philosophy,UK D P H I L qualification,1,False
+Doctor of Philosophy,UK P H D,1,False
+Doctor of Philosophy,UK P H D degree,1,False
+Doctor of Philosophy,UK P H D qualification,1,False
+Doctor of Philosophy,United Kingdom D P H I L,1,False
+Doctor of Philosophy,United Kingdom D P H I L degree,1,False
+Doctor of Philosophy,United Kingdom P H D,1,False
+Doctor of Philosophy,United Kingdom P H D degree,1,False
+Foundation Degree,F D,1,False
+Foundation Degree,F D A,1,False
+Foundation Degree,F D A degree,1,False
+Foundation Degree,F D A qualification,1,False
+Foundation Degree,F D A with Honours,1,False
+Foundation Degree,F D S C degree,1,False
+Foundation Degree,F D S C qualification,1,False
+Foundation Degree,F D S C with Honours,1,False
+Foundation Degree,F D degree,1,False
+Foundation Degree,F D qualification,1,False
+Foundation Degree,F D with Honours,1,False
+Foundation Degree,Fd,1,False
+Foundation Degree,Fd degree,1,False
+Foundation Degree,Fd qualification,1,False
+Foundation Degree,Fd with Honours,1,False
+Foundation Degree,FdA,1,False
+Foundation Degree,FdA degree,1,False
+Foundation Degree,FdA qualification,1,False
+Foundation Degree,FdA with Honours,1,False
+Foundation Degree,FdSc,1,False
+Foundation Degree,FdSc degree,1,False
+Foundation Degree,FdSc qualification,1,False
+Foundation Degree,FdSc with Honours,1,False
+Foundation Degree,Foundation Degree Arts,1,False
+Foundation Degree,Foundation Degree Arts degree,1,False
+Foundation Degree,Foundation Degree Science,1,False
+Foundation Degree,Foundation Degree degree,1,False
+Foundation Degree,Foundation Degree qualification,1,False
+Foundation Degree,Foundation Degree with Honours,1,False
+Foundation Degree,UK F D,1,False
+Foundation Degree,UK F D A,1,False
+Foundation Degree,UK F D A degree,1,False
+Foundation Degree,UK F D A qualification,1,False
+Foundation Degree,UK F D A with Honours,1,False
+Foundation Degree,UK F D S C,1,False
+Foundation Degree,UK F D S C degree,1,False
+Foundation Degree,UK F D S C qualification,1,False
+Foundation Degree,UK F D S C with Honours,1,False
+Foundation Degree,UK F D degree,1,False
+Foundation Degree,UK F D qualification,1,False
+Foundation Degree,UK F D with Honours,1,False
+Foundation Degree,UK Fd,1,False
+Foundation Degree,UK Fd degree,1,False
+Foundation Degree,UK Fd qualification,1,False
+Foundation Degree,UK Fd with Honours,1,False
+Foundation Degree,UK FdA,1,False
+Foundation Degree,UK FdA degree,1,False
+Foundation Degree,UK FdA qualification,1,False
+Foundation Degree,UK FdA with Honours,1,False
+Foundation Degree,UK FdSc,1,False
+Foundation Degree,UK FdSc degree,1,False
+Foundation Degree,UK FdSc qualification,1,False
+Foundation Degree,UK FdSc with Honours,1,False
+Foundation Degree,UK Foundation Degree,1,False
+Foundation Degree,UK Foundation Degree Arts,1,False
+Foundation Degree,UK Foundation Degree Science,1,False
+Foundation Degree,UK Foundation Degree degree,1,False
+Foundation Degree,United Kingdom F D,1,False
+Foundation Degree,United Kingdom F D A,1,False
+Foundation Degree,United Kingdom F D A degree,1,False
+Foundation Degree,United Kingdom F D S C,1,False
+Foundation Degree,United Kingdom F D S C degree,1,False
+Foundation Degree,United Kingdom F D degree,1,False
+Foundation Degree,United Kingdom F D with Honours,1,False
+Foundation Degree,United Kingdom Fd,1,False
+Foundation Degree,United Kingdom Fd degree,1,False
+Foundation Degree,United Kingdom Fd qualification,1,False
+Foundation Degree,United Kingdom Fd with Honours,1,False
+Foundation Degree,United Kingdom FdA,1,False
+Foundation Degree,United Kingdom FdA degree,1,False
+Foundation Degree,United Kingdom FdA with Honours,1,False
+Foundation Degree,United Kingdom FdSc,1,False
+Foundation Degree,United Kingdom FdSc degree,1,False
+General Certificate of Secondary Education,G C S E,1,False
+General Certificate of Secondary Education,G C S E S,1,False
+General Certificate of Secondary Education,G C S E S qualification,1,False
+General Certificate of Secondary Education,G C S E qualification,1,False
+General Certificate of Secondary Education,GCSE,1,False
+General Certificate of Secondary Education,GCSE qualification,1,False
+General Certificate of Secondary Education,GCSEs,1,False
+General Certificate of Secondary Education,GCSEs qualification,1,False
+General Certificate of Secondary Education,UK G C S E,1,False
+General Certificate of Secondary Education,UK G C S E S,1,False
+General Certificate of Secondary Education,UK G C S E S qualification,1,False
+General Certificate of Secondary Education,UK G C S E qualification,1,False
+General Certificate of Secondary Education,UK GCSE,1,False
+General Certificate of Secondary Education,UK GCSE qualification,1,False
+General Certificate of Secondary Education,UK GCSEs,1,False
+General Certificate of Secondary Education,UK GCSEs qualification,1,False
+General Certificate of Secondary Education,United Kingdom G C S E,1,False
+General Certificate of Secondary Education,United Kingdom G C S E S,1,False
+General Certificate of Secondary Education,United Kingdom GCSE,1,False
+General Certificate of Secondary Education,United Kingdom GCSEs,1,False
+Higher National Certificate,H N C,1,False
+Higher National Certificate,H N C qualification,1,False
+Higher National Certificate,HNC,1,False
+Higher National Certificate,HNC qualification,1,False
+Higher National Certificate,UK H N C,1,False
+Higher National Certificate,UK H N C qualification,1,False
+Higher National Certificate,UK HNC,1,False
+Higher National Certificate,UK HNC qualification,1,False
+Higher National Certificate,UK Higher National Certificate,1,False
+Higher National Certificate,United Kingdom H N C,1,False
+Higher National Certificate,United Kingdom HNC,1,False
+Higher National Diploma,H N D,1,False
+Higher National Diploma,H N D qualification,1,False
+Higher National Diploma,HND,1,False
+Higher National Diploma,HND qualification,1,False
+Higher National Diploma,UK H N D,1,False
+Higher National Diploma,UK H N D qualification,1,False
+Higher National Diploma,UK HND,1,False
+Higher National Diploma,UK HND qualification,1,False
+Higher National Diploma,UK Higher National Diploma,1,False
+Higher National Diploma,United Kingdom H N D,1,False
+Higher National Diploma,United Kingdom HND,1,False
+Master of Arts,IN M A degree,1,False
+Master of Arts,IN M A qualification,1,False
+Master of Arts,IN MAHONS degree,1,False
+Master of Arts,IN MAHONS qualification,1,False
+Master of Arts,IN MasterofArts qualification,1,False
+Master of Arts,India M A,1,False
+Master of Arts,India M A degree,1,False
+Master of Arts,India M A qualification,1,False
+Master of Arts,India MAHONS,1,False
+Master of Arts,India MAHONS degree,1,False
+Master of Arts,India MAHONS qualification,1,False
+Master of Arts,India MasterofArts degree,1,False
+Master of Arts,Indian M A,1,False
+Master of Arts,Indian M A degree,1,False
+Master of Arts,Indian M A qualification,1,False
+Master of Arts,Indian MAHONS,1,False
+Master of Arts,Indian MAHONS degree,1,False
+Master of Arts,Indian MAHONS qualification,1,False
+Master of Arts,Indian MasterofArts degree,1,False
+Master of Arts,MAHONS degree,1,False
+Master of Arts,MAHONS qualification,1,False
+Master of Arts,MasterofArts qualification,1,False
+Master of Arts,UK M A,1,False
+Master of Arts,UK M A degree,1,False
+Master of Arts,UK M A qualification,1,False
+Master of Arts,United Kingdom M A,1,False
+Master of Arts,United Kingdom M A degree,1,False
+Master of Business Administration,E M B A qualification,1,False
+Master of Business Administration,EMBAHONS degree,1,False
+Master of Business Administration,EMBAHONS qualification,1,False
+Master of Business Administration,IN E M B A degree,1,False
+Master of Business Administration,IN E M B A qualification,1,False
+Master of Business Administration,IN EMBAHONS degree,1,False
+Master of Business Administration,IN EMBAHONS qualification,1,False
+Master of Business Administration,IN M B A degree,1,False
+Master of Business Administration,IN M B A qualification,1,False
+Master of Business Administration,IN MBAHONS degree,1,False
+Master of Business Administration,IN MBAHONS qualification,1,False
+Master of Business Administration,India E M B A,1,False
+Master of Business Administration,India E M B A degree,1,False
+Master of Business Administration,India E M B A qualification,1,False
+Master of Business Administration,India EMBAHONS,1,False
+Master of Business Administration,India EMBAHONS degree,1,False
+Master of Business Administration,India EMBAHONS qualification,1,False
+Master of Business Administration,India M B A,1,False
+Master of Business Administration,India M B A degree,1,False
+Master of Business Administration,India M B A qualification,1,False
+Master of Business Administration,India MBAHONS,1,False
+Master of Business Administration,India MBAHONS degree,1,False
+Master of Business Administration,India MBAHONS qualification,1,False
+Master of Business Administration,Indian E M B A,1,False
+Master of Business Administration,Indian E M B A degree,1,False
+Master of Business Administration,Indian E M B A qualification,1,False
+Master of Business Administration,Indian EMBAHONS,1,False
+Master of Business Administration,Indian EMBAHONS degree,1,False
+Master of Business Administration,Indian EMBAHONS qualification,1,False
+Master of Business Administration,Indian M B A,1,False
+Master of Business Administration,Indian M B A degree,1,False
+Master of Business Administration,Indian M B A qualification,1,False
+Master of Business Administration,Indian MBAHONS,1,False
+Master of Business Administration,Indian MBAHONS degree,1,False
+Master of Business Administration,Indian MBAHONS qualification,1,False
+Master of Business Administration,MBAHONS degree,1,False
+Master of Business Administration,MBAHONS qualification,1,False
+Master of Business Administration,UK M B A degree,1,False
+Master of Business Administration,UK M B A qualification,1,False
+Master of Business Administration,United Kingdom M B A,1,False
+Master of Business Administration,United Kingdom M B A degree,1,False
+Master of Commerce,IN M C O M degree,1,False
+Master of Commerce,IN M C O M qualification,1,False
+Master of Commerce,IN M Com degree,1,False
+Master of Commerce,IN M Com qualification,1,False
+Master of Commerce,IN MCOMHONS degree,1,False
+Master of Commerce,IN MCOMHONS qualification,1,False
+Master of Commerce,India M C O M,1,False
+Master of Commerce,India M C O M degree,1,False
+Master of Commerce,India M C O M qualification,1,False
+Master of Commerce,India M Com degree,1,False
+Master of Commerce,India M Com qualification,1,False
+Master of Commerce,India MCOMHONS,1,False
+Master of Commerce,India MCOMHONS degree,1,False
+Master of Commerce,India MCOMHONS qualification,1,False
+Master of Commerce,Indian M C O M,1,False
+Master of Commerce,Indian M C O M degree,1,False
+Master of Commerce,Indian M C O M qualification,1,False
+Master of Commerce,Indian M Com degree,1,False
+Master of Commerce,Indian M Com qualification,1,False
+Master of Commerce,Indian MCOMHONS,1,False
+Master of Commerce,Indian MCOMHONS degree,1,False
+Master of Commerce,Indian MCOMHONS qualification,1,False
+Master of Commerce,M C O M qualification,1,False
+Master of Commerce,M Com qualification,1,False
+Master of Commerce,MCOMHONS degree,1,False
+Master of Commerce,MCOMHONS qualification,1,False
+Master of Computer Applications,IN M C A qualification,1,False
+Master of Computer Applications,IN MCAHONS degree,1,False
+Master of Computer Applications,IN MCAHONS qualification,1,False
+Master of Computer Applications,India M C A degree,1,False
+Master of Computer Applications,India M C A qualification,1,False
+Master of Computer Applications,India MCAHONS,1,False
+Master of Computer Applications,India MCAHONS degree,1,False
+Master of Computer Applications,India MCAHONS qualification,1,False
+Master of Computer Applications,Indian M C A degree,1,False
+Master of Computer Applications,Indian M C A qualification,1,False
+Master of Computer Applications,Indian MCAHONS,1,False
+Master of Computer Applications,Indian MCAHONS degree,1,False
+Master of Computer Applications,Indian MCAHONS qualification,1,False
+Master of Computer Applications,M C A qualification,1,False
+Master of Computer Applications,MCAHONS degree,1,False
+Master of Computer Applications,MCAHONS qualification,1,False
+Master of Engineering,IN M E N G,1,False
+Master of Engineering,IN M E N G degree,1,False
+Master of Engineering,IN M E N G qualification,1,False
+Master of Engineering,IN M E degree,1,False
+Master of Engineering,IN M E qualification,1,False
+Master of Engineering,IN M Eng degree,1,False
+Master of Engineering,IN M Eng qualification,1,False
+Master of Engineering,IN MEHONS degree,1,False
+Master of Engineering,IN MEHONS qualification,1,False
+Master of Engineering,IN MENGHONS degree,1,False
+Master of Engineering,IN MENGHONS qualification,1,False
+Master of Engineering,India M E,1,False
+Master of Engineering,India M E N G,1,False
+Master of Engineering,India M E N G degree,1,False
+Master of Engineering,India M E N G qualification,1,False
+Master of Engineering,India M E degree,1,False
+Master of Engineering,India M E qualification,1,False
+Master of Engineering,India M Eng degree,1,False
+Master of Engineering,India M Eng qualification,1,False
+Master of Engineering,India MEHONS,1,False
+Master of Engineering,India MEHONS degree,1,False
+Master of Engineering,India MEHONS qualification,1,False
+Master of Engineering,India MENGHONS,1,False
+Master of Engineering,India MENGHONS degree,1,False
+Master of Engineering,India MENGHONS qualification,1,False
+Master of Engineering,Indian M E,1,False
+Master of Engineering,Indian M E N G,1,False
+Master of Engineering,Indian M E N G degree,1,False
+Master of Engineering,Indian M E N G qualification,1,False
+Master of Engineering,Indian M E degree,1,False
+Master of Engineering,Indian M E qualification,1,False
+Master of Engineering,Indian M Eng degree,1,False
+Master of Engineering,Indian M Eng qualification,1,False
+Master of Engineering,Indian MEHONS,1,False
+Master of Engineering,Indian MEHONS degree,1,False
+Master of Engineering,Indian MEHONS qualification,1,False
+Master of Engineering,Indian MENGHONS,1,False
+Master of Engineering,Indian MENGHONS degree,1,False
+Master of Engineering,Indian MENGHONS qualification,1,False
+Master of Engineering,M E qualification,1,False
+Master of Engineering,M Eng qualification,1,False
+Master of Engineering,MEHONS degree,1,False
+Master of Engineering,MEHONS qualification,1,False
+Master of Engineering,UK M E N G,1,False
+Master of Engineering,UK M E N G degree,1,False
+Master of Engineering,UK M E N G qualification,1,False
+Master of Engineering,UK MENGHONS,1,False
+Master of Engineering,UK MENGHONS degree,1,False
+Master of Engineering,UK MENGHONS qualification,1,False
+Master of Engineering,United Kingdom M E N G,1,False
+Master of Engineering,United Kingdom M E N G degree,1,False
+Master of Engineering,United Kingdom MENGHONS,1,False
+Master of Engineering,United Kingdom MENGHONS degree,1,False
+Master of Laws,L L M qualification,1,False
+Master of Laws,Master of Laws qualification,1,False
+Master of Laws,UK L L M,1,False
+Master of Laws,UK L L M degree,1,False
+Master of Laws,UK L L M qualification,1,False
+Master of Laws,UK Master of Laws qualification,1,False
+Master of Laws,United Kingdom L L M,1,False
+Master of Laws,United Kingdom L L M degree,1,False
+Master of Laws,United Kingdom Master of Laws,1,False
+Master of Philosophy,M P H I L,1,False
+Master of Philosophy,M P H I L degree,1,False
+Master of Philosophy,M P H I L qualification,1,False
+Master of Philosophy,MPhil degree,1,False
+Master of Philosophy,MPhil qualification,1,False
+Master of Philosophy,UK M P H I L,1,False
+Master of Philosophy,UK M P H I L degree,1,False
+Master of Philosophy,UK M P H I L qualification,1,False
+Master of Philosophy,UK MPhil,1,False
+Master of Philosophy,UK MPhil degree,1,False
+Master of Philosophy,UK MPhil qualification,1,False
+Master of Philosophy,United Kingdom M P H I L,1,False
+Master of Philosophy,United Kingdom M P H I L degree,1,False
+Master of Philosophy,United Kingdom MPhil,1,False
+Master of Philosophy,United Kingdom MPhil degree,1,False
+Master of Research,M R E S degree,1,False
+Master of Research,M R E S qualification,1,False
+Master of Research,MRes,1,False
+Master of Research,MRes degree,1,False
+Master of Research,MRes qualification,1,False
+Master of Research,Master of Research degree,1,False
+Master of Research,UK M R E S,1,False
+Master of Research,UK M R E S degree,1,False
+Master of Research,UK M R E S qualification,1,False
+Master of Research,UK MRes,1,False
+Master of Research,UK MRes degree,1,False
+Master of Research,UK MRes qualification,1,False
+Master of Research,UK Master of Research,1,False
+Master of Research,UK Master of Research degree,1,False
+Master of Research,United Kingdom M R E S,1,False
+Master of Research,United Kingdom M R E S degree,1,False
+Master of Research,United Kingdom MRes,1,False
+Master of Research,United Kingdom MRes degree,1,False
+Master of Science,IN M S C degree,1,False
+Master of Science,IN M S C qualification,1,False
+Master of Science,IN M S degree,1,False
+Master of Science,IN M S qualification,1,False
+Master of Science,IN M Sc degree,1,False
+Master of Science,IN M Sc qualification,1,False
+Master of Science,IN M. Sc Hons degree,1,False
+Master of Science,IN M. Sc Hons qualification,1,False
+Master of Science,IN M.S. Hons degree,1,False
+Master of Science,IN M.S. Hons qualification,1,False
+Master of Science,IN MSCHONS degree,1,False
+Master of Science,IN MSCHONS qualification,1,False
+Master of Science,IN MSHONS degree,1,False
+Master of Science,IN MSHONS qualification,1,False
+Master of Science,India M S,1,False
+Master of Science,India M S C,1,False
+Master of Science,India M S C degree,1,False
+Master of Science,India M S C qualification,1,False
+Master of Science,India M S degree,1,False
+Master of Science,India M S qualification,1,False
+Master of Science,India M Sc degree,1,False
+Master of Science,India M Sc qualification,1,False
+Master of Science,India M. Sc Hons degree,1,False
+Master of Science,India M. Sc Hons qualification,1,False
+Master of Science,India M.S. Hons,1,False
+Master of Science,India M.S. Hons degree,1,False
+Master of Science,India M.S. Hons qualification,1,False
+Master of Science,India MSCHONS,1,False
+Master of Science,India MSCHONS degree,1,False
+Master of Science,India MSCHONS qualification,1,False
+Master of Science,India MSHONS,1,False
+Master of Science,India MSHONS degree,1,False
+Master of Science,India MSHONS qualification,1,False
+Master of Science,Indian M S C,1,False
+Master of Science,Indian M S C degree,1,False
+Master of Science,Indian M S C qualification,1,False
+Master of Science,Indian M S degree,1,False
+Master of Science,Indian M S qualification,1,False
+Master of Science,Indian M Sc degree,1,False
+Master of Science,Indian M Sc qualification,1,False
+Master of Science,Indian M. Sc Hons degree,1,False
+Master of Science,Indian M. Sc Hons qualification,1,False
+Master of Science,Indian M.S. Hons degree,1,False
+Master of Science,Indian M.S. Hons qualification,1,False
+Master of Science,Indian MSCHONS,1,False
+Master of Science,Indian MSCHONS degree,1,False
+Master of Science,Indian MSCHONS qualification,1,False
+Master of Science,Indian MSHONS,1,False
+Master of Science,Indian MSHONS degree,1,False
+Master of Science,Indian MSHONS qualification,1,False
+Master of Science,M S qualification,1,False
+Master of Science,M. Sc Hons qualification,1,False
+Master of Science,M.S. Hons qualification,1,False
+Master of Science,MSCHONS degree,1,False
+Master of Science,MSCHONS qualification,1,False
+Master of Science,MSHONS degree,1,False
+Master of Science,MSHONS qualification,1,False
+Master of Science,UK M S C,1,False
+Master of Science,UK M S C degree,1,False
+Master of Science,UK M S C qualification,1,False
+Master of Science,UK M Sc degree,1,False
+Master of Science,UK M Sc qualification,1,False
+Master of Science,United Kingdom M S C,1,False
+Master of Science,United Kingdom M S C degree,1,False
+Master of Science,United Kingdom M Sc,1,False
+Master of Science,United Kingdom M Sc degree,1,False
+Master of Technology,IN M T E C H,1,False
+Master of Technology,IN M T E C H degree,1,False
+Master of Technology,IN M T E C H qualification,1,False
+Master of Technology,IN M Tech qualification,1,False
+Master of Technology,IN M.Tech Hons degree,1,False
+Master of Technology,IN M.Tech Hons qualification,1,False
+Master of Technology,IN MASTERENGG,1,False
+Master of Technology,IN MASTERENGG degree,1,False
+Master of Technology,IN MASTERENGG qualification,1,False
+Master of Technology,IN MTECHHONS degree,1,False
+Master of Technology,IN MTECHHONS qualification,1,False
+Master of Technology,IN Master Bacheler,1,False
+Master of Technology,IN Master Bacheler degree,1,False
+Master of Technology,IN Master Bachellor degree,1,False
+Master of Technology,IN Master Engg qualification,1,False
+Master of Technology,India M T E C H,1,False
+Master of Technology,India M T E C H degree,1,False
+Master of Technology,India M T E C H qualification,1,False
+Master of Technology,India M Tech degree,1,False
+Master of Technology,India M Tech qualification,1,False
+Master of Technology,India M.Tech Hons degree,1,False
+Master of Technology,India M.Tech Hons qualification,1,False
+Master of Technology,India MASTERENGG,1,False
+Master of Technology,India MASTERENGG degree,1,False
+Master of Technology,India MASTERENGG qualification,1,False
+Master of Technology,India MTECHHONS,1,False
+Master of Technology,India MTECHHONS degree,1,False
+Master of Technology,India MTECHHONS qualification,1,False
+Master of Technology,India Master Bacheler,1,False
+Master of Technology,India Master Bacheler degree,1,False
+Master of Technology,India Master Bachellor,1,False
+Master of Technology,India Master Bachellor degree,1,False
+Master of Technology,India Master Engg degree,1,False
+Master of Technology,India Master Engg qualification,1,False
+Master of Technology,Indian M T E C H,1,False
+Master of Technology,Indian M T E C H degree,1,False
+Master of Technology,Indian M T E C H qualification,1,False
+Master of Technology,Indian M Tech degree,1,False
+Master of Technology,Indian M Tech qualification,1,False
+Master of Technology,Indian M.Tech Hons degree,1,False
+Master of Technology,Indian MASTERENGG,1,False
+Master of Technology,Indian MASTERENGG degree,1,False
+Master of Technology,Indian MASTERENGG qualification,1,False
+Master of Technology,Indian MTECHHONS,1,False
+Master of Technology,Indian MTECHHONS degree,1,False
+Master of Technology,Indian MTECHHONS qualification,1,False
+Master of Technology,Indian Master Bacheler,1,False
+Master of Technology,Indian Master Bacheler degree,1,False
+Master of Technology,Indian Master Bachellor,1,False
+Master of Technology,Indian Master Bachellor degree,1,False
+Master of Technology,Indian Master Engg degree,1,False
+Master of Technology,M T E C H qualification,1,False
+Master of Technology,M Tech qualification,1,False
+Master of Technology,M.Tech Hons qualification,1,False
+Master of Technology,MASTERENGG,1,False
+Master of Technology,MASTERENGG degree,1,False
+Master of Technology,MASTERENGG qualification,1,False
+Master of Technology,MTECHHONS degree,1,False
+Master of Technology,MTECHHONS qualification,1,False
+Master of Technology,Master Bacheler,1,False
+Master of Technology,Master Bacheler degree,1,False
+Master of Technology,Master Bacheler qualification,1,False
+Master of Technology,Master Bachellor degree,1,False
+Master of Technology,Master Engg qualification,1,False
+Post Graduate Diploma,IN P G D,1,False
+Post Graduate Diploma,IN P G D B A,1,False
+Post Graduate Diploma,IN P G D B A degree,1,False
+Post Graduate Diploma,IN P G D B A qualification,1,False
+Post Graduate Diploma,IN P G D B M degree,1,False
+Post Graduate Diploma,IN P G D B M qualification,1,False
+Post Graduate Diploma,IN P G D I P,1,False
+Post Graduate Diploma,IN P G D I P degree,1,False
+Post Graduate Diploma,IN P G D I P qualification,1,False
+Post Graduate Diploma,IN P G D degree,1,False
+Post Graduate Diploma,IN P G D qualification,1,False
+Post Graduate Diploma,IN P.G.D.I.P. qualification,1,False
+Post Graduate Diploma,IN PGDBAHONS degree,1,False
+Post Graduate Diploma,IN PGDBAHONS qualification,1,False
+Post Graduate Diploma,IN PGDBM qualification,1,False
+Post Graduate Diploma,IN PGDBMHONS degree,1,False
+Post Graduate Diploma,IN PGDBMHONS qualification,1,False
+Post Graduate Diploma,IN PGDHONS,1,False
+Post Graduate Diploma,IN PGDHONS degree,1,False
+Post Graduate Diploma,IN PGDHONS qualification,1,False
+Post Graduate Diploma,IN PGDIPHONS degree,1,False
+Post Graduate Diploma,IN PGDIPHONS qualification,1,False
+Post Graduate Diploma,India P G D,1,False
+Post Graduate Diploma,India P G D B A,1,False
+Post Graduate Diploma,India P G D B A degree,1,False
+Post Graduate Diploma,India P G D B A qualification,1,False
+Post Graduate Diploma,India P G D B M,1,False
+Post Graduate Diploma,India P G D B M degree,1,False
+Post Graduate Diploma,India P G D B M qualification,1,False
+Post Graduate Diploma,India P G D I P,1,False
+Post Graduate Diploma,India P G D I P degree,1,False
+Post Graduate Diploma,India P G D I P qualification,1,False
+Post Graduate Diploma,India P G D degree,1,False
+Post Graduate Diploma,India P G D qualification,1,False
+Post Graduate Diploma,India P.G.D.I.P. degree,1,False
+Post Graduate Diploma,India P.G.D.I.P. qualification,1,False
+Post Graduate Diploma,India PGDBAHONS,1,False
+Post Graduate Diploma,India PGDBAHONS degree,1,False
+Post Graduate Diploma,India PGDBAHONS qualification,1,False
+Post Graduate Diploma,India PGDBM degree,1,False
+Post Graduate Diploma,India PGDBM qualification,1,False
+Post Graduate Diploma,India PGDBMHONS,1,False
+Post Graduate Diploma,India PGDBMHONS degree,1,False
+Post Graduate Diploma,India PGDBMHONS qualification,1,False
+Post Graduate Diploma,India PGDHONS,1,False
+Post Graduate Diploma,India PGDHONS degree,1,False
+Post Graduate Diploma,India PGDHONS qualification,1,False
+Post Graduate Diploma,India PGDIPHONS,1,False
+Post Graduate Diploma,India PGDIPHONS degree,1,False
+Post Graduate Diploma,India PGDIPHONS qualification,1,False
+Post Graduate Diploma,India PGDIPLOMA qualification,1,False
+Post Graduate Diploma,Indian P G D,1,False
+Post Graduate Diploma,Indian P G D B A,1,False
+Post Graduate Diploma,Indian P G D B A degree,1,False
+Post Graduate Diploma,Indian P G D B A qualification,1,False
+Post Graduate Diploma,Indian P G D B M,1,False
+Post Graduate Diploma,Indian P G D B M degree,1,False
+Post Graduate Diploma,Indian P G D B M qualification,1,False
+Post Graduate Diploma,Indian P G D I P,1,False
+Post Graduate Diploma,Indian P G D I P degree,1,False
+Post Graduate Diploma,Indian P G D I P qualification,1,False
+Post Graduate Diploma,Indian P G D degree,1,False
+Post Graduate Diploma,Indian P G D qualification,1,False
+Post Graduate Diploma,Indian P.G.D.I.P. degree,1,False
+Post Graduate Diploma,Indian P.G.D.I.P. qualification,1,False
+Post Graduate Diploma,Indian PGDBAHONS,1,False
+Post Graduate Diploma,Indian PGDBAHONS degree,1,False
+Post Graduate Diploma,Indian PGDBAHONS qualification,1,False
+Post Graduate Diploma,Indian PGDBM degree,1,False
+Post Graduate Diploma,Indian PGDBM qualification,1,False
+Post Graduate Diploma,Indian PGDBMHONS,1,False
+Post Graduate Diploma,Indian PGDBMHONS degree,1,False
+Post Graduate Diploma,Indian PGDBMHONS qualification,1,False
+Post Graduate Diploma,Indian PGDHONS,1,False
+Post Graduate Diploma,Indian PGDHONS degree,1,False
+Post Graduate Diploma,Indian PGDHONS qualification,1,False
+Post Graduate Diploma,Indian PGDIPHONS,1,False
+Post Graduate Diploma,Indian PGDIPHONS degree,1,False
+Post Graduate Diploma,Indian PGDIPHONS qualification,1,False
+Post Graduate Diploma,Indian PGDIPLOMA qualification,1,False
+Post Graduate Diploma,P G D B A qualification,1,False
+Post Graduate Diploma,P G D B M degree,1,False
+Post Graduate Diploma,P G D B M qualification,1,False
+Post Graduate Diploma,P G D qualification,1,False
+Post Graduate Diploma,PGDBAHONS degree,1,False
+Post Graduate Diploma,PGDBAHONS qualification,1,False
+Post Graduate Diploma,PGDBM qualification,1,False
+Post Graduate Diploma,PGDBMHONS degree,1,False
+Post Graduate Diploma,PGDBMHONS qualification,1,False
+Post Graduate Diploma,PGDHONS,1,False
+Post Graduate Diploma,PGDHONS degree,1,False
+Post Graduate Diploma,PGDHONS qualification,1,False
+Post Graduate Diploma,PGDIPHONS degree,1,False
+Post Graduate Diploma,PGDIPHONS qualification,1,False
+Post Graduate Diploma,Post Grad Diploma qualification,1,False
+Postgraduate Certificate,PGCert,1,False
+Postgraduate Certificate,PGCert degree,1,False
+Postgraduate Certificate,PGCert qualification,1,False
+Postgraduate Certificate,Postgraduate Certificate degree,1,False
+Postgraduate Certificate,UK PGCert,1,False
+Postgraduate Certificate,UK PGCert degree,1,False
+Postgraduate Certificate,UK PGCert qualification,1,False
+Postgraduate Certificate,UK Postgraduate Certificate,1,False
+Postgraduate Certificate,United Kingdom PGCert,1,False
+Postgraduate Certificate,United Kingdom PGCert degree,1,False
+Postgraduate Diploma,UK P G D I P,1,False
+Postgraduate Diploma,UK P G D I P degree,1,False
+Postgraduate Diploma,UK P G D I P qualification,1,False
+Postgraduate Diploma,UK PGDip qualification,1,False
+Postgraduate Diploma,United Kingdom P G D I P,1,False
+Postgraduate Diploma,United Kingdom P G D I P degree,1,False
+Postgraduate Diploma,United Kingdom PGDip,1,False
+Postgraduate Diploma,United Kingdom PGDip degree,1,False
+Bachelor of Engineering,Bachelor of Engineering,517,True
+Bachelor of Technology,Bachelor of Technology,466,True
+Post Graduate Diploma,Post Graduate Diploma,409,True
+Doctor of Philosophy,Doctor of Philosophy,334,True
+12th Standard,12th Standard,278,True
+Bachelor of Arts,Bachelor of Arts,273,True
+Bachelor of Science,Bachelor of Science,264,True
+10th Standard,10th Standard,228,True
+Bachelor of Commerce,Bachelor of Commerce,228,True
+Master of Engineering,Master of Engineering,206,True
+Master of Business Administration,Master of Business Administration,192,True
+Master of Science,Master of Science,182,True
+Diploma in Engineering,Diploma in Engineering,177,True
+Bachelor of Computer Applications,Bachelor of Computer Applications,173,True
+Bachelor of Business Administration,Bachelor of Business Administration,162,True
+Master of Commerce,Master of Commerce,159,True
+Master of Technology,Master of Technology,159,True
+Master of Computer Applications,Master of Computer Applications,152,True
+Master of Arts,Master of Arts,145,True
+Bachelor of Laws,Bachelor of Laws,27,True
+Master of Laws,Master of Laws,20,True
+Advanced Level,Advanced Level,1,True
+Certificate of Higher Education,Certificate of Higher Education,1,True
+Diploma of Higher Education,Diploma of Higher Education,1,True
+Doctor of Education,Doctor of Education,1,True
+Foundation Degree,Foundation Degree,1,True
+Higher National Certificate,Higher National Certificate,1,True
+Higher National Diploma,Higher National Diploma,1,True
+Postgraduate Certificate,Postgraduate Certificate,1,True

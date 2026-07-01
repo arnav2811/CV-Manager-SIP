@@ -1,0 +1,187 @@
+degree_canonical,field_canonical,degree_alias_count,field_alias_count,example_resume_strings
+Bachelor of Technology,Computer Science and Engineering,64,15,BTech Hons in CSE | Bacheler of Technology Hons in C.S.E
+Bachelor of Technology,Information Technology,64,10,BTech Hons in IT | Bacheler of Technology Hons in I.T
+Bachelor of Technology,Electronics and Communication Engineering,64,8,BTech Hons in ECE | Bacheler of Technology Hons in E.C.E
+Bachelor of Technology,Electrical Engineering,64,9,BTech Hons in EE | Bacheler of Technology Hons in E.E
+Bachelor of Technology,Mechanical Engineering,64,8,BTech Hons in ME | Bacheler of Technology Hons in M.E
+Bachelor of Technology,Civil Engineering,64,6,BTech Hons in CE | Bacheler of Technology Hons in C.E
+Bachelor of Technology,Chemical Engineering,64,5,BTech Hons in Chem Engg | Bacheler of Technology Hons in Chemical Engg
+Bachelor of Technology,Aerospace Engineering,64,6,BTech Hons in Aero | Bacheler of Technology Hons in Aerospace
+Bachelor of Technology,Biotechnology Engineering,64,6,BTech Hons in Biotech | Bacheler of Technology Hons in Biotechnology
+Bachelor of Technology,Artificial Intelligence and Machine Learning,64,9,BTech Hons in AI | Bacheler of Technology Hons in ML
+Bachelor of Technology,Data Science,64,6,BTech Hons in Data Science | Bacheler of Technology Hons in DS
+Bachelor of Technology,Cybersecurity,64,5,BTech Hons in Cybersecurity | Bacheler of Technology Hons in Cyber Security
+Bachelor of Technology,Software Engineering,64,6,BTech Hons in Software Engg | Bacheler of Technology Hons in Software Engineering
+Bachelor of Technology,Instrumentation Engineering,64,5,BTech Hons in Instrumentation | Bacheler of Technology Hons in Instrumentation Engg
+Bachelor of Technology,Production Engineering,64,6,BTech Hons in Production | Bacheler of Technology Hons in Production Engg
+Bachelor of Technology,Metallurgical Engineering,64,5,BTech Hons in Metallurgy | Bacheler of Technology Hons in Metallurgical Engg
+Bachelor of Technology,Environmental Engineering,64,4,BTech Hons in Environmental Engg | Bacheler of Technology Hons in Environmental Engineering
+Bachelor of Technology,Textile Engineering,64,4,BTech Hons in Textile | Bacheler of Technology Hons in Textile Engg
+Bachelor of Technology,Food Technology,64,4,BTech Hons in Food Tech | Bacheler of Technology Hons in Food Technology
+Bachelor of Engineering,Computer Science and Engineering,49,15,BachelorofEngineering in CSE | B.E. in C.S.E
+Bachelor of Engineering,Information Technology,49,10,BachelorofEngineering in IT | B.E. in I.T
+Bachelor of Engineering,Electronics and Communication Engineering,49,8,BachelorofEngineering in ECE | B.E. in E.C.E
+Bachelor of Engineering,Electrical Engineering,49,9,BachelorofEngineering in EE | B.E. in E.E
+Bachelor of Engineering,Mechanical Engineering,49,8,BachelorofEngineering in ME | B.E. in M.E
+Bachelor of Engineering,Civil Engineering,49,6,BachelorofEngineering in CE | B.E. in C.E
+Bachelor of Engineering,Chemical Engineering,49,5,BachelorofEngineering in Chem Engg | B.E. in Chemical Engg
+Bachelor of Engineering,Aerospace Engineering,49,6,BachelorofEngineering in Aero | B.E. in Aerospace
+Bachelor of Engineering,Biotechnology Engineering,49,6,BachelorofEngineering in Biotech | B.E. in Biotechnology
+Bachelor of Engineering,Instrumentation Engineering,49,5,BachelorofEngineering in Instrumentation | B.E. in Instrumentation Engg
+Bachelor of Engineering,Production Engineering,49,6,BachelorofEngineering in Production | B.E. in Production Engg
+Bachelor of Science,Physics,42,4,Bachelor of Science Hons in Physics | b. sc in Phy
+Bachelor of Science,Chemistry,42,4,Bachelor of Science Hons in Chemistry | b. sc in Chem
+Bachelor of Science,Mathematics,42,6,Bachelor of Science Hons in Mathematics | b. sc in Maths
+Bachelor of Science,Statistics,42,4,Bachelor of Science Hons in Statistics | b. sc in Stats
+Bachelor of Science,Biology,42,4,Bachelor of Science Hons in Biology | b. sc in Bio
+Bachelor of Science,Microbiology,42,3,Bachelor of Science Hons in Microbiology | b. sc in Micro Bio
+Bachelor of Science,Biochemistry,42,3,Bachelor of Science Hons in Biochemistry | b. sc in Bio Chemistry
+Bachelor of Science,Bioinformatics,42,3,Bachelor of Science Hons in Bioinformatics | b. sc in Bio Informatics
+Bachelor of Science,Zoology,42,2,Bachelor of Science Hons in Zoology | b. sc in Zoo
+Bachelor of Science,Botany,42,2,Bachelor of Science Hons in Botany | b. sc in Plant Science
+Bachelor of Science,Geology,42,2,Bachelor of Science Hons in Geology | b. sc in Earth Science
+Bachelor of Science,Environmental Science,42,3,Bachelor of Science Hons in Environmental Science | b. sc in Env Science
+Bachelor of Science,Computer Science and Engineering,42,15,Bachelor of Science Hons in CSE | b. sc in C.S.E
+Bachelor of Science,Information Technology,42,10,Bachelor of Science Hons in IT | b. sc in I.T
+Bachelor of Science,Nursing,42,2,Bachelor of Science Hons in Nursing | b. sc in BSc Nursing
+Bachelor of Science,Agriculture,42,4,Bachelor of Science Hons in Agriculture | b. sc in Agricultural Science
+Bachelor of Computer Applications,Computer Applications,19,4,Bachelor of Computer Applications (Hons) in Computer Applications | B C A (Hons) in Comp Applications
+Bachelor of Commerce,Commerce,29,2,B.Com (Hons) in Commerce | b.com in Business Studies
+Bachelor of Commerce,Accounting,29,5,B.Com (Hons) in Accounting | b.com in Accountancy
+Bachelor of Commerce,Finance,29,4,B.Com (Hons) in Finance | b.com in Financial Management
+Bachelor of Commerce,Banking and Finance,29,4,B.Com (Hons) in Banking & Finance | b.com in Banking and Finance
+Bachelor of Business Administration,Business Administration,19,5,bba in Business Administration | B.B.A. in Business Admin
+Bachelor of Business Administration,Finance,19,4,bba in Finance | B.B.A. in Financial Management
+Bachelor of Business Administration,Marketing,19,4,bba in Marketing | B.B.A. in Marketing Management
+Bachelor of Business Administration,Human Resources Management,19,6,bba in Human Resources | B.B.A. in HR
+Bachelor of Business Administration,International Business,19,4,bba in International Business | B.B.A. in IB
+Bachelor of Business Administration,Entrepreneurship,19,3,bba in Entrepreneurship | B.B.A. in Startup Management
+Bachelor of Arts,Economics,26,4,bachelor of arts in Economics | BA in Eco
+Bachelor of Arts,Psychology,26,5,bachelor of arts in Psychology | BA in Psych
+Bachelor of Arts,Sociology,26,2,bachelor of arts in Sociology | BA in Social Work
+Bachelor of Arts,Political Science,26,3,bachelor of arts in Political Science | BA in Pol Science
+Bachelor of Arts,History,26,1,bachelor of arts in History | BA in History
+Bachelor of Arts,Geography,26,2,bachelor of arts in Geography | BA in Geo
+Bachelor of Arts,English,26,4,bachelor of arts in English | BA in English Literature
+Bachelor of Arts,Hindi,26,2,bachelor of arts in Hindi | BA in Hindi Literature
+Bachelor of Arts,Philosophy,26,2,bachelor of arts in Philosophy | BA in Phil
+Bachelor of Arts,Public Administration,26,3,bachelor of arts in Public Administration | BA in Public Admin
+Bachelor of Arts,Mass Communication,26,7,bachelor of arts in Mass Communication | BA in Mass Comm
+Master of Technology,Computer Science and Engineering,31,15,MTECH (Hons) in CSE | M. Tech in C.S.E
+Master of Technology,Information Technology,31,10,MTECH (Hons) in IT | M. Tech in I.T
+Master of Technology,Electronics and Communication Engineering,31,8,MTECH (Hons) in ECE | M. Tech in E.C.E
+Master of Technology,Electrical Engineering,31,9,MTECH (Hons) in EE | M. Tech in E.E
+Master of Technology,Mechanical Engineering,31,8,MTECH (Hons) in ME | M. Tech in M.E
+Master of Technology,Civil Engineering,31,6,MTECH (Hons) in CE | M. Tech in C.E
+Master of Technology,Data Science,31,6,MTECH (Hons) in Data Science | M. Tech in DS
+Master of Technology,Artificial Intelligence and Machine Learning,31,9,MTECH (Hons) in AI | M. Tech in ML
+Master of Technology,Cybersecurity,31,5,MTECH (Hons) in Cybersecurity | M. Tech in Cyber Security
+Master of Technology,Software Engineering,31,6,MTECH (Hons) in Software Engg | M. Tech in Software Engineering
+Master of Technology,Biotechnology Engineering,31,6,MTECH (Hons) in Biotech | M. Tech in Biotechnology
+Master of Engineering,Computer Science and Engineering,26,15,M.E. in CSE | M.E. Hons in C.S.E
+Master of Engineering,Electronics and Communication Engineering,26,8,M.E. in ECE | M.E. Hons in E.C.E
+Master of Engineering,Electrical Engineering,26,9,M.E. in EE | M.E. Hons in E.E
+Master of Engineering,Mechanical Engineering,26,8,M.E. in ME | M.E. Hons in M.E
+Master of Engineering,Civil Engineering,26,6,M.E. in CE | M.E. Hons in C.E
+Master of Science,Physics,34,4,MSC (Hons) in Physics | m.sc in Phy
+Master of Science,Chemistry,34,4,MSC (Hons) in Chemistry | m.sc in Chem
+Master of Science,Mathematics,34,6,MSC (Hons) in Mathematics | m.sc in Maths
+Master of Science,Statistics,34,4,MSC (Hons) in Statistics | m.sc in Stats
+Master of Science,Biology,34,4,MSC (Hons) in Biology | m.sc in Bio
+Master of Science,Microbiology,34,3,MSC (Hons) in Microbiology | m.sc in Micro Bio
+Master of Science,Biochemistry,34,3,MSC (Hons) in Biochemistry | m.sc in Bio Chemistry
+Master of Science,Bioinformatics,34,3,MSC (Hons) in Bioinformatics | m.sc in Bio Informatics
+Master of Science,Computer Science and Engineering,34,15,MSC (Hons) in CSE | m.sc in C.S.E
+Master of Science,Data Science,34,6,MSC (Hons) in Data Science | m.sc in DS
+Master of Science,Environmental Science,34,3,MSC (Hons) in Environmental Science | m.sc in Env Science
+Master of Computer Applications,Computer Applications,19,4,M.C.A. (Hons) in Computer Applications | MasterofComputerApplications in Comp Applications
+Master of Business Administration,Business Administration,23,5,MasterofBusinessAdministration in Business Administration | Master of Business Administration in Business Admin
+Master of Business Administration,Finance,23,4,MasterofBusinessAdministration in Finance | Master of Business Administration in Financial Management
+Master of Business Administration,Marketing,23,4,MasterofBusinessAdministration in Marketing | Master of Business Administration in Marketing Management
+Master of Business Administration,Human Resources Management,23,6,MasterofBusinessAdministration in Human Resources | Master of Business Administration in HR
+Master of Business Administration,Operations Management,23,5,MasterofBusinessAdministration in Operations | Master of Business Administration in Operations Management
+Master of Business Administration,International Business,23,4,MasterofBusinessAdministration in International Business | Master of Business Administration in IB
+Master of Business Administration,Entrepreneurship,23,3,MasterofBusinessAdministration in Entrepreneurship | Master of Business Administration in Startup Management
+Master of Business Administration,Banking and Finance,23,4,MasterofBusinessAdministration in Banking & Finance | Master of Business Administration in Banking and Finance
+Master of Commerce,Commerce,23,2,M Com in Commerce | M  Com in Business Studies
+Master of Commerce,Accounting,23,5,M Com in Accounting | M  Com in Accountancy
+Master of Commerce,Finance,23,4,M Com in Finance | M  Com in Financial Management
+Master of Commerce,Banking and Finance,23,4,M Com in Banking & Finance | M  Com in Banking and Finance
+Master of Arts,Economics,21,4,MASTER OF ARTS in Economics | MA in Eco
+Master of Arts,Psychology,21,5,MASTER OF ARTS in Psychology | MA in Psych
+Master of Arts,Sociology,21,2,MASTER OF ARTS in Sociology | MA in Social Work
+Master of Arts,Political Science,21,3,MASTER OF ARTS in Political Science | MA in Pol Science
+Master of Arts,History,21,1,MASTER OF ARTS in History | MA in History
+Master of Arts,Geography,21,2,MASTER OF ARTS in Geography | MA in Geo
+Master of Arts,English,21,4,MASTER OF ARTS in English | MA in English Literature
+Master of Arts,Hindi,21,2,MASTER OF ARTS in Hindi | MA in Hindi Literature
+Master of Arts,Mass Communication,21,7,MASTER OF ARTS in Mass Communication | MA in Mass Comm
+Master of Arts,Public Administration,21,3,MASTER OF ARTS in Public Administration | MA in Public Admin
+Doctor of Philosophy,Computer Science and Engineering,31,15,PhD in CSE | PH.D in C.S.E
+Doctor of Philosophy,Information Technology,31,10,PhD in IT | PH.D in I.T
+Doctor of Philosophy,Electronics and Communication Engineering,31,8,PhD in ECE | PH.D in E.C.E
+Doctor of Philosophy,Electrical Engineering,31,9,PhD in EE | PH.D in E.E
+Doctor of Philosophy,Mechanical Engineering,31,8,PhD in ME | PH.D in M.E
+Doctor of Philosophy,Civil Engineering,31,6,PhD in CE | PH.D in C.E
+Doctor of Philosophy,Chemical Engineering,31,5,PhD in Chem Engg | PH.D in Chemical Engg
+Doctor of Philosophy,Aerospace Engineering,31,6,PhD in Aero | PH.D in Aerospace
+Doctor of Philosophy,Biotechnology Engineering,31,6,PhD in Biotech | PH.D in Biotechnology
+Doctor of Philosophy,Artificial Intelligence and Machine Learning,31,9,PhD in AI | PH.D in ML
+Doctor of Philosophy,Data Science,31,6,PhD in Data Science | PH.D in DS
+Doctor of Philosophy,Cybersecurity,31,5,PhD in Cybersecurity | PH.D in Cyber Security
+Doctor of Philosophy,Software Engineering,31,6,PhD in Software Engg | PH.D in Software Engineering
+Doctor of Philosophy,Instrumentation Engineering,31,5,PhD in Instrumentation | PH.D in Instrumentation Engg
+Doctor of Philosophy,Production Engineering,31,6,PhD in Production | PH.D in Production Engg
+Doctor of Philosophy,Mining Engineering,31,3,PhD in Mining | PH.D in Mining Engg
+Doctor of Philosophy,Metallurgical Engineering,31,5,PhD in Metallurgy | PH.D in Metallurgical Engg
+Doctor of Philosophy,Environmental Engineering,31,4,PhD in Environmental Engg | PH.D in Environmental Engineering
+Doctor of Philosophy,Textile Engineering,31,4,PhD in Textile | PH.D in Textile Engg
+Doctor of Philosophy,Food Technology,31,4,PhD in Food Tech | PH.D in Food Technology
+Doctor of Philosophy,Physics,31,4,PhD in Physics | PH.D in Phy
+Doctor of Philosophy,Chemistry,31,4,PhD in Chemistry | PH.D in Chem
+Doctor of Philosophy,Mathematics,31,6,PhD in Mathematics | PH.D in Maths
+Doctor of Philosophy,Statistics,31,4,PhD in Statistics | PH.D in Stats
+Doctor of Philosophy,Biology,31,4,PhD in Biology | PH.D in Bio
+Doctor of Philosophy,Microbiology,31,3,PhD in Microbiology | PH.D in Micro Bio
+Doctor of Philosophy,Biochemistry,31,3,PhD in Biochemistry | PH.D in Bio Chemistry
+Doctor of Philosophy,Bioinformatics,31,3,PhD in Bioinformatics | PH.D in Bio Informatics
+Doctor of Philosophy,Zoology,31,2,PhD in Zoology | PH.D in Zoo
+Doctor of Philosophy,Botany,31,2,PhD in Botany | PH.D in Plant Science
+Doctor of Philosophy,Geology,31,2,PhD in Geology | PH.D in Earth Science
+Doctor of Philosophy,Environmental Science,31,3,PhD in Environmental Science | PH.D in Env Science
+Doctor of Philosophy,Computer Applications,31,4,PhD in Computer Applications | PH.D in Comp Applications
+Doctor of Philosophy,Computer Science (Applications),31,3,PhD in Computer Science (Applications) | PH.D in CS Applications
+Doctor of Philosophy,Business Administration,31,5,PhD in Business Administration | PH.D in Business Admin
+Doctor of Philosophy,Finance,31,4,PhD in Finance | PH.D in Financial Management
+Doctor of Philosophy,Marketing,31,4,PhD in Marketing | PH.D in Marketing Management
+Doctor of Philosophy,Human Resources Management,31,6,PhD in Human Resources | PH.D in HR
+Doctor of Philosophy,Operations Management,31,5,PhD in Operations | PH.D in Operations Management
+Doctor of Philosophy,International Business,31,4,PhD in International Business | PH.D in IB
+Doctor of Philosophy,Entrepreneurship,31,3,PhD in Entrepreneurship | PH.D in Startup Management
+Doctor of Philosophy,Commerce,31,2,PhD in Commerce | PH.D in Business Studies
+Doctor of Philosophy,Accounting,31,5,PhD in Accounting | PH.D in Accountancy
+Doctor of Philosophy,Banking and Finance,31,4,PhD in Banking & Finance | PH.D in Banking and Finance
+Doctor of Philosophy,Economics,31,4,PhD in Economics | PH.D in Eco
+Doctor of Philosophy,Psychology,31,5,PhD in Psychology | PH.D in Psych
+Doctor of Philosophy,Sociology,31,2,PhD in Sociology | PH.D in Social Work
+Doctor of Philosophy,Political Science,31,3,PhD in Political Science | PH.D in Pol Science
+Doctor of Philosophy,History,31,1,PhD in History | PH.D in History
+Doctor of Philosophy,Geography,31,2,PhD in Geography | PH.D in Geo
+Doctor of Philosophy,English,31,4,PhD in English | PH.D in English Literature
+Doctor of Philosophy,Hindi,31,2,PhD in Hindi | PH.D in Hindi Literature
+Doctor of Philosophy,Philosophy,31,2,PhD in Philosophy | PH.D in Phil
+Doctor of Philosophy,Public Administration,31,3,PhD in Public Administration | PH.D in Public Admin
+Doctor of Philosophy,Mass Communication,31,7,PhD in Mass Communication | PH.D in Mass Comm
+Doctor of Philosophy,Law,31,6,PhD in Law | PH.D in LLB
+Doctor of Philosophy,Medicine,31,3,PhD in MBBS | PH.D in Medicine
+Doctor of Philosophy,Nursing,31,2,PhD in Nursing | PH.D in BSc Nursing
+Doctor of Philosophy,Pharmacy,31,3,PhD in Pharmacy | PH.D in Pharmaceutical Sciences
+Doctor of Philosophy,Physiotherapy,31,3,PhD in Physiotherapy | PH.D in Physical Therapy
+Doctor of Philosophy,Dentistry,31,3,PhD in Dentistry | PH.D in BDS
+Doctor of Philosophy,Ayurveda,31,3,PhD in Ayurveda | PH.D in BAMS
+Doctor of Philosophy,Architecture,31,4,PhD in Architecture | PH.D in Arch
+Doctor of Philosophy,Design,31,8,PhD in Design | PH.D in Industrial Design
+Doctor of Philosophy,Education,31,4,PhD in Education | PH.D in B.Ed
+Doctor of Philosophy,Hotel Management,31,5,PhD in Hotel Management | PH.D in Hospitality
+Doctor of Philosophy,Agriculture,31,4,PhD in Agriculture | PH.D in Agricultural Science
+Doctor of Philosophy,General,31,6,PhD in General | PH.D in Not Specified

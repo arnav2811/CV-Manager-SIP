@@ -1,0 +1,261 @@
+expected_label,predicted_label,count,is_correct
+Bachelor of Science||Computer Science and Engineering,Bachelor of Science||__NONE__,35,False
+Master of Science||Computer Science and Engineering,Master of Science||__NONE__,35,False
+Bachelor of Business Administration||Accounting,Bachelor of Science||Accounting,30,False
+Bachelor of Business Administration||Banking and Finance,Bachelor of Science||Banking and Finance,30,False
+Bachelor of Business Administration||Business Administration,Bachelor of Science||Business Administration,30,False
+Bachelor of Business Administration||Commerce,Bachelor of Science||Commerce,30,False
+Bachelor of Business Administration||Entrepreneurship,Bachelor of Science||Entrepreneurship,30,False
+Bachelor of Business Administration||Finance,Bachelor of Science||Finance,30,False
+Bachelor of Business Administration||Human Resources Management,Bachelor of Science||Human Resources Management,30,False
+Bachelor of Business Administration||International Business,Bachelor of Science||International Business,30,False
+Bachelor of Business Administration||Marketing,Bachelor of Science||Marketing,30,False
+Bachelor of Business Administration||Operations Management,Bachelor of Science||Operations Management,30,False
+Bachelor of Computer Applications||Computer Applications,Bachelor of Science||Computer Applications,30,False
+Doctor of Philosophy||Computer Science and Engineering,Doctor of Philosophy||__NONE__,30,False
+Master of Business Administration||Accounting,Master of Science||Accounting,30,False
+Master of Business Administration||Banking and Finance,Master of Science||Banking and Finance,30,False
+Master of Business Administration||Business Administration,Master of Science||Business Administration,30,False
+Master of Business Administration||Commerce,Master of Science||Commerce,30,False
+Master of Business Administration||Entrepreneurship,Master of Science||Entrepreneurship,30,False
+Master of Business Administration||Finance,Master of Science||Finance,30,False
+Master of Business Administration||Human Resources Management,Master of Science||Human Resources Management,30,False
+Master of Business Administration||International Business,Master of Science||International Business,30,False
+Master of Business Administration||Marketing,Master of Science||Marketing,30,False
+Master of Business Administration||Operations Management,Master of Science||Operations Management,30,False
+Master of Computer Applications||Computer Applications,Master of Science||Computer Applications,30,False
+Bachelor of Computer Applications||Computer Science (Applications),Bachelor of Science||Computer Science (Applications),24,False
+Master of Computer Applications||Computer Science (Applications),Master of Science||Computer Science (Applications),24,False
+Diploma in Engineering||Aerospace Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Artificial Intelligence and Machine Learning,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Biotechnology Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Computer Science and Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Electrical Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Electronics and Communication Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Instrumentation Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Metallurgical Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Production Engineering,Diploma in Engineering||__NONE__,15,False
+Diploma in Engineering||Textile Engineering,Diploma in Engineering||__NONE__,15,False
+Post Graduate Diploma||Accounting,Diploma in Engineering||Accounting,15,False
+Post Graduate Diploma||Banking and Finance,Diploma in Engineering||Banking and Finance,15,False
+Post Graduate Diploma||Business Administration,Diploma in Engineering||Business Administration,15,False
+Post Graduate Diploma||Commerce,Diploma in Engineering||Commerce,15,False
+Post Graduate Diploma||Entrepreneurship,Diploma in Engineering||Entrepreneurship,15,False
+Post Graduate Diploma||Finance,Diploma in Engineering||Finance,15,False
+Post Graduate Diploma||Human Resources Management,Diploma in Engineering||__NONE__,15,False
+Post Graduate Diploma||International Business,Diploma in Engineering||International Business,15,False
+Post Graduate Diploma||Marketing,Diploma in Engineering||Marketing,15,False
+Post Graduate Diploma||Operations Management,Diploma in Engineering||Operations Management,15,False
+Bachelor of Computer Applications||__NONE__,Bachelor of Engineering||__NONE__,6,False
+Master of Computer Applications||__NONE__,Bachelor of Engineering||__NONE__,6,False
+Bachelor of Business Administration||Human Resources Management,Bachelor of Business Administration||__NONE__,5,False
+Bachelor of Engineering||Aerospace Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Artificial Intelligence and Machine Learning,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Biotechnology Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Computer Science and Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Electrical Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Electronics and Communication Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Instrumentation Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Metallurgical Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Production Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Engineering||Textile Engineering,Bachelor of Engineering||__NONE__,5,False
+Bachelor of Technology||Aerospace Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Artificial Intelligence and Machine Learning,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Biotechnology Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Computer Science and Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Electrical Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Electronics and Communication Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Instrumentation Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Metallurgical Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Production Engineering,Bachelor of Technology||__NONE__,5,False
+Bachelor of Technology||Textile Engineering,Bachelor of Technology||__NONE__,5,False
+Master of Business Administration||Human Resources Management,Master of Business Administration||__NONE__,5,False
+Master of Engineering||Aerospace Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Artificial Intelligence and Machine Learning,Master of Engineering||__NONE__,5,False
+Master of Engineering||Biotechnology Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Computer Science and Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Electrical Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Electronics and Communication Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Instrumentation Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Metallurgical Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Production Engineering,Master of Engineering||__NONE__,5,False
+Master of Engineering||Textile Engineering,Master of Engineering||__NONE__,5,False
+Master of Technology||Aerospace Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Artificial Intelligence and Machine Learning,Master of Technology||__NONE__,5,False
+Master of Technology||Biotechnology Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Computer Science and Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Electrical Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Electronics and Communication Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Instrumentation Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Metallurgical Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Production Engineering,Master of Technology||__NONE__,5,False
+Master of Technology||Textile Engineering,Master of Technology||__NONE__,5,False
+Post Graduate Diploma||Human Resources Management,Post Graduate Diploma||__NONE__,5,False
+Post Graduate Diploma||__NONE__,Post Graduate Diploma||Business Administration,4,False
+Bachelor of Engineering||__NONE__,Master of Engineering||__NONE__,3,False
+Master of Technology||__NONE__,Master of Engineering||__NONE__,2,False
+Bachelor of Science||__NONE__,Bachelor of Arts||__NONE__,1,False
+Bachelor of Science||__NONE__,Bachelor of Engineering||__NONE__,1,False
+Bachelor of Science||__NONE__,Bachelor of Technology||__NONE__,1,False
+Bachelor of Science||__NONE__,Enginering in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tecnolgy in Science||__NONE__,1,False
+Bachelor of Science||__NONE__,Tecnology in Science||__NONE__,1,False
+Bachelor of Technology||__NONE__,Bachelor of Engineering||__NONE__,1,False
+Bachelor of Technology||__NONE__,Diploma in Engineering||__NONE__,1,False
+Bachelor of Technology||__NONE__,Master of Engineering||__NONE__,1,False
+Bachelor of Technology||__NONE__,Master of Technology||__NONE__,1,False
+Master of Technology||__NONE__,Bachelor of Commerce||__NONE__,1,False
+Master of Technology||__NONE__,Master Bacheler||__NONE__,1,False
+Diploma in Engineering||__NONE__,Diploma in Engineering||__NONE__,126,True
+Bachelor of Technology||__NONE__,Bachelor of Technology||__NONE__,58,True
+Bachelor of Engineering||__NONE__,Bachelor of Engineering||__NONE__,44,True
+12th Standard||__NONE__,12th Standard||__NONE__,37,True
+Bachelor of Science||Biochemistry,Bachelor of Science||Biochemistry,35,True
+Bachelor of Science||Bioinformatics,Bachelor of Science||Bioinformatics,35,True
+Bachelor of Science||Biology,Bachelor of Science||Biology,35,True
+Bachelor of Science||Botany,Bachelor of Science||Botany,35,True
+Bachelor of Science||Chemistry,Bachelor of Science||Chemistry,35,True
+Bachelor of Science||Geology,Bachelor of Science||Geology,35,True
+Bachelor of Science||Mathematics,Bachelor of Science||Mathematics,35,True
+Bachelor of Science||Microbiology,Bachelor of Science||Microbiology,35,True
+Bachelor of Science||Physics,Bachelor of Science||Physics,35,True
+Bachelor of Science||Statistics,Bachelor of Science||Statistics,35,True
+Bachelor of Science||Zoology,Bachelor of Science||Zoology,35,True
+Bachelor of Science||__NONE__,Bachelor of Science||__NONE__,35,True
+Master of Science||Biochemistry,Master of Science||Biochemistry,35,True
+Master of Science||Bioinformatics,Master of Science||Bioinformatics,35,True
+Master of Science||Biology,Master of Science||Biology,35,True
+Master of Science||Botany,Master of Science||Botany,35,True
+Master of Science||Chemistry,Master of Science||Chemistry,35,True
+Master of Science||Geology,Master of Science||Geology,35,True
+Master of Science||Mathematics,Master of Science||Mathematics,35,True
+Master of Science||Microbiology,Master of Science||Microbiology,35,True
+Master of Science||Physics,Master of Science||Physics,35,True
+Master of Science||Statistics,Master of Science||Statistics,35,True
+Master of Science||Zoology,Master of Science||Zoology,35,True
+Master of Science||__NONE__,Master of Science||__NONE__,34,True
+Post Graduate Diploma||__NONE__,Post Graduate Diploma||__NONE__,32,True
+10th Standard||__NONE__,10th Standard||__NONE__,31,True
+Doctor of Philosophy||__NONE__,Doctor of Philosophy||__NONE__,31,True
+Doctor of Philosophy||Biochemistry,Doctor of Philosophy||Biochemistry,30,True
+Doctor of Philosophy||Bioinformatics,Doctor of Philosophy||Bioinformatics,30,True
+Doctor of Philosophy||Biology,Doctor of Philosophy||Biology,30,True
+Doctor of Philosophy||Botany,Doctor of Philosophy||Botany,30,True
+Doctor of Philosophy||Chemistry,Doctor of Philosophy||Chemistry,30,True
+Doctor of Philosophy||Geology,Doctor of Philosophy||Geology,30,True
+Doctor of Philosophy||Mathematics,Doctor of Philosophy||Mathematics,30,True
+Doctor of Philosophy||Microbiology,Doctor of Philosophy||Microbiology,30,True
+Doctor of Philosophy||Physics,Doctor of Philosophy||Physics,30,True
+Doctor of Philosophy||Statistics,Doctor of Philosophy||Statistics,30,True
+Doctor of Philosophy||Zoology,Doctor of Philosophy||Zoology,30,True
+Bachelor of Commerce||__NONE__,Bachelor of Commerce||__NONE__,29,True
+Master of Technology||__NONE__,Master of Technology||__NONE__,27,True
+Master of Engineering||__NONE__,Master of Engineering||__NONE__,26,True
+Bachelor of Arts||__NONE__,Bachelor of Arts||__NONE__,25,True
+Master of Commerce||__NONE__,Master of Commerce||__NONE__,23,True
+Master of Arts||__NONE__,Master of Arts||__NONE__,20,True
+Bachelor of Computer Applications||__NONE__,Bachelor of Computer Applications||__NONE__,19,True
+Master of Business Administration||__NONE__,Master of Business Administration||__NONE__,19,True
+Master of Computer Applications||__NONE__,Master of Computer Applications||__NONE__,19,True
+Bachelor of Business Administration||__NONE__,Bachelor of Business Administration||__NONE__,18,True
+Diploma in Engineering||Chemical Engineering,Diploma in Engineering||Chemical Engineering,15,True
+Diploma in Engineering||Civil Engineering,Diploma in Engineering||Civil Engineering,15,True
+Diploma in Engineering||Cybersecurity,Diploma in Engineering||Cybersecurity,15,True
+Diploma in Engineering||Data Science,Diploma in Engineering||Data Science,15,True
+Diploma in Engineering||Environmental Engineering,Diploma in Engineering||Environmental Engineering,15,True
+Diploma in Engineering||Food Technology,Diploma in Engineering||Food Technology,15,True
+Diploma in Engineering||Information Technology,Diploma in Engineering||Information Technology,15,True
+Diploma in Engineering||Mechanical Engineering,Diploma in Engineering||Mechanical Engineering,15,True
+Diploma in Engineering||Mining Engineering,Diploma in Engineering||Mining Engineering,15,True
+Diploma in Engineering||Software Engineering,Diploma in Engineering||Software Engineering,15,True
+Post Graduate Diploma||Business Administration,Post Graduate Diploma||Business Administration,11,True
+Bachelor of Business Administration||Accounting,Bachelor of Business Administration||Accounting,5,True
+Bachelor of Business Administration||Banking and Finance,Bachelor of Business Administration||Banking and Finance,5,True
+Bachelor of Business Administration||Business Administration,Bachelor of Business Administration||Business Administration,5,True
+Bachelor of Business Administration||Commerce,Bachelor of Business Administration||Commerce,5,True
+Bachelor of Business Administration||Entrepreneurship,Bachelor of Business Administration||Entrepreneurship,5,True
+Bachelor of Business Administration||Finance,Bachelor of Business Administration||Finance,5,True
+Bachelor of Business Administration||International Business,Bachelor of Business Administration||International Business,5,True
+Bachelor of Business Administration||Marketing,Bachelor of Business Administration||Marketing,5,True
+Bachelor of Business Administration||Operations Management,Bachelor of Business Administration||Operations Management,5,True
+Bachelor of Computer Applications||Computer Applications,Bachelor of Computer Applications||Computer Applications,5,True
+Bachelor of Engineering||Business Administration,Bachelor of Engineering||Business Administration,5,True
+Bachelor of Engineering||Chemical Engineering,Bachelor of Engineering||Chemical Engineering,5,True
+Bachelor of Engineering||Chemistry,Bachelor of Engineering||Chemistry,5,True
+Bachelor of Engineering||Civil Engineering,Bachelor of Engineering||Civil Engineering,5,True
+Bachelor of Engineering||Cybersecurity,Bachelor of Engineering||Cybersecurity,5,True
+Bachelor of Engineering||Data Science,Bachelor of Engineering||Data Science,5,True
+Bachelor of Engineering||Environmental Engineering,Bachelor of Engineering||Environmental Engineering,5,True
+Bachelor of Engineering||Finance,Bachelor of Engineering||Finance,5,True
+Bachelor of Engineering||Food Technology,Bachelor of Engineering||Food Technology,5,True
+Bachelor of Engineering||Information Technology,Bachelor of Engineering||Information Technology,5,True
+Bachelor of Engineering||Mathematics,Bachelor of Engineering||Mathematics,5,True
+Bachelor of Engineering||Mechanical Engineering,Bachelor of Engineering||Mechanical Engineering,5,True
+Bachelor of Engineering||Mining Engineering,Bachelor of Engineering||Mining Engineering,5,True
+Bachelor of Engineering||Physics,Bachelor of Engineering||Physics,5,True
+Bachelor of Engineering||Software Engineering,Bachelor of Engineering||Software Engineering,5,True
+Bachelor of Technology||Business Administration,Bachelor of Technology||Business Administration,5,True
+Bachelor of Technology||Chemical Engineering,Bachelor of Technology||Chemical Engineering,5,True
+Bachelor of Technology||Chemistry,Bachelor of Technology||Chemistry,5,True
+Bachelor of Technology||Civil Engineering,Bachelor of Technology||Civil Engineering,5,True
+Bachelor of Technology||Cybersecurity,Bachelor of Technology||Cybersecurity,5,True
+Bachelor of Technology||Data Science,Bachelor of Technology||Data Science,5,True
+Bachelor of Technology||Environmental Engineering,Bachelor of Technology||Environmental Engineering,5,True
+Bachelor of Technology||Finance,Bachelor of Technology||Finance,5,True
+Bachelor of Technology||Food Technology,Bachelor of Technology||Food Technology,5,True
+Bachelor of Technology||Information Technology,Bachelor of Technology||Information Technology,5,True
+Bachelor of Technology||Mathematics,Bachelor of Technology||Mathematics,5,True
+Bachelor of Technology||Mechanical Engineering,Bachelor of Technology||Mechanical Engineering,5,True
+Bachelor of Technology||Mining Engineering,Bachelor of Technology||Mining Engineering,5,True
+Bachelor of Technology||Physics,Bachelor of Technology||Physics,5,True
+Bachelor of Technology||Software Engineering,Bachelor of Technology||Software Engineering,5,True
+Master of Business Administration||Accounting,Master of Business Administration||Accounting,5,True
+Master of Business Administration||Banking and Finance,Master of Business Administration||Banking and Finance,5,True
+Master of Business Administration||Business Administration,Master of Business Administration||Business Administration,5,True
+Master of Business Administration||Commerce,Master of Business Administration||Commerce,5,True
+Master of Business Administration||Entrepreneurship,Master of Business Administration||Entrepreneurship,5,True
+Master of Business Administration||Finance,Master of Business Administration||Finance,5,True
+Master of Business Administration||International Business,Master of Business Administration||International Business,5,True
+Master of Business Administration||Marketing,Master of Business Administration||Marketing,5,True
+Master of Business Administration||Operations Management,Master of Business Administration||Operations Management,5,True
+Master of Computer Applications||Computer Applications,Master of Computer Applications||Computer Applications,5,True
+Master of Engineering||Business Administration,Master of Engineering||Business Administration,5,True
+Master of Engineering||Chemical Engineering,Master of Engineering||Chemical Engineering,5,True
+Master of Engineering||Chemistry,Master of Engineering||Chemistry,5,True
+Master of Engineering||Civil Engineering,Master of Engineering||Civil Engineering,5,True
+Master of Engineering||Cybersecurity,Master of Engineering||Cybersecurity,5,True
+Master of Engineering||Data Science,Master of Engineering||Data Science,5,True
+Master of Engineering||Environmental Engineering,Master of Engineering||Environmental Engineering,5,True
+Master of Engineering||Finance,Master of Engineering||Finance,5,True
+Master of Engineering||Food Technology,Master of Engineering||Food Technology,5,True
+Master of Engineering||Information Technology,Master of Engineering||Information Technology,5,True
+Master of Engineering||Mathematics,Master of Engineering||Mathematics,5,True
+Master of Engineering||Mechanical Engineering,Master of Engineering||Mechanical Engineering,5,True
+Master of Engineering||Mining Engineering,Master of Engineering||Mining Engineering,5,True
+Master of Engineering||Physics,Master of Engineering||Physics,5,True
+Master of Engineering||Software Engineering,Master of Engineering||Software Engineering,5,True
+Master of Technology||Business Administration,Master of Technology||Business Administration,5,True
+Master of Technology||Chemical Engineering,Master of Technology||Chemical Engineering,5,True
+Master of Technology||Chemistry,Master of Technology||Chemistry,5,True
+Master of Technology||Civil Engineering,Master of Technology||Civil Engineering,5,True
+Master of Technology||Cybersecurity,Master of Technology||Cybersecurity,5,True
+Master of Technology||Data Science,Master of Technology||Data Science,5,True
+Master of Technology||Environmental Engineering,Master of Technology||Environmental Engineering,5,True
+Master of Technology||Finance,Master of Technology||Finance,5,True
+Master of Technology||Food Technology,Master of Technology||Food Technology,5,True
+Master of Technology||Information Technology,Master of Technology||Information Technology,5,True
+Master of Technology||Mathematics,Master of Technology||Mathematics,5,True
+Master of Technology||Mechanical Engineering,Master of Technology||Mechanical Engineering,5,True
+Master of Technology||Mining Engineering,Master of Technology||Mining Engineering,5,True
+Master of Technology||Physics,Master of Technology||Physics,5,True
+Master of Technology||Software Engineering,Master of Technology||Software Engineering,5,True
+Post Graduate Diploma||Accounting,Post Graduate Diploma||Accounting,5,True
+Post Graduate Diploma||Banking and Finance,Post Graduate Diploma||Banking and Finance,5,True
+Post Graduate Diploma||Commerce,Post Graduate Diploma||Commerce,5,True
+Post Graduate Diploma||Entrepreneurship,Post Graduate Diploma||Entrepreneurship,5,True
+Post Graduate Diploma||Finance,Post Graduate Diploma||Finance,5,True
+Post Graduate Diploma||International Business,Post Graduate Diploma||International Business,5,True
+Post Graduate Diploma||Marketing,Post Graduate Diploma||Marketing,5,True
+Post Graduate Diploma||Operations Management,Post Graduate Diploma||Operations Management,5,True
+Bachelor of Computer Applications||Computer Science (Applications),Bachelor of Computer Applications||Computer Science (Applications),4,True
+Master of Computer Applications||Computer Science (Applications),Master of Computer Applications||Computer Science (Applications),4,True

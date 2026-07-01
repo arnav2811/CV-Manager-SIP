@@ -1,0 +1,89 @@
+expected_label,predicted_label,count,is_correct
+Doctor of Philosophy,,39,False
+Bachelor of Technology,Bachelor of Science,18,False
+Bachelor of Technology,Bachelor of Engineering,14,False
+Master of Technology,Master of Science,14,False
+Bachelor of Arts,,12,False
+Bachelor of Science,,12,False
+Master of Business Administration,Bachelor of Engineering,11,False
+Bachelor of Technology,,8,False
+Master of Arts,,8,False
+Bachelor of Business Administration,Bachelor of Engineering,7,False
+Bachelor of Commerce,,7,False
+Master of Science,,7,False
+Bachelor of Business Administration,,6,False
+Bachelor of Engineering,,6,False
+Bachelor of Technology,with specialization,6,False
+Bachelor of Engineering,Bachelor of Science,5,False
+Master of Arts,Master of Science,5,False
+Master of Commerce,,5,False
+Bachelor of Technology,Master of Science,4,False
+Doctor of Philosophy,Master of Science,4,False
+Master of Engineering,Master of Science,4,False
+Doctor of Philosophy,with specialization,3,False
+Master of Technology,,3,False
+Bachelor of Arts,Bachelor of Science,2,False
+Bachelor of Arts,bachelor of arts,2,False
+Bachelor of Arts,with specialization,2,False
+Bachelor of Commerce,with specialization,2,False
+Bachelor of Computer Applications,,2,False
+Bachelor of Engineering,Master of Engineering,2,False
+Bachelor of Engineering,Master of Science,2,False
+Bachelor of Science,with specialization,2,False
+Doctor of Philosophy,DoctorofPhilosophy,2,False
+Master of Arts,MasterofArts,2,False
+Master of Business Administration,,2,False
+Master of Technology,Master Bacheler,2,False
+Master of Technology,Master Tecnolgy,2,False
+Master of Technology,with specialization,2,False
+Bachelor of Arts,BachelorofArts,1,False
+Bachelor of Business Administration,with specialization,1,False
+Bachelor of Commerce,Hons,1,False
+Bachelor of Computer Applications,with specialization,1,False
+Bachelor of Engineering,BACHELER OF ENGINEERING,1,False
+Bachelor of Engineering,Bacheler of Engineering,1,False
+Bachelor of Engineering,Bacheler of Engineering Hons,1,False
+Bachelor of Engineering,Bachelor of Engineering Hons,1,False
+Bachelor of Engineering,Diploma in Engineering,1,False
+Bachelor of Engineering,Master of Technology,1,False
+Bachelor of Engineering,Tecnolgy of Engineering,1,False
+Bachelor of Engineering,bachelor of engineering,1,False
+Bachelor of Engineering,with specialization,1,False
+Bachelor of Science,BScHons,1,False
+Bachelor of Science,BScHons degree,1,False
+Bachelor of Science,bachelor of science,1,False
+Bachelor of Technology,YEAR B.TECH with specialization,1,False
+Bachelor of Technology,Year B Tech with specialization,1,False
+Bachelor of Technology,YearB.Tech with specialization,1,False
+Doctor of Philosophy,Bachelor of Medicine and Bachelor of Surgery,1,False
+Doctor of Philosophy,Bachelor of Science,1,False
+Doctor of Philosophy,DoctorofPhilosophy degree,1,False
+Master of Arts,MasterofArts degree,1,False
+Master of Business Administration,Master of Engineering,1,False
+Master of Business Administration,Master of Science,1,False
+Master of Business Administration,Post Graduate Diploma,1,False
+Master of Commerce,Master of Commerce Hons,1,False
+Master of Commerce,Master of Science,1,False
+Master of Commerce,master of commerce,1,False
+Master of Commerce,with specialization,1,False
+Master of Computer Applications,,1,False
+Master of Computer Applications,Bachelor of Computer Applications,1,False
+Master of Computer Applications,Master of Science,1,False
+Master of Science,master of science,1,False
+Master of Technology,Master Bacheler degree,1,False
+Master of Technology,Master Tecnolgy degree,1,False
+Doctor of Philosophy,Doctor of Philosophy,357,True
+Bachelor of Science,Bachelor of Science,79,True
+Bachelor of Technology,Bachelor of Technology,61,True
+Master of Science,Master of Science,58,True
+Bachelor of Arts,Bachelor of Arts,47,True
+Master of Arts,Master of Arts,44,True
+Bachelor of Engineering,Bachelor of Engineering,42,True
+Master of Technology,Master of Technology,41,True
+Master of Business Administration,Master of Business Administration,32,True
+Master of Engineering,Master of Engineering,26,True
+Bachelor of Business Administration,Bachelor of Business Administration,22,True
+Master of Commerce,Master of Commerce,15,True
+Bachelor of Commerce,Bachelor of Commerce,14,True
+Bachelor of Computer Applications,Bachelor of Computer Applications,3,True
+Master of Computer Applications,Master of Computer Applications,3,True

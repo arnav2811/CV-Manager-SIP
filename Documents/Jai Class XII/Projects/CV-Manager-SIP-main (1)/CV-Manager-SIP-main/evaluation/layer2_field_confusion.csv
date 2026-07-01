@@ -1,0 +1,85 @@
+expected_label,predicted_label,count,is_correct
+Computer Science and Engineering,,203,False
+Human Resources Management,,166,False
+Artificial Intelligence and Machine Learning,,103,False
+Metallurgical Engineering,,97,False
+Aerospace Engineering,,93,False
+Biotechnology Engineering,,93,False
+Electrical Engineering,,93,False
+Electronics and Communication Engineering,,93,False
+Instrumentation Engineering,,93,False
+Production Engineering,,93,False
+Textile Engineering,,93,False
+Business Administration,,35,False
+Finance,,35,False
+Accounting,,31,False
+Banking and Finance,,31,False
+Commerce,,31,False
+Entrepreneurship,,31,False
+International Business,,31,False
+Marketing,,31,False
+Operations Management,,31,False
+Computer Applications,,27,False
+Computer Science (Applications),,24,False
+Mathematics,,24,False
+Biochemistry,,20,False
+Bioinformatics,,20,False
+Botany,,20,False
+Geology,Geography,20,False
+Microbiology,,20,False
+Statistics,,20,False
+,Business Administration,12,False
+Cybersecurity,,7,False
+Data Science,,7,False
+Environmental Engineering,,7,False
+Food Technology,,7,False
+Information Technology,,7,False
+Chemical Engineering,,3,False
+Civil Engineering,,3,False
+Mechanical Engineering,,3,False
+Mining Engineering,,3,False
+Software Engineering,,3,False
+Computer Science (Applications),Computer Science and Engineering,2,False
+,,1521,True
+Chemistry,Chemistry,228,True
+Physics,Physics,228,True
+Mathematics,Mathematics,204,True
+Business Administration,Business Administration,201,True
+Finance,Finance,200,True
+Biology,Biology,164,True
+Zoology,Zoology,164,True
+Biochemistry,Biochemistry,144,True
+Bioinformatics,Bioinformatics,144,True
+Botany,Botany,144,True
+Geology,Geology,144,True
+Microbiology,Microbiology,144,True
+Statistics,Statistics,144,True
+Accounting,Accounting,140,True
+Banking and Finance,Banking and Finance,140,True
+Commerce,Commerce,140,True
+Entrepreneurship,Entrepreneurship,140,True
+International Business,International Business,140,True
+Marketing,Marketing,140,True
+Operations Management,Operations Management,140,True
+Cybersecurity,Cybersecurity,100,True
+Chemical Engineering,Chemical Engineering,94,True
+Civil Engineering,Civil Engineering,94,True
+Mechanical Engineering,Mechanical Engineering,94,True
+Mining Engineering,Mining Engineering,94,True
+Software Engineering,Software Engineering,94,True
+Data Science,Data Science,90,True
+Environmental Engineering,Environmental Engineering,90,True
+Food Technology,Food Technology,90,True
+Information Technology,Information Technology,90,True
+Computer Applications,Computer Applications,85,True
+Computer Science (Applications),Computer Science (Applications),69,True
+Computer Science and Engineering,Computer Science and Engineering,48,True
+Human Resources Management,Human Resources Management,5,True
+Aerospace Engineering,Aerospace Engineering,4,True
+Artificial Intelligence and Machine Learning,Artificial Intelligence and Machine Learning,4,True
+Biotechnology Engineering,Biotechnology Engineering,4,True
+Electrical Engineering,Electrical Engineering,4,True
+Electronics and Communication Engineering,Electronics and Communication Engineering,4,True
+Instrumentation Engineering,Instrumentation Engineering,4,True
+Production Engineering,Production Engineering,4,True
+Textile Engineering,Textile Engineering,4,True

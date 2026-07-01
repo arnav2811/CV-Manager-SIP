@@ -1,0 +1,47 @@
+expected_label,predicted_label,count,is_correct
+Computer Science and Engineering,,135,False
+Aerospace Engineering,,35,False
+Artificial Intelligence and Machine Learning,,35,False
+Biotechnology Engineering,,35,False
+Electrical Engineering,,35,False
+Electronics and Communication Engineering,,35,False
+Instrumentation Engineering,,35,False
+Metallurgical Engineering,,35,False
+Production Engineering,,35,False
+Textile Engineering,,35,False
+Human Resources Management,,30,False
+,Business Administration,4,False
+,,682,True
+Chemistry,Chemistry,120,True
+Mathematics,Mathematics,120,True
+Physics,Physics,120,True
+Business Administration,Business Administration,116,True
+Finance,Finance,110,True
+Biochemistry,Biochemistry,100,True
+Bioinformatics,Bioinformatics,100,True
+Biology,Biology,100,True
+Botany,Botany,100,True
+Geology,Geology,100,True
+Microbiology,Microbiology,100,True
+Statistics,Statistics,100,True
+Zoology,Zoology,100,True
+Accounting,Accounting,90,True
+Banking and Finance,Banking and Finance,90,True
+Commerce,Commerce,90,True
+Entrepreneurship,Entrepreneurship,90,True
+International Business,International Business,90,True
+Marketing,Marketing,90,True
+Operations Management,Operations Management,90,True
+Computer Applications,Computer Applications,70,True
+Human Resources Management,Human Resources Management,60,True
+Computer Science (Applications),Computer Science (Applications),56,True
+Chemical Engineering,Chemical Engineering,35,True
+Civil Engineering,Civil Engineering,35,True
+Cybersecurity,Cybersecurity,35,True
+Data Science,Data Science,35,True
+Environmental Engineering,Environmental Engineering,35,True
+Food Technology,Food Technology,35,True
+Information Technology,Information Technology,35,True
+Mechanical Engineering,Mechanical Engineering,35,True
+Mining Engineering,Mining Engineering,35,True
+Software Engineering,Software Engineering,35,True

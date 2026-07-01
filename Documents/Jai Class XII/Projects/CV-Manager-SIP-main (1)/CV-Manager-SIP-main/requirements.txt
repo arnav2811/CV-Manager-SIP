@@ -1,0 +1,28 @@
+# CV Manager SIP — Python Dependencies
+# =====================================
+# Install with: pip install -r requirements.txt
+#
+# Minimum install (RapidFuzz engine only — fastest, no ML):
+#   pip install rapidfuzz
+#
+# Standard install (recommended — all lightweight engines):
+#   pip install rapidfuzz scikit-learn numpy
+#
+# Full install (all engines including semantic embeddings):
+#   pip install -r requirements.txt
+#
+# NOTE: sentence-transformers + torch are optional heavyweight deps (~500 MB).
+#       The application degrades gracefully when they are absent — the
+#       Embeddings engine (B3) is skipped and all other engines still work.
+
+# ── Core: RapidFuzz engine (normalizer_rapidfuzz.py, engine_orchestrator.py)
+rapidfuzz>=3.0.0
+
+# ── TF-IDF engine (normalizer_tfidf.py)
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# ── Embeddings engine (normalizer_embeddings.py)  [OPTIONAL — heavy]
+# Only install if you need the semantic similarity engine (Engine B-3).
+sentence-transformers>=2.2.0
+torch>=2.0.0

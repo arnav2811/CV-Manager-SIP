@@ -1,0 +1,290 @@
+expected_label,predicted_label,count,is_correct
+Post Graduate Diploma,Diploma in Engineering,404,False
+Bachelor of Science,,250,False
+Diploma in Engineering,Post Graduate Diploma,213,False
+Bachelor of Business Administration,,209,False
+Master of Business Administration,Master of Science,152,False
+Bachelor of Business Administration,Bachelor of Science,125,False
+Doctor of Philosophy,,100,False
+Master of Computer Applications,Master of Science,50,False
+Master of Science,,50,False
+Master of Business Administration,,42,False
+Bachelor of Computer Applications,,41,False
+Bachelor of Computer Applications,Bachelor of Science,38,False
+Bachelor of Computer Applications,Bachelor of Engineering,11,False
+Master of Computer Applications,Bachelor of Engineering,11,False
+Bachelor of Technology,Bachelor of Engineering,8,False
+Master of Computer Applications,,8,False
+Bachelor of Engineering,Master of Engineering,6,False
+Bachelor of Technology,Master of Engineering,5,False
+Master of Technology,Master of Engineering,5,False
+10th Standard,Master of Arts,4,False
+12th Standard,,4,False
+10th Standard,,3,False
+Bachelor of Business Administration,Bachelor of Arts,3,False
+Bachelor of Technology,Master of Technology,3,False
+Master of Arts,,3,False
+Bachelor of Arts,Bachelor of Computer Applications,2,False
+Bachelor of Computer Applications,Bachelor of Arts,2,False
+Bachelor of Computer Applications,Bachelor of Commerce,2,False
+Bachelor of Engineering,Bachelor of Technology,2,False
+Bachelor of Engineering,Diploma in Engineering,2,False
+Bachelor of Engineering,Master of Technology,2,False
+Bachelor of Technology,Diploma in Engineering,2,False
+Master of Business Administration,Master of Arts,2,False
+Master of Business Administration,Master of Commerce,2,False
+Master of Commerce,M oCm,2,False
+Master of Computer Applications,Master of Arts,2,False
+Master of Technology,M eTch,2,False
+10th Standard,SCS Hons,1,False
+10th Standard,X Hns,1,False
+10th Standard,X oHns,1,False
+12th Standard,HCS Hons,1,False
+12th Standard,ICS Hons,1,False
+12th Standard,Plu,1,False
+Bachelor of Arts,Bachelo,1,False
+Bachelor of Arts,Bachelor of Engineering,1,False
+Bachelor of Business Administration,B.cS in Accounting,1,False
+Bachelor of Business Administration,B.cS in Banking and Finance,1,False
+Bachelor of Business Administration,B.cS in Business Administration,1,False
+Bachelor of Business Administration,B.cS in Commerce,1,False
+Bachelor of Business Administration,B.cS in Entrepreneurship,1,False
+Bachelor of Business Administration,B.cS in Finance,1,False
+Bachelor of Business Administration,B.cS in International Business,1,False
+Bachelor of Business Administration,B.cS in Marketing,1,False
+Bachelor of Business Administration,B.cS in Operations Management,1,False
+Bachelor of Business Administration,B.cS. in Accounting,1,False
+Bachelor of Business Administration,B.cS. in Banking and Finance,1,False
+Bachelor of Business Administration,B.cS. in Commerce,1,False
+Bachelor of Business Administration,B.cS. in Entrepreneurship,1,False
+Bachelor of Business Administration,B.cS. in Finance,1,False
+Bachelor of Business Administration,B.cS. in International Business,1,False
+Bachelor of Business Administration,B.cS. in Marketing,1,False
+Bachelor of Business Administration,B.cS. in Operations Management,1,False
+Bachelor of Business Administration,BCS in Accounting,1,False
+Bachelor of Business Administration,BCS in Banking and Finance,1,False
+Bachelor of Business Administration,BCS in Business Administration,1,False
+Bachelor of Business Administration,BCS in Commerce,1,False
+Bachelor of Business Administration,BCS in Entrepreneurship,1,False
+Bachelor of Business Administration,BCS in Finance,1,False
+Bachelor of Business Administration,BCS in International Business,1,False
+Bachelor of Business Administration,BCS in Marketing,1,False
+Bachelor of Business Administration,BCS in Operations Management,1,False
+Bachelor of Business Administration,BcS Hons in Accounting,1,False
+Bachelor of Business Administration,BcS Hons in Banking and Finance,1,False
+Bachelor of Business Administration,BcS Hons in Commerce,1,False
+Bachelor of Business Administration,BcS Hons in Entrepreneurship,1,False
+Bachelor of Business Administration,BcS Hons in Finance,1,False
+Bachelor of Business Administration,BcS Hons in Marketing,1,False
+Bachelor of Business Administration,BcS in Accounting,1,False
+Bachelor of Business Administration,BcS in Banking and Finance,1,False
+Bachelor of Business Administration,BcS in Business Administration,1,False
+Bachelor of Business Administration,BcS in Commerce,1,False
+Bachelor of Business Administration,BcS in Entrepreneurship,1,False
+Bachelor of Business Administration,BcS in Finance,1,False
+Bachelor of Business Administration,BcS in International Business,1,False
+Bachelor of Business Administration,BcS in Marketing,1,False
+Bachelor of Business Administration,BcS in Operations Management,1,False
+Bachelor of Commerce,Bachelor of Arts,1,False
+Bachelor of Computer Applications,B.cS in Computer Applications,1,False
+Bachelor of Computer Applications,B.cS. in Computer Applications,1,False
+Bachelor of Computer Applications,BCS in Computer Applications,1,False
+Bachelor of Computer Applications,BcS in Computer Applications,1,False
+Bachelor of Engineering,Engg of Engin,1,False
+Bachelor of Science,B.CS.,1,False
+Bachelor of Science,B.cS Hons,1,False
+Bachelor of Science,B.cS in Biochemistry,1,False
+Bachelor of Science,B.cS in Bioinformatics,1,False
+Bachelor of Science,B.cS in Biology,1,False
+Bachelor of Science,B.cS in Botany,1,False
+Bachelor of Science,B.cS in Chemistry,1,False
+Bachelor of Science,B.cS in Geology,1,False
+Bachelor of Science,B.cS in Mathematics,1,False
+Bachelor of Science,B.cS in Microbiology,1,False
+Bachelor of Science,B.cS in Physics,1,False
+Bachelor of Science,B.cS in Statistics,1,False
+Bachelor of Science,B.cS in Zoology,1,False
+Bachelor of Science,B.cS.,1,False
+Bachelor of Science,B.cS. Hons,1,False
+Bachelor of Science,B.cS. in Biochemistry,1,False
+Bachelor of Science,B.cS. in Bioinformatics,1,False
+Bachelor of Science,B.cS. in Biology,1,False
+Bachelor of Science,B.cS. in Botany,1,False
+Bachelor of Science,B.cS. in Chemistry,1,False
+Bachelor of Science,B.cS. in Geology,1,False
+Bachelor of Science,B.cS. in Mathematics,1,False
+Bachelor of Science,B.cS. in Microbiology,1,False
+Bachelor of Science,B.cS. in Physics,1,False
+Bachelor of Science,B.cS. in Statistics,1,False
+Bachelor of Science,B.cS. in Zoology,1,False
+Bachelor of Science,BCS HONS,1,False
+Bachelor of Science,BCS Hons,1,False
+Bachelor of Science,BCS in Biochemistry,1,False
+Bachelor of Science,BCS in Bioinformatics,1,False
+Bachelor of Science,BCS in Biology,1,False
+Bachelor of Science,BCS in Botany,1,False
+Bachelor of Science,BCS in Chemistry,1,False
+Bachelor of Science,BCS in Geology,1,False
+Bachelor of Science,BCS in Mathematics,1,False
+Bachelor of Science,BCS in Microbiology,1,False
+Bachelor of Science,BCS in Physics,1,False
+Bachelor of Science,BCS in Statistics,1,False
+Bachelor of Science,BCS in Zoology,1,False
+Bachelor of Science,Bachelor of Arts,1,False
+Bachelor of Science,Bachelor of Engineering,1,False
+Bachelor of Science,Bachler in Science,1,False
+Bachelor of Science,Bachllor in Science,1,False
+Bachelor of Science,BcS Hons,1,False
+Bachelor of Science,BcS Hons Hons,1,False
+Bachelor of Science,BcS Hons in Biochemistry,1,False
+Bachelor of Science,BcS Hons in Bioinformatics,1,False
+Bachelor of Science,BcS Hons in Biology,1,False
+Bachelor of Science,BcS Hons in Botany,1,False
+Bachelor of Science,BcS Hons in Chemistry,1,False
+Bachelor of Science,BcS Hons in Geology,1,False
+Bachelor of Science,BcS Hons in Mathematics,1,False
+Bachelor of Science,BcS Hons in Microbiology,1,False
+Bachelor of Science,BcS Hons in Physics,1,False
+Bachelor of Science,BcS Hons in Statistics,1,False
+Bachelor of Science,BcS Hons in Zoology,1,False
+Bachelor of Science,BcS in Biochemistry,1,False
+Bachelor of Science,BcS in Bioinformatics,1,False
+Bachelor of Science,BcS in Biology,1,False
+Bachelor of Science,BcS in Botany,1,False
+Bachelor of Science,BcS in Chemistry,1,False
+Bachelor of Science,BcS in Geology,1,False
+Bachelor of Science,BcS in Mathematics,1,False
+Bachelor of Science,BcS in Microbiology,1,False
+Bachelor of Science,BcS in Physics,1,False
+Bachelor of Science,BcS in Statistics,1,False
+Bachelor of Science,BcS in Zoology,1,False
+Bachelor of Science,Bcaheler in Science,1,False
+Bachelor of Science,Bcahellor in Science,1,False
+Bachelor of Science,Diploma in Engineering,1,False
+Bachelor of Science,Egninering in Science,1,False
+Bachelor of Science,Engnering in Science,1,False
+Bachelor of Science,Tcenolgy in Science,1,False
+Bachelor of Science,Tecnlgy in Science,1,False
+Bachelor of Science,Tecnlogy in Science,1,False
+Bachelor of Science,b.cs.,1,False
+Bachelor of Science,bcs hons,1,False
+Bachelor of Technology,,1,False
+Bachelor of Technology,B.T,1,False
+Bachelor of Technology,B.T Hons,1,False
+Bachelor of Technology,Engg of Techn,1,False
+Bachelor of Technology,b.t,1,False
+Diploma in Engineering,,1,False
+Diploma in Engineering,POLYT,1,False
+Diploma in Engineering,Polyt,1,False
+Diploma in Engineering,Polyt Hons,1,False
+Diploma in Engineering,polyt,1,False
+Doctor of Philosophy,DoctorofP,1,False
+Doctor of Philosophy,PDH Hons,1,False
+Doctor of Philosophy,PDH in Biochemistry,1,False
+Doctor of Philosophy,PDH in Bioinformatics,1,False
+Doctor of Philosophy,PDH in Biology,1,False
+Doctor of Philosophy,PDH in Botany,1,False
+Doctor of Philosophy,PDH in Chemistry,1,False
+Doctor of Philosophy,PDH in Geology,1,False
+Doctor of Philosophy,PDH in Mathematics,1,False
+Doctor of Philosophy,PDH in Microbiology,1,False
+Doctor of Philosophy,PDH in Physics,1,False
+Doctor of Philosophy,PDH in Statistics,1,False
+Doctor of Philosophy,PDH in Zoology,1,False
+Doctor of Philosophy,PDh Hons,1,False
+Doctor of Philosophy,PDh in Biochemistry,1,False
+Doctor of Philosophy,PDh in Bioinformatics,1,False
+Doctor of Philosophy,PDh in Biology,1,False
+Doctor of Philosophy,PDh in Botany,1,False
+Doctor of Philosophy,PDh in Chemistry,1,False
+Doctor of Philosophy,PDh in Geology,1,False
+Doctor of Philosophy,PDh in Mathematics,1,False
+Doctor of Philosophy,PDh in Microbiology,1,False
+Doctor of Philosophy,PDh in Physics,1,False
+Doctor of Philosophy,PDh in Statistics,1,False
+Doctor of Philosophy,PDh in Zoology,1,False
+Master of Arts,M. .,1,False
+Master of Arts,M. . Hons,1,False
+Master of Arts,M. A. oHns,1,False
+Master of Arts,M.A. oHns,1,False
+Master of Arts,Master,1,False
+Master of Arts,Master of Computer Applications,1,False
+Master of Arts,m. .,1,False
+Master of Business Administration,Bachelor of Arts,1,False
+Master of Business Administration,M. cS in Accounting,1,False
+Master of Business Administration,M. cS in Banking and Finance,1,False
+Master of Business Administration,M. cS in Commerce,1,False
+Master of Business Administration,M. cS in Entrepreneurship,1,False
+Master of Business Administration,M. cS in Finance,1,False
+Master of Business Administration,M. cS in International Business,1,False
+Master of Business Administration,M. cS in Marketing,1,False
+Master of Business Administration,M. cS in Operations Management,1,False
+Master of Commerce,,1,False
+Master of Commerce,M. OCM,1,False
+Master of Commerce,M. oCm,1,False
+Master of Commerce,M. oCm Hons,1,False
+Master of Commerce,Master of Arts,1,False
+Master of Commerce,m. ocm,1,False
+Master of Computer Applications,Bachelor of Science,1,False
+Master of Computer Applications,M. cS in Computer Applications,1,False
+Master of Computer Applications,M.C.A. oHns,1,False
+Master of Computer Applications,Master of Commerce,1,False
+Master of Engineering,M nEg,1,False
+Master of Engineering,M.E. oHns,1,False
+Master of Engineering,Master of Arts,1,False
+Master of Science,M. cS Hons,1,False
+Master of Science,M. cS in Biochemistry,1,False
+Master of Science,M. cS in Bioinformatics,1,False
+Master of Science,M. cS in Biology,1,False
+Master of Science,M. cS in Botany,1,False
+Master of Science,M. cS in Chemistry,1,False
+Master of Science,M. cS in Geology,1,False
+Master of Science,M. cS in Mathematics,1,False
+Master of Science,M. cS in Microbiology,1,False
+Master of Science,M. cS in Physics,1,False
+Master of Science,M. cS in Statistics,1,False
+Master of Science,M. cS in Zoology,1,False
+Master of Science,M.S. Hns,1,False
+Master of Science,M.S. oHns,1,False
+Master of Science,Master of Arts,1,False
+Master of Technology,,1,False
+Master of Technology,Bachelor of Commerce,1,False
+Master of Technology,M. ETCH,1,False
+Master of Technology,M. eTch,1,False
+Master of Technology,M. eTch Hons,1,False
+Master of Technology,M.T,1,False
+Master of Technology,M.T Hons,1,False
+Master of Technology,Mastcr Bacheler,1,False
+Master of Technology,Mastcr Bachellor,1,False
+Master of Technology,Mastcr Engg,1,False
+Master of Technology,Master Bach,1,False
+Master of Technology,Master of Arts,1,False
+Master of Technology,Mastr Bacheler,1,False
+Master of Technology,Mastr Bachellor,1,False
+Master of Technology,Mastr Engg,1,False
+Master of Technology,Msater Bacheler,1,False
+Master of Technology,Msater Engg,1,False
+Master of Technology,m. etch,1,False
+Master of Technology,m.t,1,False
+Post Graduate Diploma,,1,False
+Post Graduate Diploma,PDG Hons,1,False
+Post Graduate Diploma,PostGradu,1,False
+Diploma in Engineering,Diploma in Engineering,739,True
+Master of Science,Master of Science,581,True
+Bachelor of Technology,Bachelor of Technology,560,True
+Doctor of Philosophy,Doctor of Philosophy,541,True
+Bachelor of Engineering,Bachelor of Engineering,492,True
+Bachelor of Science,Bachelor of Science,487,True
+Master of Technology,Master of Technology,465,True
+Master of Engineering,Master of Engineering,446,True
+Master of Business Administration,Master of Business Administration,341,True
+Bachelor of Business Administration,Bachelor of Business Administration,286,True
+Post Graduate Diploma,Post Graduate Diploma,277,True
+Master of Computer Applications,Master of Computer Applications,83,True
+Bachelor of Computer Applications,Bachelor of Computer Applications,81,True
+Bachelor of Commerce,Bachelor of Commerce,77,True
+12th Standard,12th Standard,60,True
+10th Standard,10th Standard,58,True
+Master of Commerce,Master of Commerce,53,True
+Bachelor of Arts,Bachelor of Arts,35,True
+Master of Arts,Master of Arts,22,True

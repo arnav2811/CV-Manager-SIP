@@ -1,0 +1,32 @@
+{
+  "generated_on": "2026-06-22",
+  "scope": "Degree/qualification names only. Fields of study and specializations are excluded.",
+  "permutation_definition": [
+    "degree-only aliases",
+    "abbreviation punctuation/spacing variants",
+    "country adjective/name/code prefixes",
+    "qualification/degree/country/duration/honours suffixes",
+    "catalogued/lowercase/uppercase/title-case variants"
+  ],
+  "source_files": [
+    "data/degree_dictionary.json for India, filtered to degree-only aliases",
+    "curated USA/UK/world degree-system catalog inside tools/build_degree_system_training_datasets.py"
+  ],
+  "datasets": {
+    "indian_usa_degrees_training.csv": {
+      "rows": 9448,
+      "canonical_entries": 49,
+      "included_systems": "India + United States"
+    },
+    "indian_uk_degrees_training.csv": {
+      "rows": 9240,
+      "canonical_entries": 43,
+      "included_systems": "India + United Kingdom"
+    },
+    "indian_world_degrees_training.csv": {
+      "rows": 17913,
+      "canonical_entries": 141,
+      "included_systems": "India + United States + United Kingdom + curated world systems"
+    }
+  }
+}
