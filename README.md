@@ -2,7 +2,7 @@
 
 > **Project:** Growth Grids × University of Southampton Delhi
 > **Deadline:** 3 July 2026
-> **Current Version:** 3.6.5 (28 June 2026)
+> **Current Version:** 3.6.6 (06 July 2026)
 > **Contributors:** Arnav Mishra (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
 
 This repository contains the deliverables for the Growth Grids Summer Internship Project regarding standardisation of candidate qualification strings in CV Manager.
@@ -257,14 +257,14 @@ Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292
 
 The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only international datasets. International datasets are degree-only, so field F1 is marked `N/A`. The summary also includes accuracy, TP/FP/FN counts, resolution rate, average latency, and per-dataset confusion CSVs.
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
-|---------|----------:|---------:|---------------------:|:---------:|
-| `layer1` | 0.7614 | 0.9129 | 0.6353 | ≈ same |
-| `layer2` | 0.7753 | 0.8288 | 0.5334 | ≈ same |
-| `layer3` | **0.7985** | **0.7343** | **0.4901** | ⬆️ +101% / +42% / +206% |
-| `indian_usa` | **0.5730** | N/A | **0.5315** | ⬆️ +3.4% |
-| `indian_uk` | **0.5926** | N/A | **0.5506** | ⬆️ +3.9% |
-| `indian_world` | **0.3610** | N/A | **0.3184** | ⬆️ +1.3% |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
+|---------|----------:|---------:|---------------------:|
+| `layer1` | 0.7617 | 0.9134 | 0.6353 |
+| `layer2` | 0.7864 | 0.8312 | 0.5334 |
+| `layer3` | **0.8073** | **0.7351** | **0.4946** |
+| `indian_usa` | **0.6179** | N/A | **0.5329** |
+| `indian_uk` | **0.6330** | N/A | **0.5517** |
+| `indian_world` | **0.3980** | N/A | **0.3167** |
 
 ---
 

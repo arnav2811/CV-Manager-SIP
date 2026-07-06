@@ -40,11 +40,11 @@ Biology,,6,False
 Environmental Engineering,,6,False
 Geography,,6,False
 Statistics,,6,False
-Botany,,5,False
 Geology,,5,False
 History,,5,False
 Metallurgical Engineering,,5,False
 Operations Management,,5,False
+Botany,,4,False
 Cybersecurity,,4,False
 Philosophy,,4,False
 Computer Science (Applications),,3,False
@@ -106,11 +106,11 @@ Aerospace Engineering,Aerospace Engineering,9,True
 Chemistry,Chemistry,9,True
 Human Resources Management,Human Resources Management,9,True
 Sociology,Sociology,9,True
+Botany,Botany,8,True
 Environmental Science,Environmental Science,8,True
 Instrumentation Engineering,Instrumentation Engineering,8,True
 Mass Communication,Mass Communication,8,True
 Philosophy,Philosophy,8,True
-Botany,Botany,7,True
 Chemical Engineering,Chemical Engineering,7,True
 Commerce,Commerce,7,True
 Computer Applications,Computer Applications,7,True

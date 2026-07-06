@@ -322,7 +322,8 @@ class Normalizer:
                 scorer=_combined_score,
                 limit=8,
             )
-        except Exception:
+        except Exception as exc:
+            print(f"[L2 alternatives] extract raised {type(exc).__name__}: {exc}", file=sys.stderr)
             top5 = []
 
         seen      = {best_canonical}
@@ -330,7 +331,8 @@ class Normalizer:
         for item in top5:
             try:
                 alt_alias, alt_score = item[0], item[1]
-            except Exception:
+            except Exception as exc:
+                print(f"[L2 alternatives] item parse raised {type(exc).__name__}: {exc}", file=sys.stderr)
                 continue
             canon = self.degree_aliases.get(alt_alias)
             if canon and canon not in seen:
@@ -374,8 +376,9 @@ class Normalizer:
                 if result.get("status") != "unresolved":
                     return result
                 return None
-            except Exception:
-                pass  # Fall through to primitive fallback
+            except Exception as exc:
+                print(f"[L3 delegate] engine_l3 raised {type(exc).__name__}: {exc}", file=sys.stderr)
+                # Fall through to primitive fallback
 
         # ── Primitive fallback (only used if engine_l3 failed to import) ──
         raw_lower = raw.lower()

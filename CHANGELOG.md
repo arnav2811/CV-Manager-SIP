@@ -6,6 +6,26 @@
 
 ---
 
+## Version 3.6.6 — 06 July 2026
+
+### What's New
+
+**Layer 3 correctness fix** — resolved a contract bug where free-text garbage was returned as a canonical degree when NLP extraction failed to canonicalize. Added contract regression tests and improved observability of L2/L3 delegation. Work completed by **Antigravity**.
+
+---
+
+### 1. L3 Engine Fix (`engine_l3.py`)
+
+- **Contract Enforcement**: Replaced a fallback in `_s1_sentence()` that returned uncanonicalized raw text as `canonical_degree`. Now delegates appropriately to `_s3_level_keyword()` for unresolvable mentions.
+
+---
+
+### 2. Observability (`normalizer_rapidfuzz.py`)
+
+- **Diagnostic logging**: Replaced silent `except Exception: pass` swallows in L2 extraction and L3 delegation with `sys.stderr` printing to improve visibility during execution.
+
+---
+
 ## Version 3.6.5 — 28 June 2026
 
 ### What's New

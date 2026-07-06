@@ -470,14 +470,9 @@ class L3HeuristicEngine:
                         "strategy":          "S1_sentence_canonical",
                     }
                 else:
-                    # Could not canonicalize — return raw mention as-is with lower conf
-                    return {
-                        "canonical_degree":  raw_mention,
-                        "extracted_mention": raw_mention,
-                        "field_mention":     field_mention,
-                        "confidence":        max(conf - 0.10, 0.35),
-                        "strategy":          "S1_sentence",
-                    }
+                    # The sentence pattern found a mention, but it is not canonical.
+                    # Keep searching so S3 can infer a trusted degree level.
+                    continue
         return None
 
     # ------------------------------------------------------------------
