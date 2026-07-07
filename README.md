@@ -2,7 +2,7 @@
 
 > **Project:** Growth Grids × University of Southampton Delhi
 > **Deadline:** 3 July 2026
-> **Current Version:** 3.6.6 (06 July 2026)
+> **Current Version:** 3.6.7 (06 July 2026)
 > **Contributors:** Arnav Mishra (pipeline & integration) · Jai Gupta (dataset engineering) · Himanshi Kaushik & Keshav Singhal (F1 scoring)
 
 This repository contains the deliverables for the Growth Grids Summer Internship Project regarding standardisation of candidate qualification strings in CV Manager.
@@ -95,6 +95,7 @@ cv_manager_sip/
 ├── poc/
 │   ├── app.py                        # ★ Unified POC CLI — entry point for all engines
 │   │
+│   ├── demo_cases.py                 # Shared CLI demo inputs to prevent test-list drift
 │   ├── normalizer_rapidfuzz.py       # Standalone · Engine B-1 (RapidFuzz)
 │   ├── normalizer_tfidf.py           # Standalone · Engine B-2 (TF-IDF)
 │   ├── normalizer_embeddings.py      # Standalone · Engine B-3 (Embeddings)
@@ -253,7 +254,7 @@ A full suite of layer-specific training and evaluation datasets contributed by *
 
 Expanded SQL seeds for USA (18,312 combinations), UK (13,298), and WORLD (62,292) degree-field pairs are provided in `data/education_reference_expanded_sql_files/`.
 
-### F1 Evaluation Outputs (v3.6.5 — `evaluation/`)
+### F1 Evaluation Outputs (v3.6.6 — `evaluation/`)
 
 The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only international datasets. International datasets are degree-only, so field F1 is marked `N/A`. The summary also includes accuracy, TP/FP/FN counts, resolution rate, average latency, and per-dataset confusion CSVs.
 
@@ -268,7 +269,7 @@ The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only i
 
 ---
 
-## Key Bug Fixes in v3.0.0 – v3.6.5
+## Key Bug Fixes in v3.0.0 – v3.6.7
 
 | Issue | Root Cause | Fix | Version |
 |-------|-----------|-----|--------|
@@ -282,6 +283,9 @@ The current F1 scoring suite covers Layer 1, Layer 2, Layer 3, and degree-only i
 | L3 shortcode map incomplete | Missing BEng, slash-forms, PhD variants, EMBA, MBBS | Expanded to 80+ shortcodes; PhD normalization; field acronym map added | v3.6.5 |
 | L3 stub in `normalizer_rapidfuzz.py` bypassed the real engine | `layer3_stub` used primitive regex instead of delegating to `engine_l3.py` | Renamed to `layer3_heuristic`; now delegates to `L3HeuristicEngine` | v3.6.5 |
 | Institution names leaking as field predictions | Field regex captured `Jadavpur`, `Pune`, `Amity` etc. | Extended `_FIELD_STOPWORDS` + `_normalize_field()` validation in L3 path | v3.6.5 |
+| Raw text leaked into `canonical_degree` | `_s1_sentence()` accepted uncanonicalized mentions as hits | Non-canonical sentence mentions now fall through to better L3 strategies or unresolved | v3.6.6 |
+| Engine entry points and CLI demos could drift | L3 callers mixed `analyze()` and `normalize()`; demo cases were copied across files | `normalize()` is the public entry point and CLI demo inputs live in `poc/demo_cases.py` | v3.6.7 |
+| Remaining fallback path hid L3 import failures | Import-time L3 fallback swallowed exceptions | Import fallback now prints a diagnostic before using the primitive fallback | v3.6.7 |
 
 ---
 

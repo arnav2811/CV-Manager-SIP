@@ -35,7 +35,7 @@ Result confidence levels
     S4 field only             : 0.35
     No signal found           : None (returns None, caller handles)
 
-Version: 3.6.5
+Version: 3.6.7
 Run:  python engine_l3.py
 """
 
@@ -47,6 +47,8 @@ import sys
 from typing import Optional
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from demo_cases import L3_UNSTRUCTURED_TESTS
 
 ENGINE_ID = "L3_Heuristic"
 
@@ -547,10 +549,12 @@ class L3HeuristicEngine:
 
     def analyze(self, raw_string: str) -> Optional[dict]:
         """
-        Run the heuristic cascade on *raw_string*.
+        Run the internal heuristic cascade on *raw_string*.
 
         Returns a result dict on any positive signal, or None when the
         text contains no recognisable degree/field information at all.
+        Public callers should prefer normalize(), which always returns the
+        standard engine result contract.
         Result dict keys:
             canonical_degree   str or None
             extracted_mention  str or None   (the raw extracted text)
@@ -584,8 +588,8 @@ class L3HeuristicEngine:
 
     def normalize(self, raw_string: str) -> dict:
         """
-        Wrapper that always returns a structured dict (never raises).
-        Matches the interface expected by the orchestrator.
+        Public entry point. Always returns a structured dict (never raises).
+        Matches the interface expected by the orchestrator and other engines.
         """
         inner = self.analyze(raw_string)
 
@@ -631,39 +635,9 @@ if __name__ == "__main__":
         sys.stdout.reconfigure(encoding="utf-8")
     engine = L3HeuristicEngine()
 
-    UNSTRUCTURED_CASES = [
-        # Conversational sentences
-        "I completed my B.Tech in Computer Science from IIT Delhi in 2022",
-        "She is pursuing her Masters in Data Science at IIM Ahmedabad",
-        "He holds a Bachelor of Business Administration from DU",
-        "Finished my PhD in Biotechnology last year",
-        "Have a diploma in Mechanical Engineering from a polytechnic",
-        # Abbreviations without context
-        "BCA",
-        "MBA",
-        "BSc",
-        "LLB",
-        "PGDM",
-        "BEng",
-        "b.tech/be",
-        # PhD variants that used to fail
-        "PHD degree",
-        "Ph.D with specialization",
-        "DPhil Hons degree",
-        # Mixed / ambiguous
-        "Graduate from Computer Science department",
-        "Undergraduate degree — Electrical Engineering",
-        "Some random text with no educational information",
-        # Already-structured (should still work)
-        "B.Tech (CSE)",
-        "Master of Technology in Artificial Intelligence",
-        # Compact abbreviated fields
-        "BTech ECE 2022",
-        "Currently pursuing B.Tech in ECE from IIT",
-        "B.Sc in IT from Delhi University",
-    ]
+    UNSTRUCTURED_CASES = L3_UNSTRUCTURED_TESTS
 
-    VERSION = "3.6.5"
+    VERSION = "3.6.7"
 
     while True:
         print()
@@ -687,13 +661,13 @@ if __name__ == "__main__":
             print(div)
             stats = {"resolved": 0, "field_only": 0, "no_signal": 0}
             for raw in UNSTRUCTURED_CASES:
-                r = engine.analyze(raw)
+                r = engine.normalize(raw)
                 inp = raw[:W["inp"] - 1]
-                if r:
+                if r["status"] != "unresolved":
                     canon = (r["canonical_degree"] or "(field only)")[:W["canon"] - 1]
                     conf  = f"{r['confidence']:.2f}"
-                    strat = r["strategy"]
-                    field = r.get("field_mention") or ""
+                    strat = r.get("l3_strategy") or "—"
+                    field = r.get("canonical_field") or ""
                     print(f"  {inp:<{W['inp']}}  {canon:<{W['canon']}}  {conf:<{W['conf']}}  {strat}")
                     if field:
                         print(f"  {'':>{W['inp']}}  ↳ field: {field}")
@@ -717,16 +691,16 @@ if __name__ == "__main__":
             raw = input("\n  Enter any text containing a degree mention: ").strip()
             if not raw:
                 continue
-            r = engine.analyze(raw)
+            r = engine.normalize(raw)
             div = "  " + "─" * 60
             print(f"\n{div}")
             print("  ANALYSIS RESULT")
             print(div)
-            if r:
+            if r["status"] != "unresolved":
                 W = 20
-                print(f"  {'Strategy':<{W}} : {r['strategy']}")
+                print(f"  {'Strategy':<{W}} : {r.get('l3_strategy') or '—'}")
                 print(f"  {'Canonical Degree':<{W}} : {r['canonical_degree'] or 'Not extracted'}")
-                print(f"  {'Field Mention':<{W}} : {r['field_mention'] or 'None'}")
+                print(f"  {'Field Mention':<{W}} : {r['canonical_field'] or 'None'}")
                 print(f"  {'Extracted Text':<{W}} : {r['extracted_mention'] or '—'}")
                 print(f"  {'Confidence':<{W}} : {r['confidence']:.2f}")
                 print(f"  {'Layer':<{W}} : {r['layer_used']}")

@@ -38,6 +38,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from normalizer_rapidfuzz import Normalizer          as _RF
 from normalizer_tfidf      import NormalizerTFIDF    as _TFIDF
 from normalizer_embeddings import NormalizerEmbeddings as _EMB
+from demo_cases import STANDARD_TESTS
 
 ENGINE_ID = "L2_Combined"
 
@@ -246,24 +247,7 @@ if __name__ == "__main__":
     data_dir = os.path.join(base_dir, "..", "data")
     engine   = L2CombinedEngine(data_dir)
 
-    TEST_CASES = [
-        "B.Tech",
-        "BTech",
-        "Bachelor of Technology",
-        "Bacheler of Technology",
-        "B. Tech in CSE",
-        "M.Tech (Computer Science)",
-        "MBA",
-        "Bachellor of Technolgy in CSE",
-        "BE Hons",
-        "12th",
-        "B.Pharma",
-        "Bachelor of Business Administration",
-        "Bachelor of Business Admin",
-        "BBA",
-        "Kuchh bhi degree",
-        "I completed my Masters in Data Science from IIT",
-    ]
+    TEST_CASES = STANDARD_TESTS
 
     while True:
         print("\n" + "=" * 65)

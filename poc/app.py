@@ -38,41 +38,10 @@ _DATA_DIR = os.path.join(_ROOT, "data")
 sys.path.insert(0, _HERE)
 sys.path.insert(0, _ROOT)
 
-# ── version ────────────────────────────────────────────────────────────────
-APP_VERSION = "3.6.5"
+from demo_cases import STANDARD_TESTS
 
-# ── shared test suite ─────────────────────────────────────────────────────
-STANDARD_TESTS: list[str] = [
-    # Clean abbreviations
-    "B.Tech",
-    "BTech",
-    "MBA",
-    "BBA",
-    "BSc",
-    "12th",
-    # Typo-laced
-    "Bacheler of Technology",
-    "Bachellor of Technolgy",
-    "Bachelar of Sci",
-    # With field separators
-    "B. Tech in CSE",
-    "M.Tech (Computer Science)",
-    "B.Tech - Mechanical Engineering",
-    "BE, Electronics",
-    # Long canonical names
-    "Bachelor of Technology",
-    "Bachelor of Business Administration",
-    # Abbreviated long name (the "BBA bug" case)
-    "Bachelor of Business Admin",
-    # Hons / variant markers
-    "BE Hons",
-    "B.Pharma",
-    # Unrecognised
-    "Kuchh bhi degree",
-    # Conversational (L3 territory)
-    "I completed my Masters in Data Science from IIT Delhi",
-    "She holds a diploma in Electrical Engineering",
-]
+# ── version ────────────────────────────────────────────────────────────────
+APP_VERSION = "3.6.7"
 
 
 # ══════════════════════════════════════════════════════════════════════════

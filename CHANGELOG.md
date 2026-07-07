@@ -6,6 +6,40 @@
 
 ---
 
+## Version 3.6.7 — 06 July 2026
+
+### What's New
+
+**Feedback closure release** — completed the remaining manager feedback after the v3.6.6 Layer 3 correctness fix. This release standardizes public engine usage, removes the remaining silent fallback, centralizes CLI demo inputs, and documents the international-data follow-up path.
+
+---
+
+### 1. Public Engine Interface Consistency
+
+- **Canonical entry point**: `normalize()` is now the public method used by the orchestrator and L3 standalone CLI. `analyze()` remains inside `engine_l3.py` as an internal strategy-level helper for debugging.
+- **Orchestrator alignment**: `engine_orchestrator.py` now invokes `L3HeuristicEngine.normalize()` and reads the standard result keys (`canonical_field`, `l3_strategy`, `status`) instead of relying on L3's internal `analyze()` shape.
+
+---
+
+### 2. Observability Completion
+
+- **Import fallback diagnostic**: The remaining silent L3 import fallback in `normalizer_rapidfuzz.py` now prints the exception type and message to `stderr` before falling back to the primitive keyword detector.
+
+---
+
+### 3. CLI Demo Case De-duplication
+
+- **Shared demo cases**: Added `poc/demo_cases.py` and moved the standard CLI examples into one shared module.
+- **Updated standalone CLIs**: `app.py`, `normalizer_rapidfuzz.py`, `normalizer_tfidf.py`, `normalizer_embeddings.py`, `engine_l2_combined.py`, `engine_l3.py`, and `engine_orchestrator.py` now reuse the shared demo cases instead of maintaining near-duplicate `TEST_CASES` lists.
+
+---
+
+### 4. Data Quality Follow-up
+
+- **International coverage plan**: Updated `evaluation/future_scope_note.md` to record the post-fix interpretation path for `indian_world`, `indian_uk`, and `indian_usa`: rerun evaluation after logic fixes, inspect failure CSVs, then expand aliases only for persistent high-frequency gaps.
+
+---
+
 ## Version 3.6.6 — 06 July 2026
 
 ### What's New

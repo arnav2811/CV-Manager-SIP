@@ -11,7 +11,7 @@ Three-layer qualification normalization pipeline:
   L3  Delegates to the full L3HeuristicEngine (engine_l3.py) — shortcode
       expansion, PhD normalization, sentence extraction, field acronym map.
 
-Version: 3.6.5
+Version: 3.6.7
 
 Bug-fixes vs v2.3.0
   • Replaced \\bin\\b with \\s+in\\s+ in clean() — prevents false splits on
@@ -31,6 +31,7 @@ import os
 import sys
 
 from rapidfuzz import process, fuzz
+from demo_cases import STANDARD_TESTS
 
 # --- L3 engine import (lazy, with fallback) --------------------------------
 _L3_ENGINE_CLASS = None
@@ -41,7 +42,10 @@ try:
     from engine_l3 import L3HeuristicEngine as _L3HeuristicEngine
     _L3_ENGINE_CLASS = _L3HeuristicEngine
 except Exception as _l3_import_err:
-    pass  # L3 will fall back to the primitive stub if engine_l3 is unavailable
+    print(
+        f"[RapidFuzz] L3 engine import failed: {type(_l3_import_err).__name__}: {_l3_import_err}",
+        file=sys.stderr,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -499,26 +503,9 @@ if __name__ == "__main__":
     data_dir = os.path.join(base_dir, "..", "data")
     n = Normalizer(data_dir)
 
-    TEST_CASES = [
-        "B.Tech",
-        "BTech",
-        "Bachelor of Technology",
-        "Bacheler of Technology",
-        "B. Tech in CSE",
-        "M.Tech (Computer Science)",
-        "MBA",
-        "Bachellor of Technolgy in CSE",
-        "BE Hons",
-        "12th",
-        "B.Pharma",
-        "Bachelor of Business Administration",
-        "Bachelor of Business Admin",
-        "BBA",
-        "Kuchh bhi degree",
-        "I completed my Masters in Data Science from IIT",
-    ]
+    TEST_CASES = STANDARD_TESTS
 
-    VERSION = "3.6.5"
+    VERSION = "3.6.7"
 
     while True:
         print()

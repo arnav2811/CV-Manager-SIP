@@ -53,6 +53,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # Sub-engine imports with graceful fallback
 from normalizer_rapidfuzz import Normalizer       as _RF
 from normalizer_tfidf      import NormalizerTFIDF as _TFIDF
+from demo_cases import STANDARD_TESTS
 
 try:
     from normalizer_embeddings import NormalizerEmbeddings as _EMB
@@ -63,7 +64,7 @@ except ImportError:
 from engine_l3 import L3HeuristicEngine as _L3
 
 ENGINE_ID = "Orchestrator_v3"
-VERSION   = "3.6.5"
+VERSION   = "3.6.7"
 
 
 class CVNormalizationOrchestrator:
@@ -296,23 +297,23 @@ class CVNormalizationOrchestrator:
             return False
 
         t0   = time.perf_counter()
-        l3_r = self._l3.analyze(raw_string)
+        l3_r = self._l3.normalize(raw_string)
         ms   = (time.perf_counter() - t0) * 1000
 
         result["audit"]["L3"] = {
-            "fired":      l3_r is not None,
-            "strategy":   l3_r.get("strategy") if l3_r else None,
+            "fired":      l3_r.get("status") != "unresolved",
+            "strategy":   l3_r.get("l3_strategy"),
             "latency_ms": round(ms, 3),
         }
 
-        if not l3_r:
+        if l3_r.get("status") == "unresolved":
             return False
 
         result.update({
             "canonical_degree": l3_r.get("canonical_degree"),
-            "canonical_field":  l3_r.get("field_mention") or result.get("canonical_field"),
+            "canonical_field":  l3_r.get("canonical_field") or result.get("canonical_field"),
             "confidence":       l3_r.get("confidence", 0.0),
-            "status":           "review_needed",
+            "status":           l3_r.get("status", "review_needed"),
             "layer_used":       "L3",
             "fuzzy_score":      round(l3_r.get("confidence", 0.0) * 100, 1),
         })
@@ -381,29 +382,11 @@ if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(base_dir, "..", "data")
 
-    TEST_CASES = [
-        "B.Tech",
-        "BTech",
-        "Bachelor of Technology",
-        "Bacheler of Technology",
-        "B. Tech in CSE",
-        "M.Tech (Computer Science)",
-        "MBA",
-        "Bachellor of Technolgy in CSE",
-        "BE Hons",
-        "12th",
-        "B.Pharma",
-        "Bachelor of Business Administration",
-        "Bachelor of Business Admin",
-        "BBA",
-        "Kuchh bhi degree",
-        "I completed my Masters in Data Science from IIT Delhi",
-        "Have a diploma in Mechanical from a polytechnic",
-    ]
+    TEST_CASES = STANDARD_TESTS
 
     print()
     print("╔" + "═" * 68 + "╗")
-    print("║" + " CV MANAGER · Orchestrator v3.6.5 ".center(68) + "║")
+    print("║" + f" CV MANAGER · Orchestrator v{VERSION} ".center(68) + "║")
     print("║" + " Growth Grids × University of Southampton ".center(68) + "║")
     print("╚" + "═" * 68 + "╝")
     print("\n  Select operating mode:")
