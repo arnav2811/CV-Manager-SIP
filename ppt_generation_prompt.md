@@ -56,15 +56,15 @@
 6. Layer 1: Dictionary Lookup
 7. Layer 2: Fuzzy Matching — Engine Options
 8. Layer 2: Engine C — Consensus Voting (NEW)
-9. Layer 3: NLP/Heuristic Extraction (Fully Implemented)
+9. Layer 3: NLP/Heuristic Extraction (Feedback-Closed)
 10. The Data Model
 11. The Alias Dictionary — By the Numbers
 12. International Training Datasets (NEW v3.5.0)
-13. F1 Scoring & Evaluation Results (NEW v3.6.0)
+13. F1 Scoring & Evaluation Results (UPDATED v3.6.6)
 14. Deployment Options (A / B / C)
 15. Proof of Concept — Unified CLI Demo
 16. Results & Pipeline Performance
-17. Bug Fixes & Engine Improvements (v3.0.0 + v3.6.0)
+17. Bug Fixes & Engine Improvements (v3.0.0?v3.6.7)
 18. Data Formats & Extensibility
 19. SWOT Analysis
 20. Implementation Roadmap
@@ -639,17 +639,17 @@ field_of_study               candidate_education
 
 **Content**:
 
-**Heading**: "Strategic Analysis — v3.0.0 Pipeline Architecture"
+**Heading**: "Strategic Analysis ? v3.6.7 Feedback-Closed Pipeline"
 
 | | **Positive** | **Negative** |
 |---|---|---|
 | **Internal** | **STRENGTHS** | **WEAKNESSES** |
 | | • Engine C consensus voting cancels out individual engine weaknesses | • L3 heuristics are regex-based — may need tuning for uncommon formats |
 | | • RapidFuzz combined scorer eliminates superset bias (v3 fix) | • Embeddings engine requires ~500 MB PyTorch + model download |
-| | • L3 fully implemented with zero ML dependencies | • L3 confidence is inherently lower (0.35–0.80); all results need review |
+| | • L3 implemented with zero ML dependencies and guarded by regression tests | • L3 confidence is intentionally conservative (0.35?0.80); all results need review |
 | | • 59,949-row internationally-scoped training dataset ready for evaluation | • Combined engine latency is sum of all sub-engine latencies |
 | **External** | **OPPORTUNITIES** | **THREATS** |
-| | • International datasets (USA/UK/World) enable cross-market expansion | • Novel degree formats (new UGC programmes) may miss L1+L2+L3 |
+| | • International datasets (USA/UK/World) enable cross-market expansion | • Novel degree formats and weaker `indian_world` coverage may miss L1+L2+L3 |
 | | • Alias dictionary is extensible — any new degree can be added in minutes | • Synthetic resumes may produce highly irregular education text |
 | | • Same architecture can normalise job titles, skills, and locations | • Without a review queue UI, L3 results risk being accepted unchecked |
 
@@ -669,9 +669,9 @@ field_of_study               candidate_education
 | **Phase 2** | Refactor CV parser to write canonical_id | Week 2–3 | GG Dev Team |
 | **Phase 3** | Integrate fuzzy matching + build review queue UI | Week 3–4 | GG Dev Team |
 | **Phase 4** | Update search to query canonical_id (not raw text) | Week 4–5 | GG Dev Team |
-| **Phase 5** | Layer 3 NLP integration (future, post-SIP) | TBD | GG Dev Team |
+| **Phase 5** | Connect L3 review queue and expand aliases from failure CSVs | Week 5+ | GG Dev Team |
 
-**Callout**: "Phases 1–4 require no ML infrastructure. A junior developer can implement them using the provided SQL seeds and Python PoC as reference."
+**Callout**: "Phases 1?5 require no ML infrastructure. A junior developer can implement them using the provided SQL seeds, Python PoC, failure CSVs, and review-needed workflow as reference."
 
 **Quick win**: "Phase 1 alone (seeding the alias tables) enables dropdown-based structured entry, which prevents new bad data from entering the system."
 
@@ -695,7 +695,7 @@ field_of_study               candidate_education
 
 5. **📈 Track resolution rates** — Monitor L1/L2/review/unresolved percentages over time. Dropping L1 rates indicate new degree patterns entering the market.
 
-6. **🧠 Evaluate Layer 3 when ready** — Train spaCy NER on Indian resume corpora only when unstructured resume parsing becomes a business requirement.
+6. **Use Layer 3 carefully** ? Keep L3 outputs in the review queue, monitor `review_needed` and `unresolved`, and expand aliases from `evaluation/*_failures.csv`.
 
 7. **🌐 Extend to other fields** — The same alias-dictionary + fuzzy-matching pattern applies to job titles, skills, and locations.
 
@@ -739,7 +739,7 @@ field_of_study               candidate_education
 | 17 | Unified CLI Proof of Concept | Technical |
 | 18 | Data Formats & Extensibility | Deliverables |
 | 19 | SWOT Analysis | Strategy |
-| 20 | Bug Fixes & Engine Improvements (v3.0.0) | Technical |
+| 20 | Bug Fixes & Engine Improvements (v3.0.0-v3.6.7) | Technical |
 | 21 | Implementation Roadmap | Planning |
 | 22 | Recommendations | Action Items |
 | 23 | Thank You & Q&A | Closing |
@@ -748,7 +748,7 @@ field_of_study               candidate_education
 
 ## NOTES FOR THE PRESENTER
 
-1. **Slide 7** (Pipeline Overview) is the centrepiece. Spend 2–3 minutes here. Walk through the flow top-to-bottom. Emphasise that Layer 3 is **live, not a stub** as of v3.0.0.
+1. **Slide 7** (Pipeline Overview) is the centrepiece. Spend 2–3 minutes here. Walk through the flow top-to-bottom. Emphasise that Layer 3 is live, review-gated, and regression-tested after the v3.6.6-v3.6.7 feedback fixes.
 2. **Slide 10** (Engine C — Consensus Voting) — this is your strongest new technical addition. Explain that individual engine weaknesses cancel out when engines vote together.
 3. **Slide 11** (Layer 3) — emphasise that this was a stub in v2 and is now fully operational. Highlight that it requires **zero ML dependencies** — pure Python regex.
 4. **Slide 15** (Demo Results) — if presenting live, run `python app.py` from the `poc/` directory, choose engine [D] Orchestrator, then run the test suite. The live output mirrors this slide.
@@ -764,7 +764,7 @@ Insert this as **Slide 16** (before Data Formats).
 
 **Heading**: "What We Fixed — v3.0.0 to v3.6.0"
 
-**Layout**: Five-row before/after comparison table with status badges.
+**Layout**: Before/after comparison table with status badges.
 
 | Issue | Root Cause | Fix Applied | Version | Result |
 |-------|-----------|-------------|---------|--------|

@@ -203,7 +203,7 @@ Expanded SQL seeds (USA: 18,312 · UK: 13,298 · WORLD: 62,292 degree-field comb
 
 ---
 
-## F1 Scoring Workflow (v3.6.5)
+## F1 Scoring Workflow (v3.6.6 outputs, v3.6.7 docs)
 
 The project now includes an evaluation workflow that measures how well the existing CLI/normalizer pipeline performs against the prepared datasets. Along with F1, it records accuracy, TP/FP/FN counts, resolution rate, average latency, and confusion matrix CSVs.
 
@@ -215,29 +215,29 @@ python poc/evaluate_f1.py --dataset all
 python poc/smoke_test_cli.py
 ```
 
-### Current Results (v3.6.6 / v3.6.7)
+### Current Results (v3.6.6)
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
-|---------|----------:|---------:|---------------------:|
-| `layer1` | 0.7617 | 0.9134 | 0.6353 |
-| `layer2` | 0.7864 | 0.8312 | 0.5334 |
-| `layer3` | **0.8073** | **0.7351** | **0.4946** |
-| `indian_usa` | **0.6179** | N/A | **0.5329** |
-| `indian_uk` | **0.6330** | N/A | **0.5517** |
-| `indian_world` | **0.3980** | N/A | **0.3167** |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
+|---------|----------:|---------:|---------------------:|:---------:|
+| `layer1` | 0.7617 | 0.9134 | 0.6353 | approx same |
+| `layer2` | 0.7864 | 0.8312 | 0.5334 | approx same |
+| `layer3` | **0.8073** | **0.7351** | **0.4946** | up +0.41 / +0.22 / +0.33 |
+| `indian_usa` | **0.6179** | N/A | **0.5329** | up +0.079 |
+| `indian_uk` | **0.6330** | N/A | **0.5517** | up +0.080 |
+| `indian_world` | **0.3980** | N/A | **0.3167** | up +0.050; data follow-up needed |
 
-> **Key improvement:** Layer 3 degree F1 doubled (0.40 → 0.80), field F1 rose from 0.52 → 0.73, and pair F1 tripled (0.16 → 0.49) in v3.6.5. International datasets also improved across the board.
+> **Key improvement:** Layer 3 degree F1 is now **0.8073**, field F1 is **0.7351**, and pair F1 is **0.4946** after the L3 overhaul and feedback contract fix. International datasets improved too, but `indian_world` still needs targeted alias expansion from failure CSVs.
 
 ### What This Means
 
 - Layer 1 and Layer 2 remain stable — no regressions from the L3 changes.
 - Layer 3 is now the most-improved path: degree F1 is now 0.80 (was 0.40), making it a genuinely useful extraction layer, not just a catch-all.
 - The pair F1 improvement (0.16 → 0.49) shows that both degree AND field are now being correctly extracted together in roughly half the L3 cases.
-- The international datasets benefited from the expanded shortcode map in the L3 engine.
+- The international datasets benefited from the expanded shortcode map, but `indian_world` remains the clearest follow-up area for alias expansion.
 
 ---
 
-## Metrics Interpretation Guide (v3.6.5)
+## Metrics Interpretation Guide (v3.6.7)
 
 The evaluation workflow outputs three families of metrics. This section explains what each one means in the context of qualification normalization.
 
@@ -293,7 +293,7 @@ To find **True Positives**: filter for `is_correct == True`.
 
 ---
 
-## Cross-Validation & Stratification Assessment (v3.6.5)
+## Cross-Validation & Stratification Assessment (v3.6.7)
 
 ### Is K-Fold Cross-Validation Needed?
 

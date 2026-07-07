@@ -21,15 +21,16 @@ This document serves as the living audit log for the CV Normalization Engine. It
 - **Audit Trails:** Per-layer timing, confidence scores, engine votes, and decision rationale are captured in every result dict.
 
 ### Layer 3: Heuristic NLP Engine (`engine_l3.py`)
-- **Status:** ✅ Active (v3.6.5 — significantly improved)
+- **Status:** ✅ Active (v3.6.7 — feedback-closed and regression-tested)
 - **Description:** Pure-Python, zero-ML engine for processing unstructured and conversational text.
 - **Strategy Cascade (priority order):**
   1. **S2 Shortcode Expansion** — 80+ hard-coded abbreviations (BCA, PGDM, LLB, BEng, MBBS, BDS, PhD variants…) → canonical (conf: 0.75–0.80)
-  2. **S1 Sentence Extraction** — Regex patterns pull degree mentions from natural language; extracted text post-processed through shortcode + PhD canonicalizer (conf: 0.50–0.72)
+  2. **S1 Sentence Extraction** — Regex patterns pull degree mentions from natural language; only canonicalized mentions are accepted as hits (conf: 0.50–0.72)
   3. **S3 Level Keyword Detection** — Maps keywords (bachelor, master, phd…) to degree-level group; extracts field via acronym map (conf: 0.50)
   4. **S4 Field-Only Inference** — Detects field-of-study when no degree level is identifiable; uses field acronym map for CSE, ECE, IT, AI etc. (conf: 0.35)
 - **Note:** All L3 results are flagged `review_needed` — expected behaviour.
 - **v3.6.5 Changes:** Expanded shortcode map, PhD normalization, field acronym map, relaxed field extraction, S1 canonicalization, `normalizer_rapidfuzz.py` stub now delegates to the full engine.
+- **v3.6.6–v3.6.7 Feedback Closure:** Fixed the `canonical_degree` contract so raw free text cannot leak into canonical output, added regression tests, standardized public engine calls around `normalize()`, added visible fallback diagnostics, and centralized CLI demo cases in `poc/demo_cases.py`.
 
 ### Layer 2 Combined: Consensus Voting Engine (`engine_l2_combined.py`)
 - **Status:** ✅ Active
@@ -107,16 +108,16 @@ This document serves as the living audit log for the CV Normalization Engine. It
 
 ### Current F1 Summary (v3.6.6 / v3.6.7)
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
-|---------|----------:|---------:|---------------------:|
-| `layer1` | 0.7617 | 0.9134 | 0.6353 |
-| `layer2` | 0.7864 | 0.8312 | 0.5334 |
-| `layer3` | **0.8073** | **0.7351** | **0.4946** |
-| `indian_usa` | **0.6179** | N/A | **0.5329** |
-| `indian_uk` | **0.6330** | N/A | **0.5517** |
-| `indian_world` | **0.3980** | N/A | **0.3167** |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
+|---------|----------:|---------:|---------------------:|:---------:|
+| `layer1` | 0.7617 | 0.9134 | 0.6353 | approx same |
+| `layer2` | 0.7864 | 0.8312 | 0.5334 | approx same |
+| `layer3` | **0.8073** | **0.7351** | **0.4946** | up +0.41 / +0.22 / +0.33 |
+| `indian_usa` | **0.6179** | N/A | **0.5329** | up +0.079 |
+| `indian_uk` | **0.6330** | N/A | **0.5517** | up +0.080 |
+| `indian_world` | **0.3980** | N/A | **0.3167** | up +0.050 |
 
-**Note:** International datasets are degree-only, so field F1 is not applicable. Layer 3 further improved in v3.6.6 after the canonical_degree contract fix (issues 4.1/4.2).
+**Note:** International datasets are degree-only, so field F1 is not applicable. Layer 3 further improved after the v3.6.6 `canonical_degree` contract fix; `indian_world` remains the main data-coverage follow-up.
 
 ---
 
@@ -143,11 +144,11 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | L3 shortcode map incomplete (BEng, slash-forms, PhD variants) | ≤v3.6.0 | ✅ Fixed | v3.6.5 — 80+ shortcodes, PhD canonicalization |
 | L3 stub in `normalizer_rapidfuzz.py` returned raw uncanonicalised text | ≤v3.6.0 | ✅ Fixed | v3.6.5 — stub delegates to full L3HeuristicEngine |
 | L3 field extraction dropped all ≤2-char fields (IT, CS) | ≤v3.6.0 | ✅ Fixed | v3.6.5 — field acronym map + relaxed min-length |
-| Raw text leaked into `canonical_degree` via `_s1_sentence()` uncanonicalized fallback | ≤v3.6.5 | ✅ Fixed | v3.6.6 — non-canonical mentions now fall through to L3 strategies or unresolved |
-| `_s1_sentence()` hit blocking `_s3_level_keyword()` from running when no canonical found | ≤v3.6.5 | ✅ Fixed | v3.6.6 — uncanonicalized sentence hits no longer count as strategy hits |
-| Inconsistent engine entry points (`analyze()` vs `normalize()`) | ≤v3.6.6 | ✅ Fixed | v3.6.7 — `normalize()` is the public entry point across all engines |
-| Silent L3 import fallback in `normalizer_rapidfuzz.py` hid errors | ≤v3.6.6 | ✅ Fixed | v3.6.7 — import fallback now prints diagnostic to stderr before falling back |
-| Duplicate CLI `TEST_CASES` lists could drift across engine files | ≤v3.6.6 | ✅ Fixed | v3.6.7 — shared `poc/demo_cases.py` module; all CLIs import from one source |
+| Raw text leaked into `canonical_degree` via `_s1_sentence()` uncanonicalized fallback | <=v3.6.5 | Fixed | v3.6.6 - non-canonical mentions now fall through to L3 strategies or unresolved |
+| `_s1_sentence()` blocked `_s3_level_keyword()` when no canonical mention was found | <=v3.6.5 | Fixed | v3.6.6 - uncanonicalized sentence hits no longer count as strategy hits |
+| Inconsistent engine entry points (`analyze()` vs `normalize()`) | <=v3.6.6 | Fixed | v3.6.7 - `normalize()` is the public entry point across all engines |
+| Silent L3 import fallback in `normalizer_rapidfuzz.py` hid errors | <=v3.6.6 | Fixed | v3.6.7 - import fallback now prints diagnostic to stderr before falling back |
+| Duplicate CLI `TEST_CASES` lists could drift across engine files | <=v3.6.6 | Fixed | v3.6.7 - shared `poc/demo_cases.py` module; all CLIs import from one source |
 
 ---
 
@@ -155,10 +156,10 @@ This document serves as the living audit log for the CV Normalization Engine. It
 
 - [ ] **Threshold Calibration:** Use `layer2_fuzzy_training.csv` to fine-tune `auto_accept` (currently 88.0) and `flag_review` (currently 70.0) thresholds per noise type and difficulty level.
 - [x] **L3 Regex Tuning:** Use `evaluation/layer3_failures.csv` and `layer3_unstructured_training.csv` to improve sentence extraction and degree-field pair matching. (Done in v3.6.5)
-- [x] **L3 Contract Bug (canonical_degree raw-text leak):** `_s1_sentence()` was returning uncanonicalized raw text as `canonical_degree`. Fixed in v3.6.6 — non-canonical mentions now fall through to `_s3_level_keyword()` or unresolved. (Done in v3.6.6)
-- [x] **Engine Entry-Point Consistency:** `analyze()` vs `normalize()` naming resolved — `normalize()` is now the public entry point across all engines; `engine_orchestrator.py` updated to match. (Done in v3.6.7)
-- [x] **CLI Demo Drift:** Duplicate `TEST_CASES` lists across all engine files replaced with shared `poc/demo_cases.py` module. (Done in v3.6.7)
-- [ ] **International Coverage:** Re-run `poc/evaluate_f1.py --dataset all` and inspect `indian_world_failures.csv` for high-frequency alias gaps before expanding the dictionary. (See `evaluation/future_scope_note.md`)
+- [x] **L3 Contract Bug (canonical_degree raw-text leak):** `_s1_sentence()` was returning uncanonicalized raw text as `canonical_degree`. Fixed in v3.6.6; non-canonical mentions now fall through to `_s3_level_keyword()` or unresolved. Regression tests cover `Kuchh bhi degree`, `Masters in Data Science`, B.Tech, PhD, and no-signal examples.
+- [x] **Engine Entry-Point Consistency:** `analyze()` vs `normalize()` naming resolved; `normalize()` is now the public entry point across all engines and `engine_orchestrator.py` uses it. (Done in v3.6.7)
+- [x] **CLI Demo Drift:** Duplicate `TEST_CASES` lists across engine files replaced with shared `poc/demo_cases.py` module. (Done in v3.6.7)
+- [ ] **International Coverage:** Re-run `poc/evaluate_f1.py --dataset all` and inspect `indian_world_failures.csv`, `indian_uk_failures.csv`, and `indian_usa_failures.csv` for high-frequency alias gaps before expanding the dictionary. (See `evaluation/future_scope_note.md`)
 - [ ] **International Integration:** Determine which SQL scope (USA / UK / WORLD) to adopt for the Growth Grids production database seed.
 - [ ] **HuggingFace Token:** Set `HF_TOKEN` environment variable to resolve unauthenticated download warning from Sentence-Transformers.
 - [x] **Evaluation Runner:** Added formal F1 scoring through `poc/evaluate_f1.py`, with summary, failure, TP/FP/FN, latency, and confusion outputs under `evaluation/`.
@@ -192,8 +193,8 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | v3.6.0 | **Himanshi Kaushik** | F1 scoring workflow, evaluation outputs, GitHub PR integration, and documentation sync |
 | v3.6.0 | **Keshav Singhal** | Helped with F1 scoring work, validation, and review |
 | v3.6.5 | **Arnav Mishra** | L3 engine overhaul (shortcode expansion, PhD normalization, field acronyms, S1 canonicalization), L3 stub delegation in normalizer_rapidfuzz, CLI polish, metrics documentation, cross-validation assessment |
-| v3.6.6 | **Antigravity** | L3 contract fix (canonical_degree raw-text leak + strategy ordering), diagnostic logging in normalizer_rapidfuzz L2/L3 delegation |
-| v3.6.7 | **Antigravity** | Engine entry-point standardization (normalize() public API), import-fallback diagnostic, shared demo_cases.py, international coverage follow-up note |
+| v3.6.6 | Team feedback response | L3 `canonical_degree` contract fix, strategy-ordering fix, regression tests, diagnostic logging, and refreshed evaluation outputs |
+| v3.6.7 | Team feedback response | Public `normalize()` usage, visible fallback diagnostics, shared CLI demo cases, and international data follow-up documentation |
 
 ---
 
