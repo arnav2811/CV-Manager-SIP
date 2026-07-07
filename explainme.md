@@ -1,5 +1,5 @@
 # Pipeline Deployment Options — Growth Grids Decision Brief
-# (Updated for v3.6.5 — 28 June 2026)
+# (Updated for v3.6.7 — 06 July 2026)
 
 > **Purpose**: This document packages the CV Manager normalisation pipeline as **three distinct, named deployment versions** so that Growth Grids can evaluate and select the option that best fits their infrastructure, latency, and accuracy requirements.
 >
@@ -10,6 +10,10 @@
 > **v3.6.0 Update**: A reproducible **F1 scoring workflow** has been added for Layer 1, Layer 2, Layer 3, and the international degree-only datasets. The workflow was completed by Himanshi Kaushik, with help from Keshav Singhal, and now gives measurable precision/recall/F1, accuracy, TP/FP/FN, resolution, latency, and confusion outputs for the existing CLI and normalizer behavior.
 >
 > **v3.6.5 Update**: Layer 3 engine (`engine_l3.py`) has been significantly improved by **Arnav Mishra** — expanded shortcode map (BEng, slash-combined forms, EMBA, MBBS, BDS, etc.), PhD variant normalization, field acronym map for compact abbreviations (CSE, ECE, IT, AI), relaxed field extraction, and S1 sentence-extracted text is now post-processed through canonicalization. The `normalizer_rapidfuzz.py` Layer 3 stub now delegates to the full engine instead of using a primitive regex. CLI output across all engines has been polished.
+>
+> **v3.6.6 Update**: Layer 3 contract bug fixed — `_s1_sentence()` no longer writes free-text garbage into `canonical_degree` when extraction fails to canonicalize. Non-canonical mentions now fall through to `_s3_level_keyword()` or return `unresolved`. This resolves feedback issues 4.1 and 4.2. Diagnostic logging added in `normalizer_rapidfuzz.py` to replace silent exception swallowing (feedback issue 4.4).
+>
+> **v3.6.7 Update**: `normalize()` is now the single canonical public entry point across all engines; `engine_orchestrator.py` updated accordingly (feedback issue 4.3). Silent L3 import fallback in `normalizer_rapidfuzz.py` replaced with a diagnostic print to `stderr` before falling back. CLI demo inputs centralized in `poc/demo_cases.py` — all standalone CLIs now import from one shared module instead of maintaining independent `TEST_CASES` lists (feedback issue 4.5).
 
 ---
 
@@ -211,16 +215,16 @@ python poc/evaluate_f1.py --dataset all
 python poc/smoke_test_cli.py
 ```
 
-### Current Results (v3.6.5)
+### Current Results (v3.6.6 / v3.6.7)
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
-|---------|----------:|---------:|---------------------:|:---------:|
-| `layer1` | 0.7614 | 0.9129 | 0.6353 | ≈ same |
-| `layer2` | 0.7753 | 0.8288 | 0.5334 | ≈ same |
-| `layer3` | **0.7985** | **0.7343** | **0.4901** | ⬆️ **+0.40 / +0.22 / +0.33** |
-| `indian_usa` | **0.5730** | N/A | **0.5315** | ⬆️ +0.034 |
-| `indian_uk` | **0.5926** | N/A | **0.5506** | ⬆️ +0.039 |
-| `indian_world` | **0.3610** | N/A | **0.3184** | ⬆️ +0.013 |
+| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 |
+|---------|----------:|---------:|---------------------:|
+| `layer1` | 0.7617 | 0.9134 | 0.6353 |
+| `layer2` | 0.7864 | 0.8312 | 0.5334 |
+| `layer3` | **0.8073** | **0.7351** | **0.4946** |
+| `indian_usa` | **0.6179** | N/A | **0.5329** |
+| `indian_uk` | **0.6330** | N/A | **0.5517** |
+| `indian_world` | **0.3980** | N/A | **0.3167** |
 
 > **Key improvement:** Layer 3 degree F1 doubled (0.40 → 0.80), field F1 rose from 0.52 → 0.73, and pair F1 tripled (0.16 → 0.49) in v3.6.5. International datasets also improved across the board.
 
