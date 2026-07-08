@@ -228,7 +228,7 @@ python poc/smoke_test_cli.py
 
 > **Key improvement:** Layer 3 degree F1 is now **0.8073**, field F1 is **0.7351**, and pair F1 is **0.4946** after the L3 overhaul and feedback contract fix. International datasets improved too, but `indian_world` still needs targeted alias expansion from failure CSVs.
 
-### What This Means
+### What This Means?
 
 - Layer 1 and Layer 2 remain stable — no regressions from the L3 changes.
 - Layer 3 is now the most-improved path: degree F1 is now 0.80 (was 0.40), making it a genuinely useful extraction layer, not just a catch-all.
