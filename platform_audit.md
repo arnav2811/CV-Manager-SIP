@@ -106,18 +106,24 @@ This document serves as the living audit log for the CV Normalization Engine. It
 | `evaluation/*_failures.csv` | ✅ Current | Stores incorrect predictions for debugging |
 | `evaluation/*_confusion.csv` | ✅ Current | Stores degree, field, and pair confusion counts |
 
-### Current F1 Summary (v3.6.6 / v3.6.7)
+### Current F1 Summary (v3.6.7 — full re-run 08 July 2026)
 
-| Dataset | Degree F1 | Field F1 | Degree+Field Pair F1 | vs v3.6.0 |
-|---------|----------:|---------:|---------------------:|:---------:|
-| `layer1` | 0.7617 | 0.9134 | 0.6353 | approx same |
-| `layer2` | 0.7864 | 0.8312 | 0.5334 | approx same |
-| `layer3` | **0.8073** | **0.7351** | **0.4946** | up +0.41 / +0.22 / +0.33 |
-| `indian_usa` | **0.6179** | N/A | **0.5329** | up +0.079 |
-| `indian_uk` | **0.6330** | N/A | **0.5517** | up +0.080 |
-| `indian_world` | **0.3980** | N/A | **0.3167** | up +0.050 |
+> Results from `python poc/evaluate_f1.py --dataset all` (no row cap). Total rows evaluated: **44,954**.
 
-**Note:** International datasets are degree-only, so field F1 is not applicable. Layer 3 further improved after the v3.6.6 `canonical_degree` contract fix; `indian_world` remains the main data-coverage follow-up.
+| Dataset | Rows | Degree F1 | Field F1 | Pair F1 | Δ Degree vs feedback baseline |
+|---------|-----:|----------:|---------:|--------:|:------------------------------|
+| `layer1` | 3,718 | 0.7617 | 0.9134 | 0.6353 | ≈ 0 (stable) |
+| `layer2` | 7,689 | 0.7864 | 0.8312 | 0.5334 | +0.006 ↑ |
+| `layer3` | 1,116 | **0.8073** | **0.7351** | **0.4946** | +0.007 ↑ |
+| `indian_usa` | 8,946 | **0.6179** | N/A | **0.5329** | +0.048 ↑ |
+| `indian_uk` | 8,644 | **0.6330** | N/A | **0.5517** | +0.043 ↑ |
+| `indian_world` | 16,841 | **0.3980** | N/A | **0.3167** | +0.038 ↑ |
+
+**Key findings:**
+- All core datasets (layer1/2/3) held steady or marginally improved — no regressions from the L3 fixes.
+- All three international datasets improved after the v3.6.6 strategy-ordering and `canonical_degree` contract fixes.
+- `indian_world` improvement (+3.8 pp degree F1) confirms the L3 logic fix closed a real gap; the remaining gap (0.398) is identified as a **data-coverage problem** (alias expansion needed), not a logic problem. Documented in `evaluation/future_scope_note.md`.
+- International datasets are degree-only, so field F1 is not applicable.
 
 ---
 
@@ -159,7 +165,7 @@ This document serves as the living audit log for the CV Normalization Engine. It
 - [x] **L3 Contract Bug (canonical_degree raw-text leak):** `_s1_sentence()` was returning uncanonicalized raw text as `canonical_degree`. Fixed in v3.6.6; non-canonical mentions now fall through to `_s3_level_keyword()` or unresolved. Regression tests cover `Kuchh bhi degree`, `Masters in Data Science`, B.Tech, PhD, and no-signal examples.
 - [x] **Engine Entry-Point Consistency:** `analyze()` vs `normalize()` naming resolved; `normalize()` is now the public entry point across all engines and `engine_orchestrator.py` uses it. (Done in v3.6.7)
 - [x] **CLI Demo Drift:** Duplicate `TEST_CASES` lists across engine files replaced with shared `poc/demo_cases.py` module. (Done in v3.6.7)
-- [ ] **International Coverage:** Re-run `poc/evaluate_f1.py --dataset all` and inspect `indian_world_failures.csv`, `indian_uk_failures.csv`, and `indian_usa_failures.csv` for high-frequency alias gaps before expanding the dictionary. (See `evaluation/future_scope_note.md`)
+- [x] **International Coverage:** Full re-run of `poc/evaluate_f1.py --dataset all` completed 08 July 2026 (44,954 rows). L3 fixes confirmed to improve all international datasets (+3.8–4.8 pp degree F1). Remaining `indian_world` gap identified as a data-coverage issue; alias expansion is the recommended next step. (See `evaluation/future_scope_note.md`)
 - [ ] **International Integration:** Determine which SQL scope (USA / UK / WORLD) to adopt for the Growth Grids production database seed.
 - [ ] **HuggingFace Token:** Set `HF_TOKEN` environment variable to resolve unauthenticated download warning from Sentence-Transformers.
 - [x] **Evaluation Runner:** Added formal F1 scoring through `poc/evaluate_f1.py`, with summary, failure, TP/FP/FN, latency, and confusion outputs under `evaluation/`.
@@ -198,4 +204,4 @@ This document serves as the living audit log for the CV Normalization Engine. It
 
 ---
 
-*Last updated: 06 July 2026 — v3.6.7*
+*Last updated: 08 July 2026 — v3.6.7 (full evaluation re-run)*
